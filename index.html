@@ -1,0 +1,2863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Competitive Exam Mathematics Formula Cheat Sheet</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --surface: #ffffff;
+      --surface-2: #f9fbff;
+      --text: #17324d;
+      --muted: #5f7186;
+      --line: #d8e4ef;
+      --brand: #0c6e8a;
+      --brand-2: #f59e0b;
+      --accent: #0f766e;
+      --danger: #c2410c;
+      --warning: #b45309;
+      --success: #15803d;
+      --shadow: 0 18px 50px rgba(12, 44, 77, 0.12);
+      --radius: 18px;
+      --toc-width: 320px;
+      --arith: linear-gradient(135deg, #e0f2fe, #fef3c7);
+      --alg: linear-gradient(135deg, #dcfce7, #ecfeff);
+      --geo: linear-gradient(135deg, #fae8ff, #fee2e2);
+      --data: linear-gradient(135deg, #ede9fe, #e0f2fe);
+      --rev: linear-gradient(135deg, #fff7ed, #fef9c3);
+    }
+
+    body.dark {
+      --bg: #0f172a;
+      --surface: #111c30;
+      --surface-2: #17243b;
+      --text: #e2edf8;
+      --muted: #9bb0c8;
+      --line: #27415f;
+      --brand: #38bdf8;
+      --brand-2: #fbbf24;
+      --accent: #34d399;
+      --danger: #fb923c;
+      --warning: #f59e0b;
+      --success: #4ade80;
+      --shadow: 0 18px 50px rgba(2, 6, 23, 0.45);
+      --arith: linear-gradient(135deg, rgba(14, 116, 144, 0.35), rgba(180, 83, 9, 0.35));
+      --alg: linear-gradient(135deg, rgba(22, 101, 52, 0.35), rgba(8, 145, 178, 0.35));
+      --geo: linear-gradient(135deg, rgba(126, 34, 206, 0.25), rgba(220, 38, 38, 0.25));
+      --data: linear-gradient(135deg, rgba(67, 56, 202, 0.25), rgba(14, 165, 233, 0.25));
+      --rev: linear-gradient(135deg, rgba(194, 65, 12, 0.3), rgba(161, 98, 7, 0.3));
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top right, rgba(14, 165, 233, 0.12), transparent 28%),
+        radial-gradient(circle at top left, rgba(245, 158, 11, 0.12), transparent 24%),
+        var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.55;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .app {
+      display: grid;
+      grid-template-columns: var(--toc-width) 1fr;
+      min-height: 100vh;
+    }
+
+    .toc {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow: auto;
+      padding: 20px 18px 28px;
+      border-right: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: blur(16px);
+    }
+
+    body.dark .toc {
+      background: rgba(15, 23, 42, 0.88);
+    }
+
+    .brand {
+      padding: 18px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, rgba(12, 110, 138, 0.12), rgba(245, 158, 11, 0.18));
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      margin-bottom: 18px;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 1.18rem;
+      line-height: 1.3;
+    }
+
+    .brand p {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .toc-group {
+      margin-top: 18px;
+    }
+
+    .toc-title {
+      margin: 0 0 8px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .toc a {
+      display: block;
+      padding: 10px 12px;
+      margin-bottom: 6px;
+      border-radius: 12px;
+      color: var(--text);
+      font-size: 0.94rem;
+      border: 1px solid transparent;
+      transition: 0.2s ease;
+    }
+
+    .toc a:hover,
+    .toc a.active {
+      background: var(--surface);
+      border-color: var(--line);
+      transform: translateX(2px);
+    }
+
+    .content {
+      padding: 26px;
+    }
+
+    .hero {
+      padding: 26px;
+      border-radius: 28px;
+      background: linear-gradient(135deg, rgba(12, 110, 138, 0.96), rgba(18, 98, 156, 0.92), rgba(245, 158, 11, 0.9));
+      color: #f8fcff;
+      box-shadow: var(--shadow);
+    }
+
+    .hero h2 {
+      margin: 0;
+      font-size: clamp(1.9rem, 4vw, 3rem);
+      line-height: 1.12;
+    }
+
+    .hero p {
+      margin: 14px 0 0;
+      max-width: 900px;
+      color: rgba(248, 252, 255, 0.94);
+      font-size: 1rem;
+    }
+
+    .hero-grid,
+    .control-grid,
+    .stats-grid,
+    .section-grid,
+    .formula-grid,
+    .mini-grid,
+    .example-grid,
+    .practice-grid,
+    .table-grid,
+    .topic-meta {
+      display: grid;
+      gap: 14px;
+    }
+
+    .hero-grid {
+      margin-top: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+
+    .hero-card,
+    .control-card,
+    .panel,
+    .stat-card,
+    .topic-panel,
+    .formula-card,
+    .tip-card,
+    .warn-card,
+    .example-card,
+    .practice-card,
+    .summary-card,
+    .table-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card {
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.16);
+      padding: 16px;
+      box-shadow: none;
+    }
+
+    .hero-card strong {
+      display: block;
+      font-size: 1.45rem;
+    }
+
+    .control-grid {
+      margin: 18px 0 24px;
+      grid-template-columns: 2fr 1fr 1fr auto auto auto;
+      align-items: stretch;
+    }
+
+    .control-card {
+      padding: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(12px);
+    }
+
+    body.dark .control-card {
+      background: rgba(17, 28, 48, 0.85);
+    }
+
+    input[type="search"],
+    select {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      outline: none;
+      background: var(--surface-2);
+      color: var(--text);
+      font: inherit;
+    }
+
+    .btn {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px 14px;
+      background: var(--surface-2);
+      color: var(--text);
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      border-color: var(--brand);
+    }
+
+    .btn.primary {
+      background: linear-gradient(135deg, var(--brand), #1d4ed8);
+      color: #fff;
+      border-color: transparent;
+    }
+
+    .btn.lang-active {
+      background: linear-gradient(135deg, var(--brand-2), var(--brand));
+      color: #fff;
+      border-color: transparent;
+    }
+
+    .filters {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+
+    .filter-chip {
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--text);
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+
+    .filter-chip.active {
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: #fff;
+      border-color: transparent;
+    }
+
+    .stats-grid {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      margin-bottom: 28px;
+    }
+
+    .stat-card {
+      padding: 18px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(244, 247, 251, 0.92));
+    }
+
+    body.dark .stat-card {
+      background: linear-gradient(135deg, rgba(23, 36, 59, 0.96), rgba(17, 28, 48, 0.96));
+    }
+
+    .stat-card strong {
+      display: block;
+      font-size: 1.4rem;
+      color: var(--brand);
+    }
+
+    .section {
+      margin-bottom: 28px;
+    }
+
+    .section-header {
+      margin-bottom: 14px;
+    }
+
+    .section-header h3 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    .section-header p {
+      margin: 6px 0 0;
+      color: var(--muted);
+    }
+
+    .panel {
+      padding: 20px;
+    }
+
+    .section-grid {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .summary-card,
+    .table-card {
+      padding: 18px;
+      background: var(--surface);
+    }
+
+    .summary-card h4,
+    .table-card h4 {
+      margin: 0 0 10px;
+      font-size: 1.04rem;
+    }
+
+    .summary-card ol,
+    .summary-card ul,
+    .table-card ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .topic-panel {
+      overflow: hidden;
+      margin-bottom: 18px;
+    }
+
+    .topic-panel[hidden] {
+      display: none;
+    }
+
+    .topic-panel > summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .topic-panel > summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .topic-head {
+      padding: 22px;
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .topic-head h4 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+
+    .topic-head p {
+      margin: 8px 0 0;
+      color: var(--muted);
+    }
+
+    .topic-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+
+    .badge {
+      padding: 7px 10px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 800;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      background: rgba(255, 255, 255, 0.28);
+      color: inherit;
+      white-space: nowrap;
+    }
+
+    .topic-arithmetic .topic-head { background: var(--arith); }
+    .topic-algebra .topic-head { background: var(--alg); }
+    .topic-geometry .topic-head { background: var(--geo); }
+    .topic-data .topic-head { background: var(--data); }
+
+    .topic-body {
+      padding: 22px;
+      border-top: 1px solid var(--line);
+      background: var(--surface);
+    }
+
+    .topic-meta {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      margin-bottom: 16px;
+    }
+
+    .meta-box {
+      padding: 12px 14px;
+      border-radius: 14px;
+      background: var(--surface-2);
+      border: 1px solid var(--line);
+    }
+
+    .meta-box strong {
+      display: block;
+      color: var(--brand);
+    }
+
+    .mini-grid {
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      margin-bottom: 18px;
+    }
+
+    .tip-card,
+    .warn-card {
+      padding: 16px;
+    }
+
+    .tip-card {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.08), rgba(14, 165, 233, 0.08));
+    }
+
+    .warn-card {
+      background: linear-gradient(135deg, rgba(251, 146, 60, 0.12), rgba(239, 68, 68, 0.08));
+    }
+
+    .formula-grid {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      margin: 18px 0;
+    }
+
+    .formula-card {
+      padding: 18px;
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(135deg, rgba(14, 165, 233, 0.08), rgba(245, 158, 11, 0.08)),
+        var(--surface);
+    }
+
+    .formula-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 6px;
+      background: linear-gradient(180deg, var(--brand), var(--brand-2));
+    }
+
+    .formula-card h5,
+    .example-card h5,
+    .practice-card h5 {
+      margin: 0 0 10px;
+      font-size: 1rem;
+    }
+
+    .formula-label {
+      color: var(--brand);
+      font-weight: 800;
+      display: inline-block;
+      margin-bottom: 6px;
+    }
+
+    .formula-main {
+      display: block;
+      font-size: 1.04rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .formula-card p,
+    .tip-card p,
+    .warn-card p {
+      margin: 7px 0;
+    }
+
+    .example-grid {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      margin: 18px 0;
+    }
+
+    .example-card,
+    .practice-card {
+      padding: 18px;
+      background: var(--surface);
+    }
+
+    .example-card {
+      border-left: 5px solid var(--brand);
+    }
+
+    .practice-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .practice-card {
+      border-left: 5px solid var(--brand-2);
+    }
+
+    .practice-card ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .practice-card li {
+      margin-bottom: 8px;
+    }
+
+    .quick-list {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .quick-list li {
+      margin-bottom: 8px;
+    }
+
+    .tagline {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.18);
+      font-size: 0.84rem;
+      font-weight: 700;
+    }
+
+    .table-grid {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+
+    th,
+    td {
+      border: 1px solid var(--line);
+      padding: 8px 9px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: rgba(12, 110, 138, 0.08);
+    }
+
+    .sticky-note {
+      padding: 16px 18px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(14, 165, 233, 0.08));
+      border: 1px solid var(--line);
+      margin-top: 14px;
+    }
+
+    .footer-note {
+      padding: 20px;
+      border-radius: 20px;
+      background: var(--rev);
+      border: 1px solid var(--line);
+      margin-top: 28px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .hinglish-note {
+      margin-top: 8px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px dashed var(--line);
+      color: var(--text);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 1080px) {
+      .app {
+        grid-template-columns: 1fr;
+      }
+
+      .toc {
+        position: relative;
+        height: auto;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .control-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .content {
+        padding: 16px;
+      }
+
+      .hero,
+      .topic-head,
+      .topic-body,
+      .panel {
+        padding: 18px;
+      }
+
+      .topic-head {
+        flex-direction: column;
+      }
+
+      .topic-badges {
+        justify-content: flex-start;
+      }
+    }
+
+    @media print {
+      :root {
+        --bg: #ffffff;
+        --surface: #ffffff;
+        --surface-2: #ffffff;
+        --text: #111827;
+        --muted: #475569;
+        --line: #cbd5e1;
+        --shadow: none;
+      }
+
+      body {
+        background: #fff;
+      }
+
+      .app {
+        display: block;
+      }
+
+      .toc,
+      .control-grid,
+      .filters {
+        display: none !important;
+      }
+
+      .content {
+        padding: 0;
+      }
+
+      .hero,
+      .panel,
+      .topic-panel,
+      .summary-card,
+      .table-card,
+      .footer-note {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+
+      details {
+        page-break-inside: avoid;
+      }
+
+      details > summary {
+        display: none;
+      }
+
+      details[open] .topic-body,
+      details .topic-body {
+        display: block !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="toc">
+      <div class="brand">
+        <h1>Competitive Exam Mathematics Cheat Sheet</h1>
+        <p>Single-file revision guide for SSC, Railway, Banking, CDS, NDA, State PCS, CET, Police, and aptitude exams.</p>
+      </div>
+
+      <div class="toc-group">
+        <div class="toc-title">Quick Navigation</div>
+        <a href="#home">Home</a>
+        <a href="#top-formulas">Top 100 Formulas</a>
+        <a href="#fast-tricks">Top 50 Fast Tricks</a>
+        <a href="#memorize">Tables To Memorize</a>
+        <a href="#last-day">Last Day Revision</a>
+        <a href="#ultra-fast">Ultra Fast Revision</a>
+        <a href="#exam-zones">Exam Wise Formula Zones</a>
+        <a href="#topics">All Topic Capsules</a>
+      </div>
+
+      <div class="toc-group">
+        <div class="toc-title">A-Z Topics</div>
+        <div id="toc-topics"></div>
+      </div>
+    </aside>
+
+    <main class="content">
+      <section id="home" class="hero searchable">
+        <h2>Complete Mathematics Formula Cheat Sheet With Tricks, Concepts, Examples, and Practice</h2>
+        <p>Use this as a fast classroom-style revision file. Every chapter includes introduction, concepts, formulas, shortcuts, exam tricks, memory hooks, common mistakes, pattern alerts, solved examples, and practice questions. Expand chapter cards to revise deeply, or stay in the top sections for speed revision.</p>
+        <div class="hero-grid">
+          <div class="hero-card"><strong>26</strong><span>Core topics from A to Z</span></div>
+          <div class="hero-card"><strong>100</strong><span>Most important formulas</span></div>
+          <div class="hero-card"><strong>50</strong><span>Fast calculation tricks</span></div>
+          <div class="hero-card"><strong>130</strong><span>Practice questions</span></div>
+        </div>
+        <span class="tagline">Best for SSC CGL, CHSL, GD, MTS, Railway NTPC, Group D, Banking, State Exams, Police, CDS, NDA, CET</span>
+      </section>
+
+      <section class="control-grid">
+        <div class="control-card">
+          <label for="searchBox" class="muted">Search</label>
+          <input id="searchBox" type="search" placeholder="Search formula, topic, trick, theorem, unit digit, mensuration...">
+        </div>
+        <div class="control-card">
+          <label for="difficultyFilter" class="muted">Difficulty</label>
+          <select id="difficultyFilter">
+            <option value="all">All Levels</option>
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+          </select>
+        </div>
+        <div class="control-card">
+          <label for="weightFilter" class="muted">Weightage</label>
+          <select id="weightFilter">
+            <option value="all">All Weightage</option>
+            <option value="high">High Yield</option>
+            <option value="medium">Medium Yield</option>
+          </select>
+        </div>
+        <button class="btn lang-active" id="langEnglish" type="button">English</button>
+        <button class="btn" id="langHinglish" type="button">Hinglish</button>
+        <button class="btn" id="toggleTheme" type="button">Dark Mode</button>
+        <button class="btn primary" id="expandAll" type="button">Expand All</button>
+      </section>
+
+      <div class="filters" id="groupFilters">
+        <button class="filter-chip active" data-group="all" type="button">All</button>
+        <button class="filter-chip" data-group="Arithmetic" type="button">Arithmetic</button>
+        <button class="filter-chip" data-group="Algebra" type="button">Algebra</button>
+        <button class="filter-chip" data-group="Geometry" type="button">Geometry</button>
+        <button class="filter-chip" data-group="Data" type="button">Data</button>
+        <button class="filter-chip" data-group="Revision" type="button">Revision</button>
+      </div>
+
+      <section class="stats-grid searchable">
+        <div class="stat-card"><strong>High Yield Areas</strong><span>Percentage, Ratio, Profit &amp; Loss, Time &amp; Work, Mensuration, Trigonometry, Algebra</span></div>
+        <div class="stat-card"><strong>Most Repeated Pattern</strong><span>Direct formula use + shortcut conversion + one hidden condition</span></div>
+        <div class="stat-card"><strong>Best Strategy</strong><span>First master tables, then core formulas, then chapter-wise patterns</span></div>
+        <div class="stat-card"><strong>Last Minute Rule</strong><span>If calculation is long, check ratio, options, unit digit, or approximation</span></div>
+      </section>
+
+      <section id="top-formulas" class="section searchable" data-group="Revision">
+        <div class="section-header">
+          <h3>Top 100 Most Important Formulas</h3>
+          <p>These are auto-collected from the chapter formula boxes below. Revise these first if exam time is near.</p>
+        </div>
+        <div class="panel">
+          <div class="formula-grid" id="topFormulaGrid"></div>
+        </div>
+      </section>
+
+      <section id="fast-tricks" class="section searchable" data-group="Revision">
+        <div class="section-header">
+          <h3>Top 50 Fast Calculation Tricks</h3>
+          <p>Use these for mental speed, option elimination, and approximation-heavy aptitude sets.</p>
+        </div>
+        <div class="panel">
+          <div class="section-grid" id="fastTrickGrid"></div>
+        </div>
+      </section>
+
+      <section id="memorize" class="section searchable" data-group="Revision">
+        <div class="section-header">
+          <h3>Tables To Memorize</h3>
+          <p>High-return memory tables for speed tests and non-calculator exams.</p>
+        </div>
+        <div class="table-grid" id="memoryTables"></div>
+      </section>
+
+      <section id="last-day" class="section searchable" data-group="Revision">
+        <div class="section-header">
+          <h3>Last Day Revision Sheet</h3>
+          <p>What to revise in the final round before SSC, Railway, Banking, PCS, CET, CDS, or NDA math sections.</p>
+        </div>
+        <div class="section-grid" id="lastDayGrid"></div>
+      </section>
+
+      <section id="ultra-fast" class="section searchable" data-group="Revision">
+        <div class="section-header">
+          <h3>One Page Ultra Fast Revision</h3>
+          <p>One-line reminders for each chapter. Read this once before the exam hall.</p>
+        </div>
+        <div class="panel">
+          <ol class="quick-list" id="ultraFastList"></ol>
+        </div>
+      </section>
+
+      <section id="exam-zones" class="section searchable" data-group="Revision">
+        <div class="section-header">
+          <h3>Exam Wise Formula Zones</h3>
+          <p>Targeted formula clusters repeatedly seen in SSC CGL, Railway, and Banking aptitude papers.</p>
+        </div>
+        <div class="section-grid" id="examZoneGrid"></div>
+      </section>
+
+      <section id="topics" class="section">
+        <div class="section-header">
+          <h3>All Topic Capsules</h3>
+          <p>Expand each chapter for formulas, shortcuts, mistakes, examples, and practice sets.</p>
+        </div>
+        <div id="topicContainer"></div>
+      </section>
+
+      <div class="footer-note searchable" data-group="Revision">
+        <strong>Final Teacher Note:</strong>
+        <p>In competitive mathematics, speed comes from pattern recognition, not from long calculation. Revise tables daily, memorize conversion formulas, and always ask: can this be solved by ratio, remainder, approximation, unit digit, or option elimination?</p>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    let currentLang = "english";
+
+    const uiText = {
+      english: {
+        searchLabel: "Search",
+        searchPlaceholder: "Search formula, topic, trick, theorem, unit digit, mensuration...",
+        difficulty: "Difficulty",
+        weightage: "Weightage",
+        darkMode: "Dark Mode",
+        lightMode: "Light Mode",
+        expandAll: "Expand All",
+        collapseAll: "Collapse All",
+        topicIntro: "Topic Introduction",
+        difficultyLevel: "Difficulty Level",
+        expectedWeightage: "Expected Weightage",
+        memoryHook: "Memory Hook",
+        importantConcepts: "🔥 Important Concepts",
+        shortcutTricks: "⚡ Shortcut Tricks",
+        examTricks: "✅ Exam Tricks",
+        commonMistakes: "❌ Common Mistakes",
+        memoryTrick: "🧠 Memory Trick",
+        patterns: "🔥 Previous Year Patterns",
+        formula: "📌 Formula",
+        meaning: "Meaning",
+        shortcut: "⚡ Shortcut",
+        examTip: "✅ Exam Tip",
+        question: "Question",
+        solution: "Solution",
+        practice: "Practice Questions",
+        hinglishLabel: "Hinglish Teacher Note",
+        example: "Example"
+      },
+      hinglish: {
+        searchLabel: "Khojo",
+        searchPlaceholder: "Formula, topic, trick, theorem, unit digit, mensuration search karo...",
+        difficulty: "Level",
+        weightage: "Weightage",
+        darkMode: "Dark Mode",
+        lightMode: "Light Mode",
+        expandAll: "Sab Khol Do",
+        collapseAll: "Sab Band Karo",
+        topicIntro: "Topic Intro",
+        difficultyLevel: "Difficulty Level",
+        expectedWeightage: "Expected Weightage",
+        memoryHook: "Yaad Rakhne Ki Trick",
+        importantConcepts: "🔥 Important Concepts",
+        shortcutTricks: "⚡ Shortcut Tricks",
+        examTricks: "✅ Exam Tricks",
+        commonMistakes: "❌ Common Mistakes",
+        memoryTrick: "🧠 Memory Trick",
+        patterns: "🔥 Previous Year Patterns",
+        formula: "📌 Formula",
+        meaning: "Matlab",
+        shortcut: "⚡ Shortcut",
+        examTip: "✅ Exam Tip",
+        question: "Sawal",
+        solution: "Hal",
+        practice: "Practice Questions",
+        hinglishLabel: "Hinglish Teacher Note",
+        example: "Example"
+      }
+    };
+
+    const hinglishTopicNotes = {
+      "number-system": "Yeh chapter number ki basic language hai. Isme divisibility, HCF-LCM, remainder aur unit digit ko cycle se samjho, lambi calculation se nahi.",
+      "simplification": "Is topic me sabse pehle BODMAS follow karo. Surds aur powers wale sawaal me step order sahi rakhoge to marks pakke hain.",
+      "percentage": "Percentage ko 100 ke hisse ki tarah socho. Profit-loss, DI, ratio, mixture sab isi base par chalte hain.",
+      "ratio-proportion": "Ratio compare karta hai aur proportion equality dikhata hai. Partnership me capital ke saath time ko bhi zaroor include karo.",
+      "average": "Average matlab sabko barabar baantne par kitna milega. Replacement wale sawaal total change se jaldi hote hain.",
+      "profit-loss": "Profit ya loss hamesha CP par nikalna yaad rakho. Discount MP par hota hai, isi confusion me bachche galti karte hain.",
+      "simple-interest": "SI seedha chapter hai: principal same rehta hai aur interest usi par lagta hai. Bas rate aur time ki unit sahi rakho.",
+      "compound-interest": "CI me har period ka interest principal me judta rehta hai. Half-yearly aur quarterly me rate aur time dono adjust karna hota hai.",
+      "time-work": "Kaam ko 1/x approach se dekho. Jis worker ki efficiency zyada hogi, uska time utna kam hoga.",
+      "pipe-cistern": "Pipe chapter bilkul time-work jaisa hi hai. Inlet ko plus aur outlet ya leak ko minus rate lo.",
+      "time-speed-distance": "Isme unit conversion bahut important hai. Equal distance me average speed normal average nahi hoti.",
+      "trains": "Train chapter me length aur relative speed sabse important hain. Pole, platform, aur dusri train ke case alag-alag socho.",
+      "boat-stream": "Downstream me speed badhegi aur upstream me ghategi. Boat speed aur stream speed ko alag nikaalna hi main trick hai.",
+      "mensuration-2d": "2D mensuration me figure pehchano aur right formula lagao. Radius-diameter aur area-perimeter mix mat karo.",
+      "mensuration-3d": "3D me volume cubic hota hai aur surface area square unit me. Cone, cylinder, sphere ke formulas by heart hone chahiye.",
+      "algebra": "Algebra me identities yaad hongi to calculation bahut short ho jayegi. Quadratic me sum-product of roots bahut kaam aata hai.",
+      "geometry": "Geometry me rough diagram banaoge to angle relation jaldi samajh aayega. Standard theorem yaad rakhna sabse zaroori hai.",
+      "trigonometry": "Trigonometry me standard values aur identities yaad kar lo. Heights and distances me pehle right triangle draw karo.",
+      "coordinate-geometry": "Point ko (x,y) form me clearly dekho aur formula me values dhyan se rakho. Sign mistake sabse common hoti hai.",
+      "permutation-combination": "Permutation me order matter karta hai, combination me nahi. Bas yahi pehchan loge to aadha sawaal wahi solve ho jayega.",
+      "probability": "Probability me favorable outcomes ko total outcomes se divide karte hain. 'At least one' me complement method bahut useful hai.",
+      "data-interpretation": "DI me graph se zyada calculation important hoti hai. Pehle units dekho, phir percentage ya ratio use karo.",
+      "statistics": "Mean, median, mode ka basic difference clear rakho. Median nikalne se pehle data ko arrange karna kabhi mat bhoolo.",
+      "logarithms": "Log chapter power ka reverse logic hai. Multiplication addition me aur division subtraction me convert ho jata hai.",
+      "mixture-allegation": "Mixture me weighted average samjho aur allegation ko cross difference se solve karo. Order galat likhne se answer ulta aata hai.",
+      "age": "Age chapter simple linear equation hai. Age difference hamesha same rehta hai, bas ratio time ke saath badalta hai."
+    };
+
+    const topics = [
+      {
+        id: "number-system",
+        letter: "A",
+        title: "Number System",
+        group: "Arithmetic",
+        theme: "topic-arithmetic",
+        level: "Medium",
+        yield: "high",
+        weightage: "SSC 2-3Q | Banking 1Q | Railway 2Q",
+        intro: "Number System is the base of divisibility, HCF-LCM, remainders, cyclicity, and unit digit questions. Strong basics here save time across arithmetic and algebra.",
+        concepts: [
+          "Prime factorization is the fastest tool for HCF, LCM, divisors, and trailing-zero style questions.",
+          "Remainder questions are modular arithmetic questions in disguise. Reduce powers by cycle length."
+        ],
+        formulas: [
+          { title: "HCF-LCM Relation", formula: "For two numbers: a x b = HCF x LCM", meaning: "Valid for two positive integers.", shortcut: "If HCF is known, LCM = (a x b) / HCF.", examTip: "Very common in pair-based SSC and Railway questions." },
+          { title: "Division Algorithm", formula: "Dividend = Divisor x Quotient + Remainder", meaning: "0 <= Remainder < Divisor.", shortcut: "Use this to convert statement-based problems into equations.", examTip: "Asked in remainder and least number questions." },
+          { title: "LCM and HCF of Fractions", formula: "LCM = LCM of numerators / HCF of denominators; HCF = HCF of numerators / LCM of denominators", meaning: "Use when numbers are fractional.", shortcut: "Separate numerator and denominator work.", examTip: "Useful for concept-based objective questions." },
+          { title: "Unit Digit Cycles", formula: "Last digits repeat in cycles: 2 -> 2,4,8,6; 3 -> 3,9,7,1; 7 -> 7,9,3,1; 8 -> 8,4,2,6", meaning: "Cycle length is usually 4 except 0,1,5,6.", shortcut: "Reduce power modulo cycle length.", examTip: "Frequent in SSC CHSL, GD, MTS, and Railway." }
+        ],
+        shortcuts: [
+          "Divisibility by 3 or 9 depends on digit sum only.",
+          "Divisibility by 4 uses last 2 digits; by 8 uses last 3 digits.",
+          "For 11, take alternating digit sum and check divisibility by 11."
+        ],
+        examTricks: [
+          "If options are far apart, use prime factors instead of full multiplication.",
+          "In power questions, first find only the last digit or cycle, not the whole value."
+        ],
+        memory: "Remember 3-9 by sum, 4-8 by tail, 11 by alternating sum, and unit digits by cycle tables.",
+        mistakes: [
+          "Using a x b = HCF x LCM for more than two numbers directly.",
+          "Writing remainder equal to divisor or larger than divisor."
+        ],
+        patterns: [
+          "Find least number added or subtracted to make a number divisible by another.",
+          "Find remainder of a large power or product by a small divisor."
+        ],
+        examples: [
+          { q: "Find HCF and LCM of 24 and 36.", a: "24 = 2^3 x 3, 36 = 2^2 x 3^2. HCF = 2^2 x 3 = 12, LCM = 2^3 x 3^2 = 72." },
+          { q: "Remainder when 3^45 is divided by 7?", a: "3^6 leaves remainder 1 by cycle. 45 = 42 + 3, so remainder = 3^3 mod 7 = 27 mod 7 = 6." },
+          { q: "Unit digit of 7^103?", a: "Cycle of 7 is 7, 9, 3, 1. 103 mod 4 = 3, so unit digit = 3rd term = 3." }
+        ],
+        practice: [
+          "Find the least number to be added to 398 so that it becomes divisible by 7.",
+          "Find the HCF of 48, 72, and 120.",
+          "Find the LCM of 18, 24, and 30.",
+          "What is the remainder when 5^63 is divided by 13?",
+          "Find the unit digit of 13^47."
+        ]
+      },
+      {
+        id: "simplification",
+        letter: "B",
+        title: "Simplification",
+        group: "Arithmetic",
+        theme: "topic-arithmetic",
+        level: "Easy",
+        yield: "high",
+        weightage: "SSC 1-2Q | Banking 1Q | Railway 1-2Q",
+        intro: "Simplification tests speed, operation order, fraction handling, surds, and indices. Most questions are easy marks if BODMAS and standard algebraic reductions are clear.",
+        concepts: [
+          "Always resolve brackets, powers, division, multiplication, addition, subtraction in order.",
+          "Surds become easy after rationalization and factor extraction."
+        ],
+        formulas: [
+          { title: "BODMAS Order", formula: "Bracket -> Of -> Division -> Multiplication -> Addition -> Subtraction", meaning: "This is the order of operations.", shortcut: "Solve inside brackets from inner to outer.", examTip: "Common in direct simplification sets." },
+          { title: "Indices Laws", formula: "a^m x a^n = a^(m+n), a^m / a^n = a^(m-n), (a^m)^n = a^(mn)", meaning: "Base same, manage powers directly.", shortcut: "Convert roots to fractional powers if needed.", examTip: "Used in simplification and algebra." },
+          { title: "Surd Rules", formula: "sqrt(a) x sqrt(b) = sqrt(ab), sqrt(a/b) = sqrt(a)/sqrt(b)", meaning: "Valid for non-negative a and b.", shortcut: "Pull out perfect squares first.", examTip: "SSC often asks quick surd reduction." },
+          { title: "Rationalization", formula: "1 / (sqrt(a) + sqrt(b)) = (sqrt(a) - sqrt(b)) / (a - b)", meaning: "Multiply by conjugate.", shortcut: "Use opposite sign in numerator and denominator.", examTip: "Very common in theory-based aptitude." }
+        ],
+        shortcuts: [
+          "Cancel common factors before multiplying fractions.",
+          "In mixed operations, convert decimals to fractions if it simplifies mentally.",
+          "Use identities like (a+b)^2 to avoid long multiplication."
+        ],
+        examTricks: [
+          "If expression is ugly, first estimate sign and size to eliminate options.",
+          "When square roots appear, check if terms form a perfect-square pattern."
+        ],
+        memory: "Conjugate means same terms, opposite sign; powers add in multiplication and subtract in division.",
+        mistakes: [
+          "Doing addition before division or multiplication.",
+          "Adding square roots directly when radicands are unlike."
+        ],
+        patterns: [
+          "Nested brackets with fractions and decimals.",
+          "Surd simplification with rationalization."
+        ],
+        examples: [
+          { q: "Simplify 18 / 3 x 2 + 5.", a: "18 / 3 = 6, 6 x 2 = 12, 12 + 5 = 17." },
+          { q: "Simplify sqrt(72).", a: "sqrt(72) = sqrt(36 x 2) = 6sqrt(2)." },
+          { q: "Simplify (2^5 x 2^3) / 2^4.", a: "2^(5+3-4) = 2^4 = 16." }
+        ],
+        practice: [
+          "Simplify 48 / 6 + 7 x 3 - 5.",
+          "Simplify sqrt(200).",
+          "Find the value of (3^4 x 3^2) / 3^3.",
+          "Rationalize 1 / (sqrt(5) + sqrt(2)).",
+          "Simplify 3/4 + 5/8 - 1/2."
+        ]
+      },
+      {
+        id: "percentage",
+        letter: "C",
+        title: "Percentage",
+        group: "Arithmetic",
+        theme: "topic-arithmetic",
+        level: "Easy",
+        yield: "high",
+        weightage: "SSC 2Q | Banking 2Q | Railway 1Q",
+        intro: "Percentage links directly to profit-loss, SI-CI, DI, ratio, and mixture. It is one of the highest-value arithmetic chapters.",
+        concepts: [
+          "Percentage is fraction out of 100. Convert quickly between fraction, decimal, and percent.",
+          "Successive changes are multiplicative, not additive."
+        ],
+        formulas: [
+          { title: "Basic Percentage", formula: "x% of y = (x/100) x y", meaning: "Also note x% of y = y% of x.", shortcut: "Swap values if one multiplication is easier.", examTip: "Very common in mental math shortcuts." },
+          { title: "Percentage Change", formula: "New Value = Original x (100 +/- p) / 100", meaning: "Use + for increase, - for decrease.", shortcut: "10% increase means multiply by 1.10.", examTip: "Asked in salary, price, population questions." },
+          { title: "Successive Change", formula: "Net % change = a + b + ab/100", meaning: "Use signs with care; decrease means negative.", shortcut: "20% increase then 10% decrease = 20 - 10 - 2 = 8% increase.", examTip: "Common in Banking and SSC." },
+          { title: "Reverse Percentage", formula: "Original = Final x 100 / (100 +/- p)", meaning: "Useful when final value after change is given.", shortcut: "Always reverse the multiplier.", examTip: "Frequently asked in discount and salary problems." }
+        ],
+        shortcuts: [
+          "1% of a number means move decimal two places left.",
+          "To find 12.5%, divide by 8; 16 2/3%, divide by 6; 33 1/3%, divide by 3.",
+          "Use fraction forms: 25% = 1/4, 40% = 2/5, 75% = 3/4."
+        ],
+        examTricks: [
+          "If options are close, compute net multiplier instead of step-by-step percentage.",
+          "In comparison questions, difference% = difference/base x 100. Base matters."
+        ],
+        memory: "Increase adds multiplier; decrease subtracts multiplier; successive percentages never combine by plain addition.",
+        mistakes: [
+          "Taking percentage change on the wrong base.",
+          "Adding successive changes directly."
+        ],
+        patterns: [
+          "Population increase-decrease over 2 years.",
+          "Find original amount after final amount and percentage change."
+        ],
+        examples: [
+          { q: "Find 15% of 240.", a: "10% = 24 and 5% = 12, so 15% = 36." },
+          { q: "A value increases by 20% then decreases by 10%. Net change?", a: "20 - 10 - 2 = 8% increase." },
+          { q: "After 25% discount, price is 600. Original price?", a: "Original = 600 x 100 / 75 = 800." }
+        ],
+        practice: [
+          "Find 37.5% of 320.",
+          "A number decreases from 500 to 425. Find percentage decrease.",
+          "A salary rises by 12% from 25000. Find new salary.",
+          "A population falls by 5% then rises by 5%. Find net change.",
+          "After a 20% increase, a value is 360. Find original value."
+        ]
+      },
+      {
+        id: "ratio-proportion",
+        letter: "D",
+        title: "Ratio & Proportion",
+        group: "Arithmetic",
+        theme: "topic-arithmetic",
+        level: "Medium",
+        yield: "high",
+        weightage: "SSC 1-2Q | Banking 1-2Q | Railway 1Q",
+        intro: "Ratio and proportion power questions on comparison, division of quantities, partnership, and mixtures. It is a backbone chapter for arithmetic reasoning.",
+        concepts: [
+          "Ratio compares like quantities; proportion states equality of two ratios.",
+          "In direct proportion, both move together; in inverse proportion, one rises while the other falls."
+        ],
+        formulas: [
+          { title: "Basic Ratio", formula: "a : b = ka : kb", meaning: "Multiplying or dividing both terms by same non-zero value keeps ratio same.", shortcut: "Reduce ratio to lowest terms first.", examTip: "Used in age, speed, mixture, and partnership." },
+          { title: "Fourth Proportional", formula: "If a : b = c : d, then d = (b x c) / a", meaning: "Product of extremes = product of means.", shortcut: "Cross multiply immediately.", examTip: "Direct aptitude formula." },
+          { title: "Division in Ratio", formula: "If total T is divided in m:n, shares are Tm/(m+n) and Tn/(m+n)", meaning: "Used for money, age, partnership, marks.", shortcut: "First find one part = T/(m+n).", examTip: "Very common in SSC and Banking." },
+          { title: "Partnership Share", formula: "Profit share proportional to Investment x Time", meaning: "Compare capital-months or capital-years.", shortcut: "Convert all investment periods to same unit.", examTip: "High repeat pattern in arithmetic sets." }
+        ],
+        shortcuts: [
+          "If ratio changes after adding same amount, convert ratios into equations fast.",
+          "For direct proportion, use x1/y1 = x2/y2; for inverse, use x1y1 = x2y2.",
+          "In partnership, make a small table: person, capital, time, product."
+        ],
+        examTricks: [
+          "Equal additions or subtractions often turn ratio questions into linear equations.",
+          "When only ratio is required, avoid finding actual total."
+        ],
+        memory: "Direct means same direction, inverse means opposite direction, partnership means capital x time.",
+        mistakes: [
+          "Ignoring time in partnership questions.",
+          "Using ratio between unlike units without converting."
+        ],
+        patterns: [
+          "Divide amount in given ratio after some change.",
+          "Compare workers, men-days, and money shares."
+        ],
+        examples: [
+          { q: "Divide 840 in the ratio 3:4.", a: "Total parts = 7. One part = 120. Shares = 360 and 480." },
+          { q: "If x:y = 4:5 and y:z = 3:2, find x:y:z.", a: "Equalize y. x:y = 12:15 and y:z = 15:10, so x:y:z = 12:15:10." },
+          { q: "A invests 5000 for 12 months, B invests 6000 for 10 months. Profit ratio?", a: "5000x12 : 6000x10 = 60000 : 60000 = 1:1." }
+        ],
+        practice: [
+          "Divide 960 in the ratio 5:7.",
+          "If 8 men do work in 15 days, how many men are needed in 10 days?",
+          "Find the fourth proportional to 6, 8, 15.",
+          "A and B invest 4000 and 7000 for 9 months each. Find profit ratio.",
+          "The ratio of two numbers is 7:9 and their sum is 96. Find the numbers."
+        ]
+      },
+      {
+        id: "average",
+        letter: "E",
+        title: "Average",
+        group: "Arithmetic",
+        theme: "topic-arithmetic",
+        level: "Easy",
+        yield: "medium",
+        weightage: "SSC 1Q | Banking 1Q | Railway 1Q",
+        intro: "Average questions are short, scoring, and often mixed with ages, marks, salary, and data interpretation.",
+        concepts: [
+          "Average is balancing value: total quantity divided by number of items.",
+          "Replacement or inclusion questions are solved by total change, not by recomputing everything."
+        ],
+        formulas: [
+          { title: "Basic Average", formula: "Average = Sum of observations / Number of observations", meaning: "Core definition.", shortcut: "If count and average are known, total = average x count.", examTip: "Basic direct question type." },
+          { title: "Combined Average", formula: "Combined average = (n1a1 + n2a2) / (n1 + n2)", meaning: "Use when two groups are merged.", shortcut: "Think total marks or total age.", examTip: "Common in class, team, and salary sets." },
+          { title: "Replacement Rule", formula: "Change in average = (New value - Old value) / Number of items", meaning: "Applies when one item is replaced.", shortcut: "Average shift tells total shift.", examTip: "SSC favorites this pattern." },
+          { title: "Weighted Average", formula: "Average = Sum(wx) / Sum(w)", meaning: "w means frequency or weight.", shortcut: "Useful in DI and mixture-like values.", examTip: "Banking and statistics crossover." }
+        ],
+        shortcuts: [
+          "In consecutive numbers, average is middle number.",
+          "Average of equally spaced numbers = average of first and last.",
+          "If one new item enters, new total = old total + new item."
+        ],
+        examTricks: [
+          "Age questions with average change are usually total-change questions.",
+          "Avoid listing all numbers when sequence is regular."
+        ],
+        memory: "Average means fair share; any extra or deficit from average balances total deviation to zero.",
+        mistakes: [
+          "Using new count with old total incorrectly.",
+          "For replacement, forgetting one old value leaves."
+        ],
+        patterns: [
+          "Average of students before and after teacher joins or leaves.",
+          "Average marks of boys and girls combined."
+        ],
+        examples: [
+          { q: "Average of 5 numbers is 18. Find their sum.", a: "Sum = 18 x 5 = 90." },
+          { q: "Average of 10 students is 42. One student with marks 36 is replaced by 56. New average?", a: "Total increases by 20, so average increases by 20/10 = 2. New average = 44." },
+          { q: "Average of first 9 natural numbers?", a: "Average of 1 to 9 = (1+9)/2 = 5." }
+        ],
+        practice: [
+          "Average of 8 numbers is 24. Find their sum.",
+          "Combined average of 20 students scoring 60 and 30 students scoring 70?",
+          "Average age of 6 persons is 25. One aged 31 leaves and one aged 19 joins. New average?",
+          "Average of 12, 18, 24, 30, 36?",
+          "The average of 15 items is 32. What is the total?"
+        ]
+      },
+      {
+        id: "profit-loss",
+        letter: "F",
+        title: "Profit & Loss",
+        group: "Arithmetic",
+        theme: "topic-arithmetic",
+        level: "Medium",
+        yield: "high",
+        weightage: "SSC 2Q | Banking 2Q | Railway 1Q",
+        intro: "Profit and Loss is one of the most asked commercial math chapters. It connects percentage, discount, marked price, false weights, and successive changes.",
+        concepts: [
+          "Profit or loss is always calculated on cost price unless question says otherwise.",
+          "Marked price and selling price differ by discount; cost price and selling price decide profit or loss."
+        ],
+        formulas: [
+          { title: "Profit and Loss Percent", formula: "Profit% = Profit/CP x 100, Loss% = Loss/CP x 100", meaning: "CP is the base.", shortcut: "Always ask: what is the base?", examTip: "Most common direct formula." },
+          { title: "Selling Price", formula: "SP = CP x (100 +/- p)/100", meaning: "Use + for profit, - for loss.", shortcut: "20% profit means SP = 1.2 CP.", examTip: "Useful in reverse questions too." },
+          { title: "Discount", formula: "Discount% = Discount/MP x 100 and SP = MP x (100 - d)/100", meaning: "MP means marked price.", shortcut: "Discount never decides profit unless CP is known.", examTip: "SSC and Railway repeat this often." },
+          { title: "Successive Discounts", formula: "Net discount = a + b - ab/100", meaning: "Works like successive percentage decrease.", shortcut: "Two discounts of 20% and 10% give 28%, not 30%.", examTip: "Favorite in Banking aptitude." }
+        ],
+        shortcuts: [
+          "When gain% and loss% are small, use direct multipliers 1.1, 0.9, 1.25, etc.",
+          "Dishonest dealer questions use true quantity / false quantity.",
+          "If SPs are same, use ratio method for CP comparison."
+        ],
+        examTricks: [
+          "Marked price-discount-profit chains are best solved in fractions or multipliers.",
+          "If options are given, take CP = 100 whenever convenient."
+        ],
+        memory: "Profit-loss on CP, discount on MP, and net discount follows successive percentage rule.",
+        mistakes: [
+          "Calculating profit percent on SP instead of CP.",
+          "Adding successive discounts directly."
+        ],
+        patterns: [
+          "Marked price after desired profit and given discount.",
+          "Dishonest shopkeeper using false weights."
+        ],
+        examples: [
+          { q: "CP = 400, SP = 460. Find profit%.", a: "Profit = 60, so profit% = 60/400 x 100 = 15%." },
+          { q: "Marked price is 800, discount 25%. Find SP.", a: "SP = 800 x 75/100 = 600." },
+          { q: "Successive discounts 10% and 20%. Net discount?", a: "10 + 20 - 2 = 28%." }
+        ],
+        practice: [
+          "A watch is sold for 1200 at 20% profit. Find CP.",
+          "A trader gives 15% discount on MP 2000. Find SP.",
+          "An article is sold at 10% loss for 540. Find CP.",
+          "Find net discount of 12% and 8%.",
+          "A shopkeeper uses 900 g for 1 kg and gains 20%. Find total gain%."
+        ]
+      },
+      {
+        id: "simple-interest",
+        letter: "G",
+        title: "Simple Interest",
+        group: "Arithmetic",
+        theme: "topic-arithmetic",
+        level: "Easy",
+        yield: "medium",
+        weightage: "SSC 1Q | Banking 1Q | Railway 1Q",
+        intro: "Simple Interest is formula-driven and easy to score. Questions usually ask principal, rate, time, amount, or comparison between two schemes.",
+        concepts: [
+          "Interest is always on original principal only in SI.",
+          "Convert months to years unless rate is given per month."
+        ],
+        formulas: [
+          { title: "Simple Interest", formula: "SI = PRT/100", meaning: "P = principal, R = annual rate, T = time in years.", shortcut: "When P = 100, SI = RT directly.", examTip: "Classic direct question." },
+          { title: "Amount", formula: "Amount = P + SI", meaning: "Total money at end.", shortcut: "First compute SI, then add principal.", examTip: "Often used in reverse questions." },
+          { title: "Principal", formula: "P = (100 x SI) / (RT)", meaning: "Reverse of SI formula.", shortcut: "Cross multiply cleanly.", examTip: "Useful when interest, rate, time are given." },
+          { title: "Rate or Time", formula: "R = (100 x SI)/(PT), T = (100 x SI)/(PR)", meaning: "Direct rearrangement.", shortcut: "Keep units consistent.", examTip: "Easy marks in objective exams." }
+        ],
+        shortcuts: [
+          "For 5 years at 8%, SI = 40% of principal.",
+          "If amount and principal are given, interest = amount - principal.",
+          "For months, use T = months/12."
+        ],
+        examTricks: [
+          "Many SI questions can be solved by percentage instead of full formula.",
+          "If interest is same in equal times on different principals, compare rates inversely."
+        ],
+        memory: "SI stays linear because interest is always on original principal.",
+        mistakes: [
+          "Using compound growth formula in SI questions.",
+          "Not converting months into year fraction."
+        ],
+        patterns: [
+          "Find principal when amount, rate, and time are given.",
+          "Compare SI earned on two sums at different rates."
+        ],
+        examples: [
+          { q: "Find SI on 5000 at 8% for 3 years.", a: "SI = 5000 x 8 x 3 / 100 = 1200." },
+          { q: "Amount on 4000 at 5% SI for 2 years?", a: "SI = 400, Amount = 4400." },
+          { q: "SI is 900, rate 10%, time 3 years. Find principal.", a: "P = 100 x 900 / (10 x 3) = 3000." }
+        ],
+        practice: [
+          "Find SI on 7200 at 12% for 2 years.",
+          "Find amount on 2500 at 6% for 4 years.",
+          "If SI on a sum for 5 years at 7% is 1400, find principal.",
+          "Find rate if SI on 8000 for 3 years is 1920.",
+          "Find time if SI on 6000 at 10% is 900."
+        ]
+      },
+      {
+        id: "compound-interest",
+        letter: "H",
+        title: "Compound Interest",
+        group: "Arithmetic",
+        theme: "topic-arithmetic",
+        level: "Medium",
+        yield: "medium",
+        weightage: "SSC 1Q | Banking 1-2Q | Railway 1Q",
+        intro: "Compound Interest is slightly heavier than SI but still formula-friendly. It often appears in Banking aptitude and mixed commercial math questions.",
+        concepts: [
+          "In CI, every period's interest is added to principal for next period.",
+          "Understand annual, half-yearly, and quarterly compounding clearly."
+        ],
+        formulas: [
+          { title: "Compound Amount", formula: "A = P(1 + R/100)^n", meaning: "Annual compounding.", shortcut: "Use growth factor directly.", examTip: "Core CI formula." },
+          { title: "Compound Interest", formula: "CI = A - P", meaning: "Interest is final amount minus principal.", shortcut: "Sometimes only amount is needed.", examTip: "Asked directly and indirectly." },
+          { title: "Half-Yearly Compounding", formula: "A = P(1 + R/200)^(2n)", meaning: "Rate halves, periods double.", shortcut: "Quarterly means R/400 and 4n periods.", examTip: "Favorite Banking pattern." },
+          { title: "Difference Between CI and SI", formula: "For 2 years: Difference = P(R/100)^2", meaning: "Only for 2-year annual compounding.", shortcut: "Very quick for small conceptual questions.", examTip: "SSC loves this shortcut." }
+        ],
+        shortcuts: [
+          "For small integer rates, expand by multipliers instead of repeated formula writing.",
+          "In 2-year questions, compare SI and CI difference first.",
+          "When amount ratio is given, use compound multiplier ratio."
+        ],
+        examTricks: [
+          "Check whether compounding frequency changed before solving.",
+          "If options are objective, approximate powers smartly."
+        ],
+        memory: "CI compounds interest on interest; SI does not.",
+        mistakes: [
+          "Using R/100 and n without adjusting for half-yearly or quarterly conditions.",
+          "Confusing amount with interest."
+        ],
+        patterns: [
+          "Difference between SI and CI for 2 years.",
+          "Find amount under half-yearly compounding."
+        ],
+        examples: [
+          { q: "Find amount on 1000 at 10% CI for 2 years.", a: "A = 1000(1.1)^2 = 1210." },
+          { q: "Find CI on 5000 at 8% for 1 year.", a: "A = 5400, so CI = 400." },
+          { q: "Difference between CI and SI on 2000 at 10% for 2 years?", a: "Difference = 2000 x (10/100)^2 = 20." }
+        ],
+        practice: [
+          "Find amount on 8000 at 12% CI for 2 years.",
+          "Find CI on 6000 at 5% for 3 years.",
+          "Find amount on 10000 at 10% compounded half-yearly for 1 year.",
+          "Difference between SI and CI on 5000 at 6% for 2 years?",
+          "Find principal if amount becomes 12100 in 2 years at 10% CI."
+        ]
+      },
+      {
+        id: "time-work",
+        letter: "I",
+        title: "Time & Work",
+        group: "Arithmetic",
+        theme: "topic-arithmetic",
+        level: "Medium",
+        yield: "high",
+        weightage: "SSC 2Q | Banking 1Q | Railway 1Q",
+        intro: "Time and Work is one of the most important aptitude chapters. It is built on efficiency, work rates, and unit work.",
+        concepts: [
+          "If a person finishes work in x days, one day work = 1/x.",
+          "More efficient worker takes less time; efficiency is inverse of time."
+        ],
+        formulas: [
+          { title: "Work Formula", formula: "Work = Rate x Time", meaning: "Rate means work per unit time.", shortcut: "Assume total work as LCM of days when convenient.", examTip: "Foundation of the whole chapter." },
+          { title: "Combined Work", formula: "1/T = 1/a + 1/b + 1/c", meaning: "T is combined time.", shortcut: "Use LCM method for quick manual solving.", examTip: "Direct recurring pattern." },
+          { title: "Efficiency Ratio", formula: "If A:B efficiency = m:n, then time ratio = n:m", meaning: "Efficiency and time are inversely proportional.", shortcut: "More speed means less time.", examTip: "Frequently used in worker comparisons." },
+          { title: "Man-Days", formula: "Men x Days x Hours x Efficiency = Constant Work", meaning: "Use in variable labor questions.", shortcut: "Keep only changing factors in proportional form.", examTip: "Used in workforce scheduling questions." }
+        ],
+        shortcuts: [
+          "Take total work as LCM of individual days to avoid fractions.",
+          "If A is twice as efficient as B, A:B time = 1:2.",
+          "For alternate work, compute work done day by day only until pattern repeats."
+        ],
+        examTricks: [
+          "Check if question is easier through efficiency ratio than direct fraction addition.",
+          "For wages based on work, wages are proportional to work done."
+        ],
+        memory: "Work goes with efficiency and time; time goes opposite to efficiency.",
+        mistakes: [
+          "Adding days directly instead of rates.",
+          "Confusing ratio of times with ratio of efficiencies."
+        ],
+        patterns: [
+          "Two workers together, then one leaves after some days.",
+          "Men, women, and children equivalent work rates."
+        ],
+        examples: [
+          { q: "A does work in 12 days and B in 18 days. Time together?", a: "1/T = 1/12 + 1/18 = 5/36, so T = 36/5 = 7.2 days." },
+          { q: "If A is 50% more efficient than B, find time ratio A:B.", a: "Efficiency ratio = 3:2, so time ratio = 2:3." },
+          { q: "A alone does work in 10 days. In 4 days, how much work done?", a: "Daily work = 1/10, so in 4 days work = 4/10 = 2/5." }
+        ],
+        practice: [
+          "A finishes a job in 15 days and B in 20 days. Find combined time.",
+          "If 12 men finish a work in 18 days, how many men are needed in 9 days?",
+          "A is twice as efficient as B. If B takes 24 days, how many days does A take?",
+          "A and B together finish in 8 days, A alone in 12 days. Find B alone time.",
+          "A completes 3/4 work in 9 days. Find total days required."
+        ]
+      },
+      {
+        id: "pipe-cistern",
+        letter: "J",
+        title: "Pipe & Cistern",
+        group: "Arithmetic",
+        theme: "topic-arithmetic",
+        level: "Medium",
+        yield: "medium",
+        weightage: "SSC 1Q | Banking 1Q | Railway 1Q",
+        intro: "Pipe and Cistern is Time and Work with water flow. Filling pipes are positive rates and leak or outlet pipes are negative rates.",
+        concepts: [
+          "A pipe filling tank in x hours has rate 1/x.",
+          "Outlet or leak subtracts from inlet rate."
+        ],
+        formulas: [
+          { title: "Filling Rate", formula: "If a pipe fills tank in x hours, rate = 1/x", meaning: "Same idea as work rate.", shortcut: "Use LCM as total tank volume when easy.", examTip: "Base formula for all questions." },
+          { title: "Net Rate", formula: "Net rate = Sum of inlet rates - Sum of outlet rates", meaning: "Positive for filling, negative for emptying.", shortcut: "Sign discipline avoids errors.", examTip: "Common in mixed inlet-outlet questions." },
+          { title: "Combined Time", formula: "Time = 1 / Net rate", meaning: "After net rate is known.", shortcut: "Keep fractional rates in common denominator.", examTip: "Direct aptitude pattern." },
+          { title: "Partial Opening", formula: "Filled part = Rate x open time", meaning: "Use segment-wise if pipes open and close at different times.", shortcut: "Break timeline into phases.", examTip: "Frequently asked in SSC." }
+        ],
+        shortcuts: [
+          "Treat tank capacity as LCM of times for quick integer calculations.",
+          "If leak opens later, solve filled amount before and after separately.",
+          "When net rate becomes negative, tank empties instead of fills."
+        ],
+        examTricks: [
+          "Write rates in one line with plus and minus signs before doing any arithmetic.",
+          "If question mentions half-filled tank, work on only remaining fraction."
+        ],
+        memory: "Inlet adds, outlet subtracts, and net rate decides direction.",
+        mistakes: [
+          "Adding outlet rate instead of subtracting.",
+          "Using total tank instead of remaining tank after first phase."
+        ],
+        patterns: [
+          "One pipe opens after some delay.",
+          "Leak reduces total filling efficiency."
+        ],
+        examples: [
+          { q: "Pipe A fills in 6 h, B in 8 h. Time together?", a: "1/T = 1/6 + 1/8 = 7/24, so T = 24/7 h." },
+          { q: "A fills in 5 h and leak empties in 20 h. Net time?", a: "Net rate = 1/5 - 1/20 = 3/20, so time = 20/3 h." },
+          { q: "A fills 1/4 tank in 2 h. Full tank time?", a: "Rate = 1/8 tank per hour, so total time = 8 h." }
+        ],
+        practice: [
+          "One pipe fills a tank in 10 h, another in 15 h. Find combined time.",
+          "A tank is filled in 12 h but leak empties in 18 h. Find net time.",
+          "A pipe fills half tank in 3 h. How much time for full tank?",
+          "Two pipes fill in 20 h and 30 h, and one outlet empties in 60 h. Find net time.",
+          "A fills tank in 8 h. After 2 h, leak opens and tank gets full in 10 h from start. Find leak time alone."
+        ]
+      },
+      {
+        id: "time-speed-distance",
+        letter: "K",
+        title: "Time, Speed & Distance",
+        group: "Arithmetic",
+        theme: "topic-arithmetic",
+        level: "Easy",
+        yield: "high",
+        weightage: "SSC 1-2Q | Banking 1Q | Railway 2Q",
+        intro: "This chapter covers motion basics and supports trains, boats, races, and circular track questions. Accuracy in conversion and average speed matters a lot.",
+        concepts: [
+          "Distance, speed, and time are directly linked by a simple formula triangle.",
+          "Average speed depends on total distance and total time, not arithmetic average unless times are equal."
+        ],
+        formulas: [
+          { title: "Core Formula", formula: "Distance = Speed x Time", meaning: "Therefore Speed = Distance/Time and Time = Distance/Speed.", shortcut: "Use unit consistency first.", examTip: "Most direct aptitude formula." },
+          { title: "Conversion", formula: "1 m/s = 18/5 km/h and 1 km/h = 5/18 m/s", meaning: "Most important speed conversion.", shortcut: "Multiply by 18/5 to convert m/s to km/h.", examTip: "Frequently used in train and race problems." },
+          { title: "Average Speed for Equal Distances", formula: "Average speed = 2xy / (x + y)", meaning: "Only for equal distances at speeds x and y.", shortcut: "Harmonic mean shortcut.", examTip: "Common in SSC and Banking." },
+          { title: "Relative Speed", formula: "Opposite direction = x + y, same direction = |x - y|", meaning: "Used in trains, races, and crossings.", shortcut: "Close-in speed matters, not individual speed.", examTip: "Very frequent pattern." }
+        ],
+        shortcuts: [
+          "For equal distances, never use simple average of speeds.",
+          "If time is in minutes, convert to hours or seconds as needed.",
+          "When relative motion is involved, think closing speed."
+        ],
+        examTricks: [
+          "In word problems, write all units before solving.",
+          "Speed ratio and time ratio invert when distance is fixed."
+        ],
+        memory: "DST triangle: distance on top, speed and time below.",
+        mistakes: [
+          "Using simple average instead of weighted or total average speed.",
+          "Ignoring unit conversion."
+        ],
+        patterns: [
+          "Average speed for up-down or onward-return travel.",
+          "Relative speed in chase and crossing problems."
+        ],
+        examples: [
+          { q: "A car travels 180 km in 3 h. Find speed.", a: "Speed = 180/3 = 60 km/h." },
+          { q: "Convert 20 m/s into km/h.", a: "20 x 18/5 = 72 km/h." },
+          { q: "A travels 60 km at 40 km/h and returns at 60 km/h. Average speed?", a: "Equal distances, so average = 2 x 40 x 60 / (40 + 60) = 48 km/h." }
+        ],
+        practice: [
+          "A train covers 300 km in 5 hours. Find speed.",
+          "Convert 54 km/h into m/s.",
+          "Find average speed for equal distances at 30 km/h and 45 km/h.",
+          "Two people move at 5 km/h and 7 km/h in opposite directions. Find relative speed.",
+          "If speed increases by 25%, how much does time decrease for same distance?"
+        ]
+      },
+      {
+        id: "trains",
+        letter: "L",
+        title: "Trains",
+        group: "Arithmetic",
+        theme: "topic-arithmetic",
+        level: "Medium",
+        yield: "high",
+        weightage: "SSC 1Q | Banking 0-1Q | Railway 2Q",
+        intro: "Train questions are applications of relative speed and length. They are popular in Railway and SSC exams because they test motion plus unit conversion.",
+        concepts: [
+          "When a train crosses a pole, it covers only its own length.",
+          "When a train crosses a platform or another train, total covered length changes."
+        ],
+        formulas: [
+          { title: "Crossing a Pole", formula: "Time = Length of train / Speed", meaning: "Use same units.", shortcut: "Convert km/h to m/s first.", examTip: "Direct basic train question." },
+          { title: "Crossing a Platform", formula: "Time = (Train length + Platform length) / Speed", meaning: "Total obstruction length matters.", shortcut: "Add lengths first.", examTip: "Very common in Railway NTPC and Group D." },
+          { title: "Two Trains Opposite", formula: "Time = (L1 + L2) / (S1 + S2)", meaning: "Relative speed is sum.", shortcut: "Think total closing speed.", examTip: "Classic objective pattern." },
+          { title: "Two Trains Same Direction", formula: "Time = (L1 + L2) / |S1 - S2|", meaning: "Relative speed is difference.", shortcut: "Bigger speed minus smaller speed.", examTip: "Chase-based train problem." }
+        ],
+        shortcuts: [
+          "Use meters and seconds for all train formulas to avoid confusion.",
+          "If train crosses a man, platform length is zero and person length is zero.",
+          "Train length = speed x time in pole questions."
+        ],
+        examTricks: [
+          "The moment word 'passes completely' appears, total length is involved.",
+          "If a platform question gives same train with two times, subtract equations to get platform or train length."
+        ],
+        memory: "Pole means one length, platform means added length, trains mean added train lengths.",
+        mistakes: [
+          "Using km/h directly with length in meters.",
+          "Using speed difference for opposite-direction motion."
+        ],
+        patterns: [
+          "One train crossing another in opposite or same direction.",
+          "Find train length or platform length from crossing times."
+        ],
+        examples: [
+          { q: "A 180 m train at 54 km/h crosses a pole. Time?", a: "54 km/h = 15 m/s. Time = 180/15 = 12 s." },
+          { q: "A 150 m train crosses a 250 m platform at 20 m/s. Time?", a: "Total distance = 400 m, time = 400/20 = 20 s." },
+          { q: "Two trains 120 m and 180 m, speeds 36 and 54 km/h opposite. Time to cross?", a: "Speeds = 10 and 15 m/s, total length = 300 m, relative speed = 25 m/s, time = 12 s." }
+        ],
+        practice: [
+          "A 200 m train at 72 km/h crosses a pole. Find time.",
+          "A 160 m train crosses a 240 m platform in 25 s. Find speed.",
+          "Two trains of 100 m and 150 m move in same direction at 54 km/h and 72 km/h. Find crossing time.",
+          "A train crosses a man in 8 s at 45 km/h. Find train length.",
+          "A train crosses a 300 m platform in 30 s and a pole in 18 s. Find train length."
+        ]
+      },
+      {
+        id: "boat-stream",
+        letter: "M",
+        title: "Boat & Stream",
+        group: "Arithmetic",
+        theme: "topic-arithmetic",
+        level: "Medium",
+        yield: "medium",
+        weightage: "SSC 1Q | Banking 1Q | Railway 1Q",
+        intro: "Boat and Stream is relative speed on water. Upstream is slower, downstream is faster, and stream speed must be separated from boat's still-water speed.",
+        concepts: [
+          "Downstream speed = boat speed in still water + stream speed.",
+          "Upstream speed = boat speed in still water - stream speed."
+        ],
+        formulas: [
+          { title: "Downstream and Upstream", formula: "D = b + s, U = b - s", meaning: "b = still-water speed, s = stream speed.", shortcut: "Add with stream, subtract against stream.", examTip: "Most common direct formula." },
+          { title: "Boat Speed", formula: "b = (D + U) / 2", meaning: "Average of downstream and upstream speeds.", shortcut: "Symmetry formula.", examTip: "Very fast in objective exams." },
+          { title: "Stream Speed", formula: "s = (D - U) / 2", meaning: "Half the difference.", shortcut: "Difference split into two equal parts.", examTip: "Frequently asked in SSC." },
+          { title: "Time Formula", formula: "Time = Distance / Speed", meaning: "Use D for downstream, U for upstream.", shortcut: "Keep direction separate.", examTip: "Applied in trip-based questions." }
+        ],
+        shortcuts: [
+          "Find still-water speed and stream speed first before solving multi-step questions.",
+          "If same distance upstream and downstream, average speed is 2DU/(D+U).",
+          "Never mix upstream time with downstream speed."
+        ],
+        examTricks: [
+          "If downstream and upstream times are given for same distance, derive D and U directly.",
+          "Option elimination works well after approximating stream speed."
+        ],
+        memory: "With stream add, against stream subtract.",
+        mistakes: [
+          "Taking simple average of times instead of speeds.",
+          "Using still-water speed in place of upstream speed."
+        ],
+        patterns: [
+          "Find boat speed and stream speed from given upstream-downstream data.",
+          "Find round-trip time for same distance."
+        ],
+        examples: [
+          { q: "Downstream speed 12 km/h, upstream speed 8 km/h. Find boat speed.", a: "Boat speed = (12+8)/2 = 10 km/h." },
+          { q: "Downstream 15 km/h, upstream 9 km/h. Find stream speed.", a: "Stream speed = (15-9)/2 = 3 km/h." },
+          { q: "A boat goes 24 km upstream at 6 km/h. Time?", a: "Time = 24/6 = 4 h." }
+        ],
+        practice: [
+          "Downstream speed is 18 km/h and upstream speed is 10 km/h. Find boat speed.",
+          "Find stream speed if downstream and upstream speeds are 14 km/h and 8 km/h.",
+          "A boat travels 30 km downstream in 2 h. Find downstream speed.",
+          "Boat speed in still water is 11 km/h and stream speed is 2 km/h. Find upstream speed.",
+          "A boat covers equal distances at 12 km/h downstream and 8 km/h upstream. Find average speed."
+        ]
+      },
+      {
+        id: "mensuration-2d",
+        letter: "N",
+        title: "Mensuration 2D",
+        group: "Geometry",
+        theme: "topic-geometry",
+        level: "Medium",
+        yield: "high",
+        weightage: "SSC 2Q | Banking 1Q | Railway 1-2Q",
+        intro: "Mensuration 2D is a direct-formula chapter. Most questions revolve around perimeter, area, diagonals, and shaded regions of common figures.",
+        concepts: [
+          "Always identify whether area, perimeter, side, radius, or diagonal is asked.",
+          "Draw a rough figure; many mistakes disappear once dimensions are labeled."
+        ],
+        formulas: [
+          { title: "Square and Rectangle", formula: "Square: Area = a^2, Perimeter = 4a; Rectangle: Area = l x b, Perimeter = 2(l+b)", meaning: "a = side, l = length, b = breadth.", shortcut: "If side doubles, square area becomes 4 times.", examTip: "Very common in SSC and Railway." },
+          { title: "Triangle", formula: "Area = (1/2)bh; Heron: Area = sqrt[s(s-a)(s-b)(s-c)]", meaning: "s = (a+b+c)/2.", shortcut: "Right triangle area = product of legs / 2.", examTip: "Height-base and semi-perimeter forms are both important." },
+          { title: "Circle", formula: "Area = pi r^2, Circumference = 2pi r", meaning: "r = radius.", shortcut: "If radius doubles, area becomes 4 times and circumference 2 times.", examTip: "Frequently asked in SSC CGL, CHSL, NTPC." },
+          { title: "Rhombus and Trapezium", formula: "Rhombus Area = (1/2)d1d2; Trapezium Area = (1/2)(a+b)h", meaning: "d1,d2 are diagonals; a,b are parallel sides.", shortcut: "Trapezium area = average of parallel sides x height.", examTip: "High-value direct formula questions." }
+        ],
+        shortcuts: [
+          "Use pi = 22/7 when radius is multiple of 7, else pi = 3.14 if needed.",
+          "For shaded regions, subtract smaller area from larger area.",
+          "Rectangle diagonal often hides a Pythagoras step."
+        ],
+        examTricks: [
+          "Read units carefully: cm, m, m^2 can trap fast solvers.",
+          "In square-to-circle inscribed questions, side and diameter are often equal."
+        ],
+        memory: "Square side squared, triangle half bh, circle pi r square, trapezium average of parallel sides into height.",
+        mistakes: [
+          "Using diameter in place of radius in circle area.",
+          "For trapezium, forgetting only parallel sides are averaged."
+        ],
+        patterns: [
+          "Area comparison after dimension change.",
+          "Shaded region between square and circle or rectangle and semicircle."
+        ],
+        examples: [
+          { q: "Find area of circle of radius 7 cm.", a: "Area = 22/7 x 7 x 7 = 154 cm^2." },
+          { q: "Area of triangle with base 12 cm and height 9 cm.", a: "Area = 1/2 x 12 x 9 = 54 cm^2." },
+          { q: "Find area of trapezium with parallel sides 8 cm and 14 cm, height 5 cm.", a: "Area = 1/2 x (8+14) x 5 = 55 cm^2." }
+        ],
+        practice: [
+          "Find perimeter of square of side 11 cm.",
+          "Find area of rectangle of length 15 cm and breadth 8 cm.",
+          "Find circumference of circle of radius 14 cm.",
+          "Find area of rhombus with diagonals 10 cm and 12 cm.",
+          "Find area of triangle with sides 13 cm, 14 cm, 15 cm."
+        ]
+      },
+      {
+        id: "mensuration-3d",
+        letter: "O",
+        title: "Mensuration 3D",
+        group: "Geometry",
+        theme: "topic-geometry",
+        level: "Medium",
+        yield: "high",
+        weightage: "SSC 1-2Q | Banking 1Q | Railway 1Q",
+        intro: "Mensuration 3D asks volume, curved surface area, total surface area, and conversion of solids. It is very scoring if core formulas are memorized well.",
+        concepts: [
+          "Volume uses cubic units; surface area uses square units.",
+          "Read carefully whether curved surface area or total surface area is required."
+        ],
+        formulas: [
+          { title: "Cube and Cuboid", formula: "Cube: V = a^3, TSA = 6a^2; Cuboid: V = lbh, TSA = 2(lb + bh + hl)", meaning: "a = side.", shortcut: "If cube side doubles, volume becomes 8 times.", examTip: "Very frequent in direct formula questions." },
+          { title: "Cylinder", formula: "V = pi r^2 h, CSA = 2pi rh, TSA = 2pi r(h+r)", meaning: "r = radius, h = height.", shortcut: "Think base circle area into height.", examTip: "SSC and Railway regularly ask this." },
+          { title: "Cone", formula: "V = (1/3)pi r^2 h, CSA = pi rl", meaning: "l = slant height = sqrt(r^2 + h^2).", shortcut: "Cone volume is one-third cylinder with same base and height.", examTip: "Very useful in comparison questions." },
+          { title: "Sphere and Hemisphere", formula: "Sphere: V = (4/3)pi r^3, SA = 4pi r^2; Hemisphere: V = (2/3)pi r^3, TSA = 3pi r^2", meaning: "Hemisphere includes base in TSA.", shortcut: "Sphere is two hemispheres.", examTip: "Popular in 3D mensuration sets." }
+        ],
+        shortcuts: [
+          "When liquid transfer is involved, equate volumes.",
+          "For cone and cylinder comparisons, same base-height gives 1:3 volume ratio.",
+          "Check whether one solid is open or closed before TSA."
+        ],
+        examTricks: [
+          "Use pi = 22/7 only when it simplifies; otherwise keep pi symbolic until end.",
+          "In conversion questions, write volume equation before any arithmetic."
+        ],
+        memory: "Cube six faces, cylinder base into height, cone one-third cylinder, sphere four-third pi r cube.",
+        mistakes: [
+          "Using slant height where vertical height is needed for volume.",
+          "For hemisphere TSA, forgetting circular base area."
+        ],
+        patterns: [
+          "Find radius or height from volume and area data.",
+          "Melt and recast one solid into another."
+        ],
+        examples: [
+          { q: "Find volume of cube of side 5 cm.", a: "V = 5^3 = 125 cm^3." },
+          { q: "Find volume of cylinder of radius 7 cm and height 10 cm.", a: "V = 22/7 x 49 x 10 = 1540 cm^3." },
+          { q: "Find TSA of hemisphere of radius 6 cm.", a: "TSA = 3pi r^2 = 3pi x 36 = 108pi cm^2." }
+        ],
+        practice: [
+          "Find TSA of cube of side 8 cm.",
+          "Find volume of cuboid 12 cm x 5 cm x 4 cm.",
+          "Find CSA of cone with radius 7 cm and slant height 10 cm.",
+          "Find volume of sphere of radius 3 cm.",
+          "A cylinder and cone have same base and height. Compare their volumes."
+        ]
+      },
+      {
+        id: "algebra",
+        letter: "P",
+        title: "Algebra",
+        group: "Algebra",
+        theme: "topic-algebra",
+        level: "Medium",
+        yield: "high",
+        weightage: "SSC 1-2Q | Banking 1Q | Railway 1Q",
+        intro: "Algebra chapters in competitive exams focus on identities, linear equations, and quadratic equations rather than long proofs. Speed comes from pattern recognition and formula recall.",
+        concepts: [
+          "Most objective questions reduce to identities, substitution, or coefficient comparison.",
+          "Quadratic questions often ask roots, sum-product of roots, or discriminant nature."
+        ],
+        formulas: [
+          { title: "Basic Identities", formula: "(a+b)^2 = a^2 + 2ab + b^2; (a-b)^2 = a^2 - 2ab + b^2; a^2-b^2 = (a-b)(a+b)", meaning: "Core algebra simplification tools.", shortcut: "Use identity before expansion.", examTip: "Very frequently tested." },
+          { title: "Three-Term Identity", formula: "(a+b+c)^2 = a^2 + b^2 + c^2 + 2(ab+bc+ca)", meaning: "Used in expression simplification.", shortcut: "Square of sum = sum of squares + double products.", examTip: "Common in SSC algebra." },
+          { title: "Linear Equation", formula: "ax + b = 0 => x = -b/a", meaning: "a != 0.", shortcut: "Move constant, then divide coefficient.", examTip: "Direct one-mark style question." },
+          { title: "Quadratic Formula", formula: "x = [-b +/- sqrt(b^2 - 4ac)] / 2a; alpha + beta = -b/a; alpha beta = c/a", meaning: "For ax^2 + bx + c = 0.", shortcut: "Use sum-product if roots not needed explicitly.", examTip: "Most repeated algebra formula." }
+        ],
+        shortcuts: [
+          "Substitute convenient values only when question is identity or coefficient-independent.",
+          "If roots are asked and factorization is visible, avoid quadratic formula.",
+          "For symmetric expressions, identities save time."
+        ],
+        examTricks: [
+          "Look for perfect square trinomials and difference of squares immediately.",
+          "Discriminant > 0 means distinct real roots, = 0 means equal roots."
+        ],
+        memory: "Square of sum has +2ab, square of difference has -2ab, and quadratic roots use b^2 - 4ac.",
+        mistakes: [
+          "Wrong sign in -b or discriminant.",
+          "For product of roots, forgetting division by a."
+        ],
+        patterns: [
+          "Evaluate expression using identity without long multiplication.",
+          "Find sum or product of roots directly from coefficients."
+        ],
+        examples: [
+          { q: "Expand (x+5)^2.", a: "x^2 + 10x + 25." },
+          { q: "Solve 3x - 12 = 0.", a: "3x = 12, so x = 4." },
+          { q: "Find roots of x^2 - 5x + 6 = 0.", a: "Factor: (x-2)(x-3)=0, so roots are 2 and 3." }
+        ],
+        practice: [
+          "Simplify (2a-3b)^2.",
+          "Solve 7x + 14 = 0.",
+          "Find sum of roots of 2x^2 - 9x + 4 = 0.",
+          "Find product of roots of 3x^2 + x - 2 = 0.",
+          "Factorize x^2 - 16."
+        ]
+      },
+      {
+        id: "geometry",
+        letter: "Q",
+        title: "Geometry",
+        group: "Geometry",
+        theme: "topic-geometry",
+        level: "Medium",
+        yield: "medium",
+        weightage: "SSC 1Q | Banking 0-1Q | Railway 1Q",
+        intro: "Competitive geometry usually tests direct theorems, angle facts, triangle properties, and circle rules. A clean diagram is the biggest shortcut.",
+        concepts: [
+          "Geometry is less about formula memorization and more about standard facts.",
+          "Always mark parallel lines, equal sides, and radii clearly."
+        ],
+        formulas: [
+          { title: "Angle Sum Rules", formula: "Triangle angle sum = 180°, Quadrilateral angle sum = 360°, n-gon interior sum = (n-2) x 180°", meaning: "Core angle framework.", shortcut: "Polygon sum grows by 180° per extra side beyond triangle.", examTip: "Direct theory and calculation questions." },
+          { title: "Triangle Theorems", formula: "Exterior angle = sum of two interior opposite angles; Pythagoras: h^2 = p^2 + b^2", meaning: "Used in line, triangle, and mensuration problems.", shortcut: "Look for right triangle hidden inside figures.", examTip: "Very common." },
+          { title: "Circle Facts", formula: "Angle at center = 2 x angle at circumference on same arc; Radius tangent angle = 90°", meaning: "Circle basics.", shortcut: "Tangent is always perpendicular to radius at point of contact.", examTip: "Frequently repeated theorem." },
+          { title: "Congruence and Similarity", formula: "Similar triangles => corresponding sides proportional and areas in square ratio", meaning: "Used in height-distance and geometry mixtures.", shortcut: "Same shape, different size => similarity.", examTip: "Helpful in many indirect problems." }
+        ],
+        shortcuts: [
+          "If two sides in triangle are equal, base angles are equal.",
+          "When parallel lines cut a transversal, alternate interior angles are equal.",
+          "In cyclic quadrilateral, opposite angles are supplementary."
+        ],
+        examTricks: [
+          "A rough sketch often reveals hidden equal angles faster than text reading.",
+          "Check if a quadrilateral is cyclic when opposite angles sum to 180°."
+        ],
+        memory: "Tangent is 90° to radius, center angle is double circumference angle, and triangle outside angle equals two inside opposite angles.",
+        mistakes: [
+          "Assuming a figure is drawn to scale when it is not.",
+          "For similar triangles, using equal sides instead of proportional sides."
+        ],
+        patterns: [
+          "Find missing angle using triangle and parallel line rules.",
+          "Use circle theorem or cyclic quadrilateral fact."
+        ],
+        examples: [
+          { q: "Find interior angle sum of hexagon.", a: "(6-2) x 180 = 720°." },
+          { q: "In a right triangle, legs are 6 and 8. Find hypotenuse.", a: "h = sqrt(36+64) = 10." },
+          { q: "Angle at circumference is 35° on an arc. Find center angle.", a: "Center angle = 2 x 35° = 70°." }
+        ],
+        practice: [
+          "Find interior angle sum of octagon.",
+          "In an isosceles triangle, one angle is 40°. Find other two angles.",
+          "A tangent touches a circle. Find angle between radius and tangent.",
+          "Find hypotenuse if base = 9 and perpendicular = 12.",
+          "Opposite angles of a quadrilateral are 110° and 70°. Is it cyclic?"
+        ]
+      },
+      {
+        id: "trigonometry",
+        letter: "R",
+        title: "Trigonometry",
+        group: "Geometry",
+        theme: "topic-geometry",
+        level: "Hard",
+        yield: "high",
+        weightage: "SSC 1-2Q | Banking 0-1Q | Railway 1Q",
+        intro: "Trigonometry in competitive exams is mostly limited to basic ratios, standard values, identities, and heights-distances applications.",
+        concepts: [
+          "In right triangles, trigonometric ratios compare sides with respect to an angle.",
+          "Standard values of 0°, 30°, 45°, 60°, and 90° must be memorized."
+        ],
+        formulas: [
+          { title: "Basic Ratios", formula: "sin = P/H, cos = B/H, tan = P/B, cosec = H/P, sec = H/B, cot = B/P", meaning: "P = perpendicular, B = base, H = hypotenuse.", shortcut: "Tan = sin/cos.", examTip: "Fundamental formula set." },
+          { title: "Standard Values", formula: "sin30 = 1/2, cos60 = 1/2, sin45 = cos45 = 1/sqrt(2), tan45 = 1, tan60 = sqrt(3)", meaning: "Know all 0°,30°,45°,60°,90° values.", shortcut: "Learn sin row first, get cos by reverse.", examTip: "Most asked fact in exam trigonometry." },
+          { title: "Identities", formula: "sin^2A + cos^2A = 1, 1 + tan^2A = sec^2A, 1 + cot^2A = cosec^2A", meaning: "Used in simplification.", shortcut: "Square-pair identities are the main exam tools.", examTip: "Direct objective application." },
+          { title: "Heights and Distances", formula: "tan(theta) = Height / Base", meaning: "Use angle of elevation or depression.", shortcut: "Draw a right triangle first.", examTip: "SSC often asks one-step height-distance problems." }
+        ],
+        shortcuts: [
+          "Memorize sin values as sqrt(0/4), sqrt(1/4), sqrt(2/4), sqrt(3/4), sqrt(4/4).",
+          "cos values are the reverse of sin values for 0° to 90°.",
+          "If angle values are standard, avoid calculator-style decimal work."
+        ],
+        examTricks: [
+          "Most exam questions simplify after converting everything to sin-cos or tan-sec forms.",
+          "In heights-distances, choose tan if opposite and adjacent are involved."
+        ],
+        memory: "SOH-CAH-TOA style memory: sin opposite/hypotenuse, cos adjacent/hypotenuse, tan opposite/adjacent.",
+        mistakes: [
+          "Interchanging base and perpendicular without fixing angle reference.",
+          "Using wrong standard value, especially for 30° and 60°."
+        ],
+        patterns: [
+          "Evaluate trig expression using identities and standard values.",
+          "Find tower height or distance using tan."
+        ],
+        examples: [
+          { q: "Find sin 30°.", a: "sin 30° = 1/2." },
+          { q: "If tan theta = 3/4, find sec theta.", a: "Take P=3, B=4, H=5. sec theta = H/B = 5/4." },
+          { q: "Angle of elevation of a tower top is 45° from 20 m away. Find height.", a: "tan45 = h/20 = 1, so h = 20 m." }
+        ],
+        practice: [
+          "Find cos 60°.",
+          "Evaluate tan 45° + sin 30°.",
+          "If sin A = 5/13, find cos A.",
+          "A pole casts a shadow of 10 m and angle of elevation is 30°. Find height.",
+          "Simplify sec^2 theta - tan^2 theta."
+        ]
+      },
+      {
+        id: "coordinate-geometry",
+        letter: "S",
+        title: "Coordinate Geometry",
+        group: "Geometry",
+        theme: "topic-geometry",
+        level: "Medium",
+        yield: "medium",
+        weightage: "SSC 1Q | Banking 0-1Q | Railway 1Q",
+        intro: "Coordinate Geometry in aptitude focuses on distance, section, slope, and area of triangle. Most questions are direct substitutions into standard formulas.",
+        concepts: [
+          "Represent points clearly as (x, y) and write formula before substitution.",
+          "Midpoint and section formulas are easy marks if sign handling is careful."
+        ],
+        formulas: [
+          { title: "Distance Formula", formula: "Distance = sqrt[(x2-x1)^2 + (y2-y1)^2]", meaning: "Between two points.", shortcut: "Check if horizontal or vertical first; then one difference is zero.", examTip: "Most common coordinate formula." },
+          { title: "Midpoint Formula", formula: "Midpoint = ((x1+x2)/2, (y1+y2)/2)", meaning: "Point exactly halfway.", shortcut: "Average x and average y.", examTip: "Direct one-step question." },
+          { title: "Section Formula", formula: "For internal division m:n, point = ((mx2 + nx1)/(m+n), (my2 + ny1)/(m+n))", meaning: "Use proportional division.", shortcut: "Nearer point gets smaller opposite weight.", examTip: "Asked conceptually in exams." },
+          { title: "Area of Triangle", formula: "Area = 1/2 |x1(y2-y3) + x2(y3-y1) + x3(y1-y2)|", meaning: "Coordinate area formula.", shortcut: "If area is zero, points are collinear.", examTip: "Useful in direct and concept questions." }
+        ],
+        shortcuts: [
+          "For vertical or horizontal lines, distance is simple coordinate difference.",
+          "Slope = (y2-y1)/(x2-x1), and equal slopes imply parallel lines.",
+          "Midpoint questions often reduce to averaging quickly."
+        ],
+        examTricks: [
+          "Use sign brackets carefully; coordinate algebra errors are common.",
+          "If asked whether points are collinear, area zero is quickest."
+        ],
+        memory: "Distance uses squared differences, midpoint uses average, section uses weighted average.",
+        mistakes: [
+          "Dropping negative signs while squaring differences.",
+          "Using wrong order of weights in section formula."
+        ],
+        patterns: [
+          "Find distance or midpoint between two points.",
+          "Check collinearity through area."
+        ],
+        examples: [
+          { q: "Find distance between (1,2) and (4,6).", a: "Distance = sqrt(3^2 + 4^2) = 5." },
+          { q: "Find midpoint of (2,3) and (8,7).", a: "Midpoint = (5,5)." },
+          { q: "Find area of triangle with points (0,0), (4,0), (0,3).", a: "Right triangle, area = 1/2 x 4 x 3 = 6 square units." }
+        ],
+        practice: [
+          "Find distance between (-2,1) and (3,1).",
+          "Find midpoint of (-4,6) and (2,8).",
+          "Find slope of line through (1,2) and (5,10).",
+          "Check if (0,0), (2,2), and (4,4) are collinear.",
+          "Find point dividing join of (1,1) and (5,9) internally in ratio 1:1."
+        ]
+      },
+      {
+        id: "permutation-combination",
+        letter: "T",
+        title: "Permutation & Combination",
+        group: "Algebra",
+        theme: "topic-algebra",
+        level: "Hard",
+        yield: "medium",
+        weightage: "SSC 0-1Q | Banking 1Q | Railway 0-1Q",
+        intro: "Permutation and Combination tests arrangement and selection logic. Banking and higher-level exams ask it more than basic railway papers.",
+        concepts: [
+          "Permutation means arrangement matters; combination means selection only.",
+          "Factorial notation and restrictions like repetition or circular placement change formulas."
+        ],
+        formulas: [
+          { title: "Factorial", formula: "n! = n(n-1)(n-2)...1 and 0! = 1", meaning: "Foundation of P&C.", shortcut: "Cancel common factorial terms before expanding.", examTip: "Used everywhere in P&C." },
+          { title: "Permutation", formula: "nPr = n! / (n-r)!", meaning: "Order matters.", shortcut: "Pick and arrange r from n.", examTip: "Direct arrangement questions." },
+          { title: "Combination", formula: "nCr = n! / [r!(n-r)!]", meaning: "Order does not matter.", shortcut: "Use nCr = nC(n-r) to reduce work.", examTip: "Selection questions use this." },
+          { title: "Circular Permutation", formula: "(n-1)!", meaning: "For arranging n distinct objects in a circle.", shortcut: "Fix one position to remove rotation duplicates.", examTip: "Common conceptual question." }
+        ],
+        shortcuts: [
+          "Use smaller r via nCr = nC(n-r).",
+          "For words with repeated letters, divide by repeated factorials.",
+          "When people sit together, treat them as one block first."
+        ],
+        examTricks: [
+          "First decide: arrangement or selection? That alone solves half the confusion.",
+          "Restrictions like 'always together' or 'never together' need case handling."
+        ],
+        memory: "P for position matters, C for choosing matters.",
+        mistakes: [
+          "Using permutation where combination is required.",
+          "For circular arrangement, using n! instead of (n-1)!"
+        ],
+        patterns: [
+          "Arrange letters, digits, or persons in line or circle.",
+          "Choose committee or team from a group."
+        ],
+        examples: [
+          { q: "How many ways to arrange 4 books?", a: "4! = 24 ways." },
+          { q: "Find 5C2.", a: "5C2 = 5x4 / 2x1 = 10." },
+          { q: "How many circular arrangements of 5 persons?", a: "(5-1)! = 24." }
+        ],
+        practice: [
+          "Find 6P3.",
+          "Find 8C3.",
+          "In how many ways can 6 people sit in a row?",
+          "How many committees of 3 can be formed from 7 people?",
+          "How many circular arrangements of 7 distinct beads are possible?"
+        ]
+      },
+      {
+        id: "probability",
+        letter: "U",
+        title: "Probability",
+        group: "Data",
+        theme: "topic-data",
+        level: "Medium",
+        yield: "medium",
+        weightage: "SSC 0-1Q | Banking 1Q | Railway 0-1Q",
+        intro: "Probability questions in competitive exams are mostly elementary: coins, dice, cards, bags, and event complements.",
+        concepts: [
+          "Probability lies between 0 and 1.",
+          "Favorable outcomes divided by total equally likely outcomes gives basic probability."
+        ],
+        formulas: [
+          { title: "Basic Probability", formula: "P(E) = Favorable outcomes / Total outcomes", meaning: "For equally likely outcomes.", shortcut: "Count carefully before calculating.", examTip: "Most common formula." },
+          { title: "Complement", formula: "P(not E) = 1 - P(E)", meaning: "Use when direct counting is harder.", shortcut: "At least one often becomes complement of none.", examTip: "Very common in dice and cards." },
+          { title: "Addition Rule", formula: "P(A or B) = P(A) + P(B) - P(A and B)", meaning: "For overlapping events.", shortcut: "Subtract overlap once.", examTip: "Useful in set-style event questions." },
+          { title: "Independent Events", formula: "P(A and B) = P(A) x P(B)", meaning: "When events are independent.", shortcut: "Sequential without replacement is usually not independent.", examTip: "Concept-based exam favorite." }
+        ],
+        shortcuts: [
+          "For 'at least one', use complement of 'none'.",
+          "In coin and dice questions, total outcomes are powers: 2^n or 6^n.",
+          "Draw sample space only for very small cases."
+        ],
+        examTricks: [
+          "Card suits, face cards, red-black counts should be memorized.",
+          "Without replacement changes total outcomes each step."
+        ],
+        memory: "Probability is chance out of total; complement turns hard counting into easy subtraction.",
+        mistakes: [
+          "Adding probabilities of overlapping events without subtracting common part.",
+          "Using independence incorrectly in without-replacement cases."
+        ],
+        patterns: [
+          "Dice sum, coin outcomes, and card drawing.",
+          "At least one success or exactly one success."
+        ],
+        examples: [
+          { q: "Probability of getting an even number on a die?", a: "Favorable = 3 (2,4,6), total = 6, so probability = 1/2." },
+          { q: "Probability of not getting a head in one coin toss?", a: "P(not head) = 1 - 1/2 = 1/2." },
+          { q: "Probability of drawing a king from 52 cards?", a: "There are 4 kings, so probability = 4/52 = 1/13." }
+        ],
+        practice: [
+          "Find probability of drawing a red card from a deck.",
+          "Find probability of getting sum 7 on two dice.",
+          "A bag has 3 red and 2 blue balls. Find probability of drawing red.",
+          "Find probability of at least one head in two coin tosses.",
+          "Find probability of selecting a vowel from the word INDIA."
+        ]
+      },
+      {
+        id: "data-interpretation",
+        letter: "V",
+        title: "Data Interpretation",
+        group: "Data",
+        theme: "topic-data",
+        level: "Medium",
+        yield: "high",
+        weightage: "SSC 1-2Q | Banking 2-3Q | Railway 1Q",
+        intro: "Data Interpretation combines percentage, ratio, average, and comparison over tables, bar charts, pie charts, and line graphs. Speed depends more on arithmetic than on graph theory.",
+        concepts: [
+          "Read units first: lakhs, thousands, percentages, crores, degrees.",
+          "Approximation and option elimination save time in long chart sets."
+        ],
+        formulas: [
+          { title: "Percentage Change", formula: "Change% = (New - Old) / Old x 100", meaning: "Base is old value.", shortcut: "Sign tells increase or decrease.", examTip: "Most repeated DI formula." },
+          { title: "Ratio from Data", formula: "Ratio = Quantity1 : Quantity2", meaning: "Reduce after comparing same units.", shortcut: "Cancel common factors early.", examTip: "Common in chart comparison." },
+          { title: "Average from Data", formula: "Average = Total / Number of entries", meaning: "Used in year-wise and category-wise data.", shortcut: "Estimate first to check reasonableness.", examTip: "Frequent in Banking sets." },
+          { title: "Pie Chart Conversion", formula: "Value/Total = Angle/360", meaning: "Angle proportion gives quantity proportion.", shortcut: "10% of pie = 36°.", examTip: "Repeated in SSC and Banking." }
+        ],
+        shortcuts: [
+          "Round nearby values only if options are far apart.",
+          "Convert fractions to percentages mentally: 1/8 = 12.5%, 1/5 = 20%.",
+          "Answer ratio questions before exact-value questions when possible."
+        ],
+        examTricks: [
+          "Check if data can be simplified by common division, especially in tables.",
+          "In pie charts, convert angles to fractions of 360 quickly."
+        ],
+        memory: "DI is arithmetic on data; graph reading is easy, calculation is the real test.",
+        mistakes: [
+          "Ignoring unit mismatch between rows or years.",
+          "Using new value as base in percentage change."
+        ],
+        patterns: [
+          "Profit, sales, production, population, and marks table questions.",
+          "Pie chart sector comparison and percentage change."
+        ],
+        examples: [
+          { q: "Sales rise from 200 to 260. Percentage increase?", a: "Increase = 60, so increase% = 60/200 x 100 = 30%." },
+          { q: "Pie chart sector is 72°. What percent of total?", a: "72/360 x 100 = 20%." },
+          { q: "Average of values 40, 50, 70, 90?", a: "Total = 250, average = 62.5." }
+        ],
+        practice: [
+          "Population falls from 800 to 680. Find percentage decrease.",
+          "If a pie sector is 90°, what fraction of total is it?",
+          "Find ratio of 150 to 225 in simplest form.",
+          "Average of 120, 140, 160, 180, 200?",
+          "Value of one category is 25% of total 480. Find the category value."
+        ]
+      },
+      {
+        id: "statistics",
+        letter: "W",
+        title: "Statistics",
+        group: "Data",
+        theme: "topic-data",
+        level: "Easy",
+        yield: "medium",
+        weightage: "SSC 0-1Q | Banking 1Q | Railway 0-1Q",
+        intro: "Statistics in competitive exams is mostly limited to mean, median, mode, and sometimes range or frequency tables.",
+        concepts: [
+          "Mean is arithmetic average; median is middle value; mode is most frequent value.",
+          "Arrange data before finding median."
+        ],
+        formulas: [
+          { title: "Mean", formula: "Mean = Sum of observations / Number of observations", meaning: "Arithmetic average.", shortcut: "For frequency table, use Sum(fx)/Sum(f).", examTip: "Most common statistics question." },
+          { title: "Median", formula: "For odd n, median = (n+1)/2 th term; for even n, median = average of n/2 th and (n/2 + 1) th terms", meaning: "Data must be ordered.", shortcut: "Sort first, then locate center.", examTip: "Repeated direct concept." },
+          { title: "Mode", formula: "Mode = Most frequent observation", meaning: "Highest frequency term.", shortcut: "In grouped data, basic exams rarely go too deep.", examTip: "Easy theory-based question." },
+          { title: "Empirical Relation", formula: "Mode = 3 Median - 2 Mean", meaning: "Approximate relation.", shortcut: "Useful when one measure is missing.", examTip: "Sometimes asked in Banking." }
+        ],
+        shortcuts: [
+          "For evenly spaced data, mean often equals middle term.",
+          "If all values increase by k, mean, median, and mode all increase by k.",
+          "Mode needs frequency count, not size."
+        ],
+        examTricks: [
+          "Median questions often become easy after sorting mentally.",
+          "Check repeated values before calculating anything; sometimes mode is enough."
+        ],
+        memory: "Mean balances, median centers, mode repeats.",
+        mistakes: [
+          "Finding median without arranging data.",
+          "Confusing mean with mode."
+        ],
+        patterns: [
+          "Direct mean-median-mode questions on small datasets.",
+          "Missing value from given average."
+        ],
+        examples: [
+          { q: "Find mean of 4, 6, 8, 10.", a: "Mean = 28/4 = 7." },
+          { q: "Find median of 2, 7, 4, 9, 5.", a: "Ordered data: 2,4,5,7,9. Median = 5." },
+          { q: "Find mode of 3, 5, 5, 7, 8.", a: "Mode = 5." }
+        ],
+        practice: [
+          "Find mean of 12, 15, 18, 21.",
+          "Find median of 9, 4, 11, 6, 8, 7.",
+          "Find mode of 2, 3, 3, 3, 5, 6.",
+          "Average of 5 numbers is 20. If four are 18, 22, 25, 15, find fifth.",
+          "If mean = 10 and median = 8, find mode using empirical relation."
+        ]
+      },
+      {
+        id: "logarithms",
+        letter: "X",
+        title: "Logarithms",
+        group: "Algebra",
+        theme: "topic-algebra",
+        level: "Hard",
+        yield: "medium",
+        weightage: "SSC 0-1Q | Banking 1Q | Railway 0-1Q",
+        intro: "Logarithms are not always frequent in basic papers, but when asked, the questions are usually based on standard laws and simple evaluation.",
+        concepts: [
+          "A logarithm asks: to what power should the base be raised to get the number?",
+          "Log laws convert multiplication, division, and powers into simpler operations."
+        ],
+        formulas: [
+          { title: "Definition", formula: "If a^x = N, then log_a N = x", meaning: "a > 0, a != 1, N > 0.", shortcut: "Think exponent form first.", examTip: "Base concept question." },
+          { title: "Product and Quotient Law", formula: "log_a(xy) = log_a x + log_a y; log_a(x/y) = log_a x - log_a y", meaning: "Break products and ratios.", shortcut: "Multiplication becomes addition.", examTip: "Most used log law." },
+          { title: "Power Law", formula: "log_a(x^n) = n log_a x", meaning: "Bring power in front.", shortcut: "Useful for simplification.", examTip: "Common in expression reduction." },
+          { title: "Change of Base", formula: "log_a b = (log_c b) / (log_c a)", meaning: "Any convenient base c may be used.", shortcut: "Often use common log or natural log symbolically.", examTip: "Popular in higher aptitude questions." }
+        ],
+        shortcuts: [
+          "Convert to exponential form if expression feels abstract.",
+          "Memorize log_a a = 1 and log_a 1 = 0.",
+          "If bases match, compare arguments directly."
+        ],
+        examTricks: [
+          "Look for factorization of the number inside log before applying laws.",
+          "Many equations become linear after using power law."
+        ],
+        memory: "Logs turn multiply into add, divide into subtract, powers into front multipliers.",
+        mistakes: [
+          "Applying log laws across addition: log(x+y) is not log x + log y.",
+          "Ignoring base restrictions."
+        ],
+        patterns: [
+          "Evaluate simple log values and simplify log expressions.",
+          "Solve basic log equations."
+        ],
+        examples: [
+          { q: "Find log_2 8.", a: "2^3 = 8, so log_2 8 = 3." },
+          { q: "Simplify log 20 - log 5.", a: "log(20/5) = log 4." },
+          { q: "Find log_3 27.", a: "3^3 = 27, so value = 3." }
+        ],
+        practice: [
+          "Find log_10 1000.",
+          "Simplify log_a(x^5).",
+          "Evaluate log_5 125.",
+          "Simplify log 18 + log 2 - log 3.",
+          "If log_2 x = 4, find x."
+        ]
+      },
+      {
+        id: "mixture-allegation",
+        letter: "Y",
+        title: "Mixture & Allegation",
+        group: "Arithmetic",
+        theme: "topic-arithmetic",
+        level: "Medium",
+        yield: "high",
+        weightage: "SSC 1Q | Banking 1Q | Railway 1Q",
+        intro: "Mixture and Allegation is a favorite aptitude chapter for combining liquids, metals, or prices. It is fast once average price and allegation logic are clear.",
+        concepts: [
+          "Mean value of a mixture is a weighted average.",
+          "Allegation gives ratio of cheaper and dearer quantities by cross-differences."
+        ],
+        formulas: [
+          { title: "Mean Price", formula: "Mean = Total cost / Total quantity", meaning: "Weighted average of component prices.", shortcut: "Think total value, not plain average.", examTip: "Foundational formula." },
+          { title: "Rule of Allegation", formula: "Cheaper : Dearer = (Dearer price - Mean price) : (Mean price - Cheaper price)", meaning: "Cross-difference rule.", shortcut: "Outer minus middle, middle minus outer.", examTip: "Very common in SSC and Banking." },
+          { title: "Replacement", formula: "Amount removed = (Quantity x Difference wanted) / Difference original", meaning: "Useful in water-milk replacement type questions.", shortcut: "Track only the component being diluted.", examTip: "Frequently asked pattern." },
+          { title: "Weighted Mixture", formula: "Final concentration = Total pure quantity / Total mixture quantity", meaning: "Applies to milk-water, acid, metal purity.", shortcut: "Calculate pure part first.", examTip: "Common in conceptual questions." }
+        ],
+        shortcuts: [
+          "Use allegation when two prices form one mean price.",
+          "For repeated replacement, remaining original fraction follows multiplicative decay.",
+          "In milk-water problems, track milk quantity separately."
+        ],
+        examTricks: [
+          "If only ratio is asked, allegation is usually faster than equation solving.",
+          "Price mixture and concentration mixture use the same weighted-average logic."
+        ],
+        memory: "Mean sits in middle; allegation uses opposite differences.",
+        mistakes: [
+          "Taking simple average instead of weighted average.",
+          "Writing allegation ratio in wrong order."
+        ],
+        patterns: [
+          "Mix two varieties to get a target mean price.",
+          "Water added or removed from milk mixture."
+        ],
+        examples: [
+          { q: "Rice at Rs 20/kg and Rs 30/kg mixed to make Rs 24/kg. Find ratio.", a: "Cheaper:Dearer = (30-24):(24-20) = 6:4 = 3:2." },
+          { q: "A 40 L mixture has 25% water. How much water is there?", a: "Water = 25% of 40 = 10 L." },
+          { q: "Tea at Rs 40 and Rs 60 are mixed equally. Mean price?", a: "Equal quantities => average = (40+60)/2 = Rs 50." }
+        ],
+        practice: [
+          "Mix Rs 50/kg and Rs 70/kg rice to get mixture of Rs 58/kg. Find ratio.",
+          "A 60 L mixture contains 20% alcohol. Find alcohol quantity.",
+          "Find mean price when 3 kg at Rs 20 and 2 kg at Rs 35 are mixed.",
+          "Milk and water are in ratio 3:2 in 25 L mixture. Find milk quantity.",
+          "A shopkeeper wants mixture price Rs 36 from Rs 30 and Rs 45. Find ratio."
+        ]
+      },
+      {
+        id: "age",
+        letter: "Z",
+        title: "Age",
+        group: "Arithmetic",
+        theme: "topic-arithmetic",
+        level: "Easy",
+        yield: "medium",
+        weightage: "SSC 1Q | Banking 1Q | Railway 1Q",
+        intro: "Age problems are linear equation questions framed around past, present, future, and ratio relationships. They are easy once statements are translated cleanly.",
+        concepts: [
+          "Present age is the base; after x years add x, x years ago subtract x.",
+          "Age differences remain constant over time."
+        ],
+        formulas: [
+          { title: "Future and Past Age", formula: "After x years -> Present + x; x years ago -> Present - x", meaning: "Works for every person's age.", shortcut: "Difference between two ages stays constant.", examTip: "Core age equation idea." },
+          { title: "Ratio Method", formula: "If ages are in ratio m:n, let ages be mk and nk", meaning: "Use common multiplier k.", shortcut: "Convert word ratio into algebra immediately.", examTip: "Most common age pattern." },
+          { title: "Average Age", formula: "Average age = Total ages / Number of persons", meaning: "Useful in family problems.", shortcut: "Total age changes with births, additions, removals.", examTip: "Mixed with average chapter often." },
+          { title: "Difference Constant", formula: "If A-B = d now, then A-B = d always", meaning: "Age gap never changes.", shortcut: "This eliminates many unnecessary variables.", examTip: "Powerful in two-person age problems." }
+        ],
+        shortcuts: [
+          "Represent present ages first, then move to past or future.",
+          "In father-son problems, age difference is fixed forever.",
+          "When ratio changes with time, write ratio equations at two time points."
+        ],
+        examTricks: [
+          "Many age questions are solved faster by ratio and age-difference combination.",
+          "Check if one variable is enough instead of assigning two."
+        ],
+        memory: "Age moves equally with time, but ratio changes; difference stays same.",
+        mistakes: [
+          "Changing age difference over time.",
+          "Using wrong sign for years ago or after years."
+        ],
+        patterns: [
+          "Father-son, brother-sister, and present-past ratio questions.",
+          "Average age before and after one member joins or leaves."
+        ],
+        examples: [
+          { q: "A is 20 years old. What was A's age 7 years ago?", a: "20 - 7 = 13 years." },
+          { q: "Present ages of A and B are in ratio 3:5 and sum is 32. Find ages.", a: "Let ages = 3k and 5k. Then 8k = 32, k = 4, ages = 12 and 20." },
+          { q: "Father is 30 years older than son. If son is 12, father's age?", a: "12 + 30 = 42 years." }
+        ],
+        practice: [
+          "A person's age after 9 years will be 35. Find present age.",
+          "The ratio of ages of A and B is 4:7 and sum is 44. Find ages.",
+          "A mother is 24 years older than her daughter. Daughter is 11. Find mother's age.",
+          "Average age of 5 friends is 18. Find total age.",
+          "Five years ago, a father was 4 times his son's age. If son was 6 then, find father's age now."
+        ]
+      }
+    ];
+
+    const fastTricks = [
+      "Multiply by 5: divide by 2 and add a zero.",
+      "Multiply by 25: divide by 4 and add two zeros.",
+      "Multiply by 125: divide by 8 and add three zeros.",
+      "Find 10% by shifting decimal one place left.",
+      "Find 1% by shifting decimal two places left.",
+      "12.5% means divide by 8.",
+      "16 2/3% means divide by 6.",
+      "33 1/3% means divide by 3.",
+      "66 2/3% means multiply by 2/3.",
+      "75% means multiply by 3/4.",
+      "20% increase means multiply by 1.2.",
+      "20% decrease means multiply by 0.8.",
+      "Successive percentage uses a + b + ab/100 with signs.",
+      "For equal distances, average speed is harmonic mean, not simple mean.",
+      "If ratio is m:n and total is T, one part = T/(m+n).",
+      "For ages in ratio, use mk and nk, not random variables.",
+      "In HCF-LCM questions, start from prime factors.",
+      "Unit digit problems: reduce exponent by cycle length.",
+      "Remainder problems: reduce base modulo divisor first.",
+      "Divisibility by 11: alternating digit sum test.",
+      "Square numbers near 50 using (50+d)^2 = 2500 + 100d + d^2.",
+      "Square numbers near 100 using (100+d)^2 = 10000 + 200d + d^2.",
+      "Difference of squares: a^2 - b^2 = (a-b)(a+b).",
+      "If one worker is twice efficient, time becomes half.",
+      "Pipe questions: inlet positive, outlet negative.",
+      "Boat-stream: still water = (down + up)/2.",
+      "Boat-stream: stream = (down - up)/2.",
+      "Train crossing pole: only train length matters.",
+      "Circle diameter = 2r; avoid radius-diameter mix-up.",
+      "If radius doubles, circle area becomes 4 times.",
+      "If dimension doubles, cube volume becomes 8 times.",
+      "For probabilities with 'at least one', use complement.",
+      "nCr = nC(n-r); choose smaller r.",
+      "log_a a = 1 and log_a 1 = 0.",
+      "sin values from 0° to 90°: sqrt(0/4), sqrt(1/4), sqrt(2/4), sqrt(3/4), sqrt(4/4).",
+      "cos values are reverse of sin values.",
+      "tan45 = 1, tan30 = 1/sqrt(3), tan60 = sqrt(3).",
+      "Median needs sorted data first.",
+      "Mode is the most frequent value, not the largest value.",
+      "Weighted average means total weighted value divided by total weight.",
+      "Alligation ratio uses opposite differences.",
+      "In a cyclic quadrilateral, opposite angles sum to 180°.",
+      "In a triangle, exterior angle equals sum of two interior opposite angles.",
+      "For internal division midpoint, ratio is 1:1.",
+      "Simple interest stays linear; compound interest grows period by period.",
+      "Difference between SI and CI for 2 years = P(R/100)^2.",
+      "Convert km/h to m/s by multiplying 5/18.",
+      "Convert m/s to km/h by multiplying 18/5.",
+      "In average replacement, average change = item change / count.",
+      "Use options and approximation when full arithmetic is long."
+    ];
+
+    const lastDayBlocks = [
+      {
+        title: "Arithmetic First",
+        items: [
+          "Revise Percentage, Ratio, Profit & Loss, SI, CI, Time & Work, Time-Speed-Distance.",
+          "Memorize all quick percent fractions: 12.5%, 16 2/3%, 20%, 25%, 33 1/3%, 40%, 50%, 75%."
+        ]
+      },
+      {
+        title: "Tables and Conversion",
+        items: [
+          "Memorize squares up to 30 perfectly and stay familiar up to 100.",
+          "Revise 18/5 and 5/18 speed conversion, pi formulas, and common fraction-percentage links."
+        ]
+      },
+      {
+        title: "Formula Revision",
+        items: [
+          "Read Top 100 Formulas once end to end without solving.",
+          "Revisit only formulas that still need thinking; automatic recall should be instant."
+        ]
+      },
+      {
+        title: "Pattern Revision",
+        items: [
+          "Practice one question each on remainder, unit digit, partnership, trains, boats, and mensuration.",
+          "Keep special attention on common traps: wrong base, wrong unit, wrong sign."
+        ]
+      },
+      {
+        title: "Exam Hall Strategy",
+        items: [
+          "Attempt direct-formula and direct-percentage questions first.",
+          "Skip long DI or trigonometry if basic arithmetic is still pending."
+        ]
+      },
+      {
+        title: "Accuracy Check",
+        items: [
+          "Recheck whether answer should be bigger or smaller than original value.",
+          "In options, eliminate impossible values before calculating exactly."
+        ]
+      }
+    ];
+
+    const ultraFastRevision = [
+      "Number System: HCF x LCM = product of two numbers; remainders follow cycles.",
+      "Simplification: BODMAS first; rationalize surds with conjugates.",
+      "Percentage: x% of y = y% of x; successive change = a + b + ab/100 with signs.",
+      "Ratio: total share = total x part / sum of parts; partnership uses capital x time.",
+      "Average: total = average x count; replacement changes average by difference/count.",
+      "Profit & Loss: profit-loss on CP, discount on MP, successive discounts multiply.",
+      "Simple Interest: SI = PRT/100.",
+      "Compound Interest: A = P(1 + R/100)^n.",
+      "Time & Work: work rate = 1/time; together add rates.",
+      "Pipe & Cistern: inlet positive, outlet negative.",
+      "Time-Speed-Distance: D = ST; equal-distance average speed = 2xy/(x+y).",
+      "Trains: time = total length / relative speed.",
+      "Boat & Stream: boat = (D+U)/2, stream = (D-U)/2.",
+      "Mensuration 2D: area formulas must be automatic.",
+      "Mensuration 3D: volume is cubic, surface area is square.",
+      "Algebra: memorize identities and quadratic roots formula.",
+      "Geometry: tangent-radius 90°, center angle = twice circumference angle.",
+      "Trigonometry: standard values + identities.",
+      "Coordinate Geometry: distance, midpoint, section, area of triangle.",
+      "P&C: nPr arrangement, nCr selection.",
+      "Probability: favorable/total; use complement for at least one.",
+      "DI: read units first, then use percentage and average.",
+      "Statistics: mean, median, mode and sorting for median.",
+      "Logarithms: multiply-add, divide-subtract, power comes in front.",
+      "Mixture & Allegation: cross-difference ratio.",
+      "Age: difference constant, ratios change with time."
+    ];
+
+    const examZones = [
+      {
+        title: "SSC CGL Most Asked Formulas",
+        items: [
+          "Percentage change, successive percentage, and reverse percentage.",
+          "Profit-loss-discount chain and marked price formulas.",
+          "Time & Work combined rate and efficiency inverse ratio.",
+          "Train, boat, and relative speed formulas.",
+          "Circle, triangle, trapezium, cylinder, cone, sphere formulas.",
+          "Trigonometric standard values and basic identities."
+        ]
+      },
+      {
+        title: "Railway Most Asked Formulas",
+        items: [
+          "Unit digit, remainder, HCF-LCM, and divisibility tests.",
+          "Simple percentage, average, ratio, and partnership formulas.",
+          "Train crossing formulas and speed conversion.",
+          "Mensuration 2D and 3D direct formulas.",
+          "Simple Interest and Profit & Loss direct applications.",
+          "Time & Work and Pipe & Cistern net-rate formulas."
+        ]
+      },
+      {
+        title: "Banking Aptitude Formulas",
+        items: [
+          "Percentage, DI percentage change, average, and ratio comparisons.",
+          "Simple and Compound Interest, especially annual and half-yearly CI.",
+          "Mixture and allegation, weighted averages, and partnership.",
+          "Permutation-combination and probability basics.",
+          "Quadratic roots, identities, and approximation logic.",
+          "Data interpretation speed formulas and pie-chart conversion."
+        ]
+      }
+    ];
+
+    const fractionPercentRows = [
+      ["1/2", "50%"], ["1/3", "33.33%"], ["1/4", "25%"], ["1/5", "20%"], ["1/6", "16.67%"],
+      ["1/8", "12.5%"], ["1/10", "10%"], ["2/3", "66.67%"], ["3/4", "75%"], ["4/5", "80%"],
+      ["5/8", "62.5%"], ["7/8", "87.5%"], ["9/20", "45%"], ["11/20", "55%"], ["3/5", "60%"]
+    ];
+
+    const percentFractionRows = [
+      ["10%", "1/10"], ["12.5%", "1/8"], ["16.67%", "1/6"], ["20%", "1/5"], ["25%", "1/4"],
+      ["33.33%", "1/3"], ["40%", "2/5"], ["50%", "1/2"], ["60%", "3/5"], ["66.67%", "2/3"],
+      ["75%", "3/4"], ["80%", "4/5"], ["87.5%", "7/8"], ["125%", "5/4"], ["150%", "3/2"]
+    ];
+
+    function renderToc() {
+      const toc = document.getElementById("toc-topics");
+      topics.forEach(topic => {
+        const link = document.createElement("a");
+        link.href = `#${topic.id}`;
+        link.textContent = `${topic.letter}. ${topic.title}`;
+        toc.appendChild(link);
+      });
+    }
+
+    function renderTopic(topic) {
+      const t = uiText[currentLang];
+      const hinglishNote = hinglishTopicNotes[topic.id] || "Is topic ko formula + shortcut + pattern ke through samjho. Pehle concept clear karo, phir speed build karo.";
+      const detail = document.createElement("details");
+      detail.className = `topic-panel searchable ${topic.theme}`;
+      detail.id = topic.id;
+      detail.dataset.group = topic.group;
+      detail.dataset.level = topic.level;
+      detail.dataset.yield = topic.yield;
+      detail.dataset.search = JSON.stringify(topic).toLowerCase();
+
+      detail.innerHTML = `
+        <summary>
+          <div class="topic-head">
+            <div>
+              <h4>${topic.letter}. ${topic.title}</h4>
+              <p>${topic.intro}</p>
+            </div>
+            <div class="topic-badges">
+              <span class="badge">Level: ${topic.level}</span>
+              <span class="badge">Weightage: ${topic.weightage}</span>
+            </div>
+          </div>
+        </summary>
+        <div class="topic-body">
+          <div class="topic-meta">
+            <div class="meta-box"><strong>${t.topicIntro}</strong><span>${topic.intro}</span></div>
+            <div class="meta-box"><strong>${t.difficultyLevel}</strong><span>${topic.level}</span></div>
+            <div class="meta-box"><strong>${t.expectedWeightage}</strong><span>${topic.weightage}</span></div>
+            <div class="meta-box"><strong>${t.memoryHook}</strong><span>${topic.memory}</span></div>
+          </div>
+
+          ${currentLang === "hinglish" ? `<div class="hinglish-note"><strong>${t.hinglishLabel}:</strong> ${hinglishNote}</div>` : ""}
+
+          <div class="mini-grid">
+            <div class="tip-card">
+              <h5>${t.importantConcepts}</h5>
+              <ul class="quick-list">${topic.concepts.map(item => `<li>${item}</li>`).join("")}</ul>
+            </div>
+            <div class="tip-card">
+              <h5>${t.shortcutTricks}</h5>
+              <ul class="quick-list">${topic.shortcuts.map(item => `<li>${item}</li>`).join("")}</ul>
+            </div>
+            <div class="tip-card">
+              <h5>${t.examTricks}</h5>
+              <ul class="quick-list">${topic.examTricks.map(item => `<li>${item}</li>`).join("")}</ul>
+            </div>
+            <div class="warn-card">
+              <h5>${t.commonMistakes}</h5>
+              <ul class="quick-list">${topic.mistakes.map(item => `<li>${item}</li>`).join("")}</ul>
+            </div>
+          </div>
+
+          <div class="formula-grid">
+            ${topic.formulas.map(formula => `
+              <article class="formula-card">
+                <h5>${formula.title}</h5>
+                <span class="formula-label">${t.formula}</span>
+                <span class="formula-main">${formula.formula}</span>
+                <p><strong>${t.meaning}:</strong> ${formula.meaning}</p>
+                <p><strong>${t.shortcut}:</strong> ${formula.shortcut}</p>
+                <p><strong>${t.examTip}:</strong> ${formula.examTip}</p>
+              </article>
+            `).join("")}
+          </div>
+
+          <div class="mini-grid">
+            <div class="tip-card">
+              <h5>${t.memoryTrick}</h5>
+              <p>${topic.memory}</p>
+            </div>
+            <div class="warn-card">
+              <h5>${t.patterns}</h5>
+              <ul class="quick-list">${topic.patterns.map(item => `<li>${item}</li>`).join("")}</ul>
+            </div>
+          </div>
+
+          <div class="example-grid">
+            ${topic.examples.map((example, index) => `
+              <article class="example-card">
+                <h5>${t.example} ${index + 1}</h5>
+                <p><strong>${t.question}:</strong> ${example.q}</p>
+                <p><strong>${t.solution}:</strong> ${example.a}</p>
+              </article>
+            `).join("")}
+          </div>
+
+          <div class="practice-grid">
+            <article class="practice-card">
+              <h5>${t.practice}</h5>
+              <ol>${topic.practice.map(item => `<li>${item}</li>`).join("")}</ol>
+            </article>
+          </div>
+        </div>
+      `;
+      return detail;
+    }
+
+    function renderTopics() {
+      const container = document.getElementById("topicContainer");
+      topics.forEach(topic => container.appendChild(renderTopic(topic)));
+    }
+
+    function renderTopFormulas() {
+      const t = uiText[currentLang];
+      const topFormulaGrid = document.getElementById("topFormulaGrid");
+      topFormulaGrid.innerHTML = "";
+      const formulas = topics.flatMap(topic => topic.formulas.map(f => ({
+        title: `${topic.title}: ${f.title}`,
+        formula: f.formula,
+        meaning: f.meaning,
+        shortcut: f.shortcut,
+        examTip: f.examTip
+      }))).slice(0, 100);
+
+      formulas.forEach((formula, index) => {
+        const card = document.createElement("article");
+        card.className = "formula-card";
+        card.innerHTML = `
+          <h5>${index + 1}. ${formula.title}</h5>
+          <span class="formula-label">${t.formula}</span>
+          <span class="formula-main">${formula.formula}</span>
+          <p><strong>${t.meaning}:</strong> ${formula.meaning}</p>
+          <p><strong>${t.shortcut}:</strong> ${formula.shortcut}</p>
+          <p><strong>${t.examTip}:</strong> ${formula.examTip}</p>
+        `;
+        topFormulaGrid.appendChild(card);
+      });
+    }
+
+    function renderFastTricks() {
+      const grid = document.getElementById("fastTrickGrid");
+      grid.innerHTML = "";
+      fastTricks.forEach((item, index) => {
+        const card = document.createElement("article");
+        card.className = "summary-card";
+        card.innerHTML = `<h4>⚡ Trick ${index + 1}</h4><p>${item}</p>`;
+        grid.appendChild(card);
+      });
+    }
+
+    function makeTableCard(title, headers, rows) {
+      const card = document.createElement("article");
+      card.className = "table-card";
+      const thead = `<tr>${headers.map(h => `<th>${h}</th>`).join("")}</tr>`;
+      const tbody = rows.map(row => `<tr>${row.map(cell => `<td>${cell}</td>`).join("")}</tr>`).join("");
+      card.innerHTML = `<h4>${title}</h4><div class="muted">Memorize for speed and approximation.</div><table><thead>${thead}</thead><tbody>${tbody}</tbody></table>`;
+      return card;
+    }
+
+    function renderMemoryTables() {
+      const grid = document.getElementById("memoryTables");
+      grid.innerHTML = "";
+      const squareRows = [];
+      for (let i = 1; i <= 100; i += 5) {
+        const row = [];
+        for (let j = i; j < i + 5 && j <= 100; j++) row.push(`${j}² = ${j * j}`);
+        squareRows.push(row);
+      }
+
+      const cubeRows = [];
+      for (let i = 1; i <= 50; i += 5) {
+        const row = [];
+        for (let j = i; j < i + 5 && j <= 50; j++) row.push(`${j}³ = ${j * j * j}`);
+        cubeRows.push(row);
+      }
+
+      const rootRows = [];
+      for (let i = 1; i <= 50; i += 5) {
+        const row = [];
+        for (let j = i; j < i + 5 && j <= 50; j++) row.push(`√${j * j} = ${j}`);
+        rootRows.push(row);
+      }
+
+      const cubeRootRows = [];
+      for (let i = 1; i <= 20; i += 4) {
+        const row = [];
+        for (let j = i; j < i + 4 && j <= 20; j++) row.push(`∛${j * j * j} = ${j}`);
+        cubeRootRows.push(row);
+      }
+
+      grid.appendChild(makeTableCard("Squares 1-100", ["Set 1", "Set 2", "Set 3", "Set 4", "Set 5"], squareRows));
+      grid.appendChild(makeTableCard("Cubes 1-50", ["Set 1", "Set 2", "Set 3", "Set 4", "Set 5"], cubeRows));
+      grid.appendChild(makeTableCard("Square Roots Of Perfect Squares", ["Set 1", "Set 2", "Set 3", "Set 4", "Set 5"], rootRows));
+      grid.appendChild(makeTableCard("Cube Roots Of Perfect Cubes", ["Set 1", "Set 2", "Set 3", "Set 4"], cubeRootRows));
+      grid.appendChild(makeTableCard("Fraction To Percentage", ["Fraction", "Percent"], fractionPercentRows));
+      grid.appendChild(makeTableCard("Percentage To Fraction", ["Percent", "Fraction"], percentFractionRows));
+    }
+
+    function renderLastDay() {
+      const grid = document.getElementById("lastDayGrid");
+      grid.innerHTML = "";
+      lastDayBlocks.forEach(block => {
+        const card = document.createElement("article");
+        card.className = "summary-card";
+        card.innerHTML = `<h4>${block.title}</h4><ul>${block.items.map(item => `<li>${item}</li>`).join("")}</ul>`;
+        grid.appendChild(card);
+      });
+    }
+
+    function renderUltraFast() {
+      const list = document.getElementById("ultraFastList");
+      list.innerHTML = "";
+      ultraFastRevision.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        list.appendChild(li);
+      });
+    }
+
+    function renderExamZones() {
+      const grid = document.getElementById("examZoneGrid");
+      grid.innerHTML = "";
+      examZones.forEach(zone => {
+        const card = document.createElement("article");
+        card.className = "summary-card";
+        card.innerHTML = `<h4>${zone.title}</h4><ul>${zone.items.map(item => `<li>${item}</li>`).join("")}</ul>`;
+        grid.appendChild(card);
+      });
+    }
+
+    function refreshStaticLanguage() {
+      const t = uiText[currentLang];
+      document.querySelector('label[for="searchBox"]').textContent = t.searchLabel;
+      document.getElementById("searchBox").placeholder = t.searchPlaceholder;
+      document.querySelector('label[for="difficultyFilter"]').textContent = t.difficulty;
+      document.querySelector('label[for="weightFilter"]').textContent = t.weightage;
+
+      const themeButton = document.getElementById("toggleTheme");
+      const expandButton = document.getElementById("expandAll");
+      themeButton.textContent = document.body.classList.contains("dark") ? t.lightMode : t.darkMode;
+      expandButton.textContent = expandButton.dataset.expanded === "true" ? t.collapseAll : t.expandAll;
+    }
+
+    function renderAllDynamicContent() {
+      const container = document.getElementById("topicContainer");
+      container.innerHTML = "";
+      renderTopics();
+      renderTopFormulas();
+      renderFastTricks();
+      renderMemoryTables();
+      renderLastDay();
+      renderUltraFast();
+      renderExamZones();
+      refreshStaticLanguage();
+      setupSearchAndFilters();
+    }
+
+    function setupLanguageToggle() {
+      const englishBtn = document.getElementById("langEnglish");
+      const hinglishBtn = document.getElementById("langHinglish");
+
+      function applyLanguage(lang) {
+        currentLang = lang;
+        localStorage.setItem("math-cheat-language", lang);
+        englishBtn.classList.toggle("lang-active", lang === "english");
+        hinglishBtn.classList.toggle("lang-active", lang === "hinglish");
+        renderAllDynamicContent();
+      }
+
+      const savedLang = localStorage.getItem("math-cheat-language");
+      if (savedLang === "hinglish") {
+        currentLang = "hinglish";
+        englishBtn.classList.remove("lang-active");
+        hinglishBtn.classList.add("lang-active");
+      }
+
+      englishBtn.addEventListener("click", () => applyLanguage("english"));
+      hinglishBtn.addEventListener("click", () => applyLanguage("hinglish"));
+    }
+
+    function setupSearchAndFilters() {
+      const searchBox = document.getElementById("searchBox");
+      const difficultyFilter = document.getElementById("difficultyFilter");
+      const weightFilter = document.getElementById("weightFilter");
+      const chips = [...document.querySelectorAll(".filter-chip")];
+      let activeGroup = "all";
+
+      if (window.__mathActiveGroup) {
+        activeGroup = window.__mathActiveGroup;
+      }
+
+      function applyFilters() {
+        const query = searchBox.value.trim().toLowerCase();
+        const difficulty = difficultyFilter.value;
+        const weight = weightFilter.value;
+
+        document.querySelectorAll(".searchable, .topic-panel").forEach(el => {
+          const group = el.dataset.group || "Revision";
+          const level = el.dataset.level || "";
+          const yieldBand = el.dataset.yield || "";
+          const searchText = (el.dataset.search || el.textContent || "").toLowerCase();
+
+          const groupOk = activeGroup === "all" || group === activeGroup;
+          const difficultyOk = difficulty === "all" || level === difficulty || !level;
+          const weightOk = weight === "all" || yieldBand === weight || !yieldBand;
+          const searchOk = !query || searchText.includes(query);
+
+          const shouldShow = groupOk && difficultyOk && weightOk && searchOk;
+          el.hidden = !shouldShow;
+        });
+      }
+
+      if (!searchBox.dataset.bound) {
+        searchBox.addEventListener("input", applyFilters);
+        difficultyFilter.addEventListener("change", applyFilters);
+        weightFilter.addEventListener("change", applyFilters);
+        searchBox.dataset.bound = "true";
+      }
+
+      chips.forEach(chip => {
+        chip.classList.toggle("active", chip.dataset.group === activeGroup);
+        if (!chip.dataset.bound) {
+          chip.addEventListener("click", () => {
+            chips.forEach(c => c.classList.remove("active"));
+            chip.classList.add("active");
+            activeGroup = chip.dataset.group;
+            window.__mathActiveGroup = activeGroup;
+            applyFilters();
+          });
+          chip.dataset.bound = "true";
+        }
+      });
+
+      applyFilters();
+    }
+
+    function setupTheme() {
+      const button = document.getElementById("toggleTheme");
+      const savedTheme = localStorage.getItem("math-cheat-theme");
+      if (savedTheme === "dark") document.body.classList.add("dark");
+      button.textContent = document.body.classList.contains("dark") ? uiText[currentLang].lightMode : uiText[currentLang].darkMode;
+
+      button.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+        const isDark = document.body.classList.contains("dark");
+        localStorage.setItem("math-cheat-theme", isDark ? "dark" : "light");
+        button.textContent = isDark ? uiText[currentLang].lightMode : uiText[currentLang].darkMode;
+      });
+    }
+
+    function setupExpandAll() {
+      const button = document.getElementById("expandAll");
+      let expanded = false;
+      button.dataset.expanded = "false";
+
+      button.addEventListener("click", () => {
+        expanded = !expanded;
+        document.querySelectorAll(".topic-panel").forEach(panel => {
+          panel.open = expanded;
+        });
+        button.dataset.expanded = expanded ? "true" : "false";
+        button.textContent = expanded ? uiText[currentLang].collapseAll : uiText[currentLang].expandAll;
+      });
+    }
+
+    function setupActiveLinks() {
+      const links = [...document.querySelectorAll(".toc a")];
+      const sections = links
+        .map(link => document.querySelector(link.getAttribute("href")))
+        .filter(Boolean);
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          links.forEach(link => link.classList.toggle("active", link.getAttribute("href") === `#${entry.target.id}`));
+        });
+      }, { rootMargin: "-20% 0px -65% 0px", threshold: 0.01 });
+
+      sections.forEach(section => observer.observe(section));
+    }
+
+    window.addEventListener("beforeprint", () => {
+      document.querySelectorAll("details").forEach(detail => {
+        detail.open = true;
+      });
+    });
+
+    renderToc();
+    setupTheme();
+    setupExpandAll();
+    setupLanguageToggle();
+    renderAllDynamicContent();
+    setupActiveLinks();
+  </script>
+</body>
+</html>
