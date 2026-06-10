@@ -308,8 +308,79 @@ body.dark .ultra-item{border-color:var(--border)}
   .grid2,.grid3,.grid4{grid-template-columns:1fr}
   .result-breakdown{grid-template-columns:1fr 1fr}
   .formula-grid{grid-template-columns:1fr}
-  .nav-panel{display:none}
-  .test-grid{grid-template-columns:repeat(auto-fill,minmax(90px,1fr))}
+  .test-grid{grid-template-columns:repeat(auto-fill,minmax(80px,1fr))}
+
+  /* ── TEST HEADER: 2-row mobile layout ── */
+  .test-header{flex-wrap:wrap;padding:8px 10px;gap:5px}
+  .test-title{flex:1;font-size:.8rem;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  #test-exit-btn{font-size:.7rem;padding:5px 8px}
+  #test-submit-btn{font-size:.7rem;padding:5px 8px}
+  #test-progress-text{font-size:.68rem}
+  .test-header>div:last-child{width:100%;gap:5px;justify-content:space-between}
+  .lang-switcher .lbtn{padding:3px 7px;font-size:.66rem}
+  .timer-box{font-size:.82rem;padding:4px 8px;min-width:60px}
+
+  /* ── QUESTION PANEL ── */
+  .question-panel{padding:12px 10px}
+  .q-text{font-size:.9rem;line-height:1.55;margin-bottom:14px}
+  .opt-btn{padding:9px 11px;font-size:.84rem;gap:8px}
+  .opt-key{width:22px;height:22px;font-size:.75rem}
+  .q-nav-btns{gap:5px;flex-wrap:wrap}
+  .q-nav-btns .btn{flex:1;font-size:.72rem;padding:7px 4px;min-width:calc(50% - 3px)}
+  .q-subject-bar{gap:5px;margin-bottom:8px}
+  .solution-box{padding:12px}
+  .sol-text{font-size:.84rem}
+
+  /* ── NAV PANEL: slide-in drawer on mobile ── */
+  .nav-panel{
+    display:block!important;
+    position:fixed;top:0;right:-295px;
+    width:280px;height:100vh;
+    z-index:1001;
+    transition:right .25s cubic-bezier(.4,0,.2,1);
+    box-shadow:-6px 0 24px rgba(0,0,0,.22);
+    border-left:none;overflow-y:auto
+  }
+  .nav-panel.mob-open{right:0!important}
+
+  /* ── RESULT PAGE ── */
+  .result-header{flex-direction:column;gap:12px;text-align:center}
+  .result-score{font-size:2.4rem}
+}
+
+/* Mobile FAB + overlay (never shown on desktop) */
+@media(max-width:600px){
+  #mob-nav-fab{
+    display:flex;position:fixed;bottom:18px;right:18px;
+    width:52px;height:52px;
+    background:var(--brand);color:#fff;
+    border-radius:50%;border:none;
+    align-items:center;justify-content:center;
+    font-size:1.25rem;cursor:pointer;
+    z-index:1000;
+    box-shadow:0 4px 16px rgba(79,70,229,.45);
+    transition:transform .15s
+  }
+  #mob-nav-fab:active{transform:scale(.92)}
+  #mob-nav-overlay{
+    display:none;position:fixed;inset:0;
+    background:rgba(0,0,0,.45);z-index:999
+  }
+  #mob-nav-overlay.show{display:block}
+  .mob-nav-close{
+    display:flex;position:sticky;top:0;
+    background:var(--surface);
+    padding:10px 14px;
+    justify-content:space-between;align-items:center;
+    border-bottom:1px solid var(--border);
+    margin:-16px -16px 12px;z-index:2;
+    font-weight:700;font-size:.88rem
+  }
+  .mob-nav-close button{background:none;border:none;font-size:1.1rem;cursor:pointer;color:var(--muted);padding:4px 8px}
+}
+@media(min-width:601px){
+  #mob-nav-fab,#mob-nav-overlay{display:none!important}
+  .mob-nav-close{display:none!important}
 }
 
 /* HOME PAGE HERO */
@@ -657,6 +728,10 @@ body.dark .ultra-item{border-color:var(--border)}
   <div class="test-body">
     <div class="question-panel" id="question-panel"></div>
     <div class="nav-panel" id="nav-panel-wrap">
+      <div class="mob-nav-close">
+        <span id="mob-nav-title">Navigator</span>
+        <button onclick="closeMobileNav()" title="Close">✕</button>
+      </div>
       <div class="subject-tabs" id="subject-tabs"></div>
       <div class="qp-title" id="test-nav-title">Question Navigator</div>
       <div class="qp-grid" id="qp-grid"></div>
@@ -664,6 +739,10 @@ body.dark .ultra-item{border-color:var(--border)}
     </div>
   </div>
 </div>
+
+<!-- MOBILE NAV OVERLAY + FAB -->
+<div id="mob-nav-overlay" onclick="closeMobileNav()"></div>
+<button id="mob-nav-fab" onclick="toggleMobileNav()" title="Question Navigator">☰</button>
 
 <!-- CONFIRM EXIT MODAL -->
 <div class="overlay" id="exit-overlay">
@@ -3061,6 +3140,9 @@ function startTest(n){
   document.getElementById('test-page').style.height='100vh';
   document.getElementById('test-page').style.overflow='hidden';
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  // show mobile FAB
+  const fab=document.getElementById('mob-nav-fab');if(fab)fab.style.display='';
+  closeMobileNav();
   // Sync language toggle state in test header
   const isHi=csLang==='hinglish';
   const enB=document.getElementById('test-en-btn');
@@ -3380,7 +3462,9 @@ function submitTest(){
   document.getElementById('submit-overlay').classList.add('show');
 }
 function confirmExit(){document.getElementById('exit-overlay').classList.add('show');}
-function exitTest(){clearInterval(timerInterval);saveTestState();closeOverlay('exit-overlay');document.getElementById('test-page').style.display='none';showPage(currentPage||'tests');}
+function exitTest(){clearInterval(timerInterval);saveTestState();closeOverlay('exit-overlay');document.getElementById('test-page').style.display='none';closeMobileNav();showPage(currentPage||'tests');}
+function toggleMobileNav(){const nav=document.getElementById('nav-panel-wrap');const ov=document.getElementById('mob-nav-overlay');const fab=document.getElementById('mob-nav-fab');const open=nav.classList.toggle('mob-open');ov.classList.toggle('show',open);fab.textContent=open?'✕':'☰';}
+function closeMobileNav(){const nav=document.getElementById('nav-panel-wrap');const ov=document.getElementById('mob-nav-overlay');const fab=document.getElementById('mob-nav-fab');nav.classList.remove('mob-open');ov.classList.remove('show');if(fab)fab.textContent='☰';}
 function closeOverlay(id){document.getElementById(id).classList.remove('show');}
 function finalSubmit(){
   clearInterval(timerInterval);testSubmitted=true;
