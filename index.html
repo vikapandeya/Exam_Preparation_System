@@ -92,7 +92,7 @@ input,select{font-family:inherit}
 .test-card .score-badge{position:absolute;top:6px;right:6px;background:var(--green);color:#fff;font-size:.62rem;font-weight:700;padding:1px 5px;border-radius:8px}
 
 /* TEST INTERFACE */
-#test-page{display:none}
+#test-page{display:none;position:fixed;inset:0;z-index:150;background:var(--bg)}
 #test-page.active{display:flex;flex-direction:column;height:100vh;overflow:hidden}
 .test-header{background:var(--surface);border-bottom:1px solid var(--border);padding:10px 20px;display:flex;align-items:center;gap:12px}
 .test-title{font-weight:700;font-size:.95rem;flex:1}
@@ -100,7 +100,7 @@ input,select{font-family:inherit}
 .timer-box.warning{background:var(--yellow)}
 .timer-box.danger{background:var(--red);animation:pulse .8s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.7}}
-.test-body{flex:1;display:flex;overflow:hidden}
+.test-body{flex:1;display:flex;overflow:hidden;min-height:0}
 .question-panel{flex:1;overflow-y:auto;padding:20px}
 .nav-panel{width:280px;background:var(--surface);border-left:1px solid var(--border);overflow-y:auto;padding:16px}
 .q-number{font-size:.78rem;color:var(--muted);font-weight:600;margin-bottom:4px}
@@ -321,7 +321,7 @@ body.dark .ultra-item{border-color:var(--border)}
   .timer-box{font-size:.82rem;padding:4px 8px;min-width:60px}
 
   /* ── QUESTION PANEL ── */
-  .question-panel{padding:12px 10px}
+  .question-panel{padding:12px 10px;min-height:0}
   .q-text{font-size:.9rem;line-height:1.55;margin-bottom:14px}
   .opt-btn{padding:9px 11px;font-size:.84rem;gap:8px}
   .opt-key{width:22px;height:22px;font-size:.75rem}
