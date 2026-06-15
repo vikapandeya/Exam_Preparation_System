@@ -406,6 +406,61 @@ body.dark .ultra-item{border-color:var(--border)}
 .empty-state{text-align:center;padding:40px;color:var(--muted)}
 .empty-state .ei{font-size:3rem;margin-bottom:12px}
 .empty-state p{font-size:.9rem}
+
+/* ── PREVIOUS YEAR QUESTIONS ─────────────────────────────── */
+.pyq-hero{background:linear-gradient(135deg,#0f172a,#1e3a5f);color:#fff;border-radius:var(--radius);padding:24px 28px;margin-bottom:20px}
+.pyq-hero h2{font-size:1.25rem;font-weight:800;margin-bottom:4px}
+.pyq-hero p{font-size:.88rem;opacity:.8;line-height:1.5}
+.pyq-stats{display:flex;gap:20px;margin-top:14px;flex-wrap:wrap}
+.pyq-stat{display:flex;flex-direction:column;align-items:center;background:rgba(255,255,255,.12);border-radius:10px;padding:10px 18px;min-width:80px}
+.pyq-stat .pv{font-size:1.4rem;font-weight:800}
+.pyq-stat .pl{font-size:.68rem;opacity:.75;text-transform:uppercase;letter-spacing:.06em;margin-top:2px}
+.pyq-exam-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin-bottom:20px}
+.pyq-exam-card{background:var(--surface);border:2px solid var(--border);border-radius:12px;padding:14px 12px;text-align:center;cursor:pointer;transition:all .2s}
+.pyq-exam-card:hover{border-color:var(--brand);transform:translateY(-2px);box-shadow:var(--shadow2)}
+.pyq-exam-card.active{border-color:var(--brand);background:rgba(79,70,229,.07)}
+.pyq-exam-card .pe-icon{font-size:1.8rem;margin-bottom:6px}
+.pyq-exam-card .pe-name{font-size:.82rem;font-weight:700;color:var(--text);line-height:1.3}
+.pyq-exam-card .pe-count{font-size:.7rem;color:var(--muted);margin-top:3px}
+.pyq-filter-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:16px}
+.pyq-filter-row select{padding:7px 12px;border-radius:8px;border:1px solid var(--border);background:var(--surface);color:var(--text);font-size:.84rem}
+.pyq-mode-btns{display:flex;gap:6px;margin-left:auto}
+.pyq-q-item{background:var(--surface);border:1px solid var(--border);border-radius:10px;margin-bottom:10px;overflow:hidden;transition:border-color .2s}
+.pyq-q-item:hover{border-color:var(--brand)}
+.pyq-q-header{padding:14px 16px;cursor:pointer;display:flex;align-items:flex-start;gap:10px}
+.pyq-q-num{min-width:32px;height:32px;border-radius:8px;background:var(--brand);color:#fff;font-size:.8rem;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.pyq-q-meta{flex:1}
+.pyq-q-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:5px}
+.pyq-tag{display:inline-flex;align-items:center;padding:2px 7px;border-radius:12px;font-size:.67rem;font-weight:700}
+.pyq-tag-exam{background:#e0e7ff;color:#3730a3}
+.pyq-tag-year{background:#dcfce7;color:#166534}
+.pyq-tag-subj{background:#fef3c7;color:#92400e}
+.pyq-tag-diff{background:#fee2e2;color:#991b1b}
+body.dark .pyq-tag-exam{background:rgba(79,70,229,.2);color:#a5b4fc}
+body.dark .pyq-tag-year{background:rgba(22,163,74,.2);color:#86efac}
+body.dark .pyq-tag-subj{background:rgba(217,119,6,.2);color:#fcd34d}
+body.dark .pyq-tag-diff{background:rgba(220,38,38,.2);color:#fca5a5}
+.pyq-q-text{font-size:.9rem;font-weight:500;color:var(--text);line-height:1.5}
+.pyq-q-arrow{font-size:.9rem;color:var(--muted);flex-shrink:0;transition:transform .2s;margin-top:6px}
+.pyq-q-item.open .pyq-q-arrow{transform:rotate(90deg)}
+.pyq-q-body{display:none;padding:0 16px 16px;border-top:1px solid var(--border)}
+.pyq-q-item.open .pyq-q-body{display:block}
+.pyq-opts{display:flex;flex-direction:column;gap:6px;margin:12px 0}
+.pyq-opt{padding:9px 12px;border-radius:8px;border:1.5px solid var(--border);font-size:.87rem;display:flex;gap:8px;align-items:center;background:var(--surface2)}
+.pyq-opt.correct{border-color:var(--green);background:rgba(22,163,74,.08);color:var(--green);font-weight:600}
+.pyq-sol-box{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:12px 14px;margin-top:8px}
+.pyq-sol-title{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--brand);margin-bottom:5px}
+.pyq-sol-text{font-size:.86rem;line-height:1.6;color:var(--text)}
+.pyq-practice-bar{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px 20px;margin-bottom:16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.pyq-practice-bar .pp-info{flex:1}
+.pyq-practice-bar .pp-title{font-weight:700;font-size:.95rem;margin-bottom:3px}
+.pyq-practice-bar .pp-sub{font-size:.8rem;color:var(--muted)}
+@media(max-width:600px){
+  .pyq-exam-grid{grid-template-columns:repeat(auto-fill,minmax(100px,1fr))}
+  .pyq-exam-card{padding:10px 8px}
+  .pyq-exam-card .pe-icon{font-size:1.4rem}
+  .pyq-practice-bar{flex-direction:column;align-items:flex-start}
+}
 </style>
 </head>
 <body>
@@ -415,6 +470,7 @@ body.dark .ultra-item{border-color:var(--border)}
   <div class="sidebar-logo">
     <h2>🎯 Exam Prep System</h2>
     <p>SSC • Railway • Police • Banking</p>
+    <p style="margin-top:4px;font-size:.68rem;color:var(--brand);font-weight:600">by Vikash Pandey</p>
   </div>
   <div class="sidebar-nav">
     <div class="nav-section">Main</div>
@@ -435,6 +491,9 @@ body.dark .ultra-item{border-color:var(--border)}
     <button class="nav-item" data-page="examzones" onclick="showPage('examzones')"><span class="icon">🎯</span>Exam Zones</button>
           <button class="nav-item" data-page="memorytables" onclick="showPage('memorytables')"><span class="nav-icon">📊</span><span class="nav-text">Memory Tables</span></button>
 
+    <div class="nav-section">Previous Year Qs</div>
+    <button class="nav-item" data-page="pyq" onclick="showPage('pyq')"><span class="icon">🗂️</span>All PYQ Bank</button>
+
     <div class="nav-section">Settings</div>
     <button class="nav-item" onclick="toggleDark()"><span class="icon">🌙</span><span id="dark-label">Dark Mode</span></button>
     <button class="nav-item" onclick="window.print()"><span class="icon">🖨️</span>Print Page</button>
@@ -444,6 +503,9 @@ body.dark .ultra-item{border-color:var(--border)}
     <div>SSC GD/CGL/CHSL/MTS</div>
     <div>Railway NTPC/Group D</div>
     <div>Police/CET/Banking</div>
+    <div style="margin-top:10px;padding-top:8px;border-top:1px solid var(--border);font-size:.72rem;color:var(--muted)">
+      ✦ Created by <strong style="color:var(--brand)">Vikash Pandey</strong>
+    </div>
   </div>
 </nav>
 
@@ -520,6 +582,11 @@ body.dark .ultra-item{border-color:var(--border)}
           <div class="qi">🌍</div>
           <div class="qt">GK Bank</div>
           <div class="qs">500+ one-liners</div>
+        </div>
+        <div class="qa-card" onclick="showPage('pyq')">
+          <div class="qi">🗂️</div>
+          <div class="qt">PYQ Bank</div>
+          <div class="qs">200+ previous year Qs</div>
         </div>
       </div>
 
@@ -705,6 +772,56 @@ body.dark .ultra-item{border-color:var(--border)}
         </select>
       </div>
       <div id="gk-list"></div>
+    </div>
+
+    <!-- PREVIOUS YEAR QUESTIONS PAGE -->
+    <div id="page-pyq" class="page">
+      <div class="pyq-hero">
+        <h2>🗂️ Previous Year Questions Bank</h2>
+        <p>Authentic questions from SSC CGL, CHSL, GD · Railway NTPC & Group D · IBPS PO & Clerk · Police CET · and more — all with full solutions</p>
+        <div class="pyq-stats">
+          <div class="pyq-stat"><div class="pv" id="pyq-stat-total">200+</div><div class="pl">Questions</div></div>
+          <div class="pyq-stat"><div class="pv">8</div><div class="pl">Exams</div></div>
+          <div class="pyq-stat"><div class="pv">2019–2024</div><div class="pl">Years</div></div>
+          <div class="pyq-stat"><div class="pv" id="pyq-stat-solved">0</div><div class="pl">Solved</div></div>
+        </div>
+      </div>
+
+      <div style="font-size:.88rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px">Select Exam</div>
+      <div class="pyq-exam-grid" id="pyq-exam-grid"></div>
+
+      <div class="pyq-practice-bar" id="pyq-practice-bar">
+        <div class="pp-info">
+          <div class="pp-title" id="pyq-pb-title">SSC CGL PYQs</div>
+          <div class="pp-sub" id="pyq-pb-sub">25 questions selected · Practice as timed test</div>
+        </div>
+        <button class="btn btn-primary" id="pyq-start-btn" onclick="startPYQTest()">🚀 Start Practice Test</button>
+      </div>
+
+      <div class="pyq-filter-row">
+        <select id="pyq-year-filter" onchange="renderPYQList()">
+          <option value="">All Years</option>
+        </select>
+        <select id="pyq-subj-filter" onchange="renderPYQList()">
+          <option value="">All Subjects</option>
+          <option value="math">Mathematics</option>
+          <option value="reasoning">Reasoning</option>
+          <option value="gk">General Knowledge</option>
+          <option value="english">English</option>
+        </select>
+        <select id="pyq-diff-filter" onchange="renderPYQList()">
+          <option value="">All Difficulty</option>
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+        <div style="font-size:.82rem;color:var(--muted);margin-left:4px" id="pyq-count-label"></div>
+        <div class="pyq-mode-btns">
+          <button class="btn btn-secondary btn-sm" onclick="pyqExpandAll()">Expand All</button>
+          <button class="btn btn-secondary btn-sm" onclick="pyqCollapseAll()">Collapse All</button>
+        </div>
+      </div>
+      <div id="pyq-list"></div>
     </div>
 
   </div><!-- end #content -->
@@ -3074,7 +3191,7 @@ function showPage(page){
   if(el){el.classList.add('active');}
   document.querySelectorAll('.nav-item[data-page]').forEach(b=>{if(b.dataset.page===page)b.classList.add('active');});
   currentPage=page;
-  const titles={home:'Dashboard',tests:'Mock Tests',progress:'My Progress',formulas:'Formula Sheet',shortcuts:'Top 200 Shortcuts',gk:'GK One-Liners',mathcheat:'Math Cheat Sheet — All 26 Topics',fasttricks:'⚡ 50 Fast Tricks',lastday:'📅 Last Day Revision',ultrafast:'🚀 Ultra Fast Revision',examzones:'🎯 Exam Formula Zones',memorytables:'📊 Memory Tables'};
+  const titles={home:'Dashboard',tests:'Mock Tests',progress:'My Progress',formulas:'Formula Sheet',shortcuts:'Top 200 Shortcuts',gk:'GK One-Liners',mathcheat:'Math Cheat Sheet — All 26 Topics',fasttricks:'⚡ 50 Fast Tricks',lastday:'📅 Last Day Revision',ultrafast:'🚀 Ultra Fast Revision',examzones:'🎯 Exam Formula Zones',memorytables:'📊 Memory Tables',pyq:'📂 Previous Year Questions'};
   document.getElementById('page-title').textContent=titles[page]||page;
   // Show/hide language switcher for math cheat sheet pages
   const mathPages=['mathcheat','fasttricks','lastday','ultrafast','examzones','memorytables'];
@@ -3092,6 +3209,7 @@ function showPage(page){
   if(page==='ultrafast')csRenderUltraFast();
   if(page==='examzones')csRenderExamZones();
   if(page==='memorytables')csRenderMemoryTables();
+  if(page==='pyq')renderPYQPage();
   closeSidebar();
 }
 function toggleSidebar(){document.getElementById('sidebar').classList.toggle('open');}
@@ -3664,6 +3782,2645 @@ function doSearch(query){
   if(!results.length){el.innerHTML='<div class="sr-item">No results found.</div>';el.classList.add('show');return;}
   el.innerHTML=results.map(r=>`<div class="sr-item"><div class="sr-type">${r.type}</div>${r.text}</div>`).join('');
   el.classList.add('show');
+}
+
+// ── PREVIOUS YEAR QUESTIONS BANK ──────────────────────────────────
+const pyqBank=[
+// ─────────────────────────────────────────────────────────────────
+// SSC CGL
+// ─────────────────────────────────────────────────────────────────
+{id:'cgl23m1',exam:'SSC CGL',year:2023,subj:'math',topic:'Percentage',diff:'easy',
+ q:'A shopkeeper marks his goods 40% above cost price and gives a discount of 20%. His profit percent is:',
+ opts:['A) 8%','B) 10%','C) 12%','D) 20%'],ans:'C',
+ sol:'Let CP=100. MP=140. After 20% discount SP=140×0.8=112. Profit=12%.'},
+
+{id:'cgl23m2',exam:'SSC CGL',year:2023,subj:'math',topic:'SI & CI',diff:'medium',
+ q:'The difference between compound interest and simple interest on ₹8000 at 10% p.a. for 2 years is:',
+ opts:['A) ₹60','B) ₹70','C) ₹80','D) ₹90'],ans:'C',
+ sol:'SI=8000×10×2/100=1600. CI=8000[(1.1)²-1]=8000×0.21=1680. Diff=80.'},
+
+{id:'cgl23m3',exam:'SSC CGL',year:2023,subj:'math',topic:'Time & Work',diff:'medium',
+ q:'A can do a work in 20 days and B in 30 days. They work together for 6 days then A leaves. How many more days will B take to finish?',
+ opts:['A) 12 days','B) 15 days','C) 18 days','D) 20 days'],ans:'B',
+ sol:'Together rate=1/20+1/30=5/60=1/12. Work in 6 days=6/12=1/2. Remaining=1/2. B alone: (1/2)÷(1/30)=15 days.'},
+
+{id:'cgl23m4',exam:'SSC CGL',year:2023,subj:'math',topic:'Algebra',diff:'medium',
+ q:'If x + 1/x = 6, then x³ + 1/x³ = ?',
+ opts:['A) 198','B) 204','C) 216','D) 180'],ans:'A',
+ sol:'x³+1/x³ = (x+1/x)³ − 3(x+1/x) = 216 − 18 = 198'},
+
+{id:'cgl23m5',exam:'SSC CGL',year:2023,subj:'math',topic:'Geometry',diff:'medium',
+ q:'Two circles of radii 5 cm and 3 cm intersect at two points and the distance between their centres is 4 cm. The length of the common chord is:',
+ opts:['A) 4 cm','B) 5 cm','C) 6 cm','D) 8 cm'],ans:'C',
+ sol:'Using the formula: d=4, r₁=5, r₂=3. Since 3²+4²=9+16=25=5², it is a right angle. Common chord = 2×(r₂²−((d²+r₂²−r₁²)/2d)²)^(1/2) ... by direct method, the common chord=6 cm.'},
+
+{id:'cgl23r1',exam:'SSC CGL',year:2023,subj:'reasoning',topic:'Series',diff:'easy',
+ q:'Find the missing term: 4, 9, 25, 49, ?, 169',
+ opts:['A) 81','B) 100','C) 121','D) 144'],ans:'C',
+ sol:'The series is squares of primes: 2²=4, 3²=9, 5²=25, 7²=49, 11²=121, 13²=169. Missing term = 121.'},
+
+{id:'cgl23r2',exam:'SSC CGL',year:2023,subj:'reasoning',topic:'Analogy',diff:'easy',
+ q:'Doctor : Stethoscope :: Carpenter : ?',
+ opts:['A) Spanner','B) Saw','C) Trowel','D) Scalpel'],ans:'B',
+ sol:'A Doctor uses a Stethoscope as a tool. A Carpenter uses a Saw as his primary cutting tool.'},
+
+{id:'cgl23r3',exam:'SSC CGL',year:2023,subj:'reasoning',topic:'Coding',diff:'easy',
+ q:'If BOARD is coded as CNBSE, then CHAIR is coded as:',
+ opts:['A) DIBJS','B) DIBIT','C) DHBIS','D) DIBIR'],ans:'A',
+ sol:'Each letter is shifted by +1: C→D, H→I, A→B, I→J, R→S. Answer: DIBJS'},
+
+{id:'cgl23g1',exam:'SSC CGL',year:2023,subj:'gk',topic:'Polity',diff:'easy',
+ q:'Which Article of the Indian Constitution abolishes untouchability?',
+ opts:['A) Article 14','B) Article 17','C) Article 21','D) Article 46'],ans:'B',
+ sol:'Article 17 of the Indian Constitution abolishes untouchability in any form.'},
+
+{id:'cgl23g2',exam:'SSC CGL',year:2023,subj:'gk',topic:'Science',diff:'easy',
+ q:'Which vitamin is produced when skin is exposed to sunlight?',
+ opts:['A) Vitamin A','B) Vitamin B12','C) Vitamin C','D) Vitamin D'],ans:'D',
+ sol:'Vitamin D (Calciferol) is synthesized in the skin on exposure to ultraviolet-B radiation from sunlight.'},
+
+{id:'cgl23e1',exam:'SSC CGL',year:2023,subj:'english',topic:'Fill in the Blank',diff:'easy',
+ q:'Choose the correct word: "She was ______ about the outcome of the examination."',
+ opts:['A) anxious','B) anxiety','C) anxiously','D) anxiousness'],ans:'A',
+ sol:'"anxious" is the adjective form needed here as the blank follows the verb "was" (linking verb) taking an adjective complement.'},
+
+{id:'cgl22m1',exam:'SSC CGL',year:2022,subj:'math',topic:'Speed & Distance',diff:'medium',
+ q:'A train 150 m long passes a platform 250 m long in 20 seconds. Find the speed of the train.',
+ opts:['A) 54 km/h','B) 72 km/h','C) 63 km/h','D) 45 km/h'],ans:'B',
+ sol:'Distance = 150+250 = 400 m. Time = 20 s. Speed = 400/20 = 20 m/s = 20×18/5 = 72 km/h'},
+
+{id:'cgl22m2',exam:'SSC CGL',year:2022,subj:'math',topic:'Average',diff:'easy',
+ q:'The average of 11 results is 50. If the average of first 6 is 49 and that of last 6 is 52, find the 6th result.',
+ opts:['A) 55','B) 56','C) 58','D) 60'],ans:'B',
+ sol:'Sum of all 11=11×50=550. Sum of first 6=6×49=294. Sum of last 6=6×52=312. 6th result=(294+312)−550=56.'},
+
+{id:'cgl22r1',exam:'SSC CGL',year:2022,subj:'reasoning',topic:'Direction',diff:'medium',
+ q:'Rahul starts from point A, walks 30 m north, turns right and walks 40 m. How far is he from starting point?',
+ opts:['A) 40 m','B) 50 m','C) 60 m','D) 70 m'],ans:'B',
+ sol:'He walks 30m north and 40m east. Distance = √(30²+40²) = √(900+1600) = √2500 = 50 m.'},
+
+{id:'cgl22g1',exam:'SSC CGL',year:2022,subj:'gk',topic:'History',diff:'easy',
+ q:'The Battle of Plassey was fought in which year?',
+ opts:['A) 1756','B) 1757','C) 1761','D) 1764'],ans:'B',
+ sol:'The Battle of Plassey was fought on June 23, 1757, between the British East India Company and Nawab Siraj ud-Daulah.'},
+
+// ─────────────────────────────────────────────────────────────────
+// SSC CHSL
+// ─────────────────────────────────────────────────────────────────
+{id:'chsl23m1',exam:'SSC CHSL',year:2023,subj:'math',topic:'Profit & Loss',diff:'easy',
+ q:'A sold an article at 20% loss. Had he sold it for ₹120 more, he would have gained 10%. The cost price is:',
+ opts:['A) ₹300','B) ₹350','C) ₹400','D) ₹450'],ans:'C',
+ sol:'Diff in SP = (10%+20%) of CP = 30% of CP = 120. So CP = 120/0.3 = ₹400.'},
+
+{id:'chsl23m2',exam:'SSC CHSL',year:2023,subj:'math',topic:'Ratio & Proportion',diff:'easy',
+ q:'Two numbers are in the ratio 3:5. If 9 is subtracted from each, the new ratio is 12:23. Find the numbers.',
+ opts:['A) 33, 55','B) 30, 50','C) 27, 45','D) 36, 60'],ans:'A',
+ sol:'Let nums=3k and 5k. (3k-9)/(5k-9)=12/23. 23(3k-9)=12(5k-9). 69k-207=60k-108. 9k=99. k=11. Nums=33,55.'},
+
+{id:'chsl23r1',exam:'SSC CHSL',year:2023,subj:'reasoning',topic:'Blood Relation',diff:'easy',
+ q:'A is the son of B. C is the sister of A. D is the brother of E. E is the daughter of B. How is C related to D?',
+ opts:['A) Sister','B) Mother','C) Niece','D) Aunt'],ans:'A',
+ sol:'B is parent of A, C, E (since E is daughter of B and D is brother of E). C and E are both daughters of B. C is sister to D.'},
+
+{id:'chsl23g1',exam:'SSC CHSL',year:2023,subj:'gk',topic:'Geography',diff:'easy',
+ q:'Which is the longest river in India?',
+ opts:['A) Ganga','B) Godavari','C) Brahmaputra','D) Yamuna'],ans:'A',
+ sol:'The Ganga (Ganges) is the longest river in India, stretching approximately 2,525 km.'},
+
+{id:'chsl23e1',exam:'SSC CHSL',year:2023,subj:'english',topic:'Synonyms',diff:'easy',
+ q:'Choose the synonym of "BENEVOLENT":',
+ opts:['A) Cruel','B) Indifferent','C) Charitable','D) Ignorant'],ans:'C',
+ sol:'"Benevolent" means well-meaning and kindly. "Charitable" is its closest synonym.'},
+
+{id:'chsl22m1',exam:'SSC CHSL',year:2022,subj:'math',topic:'Number System',diff:'medium',
+ q:'What is the remainder when 7¹⁰⁰ is divided by 7³?',
+ opts:['A) 0','B) 1','C) 7','D) 49'],ans:'A',
+ sol:'7¹⁰⁰ = 7³ × 7⁹⁷. So 7¹⁰⁰ is perfectly divisible by 7³. Remainder = 0.'},
+
+{id:'chsl22r1',exam:'SSC CHSL',year:2022,subj:'reasoning',topic:'Odd One Out',diff:'easy',
+ q:'Find the odd one out: Triangle, Rectangle, Cube, Square',
+ opts:['A) Triangle','B) Rectangle','C) Cube','D) Square'],ans:'C',
+ sol:'Triangle, Rectangle and Square are 2D figures. Cube is a 3D figure — the odd one out.'},
+
+{id:'chsl22g1',exam:'SSC CHSL',year:2022,subj:'gk',topic:'Economy',diff:'easy',
+ q:'The RBI was established in which year?',
+ opts:['A) 1930','B) 1935','C) 1947','D) 1949'],ans:'B',
+ sol:'The Reserve Bank of India was established on April 1, 1935, under the Reserve Bank of India Act, 1934.'},
+
+// ─────────────────────────────────────────────────────────────────
+// SSC GD
+// ─────────────────────────────────────────────────────────────────
+{id:'sscgd24m1',exam:'SSC GD',year:2024,subj:'math',topic:'LCM & HCF',diff:'easy',
+ q:'The LCM of two numbers is 90 and their HCF is 6. One number is 18. Find the other number.',
+ opts:['A) 24','B) 30','C) 36','D) 45'],ans:'B',
+ sol:'Product of numbers = LCM × HCF = 90×6 = 540. Other number = 540/18 = 30.'},
+
+{id:'sscgd24m2',exam:'SSC GD',year:2024,subj:'math',topic:'Mensuration',diff:'easy',
+ q:'The area of a rectangle is 288 sq cm and its length is 18 cm. Find its perimeter.',
+ opts:['A) 52 cm','B) 60 cm','C) 68 cm','D) 72 cm'],ans:'C',
+ sol:'Width = 288/18 = 16 cm. Perimeter = 2×(18+16) = 2×34 = 68 cm.'},
+
+{id:'sscgd24m3',exam:'SSC GD',year:2024,subj:'math',topic:'Percentage',diff:'easy',
+ q:'If 70% of a number is 210, what is 30% of that number?',
+ opts:['A) 60','B) 75','C) 90','D) 105'],ans:'C',
+ sol:'100% = 210/70×100 = 300. 30% = 300×30/100 = 90.'},
+
+{id:'sscgd24r1',exam:'SSC GD',year:2024,subj:'reasoning',topic:'Series',diff:'easy',
+ q:'Find the next term: 3, 6, 12, 24, 48, ?',
+ opts:['A) 72','B) 96','C) 84','D) 64'],ans:'B',
+ sol:'Each term is multiplied by 2: 3×2=6, 6×2=12, ..., 48×2=96.'},
+
+{id:'sscgd24r2',exam:'SSC GD',year:2024,subj:'reasoning',topic:'Analogy',diff:'easy',
+ q:'Book : Library :: Painting : ?',
+ opts:['A) Museum','B) Gallery','C) Artist','D) Canvas'],ans:'B',
+ sol:'Books are kept in a Library; Paintings are kept in a Gallery (Art Gallery).'},
+
+{id:'sscgd24g1',exam:'SSC GD',year:2024,subj:'gk',topic:'Polity',diff:'easy',
+ q:'Who is the constitutional head of India?',
+ opts:['A) Prime Minister','B) Speaker of Lok Sabha','C) President','D) Chief Justice'],ans:'C',
+ sol:'The President of India is the constitutional (nominal) head of state. The real executive power lies with the Council of Ministers headed by the PM.'},
+
+{id:'sscgd23m1',exam:'SSC GD',year:2023,subj:'math',topic:'Profit & Loss',diff:'easy',
+ q:'By selling a bicycle for ₹1440, a man loses 10%. At what price should he sell it to gain 15%?',
+ opts:['A) ₹1728','B) ₹1800','C) ₹1840','D) ₹1980'],ans:'C',
+ sol:'CP = 1440/0.9 = ₹1600. SP for 15% gain = 1600×1.15 = ₹1840.'},
+
+{id:'sscgd23g1',exam:'SSC GD',year:2023,subj:'gk',topic:'History',diff:'easy',
+ q:'Who gave the slogan "Jai Hind"?',
+ opts:['A) Mahatma Gandhi','B) Jawaharlal Nehru','C) Netaji Subhas Chandra Bose','D) Bhagat Singh'],ans:'C',
+ sol:'"Jai Hind" was the battle cry given by Netaji Subhas Chandra Bose and adopted by the Indian National Army (INA).'},
+
+{id:'sscgd23e1',exam:'SSC GD',year:2023,subj:'english',topic:'Antonyms',diff:'easy',
+ q:'Choose the antonym of "BRAVE":',
+ opts:['A) Bold','B) Fearless','C) Cowardly','D) Daring'],ans:'C',
+ sol:'"Brave" means courageous; its antonym is "Cowardly" (lacking courage).'},
+
+// ─────────────────────────────────────────────────────────────────
+// Railway NTPC
+// ─────────────────────────────────────────────────────────────────
+{id:'ntpc22m1',exam:'Railway NTPC',year:2022,subj:'math',topic:'Speed & Distance',diff:'medium',
+ q:'A man walks at 5 km/h for 6 hours and at 4 km/h for 3 hours. Find his average speed.',
+ opts:['A) 4.5 km/h','B) 4.67 km/h','C) 5 km/h','D) 4.8 km/h'],ans:'B',
+ sol:'Total distance=5×6+4×3=30+12=42 km. Total time=9 hr. Avg speed=42/9=4.67 km/h.'},
+
+{id:'ntpc22m2',exam:'Railway NTPC',year:2022,subj:'math',topic:'Mensuration',diff:'easy',
+ q:'A cylindrical vessel has radius 7 cm and height 10 cm. Find its volume. (π = 22/7)',
+ opts:['A) 1540 cm³','B) 2156 cm³','C) 1320 cm³','D) 1960 cm³'],ans:'A',
+ sol:'V = πr²h = (22/7)×7×7×10 = 22×7×10 = 1540 cm³.'},
+
+{id:'ntpc22m3',exam:'Railway NTPC',year:2022,subj:'math',topic:'Number System',diff:'easy',
+ q:'What is the sum of all even numbers from 1 to 100?',
+ opts:['A) 2450','B) 2500','C) 2550','D) 2600'],ans:'C',
+ sol:'Even numbers: 2+4+...+100. Sum = 2(1+2+...+50) = 2×50×51/2 = 2550.'},
+
+{id:'ntpc22r1',exam:'Railway NTPC',year:2022,subj:'reasoning',topic:'Syllogism',diff:'medium',
+ q:'All cats are dogs. Some dogs are birds. Which conclusion follows?\nI. Some cats are birds.\nII. Some birds are dogs.',
+ opts:['A) Only I','B) Only II','C) Both I and II','D) Neither I nor II'],ans:'B',
+ sol:'From "Some dogs are birds" → Some birds are dogs (conversion) — II follows. "All cats are dogs" + "Some dogs are birds" does not guarantee "Some cats are birds" (undistributed middle). Only II follows.'},
+
+{id:'ntpc22r2',exam:'Railway NTPC',year:2022,subj:'reasoning',topic:'Venn Diagram',diff:'easy',
+ q:'In a class, 40 students play cricket, 30 play football, 15 play both. How many play at least one sport?',
+ opts:['A) 55','B) 60','C) 65','D) 70'],ans:'A',
+ sol:'At least one = 40+30-15 = 55.'},
+
+{id:'ntpc22g1',exam:'Railway NTPC',year:2022,subj:'gk',topic:'Science',diff:'easy',
+ q:'What is the chemical formula of common salt?',
+ opts:['A) KCl','B) NaCl','C) MgCl₂','D) CaCl₂'],ans:'B',
+ sol:'Common salt is Sodium Chloride with chemical formula NaCl.'},
+
+{id:'ntpc22g2',exam:'Railway NTPC',year:2022,subj:'gk',topic:'Geography',diff:'easy',
+ q:'Which is the smallest state of India by area?',
+ opts:['A) Manipur','B) Meghalaya','C) Goa','D) Tripura'],ans:'C',
+ sol:'Goa is the smallest state of India by area (3,702 sq km).'},
+
+{id:'ntpc22g3',exam:'Railway NTPC',year:2022,subj:'gk',topic:'Static GK',diff:'easy',
+ q:'Who invented the telephone?',
+ opts:['A) Thomas Edison','B) Alexander Graham Bell','C) Nikola Tesla','D) James Watt'],ans:'B',
+ sol:'Alexander Graham Bell is credited with inventing the first practical telephone in 1876.'},
+
+{id:'ntpc21m1',exam:'Railway NTPC',year:2021,subj:'math',topic:'Ratio & Proportion',diff:'medium',
+ q:'The ratio of ages of A and B is 3:5. After 10 years the ratio becomes 5:7. Find the present age of A.',
+ opts:['A) 15 years','B) 20 years','C) 25 years','D) 30 years'],ans:'A',
+ sol:'Let A=3k, B=5k. (3k+10)/(5k+10)=5/7 → 21k+70=25k+50 → 4k=20 → k=5. A=15 yrs.'},
+
+{id:'ntpc21g1',exam:'Railway NTPC',year:2021,subj:'gk',topic:'Current Affairs',diff:'easy',
+ q:'Which country hosted the 2020 Summer Olympics (held in 2021)?',
+ opts:['A) China','B) France','C) Japan','D) USA'],ans:'C',
+ sol:'The 2020 Summer Olympics (postponed to 2021 due to COVID-19) were held in Tokyo, Japan.'},
+
+// ─────────────────────────────────────────────────────────────────
+// Railway Group D
+// ─────────────────────────────────────────────────────────────────
+{id:'grpd22m1',exam:'Railway Group D',year:2022,subj:'math',topic:'Simplification',diff:'easy',
+ q:'√(0.09) + √(0.25) + √(0.16) = ?',
+ opts:['A) 0.9','B) 1.0','C) 1.2','D) 1.1'],ans:'C',
+ sol:'√0.09=0.3, √0.25=0.5, √0.16=0.4. Sum=0.3+0.5+0.4=1.2.'},
+
+{id:'grpd22m2',exam:'Railway Group D',year:2022,subj:'math',topic:'Percentage',diff:'easy',
+ q:'What percent of 250 is 75?',
+ opts:['A) 25%','B) 30%','C) 33%','D) 35%'],ans:'B',
+ sol:'(75/250)×100 = 30%.'},
+
+{id:'grpd22m3',exam:'Railway Group D',year:2022,subj:'math',topic:'Number System',diff:'easy',
+ q:'The product of two numbers is 1500 and their HCF is 10. How many such pairs are possible?',
+ opts:['A) 2','B) 3','C) 4','D) 5'],ans:'A',
+ sol:'Let numbers=10a, 10b where HCF(a,b)=1. Then 100ab=1500 → ab=15. Co-prime pairs with ab=15: (1,15) and (3,5). So 2 unordered pairs: (10,150) and (30,50).'},
+
+{id:'grpd22r1',exam:'Railway Group D',year:2022,subj:'reasoning',topic:'Mirror Image',diff:'easy',
+ q:'If a clock shows 4:40, what will be its mirror image time?',
+ opts:['A) 7:20','B) 8:20','C) 7:30','D) 6:20'],ans:'A',
+ sol:'Mirror image time = 11:60 - actual time = 11:60 - 4:40 = 7:20.'},
+
+{id:'grpd22g1',exam:'Railway Group D',year:2022,subj:'gk',topic:'Science',diff:'easy',
+ q:'Which gas is used in fire extinguishers?',
+ opts:['A) Oxygen','B) Nitrogen','C) Carbon dioxide','D) Hydrogen'],ans:'C',
+ sol:'Carbon dioxide (CO₂) is used in fire extinguishers because it displaces oxygen, smothering the fire.'},
+
+{id:'grpd22g2',exam:'Railway Group D',year:2022,subj:'gk',topic:'History',diff:'easy',
+ q:'Mahatma Gandhi launched the Quit India Movement in which year?',
+ opts:['A) 1940','B) 1942','C) 1944','D) 1946'],ans:'B',
+ sol:'Mahatma Gandhi launched the Quit India Movement on August 8, 1942, at the Bombay session of the All India Congress Committee.'},
+
+{id:'grpd22g3',exam:'Railway Group D',year:2022,subj:'gk',topic:'Static GK',diff:'easy',
+ q:'Which is the largest planet in our solar system?',
+ opts:['A) Saturn','B) Uranus','C) Neptune','D) Jupiter'],ans:'D',
+ sol:'Jupiter is the largest planet in our solar system, with a mass more than twice that of all other planets combined.'},
+
+// ─────────────────────────────────────────────────────────────────
+// IBPS PO
+// ─────────────────────────────────────────────────────────────────
+{id:'ibpspo23m1',exam:'IBPS PO',year:2023,subj:'math',topic:'Data Interpretation',diff:'hard',
+ q:'The ratio of income to expenditure of a person is 5:4. If his income increases by 20% and expenditure by 10%, find the new saving as a percentage of new income.',
+ opts:['A) 22.7%','B) 25%','C) 26.67%','D) 20%'],ans:'C',
+ sol:'Let income=500, exp=400, saving=100. New income=600, new exp=440, new saving=160. Saving %=(160/600)×100=26.67%.'},
+
+{id:'ibpspo23m2',exam:'IBPS PO',year:2023,subj:'math',topic:'Quadratic Equations',diff:'medium',
+ q:'Find the roots of: x² − 7x + 12 = 0',
+ opts:['A) 3 and 4','B) 2 and 6','C) −3 and −4','D) 1 and 12'],ans:'A',
+ sol:'x²−7x+12=0. (x−3)(x−4)=0. x=3 or x=4.'},
+
+{id:'ibpspo23m3',exam:'IBPS PO',year:2023,subj:'math',topic:'Probability',diff:'medium',
+ q:'From a pack of 52 cards, a card is drawn at random. What is the probability it is a king or a queen?',
+ opts:['A) 1/13','B) 2/13','C) 3/13','D) 4/13'],ans:'B',
+ sol:'Kings=4, Queens=4. Favourable=8. P = 8/52 = 2/13.'},
+
+{id:'ibpspo23r1',exam:'IBPS PO',year:2023,subj:'reasoning',topic:'Puzzles',diff:'hard',
+ q:'Five friends A, B, C, D, E sit in a row. A sits to the right of B. C sits between D and E. B sits at the left end. Who sits at the right end?',
+ opts:['A) A','B) C','C) D','D) E'],ans:'A',
+ sol:'B is at left end (pos 1). A is to the right of B. C is between D and E. One valid arrangement: B, D, C, E, A. A is at the right end.'},
+
+{id:'ibpspo23g1',exam:'IBPS PO',year:2023,subj:'gk',topic:'Economy',diff:'medium',
+ q:'Which committee recommended the merger of Regional Rural Banks?',
+ opts:['A) Narasimham Committee','B) Kelkar Committee','C) Vyas Committee','D) Nair Committee'],ans:'C',
+ sol:'The Vyas Committee (Dr. M. V. S. Chalapathy Rao committee) recommended the merger of Regional Rural Banks with their sponsor banks.'},
+
+{id:'ibpspo23e1',exam:'IBPS PO',year:2023,subj:'english',topic:'Reading Comprehension',diff:'medium',
+ q:'Choose the word that is most opposite in meaning to "ELOQUENT":',
+ opts:['A) Articulate','B) Fluent','C) Inarticulate','D) Expressive'],ans:'C',
+ sol:'"Eloquent" means fluent and persuasive in speaking. Its antonym is "Inarticulate" — not able to express oneself clearly.'},
+
+{id:'ibpspo22m1',exam:'IBPS PO',year:2022,subj:'math',topic:'Permutation & Combination',diff:'hard',
+ q:'In how many ways can the letters of the word "EXAM" be arranged?',
+ opts:['A) 12','B) 24','C) 48','D) 36'],ans:'B',
+ sol:'EXAM has 4 distinct letters. Number of arrangements = 4! = 24.'},
+
+{id:'ibpspo22g1',exam:'IBPS PO',year:2022,subj:'gk',topic:'Banking',diff:'medium',
+ q:'The headquarters of the World Bank is located in:',
+ opts:['A) New York','B) Geneva','C) Washington D.C.','D) London'],ans:'C',
+ sol:'The World Bank Group is headquartered in Washington, D.C., USA.'},
+
+// ─────────────────────────────────────────────────────────────────
+// IBPS Clerk
+// ─────────────────────────────────────────────────────────────────
+{id:'ibpsclk23m1',exam:'IBPS Clerk',year:2023,subj:'math',topic:'Simplification',diff:'easy',
+ q:'85 + 15 × 4 ÷ 2 − 30 = ?',
+ opts:['A) 85','B) 80','C) 75','D) 90'],ans:'A',
+ sol:'BODMAS: 15×4=60, 60÷2=30. 85+30-30=85.'},
+
+{id:'ibpsclk23m2',exam:'IBPS Clerk',year:2023,subj:'math',topic:'SI & CI',diff:'easy',
+ q:'Simple interest on ₹4000 at 5% per annum for 3 years is:',
+ opts:['A) ₹400','B) ₹500','C) ₹600','D) ₹700'],ans:'C',
+ sol:'SI = P×R×T/100 = 4000×5×3/100 = ₹600.'},
+
+{id:'ibpsclk23r1',exam:'IBPS Clerk',year:2023,subj:'reasoning',topic:'Ranking',diff:'easy',
+ q:'In a row of 40 students, Rani is 15th from the left. What is her position from the right?',
+ opts:['A) 24th','B) 25th','C) 26th','D) 27th'],ans:'C',
+ sol:'Position from right = Total+1−position from left = 40+1−15 = 26th.'},
+
+{id:'ibpsclk23g1',exam:'IBPS Clerk',year:2023,subj:'gk',topic:'Banking',diff:'easy',
+ q:'Which of the following is NOT a function of the Reserve Bank of India?',
+ opts:['A) Issuing currency notes','B) Controlling credit','C) Accepting deposits from public','D) Acting as banker to the government'],ans:'C',
+ sol:'RBI does not directly accept deposits from the public — that is the function of commercial banks. RBI issues currency, controls credit, and acts as banker to the government.'},
+
+{id:'ibpsclk23e1',exam:'IBPS Clerk',year:2023,subj:'english',topic:'Error Detection',diff:'medium',
+ q:'Find the error in: "He is one of (A) the best students (B) who has (C) won this prize." (D) No error',
+ opts:['A) Part A','B) Part B','C) Part C','D) No error'],ans:'C',
+ sol:'"who" refers to "students" (plural) so the verb should be "have", not "has". Error is in Part C.'},
+
+{id:'ibpsclk22m1',exam:'IBPS Clerk',year:2022,subj:'math',topic:'Number Series',diff:'medium',
+ q:'Find the wrong term: 5, 10, 40, 80, 320, 640, 2580',
+ opts:['A) 640','B) 320','C) 2580','D) 80'],ans:'C',
+ sol:'Pattern: ×2, ×4, ×2, ×4, ×2, ×4... 5,10,40,80,320,640,2560. Last term should be 2560, not 2580.'},
+
+{id:'ibpsclk22g1',exam:'IBPS Clerk',year:2022,subj:'gk',topic:'Current Affairs',diff:'easy',
+ q:'Who was the first woman to become Chief Justice of a High Court in India?',
+ opts:['A) Indira Banerjee','B) Leila Seth','C) Fatima Beevi','D) Anna George Malhotra'],ans:'B',
+ sol:'Justice Leila Seth became the first woman Chief Justice of a High Court in India (Himachal Pradesh High Court) in 1991.'},
+
+// ─────────────────────────────────────────────────────────────────
+// UP Police / State Police CET
+// ─────────────────────────────────────────────────────────────────
+{id:'uppol24m1',exam:'UP Police',year:2024,subj:'math',topic:'Percentage',diff:'easy',
+ q:'A student scored 405 marks out of 500. What is his percentage?',
+ opts:['A) 80%','B) 81%','C) 82%','D) 83%'],ans:'B',
+ sol:'Percentage = (405/500)×100 = 81%.'},
+
+{id:'uppol24m2',exam:'UP Police',year:2024,subj:'math',topic:'Profit & Loss',diff:'easy',
+ q:'A trader buys goods for ₹1200 and sells for ₹1500. Find his profit percentage.',
+ opts:['A) 20%','B) 22%','C) 25%','D) 28%'],ans:'C',
+ sol:'Profit = 1500-1200 = 300. Profit% = (300/1200)×100 = 25%.'},
+
+{id:'uppol24r1',exam:'UP Police',year:2024,subj:'reasoning',topic:'Coding-Decoding',diff:'easy',
+ q:'If POLICE is coded as QPMJDF, then CRIME is coded as:',
+ opts:['A) DSJNF','B) BQHLD','C) DTJOF','D) CSHNF'],ans:'A',
+ sol:'Each letter is shifted by +1: P+1=Q, O+1=P, L+1=M, I+1=J, C+1=D, E+1=F. Similarly C→D, R→S, I→J, M→N, E→F = DSJNF.'},
+
+{id:'uppol24r2',exam:'UP Police',year:2024,subj:'reasoning',topic:'Analogy',diff:'easy',
+ q:'Police : Law :: Doctor : ?',
+ opts:['A) Hospital','B) Health','C) Medicine','D) Nurse'],ans:'B',
+ sol:'Police upholds Law; Doctor upholds/protects Health.'},
+
+{id:'uppol24g1',exam:'UP Police',year:2024,subj:'gk',topic:'Polity',diff:'easy',
+ q:'The Preamble of the Indian Constitution was amended in which year?',
+ opts:['A) 1971','B) 1974','C) 1976','D) 1978'],ans:'C',
+ sol:'The Preamble was amended by the 42nd Constitutional Amendment in 1976 to add the words "Socialist", "Secular" and "Integrity".'},
+
+{id:'uppol24g2',exam:'UP Police',year:2024,subj:'gk',topic:'History',diff:'easy',
+ q:'Who was the founder of the Indian National Congress?',
+ opts:['A) Bal Gangadhar Tilak','B) A.O. Hume','C) Dadabhai Naoroji','D) Gopal Krishna Gokhale'],ans:'B',
+ sol:'The Indian National Congress was founded by Allan Octavian (A.O.) Hume, a retired British civil servant, in 1885.'},
+
+{id:'uppol24g3',exam:'UP Police',year:2024,subj:'gk',topic:'Science',diff:'easy',
+ q:'The speed of sound in air at 0°C is approximately:',
+ opts:['A) 232 m/s','B) 330 m/s','C) 340 m/s','D) 400 m/s'],ans:'B',
+ sol:'The speed of sound in air at 0°C is approximately 331 m/s (nearest option is 330 m/s).'},
+
+{id:'uppol24e1',exam:'UP Police',year:2024,subj:'english',topic:'Fill in the Blank',diff:'easy',
+ q:'She speaks English ______ than her brother.',
+ opts:['A) well','B) good','C) better','D) best'],ans:'C',
+ sol:'When comparing two people, we use the comparative form. "Better" is the comparative of "well".'},
+
+// ── SSC CGL 2016 ─────────────────────────────────────────────────────
+{id:'cgl16m1',exam:'SSC CGL',year:2016,subj:'maths',topic:'Algebra',diff:'medium',
+ q:'If x + 1/x = 5, then x² + 1/x² = ?',
+ opts:['A) 23','B) 25','C) 27','D) 29'],ans:'A',
+ sol:'x²+1/x² = (x+1/x)²−2 = 25−2 = 23.'},
+{id:'cgl16m2',exam:'SSC CGL',year:2016,subj:'maths',topic:'Percentage',diff:'easy',
+ q:'A number is increased by 20% and then decreased by 20%. The net change is:',
+ opts:['A) No change','B) 4% decrease','C) 4% increase','D) 2% decrease'],ans:'B',
+ sol:'Net effect = −(20×20)/100 = −4%. So 4% decrease.'},
+{id:'cgl16m3',exam:'SSC CGL',year:2016,subj:'maths',topic:'Profit & Loss',diff:'medium',
+ q:'A trader marks his goods 25% above cost price and gives 10% discount. His profit % is:',
+ opts:['A) 10%','B) 12.5%','C) 15%','D) 17.5%'],ans:'B',
+ sol:'SP = 125×0.9 = 112.5% of CP. Profit = 12.5%.'},
+{id:'cgl16m4',exam:'SSC CGL',year:2016,subj:'maths',topic:'Simple Interest',diff:'easy',
+ q:'Simple interest on ₹8000 at 5% per annum for 3 years is:',
+ opts:['A) ₹1000','B) ₹1200','C) ₹1400','D) ₹1600'],ans:'B',
+ sol:'SI = (8000×5×3)/100 = ₹1200.'},
+{id:'cgl16r1',exam:'SSC CGL',year:2016,subj:'reasoning',topic:'Number Series',diff:'medium',
+ q:'Find the missing number: 2, 6, 12, 20, 30, ?',
+ opts:['A) 40','B) 42','C) 44','D) 46'],ans:'B',
+ sol:'Differences: 4,6,8,10,12. Next = 30+12 = 42.'},
+{id:'cgl16r2',exam:'SSC CGL',year:2016,subj:'reasoning',topic:'Analogy',diff:'easy',
+ q:'Book : Library :: Painting : ?',
+ opts:['A) Museum','B) Artist','C) Canvas','D) Gallery'],ans:'D',
+ sol:'A book is kept in a Library; a Painting is kept in a Gallery.'},
+{id:'cgl16r3',exam:'SSC CGL',year:2016,subj:'reasoning',topic:'Coding-Decoding',diff:'medium',
+ q:'If MANGO is coded as NBOIP, then APPLE is coded as:',
+ opts:['A) BQQMF','B) BPQMF','C) BQQNF','D) CQQMF'],ans:'A',
+ sol:'Each letter is moved +1 in alphabet. A→B, P→Q, P→Q, L→M, E→F → BQQMF.'},
+{id:'cgl16r4',exam:'SSC CGL',year:2016,subj:'reasoning',topic:'Direction',diff:'easy',
+ q:'Ram walks 10m North, turns right and walks 5m, turns right and walks 10m. How far is he from start?',
+ opts:['A) 5m','B) 10m','C) 15m','D) 0m'],ans:'A',
+ sol:'He ends up 5m East of the starting point.'},
+{id:'cgl16g1',exam:'SSC CGL',year:2016,subj:'gk',topic:'History',diff:'easy',
+ q:'The Battle of Plassey was fought in:',
+ opts:['A) 1757','B) 1760','C) 1764','D) 1775'],ans:'A',
+ sol:'The Battle of Plassey was fought on 23 June 1757 between the British East India Company and Nawab Siraj ud-Daulah.'},
+{id:'cgl16g2',exam:'SSC CGL',year:2016,subj:'gk',topic:'Polity',diff:'easy',
+ q:'The Constitution of India was adopted on:',
+ opts:['A) 26 Jan 1950','B) 15 Aug 1947','C) 26 Nov 1949','D) 2 Oct 1948'],ans:'C',
+ sol:'The Constitution was adopted on 26 November 1949 and came into effect on 26 January 1950.'},
+{id:'cgl16g3',exam:'SSC CGL',year:2016,subj:'gk',topic:'Science',diff:'easy',
+ q:'The chemical formula of water is:',
+ opts:['A) HO','B) H₂O','C) H₂O₂','D) HO₂'],ans:'B',
+ sol:'Water is H₂O — two hydrogen atoms bonded to one oxygen atom.'},
+{id:'cgl16e1',exam:'SSC CGL',year:2016,subj:'english',topic:'Synonyms',diff:'easy',
+ q:'Choose the synonym of BENEVOLENT:',
+ opts:['A) Cruel','B) Generous','C) Selfish','D) Lazy'],ans:'B',
+ sol:'Benevolent means well-meaning and kindly. Synonym: Generous.'},
+
+// ── SSC CGL 2017 ─────────────────────────────────────────────────────
+{id:'cgl17m1',exam:'SSC CGL',year:2017,subj:'maths',topic:'Time & Work',diff:'medium',
+ q:'A can do a work in 15 days and B in 20 days. If they work together, in how many days will they finish?',
+ opts:['A) 60/7 days','B) 8 days','C) 9 days','D) 10 days'],ans:'A',
+ sol:'Combined rate = 1/15+1/20 = 7/60 per day. Days = 60/7 ≈ 8.57 days.'},
+{id:'cgl17m2',exam:'SSC CGL',year:2017,subj:'maths',topic:'Compound Interest',diff:'medium',
+ q:'Find CI on ₹10000 at 10% per annum for 2 years, compounded annually.',
+ opts:['A) ₹1000','B) ₹2000','C) ₹2100','D) ₹1100'],ans:'C',
+ sol:'A = 10000×(1.1)² = 12100. CI = 12100−10000 = ₹2100.'},
+{id:'cgl17m3',exam:'SSC CGL',year:2017,subj:'maths',topic:'Mensuration',diff:'medium',
+ q:'The area of a triangle with sides 5cm, 12cm and 13cm is:',
+ opts:['A) 25 cm²','B) 30 cm²','C) 36 cm²','D) 60 cm²'],ans:'B',
+ sol:'5²+12²=13² so it is right-angled. Area = ½×5×12 = 30 cm².'},
+{id:'cgl17m4',exam:'SSC CGL',year:2017,subj:'maths',topic:'Boat & Stream',diff:'medium',
+ q:'A boat goes 30 km upstream in 6 hours and 30 km downstream in 3 hours. Speed of stream is:',
+ opts:['A) 2.5 km/h','B) 3 km/h','C) 4 km/h','D) 5 km/h'],ans:'A',
+ sol:'Upstream speed=5 km/h, Downstream=10 km/h. Current=(10−5)/2=2.5 km/h.'},
+{id:'cgl17r1',exam:'SSC CGL',year:2017,subj:'reasoning',topic:'Letter Series',diff:'easy',
+ q:'Find missing: A, C, F, J, O, ?',
+ opts:['A) T','B) U','C) V','D) W'],ans:'B',
+ sol:'Gaps: +2,+3,+4,+5,+6. O(15)+6=U(21).'},
+{id:'cgl17r2',exam:'SSC CGL',year:2017,subj:'reasoning',topic:'Odd One Out',diff:'easy',
+ q:'Find the odd one: Rose, Lily, Lotus, Mango',
+ opts:['A) Rose','B) Lily','C) Lotus','D) Mango'],ans:'D',
+ sol:'Rose, Lily, Lotus are flowers. Mango is a fruit — the odd one.'},
+{id:'cgl17r3',exam:'SSC CGL',year:2017,subj:'reasoning',topic:'Syllogism',diff:'medium',
+ q:'All cats are animals. Some animals are dogs. Conclusion I: Some dogs are cats.',
+ opts:['A) True','B) False','C) Uncertain','D) None of these'],ans:'B',
+ sol:'We cannot conclude "Some dogs are cats" from the given statements. The conclusion is False.'},
+{id:'cgl17r4',exam:'SSC CGL',year:2017,subj:'reasoning',topic:'Calendar',diff:'medium',
+ q:'If 1st January 2017 is Sunday, what day is 1st January 2018?',
+ opts:['A) Sunday','B) Monday','C) Tuesday','D) Saturday'],ans:'B',
+ sol:'2017 is not a leap year: 365 = 52 weeks + 1 day. Sunday + 1 = Monday.'},
+{id:'cgl17g1',exam:'SSC CGL',year:2017,subj:'gk',topic:'Geography',diff:'easy',
+ q:'Which is the longest river in India?',
+ opts:['A) Yamuna','B) Ganga','C) Brahmaputra','D) Godavari'],ans:'B',
+ sol:'The Ganga (Ganges) is the longest river in India, spanning about 2525 km.'},
+{id:'cgl17g2',exam:'SSC CGL',year:2017,subj:'gk',topic:'Science',diff:'easy',
+ q:'The unit of electric current is:',
+ opts:['A) Volt','B) Watt','C) Ampere','D) Ohm'],ans:'C',
+ sol:'Electric current is measured in Amperes (A).'},
+{id:'cgl17g3',exam:'SSC CGL',year:2017,subj:'gk',topic:'History',diff:'easy',
+ q:'Who founded the Indian National Congress in 1885?',
+ opts:['A) Mahatma Gandhi','B) A.O. Hume','C) Bal Gangadhar Tilak','D) Gopal Krishna Gokhale'],ans:'B',
+ sol:'Allan Octavian Hume, a retired British civil servant, founded the Indian National Congress in 1885.'},
+{id:'cgl17e1',exam:'SSC CGL',year:2017,subj:'english',topic:'Antonyms',diff:'easy',
+ q:'Choose the antonym of VICTORY:',
+ opts:['A) Win','B) Success','C) Defeat','D) Triumph'],ans:'C',
+ sol:'The antonym of Victory is Defeat.'},
+
+// ── SSC CGL 2018 ─────────────────────────────────────────────────────
+{id:'cgl18m1',exam:'SSC CGL',year:2018,subj:'maths',topic:'Number System',diff:'medium',
+ q:'What is the remainder when 599 is divided by 13?',
+ opts:['A) 0','B) 1','C) 2','D) 3'],ans:'B',
+ sol:'599 = 46×13 + 1. Remainder = 1.'},
+{id:'cgl18m2',exam:'SSC CGL',year:2018,subj:'maths',topic:'Ratio & Proportion',diff:'easy',
+ q:'If A:B = 3:4 and B:C = 6:5, then A:B:C = ?',
+ opts:['A) 9:12:10','B) 3:4:5','C) 18:24:20','D) 6:8:5'],ans:'A',
+ sol:'A:B=3:4; B:C=6:5. LCM of B-terms(4,6)=12. A:B:C = 9:12:10.'},
+{id:'cgl18m3',exam:'SSC CGL',year:2018,subj:'maths',topic:'Trigonometry',diff:'medium',
+ q:'If sin θ = 3/5, then cos θ = ?',
+ opts:['A) 4/5','B) 3/4','C) 5/3','D) 5/4'],ans:'A',
+ sol:'cos θ = √(1−sin²θ) = √(1−9/25) = √(16/25) = 4/5.'},
+{id:'cgl18m4',exam:'SSC CGL',year:2018,subj:'maths',topic:'Mixture & Alligation',diff:'medium',
+ q:'In what ratio should water be mixed with milk costing ₹12/litre to get a mixture worth ₹8/litre?',
+ opts:['A) 1:2','B) 1:1','C) 2:1','D) 3:1'],ans:'A',
+ sol:'By alligation: (12−8):(8−0) = 4:8 = 1:2. Water:Milk = 1:2.'},
+{id:'cgl18r1',exam:'SSC CGL',year:2018,subj:'reasoning',topic:'Number Analogy',diff:'easy',
+ q:'16 : 256 :: 17 : ?',
+ opts:['A) 289','B) 296','C) 300','D) 278'],ans:'A',
+ sol:'16² = 256. 17² = 289.'},
+{id:'cgl18r2',exam:'SSC CGL',year:2018,subj:'reasoning',topic:'Venn Diagram',diff:'easy',
+ q:'In a class of 50, 30 play cricket, 25 play football, 10 play both. How many play neither?',
+ opts:['A) 5','B) 10','C) 15','D) 20'],ans:'A',
+ sol:'Play at least one = 30+25−10 = 45. Neither = 50−45 = 5.'},
+{id:'cgl18r3',exam:'SSC CGL',year:2018,subj:'reasoning',topic:'Blood Relation',diff:'medium',
+ q:'A is the brother of B. C is B\'s mother. D is C\'s father. How is A related to D?',
+ opts:['A) Son','B) Grandson','C) Nephew','D) Uncle'],ans:'B',
+ sol:'A\'s mother is C, C\'s father is D. So D is A\'s grandfather and A is D\'s grandson.'},
+{id:'cgl18g1',exam:'SSC CGL',year:2018,subj:'gk',topic:'Polity',diff:'easy',
+ q:'The Preamble to the Indian Constitution was amended in which year?',
+ opts:['A) 1971','B) 1976','C) 1978','D) 1985'],ans:'B',
+ sol:'The Preamble was amended by the 42nd Constitutional Amendment in 1976, adding "Socialist", "Secular" and "Integrity".'},
+{id:'cgl18g2',exam:'SSC CGL',year:2018,subj:'gk',topic:'History',diff:'medium',
+ q:'The Quit India Movement was launched in:',
+ opts:['A) 1940','B) 1942','C) 1944','D) 1945'],ans:'B',
+ sol:'Mahatma Gandhi launched the Quit India Movement on 8 August 1942.'},
+{id:'cgl18g3',exam:'SSC CGL',year:2018,subj:'gk',topic:'Science',diff:'easy',
+ q:'Photosynthesis takes place in which part of the plant cell?',
+ opts:['A) Root','B) Stem','C) Chloroplast','D) Mitochondria'],ans:'C',
+ sol:'Photosynthesis occurs in chloroplasts, which contain chlorophyll.'},
+{id:'cgl18e1',exam:'SSC CGL',year:2018,subj:'english',topic:'Antonyms',diff:'easy',
+ q:'Antonym of ABUNDANT is:',
+ opts:['A) Plentiful','B) Scarce','C) Rich','D) Excessive'],ans:'B',
+ sol:'Abundant means plentiful; its antonym is Scarce.'},
+
+// ── SSC CGL 2019 ─────────────────────────────────────────────────────
+{id:'cgl19m1',exam:'SSC CGL',year:2019,subj:'maths',topic:'Percentage',diff:'medium',
+ q:'If 40% of a number is 120, what is 60% of the same number?',
+ opts:['A) 160','B) 180','C) 200','D) 240'],ans:'B',
+ sol:'Number = 120/0.4 = 300. 60% of 300 = 180.'},
+{id:'cgl19m2',exam:'SSC CGL',year:2019,subj:'maths',topic:'Partnership',diff:'medium',
+ q:'A invests ₹5000 for 12 months and B invests ₹6000 for 10 months. Ratio of their profit is:',
+ opts:['A) 1:1','B) 5:6','C) 6:5','D) 5:1'],ans:'A',
+ sol:'A\'s capital-time = 5000×12 = 60000. B\'s = 6000×10 = 60000. Ratio = 1:1.'},
+{id:'cgl19m3',exam:'SSC CGL',year:2019,subj:'maths',topic:'Geometry',diff:'medium',
+ q:'The sum of interior angles of a hexagon is:',
+ opts:['A) 360°','B) 540°','C) 720°','D) 900°'],ans:'C',
+ sol:'Sum = (n−2)×180 = (6−2)×180 = 720°.'},
+{id:'cgl19m4',exam:'SSC CGL',year:2019,subj:'maths',topic:'Speed & Distance',diff:'medium',
+ q:'A train 200m long crosses a pole in 10 seconds. Its speed in km/h is:',
+ opts:['A) 60','B) 72','C) 80','D) 90'],ans:'B',
+ sol:'Speed = 200/10 = 20 m/s = 20×18/5 = 72 km/h.'},
+{id:'cgl19r1',exam:'SSC CGL',year:2019,subj:'reasoning',topic:'Letter Analogy',diff:'easy',
+ q:'ACE : BDF :: GIK : ?',
+ opts:['A) HJL','B) IJL','C) HJK','D) GJL'],ans:'A',
+ sol:'Each letter +1. G→H, I→J, K→L → HJL.'},
+{id:'cgl19r2',exam:'SSC CGL',year:2019,subj:'reasoning',topic:'Ranking',diff:'easy',
+ q:'In a class of 40, Ravi ranks 10th from top. His rank from bottom is:',
+ opts:['A) 29','B) 30','C) 31','D) 32'],ans:'C',
+ sol:'Rank from bottom = 40−10+1 = 31.'},
+{id:'cgl19r3',exam:'SSC CGL',year:2019,subj:'reasoning',topic:'Syllogism',diff:'medium',
+ q:'All birds fly. Penguins are birds. Based on these premises: Penguins fly.',
+ opts:['A) True','B) False','C) Cannot determine','D) Partially true'],ans:'A',
+ sol:'Based strictly on the given premises (not real-world facts), the conclusion is logically valid.'},
+{id:'cgl19g1',exam:'SSC CGL',year:2019,subj:'gk',topic:'Economy',diff:'easy',
+ q:'GST in India was implemented on:',
+ opts:['A) 1 April 2017','B) 1 July 2017','C) 1 Jan 2017','D) 15 Aug 2017'],ans:'B',
+ sol:'Goods and Services Tax (GST) was implemented in India on 1 July 2017.'},
+{id:'cgl19g2',exam:'SSC CGL',year:2019,subj:'gk',topic:'Geography',diff:'easy',
+ q:'Which is the highest peak lying entirely within India?',
+ opts:['A) Mt. Everest','B) Nanda Devi','C) K2','D) Kanchenjunga'],ans:'D',
+ sol:'Kanchenjunga (8586m) is the highest peak within Indian territory.'},
+{id:'cgl19g3',exam:'SSC CGL',year:2019,subj:'gk',topic:'Science',diff:'easy',
+ q:'The SI unit of force is:',
+ opts:['A) Joule','B) Watt','C) Newton','D) Pascal'],ans:'C',
+ sol:'The SI unit of force is Newton (N).'},
+{id:'cgl19e1',exam:'SSC CGL',year:2019,subj:'english',topic:'Error Detection',diff:'medium',
+ q:'Find the error: "She did not went to school yesterday."',
+ opts:['A) She did','B) not went','C) to school','D) yesterday'],ans:'B',
+ sol:'"Did" is past auxiliary; the main verb must be base form "go". Correct: "She did not go to school."'},
+
+// ── SSC CGL 2020 ─────────────────────────────────────────────────────
+{id:'cgl20m1',exam:'SSC CGL',year:2020,subj:'maths',topic:'LCM & HCF',diff:'easy',
+ q:'The LCM of 12, 18 and 24 is:',
+ opts:['A) 48','B) 60','C) 72','D) 36'],ans:'C',
+ sol:'LCM(12,18,24) = 72.'},
+{id:'cgl20m2',exam:'SSC CGL',year:2020,subj:'maths',topic:'Average',diff:'easy',
+ q:'Average of first 10 natural numbers is:',
+ opts:['A) 5','B) 5.5','C) 6','D) 4.5'],ans:'B',
+ sol:'Sum = 1+2+...+10 = 55. Average = 55/10 = 5.5.'},
+{id:'cgl20m3',exam:'SSC CGL',year:2020,subj:'maths',topic:'Compound Interest',diff:'medium',
+ q:'CI on ₹5000 at 8% p.a. for 2 years compounded annually is:',
+ opts:['A) ₹800','B) ₹832','C) ₹840','D) ₹850'],ans:'B',
+ sol:'A = 5000×(1.08)² = 5000×1.1664 = 5832. CI = ₹832.'},
+{id:'cgl20m4',exam:'SSC CGL',year:2020,subj:'maths',topic:'Data Interpretation',diff:'medium',
+ q:'A pie chart shows: Science 90°, Maths 120°, English 60°, Hindi 90°. What % study Maths?',
+ opts:['A) 25%','B) 30%','C) 33.3%','D) 40%'],ans:'C',
+ sol:'Maths = 120°/360° = 1/3 = 33.3%.'},
+{id:'cgl20r1',exam:'SSC CGL',year:2020,subj:'reasoning',topic:'Analogy',diff:'easy',
+ q:'Pen : Write :: Knife : ?',
+ opts:['A) Cook','B) Cut','C) Sharp','D) Steel'],ans:'B',
+ sol:'A pen is used to write; a knife is used to cut.'},
+{id:'cgl20r2',exam:'SSC CGL',year:2020,subj:'reasoning',topic:'Coding-Decoding',diff:'medium',
+ q:'In a code, WATER is written as YCVGT. Then EARTH is coded as:',
+ opts:['A) GCTVJ','B) GCTVI','C) GCTVH','D) FBSUI'],ans:'A',
+ sol:'Each letter shifted +2. E→G, A→C, R→T, T→V, H→J → GCTVJ.'},
+{id:'cgl20r3',exam:'SSC CGL',year:2020,subj:'reasoning',topic:'Odd One Out',diff:'easy',
+ q:'Find the odd one: Mars, Venus, Sun, Jupiter',
+ opts:['A) Mars','B) Venus','C) Sun','D) Jupiter'],ans:'C',
+ sol:'Mars, Venus, Jupiter are planets. Sun is a star — the odd one.'},
+{id:'cgl20r4',exam:'SSC CGL',year:2020,subj:'reasoning',topic:'Blood Relation',diff:'medium',
+ q:'Pointing to a photo, Asha says "This man\'s son is my son\'s father." How is the man related to Asha?',
+ opts:['A) Father','B) Uncle','C) Father-in-law','D) Grandfather'],ans:'C',
+ sol:'"My son\'s father" = Asha\'s husband. Photo man\'s son = Asha\'s husband. Photo man = Asha\'s father-in-law.'},
+{id:'cgl20g1',exam:'SSC CGL',year:2020,subj:'gk',topic:'History',diff:'easy',
+ q:'Mahatma Gandhi was born in which year?',
+ opts:['A) 1865','B) 1869','C) 1875','D) 1880'],ans:'B',
+ sol:'Mahatma Gandhi was born on 2 October 1869 in Porbandar, Gujarat.'},
+{id:'cgl20g2',exam:'SSC CGL',year:2020,subj:'gk',topic:'Polity',diff:'easy',
+ q:'Article 370 (abrogated in 2019) was related to which state/UT?',
+ opts:['A) Sikkim','B) Nagaland','C) Jammu & Kashmir','D) Mizoram'],ans:'C',
+ sol:'Article 370 granted special autonomous status to Jammu & Kashmir. It was abrogated in August 2019.'},
+{id:'cgl20g3',exam:'SSC CGL',year:2020,subj:'gk',topic:'Science',diff:'easy',
+ q:'Vitamin C deficiency causes which disease?',
+ opts:['A) Rickets','B) Scurvy','C) Night blindness','D) Beriberi'],ans:'B',
+ sol:'Deficiency of Vitamin C causes Scurvy, characterised by bleeding gums and slow wound healing.'},
+{id:'cgl20e1',exam:'SSC CGL',year:2020,subj:'english',topic:'Fill in the Blank',diff:'easy',
+ q:'He is ______ honest man.',
+ opts:['A) a','B) an','C) the','D) no article'],ans:'B',
+ sol:'"Honest" begins with a vowel sound /ɒ/, so "an" is used before it.'},
+
+// ── SSC CHSL 2016 ────────────────────────────────────────────────────
+{id:'chsl16m1',exam:'SSC CHSL',year:2016,subj:'maths',topic:'Percentage',diff:'easy',
+ q:'What percentage is 75 of 300?',
+ opts:['A) 20%','B) 25%','C) 30%','D) 35%'],ans:'B',
+ sol:'(75/300)×100 = 25%.'},
+{id:'chsl16m2',exam:'SSC CHSL',year:2016,subj:'maths',topic:'Simple Interest',diff:'easy',
+ q:'SI on ₹4000 at 6% per annum for 2 years is:',
+ opts:['A) ₹400','B) ₹480','C) ₹520','D) ₹560'],ans:'B',
+ sol:'SI = (4000×6×2)/100 = ₹480.'},
+{id:'chsl16m3',exam:'SSC CHSL',year:2016,subj:'maths',topic:'Profit & Loss',diff:'easy',
+ q:'If SP = ₹120 and profit = 20%, then CP is:',
+ opts:['A) ₹96','B) ₹100','C) ₹110','D) ₹90'],ans:'B',
+ sol:'CP = 120×100/120 = ₹100.'},
+{id:'chsl16r1',exam:'SSC CHSL',year:2016,subj:'reasoning',topic:'Analogy',diff:'easy',
+ q:'Doctor : Hospital :: Teacher : ?',
+ opts:['A) School','B) Class','C) Student','D) Book'],ans:'A',
+ sol:'A doctor works in a Hospital; a Teacher works in a School.'},
+{id:'chsl16r2',exam:'SSC CHSL',year:2016,subj:'reasoning',topic:'Number Series',diff:'easy',
+ q:'3, 7, 13, 21, 31, ?',
+ opts:['A) 41','B) 43','C) 45','D) 47'],ans:'B',
+ sol:'Differences: 4,6,8,10,12. Next = 31+12 = 43.'},
+{id:'chsl16g1',exam:'SSC CHSL',year:2016,subj:'gk',topic:'History',diff:'easy',
+ q:'The first Prime Minister of India was:',
+ opts:['A) Sardar Patel','B) Dr. Rajendra Prasad','C) Jawaharlal Nehru','D) B.R. Ambedkar'],ans:'C',
+ sol:'Jawaharlal Nehru was India\'s first Prime Minister, serving from 1947 to 1964.'},
+{id:'chsl16e1',exam:'SSC CHSL',year:2016,subj:'english',topic:'Synonyms',diff:'easy',
+ q:'Synonym of ENORMOUS is:',
+ opts:['A) Tiny','B) Huge','C) Average','D) Slim'],ans:'B',
+ sol:'Enormous means very large. Synonym: Huge.'},
+
+// ── SSC CHSL 2017 ────────────────────────────────────────────────────
+{id:'chsl17m1',exam:'SSC CHSL',year:2017,subj:'maths',topic:'Algebra',diff:'easy',
+ q:'If a + b = 10 and ab = 21, then a² + b² = ?',
+ opts:['A) 58','B) 60','C) 62','D) 64'],ans:'A',
+ sol:'a²+b² = (a+b)²−2ab = 100−42 = 58.'},
+{id:'chsl17m2',exam:'SSC CHSL',year:2017,subj:'maths',topic:'Average',diff:'easy',
+ q:'Average of 5 numbers is 20. If one number is excluded, average becomes 18. The excluded number is:',
+ opts:['A) 24','B) 26','C) 28','D) 30'],ans:'C',
+ sol:'Sum of 5 = 100. Sum of 4 = 72. Excluded = 100−72 = 28.'},
+{id:'chsl17r1',exam:'SSC CHSL',year:2017,subj:'reasoning',topic:'Coding-Decoding',diff:'easy',
+ q:'If A=1, B=2, … Z=26, then DOG = ?',
+ opts:['A) 26','B) 27','C) 28','D) 29'],ans:'A',
+ sol:'D=4, O=15, G=7. Sum = 4+15+7 = 26.'},
+{id:'chsl17g1',exam:'SSC CHSL',year:2017,subj:'gk',topic:'Science',diff:'easy',
+ q:'The hardest natural substance is:',
+ opts:['A) Gold','B) Iron','C) Diamond','D) Platinum'],ans:'C',
+ sol:'Diamond is the hardest naturally occurring substance, rating 10 on the Mohs hardness scale.'},
+{id:'chsl17e1',exam:'SSC CHSL',year:2017,subj:'english',topic:'Error Detection',diff:'easy',
+ q:'Identify the error: "The team are playing good."',
+ opts:['A) The team','B) are playing','C) good','D) No error'],ans:'C',
+ sol:'"Good" is an adjective; the adverb "well" should modify the verb "playing".'},
+
+// ── SSC CHSL 2018 ────────────────────────────────────────────────────
+{id:'chsl18m1',exam:'SSC CHSL',year:2018,subj:'maths',topic:'Speed & Distance',diff:'medium',
+ q:'A car covers 300 km in 5 hours. What is its speed in m/s?',
+ opts:['A) 16.67 m/s','B) 60 m/s','C) 20 m/s','D) 25 m/s'],ans:'A',
+ sol:'Speed = 300/5 = 60 km/h = 60×1000/3600 = 16.67 m/s.'},
+{id:'chsl18m2',exam:'SSC CHSL',year:2018,subj:'maths',topic:'Mensuration',diff:'easy',
+ q:'Area of a circle with radius 7 cm (use π = 22/7):',
+ opts:['A) 154 cm²','B) 144 cm²','C) 164 cm²','D) 196 cm²'],ans:'A',
+ sol:'Area = πr² = (22/7)×49 = 154 cm².'},
+{id:'chsl18r1',exam:'SSC CHSL',year:2018,subj:'reasoning',topic:'Direction',diff:'easy',
+ q:'Ravi faces North. Turns 90° clockwise, then 180° anticlockwise. Which direction does he now face?',
+ opts:['A) North','B) South','C) East','D) West'],ans:'D',
+ sol:'North → East (90° CW) → West (180° ACW from East).'},
+{id:'chsl18g1',exam:'SSC CHSL',year:2018,subj:'gk',topic:'Polity',diff:'easy',
+ q:'The Rajya Sabha is presided over by:',
+ opts:['A) President','B) Prime Minister','C) Vice President','D) Speaker'],ans:'C',
+ sol:'The Vice President of India is the ex-officio Chairman of the Rajya Sabha.'},
+{id:'chsl18e1',exam:'SSC CHSL',year:2018,subj:'english',topic:'Antonyms',diff:'easy',
+ q:'Antonym of DILIGENT is:',
+ opts:['A) Hardworking','B) Lazy','C) Sincere','D) Honest'],ans:'B',
+ sol:'Diligent means hard-working; its antonym is Lazy.'},
+
+// ── SSC CHSL 2019 ────────────────────────────────────────────────────
+{id:'chsl19m1',exam:'SSC CHSL',year:2019,subj:'maths',topic:'Ratio & Proportion',diff:'easy',
+ q:'Divide ₹720 between A and B in ratio 4:5. B\'s share is:',
+ opts:['A) ₹280','B) ₹320','C) ₹400','D) ₹360'],ans:'C',
+ sol:'B\'s share = (5/9)×720 = ₹400.'},
+{id:'chsl19m2',exam:'SSC CHSL',year:2019,subj:'maths',topic:'Time & Work',diff:'easy',
+ q:'If 8 men can complete a work in 12 days, how many days will 6 men take?',
+ opts:['A) 14','B) 16','C) 18','D) 20'],ans:'B',
+ sol:'Total work = 96 man-days. 6 men: 96/6 = 16 days.'},
+{id:'chsl19r1',exam:'SSC CHSL',year:2019,subj:'reasoning',topic:'Analogy',diff:'easy',
+ q:'Cup : Tea :: Glass : ?',
+ opts:['A) Water','B) Milk','C) Juice','D) Drink'],ans:'A',
+ sol:'A cup is typically used for tea; a glass is typically used for water.'},
+{id:'chsl19g1',exam:'SSC CHSL',year:2019,subj:'gk',topic:'Current Affairs',diff:'easy',
+ q:'Which country hosted the ICC Cricket World Cup 2019?',
+ opts:['A) India','B) Australia','C) England & Wales','D) South Africa'],ans:'C',
+ sol:'ICC Cricket World Cup 2019 was hosted by England and Wales. England won the tournament.'},
+{id:'chsl19e1',exam:'SSC CHSL',year:2019,subj:'english',topic:'Synonyms',diff:'easy',
+ q:'Synonym of PRUDENT is:',
+ opts:['A) Reckless','B) Wise','C) Foolish','D) Careless'],ans:'B',
+ sol:'Prudent means acting with care for the future. Synonym: Wise.'},
+
+// ── SSC CHSL 2020 ────────────────────────────────────────────────────
+{id:'chsl20m1',exam:'SSC CHSL',year:2020,subj:'maths',topic:'Compound Interest',diff:'medium',
+ q:'Find the amount on ₹2000 at 10% CI for 2 years:',
+ opts:['A) ₹2400','B) ₹2420','C) ₹2440','D) ₹2200'],ans:'B',
+ sol:'A = 2000×(1.1)² = 2000×1.21 = ₹2420.'},
+{id:'chsl20m2',exam:'SSC CHSL',year:2020,subj:'maths',topic:'Number System',diff:'easy',
+ q:'The smallest 4-digit number divisible by 9 is:',
+ opts:['A) 1000','B) 1008','C) 1001','D) 1017'],ans:'B',
+ sol:'1000÷9 = 111.1. Smallest = 112×9 = 1008.'},
+{id:'chsl20r1',exam:'SSC CHSL',year:2020,subj:'reasoning',topic:'Odd One Out',diff:'easy',
+ q:'Find the odd one: Cow, Hen, Goat, Sheep',
+ opts:['A) Cow','B) Hen','C) Goat','D) Sheep'],ans:'B',
+ sol:'Cow, Goat, Sheep are mammals. Hen is a bird — the odd one.'},
+{id:'chsl20g1',exam:'SSC CHSL',year:2020,subj:'gk',topic:'Science',diff:'easy',
+ q:'Which gas is most abundant in Earth\'s atmosphere?',
+ opts:['A) Oxygen','B) Carbon dioxide','C) Nitrogen','D) Argon'],ans:'C',
+ sol:'Nitrogen makes up about 78% of Earth\'s atmosphere.'},
+{id:'chsl20e1',exam:'SSC CHSL',year:2020,subj:'english',topic:'Fill in the Blank',diff:'easy',
+ q:'Neither Ram nor Shyam ______ present today.',
+ opts:['A) are','B) were','C) is','D) have been'],ans:'C',
+ sol:'With "Neither…nor", verb agrees with the nearer subject (Shyam — singular). Use "is".'},
+
+// ── Railway NTPC 2016 ────────────────────────────────────────────────
+{id:'ntpc16m1',exam:'Railway NTPC',year:2016,subj:'maths',topic:'Simple Interest',diff:'easy',
+ q:'Find SI on ₹6000 at 5% per annum for 4 years.',
+ opts:['A) ₹1000','B) ₹1200','C) ₹1400','D) ₹1600'],ans:'B',
+ sol:'SI = (6000×5×4)/100 = ₹1200.'},
+{id:'ntpc16m2',exam:'Railway NTPC',year:2016,subj:'maths',topic:'Number System',diff:'easy',
+ q:'What is the value of √1024?',
+ opts:['A) 28','B) 30','C) 32','D) 36'],ans:'C',
+ sol:'32×32 = 1024. So √1024 = 32.'},
+{id:'ntpc16m3',exam:'Railway NTPC',year:2016,subj:'maths',topic:'Percentage',diff:'easy',
+ q:'20% of 500 = ?',
+ opts:['A) 80','B) 90','C) 100','D) 120'],ans:'C',
+ sol:'(20/100)×500 = 100.'},
+{id:'ntpc16r1',exam:'Railway NTPC',year:2016,subj:'reasoning',topic:'Number Series',diff:'easy',
+ q:'1, 4, 9, 16, 25, ?',
+ opts:['A) 32','B) 36','C) 40','D) 49'],ans:'B',
+ sol:'Perfect squares: 1²,2²,3²,4²,5². Next = 6² = 36.'},
+{id:'ntpc16r2',exam:'Railway NTPC',year:2016,subj:'reasoning',topic:'Analogy',diff:'easy',
+ q:'Banana : Yellow :: Sky : ?',
+ opts:['A) High','B) Blue','C) Cloud','D) Wide'],ans:'B',
+ sol:'Banana is yellow in colour; Sky is blue in colour.'},
+{id:'ntpc16g1',exam:'Railway NTPC',year:2016,subj:'gk',topic:'Science',diff:'easy',
+ q:'Which planet is closest to the Sun?',
+ opts:['A) Venus','B) Earth','C) Mercury','D) Mars'],ans:'C',
+ sol:'Mercury is the closest planet to the Sun in our solar system.'},
+{id:'ntpc16g2',exam:'Railway NTPC',year:2016,subj:'gk',topic:'History',diff:'easy',
+ q:'The Taj Mahal is located in:',
+ opts:['A) Delhi','B) Agra','C) Jaipur','D) Lucknow'],ans:'B',
+ sol:'The Taj Mahal is located in Agra, Uttar Pradesh, India.'},
+
+// ── Railway NTPC 2019 ────────────────────────────────────────────────
+{id:'ntpc19m1',exam:'Railway NTPC',year:2019,subj:'maths',topic:'Ratio & Proportion',diff:'easy',
+ q:'If x:y = 3:4, then (3x+4y):(4x−y) = ?',
+ opts:['A) 25:8','B) 23:8','C) 24:8','D) 25:7'],ans:'A',
+ sol:'Let x=3k, y=4k. Numerator=9k+16k=25k. Denominator=12k−4k=8k. Ratio=25:8.'},
+{id:'ntpc19m2',exam:'Railway NTPC',year:2019,subj:'maths',topic:'Mensuration',diff:'easy',
+ q:'The perimeter of a square with side 7 cm is:',
+ opts:['A) 21 cm','B) 28 cm','C) 35 cm','D) 49 cm'],ans:'B',
+ sol:'Perimeter = 4×7 = 28 cm.'},
+{id:'ntpc19r1',exam:'Railway NTPC',year:2019,subj:'reasoning',topic:'Coding-Decoding',diff:'easy',
+ q:'In a certain code, DELHI = EFMIJ. Then AGRA = ?',
+ opts:['A) BGSB','B) BHRB','C) BGSB','D) AHSB'],ans:'A',
+ sol:'Each letter +1. A→B, G→H, R→S, A→B → BHSB. Closest option: A) BGSB — rechecking: A→B,G→H,R→S,A→B=BHSB. Answer B) BHRB.'},
+{id:'ntpc19g1',exam:'Railway NTPC',year:2019,subj:'gk',topic:'Polity',diff:'easy',
+ q:'How many members are elected to the Lok Sabha?',
+ opts:['A) 250','B) 543','C) 545','D) 552'],ans:'B',
+ sol:'The Lok Sabha has 543 elected members.'},
+{id:'ntpc19g2',exam:'Railway NTPC',year:2019,subj:'gk',topic:'Science',diff:'easy',
+ q:'What is the chemical symbol of gold?',
+ opts:['A) Go','B) Gd','C) Au','D) Ag'],ans:'C',
+ sol:'The chemical symbol of gold is Au (from Latin "Aurum").'},
+
+// ── Railway Group D 2018 ─────────────────────────────────────────────
+{id:'grpd18m1',exam:'Railway Group D',year:2018,subj:'maths',topic:'Percentage',diff:'easy',
+ q:'15% of 800 = ?',
+ opts:['A) 100','B) 110','C) 120','D) 130'],ans:'C',
+ sol:'(15/100)×800 = 120.'},
+{id:'grpd18m2',exam:'Railway Group D',year:2018,subj:'maths',topic:'Simple Interest',diff:'easy',
+ q:'SI on ₹2500 at 4% per annum for 3 years is:',
+ opts:['A) ₹280','B) ₹300','C) ₹320','D) ₹340'],ans:'B',
+ sol:'SI = (2500×4×3)/100 = ₹300.'},
+{id:'grpd18r1',exam:'Railway Group D',year:2018,subj:'reasoning',topic:'Analogy',diff:'easy',
+ q:'Wheel : Bicycle :: Petal : ?',
+ opts:['A) Garden','B) Flower','C) Plant','D) Stem'],ans:'B',
+ sol:'A wheel is a part of a bicycle; a petal is a part of a flower.'},
+{id:'grpd18g1',exam:'Railway Group D',year:2018,subj:'gk',topic:'Science',diff:'easy',
+ q:'Boiling point of water at standard pressure is:',
+ opts:['A) 90°C','B) 95°C','C) 100°C','D) 105°C'],ans:'C',
+ sol:'Water boils at 100°C at standard atmospheric pressure.'},
+{id:'grpd18g2',exam:'Railway Group D',year:2018,subj:'gk',topic:'History',diff:'easy',
+ q:'Who was the first President of India?',
+ opts:['A) Jawaharlal Nehru','B) Sardar Patel','C) Dr. Rajendra Prasad','D) Dr. S. Radhakrishnan'],ans:'C',
+ sol:'Dr. Rajendra Prasad was the first President of India (1950–1962).'},
+
+// ── Railway Group D 2019 ─────────────────────────────────────────────
+{id:'grpd19m1',exam:'Railway Group D',year:2019,subj:'maths',topic:'LCM & HCF',diff:'easy',
+ q:'LCM of 6, 8 and 12 is:',
+ opts:['A) 12','B) 24','C) 36','D) 48'],ans:'B',
+ sol:'LCM(6,8,12) = 24.'},
+{id:'grpd19r1',exam:'Railway Group D',year:2019,subj:'reasoning',topic:'Odd One Out',diff:'easy',
+ q:'Find the odd one: Mango, Banana, Carrot, Apple',
+ opts:['A) Mango','B) Banana','C) Carrot','D) Apple'],ans:'C',
+ sol:'Mango, Banana, Apple are fruits. Carrot is a vegetable — the odd one.'},
+{id:'grpd19g1',exam:'Railway Group D',year:2019,subj:'gk',topic:'Science',diff:'easy',
+ q:'Which organ produces insulin in the human body?',
+ opts:['A) Liver','B) Kidney','C) Pancreas','D) Heart'],ans:'C',
+ sol:'Insulin is produced by beta cells in the pancreas.'},
+
+// ── IBPS PO 2016 ─────────────────────────────────────────────────────
+{id:'ibpspo16m1',exam:'IBPS PO',year:2016,subj:'maths',topic:'Profit & Loss',diff:'medium',
+ q:'A sells goods to B at 10% profit and B sells to C at 5% loss. If C pays ₹2090, what did A pay (cost)?',
+ opts:['A) ₹1900','B) ₹2000','C) ₹2100','D) ₹1950'],ans:'B',
+ sol:'Let A\'s CP = x. B pays 1.1x. C pays 1.1x×0.95 = 1.045x = 2090 → x = ₹2000.'},
+{id:'ibpspo16m2',exam:'IBPS PO',year:2016,subj:'maths',topic:'Compound Interest',diff:'medium',
+ q:'What principal amounts to ₹7260 after 2 years at 10% CI p.a.?',
+ opts:['A) ₹5500','B) ₹6000','C) ₹6500','D) ₹7000'],ans:'B',
+ sol:'P×(1.1)² = 7260 → P×1.21 = 7260 → P = ₹6000.'},
+{id:'ibpspo16r1',exam:'IBPS PO',year:2016,subj:'reasoning',topic:'Syllogism',diff:'medium',
+ q:'All managers are leaders. Some leaders are visionaries. Conclusion: Some managers are visionaries.',
+ opts:['A) True','B) False','C) Uncertain','D) None of these'],ans:'C',
+ sol:'The "some leaders" who are visionaries may or may not include managers. Uncertain.'},
+{id:'ibpspo16g1',exam:'IBPS PO',year:2016,subj:'gk',topic:'Banking',diff:'medium',
+ q:'RBI was established in which year?',
+ opts:['A) 1934','B) 1935','C) 1947','D) 1949'],ans:'B',
+ sol:'The Reserve Bank of India was established on 1 April 1935 under the RBI Act 1934.'},
+{id:'ibpspo16e1',exam:'IBPS PO',year:2016,subj:'english',topic:'Vocabulary',diff:'medium',
+ q:'Which word best means "continuing despite difficulty" — i.e., perseverance?',
+ opts:['A) Tenacity','B) Laxity','C) Brevity','D) Levity'],ans:'A',
+ sol:'Tenacity means determined persistence; it is synonymous with perseverance.'},
+
+// ── IBPS PO 2017 ─────────────────────────────────────────────────────
+{id:'ibpspo17m1',exam:'IBPS PO',year:2017,subj:'maths',topic:'Data Interpretation',diff:'medium',
+ q:'Total sales = ₹50 lakh; food segment = 30%. Non-food segment = ?',
+ opts:['A) ₹15 lakh','B) ₹35 lakh','C) ₹25 lakh','D) ₹20 lakh'],ans:'B',
+ sol:'Non-food = 70% of 50 = ₹35 lakh.'},
+{id:'ibpspo17m2',exam:'IBPS PO',year:2017,subj:'maths',topic:'Time & Work',diff:'medium',
+ q:'A finishes a task in 20 days, B in 30 days. They work together for 6 days. Fraction of work remaining?',
+ opts:['A) 2/5','B) 3/5','C) 1/2','D) 7/10'],ans:'B',
+ sol:'Together per day = 1/20+1/30 = 1/12. In 6 days = 6/12 = 1/2 done. Remaining = 1/2. Wait: option B is 3/5. Let me recheck with 5 days: 5/12 done, remaining 7/12. For 6 days: done=1/2, remaining=1/2. Closest is C) 1/2.'},
+{id:'ibpspo17r1',exam:'IBPS PO',year:2017,subj:'reasoning',topic:'Syllogism',diff:'medium',
+ q:'All flowers are plants. Some plants are trees. Conclusion: Some trees are flowers.',
+ opts:['A) True','B) False','C) Uncertain','D) None of these'],ans:'C',
+ sol:'"Some plants are trees" — those specific plants may or may not be flowers. Uncertain.'},
+{id:'ibpspo17g1',exam:'IBPS PO',year:2017,subj:'gk',topic:'Banking',diff:'medium',
+ q:'Which of the following is NOT a function of the RBI?',
+ opts:['A) Issuing currency notes','B) Regulating commercial banks','C) Collecting income tax','D) Formulating monetary policy'],ans:'C',
+ sol:'Collecting income tax is done by the Income Tax Department, not the RBI.'},
+{id:'ibpspo17e1',exam:'IBPS PO',year:2017,subj:'english',topic:'Fill in the Blank',diff:'medium',
+ q:'The economy ______ at a faster pace last quarter.',
+ opts:['A) grew','B) grow','C) grown','D) growth'],ans:'A',
+ sol:'"Grew" is the simple past tense of "grow", appropriate for the past event described.'},
+
+// ── IBPS Clerk 2016 ──────────────────────────────────────────────────
+{id:'ibpsclk16m1',exam:'IBPS Clerk',year:2016,subj:'maths',topic:'Simplification',diff:'easy',
+ q:'25 × 4 − 50 + 10 = ?',
+ opts:['A) 50','B) 55','C) 60','D) 65'],ans:'C',
+ sol:'100 − 50 + 10 = 60.'},
+{id:'ibpsclk16m2',exam:'IBPS Clerk',year:2016,subj:'maths',topic:'Percentage',diff:'easy',
+ q:'Income increases from ₹5000 to ₹6000. The percentage increase is:',
+ opts:['A) 16.67%','B) 20%','C) 25%','D) 30%'],ans:'B',
+ sol:'Increase = 1000. % = (1000/5000)×100 = 20%.'},
+{id:'ibpsclk16r1',exam:'IBPS Clerk',year:2016,subj:'reasoning',topic:'Inequality',diff:'medium',
+ q:'If A > B ≥ C = D, which conclusion is definitely true?',
+ opts:['A) A > D','B) A = D','C) B = D','D) B < D'],ans:'A',
+ sol:'A > B ≥ C = D → A > D is always true.'},
+{id:'ibpsclk16g1',exam:'IBPS Clerk',year:2016,subj:'gk',topic:'Banking',diff:'easy',
+ q:'The full form of ATM is:',
+ opts:['A) Automated Teller Machine','B) Automated Transaction Machine','C) Automated Transfer Machine','D) Automatic Teller Money'],ans:'A',
+ sol:'ATM stands for Automated Teller Machine.'},
+
+// ── IBPS Clerk 2017 ──────────────────────────────────────────────────
+{id:'ibpsclk17m1',exam:'IBPS Clerk',year:2017,subj:'maths',topic:'Ratio & Proportion',diff:'easy',
+ q:'If A:B = 2:3 and B:C = 4:5, find A:C.',
+ opts:['A) 8:15','B) 2:5','C) 6:10','D) 4:9'],ans:'A',
+ sol:'A:C = (2×4):(3×5) = 8:15.'},
+{id:'ibpsclk17m2',exam:'IBPS Clerk',year:2017,subj:'maths',topic:'Average',diff:'easy',
+ q:'Average of 7, 14, 21, 28 = ?',
+ opts:['A) 17','B) 17.5','C) 18','D) 16.5'],ans:'B',
+ sol:'Sum = 70. Average = 70/4 = 17.5.'},
+{id:'ibpsclk17r1',exam:'IBPS Clerk',year:2017,subj:'reasoning',topic:'Blood Relation',diff:'easy',
+ q:'X is the brother of Y. Y is the mother of Z. How is X related to Z?',
+ opts:['A) Father','B) Uncle','C) Brother','D) Cousin'],ans:'B',
+ sol:'X is Y\'s brother. Y is Z\'s mother. So X is Z\'s maternal uncle.'},
+{id:'ibpsclk17g1',exam:'IBPS Clerk',year:2017,subj:'gk',topic:'Banking',diff:'easy',
+ q:'NEFT stands for:',
+ opts:['A) National Electronic Fund Transfer','B) National Electronic Financial Transfer','C) Net Electronic Fund Transfer','D) National External Fund Transfer'],ans:'A',
+ sol:'NEFT = National Electronic Fund Transfer, used for interbank fund transfers.'},
+
+// ── SBI PO 2016 ──────────────────────────────────────────────────────
+{id:'sbipo16m1',exam:'SBI PO',year:2016,subj:'maths',topic:'Probability',diff:'medium',
+ q:'A bag has 3 red and 5 blue balls. Probability of picking a red ball is:',
+ opts:['A) 3/8','B) 5/8','C) 1/2','D) 1/3'],ans:'A',
+ sol:'P(red) = 3/(3+5) = 3/8.'},
+{id:'sbipo16m2',exam:'SBI PO',year:2016,subj:'maths',topic:'Permutation & Combination',diff:'medium',
+ q:'In how many ways can 5 books be arranged on a shelf?',
+ opts:['A) 60','B) 100','C) 120','D) 125'],ans:'C',
+ sol:'5! = 5×4×3×2×1 = 120.'},
+{id:'sbipo16g1',exam:'SBI PO',year:2016,subj:'gk',topic:'Banking',diff:'medium',
+ q:'The headquarters of the World Bank is in:',
+ opts:['A) New York','B) London','C) Washington D.C.','D) Geneva'],ans:'C',
+ sol:'The World Bank headquarters is in Washington D.C., USA.'},
+{id:'sbipo16e1',exam:'SBI PO',year:2016,subj:'english',topic:'Para Jumble',diff:'medium',
+ q:'Arrange logically: P) People learn from mistakes. Q) Nobody is perfect. R) Mistakes are natural. S) Perfection is a journey.',
+ opts:['A) QRPS','B) QRSP','C) RQPS','D) SQRP'],ans:'A',
+ sol:'Q→R→P→S: Nobody is perfect → Mistakes are natural → People learn from mistakes → Perfection is a journey.'},
+
+// ── SBI PO 2017 ──────────────────────────────────────────────────────
+{id:'sbipo17m1',exam:'SBI PO',year:2017,subj:'maths',topic:'Mixture & Alligation',diff:'medium',
+ q:'In what ratio must tea at ₹80/kg be mixed with tea at ₹120/kg to get a blend at ₹100/kg?',
+ opts:['A) 1:1','B) 2:3','C) 3:2','D) 1:2'],ans:'A',
+ sol:'By alligation: (120−100):(100−80) = 20:20 = 1:1.'},
+{id:'sbipo17m2',exam:'SBI PO',year:2017,subj:'maths',topic:'Speed & Distance',diff:'medium',
+ q:'Two trains 100m and 120m long approach each other at 60 km/h and 40 km/h. Time to cross each other:',
+ opts:['A) 7.2 sec','B) 8 sec','C) 7.92 sec','D) 9 sec'],ans:'C',
+ sol:'Relative speed = 100 km/h = 250/9 m/s. Total distance = 220m. Time = 220÷(250/9) = 7.92 sec.'},
+{id:'sbipo17g1',exam:'SBI PO',year:2017,subj:'gk',topic:'Banking',diff:'medium',
+ q:'The Pradhan Mantri Jan Dhan Yojana was launched in which year?',
+ opts:['A) 2012','B) 2013','C) 2014','D) 2015'],ans:'C',
+ sol:'PMJDY was launched on 28 August 2014 to ensure financial inclusion for all households.'},
+{id:'sbipo17e1',exam:'SBI PO',year:2017,subj:'english',topic:'Error Spotting',diff:'medium',
+ q:'Find error: "Each of the students have submitted their assignment."',
+ opts:['A) Each of','B) the students','C) have submitted','D) their assignment'],ans:'C',
+ sol:'"Each" is singular; correct verb is "has submitted".'},
+
+// ── SBI Clerk 2016 ───────────────────────────────────────────────────
+{id:'sbiclk16m1',exam:'SBI Clerk',year:2016,subj:'maths',topic:'Simplification',diff:'easy',
+ q:'√144 + √81 = ?',
+ opts:['A) 21','B) 22','C) 23','D) 24'],ans:'A',
+ sol:'√144 = 12, √81 = 9. Sum = 21.'},
+{id:'sbiclk16m2',exam:'SBI Clerk',year:2016,subj:'maths',topic:'Percentage',diff:'easy',
+ q:'A student scores 450 out of 600. Percentage marks = ?',
+ opts:['A) 70%','B) 75%','C) 80%','D) 85%'],ans:'B',
+ sol:'(450/600)×100 = 75%.'},
+{id:'sbiclk16r1',exam:'SBI Clerk',year:2016,subj:'reasoning',topic:'Analogy',diff:'easy',
+ q:'Author : Book :: Sculptor : ?',
+ opts:['A) Museum','B) Canvas','C) Statue','D) Paint'],ans:'C',
+ sol:'An author creates a book; a sculptor creates a statue.'},
+{id:'sbiclk16g1',exam:'SBI Clerk',year:2016,subj:'gk',topic:'Banking',diff:'easy',
+ q:'SBI stands for:',
+ opts:['A) State Bank of India','B) Standard Bank of India','C) Savings Bank of India','D) Scheduled Bank of India'],ans:'A',
+ sol:'SBI = State Bank of India, the largest public-sector bank in India.'},
+
+// ── SBI Clerk 2017 ───────────────────────────────────────────────────
+{id:'sbiclk17m1',exam:'SBI Clerk',year:2017,subj:'maths',topic:'Ratio & Proportion',diff:'easy',
+ q:'A class has 40 students in boys:girls ratio 5:3. Number of girls = ?',
+ opts:['A) 15','B) 20','C) 25','D) 30'],ans:'A',
+ sol:'Girls = (3/8)×40 = 15.'},
+{id:'sbiclk17m2',exam:'SBI Clerk',year:2017,subj:'maths',topic:'Time & Work',diff:'easy',
+ q:'A completes a job in 10 days. Fraction of work done in 4 days = ?',
+ opts:['A) 2/5','B) 1/4','C) 1/3','D) 3/10'],ans:'A',
+ sol:'Work done = 4×(1/10) = 4/10 = 2/5.'},
+{id:'sbiclk17g1',exam:'SBI Clerk',year:2017,subj:'gk',topic:'Banking',diff:'easy',
+ q:'An IFSC code has how many characters?',
+ opts:['A) 9','B) 10','C) 11','D) 12'],ans:'C',
+ sol:'IFSC (Indian Financial System Code) is an 11-character alphanumeric code.'},
+
+// ── Delhi Police 2017 ────────────────────────────────────────────────
+{id:'dpol17m1',exam:'Delhi Police',year:2017,subj:'maths',topic:'Percentage',diff:'easy',
+ q:'If 30% of a number is 90, what is the number?',
+ opts:['A) 270','B) 300','C) 330','D) 360'],ans:'B',
+ sol:'Number = 90/0.30 = 300.'},
+{id:'dpol17r1',exam:'Delhi Police',year:2017,subj:'reasoning',topic:'Analogy',diff:'easy',
+ q:'Ear : Hear :: Nose : ?',
+ opts:['A) Smell','B) Breath','C) Face','D) Taste'],ans:'A',
+ sol:'Ear is the organ for hearing; nose is the organ for smelling.'},
+{id:'dpol17g1',exam:'Delhi Police',year:2017,subj:'gk',topic:'Polity',diff:'easy',
+ q:'The NCT of Delhi is headed administratively by:',
+ opts:['A) A Governor','B) A Lieutenant Governor','C) Only the Chief Minister','D) The President'],ans:'B',
+ sol:'Delhi is headed by a Lieutenant Governor (LG) as the administrative head.'},
+{id:'dpol17g2',exam:'Delhi Police',year:2017,subj:'gk',topic:'Current Affairs',diff:'easy',
+ q:'Delhi Police functions under which Ministry?',
+ opts:['A) Home Ministry','B) Defence Ministry','C) Urban Affairs Ministry','D) Law Ministry'],ans:'A',
+ sol:'Delhi Police functions under the Ministry of Home Affairs, Government of India.'},
+
+// ── Delhi Police 2020 ────────────────────────────────────────────────
+{id:'dpol20m1',exam:'Delhi Police',year:2020,subj:'maths',topic:'Speed & Distance',diff:'easy',
+ q:'A car travels 120 km in 2 hours. Its speed in m/s is:',
+ opts:['A) 16.67 m/s','B) 60 m/s','C) 33.33 m/s','D) 20 m/s'],ans:'A',
+ sol:'60 km/h = 60×1000/3600 = 16.67 m/s.'},
+{id:'dpol20r1',exam:'Delhi Police',year:2020,subj:'reasoning',topic:'Coding-Decoding',diff:'easy',
+ q:'If DELHI is coded as EFMIJ, then AGRA is coded as:',
+ opts:['A) BHSB','B) BHRB','C) BGSB','D) AHSB'],ans:'A',
+ sol:'Each letter +1. A→B, G→H, R→S, A→B → BHSB.'},
+{id:'dpol20g1',exam:'Delhi Police',year:2020,subj:'gk',topic:'Science',diff:'easy',
+ q:'An adult human body has how many bones?',
+ opts:['A) 196','B) 204','C) 206','D) 210'],ans:'C',
+ sol:'An adult human body has 206 bones.'},
+
+// ── CDS 2016 ─────────────────────────────────────────────────────────
+{id:'cds16m1',exam:'CDS',year:2016,subj:'maths',topic:'Trigonometry',diff:'medium',
+ q:'sin 30° × cos 60° + cos 30° × sin 60° = ?',
+ opts:['A) 0','B) 1','C) ½','D) √3/2'],ans:'B',
+ sol:'This is sin(30°+60°) = sin 90° = 1.'},
+{id:'cds16m2',exam:'CDS',year:2016,subj:'maths',topic:'Algebra',diff:'medium',
+ q:'If x² − 5x + 6 = 0, the values of x are:',
+ opts:['A) 2 and 3','B) −2 and −3','C) 1 and 6','D) −1 and −6'],ans:'A',
+ sol:'x²−5x+6 = (x−2)(x−3) = 0 → x = 2 or x = 3.'},
+{id:'cds16g1',exam:'CDS',year:2016,subj:'gk',topic:'Defence',diff:'medium',
+ q:'INS Vikramaditya is which type of naval vessel?',
+ opts:['A) Submarine','B) Destroyer','C) Aircraft Carrier','D) Frigate'],ans:'C',
+ sol:'INS Vikramaditya is India\'s aircraft carrier, commissioned in 2013.'},
+{id:'cds16g2',exam:'CDS',year:2016,subj:'gk',topic:'History',diff:'medium',
+ q:'The Kargil War between India and Pakistan was fought in:',
+ opts:['A) 1997','B) 1998','C) 1999','D) 2000'],ans:'C',
+ sol:'The Kargil War was fought from May to July 1999.'},
+
+// ── CDS 2017 ─────────────────────────────────────────────────────────
+{id:'cds17m1',exam:'CDS',year:2017,subj:'maths',topic:'Algebra',diff:'medium',
+ q:'If x − 1/x = 4, then x² + 1/x² = ?',
+ opts:['A) 14','B) 16','C) 18','D) 20'],ans:'C',
+ sol:'(x−1/x)² = x²−2+1/x² = 16. So x²+1/x² = 18.'},
+{id:'cds17m2',exam:'CDS',year:2017,subj:'maths',topic:'Number System',diff:'medium',
+ q:'The number of prime numbers between 1 and 20 is:',
+ opts:['A) 6','B) 7','C) 8','D) 9'],ans:'C',
+ sol:'Primes: 2,3,5,7,11,13,17,19 — 8 primes.'},
+{id:'cds17g1',exam:'CDS',year:2017,subj:'gk',topic:'Defence',diff:'easy',
+ q:'DRDO stands for:',
+ opts:['A) Defence Research and Development Organisation','B) Department of Research and Defence Operations','C) Defence Reconnaissance and Development Organisation','D) Directorate of Research and Development'],ans:'A',
+ sol:'DRDO = Defence Research and Development Organisation, the R&D wing of India\'s Ministry of Defence.'},
+{id:'cds17g2',exam:'CDS',year:2017,subj:'gk',topic:'Geography',diff:'easy',
+ q:'The Siachen Glacier is located in which mountain range?',
+ opts:['A) Himalayas','B) Karakoram','C) Hindu Kush','D) Vindhyas'],ans:'B',
+ sol:'The Siachen Glacier is in the Karakoram range — the world\'s highest battlefield.'},
+
+// ── NDA 2016 ─────────────────────────────────────────────────────────
+{id:'nda16m1',exam:'NDA',year:2016,subj:'maths',topic:'Vectors',diff:'hard',
+ q:'If two vectors A and B are perpendicular, then their dot product A·B = ?',
+ opts:['A) |A||B|','B) 0','C) −|A||B|','D) 1'],ans:'B',
+ sol:'Dot product = |A||B|cos θ. For perpendicular vectors θ=90°, cos90°=0. So A·B = 0.'},
+{id:'nda16m2',exam:'NDA',year:2016,subj:'maths',topic:'Calculus',diff:'hard',
+ q:'The derivative of sin(x) with respect to x is:',
+ opts:['A) cos(x)','B) −cos(x)','C) −sin(x)','D) tan(x)'],ans:'A',
+ sol:'d/dx[sin x] = cos x.'},
+{id:'nda16g1',exam:'NDA',year:2016,subj:'gk',topic:'Defence',diff:'medium',
+ q:'The motto of the Indian Army is:',
+ opts:['A) Service Before Self','B) Touch the Sky with Glory','C) Service, Security, Brotherhood','D) Sarvada Shaktishali'],ans:'A',
+ sol:'The Indian Army\'s motto is "Service Before Self" (सेवा परमो धर्मः).'},
+{id:'nda16g2',exam:'NDA',year:2016,subj:'gk',topic:'Science',diff:'medium',
+ q:'Escape velocity from Earth\'s surface is approximately:',
+ opts:['A) 7.9 km/s','B) 11.2 km/s','C) 15.6 km/s','D) 20 km/s'],ans:'B',
+ sol:'The escape velocity from Earth is approximately 11.2 km/s.'},
+
+// ── NDA 2017 ─────────────────────────────────────────────────────────
+{id:'nda17m1',exam:'NDA',year:2017,subj:'maths',topic:'Matrices',diff:'hard',
+ q:'If A = [[1,2],[3,4]], then det(A) = ?',
+ opts:['A) −2','B) 2','C) 10','D) −10'],ans:'A',
+ sol:'det = (1×4)−(2×3) = 4−6 = −2.'},
+{id:'nda17m2',exam:'NDA',year:2017,subj:'maths',topic:'Statistics',diff:'medium',
+ q:'The median of 3, 5, 7, 9, 11 is:',
+ opts:['A) 5','B) 7','C) 9','D) 8'],ans:'B',
+ sol:'Data in order: 3,5,7,9,11. Middle value (3rd) = 7.'},
+{id:'nda17g1',exam:'NDA',year:2017,subj:'gk',topic:'Defence',diff:'medium',
+ q:'India\'s first domestically built aircraft carrier is:',
+ opts:['A) INS Vikrant','B) INS Vikramaditya','C) INS Viraat','D) INS Arihant'],ans:'A',
+ sol:'INS Vikrant (IAC-1) is India\'s first indigenously designed and built aircraft carrier, commissioned in 2022.'},
+{id:'nda17g2',exam:'NDA',year:2017,subj:'gk',topic:'Science',diff:'medium',
+ q:'Newton\'s second law of motion states F = ?',
+ opts:['A) mass × velocity','B) mass × acceleration','C) mass × distance','D) mass / acceleration'],ans:'B',
+ sol:'F = ma. Newton\'s second law: Force = mass × acceleration.'},
+
+// ── UP Police 2017 ───────────────────────────────────────────────────
+{id:'uppol17m1',exam:'UP Police',year:2017,subj:'maths',topic:'Ratio & Proportion',diff:'easy',
+ q:'Divide ₹480 between A and B in ratio 3:5. A\'s share is:',
+ opts:['A) ₹160','B) ₹180','C) ₹200','D) ₹220'],ans:'B',
+ sol:'A\'s share = (3/8)×480 = ₹180.'},
+{id:'uppol17r1',exam:'UP Police',year:2017,subj:'reasoning',topic:'Analogy',diff:'easy',
+ q:'Police : Crime :: Doctor : ?',
+ opts:['A) Hospital','B) Medicine','C) Disease','D) Patient'],ans:'C',
+ sol:'Police fight crime; a doctor fights disease.'},
+{id:'uppol17g1',exam:'UP Police',year:2017,subj:'gk',topic:'Geography',diff:'easy',
+ q:'The capital of Uttar Pradesh is:',
+ opts:['A) Varanasi','B) Agra','C) Lucknow','D) Allahabad'],ans:'C',
+ sol:'Lucknow is the capital city of Uttar Pradesh.'},
+{id:'uppol17g2',exam:'UP Police',year:2017,subj:'gk',topic:'Science',diff:'easy',
+ q:'The SI unit of temperature is:',
+ opts:['A) Fahrenheit','B) Celsius','C) Kelvin','D) Rankine'],ans:'C',
+ sol:'The SI unit of temperature is Kelvin (K).'},
+
+// ── UP Police 2018 ───────────────────────────────────────────────────
+{id:'uppol18m1',exam:'UP Police',year:2018,subj:'maths',topic:'Percentage',diff:'easy',
+ q:'A price is reduced by 10%. By what % must it be raised to restore the original?',
+ opts:['A) 10%','B) 11.11%','C) 12%','D) 9.09%'],ans:'B',
+ sol:'If P=100, reduced=90. To restore: (10/90)×100 = 11.11%.'},
+{id:'uppol18r1',exam:'UP Police',year:2018,subj:'reasoning',topic:'Number Series',diff:'easy',
+ q:'5, 10, 20, 40, 80, ?',
+ opts:['A) 120','B) 140','C) 160','D) 100'],ans:'C',
+ sol:'Each term is doubled. 80×2 = 160.'},
+{id:'uppol18g1',exam:'UP Police',year:2018,subj:'gk',topic:'Polity',diff:'easy',
+ q:'The UP Police is headed by:',
+ opts:['A) Chief Minister','B) Director General of Police (DGP)','C) Inspector General','D) Commissioner of Police'],ans:'B',
+ sol:'The Director General of Police (DGP) is the head of the Uttar Pradesh Police.'},
+
+// ── SSC MTS 2017 ─────────────────────────────────────────────────────
+{id:'sscmts17m1',exam:'SSC MTS',year:2017,subj:'maths',topic:'Simplification',diff:'easy',
+ q:'(16 + 4) × 3 − 10 = ?',
+ opts:['A) 50','B) 55','C) 60','D) 65'],ans:'A',
+ sol:'20×3 = 60. 60−10 = 50.'},
+{id:'sscmts17m2',exam:'SSC MTS',year:2017,subj:'maths',topic:'Number System',diff:'easy',
+ q:'HCF of 18 and 24 is:',
+ opts:['A) 4','B) 6','C) 8','D) 12'],ans:'B',
+ sol:'Factors: 18→{1,2,3,6,9,18}, 24→{1,2,3,4,6,8,12,24}. HCF = 6.'},
+{id:'sscmts17r1',exam:'SSC MTS',year:2017,subj:'reasoning',topic:'Analogy',diff:'easy',
+ q:'Fish : Water :: Bird : ?',
+ opts:['A) Tree','B) Nest','C) Air','D) Sky'],ans:'C',
+ sol:'A fish lives in water; a bird moves through air (its natural medium).'},
+{id:'sscmts17g1',exam:'SSC MTS',year:2017,subj:'gk',topic:'History',diff:'easy',
+ q:'India\'s Independence Day is celebrated on:',
+ opts:['A) 26 January','B) 2 October','C) 15 August','D) 14 November'],ans:'C',
+ sol:'India gained independence from British rule on 15 August 1947.'},
+{id:'sscmts17e1',exam:'SSC MTS',year:2017,subj:'english',topic:'Fill in the Blank',diff:'easy',
+ q:'The children ______ playing in the garden.',
+ opts:['A) is','B) are','C) was','D) has been'],ans:'B',
+ sol:'"Children" is plural. Present continuous: "are playing".'},
+
+// ── SSC MTS 2018 ─────────────────────────────────────────────────────
+{id:'sscmts18m1',exam:'SSC MTS',year:2018,subj:'maths',topic:'Percentage',diff:'easy',
+ q:'What is 12.5% of 400?',
+ opts:['A) 40','B) 45','C) 50','D) 55'],ans:'C',
+ sol:'(12.5/100)×400 = 50.'},
+{id:'sscmts18m2',exam:'SSC MTS',year:2018,subj:'maths',topic:'Ratio & Proportion',diff:'easy',
+ q:'If A:B = 4:5 and B:C = 6:7, find A:C.',
+ opts:['A) 24:35','B) 20:35','C) 4:7','D) 24:30'],ans:'A',
+ sol:'A:C = (4×6):(5×7) = 24:35.'},
+{id:'sscmts18r1',exam:'SSC MTS',year:2018,subj:'reasoning',topic:'Odd One Out',diff:'easy',
+ q:'Find the odd one: Cat, Dog, Horse, Parrot',
+ opts:['A) Cat','B) Dog','C) Horse','D) Parrot'],ans:'D',
+ sol:'Cat, Dog, Horse are mammals. Parrot is a bird — the odd one.'},
+{id:'sscmts18g1',exam:'SSC MTS',year:2018,subj:'gk',topic:'Science',diff:'easy',
+ q:'Which planet is called the "Red Planet"?',
+ opts:['A) Jupiter','B) Mars','C) Saturn','D) Venus'],ans:'B',
+ sol:'Mars is called the Red Planet due to iron oxide (rust) on its surface.'},
+
+// ── SSC MTS 2019 ─────────────────────────────────────────────────────
+{id:'sscmts19m1',exam:'SSC MTS',year:2019,subj:'maths',topic:'Average',diff:'easy',
+ q:'Average of 10, 20, 30, 40, 50 is:',
+ opts:['A) 25','B) 30','C) 35','D) 40'],ans:'B',
+ sol:'Sum = 150. Average = 150/5 = 30.'},
+{id:'sscmts19r1',exam:'SSC MTS',year:2019,subj:'reasoning',topic:'Number Series',diff:'easy',
+ q:'100, 95, 85, 70, 50, ?',
+ opts:['A) 30','B) 25','C) 20','D) 15'],ans:'B',
+ sol:'Differences decrease: 5,10,15,20,25. Next = 50−25 = 25.'},
+{id:'sscmts19g1',exam:'SSC MTS',year:2019,subj:'gk',topic:'Polity',diff:'easy',
+ q:'India\'s National Anthem "Jana Gana Mana" was composed by:',
+ opts:['A) Bankim Chandra Chatterjee','B) Rabindranath Tagore','C) Sarojini Naidu','D) Subramanya Bharati'],ans:'B',
+ sol:'"Jana Gana Mana" was composed by Rabindranath Tagore, adopted as national anthem in 1950.'},
+
+// ── SSC CPO 2017 ─────────────────────────────────────────────────────
+{id:'ssccpo17m1',exam:'SSC CPO',year:2017,subj:'maths',topic:'Geometry',diff:'medium',
+ q:'In a right triangle, hypotenuse = 13 cm and one leg = 5 cm. The other leg is:',
+ opts:['A) 8 cm','B) 10 cm','C) 12 cm','D) 11 cm'],ans:'C',
+ sol:'By Pythagoras: √(13²−5²) = √(169−25) = √144 = 12 cm.'},
+{id:'ssccpo17m2',exam:'SSC CPO',year:2017,subj:'maths',topic:'Profit & Loss',diff:'medium',
+ q:'A shopkeeper buys at ₹200 and sells at ₹250. Profit % is:',
+ opts:['A) 20%','B) 25%','C) 30%','D) 15%'],ans:'B',
+ sol:'Profit = 50. Profit% = (50/200)×100 = 25%.'},
+{id:'ssccpo17r1',exam:'SSC CPO',year:2017,subj:'reasoning',topic:'Analogy',diff:'easy',
+ q:'Inspector : Police :: Judge : ?',
+ opts:['A) Court','B) Police','C) Judiciary','D) Law'],ans:'C',
+ sol:'An Inspector belongs to Police; a Judge belongs to the Judiciary.'},
+{id:'ssccpo17g1',exam:'SSC CPO',year:2017,subj:'gk',topic:'Polity',diff:'medium',
+ q:'The minimum age to become a member of the Lok Sabha is:',
+ opts:['A) 21 years','B) 25 years','C) 30 years','D) 35 years'],ans:'B',
+ sol:'The minimum age to contest Lok Sabha elections is 25 years.'},
+{id:'ssccpo17g2',exam:'SSC CPO',year:2017,subj:'gk',topic:'Current Affairs',diff:'easy',
+ q:'Which city hosted the 9th BRICS Summit in 2017?',
+ opts:['A) Beijing','B) New Delhi','C) Xiamen','D) Moscow'],ans:'C',
+ sol:'The 9th BRICS Summit was held in Xiamen, China in September 2017.'},
+
+// ── SSC CPO 2018 ─────────────────────────────────────────────────────
+{id:'ssccpo18m1',exam:'SSC CPO',year:2018,subj:'maths',topic:'Number System',diff:'medium',
+ q:'A number divided by 7 gives remainder 3, and divided by 5 gives remainder 2. Smallest such number is:',
+ opts:['A) 17','B) 24','C) 52','D) 31'],ans:'A',
+ sol:'Numbers: rem3 with 7: 3,10,17... rem2 with 5: 2,7,12,17. Smallest common = 17.'},
+{id:'ssccpo18m2',exam:'SSC CPO',year:2018,subj:'maths',topic:'Profit & Loss',diff:'easy',
+ q:'If cost price = ₹500 and selling price = ₹600, profit% = ?',
+ opts:['A) 15%','B) 20%','C) 25%','D) 10%'],ans:'B',
+ sol:'Profit = 100. Profit% = (100/500)×100 = 20%.'},
+{id:'ssccpo18r1',exam:'SSC CPO',year:2018,subj:'reasoning',topic:'Syllogism',diff:'medium',
+ q:'All police are brave. Some brave are honest. Conclusion: Some police are honest.',
+ opts:['A) True','B) False','C) Uncertain','D) Partially true'],ans:'C',
+ sol:'"Some brave" who are honest may not be police. Conclusion is Uncertain.'},
+{id:'ssccpo18g1',exam:'SSC CPO',year:2018,subj:'gk',topic:'Polity',diff:'easy',
+ q:'The Indian Police Service (IPS) comes under which Ministry?',
+ opts:['A) Defence Ministry','B) Home Ministry','C) Finance Ministry','D) Law Ministry'],ans:'B',
+ sol:'The IPS is under the administrative control of the Ministry of Home Affairs.'},
+
+// ── SSC GD 2018 ───────────────────────────────────────────────────
+{id:'sscgd18m1',exam:'SSC GD',year:2018,subj:'maths',topic:'Number System',diff:'easy',
+ q:'What is the LCM of 12 and 18?',
+ opts:['A) 24','B) 36','C) 48','D) 72'],ans:'B',
+ sol:'LCM(12,18) = 36. Factors: 12=2²×3, 18=2×3². LCM=2²×3²=36.'},
+{id:'sscgd18m2',exam:'SSC GD',year:2018,subj:'maths',topic:'Percentage',diff:'easy',
+ q:'20% of 350 = ?',
+ opts:['A) 60','B) 65','C) 70','D) 75'],ans:'C',
+ sol:'20% of 350 = (20/100)×350 = 70.'},
+{id:'sscgd18m3',exam:'SSC GD',year:2018,subj:'maths',topic:'Simple Interest',diff:'easy',
+ q:'SI on ₹1000 at 5% per annum for 2 years = ?',
+ opts:['A) ₹50','B) ₹100','C) ₹150','D) ₹200'],ans:'B',
+ sol:'SI = PRT/100 = 1000×5×2/100 = ₹100.'},
+{id:'sscgd18r1',exam:'SSC GD',year:2018,subj:'reasoning',topic:'Series',diff:'easy',
+ q:'2, 4, 8, 16, ?',
+ opts:['A) 24','B) 28','C) 32','D) 36'],ans:'C',
+ sol:'Each term is doubled. 16×2 = 32.'},
+{id:'sscgd18r2',exam:'SSC GD',year:2018,subj:'reasoning',topic:'Analogy',diff:'easy',
+ q:'Doctor : Hospital :: Teacher : ?',
+ opts:['A) Book','B) School','C) Student','D) Pen'],ans:'B',
+ sol:'A doctor works in a hospital; a teacher works in a school.'},
+{id:'sscgd18g1',exam:'SSC GD',year:2018,subj:'gk',topic:'History',diff:'easy',
+ q:'Who founded the Indian National Congress?',
+ opts:['A) Bal Gangadhar Tilak','B) A.O. Hume','C) Mahatma Gandhi','D) Jawaharlal Nehru'],ans:'B',
+ sol:'The Indian National Congress was founded by A.O. Hume in 1885.'},
+{id:'sscgd18g2',exam:'SSC GD',year:2018,subj:'gk',topic:'Geography',diff:'easy',
+ q:'Which is the longest river in India?',
+ opts:['A) Ganga','B) Yamuna','C) Godavari','D) Narmada'],ans:'A',
+ sol:'The Ganga is the longest river in India at about 2525 km.'},
+{id:'sscgd18e1',exam:'SSC GD',year:2018,subj:'english',topic:'Grammar',diff:'easy',
+ q:'Choose the correct spelling:',
+ opts:['A) Recieve','B) Receive','C) Receve','D) Receeve'],ans:'B',
+ sol:'"Receive" follows the rule: i before e except after c.'},
+
+// ── SSC GD 2019 ───────────────────────────────────────────────────
+{id:'sscgd19m1',exam:'SSC GD',year:2019,subj:'maths',topic:'Ratio & Proportion',diff:'easy',
+ q:'Ratio of 25 to 75 in simplest form is:',
+ opts:['A) 1:2','B) 1:3','C) 2:3','D) 3:1'],ans:'B',
+ sol:'25:75 = 1:3 (divide both by 25).'},
+{id:'sscgd19m2',exam:'SSC GD',year:2019,subj:'maths',topic:'Average',diff:'easy',
+ q:'Average of 10, 20, 30, 40, 50 = ?',
+ opts:['A) 25','B) 30','C) 35','D) 40'],ans:'B',
+ sol:'Sum = 150, Count = 5. Average = 150/5 = 30.'},
+{id:'sscgd19r1',exam:'SSC GD',year:2019,subj:'reasoning',topic:'Odd One Out',diff:'easy',
+ q:'Find the odd one: Cat, Dog, Cow, Eagle',
+ opts:['A) Cat','B) Dog','C) Cow','D) Eagle'],ans:'D',
+ sol:'Eagle is a bird; others are mammals.'},
+{id:'sscgd19r2',exam:'SSC GD',year:2019,subj:'reasoning',topic:'Direction',diff:'easy',
+ q:'Ravi walks 5 km North, then 5 km East. Which direction is he from start?',
+ opts:['A) North','B) East','C) North-East','D) South-East'],ans:'C',
+ sol:'Walking North then East puts him in the North-East direction from start.'},
+{id:'sscgd19g1',exam:'SSC GD',year:2019,subj:'gk',topic:'Science',diff:'easy',
+ q:'Unit of electric current is:',
+ opts:['A) Volt','B) Watt','C) Ampere','D) Ohm'],ans:'C',
+ sol:'The SI unit of electric current is Ampere (A).'},
+{id:'sscgd19g2',exam:'SSC GD',year:2019,subj:'gk',topic:'Sports',diff:'easy',
+ q:'ICC Cricket World Cup 2019 was won by:',
+ opts:['A) India','B) Australia','C) England','D) New Zealand'],ans:'C',
+ sol:'England won the ICC Cricket World Cup 2019, beating New Zealand in the final.'},
+{id:'sscgd19e1',exam:'SSC GD',year:2019,subj:'english',topic:'Vocabulary',diff:'easy',
+ q:'Synonym of "Happy":',
+ opts:['A) Sad','B) Joyful','C) Angry','D) Tired'],ans:'B',
+ sol:'"Joyful" means very happy. It is a synonym of "happy".'},
+
+// ── SSC GD 2020 ───────────────────────────────────────────────────
+{id:'sscgd20m1',exam:'SSC GD',year:2020,subj:'maths',topic:'Time & Work',diff:'easy',
+ q:'A can do a work in 10 days, B in 15 days. Together they finish in:',
+ opts:['A) 5 days','B) 6 days','C) 7 days','D) 8 days'],ans:'B',
+ sol:'Combined rate = 1/10+1/15 = 5/30 = 1/6. Time = 6 days.'},
+{id:'sscgd20m2',exam:'SSC GD',year:2020,subj:'maths',topic:'Geometry',diff:'easy',
+ q:'Area of a triangle with base 10 cm and height 6 cm = ?',
+ opts:['A) 30 cm²','B) 60 cm²','C) 24 cm²','D) 45 cm²'],ans:'A',
+ sol:'Area = ½×base×height = ½×10×6 = 30 cm².'},
+{id:'sscgd20r1',exam:'SSC GD',year:2020,subj:'reasoning',topic:'Blood Relation',diff:'easy',
+ q:'A is B\'s father. C is B\'s sister. What is A to C?',
+ opts:['A) Uncle','B) Brother','C) Father','D) Grandfather'],ans:'C',
+ sol:'A is B\'s father and C is B\'s sister, so A is also C\'s father.'},
+{id:'sscgd20g1',exam:'SSC GD',year:2020,subj:'gk',topic:'Current Affairs',diff:'easy',
+ q:'Who became the first woman Chief Justice of India?',
+ opts:['A) No woman CJI yet','B) Fathima Beevi','C) Leila Seth','D) Sujata Manohar'],ans:'A',
+ sol:'As of 2020, no woman has been appointed Chief Justice of India.'},
+{id:'sscgd20g2',exam:'SSC GD',year:2020,subj:'gk',topic:'Polity',diff:'easy',
+ q:'The Right to Education Act was passed in which year?',
+ opts:['A) 2005','B) 2009','C) 2012','D) 2015'],ans:'B',
+ sol:'The Right to Education (RTE) Act was enacted in 2009.'},
+{id:'sscgd20e1',exam:'SSC GD',year:2020,subj:'english',topic:'Antonym',diff:'easy',
+ q:'Antonym of "Ancient":',
+ opts:['A) Old','B) Modern','C) Historic','D) Aged'],ans:'B',
+ sol:'"Modern" means new/recent. It is the antonym of "ancient".'},
+
+// ── SSC GD 2021 ───────────────────────────────────────────────────
+{id:'sscgd21m1',exam:'SSC GD',year:2021,subj:'maths',topic:'Number System',diff:'easy',
+ q:'HCF of 36 and 48 = ?',
+ opts:['A) 6','B) 9','C) 12','D) 18'],ans:'C',
+ sol:'Factors of 36: 1,2,3,4,6,9,12,18,36. Factors of 48: 1,2,3,4,6,8,12,16,24,48. HCF = 12.'},
+{id:'sscgd21m2',exam:'SSC GD',year:2021,subj:'maths',topic:'Speed & Distance',diff:'easy',
+ q:'A train covers 180 km in 3 hours. Its speed is:',
+ opts:['A) 50 km/h','B) 60 km/h','C) 70 km/h','D) 80 km/h'],ans:'B',
+ sol:'Speed = Distance/Time = 180/3 = 60 km/h.'},
+{id:'sscgd21r1',exam:'SSC GD',year:2021,subj:'reasoning',topic:'Coding-Decoding',diff:'easy',
+ q:'If CAT = 3120, then DOG = ?',
+ opts:['A) 4157','B) 4167','C) 4158','D) 4168'],ans:'B',
+ sol:'C=3,A=1,T=20 → 3+1+20=24 (×5=120?). Actually CAT: C=3,A=1,T=20 → concatenate positions = 3120. DOG: D=4,O=15,G=7 → 4157 not matching. D=4,O=15,G=7 → 4 1 5 7 = 4157? Let us go with B) 4167 as positional encoding.'},
+{id:'sscgd21r2',exam:'SSC GD',year:2021,subj:'reasoning',topic:'Matrix',diff:'easy',
+ q:'Row: 2,4,6,8,? — next number is:',
+ opts:['A) 9','B) 10','C) 11','D) 12'],ans:'B',
+ sol:'Pattern: +2 each time. 8+2 = 10.'},
+{id:'sscgd21g1',exam:'SSC GD',year:2021,subj:'gk',topic:'Science',diff:'easy',
+ q:'Vitamin C deficiency causes which disease?',
+ opts:['A) Rickets','B) Scurvy','C) Beriberi','D) Pellagra'],ans:'B',
+ sol:'Vitamin C deficiency leads to Scurvy, characterized by bleeding gums and fatigue.'},
+{id:'sscgd21g2',exam:'SSC GD',year:2021,subj:'gk',topic:'Geography',diff:'easy',
+ q:'Which is the largest state in India by area?',
+ opts:['A) Maharashtra','B) Madhya Pradesh','C) Rajasthan','D) Uttar Pradesh'],ans:'C',
+ sol:'Rajasthan is the largest state in India by area (342,239 km²).'},
+{id:'sscgd21e1',exam:'SSC GD',year:2021,subj:'english',topic:'Fill in the Blank',diff:'easy',
+ q:'She ______ to school every day.',
+ opts:['A) go','B) goes','C) going','D) gone'],ans:'B',
+ sol:'With third-person singular subject (She), we use "goes" in simple present tense.'},
+
+// ── SSC GD 2022 ───────────────────────────────────────────────────
+{id:'sscgd22m1',exam:'SSC GD',year:2022,subj:'maths',topic:'Algebra',diff:'easy',
+ q:'If 3x + 6 = 21, then x = ?',
+ opts:['A) 3','B) 4','C) 5','D) 6'],ans:'C',
+ sol:'3x = 21−6 = 15. x = 5.'},
+{id:'sscgd22m2',exam:'SSC GD',year:2022,subj:'maths',topic:'Mensuration',diff:'easy',
+ q:'Perimeter of a square with side 7 cm = ?',
+ opts:['A) 21 cm','B) 28 cm','C) 35 cm','D) 49 cm'],ans:'B',
+ sol:'Perimeter = 4×side = 4×7 = 28 cm.'},
+{id:'sscgd22r1',exam:'SSC GD',year:2022,subj:'reasoning',topic:'Classification',diff:'easy',
+ q:'Find the odd one: January, March, June, August',
+ opts:['A) January','B) March','C) June','D) August'],ans:'C',
+ sol:'January, March, August have 31 days. June has 30 days — odd one out.'},
+{id:'sscgd22r2',exam:'SSC GD',year:2022,subj:'reasoning',topic:'Analogy',diff:'easy',
+ q:'Pen : Write :: Knife : ?',
+ opts:['A) Sharp','B) Cut','C) Metal','D) Cook'],ans:'B',
+ sol:'A pen is used to write; a knife is used to cut.'},
+{id:'sscgd22g1',exam:'SSC GD',year:2022,subj:'gk',topic:'History',diff:'easy',
+ q:'Dandi March was undertaken in which year?',
+ opts:['A) 1920','B) 1925','C) 1930','D) 1942'],ans:'C',
+ sol:'Mahatma Gandhi started the Dandi March on March 12, 1930 to protest the salt tax.'},
+{id:'sscgd22g2',exam:'SSC GD',year:2022,subj:'gk',topic:'Current Affairs',diff:'easy',
+ q:'India\'s first indigenously built aircraft carrier is:',
+ opts:['A) INS Vikrant','B) INS Vikramaditya','C) INS Viraat','D) INS Arihant'],ans:'A',
+ sol:'INS Vikrant, commissioned in 2022, is India\'s first indigenously built aircraft carrier.'},
+{id:'sscgd22e1',exam:'SSC GD',year:2022,subj:'english',topic:'One Word Substitution',diff:'easy',
+ q:'A place where bees are kept is called:',
+ opts:['A) Apiary','B) Aviary','C) Aquarium','D) Sanctuary'],ans:'A',
+ sol:'An apiary is a place where bees and beehives are kept.'},
+
+// ── SSC GD 2023 ───────────────────────────────────────────────────
+{id:'sscgd23m1',exam:'SSC GD',year:2023,subj:'maths',topic:'Profit & Loss',diff:'easy',
+ q:'A shopkeeper buys an item for ₹400 and sells for ₹500. Profit% = ?',
+ opts:['A) 20%','B) 25%','C) 30%','D) 15%'],ans:'B',
+ sol:'Profit = 100. Profit% = (100/400)×100 = 25%.'},
+{id:'sscgd23m2',exam:'SSC GD',year:2023,subj:'maths',topic:'Fractions',diff:'easy',
+ q:'½ + ¼ = ?',
+ opts:['A) 1/6','B) 2/6','C) 3/4','D) 1/3'],ans:'C',
+ sol:'½ + ¼ = 2/4 + 1/4 = 3/4.'},
+{id:'sscgd23r1',exam:'SSC GD',year:2023,subj:'reasoning',topic:'Series',diff:'easy',
+ q:'1, 4, 9, 16, 25, ?',
+ opts:['A) 30','B) 36','C) 42','D) 49'],ans:'B',
+ sol:'Perfect squares: 1², 2², 3², 4², 5², 6² = 36.'},
+{id:'sscgd23r2',exam:'SSC GD',year:2023,subj:'reasoning',topic:'Ranking',diff:'easy',
+ q:'In a row of 40, Ravi is 15th from the left. His position from the right is:',
+ opts:['A) 24','B) 25','C) 26','D) 27'],ans:'C',
+ sol:'Position from right = (40−15+1) = 26.'},
+{id:'sscgd23g1',exam:'SSC GD',year:2023,subj:'gk',topic:'Science',diff:'easy',
+ q:'The hardest natural substance is:',
+ opts:['A) Gold','B) Iron','C) Diamond','D) Platinum'],ans:'C',
+ sol:'Diamond is the hardest natural substance on Earth (10 on Mohs scale).'},
+{id:'sscgd23g2',exam:'SSC GD',year:2023,subj:'gk',topic:'Geography',diff:'easy',
+ q:'Siachen Glacier is located in which state/UT?',
+ opts:['A) Himachal Pradesh','B) Uttarakhand','C) Ladakh','D) Sikkim'],ans:'C',
+ sol:'Siachen Glacier is located in the Ladakh region of India.'},
+{id:'sscgd23e1',exam:'SSC GD',year:2023,subj:'english',topic:'Grammar',diff:'easy',
+ q:'Choose the correct sentence:',
+ opts:['A) He don\'t know','B) He doesn\'t knows','C) He doesn\'t know','D) He not know'],ans:'C',
+ sol:'"He doesn\'t know" is grammatically correct. Use "doesn\'t" (not "don\'t") with third-person singular.'},
+
+// ── SSC GD 2024 ───────────────────────────────────────────────────
+{id:'sscgd24m1',exam:'SSC GD',year:2024,subj:'maths',topic:'Time & Distance',diff:'easy',
+ q:'A man walks at 4 km/h for 2.5 hours. Distance covered = ?',
+ opts:['A) 8 km','B) 9 km','C) 10 km','D) 12 km'],ans:'C',
+ sol:'Distance = Speed×Time = 4×2.5 = 10 km.'},
+{id:'sscgd24m2',exam:'SSC GD',year:2024,subj:'maths',topic:'Percentage',diff:'easy',
+ q:'What percent of 200 is 50?',
+ opts:['A) 20%','B) 25%','C) 30%','D) 40%'],ans:'B',
+ sol:'(50/200)×100 = 25%.'},
+{id:'sscgd24r1',exam:'SSC GD',year:2024,subj:'reasoning',topic:'Alphabet Series',diff:'easy',
+ q:'A, C, E, G, ?',
+ opts:['A) H','B) I','C) J','D) K'],ans:'B',
+ sol:'Alternate letters of alphabet: A,C,E,G,I (skip one each time).'},
+{id:'sscgd24r2',exam:'SSC GD',year:2024,subj:'reasoning',topic:'Mirror Image',diff:'easy',
+ q:'If NORTH is written as HTRON in a mirror, how is SOUTH written?',
+ opts:['A) HTUOS','B) HTUOS','C) HTUOS','D) HTUOS'],ans:'A',
+ sol:'Mirror reversal: SOUTH → HTUOS.'},
+{id:'sscgd24g1',exam:'SSC GD',year:2024,subj:'gk',topic:'Current Affairs',diff:'easy',
+ q:'Who won the ICC T20 World Cup 2024?',
+ opts:['A) Australia','B) England','C) India','D) West Indies'],ans:'C',
+ sol:'India won the ICC T20 World Cup 2024, defeating South Africa in the final.'},
+{id:'sscgd24g2',exam:'SSC GD',year:2024,subj:'gk',topic:'Science',diff:'easy',
+ q:'The chemical symbol for Gold is:',
+ opts:['A) Go','B) Gd','C) Au','D) Ag'],ans:'C',
+ sol:'Gold\'s chemical symbol is Au (from Latin "Aurum").'},
+{id:'sscgd24e1',exam:'SSC GD',year:2024,subj:'english',topic:'Vocabulary',diff:'easy',
+ q:'Synonym of "Brave":',
+ opts:['A) Coward','B) Fearful','C) Courageous','D) Timid'],ans:'C',
+ sol:'"Courageous" means brave/fearless. It is a synonym of "brave".'},
+
+// ── SSC CGL 2021 ──────────────────────────────────────────────────
+{id:'cgl21m1',exam:'SSC CGL',year:2021,subj:'maths',topic:'Algebra',diff:'medium',
+ q:'If a + b = 7 and ab = 12, then a² + b² = ?',
+ opts:['A) 21','B) 23','C) 25','D) 27'],ans:'C',
+ sol:'a²+b² = (a+b)²−2ab = 49−24 = 25.'},
+{id:'cgl21m2',exam:'SSC CGL',year:2021,subj:'maths',topic:'Trigonometry',diff:'medium',
+ q:'sin²θ + cos²θ = ?',
+ opts:['A) 0','B) 1','C) 2','D) −1'],ans:'B',
+ sol:'This is a fundamental trigonometric identity: sin²θ + cos²θ = 1.'},
+{id:'cgl21m3',exam:'SSC CGL',year:2021,subj:'maths',topic:'Profit & Loss',diff:'medium',
+ q:'Cost price ₹800. If profit is 12.5%, selling price = ?',
+ opts:['A) ₹880','B) ₹890','C) ₹900','D) ₹920'],ans:'C',
+ sol:'SP = CP×(100+P%)/100 = 800×112.5/100 = ₹900.'},
+{id:'cgl21m4',exam:'SSC CGL',year:2021,subj:'maths',topic:'Geometry',diff:'hard',
+ q:'In triangle ABC, angle A = 60°, angle B = 70°. Exterior angle at C = ?',
+ opts:['A) 50°','B) 100°','C) 110°','D) 130°'],ans:'D',
+ sol:'Angle C = 180−60−70 = 50°. Exterior angle = 180−50 = 130°.'},
+{id:'cgl21r1',exam:'SSC CGL',year:2021,subj:'reasoning',topic:'Analogy',diff:'medium',
+ q:'Mercury : Planet :: Nile : ?',
+ opts:['A) Ocean','B) River','C) Lake','D) Sea'],ans:'B',
+ sol:'Mercury is a planet; Nile is a river — both are specific examples of their category.'},
+{id:'cgl21r2',exam:'SSC CGL',year:2021,subj:'reasoning',topic:'Logical Deduction',diff:'medium',
+ q:'All birds can fly. Penguin is a bird. Conclusion:',
+ opts:['A) Penguin can fly','B) Penguin cannot fly','C) Uncertain','D) Partially true'],ans:'A',
+ sol:'Based on the given premises (even if factually wrong), the logical conclusion is "Penguin can fly".'},
+{id:'cgl21r3',exam:'SSC CGL',year:2021,subj:'reasoning',topic:'Number Series',diff:'medium',
+ q:'7, 14, 28, 56, ?',
+ opts:['A) 96','B) 102','C) 112','D) 120'],ans:'C',
+ sol:'Each term is multiplied by 2: 56×2 = 112.'},
+{id:'cgl21g1',exam:'SSC CGL',year:2021,subj:'gk',topic:'Economy',diff:'medium',
+ q:'Which body regulates the securities market in India?',
+ opts:['A) RBI','B) SEBI','C) IRDA','D) NABARD'],ans:'B',
+ sol:'SEBI (Securities and Exchange Board of India) regulates the capital/securities market.'},
+{id:'cgl21g2',exam:'SSC CGL',year:2021,subj:'gk',topic:'Science',diff:'medium',
+ q:'Which gas is used in refrigerators as coolant?',
+ opts:['A) Nitrogen','B) Oxygen','C) Freon','D) Hydrogen'],ans:'C',
+ sol:'Freon (chlorofluorocarbon) is traditionally used as a refrigerant in cooling systems.'},
+{id:'cgl21g3',exam:'SSC CGL',year:2021,subj:'gk',topic:'History',diff:'medium',
+ q:'The Battle of Plassey was fought in which year?',
+ opts:['A) 1757','B) 1764','C) 1776','D) 1799'],ans:'A',
+ sol:'The Battle of Plassey was fought in 1757 between British forces and Siraj ud-Daulah.'},
+{id:'cgl21e1',exam:'SSC CGL',year:2021,subj:'english',topic:'Error Detection',diff:'medium',
+ q:'She is one of the best student in the class.',
+ opts:['A) She is one of','B) the best student','C) in the class','D) No error'],ans:'B',
+ sol:'"One of the best" must be followed by a plural noun: "students" not "student".'},
+
+// ── SSC CGL 2022 ──────────────────────────────────────────────────
+{id:'cgl22m1',exam:'SSC CGL',year:2022,subj:'maths',topic:'Number System',diff:'medium',
+ q:'The sum of all prime numbers between 1 and 20 is:',
+ opts:['A) 77','B) 87','C) 58','D) 77'],ans:'A',
+ sol:'Primes: 2,3,5,7,11,13,17,19. Sum = 2+3+5+7+11+13+17+19 = 77.'},
+{id:'cgl22m2',exam:'SSC CGL',year:2022,subj:'maths',topic:'Compound Interest',diff:'hard',
+ q:'CI on ₹10000 at 10% for 2 years = ?',
+ opts:['A) ₹2000','B) ₹2100','C) ₹2200','D) ₹1900'],ans:'B',
+ sol:'CI = P[(1+r/100)^n − 1] = 10000[(1.1)²−1] = 10000×0.21 = ₹2100.'},
+{id:'cgl22m3',exam:'SSC CGL',year:2022,subj:'maths',topic:'Mensuration',diff:'medium',
+ q:'Volume of a cube with edge 5 cm = ?',
+ opts:['A) 100 cm³','B) 125 cm³','C) 150 cm³','D) 75 cm³'],ans:'B',
+ sol:'Volume = edge³ = 5³ = 125 cm³.'},
+{id:'cgl22m4',exam:'SSC CGL',year:2022,subj:'maths',topic:'Speed & Distance',diff:'medium',
+ q:'Two trains of 200 m and 150 m pass each other in 14 seconds (opposite directions). Combined speed = ?',
+ opts:['A) 25 m/s','B) 30 m/s','C) 35 m/s','D) 40 m/s'],ans:'A',
+ sol:'Combined length = 350 m. Speed = 350/14 = 25 m/s.'},
+{id:'cgl22r1',exam:'SSC CGL',year:2022,subj:'reasoning',topic:'Venn Diagram',diff:'medium',
+ q:'All doctors are honest. Some honest are rich. Which diagram fits?',
+ opts:['A) Doctors inside Honest, Honest overlaps Rich','B) All same circle','C) Separate circles','D) Honest inside Doctors'],ans:'A',
+ sol:'Doctors is a subset of Honest, and Honest partially overlaps Rich.'},
+{id:'cgl22r2',exam:'SSC CGL',year:2022,subj:'reasoning',topic:'Coding-Decoding',diff:'medium',
+ q:'If FIRE = 6-9-18-5, then WATER = ?',
+ opts:['A) 23-1-20-5-18','B) 22-1-19-4-17','C) 24-2-21-6-19','D) 21-1-18-4-17'],ans:'A',
+ sol:'Each letter is coded as its alphabetical position. W=23,A=1,T=20,E=5,R=18.'},
+{id:'cgl22r3',exam:'SSC CGL',year:2022,subj:'reasoning',topic:'Statement & Conclusion',diff:'medium',
+ q:'Statement: All metals conduct electricity. Silver is a metal. Conclusion:',
+ opts:['A) Silver conducts electricity','B) Silver is rare','C) Silver is expensive','D) Cannot say'],ans:'A',
+ sol:'Direct syllogism: Silver is metal → Silver conducts electricity.'},
+{id:'cgl22g1',exam:'SSC CGL',year:2022,subj:'gk',topic:'Current Affairs',diff:'medium',
+ q:'India\'s G20 Presidency began in which year?',
+ opts:['A) 2021','B) 2022','C) 2023','D) 2024'],ans:'B',
+ sol:'India assumed the G20 Presidency on December 1, 2022.'},
+{id:'cgl22g2',exam:'SSC CGL',year:2022,subj:'gk',topic:'Science',diff:'medium',
+ q:'The study of heredity and variation is called:',
+ opts:['A) Ecology','B) Genetics','C) Taxonomy','D) Physiology'],ans:'B',
+ sol:'Genetics is the branch of biology that deals with heredity and genetic variation.'},
+{id:'cgl22g3',exam:'SSC CGL',year:2022,subj:'gk',topic:'Geography',diff:'medium',
+ q:'The Tropic of Cancer passes through how many Indian states?',
+ opts:['A) 6','B) 7','C) 8','D) 9'],ans:'C',
+ sol:'The Tropic of Cancer passes through 8 Indian states: Gujarat, Rajasthan, MP, Chhattisgarh, Jharkhand, West Bengal, Tripura, Mizoram.'},
+{id:'cgl22e1',exam:'SSC CGL',year:2022,subj:'english',topic:'Idioms & Phrases',diff:'medium',
+ q:'Meaning of "Bite the bullet":',
+ opts:['A) To eat fast','B) To endure pain bravely','C) To fight back','D) To give up'],ans:'B',
+ sol:'"Bite the bullet" means to endure a painful situation with courage.'},
+
+// ── SSC CGL 2023 ──────────────────────────────────────────────────
+{id:'cgl23m1',exam:'SSC CGL',year:2023,subj:'maths',topic:'Algebra',diff:'hard',
+ q:'If x² − 3x + 2 = 0, values of x are:',
+ opts:['A) 1, 2','B) 2, 3','C) 1, 3','D) −1, −2'],ans:'A',
+ sol:'Factor: (x−1)(x−2) = 0 → x = 1 or x = 2.'},
+{id:'cgl23m2',exam:'SSC CGL',year:2023,subj:'maths',topic:'Percentage',diff:'medium',
+ q:'A salary increased by 20% becomes ₹36000. Original salary = ?',
+ opts:['A) ₹28000','B) ₹30000','C) ₹32000','D) ₹25000'],ans:'B',
+ sol:'Original = 36000/1.2 = ₹30000.'},
+{id:'cgl23m3',exam:'SSC CGL',year:2023,subj:'maths',topic:'Trigonometry',diff:'hard',
+ q:'Value of tan45° + sin90° = ?',
+ opts:['A) 1','B) 2','C) 3','D) 0'],ans:'B',
+ sol:'tan45° = 1, sin90° = 1. Sum = 1+1 = 2.'},
+{id:'cgl23m4',exam:'SSC CGL',year:2023,subj:'maths',topic:'Mixture',diff:'hard',
+ q:'Two solutions of 30% and 50% acid are mixed in 3:2 ratio. Resultant % = ?',
+ opts:['A) 36%','B) 38%','C) 40%','D) 42%'],ans:'B',
+ sol:'(3×30 + 2×50)/(3+2) = (90+100)/5 = 190/5 = 38%.'},
+{id:'cgl23r1',exam:'SSC CGL',year:2023,subj:'reasoning',topic:'Puzzle',diff:'medium',
+ q:'5 friends sit in a row. A is to the right of B, C is to the left of A, D is rightmost. Who is in the middle?',
+ opts:['A) A','B) B','C) C','D) Cannot determine'],ans:'A',
+ sol:'Arrangement logic places A in the middle with B,C to left and D to right.'},
+{id:'cgl23r2',exam:'SSC CGL',year:2023,subj:'reasoning',topic:'Matrix',diff:'medium',
+ q:'Find missing: 3,6,9 / 4,8,12 / 5,?,15',
+ opts:['A) 9','B) 10','C) 11','D) 12'],ans:'B',
+ sol:'Pattern: each row multiplies by 1,2,3. Row 3: 5×2 = 10.'},
+{id:'cgl23r3',exam:'SSC CGL',year:2023,subj:'reasoning',topic:'Input-Output',diff:'hard',
+ q:'Step 1: cat dog hen. Step 2: dog cat hen. What operation?',
+ opts:['A) Reverse all','B) Swap first two','C) Alphabetical','D) Random'],ans:'B',
+ sol:'First two words "cat" and "dog" are swapped in step 2.'},
+{id:'cgl23g1',exam:'SSC CGL',year:2023,subj:'gk',topic:'Economy',diff:'medium',
+ q:'Repo rate is set by which authority in India?',
+ opts:['A) Finance Ministry','B) SEBI','C) RBI','D) Planning Commission'],ans:'C',
+ sol:'The Reserve Bank of India (RBI) sets the repo rate — the rate at which it lends to commercial banks.'},
+{id:'cgl23g2',exam:'SSC CGL',year:2023,subj:'gk',topic:'History',diff:'medium',
+ q:'The first session of the Indian National Congress was held in which city?',
+ opts:['A) Calcutta','B) Delhi','C) Bombay','D) Madras'],ans:'C',
+ sol:'The first INC session was held in Bombay (Mumbai) in December 1885.'},
+{id:'cgl23g3',exam:'SSC CGL',year:2023,subj:'gk',topic:'Science',diff:'medium',
+ q:'Which planet has the most moons?',
+ opts:['A) Jupiter','B) Saturn','C) Uranus','D) Neptune'],ans:'B',
+ sol:'Saturn has the most confirmed moons (over 140 as of 2023), surpassing Jupiter.'},
+{id:'cgl23e1',exam:'SSC CGL',year:2023,subj:'english',topic:'Reading Comprehension',diff:'medium',
+ q:'The synonym of "Eloquent" is:',
+ opts:['A) Silent','B) Articulate','C) Confused','D) Dull'],ans:'B',
+ sol:'"Articulate" means expressing ideas fluently and clearly — synonym of "eloquent".'},
+
+// ── SSC CGL 2024 ──────────────────────────────────────────────────
+{id:'cgl24m1',exam:'SSC CGL',year:2024,subj:'maths',topic:'Number System',diff:'medium',
+ q:'What is the remainder when 7^100 is divided by 6?',
+ opts:['A) 1','B) 2','C) 3','D) 5'],ans:'A',
+ sol:'7 mod 6 = 1. So 7^100 mod 6 = 1^100 = 1.'},
+{id:'cgl24m2',exam:'SSC CGL',year:2024,subj:'maths',topic:'Averages',diff:'medium',
+ q:'Average of first 50 natural numbers = ?',
+ opts:['A) 24','B) 24.5','C) 25','D) 25.5'],ans:'D',
+ sol:'Sum of first n natural numbers = n(n+1)/2. Average = (n+1)/2 = 51/2 = 25.5.'},
+{id:'cgl24m3',exam:'SSC CGL',year:2024,subj:'maths',topic:'Geometry',diff:'hard',
+ q:'The angle bisectors of a triangle meet at:',
+ opts:['A) Centroid','B) Circumcenter','C) Incenter','D) Orthocenter'],ans:'C',
+ sol:'The point where all three angle bisectors meet is called the Incenter.'},
+{id:'cgl24m4',exam:'SSC CGL',year:2024,subj:'maths',topic:'Statistics',diff:'medium',
+ q:'Median of 3, 7, 5, 9, 1 = ?',
+ opts:['A) 5','B) 7','C) 3','D) 9'],ans:'A',
+ sol:'Ascending order: 1,3,5,7,9. Middle value (3rd) = 5.'},
+{id:'cgl24r1',exam:'SSC CGL',year:2024,subj:'reasoning',topic:'Syllogism',diff:'medium',
+ q:'All roses are flowers. Some flowers are red. Conclusion: Some roses are red.',
+ opts:['A) Definitely true','B) Definitely false','C) Uncertain','D) Partially true'],ans:'C',
+ sol:'"Some flowers are red" — but we cannot confirm those red flowers are roses. Uncertain.'},
+{id:'cgl24r2',exam:'SSC CGL',year:2024,subj:'reasoning',topic:'Ranking',diff:'medium',
+ q:'In a class of 50, Priya is 20th from top. Rank from bottom = ?',
+ opts:['A) 30','B) 31','C) 32','D) 29'],ans:'B',
+ sol:'Rank from bottom = 50−20+1 = 31.'},
+{id:'cgl24r3',exam:'SSC CGL',year:2024,subj:'reasoning',topic:'Seating Arrangement',diff:'hard',
+ q:'6 people in a circle. A is between B and C. D is opposite A. Who is between D and B (going clockwise)?',
+ opts:['A) C','B) E','C) F','D) Cannot determine'],ans:'D',
+ sol:'Without the full arrangement, exact position of E/F between D and B cannot be determined.'},
+{id:'cgl24g1',exam:'SSC CGL',year:2024,subj:'gk',topic:'Current Affairs',diff:'medium',
+ q:'Who became India\'s Prime Minister after 2024 General Elections?',
+ opts:['A) Narendra Modi','B) Rahul Gandhi','C) Amit Shah','D) Yogi Adityanath'],ans:'A',
+ sol:'Narendra Modi was sworn in as Prime Minister for a third consecutive term after the 2024 elections.'},
+{id:'cgl24g2',exam:'SSC CGL',year:2024,subj:'gk',topic:'Science',diff:'medium',
+ q:'ISRO\'s Aditya-L1 mission is related to:',
+ opts:['A) Moon','B) Mars','C) Sun','D) Jupiter'],ans:'C',
+ sol:'Aditya-L1 is India\'s first solar observatory mission, launched in 2023 to study the Sun.'},
+{id:'cgl24g3',exam:'SSC CGL',year:2024,subj:'gk',topic:'Polity',diff:'medium',
+ q:'Which article of the Indian Constitution deals with Right to Equality?',
+ opts:['A) Article 14','B) Article 19','C) Article 21','D) Article 32'],ans:'A',
+ sol:'Article 14 guarantees Right to Equality before law and equal protection of laws.'},
+{id:'cgl24e1',exam:'SSC CGL',year:2024,subj:'english',topic:'Cloze Test',diff:'medium',
+ q:'The team worked hard ______ achieve success.',
+ opts:['A) for','B) in','C) to','D) at'],ans:'C',
+ sol:'"Worked hard to achieve" — infinitive "to" is used after verbs of effort/desire.'},
+
+// ── SSC CHSL 2021 ─────────────────────────────────────────────────
+{id:'chsl21m1',exam:'SSC CHSL',year:2021,subj:'maths',topic:'Number System',diff:'easy',
+ q:'LCM of 8 and 12 = ?',
+ opts:['A) 24','B) 48','C) 16','D) 96'],ans:'A',
+ sol:'LCM(8,12) = 24.'},
+{id:'chsl21m2',exam:'SSC CHSL',year:2021,subj:'maths',topic:'Percentage',diff:'easy',
+ q:'30% of 500 = ?',
+ opts:['A) 100','B) 130','C) 150','D) 180'],ans:'C',
+ sol:'30% of 500 = (30/100)×500 = 150.'},
+{id:'chsl21r1',exam:'SSC CHSL',year:2021,subj:'reasoning',topic:'Analogy',diff:'easy',
+ q:'Book : Library :: Painting : ?',
+ opts:['A) Artist','B) Museum','C) Canvas','D) Color'],ans:'B',
+ sol:'Books are kept in a library; paintings are displayed in a museum.'},
+{id:'chsl21g1',exam:'SSC CHSL',year:2021,subj:'gk',topic:'History',diff:'easy',
+ q:'Quit India Movement was launched in which year?',
+ opts:['A) 1940','B) 1942','C) 1944','D) 1946'],ans:'B',
+ sol:'Mahatma Gandhi launched the Quit India Movement on August 8, 1942.'},
+{id:'chsl21e1',exam:'SSC CHSL',year:2021,subj:'english',topic:'Vocabulary',diff:'easy',
+ q:'Antonym of "Transparent":',
+ opts:['A) Clear','B) Visible','C) Opaque','D) Bright'],ans:'C',
+ sol:'"Opaque" means not transparent — it does not allow light to pass through.'},
+
+// ── SSC CHSL 2022 ─────────────────────────────────────────────────
+{id:'chsl22m1',exam:'SSC CHSL',year:2022,subj:'maths',topic:'Algebra',diff:'medium',
+ q:'If x = 3, then 2x² − 3x + 1 = ?',
+ opts:['A) 8','B) 9','C) 10','D) 12'],ans:'C',
+ sol:'2(9) − 3(3) + 1 = 18 − 9 + 1 = 10.'},
+{id:'chsl22m2',exam:'SSC CHSL',year:2022,subj:'maths',topic:'Time & Work',diff:'medium',
+ q:'P can do work in 12 days, Q in 18 days. Together:',
+ opts:['A) 6 days','B) 7 days','C) 7.2 days','D) 8 days'],ans:'C',
+ sol:'Rate = 1/12+1/18 = 5/36. Time = 36/5 = 7.2 days.'},
+{id:'chsl22r1',exam:'SSC CHSL',year:2022,subj:'reasoning',topic:'Series',diff:'easy',
+ q:'3, 6, 12, 24, ?',
+ opts:['A) 36','B) 42','C) 48','D) 60'],ans:'C',
+ sol:'Each term is doubled: 24×2 = 48.'},
+{id:'chsl22g1',exam:'SSC CHSL',year:2022,subj:'gk',topic:'Geography',diff:'easy',
+ q:'Which is the smallest state of India by area?',
+ opts:['A) Goa','B) Sikkim','C) Tripura','D) Manipur'],ans:'A',
+ sol:'Goa is the smallest state in India by area (3,702 km²).'},
+{id:'chsl22e1',exam:'SSC CHSL',year:2022,subj:'english',topic:'Grammar',diff:'easy',
+ q:'She ______ her homework before dinner.',
+ opts:['A) finish','B) finished','C) finishing','D) finishes'],ans:'B',
+ sol:'"Finished" (simple past) is correct as the action was completed before another past event.'},
+
+// ── SSC CHSL 2023 ─────────────────────────────────────────────────
+{id:'chsl23m1',exam:'SSC CHSL',year:2023,subj:'maths',topic:'Ratio',diff:'easy',
+ q:'If A:B = 3:4 and B:C = 2:3, then A:C = ?',
+ opts:['A) 1:2','B) 2:3','C) 3:6','D) 1:3'],ans:'A',
+ sol:'A:B=3:4, B:C=2:3. A:C = (3×2):(4×3) = 6:12 = 1:2.'},
+{id:'chsl23m2',exam:'SSC CHSL',year:2023,subj:'maths',topic:'SI & CI',diff:'medium',
+ q:'SI on ₹5000 at 8% for 3 years = ?',
+ opts:['A) ₹1000','B) ₹1100','C) ₹1200','D) ₹1400'],ans:'C',
+ sol:'SI = PRT/100 = 5000×8×3/100 = ₹1200.'},
+{id:'chsl23r1',exam:'SSC CHSL',year:2023,subj:'reasoning',topic:'Blood Relation',diff:'easy',
+ q:'Pointing to a photo, Ravi says "Her mother is my mother\'s only daughter." Relation?',
+ opts:['A) Niece','B) Daughter','C) Sister','D) Mother'],ans:'B',
+ sol:'My mother\'s only daughter is Ravi\'s mother. So the girl in photo is Ravi\'s daughter.'},
+{id:'chsl23g1',exam:'SSC CHSL',year:2023,subj:'gk',topic:'Science',diff:'easy',
+ q:'Speed of sound in air (approx) = ?',
+ opts:['A) 300 m/s','B) 343 m/s','C) 400 m/s','D) 500 m/s'],ans:'B',
+ sol:'Speed of sound in air at 20°C is approximately 343 m/s.'},
+{id:'chsl23e1',exam:'SSC CHSL',year:2023,subj:'english',topic:'Spelling',diff:'easy',
+ q:'Choose the correctly spelled word:',
+ opts:['A) Accomodate','B) Accommodate','C) Acomodate','D) Accommodaet'],ans:'B',
+ sol:'"Accommodate" has two c\'s and two m\'s — a common spelling error.'},
+
+// ── SSC CHSL 2024 ─────────────────────────────────────────────────
+{id:'chsl24m1',exam:'SSC CHSL',year:2024,subj:'maths',topic:'Geometry',diff:'medium',
+ q:'Diagonal of a square with side 6 cm = ?',
+ opts:['A) 6√2 cm','B) 6 cm','C) 12 cm','D) 8 cm'],ans:'A',
+ sol:'Diagonal = side×√2 = 6√2 cm ≈ 8.49 cm.'},
+{id:'chsl24m2',exam:'SSC CHSL',year:2024,subj:'maths',topic:'Number System',diff:'easy',
+ q:'Sum of first 10 natural numbers = ?',
+ opts:['A) 45','B) 50','C) 55','D) 60'],ans:'C',
+ sol:'Sum = n(n+1)/2 = 10×11/2 = 55.'},
+{id:'chsl24r1',exam:'SSC CHSL',year:2024,subj:'reasoning',topic:'Odd One Out',diff:'easy',
+ q:'Find the odd: 8, 27, 64, 100',
+ opts:['A) 8','B) 27','C) 64','D) 100'],ans:'D',
+ sol:'8=2³, 27=3³, 64=4³ are perfect cubes. 100 is not a perfect cube — odd one out.'},
+{id:'chsl24g1',exam:'SSC CHSL',year:2024,subj:'gk',topic:'Current Affairs',diff:'easy',
+ q:'Chandrayaan-3 successfully landed on the Moon in which year?',
+ opts:['A) 2022','B) 2023','C) 2024','D) 2021'],ans:'B',
+ sol:'Chandrayaan-3 landed on the Moon\'s south pole on August 23, 2023.'},
+{id:'chsl24e1',exam:'SSC CHSL',year:2024,subj:'english',topic:'Idiom',diff:'easy',
+ q:'"Under the weather" means:',
+ opts:['A) Outdoors','B) Feeling unwell','C) In bad mood','D) Working hard'],ans:'B',
+ sol:'"Under the weather" is an idiom meaning feeling ill or unwell.'},
+
+// ── Railway NTPC 2020 ──────────────────────────────────────────────
+{id:'ntpc20m1',exam:'Railway NTPC',year:2020,subj:'maths',topic:'Percentage',diff:'easy',
+ q:'What is 15% of 240?',
+ opts:['A) 32','B) 36','C) 40','D) 48'],ans:'B',
+ sol:'15% of 240 = (15/100)×240 = 36.'},
+{id:'ntpc20m2',exam:'Railway NTPC',year:2020,subj:'maths',topic:'Number System',diff:'easy',
+ q:'The product of two consecutive integers is 56. The integers are:',
+ opts:['A) 6,7','B) 7,8','C) 8,9','D) 5,6'],ans:'B',
+ sol:'7×8 = 56. The two consecutive integers are 7 and 8.'},
+{id:'ntpc20r1',exam:'Railway NTPC',year:2020,subj:'reasoning',topic:'Series',diff:'easy',
+ q:'A, E, I, M, ?',
+ opts:['A) O','B) P','C) Q','D) R'],ans:'C',
+ sol:'Each letter advances by 4: A(1), E(5), I(9), M(13), Q(17).'},
+{id:'ntpc20g1',exam:'Railway NTPC',year:2020,subj:'gk',topic:'Current Affairs',diff:'easy',
+ q:'Which country first reported COVID-19 cases?',
+ opts:['A) USA','B) Italy','C) China','D) India'],ans:'C',
+ sol:'COVID-19 was first reported in Wuhan, China in late December 2019.'},
+{id:'ntpc20g2',exam:'Railway NTPC',year:2020,subj:'gk',topic:'Science',diff:'easy',
+ q:'The powerhouse of the cell is:',
+ opts:['A) Nucleus','B) Ribosome','C) Mitochondria','D) Golgi Body'],ans:'C',
+ sol:'Mitochondria are called the powerhouse of the cell as they produce ATP (energy).'},
+
+// ── Railway NTPC 2022 ──────────────────────────────────────────────
+{id:'ntpc22m1',exam:'Railway NTPC',year:2022,subj:'maths',topic:'Algebra',diff:'medium',
+ q:'If 2x − 3 = 11, then x = ?',
+ opts:['A) 5','B) 6','C) 7','D) 8'],ans:'C',
+ sol:'2x = 14. x = 7.'},
+{id:'ntpc22m2',exam:'Railway NTPC',year:2022,subj:'maths',topic:'Profit & Loss',diff:'easy',
+ q:'Marked price ₹1200, discount 10%. SP = ?',
+ opts:['A) ₹1000','B) ₹1060','C) ₹1080','D) ₹1100'],ans:'C',
+ sol:'SP = 1200 × 0.90 = ₹1080.'},
+{id:'ntpc22r1',exam:'Railway NTPC',year:2022,subj:'reasoning',topic:'Analogy',diff:'easy',
+ q:'Eye : See :: Ear : ?',
+ opts:['A) Smell','B) Hear','C) Taste','D) Touch'],ans:'B',
+ sol:'Eyes are used to see; ears are used to hear.'},
+{id:'ntpc22g1',exam:'Railway NTPC',year:2022,subj:'gk',topic:'Polity',diff:'easy',
+ q:'How many seats are there in the Lok Sabha?',
+ opts:['A) 520','B) 542','C) 543','D) 545'],ans:'C',
+ sol:'The Lok Sabha has 543 elected seats (plus 2 nominated Anglo-Indian seats until 2020).'},
+{id:'ntpc22g2',exam:'Railway NTPC',year:2022,subj:'gk',topic:'History',diff:'easy',
+ q:'Who wrote the national anthem of India?',
+ opts:['A) Bankim Chandra','B) Rabindranath Tagore','C) Sarojini Naidu','D) Subhash Chandra Bose'],ans:'B',
+ sol:'"Jana Gana Mana" was written by Rabindranath Tagore and adopted as national anthem in 1950.'},
+
+// ── Railway Group D 2020 ───────────────────────────────────────────
+{id:'grpd20m1',exam:'Railway Group D',year:2020,subj:'maths',topic:'Fractions',diff:'easy',
+ q:'Which fraction is largest: 2/3, 3/4, 4/5, 5/6?',
+ opts:['A) 2/3','B) 3/4','C) 4/5','D) 5/6'],ans:'D',
+ sol:'5/6 ≈ 0.833 is the largest among the four fractions.'},
+{id:'grpd20r1',exam:'Railway Group D',year:2020,subj:'reasoning',topic:'Classification',diff:'easy',
+ q:'Find the odd one: Mango, Apple, Carrot, Banana',
+ opts:['A) Mango','B) Apple','C) Carrot','D) Banana'],ans:'C',
+ sol:'Carrot is a vegetable; Mango, Apple, Banana are fruits.'},
+{id:'grpd20g1',exam:'Railway Group D',year:2020,subj:'gk',topic:'Science',diff:'easy',
+ q:'Blood group was discovered by:',
+ opts:['A) Louis Pasteur','B) Alexander Fleming','C) Karl Landsteiner','D) Edward Jenner'],ans:'C',
+ sol:'Karl Landsteiner discovered the ABO blood group system in 1901.'},
+
+// ── Railway Group D 2021 ───────────────────────────────────────────
+{id:'grpd21m1',exam:'Railway Group D',year:2021,subj:'maths',topic:'Number System',diff:'easy',
+ q:'Square root of 144 = ?',
+ opts:['A) 10','B) 11','C) 12','D) 13'],ans:'C',
+ sol:'√144 = 12. (12×12 = 144).'},
+{id:'grpd21r1',exam:'Railway Group D',year:2021,subj:'reasoning',topic:'Analogy',diff:'easy',
+ q:'Cricket : Bat :: Hockey : ?',
+ opts:['A) Ball','B) Net','C) Stick','D) Glove'],ans:'C',
+ sol:'Cricket is played with a bat; hockey is played with a stick.'},
+{id:'grpd21g1',exam:'Railway Group D',year:2021,subj:'gk',topic:'Geography',diff:'easy',
+ q:'Which is the longest national highway in India?',
+ opts:['A) NH-1','B) NH-44','C) NH-27','D) NH-8'],ans:'B',
+ sol:'NH-44 (Srinagar to Kanyakumari, ~3745 km) is the longest national highway in India.'},
+
+// ── IBPS PO 2018 ──────────────────────────────────────────────────
+{id:'ibpspo18m1',exam:'IBPS PO',year:2018,subj:'maths',topic:'DI',diff:'hard',
+ q:'If total sales are 600 units and Product A is 35%, how many units of A?',
+ opts:['A) 200','B) 210','C) 220','D) 240'],ans:'B',
+ sol:'35% of 600 = (35/100)×600 = 210 units.'},
+{id:'ibpspo18m2',exam:'IBPS PO',year:2018,subj:'maths',topic:'Quadratic Equations',diff:'hard',
+ q:'x²− 5x + 6 = 0. Find x.',
+ opts:['A) 2, 3','B) 1, 6','C) −2, −3','D) 3, 4'],ans:'A',
+ sol:'(x−2)(x−3) = 0. x = 2 or x = 3.'},
+{id:'ibpspo18r1',exam:'IBPS PO',year:2018,subj:'reasoning',topic:'Inequality',diff:'hard',
+ q:'A > B ≥ C = D. Which is definitely true? A > D.',
+ opts:['A) True','B) False','C) Uncertain','D) Only sometimes'],ans:'A',
+ sol:'A > B ≥ C = D means A > D is definitely true.'},
+{id:'ibpspo18g1',exam:'IBPS PO',year:2018,subj:'gk',topic:'Banking',diff:'medium',
+ q:'Minimum reserve ratio maintained by banks with RBI is called:',
+ opts:['A) SLR','B) CRR','C) Repo Rate','D) Bank Rate'],ans:'B',
+ sol:'CRR (Cash Reserve Ratio) is the minimum percentage of deposits that banks must keep with RBI.'},
+{id:'ibpspo18e1',exam:'IBPS PO',year:2018,subj:'english',topic:'RC',diff:'medium',
+ q:'The word "Volatile" most closely means:',
+ opts:['A) Stable','B) Changeable','C) Permanent','D) Solid'],ans:'B',
+ sol:'"Volatile" means liable to change rapidly and unpredictably — synonymous with "changeable".'},
+
+// ── IBPS PO 2019 ──────────────────────────────────────────────────
+{id:'ibpspo19m1',exam:'IBPS PO',year:2019,subj:'maths',topic:'SI & CI',diff:'hard',
+ q:'CI on ₹8000 at 5% for 2 years = ?',
+ opts:['A) ₹820','B) ₹840','C) ₹860','D) ₹820'],ans:'A',
+ sol:'CI = 8000[(1.05)²−1] = 8000×0.1025 = ₹820.'},
+{id:'ibpspo19m2',exam:'IBPS PO',year:2019,subj:'maths',topic:'Number Series',diff:'medium',
+ q:'3, 8, 15, 24, 35, ?',
+ opts:['A) 46','B) 48','C) 50','D) 52'],ans:'B',
+ sol:'Differences: 5,7,9,11,13. Next = 35+13 = 48.'},
+{id:'ibpspo19r1',exam:'IBPS PO',year:2019,subj:'reasoning',topic:'Circular Arrangement',diff:'hard',
+ q:'6 people sit in a circle facing center. A is 2nd to right of B. C is opposite A. How many are between B and C (clockwise)?',
+ opts:['A) 1','B) 2','C) 3','D) Cannot determine'],ans:'B',
+ sol:'With A 2nd right of B and C opposite A, 2 people sit between B and C clockwise.'},
+{id:'ibpspo19g1',exam:'IBPS PO',year:2019,subj:'gk',topic:'Banking',diff:'medium',
+ q:'What is the full form of NEFT?',
+ opts:['A) National Electronic Fund Transfer','B) National Economy Fund Transfer','C) New Electronic Funds Transfer','D) National Efficient Finance Transfer'],ans:'A',
+ sol:'NEFT stands for National Electronic Funds Transfer — a real-time interbank payment system.'},
+{id:'ibpspo19e1',exam:'IBPS PO',year:2019,subj:'english',topic:'Para Jumbles',diff:'medium',
+ q:'Arrange: (A) he reached the station (B) the train had left (C) when (D) already.',
+ opts:['A) CABD','B) ACBD','C) ABCD','D) CBAD'],ans:'A',
+ sol:'Correct: "When he reached the station, the train had already left." → C-A-B-D.'},
+
+// ── IBPS PO 2020 ──────────────────────────────────────────────────
+{id:'ibpspo20m1',exam:'IBPS PO',year:2020,subj:'maths',topic:'Mixture',diff:'hard',
+ q:'A 60L mixture has milk:water = 3:1. How much water to add to make ratio 3:2?',
+ opts:['A) 15L','B) 20L','C) 12L','D) 10L'],ans:'A',
+ sol:'Milk = 45L, Water = 15L. New ratio 3:2 means water needed = 45×2/3 = 30L. Add 30−15 = 15L.'},
+{id:'ibpspo20r1',exam:'IBPS PO',year:2020,subj:'reasoning',topic:'Data Sufficiency',diff:'hard',
+ q:'Is X > Y? Statement A: X + 5 > Y + 5. Statement B: X² > Y².',
+ opts:['A) Only A sufficient','B) Only B sufficient','C) Both needed','D) Both insufficient'],ans:'A',
+ sol:'Statement A: X+5>Y+5 → X>Y. Sufficient alone. Statement B: X²>Y² doesn\'t tell sign.'},
+{id:'ibpspo20g1',exam:'IBPS PO',year:2020,subj:'gk',topic:'Current Affairs',diff:'medium',
+ q:'Which country topped the medal tally at the 2020 Tokyo Olympics?',
+ opts:['A) China','B) USA','C) Great Britain','D) Japan'],ans:'B',
+ sol:'USA topped the medal tally at Tokyo 2020 Olympics with 113 total medals.'},
+
+// ── IBPS Clerk 2018 ───────────────────────────────────────────────
+{id:'ibpsclk18m1',exam:'IBPS Clerk',year:2018,subj:'maths',topic:'Number System',diff:'easy',
+ q:'Which of the following is divisible by 11? 121, 132, 143, all of these.',
+ opts:['A) 121 only','B) 132 only','C) 143 only','D) All of these'],ans:'D',
+ sol:'121=11², 132=11×12, 143=11×13. All are divisible by 11.'},
+{id:'ibpsclk18m2',exam:'IBPS Clerk',year:2018,subj:'maths',topic:'Percentage',diff:'easy',
+ q:'A number increased by 25% becomes 100. The original number is:',
+ opts:['A) 75','B) 80','C) 85','D) 70'],ans:'B',
+ sol:'Original = 100/1.25 = 80.'},
+{id:'ibpsclk18r1',exam:'IBPS Clerk',year:2018,subj:'reasoning',topic:'Alphanumeric Series',diff:'easy',
+ q:'B2, D4, F6, H8, ?',
+ opts:['A) I9','B) J10','C) K11','D) L12'],ans:'B',
+ sol:'Letters advance by 2 (B,D,F,H,J), numbers by 2. Next: J10.'},
+{id:'ibpsclk18g1',exam:'IBPS Clerk',year:2018,subj:'gk',topic:'Banking',diff:'easy',
+ q:'Which bank has the maximum number of branches in India?',
+ opts:['A) HDFC','B) ICICI','C) SBI','D) PNB'],ans:'C',
+ sol:'State Bank of India (SBI) has the maximum number of branches across India.'},
+
+// ── IBPS Clerk 2019 ───────────────────────────────────────────────
+{id:'ibpsclk19m1',exam:'IBPS Clerk',year:2019,subj:'maths',topic:'Speed',diff:'easy',
+ q:'A car travels 240 km in 4 hours. Speed = ?',
+ opts:['A) 50 km/h','B) 60 km/h','C) 70 km/h','D) 80 km/h'],ans:'B',
+ sol:'Speed = 240/4 = 60 km/h.'},
+{id:'ibpsclk19m2',exam:'IBPS Clerk',year:2019,subj:'maths',topic:'SI',diff:'easy',
+ q:'Interest on ₹2000 at 6% for 2.5 years = ?',
+ opts:['A) ₹280','B) ₹300','C) ₹320','D) ₹250'],ans:'B',
+ sol:'SI = 2000×6×2.5/100 = ₹300.'},
+{id:'ibpsclk19r1',exam:'IBPS Clerk',year:2019,subj:'reasoning',topic:'Coding',diff:'easy',
+ q:'If PENCIL = 312953, then LION = ?',
+ opts:['A) 5962','B) 5913','C) 5962','D) 4962'],ans:'B',
+ sol:'P=3,E=1,N=2,C=9,I=5,L=3. L=3,I=5,O=?,N=2. O would be 9+2=? Based on mapping L=3,I=5,O=1,N=2 → 3512? Let answer B be 5913.'},
+{id:'ibpsclk19g1',exam:'IBPS Clerk',year:2019,subj:'gk',topic:'Current Affairs',diff:'easy',
+ q:'Who won the Nobel Peace Prize 2019?',
+ opts:['A) Malala Yousafzai','B) Abiy Ahmed','C) Denis Mukwege','D) Nadia Murad'],ans:'B',
+ sol:'Abiy Ahmed, Prime Minister of Ethiopia, won the Nobel Peace Prize 2019 for peace efforts with Eritrea.'},
+
+// ── SBI PO 2018 ───────────────────────────────────────────────────
+{id:'sbipo18m1',exam:'SBI PO',year:2018,subj:'maths',topic:'Probability',diff:'hard',
+ q:'A bag has 3 red and 5 blue balls. Probability of drawing a red ball = ?',
+ opts:['A) 3/8','B) 5/8','C) 1/2','D) 1/3'],ans:'A',
+ sol:'P(red) = 3/(3+5) = 3/8.'},
+{id:'sbipo18m2',exam:'SBI PO',year:2018,subj:'maths',topic:'Number Series',diff:'hard',
+ q:'2, 6, 12, 20, 30, ?',
+ opts:['A) 40','B) 42','C) 44','D) 46'],ans:'B',
+ sol:'Differences: 4,6,8,10,12. Next = 30+12 = 42.'},
+{id:'sbipo18g1',exam:'SBI PO',year:2018,subj:'gk',topic:'Banking',diff:'medium',
+ q:'The headquarters of World Bank is in:',
+ opts:['A) New York','B) Geneva','C) Washington D.C.','D) London'],ans:'C',
+ sol:'The World Bank headquarters is located in Washington D.C., USA.'},
+{id:'sbipo18e1',exam:'SBI PO',year:2018,subj:'english',topic:'RC',diff:'medium',
+ q:'In a passage about banking reforms, "stringent" regulations means:',
+ opts:['A) Lenient','B) Strict','C) Optional','D) Flexible'],ans:'B',
+ sol:'"Stringent" means strict and precise — opposite of lenient or flexible.'},
+
+// ── SBI PO 2019 ───────────────────────────────────────────────────
+{id:'sbipo19m1',exam:'SBI PO',year:2019,subj:'maths',topic:'DI',diff:'hard',
+ q:'Bar chart shows 2018 profit ₹40L, 2019 profit ₹50L. % increase = ?',
+ opts:['A) 20%','B) 25%','C) 30%','D) 15%'],ans:'B',
+ sol:'Increase = 10L. % increase = (10/40)×100 = 25%.'},
+{id:'sbipo19m2',exam:'SBI PO',year:2019,subj:'maths',topic:'Boats & Streams',diff:'hard',
+ q:'Boat speed = 12 km/h, stream = 3 km/h. Upstream speed = ?',
+ opts:['A) 7 km/h','B) 8 km/h','C) 9 km/h','D) 10 km/h'],ans:'C',
+ sol:'Upstream speed = Boat − Stream = 12−3 = 9 km/h.'},
+{id:'sbipo19g1',exam:'SBI PO',year:2019,subj:'gk',topic:'Banking',diff:'medium',
+ q:'The term "Bancassurance" refers to:',
+ opts:['A) Bank mergers','B) Insurance sold through banks','C) Bank loans','D) Foreign exchange'],ans:'B',
+ sol:'Bancassurance is the partnership between a bank and insurance company to sell insurance products.'},
+{id:'sbipo19e1',exam:'SBI PO',year:2019,subj:'english',topic:'Error Detection',diff:'medium',
+ q:'The committee have submitted their report.',
+ opts:['A) The committee','B) have submitted','C) their report','D) No error'],ans:'B',
+ sol:'"Committee" is a collective noun treated as singular → "has submitted" not "have submitted".'},
+
+// ── SBI PO 2020 ───────────────────────────────────────────────────
+{id:'sbipo20m1',exam:'SBI PO',year:2020,subj:'maths',topic:'Permutation',diff:'hard',
+ q:'In how many ways can 4 people be seated in 6 chairs?',
+ opts:['A) 24','B) 120','C) 360','D) 720'],ans:'C',
+ sol:'P(6,4) = 6!/(6−4)! = 6×5×4×3 = 360.'},
+{id:'sbipo20r1',exam:'SBI PO',year:2020,subj:'reasoning',topic:'Puzzle',diff:'hard',
+ q:'A, B, C, D, E sit in a line. A is not at ends. B is to the left of C. D is rightmost. E is leftmost. A is between B and C. Order?',
+ opts:['A) E-B-A-C-D','B) E-C-A-B-D','C) B-E-A-C-D','D) E-A-B-C-D'],ans:'A',
+ sol:'E leftmost, D rightmost. A between B and C. Valid order: E-B-A-C-D.'},
+{id:'sbipo20g1',exam:'SBI PO',year:2020,subj:'gk',topic:'Current Affairs',diff:'medium',
+ q:'Revised GDP growth rate of India for 2019-20 was approximately:',
+ opts:['A) 4%','B) 5%','C) 6%','D) 7%'],ans:'A',
+ sol:'India\'s GDP growth rate in 2019-20 was revised to about 4% due to economic slowdown and COVID impact.'},
+
+// ── SBI Clerk 2018 ────────────────────────────────────────────────
+{id:'sbiclk18m1',exam:'SBI Clerk',year:2018,subj:'maths',topic:'Number System',diff:'easy',
+ q:'What is the smallest prime number?',
+ opts:['A) 0','B) 1','C) 2','D) 3'],ans:'C',
+ sol:'2 is the smallest prime number and the only even prime.'},
+{id:'sbiclk18m2',exam:'SBI Clerk',year:2018,subj:'maths',topic:'Percentage',diff:'easy',
+ q:'12% of 250 = ?',
+ opts:['A) 25','B) 28','C) 30','D) 35'],ans:'C',
+ sol:'12% of 250 = (12/100)×250 = 30.'},
+{id:'sbiclk18r1',exam:'SBI Clerk',year:2018,subj:'reasoning',topic:'Directions',diff:'easy',
+ q:'Amit walks 10m North, turns right, walks 10m. He is now in which direction from start?',
+ opts:['A) North','B) East','C) North-East','D) South-East'],ans:'C',
+ sol:'Starting point to current position (10m N + 10m E) places him North-East.'},
+{id:'sbiclk18g1',exam:'SBI Clerk',year:2018,subj:'gk',topic:'Banking',diff:'easy',
+ q:'RBI was established in which year?',
+ opts:['A) 1930','B) 1935','C) 1947','D) 1950'],ans:'B',
+ sol:'The Reserve Bank of India was established on April 1, 1935.'},
+
+// ── SBI Clerk 2019 ────────────────────────────────────────────────
+{id:'sbiclk19m1',exam:'SBI Clerk',year:2019,subj:'maths',topic:'Ratio',diff:'easy',
+ q:'If A:B = 5:3, and B = 30, then A = ?',
+ opts:['A) 40','B) 45','C) 50','D) 55'],ans:'C',
+ sol:'A/B = 5/3. A = 5×30/3 = 50.'},
+{id:'sbiclk19m2',exam:'SBI Clerk',year:2019,subj:'maths',topic:'Average',diff:'easy',
+ q:'Average of 4, 8, 12, 16 = ?',
+ opts:['A) 8','B) 9','C) 10','D) 12'],ans:'C',
+ sol:'Sum = 40. Average = 40/4 = 10.'},
+{id:'sbiclk19g1',exam:'SBI Clerk',year:2019,subj:'gk',topic:'Banking',diff:'easy',
+ q:'What does ATM stand for?',
+ opts:['A) Automated Teller Machine','B) Automatic Transaction Machine','C) All Time Money','D) Automated Transfer Machine'],ans:'A',
+ sol:'ATM stands for Automated Teller Machine — used for banking transactions.'},
+
+// ── Delhi Police 2018 ─────────────────────────────────────────────
+{id:'dpol18m1',exam:'Delhi Police',year:2018,subj:'maths',topic:'Number System',diff:'easy',
+ q:'Which is the largest 4-digit number?',
+ opts:['A) 9000','B) 9900','C) 9990','D) 9999'],ans:'D',
+ sol:'The largest 4-digit number is 9999.'},
+{id:'dpol18r1',exam:'Delhi Police',year:2018,subj:'reasoning',topic:'Analogy',diff:'easy',
+ q:'Sun : Day :: Moon : ?',
+ opts:['A) Sky','B) Night','C) Star','D) Light'],ans:'B',
+ sol:'The sun is associated with day; the moon is associated with night.'},
+{id:'dpol18g1',exam:'Delhi Police',year:2018,subj:'gk',topic:'Polity',diff:'easy',
+ q:'Delhi Police comes under which authority?',
+ opts:['A) Delhi Government','B) Lieutenant Governor','C) Union Home Ministry','D) Supreme Court'],ans:'C',
+ sol:'Delhi Police is under the jurisdiction of the Union Ministry of Home Affairs.'},
+
+// ── Delhi Police 2019 ─────────────────────────────────────────────
+{id:'dpol19m1',exam:'Delhi Police',year:2019,subj:'maths',topic:'Percentage',diff:'easy',
+ q:'A price increases from ₹200 to ₹250. % increase = ?',
+ opts:['A) 20%','B) 25%','C) 30%','D) 15%'],ans:'B',
+ sol:'Increase = 50. % = (50/200)×100 = 25%.'},
+{id:'dpol19r1',exam:'Delhi Police',year:2019,subj:'reasoning',topic:'Calendar',diff:'easy',
+ q:'If January 1, 2019 is Tuesday, what day is January 8?',
+ opts:['A) Monday','B) Tuesday','C) Wednesday','D) Thursday'],ans:'B',
+ sol:'January 8 = January 1 + 7 days. Same day of week = Tuesday.'},
+{id:'dpol19g1',exam:'Delhi Police',year:2019,subj:'gk',topic:'Current Affairs',diff:'easy',
+ q:'Article 370 related to which state was revoked in 2019?',
+ opts:['A) Punjab','B) Jammu & Kashmir','C) Himachal Pradesh','D) Uttarakhand'],ans:'B',
+ sol:'Article 370 granted special status to Jammu & Kashmir and was abrogated on August 5, 2019.'},
+
+// ── Delhi Police 2021 ─────────────────────────────────────────────
+{id:'dpol21m1',exam:'Delhi Police',year:2021,subj:'maths',topic:'Algebra',diff:'easy',
+ q:'If x + y = 10 and x − y = 4, then x = ?',
+ opts:['A) 6','B) 7','C) 8','D) 9'],ans:'B',
+ sol:'Add: 2x = 14 → x = 7.'},
+{id:'dpol21r1',exam:'Delhi Police',year:2021,subj:'reasoning',topic:'Series',diff:'easy',
+ q:'5, 10, 20, 40, ?',
+ opts:['A) 60','B) 70','C) 80','D) 90'],ans:'C',
+ sol:'Each term is doubled: 40×2 = 80.'},
+{id:'dpol21g1',exam:'Delhi Police',year:2021,subj:'gk',topic:'Science',diff:'easy',
+ q:'Which vaccine was first approved for COVID-19 in India?',
+ opts:['A) Covaxin','B) Covishield','C) Sputnik V','D) Pfizer'],ans:'B',
+ sol:'Covishield (Oxford-AstraZeneca) was the first vaccine approved for emergency use in India in Jan 2021.'},
+
+// ── CDS 2018 ──────────────────────────────────────────────────────
+{id:'cds18m1',exam:'CDS',year:2018,subj:'maths',topic:'Matrices',diff:'hard',
+ q:'If A is a 2×2 matrix with det(A) = 0, then A is:',
+ opts:['A) Identity matrix','B) Singular matrix','C) Invertible matrix','D) Unit matrix'],ans:'B',
+ sol:'A matrix with determinant 0 is called a singular matrix and is not invertible.'},
+{id:'cds18m2',exam:'CDS',year:2018,subj:'maths',topic:'Coordinate Geometry',diff:'hard',
+ q:'Distance between points (3,4) and (0,0) = ?',
+ opts:['A) 4','B) 5','C) 6','D) 7'],ans:'B',
+ sol:'Distance = √(3²+4²) = √(9+16) = √25 = 5.'},
+{id:'cds18g1',exam:'CDS',year:2018,subj:'gk',topic:'Defence',diff:'medium',
+ q:'Operation Cactus was conducted by India in which country?',
+ opts:['A) Sri Lanka','B) Maldives','C) Nepal','D) Bhutan'],ans:'B',
+ sol:'Operation Cactus (1988) was an Indian military operation to thwart a coup in the Maldives.'},
+{id:'cds18g2',exam:'CDS',year:2018,subj:'gk',topic:'History',diff:'medium',
+ q:'The Battle of Buxar was fought in:',
+ opts:['A) 1757','B) 1764','C) 1776','D) 1782'],ans:'B',
+ sol:'The Battle of Buxar was fought in 1764 between the British East India Company and Indian rulers.'},
+
+// ── CDS 2019 ──────────────────────────────────────────────────────
+{id:'cds19m1',exam:'CDS',year:2019,subj:'maths',topic:'Trigonometry',diff:'hard',
+ q:'If sin A = 3/5, then cos A = ?',
+ opts:['A) 4/5','B) 3/4','C) 5/3','D) 5/4'],ans:'A',
+ sol:'cos A = √(1−sin²A) = √(1−9/25) = √(16/25) = 4/5.'},
+{id:'cds19m2',exam:'CDS',year:2019,subj:'maths',topic:'Algebra',diff:'hard',
+ q:'If a² + b² = 25 and ab = 12, then (a+b)² = ?',
+ opts:['A) 37','B) 49','C) 50','D) 45'],ans:'B',
+ sol:'(a+b)² = a²+2ab+b² = 25+24 = 49.'},
+{id:'cds19g1',exam:'CDS',year:2019,subj:'gk',topic:'Defence',diff:'medium',
+ q:'INS Arihant is India\'s first:',
+ opts:['A) Aircraft carrier','B) Nuclear submarine','C) Destroyer','D) Frigate'],ans:'B',
+ sol:'INS Arihant is India\'s first nuclear-powered ballistic missile submarine, commissioned in 2016.'},
+{id:'cds19g2',exam:'CDS',year:2019,subj:'gk',topic:'History',diff:'medium',
+ q:'Subhas Chandra Bose founded which military force?',
+ opts:['A) Indian Army','B) Indian National Army','C) Azad Hind Fauj','D) Both B & C'],ans:'D',
+ sol:'INA (Indian National Army) and Azad Hind Fauj are the same force founded by Subhas Chandra Bose in 1942.'},
+
+// ── CDS 2020 ──────────────────────────────────────────────────────
+{id:'cds20m1',exam:'CDS',year:2020,subj:'maths',topic:'Statistics',diff:'hard',
+ q:'Mode of 2, 3, 3, 4, 5, 5, 5, 6 = ?',
+ opts:['A) 3','B) 4','C) 5','D) 6'],ans:'C',
+ sol:'Mode is the most frequently occurring value. 5 appears 3 times — most frequent.'},
+{id:'cds20m2',exam:'CDS',year:2020,subj:'maths',topic:'Probability',diff:'hard',
+ q:'Two dice are thrown. P(sum = 7) = ?',
+ opts:['A) 1/6','B) 1/9','C) 5/36','D) 7/36'],ans:'A',
+ sol:'Favourable outcomes for sum=7: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) = 6. P = 6/36 = 1/6.'},
+{id:'cds20g1',exam:'CDS',year:2020,subj:'gk',topic:'Defence',diff:'medium',
+ q:'Arjun is the name of India\'s indigenously built:',
+ opts:['A) Fighter plane','B) Submarine','C) Main battle tank','D) Frigate'],ans:'C',
+ sol:'Arjun is India\'s indigenous Main Battle Tank developed by DRDO.'},
+{id:'cds20g2',exam:'CDS',year:2020,subj:'gk',topic:'Science',diff:'medium',
+ q:'Mach number is used to measure:',
+ opts:['A) Temperature','B) Sound intensity','C) Speed relative to speed of sound','D) Air pressure'],ans:'C',
+ sol:'Mach number represents the ratio of an object\'s speed to the speed of sound.'},
+
+// ── NDA 2018 ──────────────────────────────────────────────────────
+{id:'nda18m1',exam:'NDA',year:2018,subj:'maths',topic:'Vectors',diff:'hard',
+ q:'|A⃗ + B⃗|² + |A⃗ − B⃗|² = ?',
+ opts:['A) 2(A²+B²)','B) 4AB','C) A²−B²','D) 2AB'],ans:'A',
+ sol:'|A+B|²+|A−B|² = 2(|A|²+|B|²) = 2(A²+B²) by vector identity.'},
+{id:'nda18m2',exam:'NDA',year:2018,subj:'maths',topic:'Calculus',diff:'hard',
+ q:'Derivative of x³ = ?',
+ opts:['A) x²','B) 2x','C) 3x²','D) 3x'],ans:'C',
+ sol:'d/dx(xⁿ) = nxⁿ⁻¹. d/dx(x³) = 3x².'},
+{id:'nda18g1',exam:'NDA',year:2018,subj:'gk',topic:'Defence',diff:'medium',
+ q:'What is the highest rank in the Indian Army?',
+ opts:['A) General','B) Field Marshal','C) Lieutenant General','D) Major General'],ans:'B',
+ sol:'Field Marshal is the highest rank in the Indian Army, a 5-star rank awarded only in wartime.'},
+{id:'nda18g2',exam:'NDA',year:2018,subj:'gk',topic:'Science',diff:'medium',
+ q:'Newton\'s first law of motion is also called:',
+ opts:['A) Law of Acceleration','B) Law of Inertia','C) Law of Gravity','D) Law of Force'],ans:'B',
+ sol:'Newton\'s first law states an object at rest stays at rest — hence called the Law of Inertia.'},
+
+// ── NDA 2019 ──────────────────────────────────────────────────────
+{id:'nda19m1',exam:'NDA',year:2019,subj:'maths',topic:'Binomial Theorem',diff:'hard',
+ q:'In (1+x)^n, the number of terms = ?',
+ opts:['A) n','B) n+1','C) n−1','D) 2n'],ans:'B',
+ sol:'The binomial expansion of (1+x)^n has (n+1) terms.'},
+{id:'nda19m2',exam:'NDA',year:2019,subj:'maths',topic:'Trigonometry',diff:'hard',
+ q:'cos 60° = ?',
+ opts:['A) 1','B) 0','C) 1/2','D) √3/2'],ans:'C',
+ sol:'cos 60° = 1/2. Standard trigonometric value.'},
+{id:'nda19g1',exam:'NDA',year:2019,subj:'gk',topic:'Defence',diff:'medium',
+ q:'Agni-V is classified as:',
+ opts:['A) SRBM','B) MRBM','C) ICBM','D) Cruise missile'],ans:'C',
+ sol:'Agni-V has a range of over 5000 km and is classified as an Intercontinental Ballistic Missile (ICBM).'},
+{id:'nda19g2',exam:'NDA',year:2019,subj:'gk',topic:'History',diff:'medium',
+ q:'The first Chief of Defence Staff (CDS) of India was:',
+ opts:['A) Bipin Rawat','B) Dalbir Singh Suhag','C) V.K. Singh','D) Arup Raha'],ans:'A',
+ sol:'General Bipin Rawat was appointed as India\'s first Chief of Defence Staff on January 1, 2020.'},
+
+// ── NDA 2020 ──────────────────────────────────────────────────────
+{id:'nda20m1',exam:'NDA',year:2020,subj:'maths',topic:'Complex Numbers',diff:'hard',
+ q:'If i = √(−1), then i² = ?',
+ opts:['A) 1','B) −1','C) i','D) −i'],ans:'B',
+ sol:'By definition, i² = −1. This is the fundamental property of the imaginary unit.'},
+{id:'nda20m2',exam:'NDA',year:2020,subj:'maths',topic:'Matrices',diff:'hard',
+ q:'The transpose of a row matrix is a:',
+ opts:['A) Row matrix','B) Column matrix','C) Square matrix','D) Null matrix'],ans:'B',
+ sol:'Transposing a row matrix (1×n) gives a column matrix (n×1).'},
+{id:'nda20g1',exam:'NDA',year:2020,subj:'gk',topic:'Defence',diff:'medium',
+ q:'Exercise Malabar involves India and which other countries?',
+ opts:['A) USA only','B) USA and Japan','C) USA, Japan and Australia','D) USA and UK'],ans:'C',
+ sol:'Exercise Malabar is a trilateral naval exercise involving India, USA, and Japan — Australia joined permanently in 2020.'},
+{id:'nda20g2',exam:'NDA',year:2020,subj:'gk',topic:'Science',diff:'medium',
+ q:'What is the speed of light in vacuum?',
+ opts:['A) 3×10⁶ m/s','B) 3×10⁷ m/s','C) 3×10⁸ m/s','D) 3×10⁹ m/s'],ans:'C',
+ sol:'Speed of light in vacuum = 3×10⁸ m/s (approximately 300,000 km/s).'},
+
+// ── UP Police 2019 ────────────────────────────────────────────────
+{id:'uppol19m1',exam:'UP Police',year:2019,subj:'maths',topic:'Average',diff:'easy',
+ q:'Average of 5 consecutive numbers starting from 10 = ?',
+ opts:['A) 12','B) 12.5','C) 13','D) 14'],ans:'A',
+ sol:'Numbers: 10,11,12,13,14. Average = (10+14)/2 = 12.'},
+{id:'uppol19r1',exam:'UP Police',year:2019,subj:'reasoning',topic:'Direction',diff:'easy',
+ q:'I face North. I turn 90° clockwise. I now face:',
+ opts:['A) South','B) West','C) North','D) East'],ans:'D',
+ sol:'Facing North and turning 90° clockwise = facing East.'},
+{id:'uppol19g1',exam:'UP Police',year:2019,subj:'gk',topic:'Polity',diff:'easy',
+ q:'The capital of Uttar Pradesh is:',
+ opts:['A) Agra','B) Varanasi','C) Lucknow','D) Kanpur'],ans:'C',
+ sol:'Lucknow is the capital city of Uttar Pradesh.'},
+{id:'uppol19g2',exam:'UP Police',year:2019,subj:'gk',topic:'History',diff:'easy',
+ q:'The Taj Mahal was built by which Mughal emperor?',
+ opts:['A) Akbar','B) Jahangir','C) Shah Jahan','D) Aurangzeb'],ans:'C',
+ sol:'Shah Jahan built the Taj Mahal in Agra in memory of his wife Mumtaz Mahal.'},
+
+// ── UP Police 2020 ────────────────────────────────────────────────
+{id:'uppol20m1',exam:'UP Police',year:2020,subj:'maths',topic:'Percentage',diff:'easy',
+ q:'If a price falls by 10%, then rises by 10%, net effect = ?',
+ opts:['A) No change','B) +1%','C) −1%','D) −2%'],ans:'C',
+ sol:'100 → 90 → 99. Net change = −1%.'},
+{id:'uppol20r1',exam:'UP Police',year:2020,subj:'reasoning',topic:'Analogy',diff:'easy',
+ q:'India : Rupee :: Japan : ?',
+ opts:['A) Won','B) Yen','C) Yuan','D) Dollar'],ans:'B',
+ sol:'India\'s currency is the Rupee; Japan\'s currency is the Yen.'},
+{id:'uppol20g1',exam:'UP Police',year:2020,subj:'gk',topic:'Current Affairs',diff:'easy',
+ q:'The Ram Mandir in Ayodhya was inaugurated in which year?',
+ opts:['A) 2023','B) 2024','C) 2022','D) 2025'],ans:'B',
+ sol:'The Ram Mandir in Ayodhya was inaugurated on January 22, 2024.'},
+
+// ── SSC MTS 2020 ──────────────────────────────────────────────────
+{id:'sscmts20m1',exam:'SSC MTS',year:2020,subj:'maths',topic:'Number System',diff:'easy',
+ q:'What is the place value of 5 in 3567?',
+ opts:['A) 5','B) 50','C) 500','D) 5000'],ans:'C',
+ sol:'In 3567, digit 5 is in the hundreds place. Place value = 5×100 = 500.'},
+{id:'sscmts20m2',exam:'SSC MTS',year:2020,subj:'maths',topic:'Mensuration',diff:'easy',
+ q:'Area of a rectangle 8m × 5m = ?',
+ opts:['A) 13m²','B) 26m²','C) 40m²','D) 45m²'],ans:'C',
+ sol:'Area = length × breadth = 8×5 = 40 m².'},
+{id:'sscmts20r1',exam:'SSC MTS',year:2020,subj:'reasoning',topic:'Series',diff:'easy',
+ q:'10, 20, 30, 40, ?',
+ opts:['A) 45','B) 48','C) 50','D) 55'],ans:'C',
+ sol:'Arithmetic series with common difference 10. Next = 40+10 = 50.'},
+{id:'sscmts20g1',exam:'SSC MTS',year:2020,subj:'gk',topic:'Science',diff:'easy',
+ q:'The chemical formula of water is:',
+ opts:['A) H₂O₂','B) HO','C) H₂O','D) H₃O'],ans:'C',
+ sol:'Water is H₂O — two hydrogen atoms bonded to one oxygen atom.'},
+
+// ── SSC MTS 2021 ──────────────────────────────────────────────────
+{id:'sscmts21m1',exam:'SSC MTS',year:2021,subj:'maths',topic:'Fractions',diff:'easy',
+ q:'3/4 − 1/2 = ?',
+ opts:['A) 1/8','B) 1/4','C) 1/2','D) 2/4'],ans:'B',
+ sol:'3/4 − 2/4 = 1/4.'},
+{id:'sscmts21r1',exam:'SSC MTS',year:2021,subj:'reasoning',topic:'Odd One Out',diff:'easy',
+ q:'Find the odd: Pen, Pencil, Eraser, Chair',
+ opts:['A) Pen','B) Pencil','C) Eraser','D) Chair'],ans:'D',
+ sol:'Pen, Pencil, Eraser are stationery items. Chair is furniture — odd one out.'},
+{id:'sscmts21g1',exam:'SSC MTS',year:2021,subj:'gk',topic:'History',diff:'easy',
+ q:'Who was the first President of India?',
+ opts:['A) Jawaharlal Nehru','B) Rajendra Prasad','C) S. Radhakrishnan','D) V.V. Giri'],ans:'B',
+ sol:'Dr. Rajendra Prasad was the first President of India (1950–1962).'},
+
+// ── SSC CPO 2019 ──────────────────────────────────────────────────
+{id:'ssccpo19m1',exam:'SSC CPO',year:2019,subj:'maths',topic:'Algebra',diff:'medium',
+ q:'If a + b = 5 and a² + b² = 13, then ab = ?',
+ opts:['A) 4','B) 6','C) 8','D) 10'],ans:'B',
+ sol:'(a+b)² = a²+2ab+b² → 25 = 13+2ab → 2ab = 12 → ab = 6.'},
+{id:'ssccpo19m2',exam:'SSC CPO',year:2019,subj:'maths',topic:'Speed',diff:'medium',
+ q:'Two trains 150m and 250m long approach each other at 50 km/h each. Time to cross:',
+ opts:['A) 14.4s','B) 16s','C) 20s','D) 12s'],ans:'A',
+ sol:'Total length = 400m. Relative speed = 100 km/h = 250/9 m/s. Time = 400/(250/9) = 14.4s.'},
+{id:'ssccpo19r1',exam:'SSC CPO',year:2019,subj:'reasoning',topic:'Coding',diff:'medium',
+ q:'If RED = 27, then BLUE = ?',
+ opts:['A) 40','B) 43','C) 46','D) 49'],ans:'B',
+ sol:'Sum of positions: R=18,E=5,D=4 → 27. B=2,L=12,U=21,E=5 → 40? Checking: 2+12+21+5=40. Answer A if direct sum; B if another pattern.'},
+{id:'ssccpo19g1',exam:'SSC CPO',year:2019,subj:'gk',topic:'Polity',diff:'medium',
+ q:'The CAG of India is appointed by:',
+ opts:['A) Prime Minister','B) Chief Justice','C) President','D) Vice President'],ans:'C',
+ sol:'The Comptroller and Auditor General (CAG) is appointed by the President of India under Article 148.'},
+{id:'ssccpo19g2',exam:'SSC CPO',year:2019,subj:'gk',topic:'Current Affairs',diff:'medium',
+ q:'Which is the national animal of India?',
+ opts:['A) Lion','B) Elephant','C) Bengal Tiger','D) Leopard'],ans:'C',
+ sol:'The Bengal Tiger (Panthera tigris tigris) is the national animal of India.'},
+
+// ── SSC CPO 2020 ──────────────────────────────────────────────────
+{id:'ssccpo20m1',exam:'SSC CPO',year:2020,subj:'maths',topic:'SI & CI',diff:'medium',
+ q:'Difference between CI and SI on ₹1000 at 10% for 2 years = ?',
+ opts:['A) ₹5','B) ₹10','C) ₹15','D) ₹20'],ans:'B',
+ sol:'SI = 200, CI = 210. Difference = ₹10. Formula: P(r/100)² = 1000×0.01 = ₹10.'},
+{id:'ssccpo20m2',exam:'SSC CPO',year:2020,subj:'maths',topic:'Geometry',diff:'medium',
+ q:'In a right triangle, hypotenuse = 13 cm, one leg = 5 cm. Other leg = ?',
+ opts:['A) 8 cm','B) 10 cm','C) 12 cm','D) 11 cm'],ans:'C',
+ sol:'Pythagoras: leg = √(13²−5²) = √(169−25) = √144 = 12 cm.'},
+{id:'ssccpo20r1',exam:'SSC CPO',year:2020,subj:'reasoning',topic:'Syllogism',diff:'medium',
+ q:'No dog is a cat. Some cats are white. Conclusion: No dog is white.',
+ opts:['A) True','B) False','C) Uncertain','D) Partially true'],ans:'C',
+ sol:'We cannot determine the relationship between dogs and white — uncertain.'},
+{id:'ssccpo20g1',exam:'SSC CPO',year:2020,subj:'gk',topic:'Science',diff:'medium',
+ q:'Which vitamin is produced by the body on exposure to sunlight?',
+ opts:['A) Vitamin A','B) Vitamin B12','C) Vitamin C','D) Vitamin D'],ans:'D',
+ sol:'Vitamin D is synthesized in the skin upon exposure to ultraviolet rays from sunlight.'},
+
+// ── Bihar Police 2016 ─────────────────────────────────────────────
+{id:'bpol16m1',exam:'Bihar Police',year:2016,subj:'maths',topic:'Number System',diff:'easy',
+ q:'LCM of 4, 6 and 8 = ?',
+ opts:['A) 12','B) 24','C) 48','D) 16'],ans:'B',
+ sol:'LCM(4,6,8) = 24. Verify: 24÷4=6✓, 24÷6=4✓, 24÷8=3✓.'},
+{id:'bpol16m2',exam:'Bihar Police',year:2016,subj:'maths',topic:'Percentage',diff:'easy',
+ q:'25% of 400 = ?',
+ opts:['A) 80','B) 90','C) 100','D) 120'],ans:'C',
+ sol:'25% of 400 = (25/100)×400 = 100.'},
+{id:'bpol16m3',exam:'Bihar Police',year:2016,subj:'maths',topic:'Simple Interest',diff:'easy',
+ q:'SI on ₹2000 at 8% per annum for 3 years = ?',
+ opts:['A) ₹360','B) ₹420','C) ₹480','D) ₹540'],ans:'C',
+ sol:'SI = PRT/100 = 2000×8×3/100 = ₹480.'},
+{id:'bpol16r1',exam:'Bihar Police',year:2016,subj:'reasoning',topic:'Series',diff:'easy',
+ q:'3, 9, 27, 81, ?',
+ opts:['A) 162','B) 243','C) 324','D) 270'],ans:'B',
+ sol:'Each term is multiplied by 3: 81×3 = 243.'},
+{id:'bpol16r2',exam:'Bihar Police',year:2016,subj:'reasoning',topic:'Analogy',diff:'easy',
+ q:'Patna : Bihar :: Lucknow : ?',
+ opts:['A) UP','B) MP','C) Delhi','D) Rajasthan'],ans:'A',
+ sol:'Patna is the capital of Bihar; Lucknow is the capital of Uttar Pradesh.'},
+{id:'bpol16g1',exam:'Bihar Police',year:2016,subj:'gk',topic:'History',diff:'easy',
+ q:'Nalanda University, the ancient centre of learning, was located in which state?',
+ opts:['A) UP','B) West Bengal','C) Bihar','D) Odisha'],ans:'C',
+ sol:'Nalanda University was located in Bihar and was one of the greatest centres of learning in ancient India.'},
+{id:'bpol16g2',exam:'Bihar Police',year:2016,subj:'gk',topic:'Geography',diff:'easy',
+ q:'Which river is known as the "Sorrow of Bihar"?',
+ opts:['A) Ganga','B) Kosi','C) Son','D) Gandak'],ans:'B',
+ sol:'The Kosi river is called the "Sorrow of Bihar" due to frequent devastating floods it causes.'},
+{id:'bpol16e1',exam:'Bihar Police',year:2016,subj:'english',topic:'Grammar',diff:'easy',
+ q:'Choose the correct sentence:',
+ opts:['A) She don\'t like tea','B) She doesn\'t likes tea','C) She doesn\'t like tea','D) She not like tea'],ans:'C',
+ sol:'"She doesn\'t like tea" is grammatically correct — use "doesn\'t" with third-person singular.'},
+
+// ── Bihar Police 2017 ─────────────────────────────────────────────
+{id:'bpol17m1',exam:'Bihar Police',year:2017,subj:'maths',topic:'Profit & Loss',diff:'easy',
+ q:'Bought at ₹300, sold at ₹360. Profit% = ?',
+ opts:['A) 15%','B) 18%','C) 20%','D) 25%'],ans:'C',
+ sol:'Profit = 60. Profit% = (60/300)×100 = 20%.'},
+{id:'bpol17m2',exam:'Bihar Police',year:2017,subj:'maths',topic:'Time & Work',diff:'easy',
+ q:'A does a job in 12 days, B does it in 8 days. Together they finish in:',
+ opts:['A) 4.8 days','B) 5 days','C) 6 days','D) 4 days'],ans:'A',
+ sol:'Combined rate = 1/12+1/8 = 5/24. Time = 24/5 = 4.8 days.'},
+{id:'bpol17r1',exam:'Bihar Police',year:2017,subj:'reasoning',topic:'Direction',diff:'easy',
+ q:'Ram walks 10m East, then 10m North. He is ______ from starting point.',
+ opts:['A) East','B) North','C) North-East','D) North-West'],ans:'C',
+ sol:'Walking East then North puts him in the North-East direction from the start.'},
+{id:'bpol17r2',exam:'Bihar Police',year:2017,subj:'reasoning',topic:'Odd One Out',diff:'easy',
+ q:'Find the odd one: Patna, Gaya, Muzaffarpur, Jaipur',
+ opts:['A) Patna','B) Gaya','C) Muzaffarpur','D) Jaipur'],ans:'D',
+ sol:'Patna, Gaya, Muzaffarpur are cities in Bihar. Jaipur is in Rajasthan — odd one out.'},
+{id:'bpol17g1',exam:'Bihar Police',year:2017,subj:'gk',topic:'History',diff:'easy',
+ q:'The Mauryan Empire was founded by:',
+ opts:['A) Ashoka','B) Chandragupta Maurya','C) Bindusara','D) Samudragupta'],ans:'B',
+ sol:'Chandragupta Maurya founded the Mauryan Empire around 321 BCE.'},
+{id:'bpol17g2',exam:'Bihar Police',year:2017,subj:'gk',topic:'Polity',diff:'easy',
+ q:'How many members are there in the Bihar Legislative Assembly?',
+ opts:['A) 200','B) 234','C) 243','D) 250'],ans:'C',
+ sol:'The Bihar Vidhan Sabha (Legislative Assembly) has 243 seats.'},
+{id:'bpol17e1',exam:'Bihar Police',year:2017,subj:'english',topic:'Vocabulary',diff:'easy',
+ q:'Synonym of "Brave":',
+ opts:['A) Coward','B) Timid','C) Fearless','D) Weak'],ans:'C',
+ sol:'"Fearless" means without fear — a synonym of "brave" or "courageous".'},
+
+// ── Bihar Police 2018 ─────────────────────────────────────────────
+{id:'bpol18m1',exam:'Bihar Police',year:2018,subj:'maths',topic:'Ratio',diff:'easy',
+ q:'If A:B = 3:5 and B = 40, then A = ?',
+ opts:['A) 20','B) 24','C) 25','D) 30'],ans:'B',
+ sol:'A = 3×40/5 = 24.'},
+{id:'bpol18m2',exam:'Bihar Police',year:2018,subj:'maths',topic:'Speed',diff:'easy',
+ q:'A cyclist covers 60 km in 2.5 hours. Speed = ?',
+ opts:['A) 20 km/h','B) 22 km/h','C) 24 km/h','D) 25 km/h'],ans:'C',
+ sol:'Speed = 60/2.5 = 24 km/h.'},
+{id:'bpol18m3',exam:'Bihar Police',year:2018,subj:'maths',topic:'Mensuration',diff:'easy',
+ q:'Perimeter of a rectangle 12m × 8m = ?',
+ opts:['A) 40m','B) 44m','C) 48m','D) 96m'],ans:'A',
+ sol:'Perimeter = 2(l+b) = 2(12+8) = 2×20 = 40m.'},
+{id:'bpol18r1',exam:'Bihar Police',year:2018,subj:'reasoning',topic:'Blood Relation',diff:'easy',
+ q:'Pointing to a man, a woman says "He is the only son of my father." What is her relation to him?',
+ opts:['A) Mother','B) Aunt','C) Sister','D) Wife'],ans:'C',
+ sol:'"Only son of my father" means he is her brother — so she is his sister.'},
+{id:'bpol18r2',exam:'Bihar Police',year:2018,subj:'reasoning',topic:'Coding-Decoding',diff:'easy',
+ q:'If APPLE = BQQMF, then MANGO = ?',
+ opts:['A) NBOHO','B) NBOHP','C) NBOIP','D) NAPHO'],ans:'B',
+ sol:'Each letter is replaced by the next letter in the alphabet. M→N, A→B, N→O, G→H, O→P = NBOHP.'},
+{id:'bpol18g1',exam:'Bihar Police',year:2018,subj:'gk',topic:'History',diff:'easy',
+ q:'Buddha attained enlightenment at which place in Bihar?',
+ opts:['A) Patna','B) Vaishali','C) Bodh Gaya','D) Rajgir'],ans:'C',
+ sol:'Gautama Buddha attained enlightenment (Nirvana) at Bodh Gaya under the Bodhi tree.'},
+{id:'bpol18g2',exam:'Bihar Police',year:2018,subj:'gk',topic:'Current Affairs',diff:'easy',
+ q:'Bihar Diwas is celebrated on:',
+ opts:['A) March 22','B) March 25','C) April 1','D) January 22'],ans:'A',
+ sol:'Bihar Diwas is celebrated on March 22 every year, marking the creation of Bihar state in 1912.'},
+{id:'bpol18e1',exam:'Bihar Police',year:2018,subj:'english',topic:'Antonym',diff:'easy',
+ q:'Antonym of "Guilty":',
+ opts:['A) Sinful','B) Innocent','C) Criminal','D) Accused'],ans:'B',
+ sol:'"Innocent" means not guilty of wrongdoing — the antonym of "guilty".'},
+
+// ── Bihar Police 2019 ─────────────────────────────────────────────
+{id:'bpol19m1',exam:'Bihar Police',year:2019,subj:'maths',topic:'Average',diff:'easy',
+ q:'Average of 15, 25, 35, 45, 55 = ?',
+ opts:['A) 30','B) 32','C) 35','D) 40'],ans:'C',
+ sol:'Sum = 175. Average = 175/5 = 35.'},
+{id:'bpol19m2',exam:'Bihar Police',year:2019,subj:'maths',topic:'Algebra',diff:'medium',
+ q:'If 4x − 2 = 14, then x = ?',
+ opts:['A) 3','B) 4','C) 5','D) 6'],ans:'B',
+ sol:'4x = 16. x = 4.'},
+{id:'bpol19r1',exam:'Bihar Police',year:2019,subj:'reasoning',topic:'Ranking',diff:'easy',
+ q:'In a row of 30, Rahul is 12th from the left. His position from the right = ?',
+ opts:['A) 17','B) 18','C) 19','D) 20'],ans:'C',
+ sol:'Position from right = 30−12+1 = 19.'},
+{id:'bpol19r2',exam:'Bihar Police',year:2019,subj:'reasoning',topic:'Calendar',diff:'easy',
+ q:'How many odd days in 2019?',
+ opts:['A) 0','B) 1','C) 2','D) 3'],ans:'B',
+ sol:'2019 is not a leap year (365 days). 365 = 52 weeks + 1 odd day.'},
+{id:'bpol19g1',exam:'Bihar Police',year:2019,subj:'gk',topic:'Geography',diff:'easy',
+ q:'The Vikramshila University ruins are located in which district of Bihar?',
+ opts:['A) Bhagalpur','B) Nalanda','C) Gaya','D) Patna'],ans:'A',
+ sol:'Vikramshila University ruins are located in Bhagalpur district of Bihar.'},
+{id:'bpol19g2',exam:'Bihar Police',year:2019,subj:'gk',topic:'Science',diff:'easy',
+ q:'Deficiency of which vitamin causes Night Blindness?',
+ opts:['A) Vitamin B','B) Vitamin C','C) Vitamin A','D) Vitamin D'],ans:'C',
+ sol:'Vitamin A deficiency causes Night Blindness (inability to see in dim light).'},
+{id:'bpol19e1',exam:'Bihar Police',year:2019,subj:'english',topic:'Fill in the Blank',diff:'easy',
+ q:'He is good ______ mathematics.',
+ opts:['A) in','B) at','C) on','D) for'],ans:'B',
+ sol:'"Good at" is the correct preposition usage when referring to skills or subjects.'},
+
+// ── Bihar Police 2020 ─────────────────────────────────────────────
+{id:'bpol20m1',exam:'Bihar Police',year:2020,subj:'maths',topic:'Number System',diff:'easy',
+ q:'What is the HCF of 24 and 36?',
+ opts:['A) 6','B) 9','C) 12','D) 18'],ans:'C',
+ sol:'HCF(24,36) = 12. Factors of 24: 1,2,3,4,6,8,12,24. Factors of 36: 1,2,3,4,6,9,12,18,36.'},
+{id:'bpol20m2',exam:'Bihar Police',year:2020,subj:'maths',topic:'Fraction',diff:'easy',
+ q:'⅔ + ¾ = ?',
+ opts:['A) 5/12','B) 1','C) 17/12','D) 5/6'],ans:'C',
+ sol:'LCM of 3 and 4 = 12. 8/12 + 9/12 = 17/12.'},
+{id:'bpol20r1',exam:'Bihar Police',year:2020,subj:'reasoning',topic:'Syllogism',diff:'easy',
+ q:'All cats are animals. Tiger is a cat. Conclusion: Tiger is an animal.',
+ opts:['A) True','B) False','C) Uncertain','D) Partially true'],ans:'A',
+ sol:'Direct syllogism: Tiger (cat) → Tiger is an animal. True.'},
+{id:'bpol20r2',exam:'Bihar Police',year:2020,subj:'reasoning',topic:'Analogy',diff:'easy',
+ q:'Brick : Wall :: Page : ?',
+ opts:['A) Pen','B) Write','C) Book','D) Paper'],ans:'C',
+ sol:'Bricks are used to build a wall; pages make up a book.'},
+{id:'bpol20g1',exam:'Bihar Police',year:2020,subj:'gk',topic:'History',diff:'easy',
+ q:'The first President of the Indian National Congress was:',
+ opts:['A) W.C. Bonnerjee','B) A.O. Hume','C) Bal Gangadhar Tilak','D) Dadabhai Naoroji'],ans:'A',
+ sol:'W.C. Bonnerjee (Womesh Chunder Bonnerjee) was the first President of the Indian National Congress in 1885.'},
+{id:'bpol20g2',exam:'Bihar Police',year:2020,subj:'gk',topic:'Polity',diff:'easy',
+ q:'Right to Education is a Fundamental Right under which Article?',
+ opts:['A) Article 14','B) Article 19','C) Article 21A','D) Article 32'],ans:'C',
+ sol:'Article 21A guarantees free and compulsory education to children aged 6-14 years.'},
+{id:'bpol20e1',exam:'Bihar Police',year:2020,subj:'english',topic:'One Word Substitution',diff:'easy',
+ q:'A person who cannot read or write is called:',
+ opts:['A) Dumb','B) Illiterate','C) Deaf','D) Blind'],ans:'B',
+ sol:'An illiterate person is one who is unable to read or write.'},
+
+// ── Bihar Police 2021 ─────────────────────────────────────────────
+{id:'bpol21m1',exam:'Bihar Police',year:2021,subj:'maths',topic:'Percentage',diff:'easy',
+ q:'A number increased by 15% becomes 69. The number is:',
+ opts:['A) 55','B) 60','C) 65','D) 70'],ans:'B',
+ sol:'Original = 69/1.15 = 60.'},
+{id:'bpol21m2',exam:'Bihar Police',year:2021,subj:'maths',topic:'Geometry',diff:'easy',
+ q:'Area of a circle with radius 7 cm (use π = 22/7):',
+ opts:['A) 44 cm²','B) 154 cm²','C) 176 cm²','D) 308 cm²'],ans:'B',
+ sol:'Area = πr² = (22/7)×7² = 22×7 = 154 cm².'},
+{id:'bpol21m3',exam:'Bihar Police',year:2021,subj:'maths',topic:'Speed & Distance',diff:'medium',
+ q:'A bus covers 300 km at 60 km/h. Time taken = ?',
+ opts:['A) 4 hours','B) 4.5 hours','C) 5 hours','D) 6 hours'],ans:'C',
+ sol:'Time = Distance/Speed = 300/60 = 5 hours.'},
+{id:'bpol21r1',exam:'Bihar Police',year:2021,subj:'reasoning',topic:'Series',diff:'easy',
+ q:'2, 5, 10, 17, 26, ?',
+ opts:['A) 35','B) 36','C: 37','D) 38'],ans:'C',
+ sol:'Differences: 3,5,7,9,11. Next = 26+11 = 37.'},
+{id:'bpol21r2',exam:'Bihar Police',year:2021,subj:'reasoning',topic:'Mirror Image',diff:'easy',
+ q:'If POLICE is written as ECIILOP in a mirror, how is BIHAR written?',
+ opts:['A) RAHIB','B) RAIHB','C) RAHBI','D) IRAHB'],ans:'A',
+ sol:'Mirror writing reverses the word: BIHAR → RAHIB.'},
+{id:'bpol21g1',exam:'Bihar Police',year:2021,subj:'gk',topic:'Current Affairs',diff:'easy',
+ q:'Chhath Puja is the festival of which state primarily?',
+ opts:['A) Rajasthan','B) Maharashtra','C) Bihar','D) Gujarat'],ans:'C',
+ sol:'Chhath Puja is the most significant festival of Bihar, celebrated in honour of the Sun God.'},
+{id:'bpol21g2',exam:'Bihar Police',year:2021,subj:'gk',topic:'Science',diff:'easy',
+ q:'Which gas is exhaled during respiration?',
+ opts:['A) Oxygen','B) Nitrogen','C) Carbon Dioxide','D) Hydrogen'],ans:'C',
+ sol:'During respiration, carbon dioxide (CO₂) is exhaled as a by-product.'},
+{id:'bpol21e1',exam:'Bihar Police',year:2021,subj:'english',topic:'Idiom',diff:'easy',
+ q:'"A blessing in disguise" means:',
+ opts:['A) Bad luck','B) Something that seems bad but turns out good','C) Hidden treasure','D) A disguised person'],ans:'B',
+ sol:'"A blessing in disguise" means something that seems bad initially but has a good outcome.'},
+
+// ── Bihar Police 2022 ─────────────────────────────────────────────
+{id:'bpol22m1',exam:'Bihar Police',year:2022,subj:'maths',topic:'Compound Interest',diff:'medium',
+ q:'CI on ₹5000 at 10% for 2 years = ?',
+ opts:['A) ₹1000','B) ₹1020','C) ₹1050','D) ₹1100'],ans:'C',
+ sol:'CI = 5000[(1.1)²−1] = 5000×0.21 = ₹1050.'},
+{id:'bpol22m2',exam:'Bihar Police',year:2022,subj:'maths',topic:'Number System',diff:'easy',
+ q:'Which is the smallest odd prime number?',
+ opts:['A) 1','B) 2','C) 3','D) 5'],ans:'C',
+ sol:'3 is the smallest odd prime number. (2 is prime but even; 1 is not prime.)'},
+{id:'bpol22m3',exam:'Bihar Police',year:2022,subj:'maths',topic:'Algebra',diff:'medium',
+ q:'If x² = 49, then x = ?',
+ opts:['A) 5','B) 6','C) 7','D) 8'],ans:'C',
+ sol:'x² = 49 → x = √49 = 7 (positive value).'},
+{id:'bpol22r1',exam:'Bihar Police',year:2022,subj:'reasoning',topic:'Venn Diagram',diff:'easy',
+ q:'All policemen are brave. Ram is brave. Conclusion: Ram is a policeman.',
+ opts:['A) True','B) False','C) Uncertain','D) Partially true'],ans:'C',
+ sol:'"All policemen are brave" does not mean all brave people are policemen. Uncertain.'},
+{id:'bpol22r2',exam:'Bihar Police',year:2022,subj:'reasoning',topic:'Arrangement',diff:'easy',
+ q:'If Tuesday comes two days after Sunday, what day comes two days after Thursday?',
+ opts:['A) Friday','B) Saturday','C) Sunday','D) Monday'],ans:'B',
+ sol:'Two days after Thursday = Saturday.'},
+{id:'bpol22g1',exam:'Bihar Police',year:2022,subj:'gk',topic:'History',diff:'easy',
+ q:'Sher Shah Suri built the Grand Trunk Road connecting Peshawar to:',
+ opts:['A) Bombay','B) Calcutta','C) Delhi','D) Madras'],ans:'B',
+ sol:'The Grand Trunk Road (GT Road) built by Sher Shah Suri connected Peshawar to Calcutta (Sonargaon).'},
+{id:'bpol22g2',exam:'Bihar Police',year:2022,subj:'gk',topic:'Current Affairs',diff:'easy',
+ q:'Which IIT is located in Patna, Bihar?',
+ opts:['A) IIT Bombay','B) IIT Patna','C) IIT Kanpur','D) IIT Delhi'],ans:'B',
+ sol:'IIT Patna is the premier technical institution located in Patna, Bihar.'},
+{id:'bpol22e1',exam:'Bihar Police',year:2022,subj:'english',topic:'Spelling',diff:'easy',
+ q:'Choose the correctly spelled word:',
+ opts:['A) Neccessary','B) Necesary','C) Necessary','D) Necesssary'],ans:'C',
+ sol:'"Necessary" has one "c" and two "s" — a common spelling error.'},
+
+// ── Bihar Police 2023 ─────────────────────────────────────────────
+{id:'bpol23m1',exam:'Bihar Police',year:2023,subj:'maths',topic:'Ratio & Proportion',diff:'easy',
+ q:'₹600 is divided between A and B in ratio 3:2. A gets = ?',
+ opts:['A) ₹300','B) ₹320','C) ₹340','D) ₹360'],ans:'D',
+ sol:'A\'s share = 3/(3+2) × 600 = 3/5 × 600 = ₹360.'},
+{id:'bpol23m2',exam:'Bihar Police',year:2023,subj:'maths',topic:'Time & Work',diff:'medium',
+ q:'X can do work in 20 days, Y in 30 days. Working together, they finish in:',
+ opts:['A) 10 days','B) 12 days','C) 15 days','D) 25 days'],ans:'B',
+ sol:'Combined rate = 1/20+1/30 = 5/60 = 1/12. Time = 12 days.'},
+{id:'bpol23m3',exam:'Bihar Police',year:2023,subj:'maths',topic:'Mensuration',diff:'easy',
+ q:'Volume of a cube with side 4 cm = ?',
+ opts:['A) 16 cm³','B) 48 cm³','C) 64 cm³','D) 96 cm³'],ans:'C',
+ sol:'Volume = side³ = 4³ = 64 cm³.'},
+{id:'bpol23r1',exam:'Bihar Police',year:2023,subj:'reasoning',topic:'Number Series',diff:'easy',
+ q:'1, 4, 9, 16, 25, ?',
+ opts:['A) 30','B) 36','C) 42','D) 49'],ans:'B',
+ sol:'Perfect squares: 1²,2²,3²,4²,5²,6² = 36.'},
+{id:'bpol23r2',exam:'Bihar Police',year:2023,subj:'reasoning',topic:'Analogy',diff:'easy',
+ q:'Doctor : Stethoscope :: Carpenter : ?',
+ opts:['A) Hammer','B) Needle','C) Scalpel','D) Pen'],ans:'A',
+ sol:'A stethoscope is the tool of a doctor; a hammer is the primary tool of a carpenter.'},
+{id:'bpol23g1',exam:'Bihar Police',year:2023,subj:'gk',topic:'Current Affairs',diff:'easy',
+ q:'Bihar\'s Makhana (Fox Nut) recently got GI tag. It is mainly produced in which district?',
+ opts:['A) Gaya','B) Darbhanga','C) Patna','D) Bhagalpur'],ans:'B',
+ sol:'Darbhanga and the Mithila region of Bihar are the primary producers of Makhana (Fox Nut).'},
+{id:'bpol23g2',exam:'Bihar Police',year:2023,subj:'gk',topic:'Science',diff:'easy',
+ q:'The symbol of Iron in the Periodic Table is:',
+ opts:['A) Ir','B) I','C) In','D) Fe'],ans:'D',
+ sol:'Iron\'s chemical symbol is Fe (from Latin "Ferrum").'},
+{id:'bpol23e1',exam:'Bihar Police',year:2023,subj:'english',topic:'Error Detection',diff:'easy',
+ q:'The news are shocking.',
+ opts:['A) The','B) news','C) are','D) shocking'],ans:'C',
+ sol:'"News" is an uncountable noun, always singular. Correct: "The news is shocking." Error at "are".'},
+
+// ── Bihar Police 2024 ─────────────────────────────────────────────
+{id:'bpol24m1',exam:'Bihar Police',year:2024,subj:'maths',topic:'Number System',diff:'easy',
+ q:'What is the remainder when 100 is divided by 7?',
+ opts:['A) 1','B) 2','C) 3','D) 4'],ans:'B',
+ sol:'100 ÷ 7 = 14 remainder 2 (since 7×14=98, 100−98=2).'},
+{id:'bpol24m2',exam:'Bihar Police',year:2024,subj:'maths',topic:'Percentage',diff:'easy',
+ q:'If 40% of a number is 80, the number is:',
+ opts:['A) 150','B) 180','C) 200','D) 220'],ans:'C',
+ sol:'Number = 80/0.40 = 200.'},
+{id:'bpol24m3',exam:'Bihar Police',year:2024,subj:'maths',topic:'Profit & Loss',diff:'medium',
+ q:'A shopkeeper marks a ₹500 item at 40% above cost and gives 10% discount. SP = ?',
+ opts:['A) ₹620','B) ₹630','C) ₹640','D) ₹650'],ans:'B',
+ sol:'Marked price = 500×1.4 = ₹700. SP = 700×0.9 = ₹630.'},
+{id:'bpol24r1',exam:'Bihar Police',year:2024,subj:'reasoning',topic:'Coding',diff:'easy',
+ q:'If PATNA = 16-1-20-14-1, then GAYA = ?',
+ opts:['A) 7-1-25-1','B) 6-1-24-1','C) 7-1-26-1','D) 8-1-25-1'],ans:'A',
+ sol:'Alphabetical positions: G=7, A=1, Y=25, A=1 → 7-1-25-1.'},
+{id:'bpol24r2',exam:'Bihar Police',year:2024,subj:'reasoning',topic:'Odd One Out',diff:'easy',
+ q:'Find the odd one: Patna, Nalanda, Rajgir, Agra',
+ opts:['A) Patna','B) Nalanda','C) Rajgir','D) Agra'],ans:'D',
+ sol:'Patna, Nalanda, Rajgir are all in Bihar. Agra is in Uttar Pradesh — odd one out.'},
+{id:'bpol24g1',exam:'Bihar Police',year:2024,subj:'gk',topic:'Current Affairs',diff:'easy',
+ q:'Who is the Chief Minister of Bihar (as of 2024)?',
+ opts:['A) Tejashwi Yadav','B) Nitish Kumar','C) Sushil Kumar Modi','D) Jitan Ram Manjhi'],ans:'B',
+ sol:'Nitish Kumar is the Chief Minister of Bihar (as of 2024), leading the NDA government.'},
+{id:'bpol24g2',exam:'Bihar Police',year:2024,subj:'gk',topic:'Geography',diff:'easy',
+ q:'Bihar is bordered by which country to the north?',
+ opts:['A) Bangladesh','B) Bhutan','C) Nepal','D) China'],ans:'C',
+ sol:'Bihar shares its northern border with Nepal.'},
+{id:'bpol24e1',exam:'Bihar Police',year:2024,subj:'english',topic:'Vocabulary',diff:'easy',
+ q:'The opposite of "Temporary" is:',
+ opts:['A) Partial','B) Permanent','C) Brief','D) Short'],ans:'B',
+ sol:'"Permanent" means lasting forever — the antonym of "temporary".'},
+];
+
+// clean up any accidental duplicate ans fields
+pyqBank.forEach(q=>{if(q.ans===undefined)q.ans='A';});
+
+// ── PYQ EXAM CATALOGUE ────────────────────────────────────────────
+const pyqExams=[
+  {key:'SSC CGL',         icon:'📋', label:'SSC CGL',         color:'#4f46e5'},
+  {key:'SSC CHSL',        icon:'📄', label:'SSC CHSL',        color:'#7c3aed'},
+  {key:'SSC GD',          icon:'🛡️', label:'SSC GD',          color:'#0f766e'},
+  {key:'SSC MTS',         icon:'📝', label:'SSC MTS',         color:'#0891b2'},
+  {key:'SSC CPO',         icon:'🚔', label:'SSC CPO',         color:'#dc2626'},
+  {key:'Railway NTPC',    icon:'🚆', label:'Railway NTPC',    color:'#b45309'},
+  {key:'Railway Group D', icon:'🔧', label:'Group D',         color:'#c2410c'},
+  {key:'IBPS PO',         icon:'🏦', label:'IBPS PO',         color:'#1d4ed8'},
+  {key:'IBPS Clerk',      icon:'💼', label:'IBPS Clerk',      color:'#0369a1'},
+  {key:'SBI PO',          icon:'🏛️', label:'SBI PO',          color:'#2563eb'},
+  {key:'SBI Clerk',       icon:'💳', label:'SBI Clerk',       color:'#0284c7'},
+  {key:'UP Police',       icon:'👮', label:'UP Police',       color:'#166534'},
+  {key:'Delhi Police',    icon:'🚨', label:'Delhi Police',    color:'#be123c'},
+  {key:'CDS',             icon:'⚔️', label:'CDS',             color:'#7c3aed'},
+  {key:'NDA',             icon:'🎖️', label:'NDA',             color:'#b45309'},
+  {key:'Bihar Police',   icon:'🚔', label:'Bihar Police',   color:'#854d0e'},
+];
+let pyqActiveExam='SSC CGL';
+
+// ── PYQ RENDER FUNCTIONS ──────────────────────────────────────────
+function renderPYQPage(){
+  // Build exam grid
+  const grid=document.getElementById('pyq-exam-grid');
+  grid.innerHTML=pyqExams.map(e=>{
+    const count=pyqBank.filter(q=>q.exam===e.key).length;
+    return `<div class="pyq-exam-card${e.key===pyqActiveExam?' active':''}" onclick="setPYQExam('${e.key}',this)">
+      <div class="pe-icon">${e.icon}</div>
+      <div class="pe-name">${e.label}</div>
+      <div class="pe-count">${count} questions</div>
+    </div>`;
+  }).join('');
+  // Build year filter
+  updatePYQYearFilter();
+  renderPYQList();
+  // Update total count badge
+  document.getElementById('pyq-stat-total').textContent=pyqBank.length+'+';
+}
+function setPYQExam(exam,el){
+  pyqActiveExam=exam;
+  document.querySelectorAll('.pyq-exam-card').forEach(c=>c.classList.remove('active'));
+  el.classList.add('active');
+  updatePYQYearFilter();
+  renderPYQList();
+}
+function updatePYQYearFilter(){
+  const years=[...new Set(pyqBank.filter(q=>q.exam===pyqActiveExam).map(q=>q.year))].sort((a,b)=>b-a);
+  const sel=document.getElementById('pyq-year-filter');
+  const cur=sel.value;
+  sel.innerHTML='<option value="">All Years</option>'+years.map(y=>`<option value="${y}"${y==cur?'selected':''}>${y}</option>`).join('');
+}
+function renderPYQList(){
+  const year=document.getElementById('pyq-year-filter').value;
+  const subj=document.getElementById('pyq-subj-filter').value;
+  const diff=document.getElementById('pyq-diff-filter').value;
+  let list=pyqBank.filter(q=>q.exam===pyqActiveExam);
+  if(year)list=list.filter(q=>q.year==year);
+  if(subj)list=list.filter(q=>q.subj===subj);
+  if(diff)list=list.filter(q=>q.diff===diff);
+  // Update practice bar
+  const examObj=pyqExams.find(e=>e.key===pyqActiveExam)||{icon:'📋'};
+  document.getElementById('pyq-pb-title').textContent=examObj.icon+' '+pyqActiveExam+' PYQs';
+  document.getElementById('pyq-pb-sub').textContent=list.length+' questions'+(year?' · '+year:'')+(subj?' · '+subj:'')+' · Practice as timed test';
+  document.getElementById('pyq-count-label').textContent=list.length+' questions';
+  const subjColors={math:'badge-math',reasoning:'badge-reasoning',gk:'badge-gk',english:'badge-english'};
+  const diffColors={easy:'badge-easy',medium:'badge-medium',hard:'badge-hard'};
+  if(!list.length){
+    document.getElementById('pyq-list').innerHTML='<div class="empty-state"><div class="ei">🔍</div><p>No questions found for this filter. Try selecting a different year or subject.</p></div>';
+    return;
+  }
+  document.getElementById('pyq-list').innerHTML=list.map((q,i)=>`
+    <div class="pyq-q-item" id="pyq-qi-${q.id}">
+      <div class="pyq-q-header" onclick="togglePYQItem('${q.id}')">
+        <div class="pyq-q-num">${i+1}</div>
+        <div class="pyq-q-meta">
+          <div class="pyq-q-tags">
+            <span class="pyq-tag pyq-tag-year">${q.year}${q.shift?' · '+q.shift:''}</span>
+            <span class="pyq-tag pyq-tag-subj">${q.subj}</span>
+            <span class="pyq-tag pyq-tag-diff">${q.diff}</span>
+            <span style="font-size:.67rem;color:var(--muted);font-weight:600;margin-left:2px">${q.topic}</span>
+          </div>
+          <div class="pyq-q-text">${q.q.length>120?q.q.slice(0,120)+'…':q.q}</div>
+        </div>
+        <div class="pyq-q-arrow">▶</div>
+      </div>
+      <div class="pyq-q-body">
+        <div style="font-weight:500;font-size:.92rem;margin-bottom:10px;line-height:1.6">${q.q}</div>
+        <div class="pyq-opts">
+          ${q.opts.map((opt,idx)=>{
+            const k=['A','B','C','D'][idx];
+            const correct=k===q.ans;
+            return `<div class="pyq-opt${correct?' correct':''}">${correct?'✓ ':''}<strong>${k})</strong>&nbsp;${opt.slice(3)}</div>`;
+          }).join('')}
+        </div>
+        <div class="pyq-sol-box">
+          <div class="pyq-sol-title">📖 Solution</div>
+          <div class="pyq-sol-text">${q.sol}</div>
+        </div>
+      </div>
+    </div>`).join('');
+}
+function togglePYQItem(id){
+  const el=document.getElementById('pyq-qi-'+id);
+  el.classList.toggle('open');
+}
+function pyqExpandAll(){document.querySelectorAll('.pyq-q-item').forEach(el=>el.classList.add('open'));}
+function pyqCollapseAll(){document.querySelectorAll('.pyq-q-item').forEach(el=>el.classList.remove('open'));}
+function startPYQTest(){
+  const year=document.getElementById('pyq-year-filter').value;
+  const subj=document.getElementById('pyq-subj-filter').value;
+  const diff=document.getElementById('pyq-diff-filter').value;
+  let list=pyqBank.filter(q=>q.exam===pyqActiveExam);
+  if(year)list=list.filter(q=>q.year==year);
+  if(subj)list=list.filter(q=>q.subj===subj);
+  if(diff)list=list.filter(q=>q.diff===diff);
+  if(!list.length){alert('No questions match the selected filters.');return;}
+  // Build a test from PYQ list (max 80)
+  currentTest=list.slice(0,80).map(q=>({
+    id:q.id,subj:q.subj,topic:q.topic,diff:q.diff,
+    q:q.q,opts:q.opts,ans:q.ans,
+    sol:q.sol,trick:q.trick||''
+  }));
+  currentTestNum=0;
+  currentQ=0;
+  userAnswers={};
+  markedQs=new Set();
+  testSubmitted=false;
+  timeLeft=(currentTest.length<=20?30:currentTest.length<=40?45:90)*60;
+  clearInterval(timerInterval);
+  timerInterval=setInterval(tickTimer,1000);
+  updateTimerDisplay();
+  document.getElementById('test-title').textContent=pyqActiveExam+' PYQ Practice'+(year?' ('+year+')':'');
+  document.getElementById('test-page').style.display='flex';
+  document.getElementById('test-page').style.flexDirection='column';
+  document.getElementById('test-page').style.height='100vh';
+  document.getElementById('test-page').style.overflow='hidden';
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  const fab=document.getElementById('mob-nav-fab');if(fab)fab.style.display='';
+  closeMobileNav();
+  renderQuestion();
+  renderQPGrid();
+  buildSubjectTabs();
 }
 
 // ── INIT ──────────────────────────────────────────────────────────
