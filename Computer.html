@@ -321,6 +321,29 @@ ul.styled li::before{content:'\f058';font-family:'Font Awesome 6 Free';font-weig
 [data-theme="dark"] .ic-pink{background:#500724;color:#f9a8d4}
 [data-theme="dark"] .ic-yellow{background:#451a03;color:#fde68a}
 
+/* ========== COPY CODE BUTTON ========== */
+.copy-code-btn{position:absolute;top:8px;right:48px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#94a3b8;border-radius:6px;padding:3px 10px;font-size:.72rem;cursor:pointer;font-family:var(--font);transition:all .2s;z-index:2;letter-spacing:.2px}
+.copy-code-btn:hover{background:var(--primary);border-color:var(--primary);color:#fff}
+.copy-code-btn.copied{background:var(--success)!important;border-color:var(--success)!important;color:#fff}
+
+/* ========== NAV DROPDOWN ========== */
+.nav-dropdown{position:relative}
+.nav-dropdown-btn{padding:6px 10px;border-radius:8px;font-size:.85rem;font-weight:500;color:var(--text2);background:none;border:1px solid var(--border);cursor:pointer;display:flex;align-items:center;gap:5px;transition:all .2s;white-space:nowrap}
+.nav-dropdown-btn:hover,.nav-dropdown.open .nav-dropdown-btn{background:var(--primary-light);color:var(--primary);border-color:var(--primary)}
+.nav-dropdown-btn .drop-arrow{font-size:.65rem;transition:transform .25s}
+.nav-dropdown.open .drop-arrow{transform:rotate(180deg)}
+.nav-dropdown-menu{position:absolute;top:calc(100% + 10px);right:0;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow-lg);display:none;z-index:9999;padding:8px;grid-template-columns:1fr 1fr;gap:2px;min-width:340px}
+.nav-dropdown.open .nav-dropdown-menu{display:grid}
+.nav-dropdown-menu a{padding:7px 12px;border-radius:6px;font-size:.8rem;color:var(--text2);display:flex;align-items:center;gap:7px;transition:all .15s;white-space:nowrap}
+.nav-dropdown-menu a:hover{background:var(--primary-light);color:var(--primary)}
+.nav-dropdown-menu a i{width:14px;text-align:center;color:var(--primary);opacity:.7}
+
+/* ========== READING TIME BADGE ========== */
+.rt-badge{display:inline-flex;align-items:center;gap:5px;background:var(--bg3);color:var(--text2);padding:4px 12px;border-radius:50px;font-size:.75rem;margin-left:8px}
+
+/* ========== SCROLL ACTIVE NAV ========== */
+.nav-links a.scroll-active{background:var(--primary-light);color:var(--primary)}
+
 /* ========== ONLINE IDE ========== */
 .ide-lang-tabs{display:flex;gap:6px;flex-wrap:wrap;padding:12px 16px;background:var(--bg2);border-bottom:1px solid var(--border)}
 .ide-lang-tab{padding:6px 14px;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--text2);font-size:.8rem;font-weight:600;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:5px}
@@ -335,7 +358,7 @@ ul.styled li::before{content:'\f058';font-family:'Font Awesome 6 Free';font-weig
 .ide-btn-reset{background:var(--bg);color:var(--text2);border:1px solid var(--border)}.ide-btn-reset:hover{background:var(--warning);color:#fff;border-color:var(--warning)}
 .ide-status{margin-left:auto;font-size:.78rem;color:var(--text2);font-family:'Fira Code',monospace}
 .ide-editor-area{display:flex;min-height:320px;position:relative}
-.ide-lines{min-width:50px;padding:14px 8px 14px 0;background:#0d1117;color:#4b5563;font-family:'Fira Code',monospace;font-size:.875rem;line-height:1.65;text-align:right;user-select:none;border-right:1px solid #21262d;overflow:hidden}
+.ide-lines{width:44px;flex-shrink:0;padding:14px 8px 14px 0;background:#0d1117;color:#4b5563;font-family:'Fira Code',monospace;font-size:.875rem;line-height:1.65;text-align:right;user-select:none;border-right:1px solid #21262d;overflow:hidden;white-space:pre}
 .ide-code{flex:1;padding:14px 16px;background:#0d1117;color:#e6edf3;font-family:'Fira Code',monospace;font-size:.875rem;line-height:1.65;border:none;outline:none;resize:none;tab-size:2;white-space:pre;overflow-x:auto;caret-color:#58a6ff}
 .ide-code::selection{background:rgba(56,139,253,.3)}
 .ide-code::-webkit-scrollbar{height:6px;width:6px;background:#0d1117}
@@ -368,11 +391,36 @@ kbd{display:inline-block;padding:2px 7px;border-radius:5px;border:1px solid var(
   <div class="nav-links">
     <a href="#intro">Intro</a>
     <a href="#hardware">Hardware</a>
-    <a href="#software">Software</a>
     <a href="#networking">Networking</a>
     <a href="#security">Security</a>
     <a href="#programming">Programming</a>
+    <a href="#ide"><i class="fas fa-terminal"></i> IDE</a>
     <a href="#quiz">Quiz</a>
+    <div class="nav-dropdown" id="nav-more">
+      <button class="nav-dropdown-btn" onclick="toggleNavDrop()"><i class="fas fa-th-large"></i> All Topics <i class="fas fa-chevron-down drop-arrow"></i></button>
+      <div class="nav-dropdown-menu">
+        <a href="#fundamentals"><i class="fas fa-cube"></i>Fundamentals</a>
+        <a href="#software"><i class="fas fa-code"></i>Software</a>
+        <a href="#os"><i class="fas fa-terminal"></i>Operating Systems</a>
+        <a href="#filemanagement"><i class="fas fa-folder"></i>File Management</a>
+        <a href="#msoffice"><i class="fas fa-file-word"></i>MS Office</a>
+        <a href="#internet"><i class="fas fa-wifi"></i>Internet</a>
+        <a href="#webdev"><i class="fas fa-globe"></i>Web Dev</a>
+        <a href="#git"><i class="fab fa-git-alt"></i>Git &amp; GitHub</a>
+        <a href="#database"><i class="fas fa-database"></i>Database</a>
+        <a href="#cloud"><i class="fas fa-cloud"></i>Cloud</a>
+        <a href="#ai"><i class="fas fa-robot"></i>AI &amp; ML</a>
+        <a href="#datascience"><i class="fas fa-chart-bar"></i>Data Science</a>
+        <a href="#maintenance"><i class="fas fa-screwdriver-wrench"></i>Maintenance</a>
+        <a href="#interview"><i class="fas fa-user-tie"></i>Interview Prep</a>
+        <a href="#shortcuts"><i class="fas fa-keyboard"></i>Shortcuts</a>
+        <a href="#glossary"><i class="fas fa-book"></i>Glossary</a>
+        <a href="#tests"><i class="fas fa-stopwatch"></i>Practice Tests</a>
+        <a href="#downloads"><i class="fas fa-download"></i>Downloads</a>
+        <a href="#roadmap"><i class="fas fa-map"></i>Roadmap</a>
+        <a href="#dashboard"><i class="fas fa-chart-line"></i>Dashboard</a>
+      </div>
+    </div>
     <a href="#dashboard" class="nav-btn">Dashboard</a>
   </div>
   <button id="theme-toggle" title="Toggle theme"><i class="fas fa-moon"></i></button>
@@ -391,6 +439,7 @@ kbd{display:inline-block;padding:2px 7px;border-radius:5px;border:1px solid var(
   <a href="#security">Cybersecurity</a>
   <a href="#programming">Programming</a>
   <a href="#webdev">Web Dev</a>
+  <a href="#git">Git &amp; GitHub</a>
   <a href="#database">Databases</a>
   <a href="#cloud">Cloud</a>
   <a href="#ai">AI &amp; ML</a>
@@ -417,7 +466,7 @@ kbd{display:inline-block;padding:2px 7px;border-radius:5px;border:1px solid var(
       <a href="#roadmap" class="btn btn-outline"><i class="fas fa-map"></i> View Roadmap</a>
     </div>
     <div class="hero-stats">
-      <div class="hero-stat"><div class="num">28+</div><div class="lbl">Sections</div></div>
+      <div class="hero-stat"><div class="num">29+</div><div class="lbl">Sections</div></div>
       <div class="hero-stat"><div class="num">500+</div><div class="lbl">Topics</div></div>
       <div class="hero-stat"><div class="num">200+</div><div class="lbl">Quiz Questions</div></div>
       <div class="hero-stat"><div class="num">1000+</div><div class="lbl">Glossary Terms</div></div>
@@ -1245,6 +1294,182 @@ free(arr); <span class="cm">// always free!</span></code></div>
       <div class="card"><div class="card-icon ic-pink"><i class="fab fa-php"></i></div><h3>PHP</h3><p style="color:var(--text2);font-size:.85rem">Powers 77% of websites. WordPress, Laravel. PHP 8 adds JIT.</p></div>
       <div class="card"><div class="card-icon ic-red"><i class="fas fa-hashtag"></i></div><h3>C#</h3><p style="color:var(--text2);font-size:.85rem">Microsoft .NET. Unity games, ASP.NET, Windows apps.</p></div>
     </div>
+  </div>
+</div>
+</section>
+
+<!-- SECTION: GIT & VERSION CONTROL -->
+<section id="git">
+<div class="container">
+  <div class="sec-header">
+    <div class="sec-badge"><i class="fab fa-git-alt"></i> Version Control</div>
+    <h2 class="sec-title">Git &amp; GitHub</h2>
+    <p class="sec-sub">Track changes, collaborate, and manage code history — the #1 developer skill.</p>
+  </div>
+
+  <div class="tabs" id="git-tabs">
+    <button class="tab active" onclick="switchTab('git-tabs','git-basics',this)">Git Basics</button>
+    <button class="tab" onclick="switchTab('git-tabs','git-branching',this)">Branching</button>
+    <button class="tab" onclick="switchTab('git-tabs','git-remote',this)">Remote &amp; GitHub</button>
+    <button class="tab" onclick="switchTab('git-tabs','git-cmds',this)">Command Reference</button>
+  </div>
+
+  <!-- Git Basics -->
+  <div id="git-basics" class="tab-content active">
+    <div class="grid grid-2">
+      <div>
+        <h3 style="margin-bottom:12px"><i class="fab fa-git-alt" style="color:#f05032"></i> What is Git?</h3>
+        <p style="color:var(--text2);margin-bottom:16px">Git is a free, distributed <strong>version control system</strong> created by Linus Torvalds in 2005. It tracks changes to files over time, allowing you to recall any version, collaborate with others, and work on features in isolation.</p>
+        <div class="info-box blue"><i class="fas fa-info-circle"></i><div><strong>Git vs GitHub:</strong> Git is the tool (runs locally). GitHub is a cloud hosting service for Git repositories. GitLab and Bitbucket are alternatives.</div></div>
+        <ul class="styled" style="margin-top:16px">
+          <li>Every developer has a full local copy of the repo</li>
+          <li>All changes tracked with timestamp and author</li>
+          <li>Supports non-linear development (branching)</li>
+          <li>Fast — most operations happen offline</li>
+          <li>Industry standard — used by 94% of developers</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="margin-bottom:12px">Core Git Workflow</h4>
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;font-size:.88rem">
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div style="display:flex;align-items:center;gap:10px"><span style="background:var(--bg3);border-radius:6px;padding:4px 10px;font-family:var(--mono);font-size:.8rem;color:var(--text);white-space:nowrap">Working Directory</span><i class="fas fa-arrow-right" style="color:var(--text3)"></i><span style="color:var(--text2)">Files you edit</span></div>
+            <div style="display:flex;align-items:center;gap:10px"><span style="background:var(--warning);color:#fff;border-radius:6px;padding:4px 10px;font-family:var(--mono);font-size:.8rem;white-space:nowrap">Staging Area</span><i class="fas fa-arrow-right" style="color:var(--text3)"></i><span style="color:var(--text2)"><code>git add</code> — snapshot ready to commit</span></div>
+            <div style="display:flex;align-items:center;gap:10px"><span style="background:var(--primary);color:#fff;border-radius:6px;padding:4px 10px;font-family:var(--mono);font-size:.8rem;white-space:nowrap">Local Repo</span><i class="fas fa-arrow-right" style="color:var(--text3)"></i><span style="color:var(--text2)"><code>git commit</code> — saved to history</span></div>
+            <div style="display:flex;align-items:center;gap:10px"><span style="background:var(--success);color:#fff;border-radius:6px;padding:4px 10px;font-family:var(--mono);font-size:.8rem;white-space:nowrap">Remote Repo</span><i class="fas fa-arrow-right" style="color:var(--text3)"></i><span style="color:var(--text2)"><code>git push</code> — shared with team</span></div>
+          </div>
+        </div>
+        <div class="code-block" style="margin-top:16px"><span class="lang-tag">bash</span><code><span class="cm"># First-time setup</span>
+<span class="kw">git config</span> --global user.name <span class="st">"Your Name"</span>
+<span class="kw">git config</span> --global user.email <span class="st">"you@email.com"</span>
+
+<span class="cm"># Initialize new repo</span>
+<span class="kw">git init</span>                  <span class="cm"># create .git folder</span>
+<span class="kw">git add</span> .                 <span class="cm"># stage everything</span>
+<span class="kw">git commit</span> -m <span class="st">"Init"</span>     <span class="cm"># first commit</span>
+
+<span class="cm"># Check state</span>
+<span class="kw">git status</span>                <span class="cm"># what's changed?</span>
+<span class="kw">git log</span> --oneline         <span class="cm"># commit history</span>
+<span class="kw">git diff</span>                  <span class="cm"># unstaged changes</span></code></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Branching -->
+  <div id="git-branching" class="tab-content">
+    <div class="grid grid-2">
+      <div>
+        <h3 style="margin-bottom:12px">Branching &amp; Merging</h3>
+        <p style="color:var(--text2);font-size:.9rem;margin-bottom:16px">Branches let you work on features/fixes in isolation without affecting the main codebase. The default branch is <code>main</code> (formerly <code>master</code>).</p>
+        <div class="code-block"><span class="lang-tag">bash</span><code><span class="cm"># Create and switch to branch</span>
+<span class="kw">git branch</span> feature/login   <span class="cm"># create</span>
+<span class="kw">git checkout</span> feature/login  <span class="cm"># switch</span>
+<span class="kw">git checkout</span> -b feature/x  <span class="cm"># create+switch</span>
+<span class="kw">git switch</span> -c feature/x     <span class="cm"># modern way</span>
+
+<span class="cm"># Merge feature into main</span>
+<span class="kw">git checkout</span> main
+<span class="kw">git merge</span> feature/login    <span class="cm"># merge</span>
+<span class="kw">git branch</span> -d feature/login <span class="cm"># delete branch</span>
+
+<span class="cm"># Rebase (cleaner history)</span>
+<span class="kw">git rebase</span> main            <span class="cm"># replay on main</span>
+<span class="kw">git cherry-pick</span> abc1234    <span class="cm"># pick one commit</span></code></div>
+      </div>
+      <div>
+        <h3 style="margin-bottom:12px">Git Workflows</h3>
+        <div class="accordion">
+          <div class="accordion-header" onclick="toggleAcc(this)">Git Flow <i class="fas fa-chevron-down"></i></div>
+          <div class="accordion-body"><strong>Branches:</strong> main (production) · develop (integration) · feature/* (new features) · release/* (prepare release) · hotfix/* (urgent fixes). Complex but structured — great for versioned software.</div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-header" onclick="toggleAcc(this)">GitHub Flow <i class="fas fa-chevron-down"></i></div>
+          <div class="accordion-body"><strong>Simple:</strong> Create branch → commit changes → open Pull Request → review → merge to main → deploy. Used by GitHub, most web startups. Short-lived branches, continuous deployment.</div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-header" onclick="toggleAcc(this)">Trunk-Based Development <i class="fas fa-chevron-down"></i></div>
+          <div class="accordion-body">All devs commit directly to <code>main</code> (or very short-lived branches). Feature flags hide incomplete features. Requires strong CI/CD and test coverage. Fastest delivery cycle.</div>
+        </div>
+        <div class="info-box yellow" style="margin-top:12px"><i class="fas fa-triangle-exclamation"></i><div><strong>Merge Conflicts:</strong> Occur when two branches modify the same lines. Git marks conflicts with <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code> <code>=======</code> <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>. Resolve manually, then <code>git add</code> + <code>git commit</code>.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Remote & GitHub -->
+  <div id="git-remote" class="tab-content">
+    <div class="grid grid-2">
+      <div>
+        <h3 style="margin-bottom:12px">Remote Repository</h3>
+        <div class="code-block"><span class="lang-tag">bash</span><code><span class="cm"># Connect to remote</span>
+<span class="kw">git remote add</span> origin &lt;url&gt;
+<span class="kw">git remote</span> -v              <span class="cm"># list remotes</span>
+
+<span class="cm"># Push / Pull</span>
+<span class="kw">git push</span> -u origin main   <span class="cm"># first push</span>
+<span class="kw">git push</span>                   <span class="cm"># subsequent</span>
+<span class="kw">git pull</span>                   <span class="cm"># fetch + merge</span>
+<span class="kw">git fetch</span>                  <span class="cm"># fetch only</span>
+
+<span class="cm"># Clone existing repo</span>
+<span class="kw">git clone</span> &lt;url&gt;
+<span class="kw">git clone</span> &lt;url&gt; my-folder  <span class="cm"># custom folder</span>
+
+<span class="cm"># Fork workflow</span>
+<span class="cm"># 1. Fork on GitHub UI</span>
+<span class="cm"># 2. Clone your fork</span>
+<span class="kw">git remote add</span> upstream &lt;original-url&gt;
+<span class="kw">git pull</span> upstream main     <span class="cm"># sync</span></code></div>
+      </div>
+      <div>
+        <h3 style="margin-bottom:12px">GitHub Features</h3>
+        <div class="grid grid-2" style="gap:12px">
+          <div class="card" style="padding:14px"><div style="font-weight:700;margin-bottom:4px;color:var(--primary)"><i class="fas fa-code-pull-request"></i> Pull Requests</div><p style="color:var(--text2);font-size:.82rem">Propose changes, request code review, discuss, then merge. Core GitHub collaboration feature.</p></div>
+          <div class="card" style="padding:14px"><div style="font-weight:700;margin-bottom:4px;color:var(--success)"><i class="fas fa-cogs"></i> GitHub Actions</div><p style="color:var(--text2);font-size:.82rem">CI/CD pipelines in YAML. Auto-run tests, build, deploy on push/PR. Free for public repos.</p></div>
+          <div class="card" style="padding:14px"><div style="font-weight:700;margin-bottom:4px;color:var(--warning)"><i class="fas fa-bug"></i> Issues &amp; Projects</div><p style="color:var(--text2);font-size:.82rem">Bug tracking, feature requests, milestones. Kanban-style project boards included.</p></div>
+          <div class="card" style="padding:14px"><div style="font-weight:700;margin-bottom:4px;color:var(--secondary)"><i class="fas fa-shield-halved"></i> Security Alerts</div><p style="color:var(--text2);font-size:.82rem">Dependabot scans dependencies for CVEs, auto-creates PRs to patch vulnerabilities.</p></div>
+        </div>
+        <div class="code-block" style="margin-top:12px"><span class="lang-tag">.gitignore</span><code><span class="cm"># Ignore node_modules</span>
+node_modules/
+dist/
+.env
+*.log
+<span class="cm"># OS files</span>
+.DS_Store
+Thumbs.db
+<span class="cm"># IDE</span>
+.vscode/
+.idea/</code></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Command Reference -->
+  <div id="git-cmds" class="tab-content">
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>Command</th><th>Description</th><th>Example</th></tr>
+        <tr><td><code>git init</code></td><td>Initialize a new repository</td><td><code>git init my-project</code></td></tr>
+        <tr><td><code>git clone</code></td><td>Clone remote repository</td><td><code>git clone https://github.com/user/repo</code></td></tr>
+        <tr><td><code>git status</code></td><td>Show working tree status</td><td><code>git status</code></td></tr>
+        <tr><td><code>git add</code></td><td>Stage changes for commit</td><td><code>git add . / git add file.js</code></td></tr>
+        <tr><td><code>git commit</code></td><td>Record staged changes</td><td><code>git commit -m "Add login feature"</code></td></tr>
+        <tr><td><code>git push</code></td><td>Upload commits to remote</td><td><code>git push origin main</code></td></tr>
+        <tr><td><code>git pull</code></td><td>Fetch and merge from remote</td><td><code>git pull origin main</code></td></tr>
+        <tr><td><code>git branch</code></td><td>List / create branches</td><td><code>git branch feature/auth</code></td></tr>
+        <tr><td><code>git checkout</code></td><td>Switch branch or restore files</td><td><code>git checkout -b new-branch</code></td></tr>
+        <tr><td><code>git merge</code></td><td>Merge branch into current</td><td><code>git merge feature/auth</code></td></tr>
+        <tr><td><code>git rebase</code></td><td>Reapply commits onto new base</td><td><code>git rebase main</code></td></tr>
+        <tr><td><code>git log</code></td><td>Show commit history</td><td><code>git log --oneline --graph</code></td></tr>
+        <tr><td><code>git diff</code></td><td>Show unstaged changes</td><td><code>git diff HEAD</code></td></tr>
+        <tr><td><code>git stash</code></td><td>Temporarily shelve changes</td><td><code>git stash / git stash pop</code></td></tr>
+        <tr><td><code>git reset</code></td><td>Undo commits or unstage</td><td><code>git reset --soft HEAD~1</code></td></tr>
+        <tr><td><code>git revert</code></td><td>Create undo commit (safe)</td><td><code>git revert abc1234</code></td></tr>
+        <tr><td><code>git tag</code></td><td>Mark specific commits (releases)</td><td><code>git tag v1.0.0</code></td></tr>
+        <tr><td><code>git fetch</code></td><td>Download without merging</td><td><code>git fetch --all</code></td></tr>
+      </table>
+    </div>
+    <div class="info-box green" style="margin-top:16px"><i class="fas fa-lightbulb"></i><div><strong>Pro Tip:</strong> <code>git log --oneline --graph --all --decorate</code> shows a visual branch tree in the terminal. Alias it: <code>git config --global alias.tree "log --oneline --graph --all --decorate"</code></div></div>
   </div>
 </div>
 </section>
@@ -2606,6 +2831,7 @@ db.users.<span class="fn">deleteOne</span>({ name: <span class="st">"Alice"</spa
     <a href="#security">Security</a>
     <a href="#programming">Programming</a>
     <a href="#webdev">Web Dev</a>
+    <a href="#git">Git</a>
     <a href="#database">Database</a>
     <a href="#cloud">Cloud</a>
     <a href="#ai">AI &amp; ML</a>
@@ -2727,6 +2953,8 @@ const searchData = [
   {title:'Java JVM Spring Boot',section:'#programming',icon:'fa-java'},
   {title:'C C++ Pointers Memory',section:'#programming',icon:'fa-c'},
   {title:'Web Development HTML CSS React',section:'#webdev',icon:'fa-globe'},
+  {title:'Git Version Control GitHub Branching',section:'#git',icon:'fa-code-branch'},
+  {title:'Git Commands Commit Push Pull Merge',section:'#git',icon:'fa-code-branch'},
   {title:'SQL Database MySQL PostgreSQL',section:'#database',icon:'fa-database'},
   {title:'MongoDB NoSQL Firebase',section:'#database',icon:'fa-leaf'},
   {title:'Cloud Computing AWS Azure GCP',section:'#cloud',icon:'fa-cloud'},
@@ -2949,7 +3177,7 @@ function saveProgress(type, pct, correct) {
 }
 
 function trackSections() {
-  const sections = ['intro','fundamentals','hardware','software','os','filemanagement','msoffice','internet','networking','security','programming','webdev','database','cloud','ai','datascience','maintenance','interview','shortcuts','glossary','quiz','tests','roadmap','downloads','ide','dashboard'];
+  const sections = ['intro','fundamentals','hardware','software','os','filemanagement','msoffice','internet','networking','security','programming','git','webdev','database','cloud','ai','datascience','maintenance','interview','shortcuts','glossary','quiz','tests','roadmap','downloads','ide','dashboard'];
   sections.forEach(id => {
     const el = document.getElementById(id);
     if (!el) return;
@@ -3160,6 +3388,57 @@ function showTestScore(timedOut) {
     </div>`;
   saveProgress(testState.type+'-test', pct, testState.score);
 }
+
+// =================== COPY CODE BUTTONS ===================
+(function initCopyCode() {
+  document.querySelectorAll('.code-block').forEach(block => {
+    if (block.querySelector('.copy-code-btn')) return;
+    const btn = document.createElement('button');
+    btn.className = 'copy-code-btn';
+    btn.textContent = 'Copy';
+    btn.onclick = function() {
+      const code = block.querySelector('code');
+      if (!code) return;
+      navigator.clipboard.writeText(code.innerText).then(() => {
+        btn.textContent = '✓ Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 1800);
+      });
+    };
+    block.style.position = 'relative';
+    block.appendChild(btn);
+  });
+})();
+
+// =================== NAV DROPDOWN ===================
+function toggleNavDrop() {
+  const d = document.getElementById('nav-more');
+  d.classList.toggle('open');
+}
+document.addEventListener('click', e => {
+  const d = document.getElementById('nav-more');
+  if (d && !d.contains(e.target)) d.classList.remove('open');
+});
+document.querySelectorAll('.nav-dropdown-menu a').forEach(a => {
+  a.addEventListener('click', () => document.getElementById('nav-more').classList.remove('open'));
+});
+
+// =================== SCROLL ACTIVE NAV ===================
+(function initScrollActive() {
+  const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+  const sectionEls = [...document.querySelectorAll('section[id]')];
+  if (!sectionEls.length) return;
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(a => a.classList.remove('scroll-active'));
+        const link = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+        if (link) link.classList.add('scroll-active');
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  sectionEls.forEach(s => obs.observe(s));
+})();
 
 // =================== INIT ===================
 updateDashboard();
@@ -3462,8 +3741,7 @@ function updateIdeLines() {
 }
 
 function clearIdeOutput() {
-  document.getElementById('ide-result').innerHTML = '<span class="out-muted">// Output cleared. Press Run to execute...</span>';
-  document.getElementById('ide-output-wrap').innerHTML = '<div class="ide-result" id="ide-result"><span class="out-muted">// Output cleared. Press Run to execute...</span></div>';
+  document.getElementById('ide-output-wrap').innerHTML = '<div class="ide-result"><span class="out-muted">// Output cleared. Press Run to execute...</span></div>';
   document.getElementById('ide-exec-time').textContent = '';
 }
 
@@ -3533,7 +3811,7 @@ async function runIdeCode() {
     const hasErr = !!(data.compile?.stderr || data.run.stderr);
 
     document.getElementById('ide-output-wrap').innerHTML =
-      `<div class="ide-result" id="ide-result">${
+      `<div class="ide-result">${
         out.trim()
           ? `<span class="${hasErr ? 'out-error' : 'out-success'}">${escIde(out.trim())}</span>`
           : '<span class="out-muted">// No output produced.</span>'
@@ -3543,7 +3821,7 @@ async function runIdeCode() {
 
   } catch(e) {
     document.getElementById('ide-output-wrap').innerHTML =
-      `<div class="ide-result" id="ide-result"><span class="out-error">⚠ Connection error: ${escIde(e.message)}\n\nThe Piston API (emkc.org) could not be reached.\nCheck your internet connection and try again.</span></div>`;
+      `<div class="ide-result"><span class="out-error">⚠ Connection error: ${escIde(e.message)}\n\nThe Piston API (emkc.org) could not be reached.\nCheck your internet connection and try again.</span></div>`;
     statusEl.textContent = '● Error';
   }
 }
@@ -3572,7 +3850,7 @@ function runJsCode(code) {
   const html = logs.length
     ? logs.map(l => `<span class="${typeClass[l.t]}">${escIde(l.v)}</span>`).join('\n')
     : '<span class="out-muted">// No output. Use console.log() to print values.</span>';
-  document.getElementById('ide-output-wrap').innerHTML = `<div class="ide-result" id="ide-result">${html}</div>`;
+  document.getElementById('ide-output-wrap').innerHTML = `<div class="ide-result">${html}</div>`;
 }
 
 function runHtmlCode(code) {
