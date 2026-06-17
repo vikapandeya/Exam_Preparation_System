@@ -1,0 +1,2374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Complete English Grammar Learning Portal - Master English Grammar A to Z for students, teachers and competitive exams">
+<title>English Grammar Mastery A to Z</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#2563eb;--primary-dark:#1d4ed8;--secondary:#7c3aed;--accent:#f59e0b;--success:#10b981;--danger:#ef4444;--bg:#f8fafc;--bg2:#ffffff;--bgcard:#ffffff;--text:#1e293b;--text2:#64748b;--textm:#94a3b8;--border:#e2e8f0;--sh:0 4px 6px -1px rgba(0,0,0,.1);--shlg:0 10px 15px -3px rgba(0,0,0,.1);--r:12px;--navbg:rgba(255,255,255,.95)}
+[data-theme=dark]{--bg:#0f172a;--bg2:#1e293b;--bgcard:#1e293b;--text:#f1f5f9;--text2:#cbd5e1;--textm:#64748b;--border:#334155;--sh:0 4px 6px -1px rgba(0,0,0,.3);--shlg:0 10px 15px -3px rgba(0,0,0,.3);--navbg:rgba(15,23,42,.95)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background .3s,color .3s}
+/* ---- NAVBAR ---- */
+.navbar{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--navbg);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);box-shadow:var(--sh)}
+.nav-wrap{max-width:1400px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:62px;padding:0 1rem}
+.nav-brand{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--primary);text-decoration:none;white-space:nowrap}
+.nav-links{display:flex;gap:.15rem;list-style:none;overflow-x:auto;max-width:72%;-ms-overflow-style:none;scrollbar-width:none}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{display:block;padding:.35rem .55rem;color:var(--text2);text-decoration:none;font-size:.72rem;font-weight:500;border-radius:6px;white-space:nowrap;transition:all .2s}
+.nav-links a:hover{background:var(--primary);color:#fff}
+.nav-right{display:flex;align-items:center;gap:.5rem}
+.btn-theme{background:var(--bg2);border:1px solid var(--border);color:var(--text);padding:.35rem .75rem;border-radius:8px;cursor:pointer;font-size:.85rem;transition:all .2s;font-family:inherit}
+.btn-theme:hover{background:var(--primary);color:#fff;border-color:var(--primary)}
+.hamburger{display:none;background:none;border:none;cursor:pointer;color:var(--text);font-size:1.25rem}
+.mob-menu{display:none;position:fixed;top:62px;left:0;right:0;background:var(--navbg);border-bottom:1px solid var(--border);z-index:999;max-height:75vh;overflow-y:auto;padding:1rem;backdrop-filter:blur(10px)}
+.mob-menu.open{display:block}
+.mob-menu a{display:block;padding:.55rem 1rem;color:var(--text);text-decoration:none;border-radius:8px;margin-bottom:.2rem;font-size:.9rem;transition:background .2s}
+.mob-menu a:hover{background:var(--primary);color:#fff}
+.mob-menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.25rem}
+/* ---- MAIN LAYOUT ---- */
+main{padding-top:62px}
+.sec{padding:4rem 1rem;max-width:1400px;margin:0 auto}
+.sec-wrap{padding:4rem 1rem}
+.sec-inner{max-width:1400px;margin:0 auto}
+.sec-wrap.alt{background:var(--bg2)}
+.sec-head{text-align:center;margin-bottom:3rem}
+.sec-tag{display:inline-block;background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;padding:.3rem 1rem;border-radius:50px;font-size:.78rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:.75rem}
+.sec-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:700;margin-bottom:.6rem}
+.sec-sub{color:var(--text2);font-size:.95rem;max-width:600px;margin:0 auto}
+/* ---- HERO ---- */
+.hero{background:linear-gradient(135deg,#1e3a5f 0%,#2563eb 50%,#7c3aed 100%);padding:5rem 1rem 4rem;text-align:center;color:#fff;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fff' fill-opacity='.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E")}
+.hero-content{position:relative;z-index:1;max-width:820px;margin:0 auto}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.4rem);font-weight:700;margin-bottom:1rem;line-height:1.2}
+.hero p{font-size:1.15rem;opacity:.9;margin-bottom:2rem}
+.hero-stats{display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap;margin:2rem 0}
+.hero-stat strong{display:block;font-size:2rem;font-weight:800}
+.hero-stat span{font-size:.82rem;opacity:.85}
+.hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.75rem 1.5rem;border-radius:8px;font-weight:600;font-size:.95rem;cursor:pointer;text-decoration:none;border:none;transition:all .2s;font-family:inherit}
+.btn-white{background:#fff;color:var(--primary)}
+.btn-white:hover{background:#f1f5f9;transform:translateY(-2px)}
+.btn-outline-white{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.5)}
+.btn-outline-white:hover{background:rgba(255,255,255,.1)}
+/* ---- CARDS ---- */
+.card{background:var(--bgcard);border:1px solid var(--border);border-radius:var(--r);padding:1.5rem;box-shadow:var(--sh);transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shlg)}
+.card-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:#fff;margin-bottom:1rem}
+.g2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem}
+.g3{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.5rem}
+.g4{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1.5rem}
+/* ---- TABS ---- */
+.tab-nav{display:flex;gap:.4rem;flex-wrap:wrap;border-bottom:2px solid var(--border);margin-bottom:1.5rem}
+.tab-btn{padding:.55rem 1rem;background:none;border:none;cursor:pointer;color:var(--text2);font-weight:500;font-size:.88rem;border-bottom:3px solid transparent;margin-bottom:-2px;transition:all .2s;font-family:inherit}
+.tab-btn.active{color:var(--primary);border-bottom-color:var(--primary)}
+.tab-btn:hover{color:var(--primary)}
+.tab-pane{display:none}.tab-pane.active{display:block}
+/* ---- TENSE BOXES ---- */
+.tbox{background:var(--bgcard);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;margin-bottom:1.5rem}
+.tbox-head{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;padding:1rem 1.5rem;font-weight:700;font-size:1rem;display:flex;justify-content:space-between;align-items:center}
+.tbox-body{padding:1.5rem}
+.formula{background:linear-gradient(135deg,#fef3c7,#fde68a);border:1px solid #f59e0b;border-radius:8px;padding:.85rem 1.2rem;margin:.75rem 0;font-weight:600;color:#92400e;font-size:.92rem}
+[data-theme=dark] .formula{background:linear-gradient(135deg,#451a03,#78350f);color:#fde68a;border-color:#92400e}
+/* ---- BADGES ---- */
+.badge{display:inline-block;padding:.2rem .65rem;border-radius:50px;font-size:.75rem;font-weight:600}
+.bp{background:#d1fae5;color:#065f46}.bn{background:#fee2e2;color:#991b1b}.bq{background:#dbeafe;color:#1e40af}
+[data-theme=dark] .bp{background:#064e3b;color:#6ee7b7}[data-theme=dark] .bn{background:#7f1d1d;color:#fca5a5}[data-theme=dark] .bq{background:#1e3a8a;color:#93c5fd}
+/* ---- INFO BOXES ---- */
+.ib{padding:1rem 1.5rem;border-radius:10px;border-left:4px solid;margin:.75rem 0;font-size:.9rem}
+.ib.tip{background:#eff6ff;border-color:var(--primary);color:#1e40af}
+.ib.warn{background:#fffbeb;border-color:var(--accent);color:#92400e}
+.ib.ok{background:#ecfdf5;border-color:var(--success);color:#065f46}
+.ib.err{background:#fef2f2;border-color:var(--danger);color:#991b1b}
+[data-theme=dark] .ib.tip{background:#1e3a5f;color:#93c5fd}
+[data-theme=dark] .ib.warn{background:#451a03;color:#fde68a}
+[data-theme=dark] .ib.ok{background:#064e3b;color:#6ee7b7}
+[data-theme=dark] .ib.err{background:#7f1d1d;color:#fca5a5}
+/* ---- TABLE ---- */
+.tw{overflow-x:auto;margin:.75rem 0}
+table{width:100%;border-collapse:collapse;font-size:.88rem}
+th{background:var(--primary);color:#fff;padding:.7rem 1rem;text-align:left;font-weight:600}
+td{padding:.6rem 1rem;border-bottom:1px solid var(--border)}
+tr:hover td{background:var(--bg2)}
+tr:nth-child(even) td{background:var(--bg)}
+[data-theme=dark] tr:nth-child(even) td{background:#162032}
+/* ---- ACCORDION ---- */
+.acc{border:1px solid var(--border);border-radius:var(--r);overflow:hidden;margin-bottom:1rem}
+.acc-item{border-bottom:1px solid var(--border)}.acc-item:last-child{border-bottom:none}
+.acc-hdr{width:100%;padding:.9rem 1.4rem;background:var(--bgcard);border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:600;color:var(--text);font-size:.93rem;text-align:left;font-family:inherit;transition:background .2s}
+.acc-hdr:hover{background:var(--bg2)}.acc-hdr.open{background:var(--primary);color:#fff}
+.acc-body{display:none;padding:1.25rem 1.5rem;background:var(--bg2);border-top:1px solid var(--border);font-size:.9rem;line-height:1.7}
+.acc-body.open{display:block}
+/* ---- QUIZ ---- */
+.quiz-wrap{background:var(--bgcard);border:1px solid var(--border);border-radius:var(--r);padding:2rem;box-shadow:var(--sh)}
+.quiz-q{font-size:1.05rem;font-weight:600;margin-bottom:1.25rem;color:var(--text)}
+.quiz-opts{display:grid;gap:.65rem;margin-bottom:1.25rem}
+.qopt{display:flex;align-items:center;gap:.75rem;padding:.8rem 1.2rem;border:2px solid var(--border);border-radius:10px;cursor:pointer;transition:all .2s;background:var(--bgcard);color:var(--text);font-size:.92rem;text-align:left;width:100%;font-family:inherit}
+.qopt:hover:not(.answered){border-color:var(--primary);background:#eff6ff}
+[data-theme=dark] .qopt:hover:not(.answered){background:#1e3a5f}
+.qopt.correct{border-color:var(--success);background:#d1fae5;color:#065f46}
+.qopt.wrong{border-color:var(--danger);background:#fee2e2;color:#991b1b}
+[data-theme=dark] .qopt.correct{background:#064e3b;color:#6ee7b7}
+[data-theme=dark] .qopt.wrong{background:#7f1d1d;color:#fca5a5}
+.qprog{display:flex;align-items:center;gap:1rem;margin-bottom:1.25rem}
+.pbar{flex:1;height:8px;background:var(--border);border-radius:50px;overflow:hidden}
+.pfill{height:100%;background:linear-gradient(90deg,var(--primary),var(--secondary));border-radius:50px;transition:width .3s}
+.qscore{text-align:center;padding:2rem}
+.score-circle{width:120px;height:120px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:2rem;font-weight:800}
+/* ---- SEARCH ---- */
+.search-row{display:flex;gap:.5rem;margin-bottom:1.25rem}
+.sinput{flex:1;padding:.7rem 1rem;border:2px solid var(--border);border-radius:10px;background:var(--bgcard);color:var(--text);font-size:.92rem;font-family:inherit;outline:none;transition:border-color .2s}
+.sinput:focus{border-color:var(--primary)}
+.sbtn{padding:.7rem 1.1rem;background:var(--primary);color:#fff;border:none;border-radius:10px;cursor:pointer;font-size:1rem;transition:background .2s}
+.sbtn:hover{background:var(--primary-dark)}
+/* ---- WORD GRID ---- */
+.wgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:.9rem;max-height:480px;overflow-y:auto;padding-right:.25rem}
+.wcard{background:var(--bgcard);border:1px solid var(--border);border-radius:10px;padding:.9rem;transition:all .2s}
+.wcard:hover{border-color:var(--primary);box-shadow:var(--sh)}
+.wcard .w{font-weight:700;color:var(--primary);font-size:.95rem}
+.wcard .m{font-size:.78rem;color:var(--text2);margin-top:.2rem}
+.wcard .e{font-size:.78rem;color:var(--textm);font-style:italic;margin-top:.15rem}
+/* ---- ALPHA FILTER ---- */
+.alpha{display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:1.25rem}
+.abtn{width:30px;height:30px;border:1px solid var(--border);border-radius:6px;background:var(--bgcard);color:var(--text);cursor:pointer;font-size:.78rem;font-weight:600;transition:all .2s;font-family:inherit}
+.abtn:hover,.abtn.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+/* ---- PROGRESS DASHBOARD ---- */
+.dash-card{background:var(--bgcard);border:1px solid var(--border);border-radius:var(--r);padding:1.5rem;text-align:center}
+.dash-num{font-size:2.5rem;font-weight:800;background:linear-gradient(135deg,var(--primary),var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.dash-label{color:var(--text2);font-size:.85rem;margin-top:.25rem}
+/* ---- TIMER ---- */
+.timer-box{font-size:1.5rem;font-weight:700;color:var(--danger);text-align:center;padding:.5rem;background:var(--bg2);border:2px solid var(--danger);border-radius:8px;display:inline-block;min-width:80px}
+/* ---- MISC ---- */
+.pill{display:inline-block;padding:.2rem .7rem;border-radius:50px;font-size:.78rem;font-weight:600;background:var(--bg2);border:1px solid var(--border);color:var(--text2);margin:.2rem}
+.pill-p{background:var(--primary);color:#fff;border-color:var(--primary)}
+.pill-s{background:var(--secondary);color:#fff;border-color:var(--secondary)}
+ul.slist{padding-left:1.5rem}ul.slist li{padding:.3rem 0;color:var(--text)}
+ol.nlist{padding-left:1.5rem}ol.nlist li{padding:.3rem 0;color:var(--text)}
+.highlight{background:linear-gradient(135deg,var(--primary),var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:700}
+.back-top{position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;background:var(--primary);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:1.1rem;box-shadow:var(--shlg);transition:all .2s;display:none;align-items:center;justify-content:center;z-index:999}
+.back-top.show{display:flex}.back-top:hover{transform:translateY(-3px);background:var(--primary-dark)}
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1rem;text-align:center;color:var(--text2)}
+::-webkit-scrollbar{width:6px;height:6px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}::-webkit-scrollbar-thumb:hover{background:var(--primary)}
+@media(max-width:768px){.nav-links{display:none}.hamburger{display:block}.hero{padding:3rem 1rem}.sec{padding:2.5rem 1rem}.sec-wrap{padding:2.5rem 1rem}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.fade-up{animation:fadeUp .5s ease forwards}
+.writing-card{background:var(--bgcard);border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+.wc-head{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;padding:1rem 1.5rem;font-weight:600}
+.wc-body{padding:1.5rem;font-size:.9rem;line-height:1.8}
+.confused-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.5rem}
+@media(max-width:600px){.confused-row{grid-template-columns:1fr}}
+.cbox{background:var(--bgcard);border:2px solid var(--border);border-radius:10px;padding:1.1rem}
+.cbox.a{border-color:var(--primary)}.cbox.b{border-color:var(--secondary)}
+.cword{font-size:1.2rem;font-weight:700;margin-bottom:.4rem}
+.cbox.a .cword{color:var(--primary)}.cbox.b .cword{color:var(--secondary)}
+.passage-box{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.5rem;margin-bottom:1.5rem;line-height:1.9;font-style:italic;border-left:4px solid var(--primary)}
+</style>
+</head>
+<body>
+<!-- ======== NAVBAR ======== -->
+<nav class="navbar">
+  <div class="nav-wrap">
+    <a href="#home" class="nav-brand"><i class="fas fa-book-open"></i> Grammar Mastery</a>
+    <ul class="nav-links">
+      <li><a href="#pos">Parts of Speech</a></li>
+      <li><a href="#tenses">Tenses</a></li>
+      <li><a href="#voice">Voice</a></li>
+      <li><a href="#speech">Speech</a></li>
+      <li><a href="#articles">Articles</a></li>
+      <li><a href="#sva">S-V Agreement</a></li>
+      <li><a href="#modals">Modals</a></li>
+      <li><a href="#sentences">Sentences</a></li>
+      <li><a href="#clauses">Clauses</a></li>
+      <li><a href="#conditionals">Conditionals</a></li>
+      <li><a href="#vocabulary">Vocabulary</a></li>
+      <li><a href="#synonyms">Synonyms</a></li>
+      <li><a href="#antonyms">Antonyms</a></li>
+      <li><a href="#idioms">Idioms</a></li>
+      <li><a href="#phrasal">Phrasal Verbs</a></li>
+      <li><a href="#oneword">One-Word Subs</a></li>
+      <li><a href="#confused">Confused Words</a></li>
+      <li><a href="#spelling">Spelling</a></li>
+      <li><a href="#punctuation">Punctuation</a></li>
+      <li><a href="#writing">Writing Skills</a></li>
+      <li><a href="#comprehension">Comprehension</a></li>
+      <li><a href="#quiz">Quiz</a></li>
+      <li><a href="#tests">Practice Tests</a></li>
+      <li><a href="#dictionary">Dictionary</a></li>
+      <li><a href="#quickref">Quick Ref</a></li>
+      <li><a href="#dashboard">Dashboard</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="btn-theme" onclick="toggleTheme()"><i class="fas fa-moon" id="themeIcon"></i></button>
+      <button class="hamburger" onclick="toggleMob()"><i class="fas fa-bars"></i></button>
+    </div>
+  </div>
+</nav>
+<!-- Mobile Menu -->
+<div class="mob-menu" id="mobMenu">
+  <div class="mob-menu-grid">
+    <a href="#pos" onclick="closeMob()">Parts of Speech</a><a href="#tenses" onclick="closeMob()">Tenses</a>
+    <a href="#voice" onclick="closeMob()">Active/Passive</a><a href="#speech" onclick="closeMob()">Direct/Indirect</a>
+    <a href="#articles" onclick="closeMob()">Articles</a><a href="#sva" onclick="closeMob()">S-V Agreement</a>
+    <a href="#modals" onclick="closeMob()">Modals</a><a href="#sentences" onclick="closeMob()">Sentence Types</a>
+    <a href="#clauses" onclick="closeMob()">Clauses</a><a href="#conditionals" onclick="closeMob()">Conditionals</a>
+    <a href="#vocabulary" onclick="closeMob()">Vocabulary</a><a href="#synonyms" onclick="closeMob()">Synonyms</a>
+    <a href="#antonyms" onclick="closeMob()">Antonyms</a><a href="#idioms" onclick="closeMob()">Idioms</a>
+    <a href="#phrasal" onclick="closeMob()">Phrasal Verbs</a><a href="#oneword" onclick="closeMob()">One-Word Subs</a>
+    <a href="#confused" onclick="closeMob()">Confused Words</a><a href="#spelling" onclick="closeMob()">Spelling</a>
+    <a href="#punctuation" onclick="closeMob()">Punctuation</a><a href="#writing" onclick="closeMob()">Writing Skills</a>
+    <a href="#quiz" onclick="closeMob()">Quiz</a><a href="#tests" onclick="closeMob()">Practice Tests</a>
+    <a href="#dictionary" onclick="closeMob()">Dictionary</a><a href="#quickref" onclick="closeMob()">Quick Ref</a>
+    <a href="#dashboard" onclick="closeMob()">Dashboard</a>
+  </div>
+</div>
+
+<main>
+<!-- ======== HERO ======== -->
+<section class="hero" id="home">
+  <div class="hero-content fade-up">
+    <div style="margin-bottom:1rem">
+      <span class="pill pill-p"><i class="fas fa-star"></i> Complete Learning Portal</span>
+      <span class="pill" style="background:rgba(255,255,255,.2);color:#fff;border-color:rgba(255,255,255,.3)"><i class="fas fa-user"></i> By Vikash Pandey</span>
+    </div>
+    <h1>English Grammar<br><span style="color:#fbbf24">Mastery A to Z</span></h1>
+    <p>Complete English Grammar Learning Portal — Tenses, Parts of Speech, Voice, Speech, Vocabulary, Quizzes &amp; More</p>
+    <div class="hero-btns">
+      <a href="#pos" class="btn btn-white"><i class="fas fa-play"></i> Start Learning</a>
+      <a href="#quiz" class="btn btn-outline-white"><i class="fas fa-question-circle"></i> Take Quiz</a>
+      <a href="#dashboard" class="btn btn-outline-white"><i class="fas fa-chart-bar"></i> Dashboard</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><strong>27+</strong><span>Topics Covered</span></div>
+      <div class="hero-stat"><strong>12</strong><span>Complete Tenses</span></div>
+      <div class="hero-stat"><strong>1000+</strong><span>Words &amp; Phrases</span></div>
+      <div class="hero-stat"><strong>200+</strong><span>Quiz Questions</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== 1. PARTS OF SPEECH ======== -->
+<section id="pos">
+<div class="sec">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-puzzle-piece"></i> Grammar Basics</span>
+    <h2 class="sec-title">Parts of Speech</h2>
+    <p class="sec-sub">The 9 building blocks of every English sentence — understand each one with clear definitions and examples.</p>
+  </div>
+
+  <div class="tab-nav" id="posTabs">
+    <button class="tab-btn active" onclick="openTab(event,'pos','noun')">Noun</button>
+    <button class="tab-btn" onclick="openTab(event,'pos','pronoun')">Pronoun</button>
+    <button class="tab-btn" onclick="openTab(event,'pos','verb')">Verb</button>
+    <button class="tab-btn" onclick="openTab(event,'pos','adjective')">Adjective</button>
+    <button class="tab-btn" onclick="openTab(event,'pos','adverb')">Adverb</button>
+    <button class="tab-btn" onclick="openTab(event,'pos','preposition')">Preposition</button>
+    <button class="tab-btn" onclick="openTab(event,'pos','conjunction')">Conjunction</button>
+    <button class="tab-btn" onclick="openTab(event,'pos','interjection')">Interjection</button>
+    <button class="tab-btn" onclick="openTab(event,'pos','determiner')">Determiner</button>
+  </div>
+
+  <!-- NOUN -->
+  <div class="tab-pane active" id="pos-noun">
+    <div class="g2">
+      <div class="card">
+        <div class="card-icon" style="background:linear-gradient(135deg,#2563eb,#7c3aed)"><i class="fas fa-tag"></i></div>
+        <h3 style="margin-bottom:.5rem">Noun <small style="color:var(--text2);font-weight:400">(naming word)</small></h3>
+        <p style="font-size:.9rem;color:var(--text2);margin-bottom:1rem">A noun is a word that names a person, place, thing, animal, quality, or idea.</p>
+        <div class="ib tip"><strong>Definition:</strong> A noun is the name of any person, place, thing, or idea.</div>
+        <h4 style="margin:.75rem 0 .5rem">Types of Nouns</h4>
+        <div class="tw"><table>
+          <tr><th>Type</th><th>Definition</th><th>Examples</th></tr>
+          <tr><td><strong>Proper Noun</strong></td><td>Name of a specific person/place</td><td>India, Ravi, Amazon</td></tr>
+          <tr><td><strong>Common Noun</strong></td><td>General name for a class</td><td>city, boy, river</td></tr>
+          <tr><td><strong>Collective Noun</strong></td><td>Group of persons/things</td><td>team, flock, army</td></tr>
+          <tr><td><strong>Abstract Noun</strong></td><td>Idea, quality, or state</td><td>love, freedom, courage</td></tr>
+          <tr><td><strong>Material Noun</strong></td><td>Substance or material</td><td>gold, water, wood</td></tr>
+          <tr><td><strong>Countable Noun</strong></td><td>Can be counted</td><td>book, chair, apple</td></tr>
+          <tr><td><strong>Uncountable Noun</strong></td><td>Cannot be counted</td><td>milk, air, advice</td></tr>
+        </table></div>
+        <div class="ib ok"><strong>Examples in sentences:</strong><br>
+        • <em>Mumbai</em> is a busy <em>city</em>. (Proper + Common)<br>
+        • Her <em>courage</em> inspired the whole <em>team</em>. (Abstract + Collective)<br>
+        • The <em>water</em> in this <em>bottle</em> is pure. (Material + Countable)</div>
+      </div>
+      <div class="card">
+        <h4 style="margin-bottom:1rem;color:var(--primary)"><i class="fas fa-lightbulb"></i> Quick Noun Rules</h4>
+        <ul class="slist">
+          <li>Proper nouns always start with a capital letter.</li>
+          <li>Collective nouns can take singular or plural verbs depending on context.</li>
+          <li>Abstract nouns are usually uncountable (love, honesty).</li>
+          <li>Some nouns have irregular plurals: child→children, man→men, foot→feet.</li>
+          <li>Compound nouns: toothbrush, swimming pool, mother-in-law.</li>
+        </ul>
+        <h4 style="margin:1rem 0 .5rem;color:var(--primary)">Noun Gender</h4>
+        <div class="tw"><table>
+          <tr><th>Masculine</th><th>Feminine</th><th>Common</th><th>Neuter</th></tr>
+          <tr><td>king</td><td>queen</td><td>teacher</td><td>table</td></tr>
+          <tr><td>actor</td><td>actress</td><td>student</td><td>stone</td></tr>
+          <tr><td>hero</td><td>heroine</td><td>friend</td><td>book</td></tr>
+          <tr><td>lion</td><td>lioness</td><td>child</td><td>water</td></tr>
+        </table></div>
+        <div class="ib warn"><strong>Common Mistake:</strong> Do NOT use "a" before uncountable nouns. Say <em>advice</em>, not <em>an advice</em>. Say <em>information</em>, not <em>an information</em>.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRONOUN -->
+  <div class="tab-pane" id="pos-pronoun">
+    <div class="g2">
+      <div class="card">
+        <div class="card-icon" style="background:linear-gradient(135deg,#7c3aed,#ec4899)"><i class="fas fa-user"></i></div>
+        <h3 style="margin-bottom:.5rem">Pronoun <small style="color:var(--text2);font-weight:400">(replacing word)</small></h3>
+        <p style="font-size:.9rem;color:var(--text2);margin-bottom:1rem">A pronoun is a word used in place of a noun to avoid repetition.</p>
+        <div class="tw"><table>
+          <tr><th>Type</th><th>Examples</th></tr>
+          <tr><td>Personal</td><td>I, you, he, she, it, we, they</td></tr>
+          <tr><td>Possessive</td><td>my, your, his, her, its, our, their</td></tr>
+          <tr><td>Reflexive</td><td>myself, yourself, himself, herself, itself</td></tr>
+          <tr><td>Demonstrative</td><td>this, that, these, those</td></tr>
+          <tr><td>Interrogative</td><td>who, whom, which, what, whose</td></tr>
+          <tr><td>Relative</td><td>who, which, that, whom, whose</td></tr>
+          <tr><td>Indefinite</td><td>all, each, some, none, anyone, nobody</td></tr>
+          <tr><td>Reciprocal</td><td>each other, one another</td></tr>
+        </table></div>
+        <div class="ib tip"><strong>Pronoun Case:</strong><br>
+        • Subjective: I, he, she, we, they<br>
+        • Objective: me, him, her, us, them<br>
+        • Possessive: mine, his, hers, ours, theirs</div>
+      </div>
+      <div class="card">
+        <h4 style="margin-bottom:1rem;color:var(--primary)">Examples &amp; Usage</h4>
+        <ul class="slist">
+          <li><em>She</em> is a brilliant scientist. (Personal)</li>
+          <li>The book lost <em>its</em> cover. (Possessive)</li>
+          <li>He hurt <em>himself</em> while playing. (Reflexive)</li>
+          <li><em>This</em> is my favourite movie. (Demonstrative)</li>
+          <li><em>Who</em> called you last night? (Interrogative)</li>
+          <li>The man <em>who</em> arrived is my uncle. (Relative)</li>
+          <li><em>Everyone</em> must follow the rules. (Indefinite)</li>
+          <li>They greeted <em>each other</em> warmly. (Reciprocal)</li>
+        </ul>
+        <div class="ib warn"><strong>Common Mistakes:</strong><br>
+        ✗ Between you and <u>I</u> → ✓ Between you and <strong>me</strong><br>
+        ✗ Its raining → ✓ <strong>It's</strong> raining (It's = It is)<br>
+        ✗ Me and John went → ✓ <strong>John and I</strong> went</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VERB -->
+  <div class="tab-pane" id="pos-verb">
+    <div class="g2">
+      <div class="card">
+        <div class="card-icon" style="background:linear-gradient(135deg,#10b981,#2563eb)"><i class="fas fa-running"></i></div>
+        <h3 style="margin-bottom:.5rem">Verb <small style="color:var(--text2);font-weight:400">(action/state word)</small></h3>
+        <p style="font-size:.9rem;color:var(--text2);margin-bottom:1rem">A verb expresses an action, occurrence, or state of being.</p>
+        <div class="tw"><table>
+          <tr><th>Type</th><th>Description</th><th>Examples</th></tr>
+          <tr><td>Action Verb</td><td>Shows physical/mental action</td><td>run, think, write</td></tr>
+          <tr><td>Linking Verb</td><td>Connects subject to complement</td><td>is, am, are, seem, become</td></tr>
+          <tr><td>Helping/Auxiliary</td><td>Assists main verb</td><td>do, have, will, can, must</td></tr>
+          <tr><td>Transitive</td><td>Requires a direct object</td><td>She <em>ate</em> an apple.</td></tr>
+          <tr><td>Intransitive</td><td>Does not require object</td><td>He <em>slept</em> soundly.</td></tr>
+          <tr><td>Regular Verb</td><td>Follows standard conjugation</td><td>walk→walked, play→played</td></tr>
+          <tr><td>Irregular Verb</td><td>Unique past forms</td><td>go→went, see→saw, buy→bought</td></tr>
+        </table></div>
+      </div>
+      <div class="card">
+        <h4 style="margin-bottom:1rem;color:var(--primary)">Verb Forms (V1, V2, V3, V4, V5)</h4>
+        <div class="tw"><table>
+          <tr><th>V1 (Base)</th><th>V2 (Past)</th><th>V3 (Past Participle)</th><th>V4 (-ing)</th><th>V5 (3rd person)</th></tr>
+          <tr><td>go</td><td>went</td><td>gone</td><td>going</td><td>goes</td></tr>
+          <tr><td>write</td><td>wrote</td><td>written</td><td>writing</td><td>writes</td></tr>
+          <tr><td>take</td><td>took</td><td>taken</td><td>taking</td><td>takes</td></tr>
+          <tr><td>speak</td><td>spoke</td><td>spoken</td><td>speaking</td><td>speaks</td></tr>
+          <tr><td>eat</td><td>ate</td><td>eaten</td><td>eating</td><td>eats</td></tr>
+          <tr><td>see</td><td>saw</td><td>seen</td><td>seeing</td><td>sees</td></tr>
+        </table></div>
+        <div class="ib ok">Verbs agree with their subjects: <em>He runs</em> (singular) / <em>They run</em> (plural)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ADJECTIVE -->
+  <div class="tab-pane" id="pos-adjective">
+    <div class="g2">
+      <div class="card">
+        <div class="card-icon" style="background:linear-gradient(135deg,#f59e0b,#ef4444)"><i class="fas fa-paint-brush"></i></div>
+        <h3 style="margin-bottom:.5rem">Adjective <small style="color:var(--text2);font-weight:400">(describing word)</small></h3>
+        <p style="font-size:.9rem;color:var(--text2);margin-bottom:1rem">An adjective modifies or describes a noun or pronoun.</p>
+        <div class="tw"><table>
+          <tr><th>Type</th><th>Examples</th></tr>
+          <tr><td>Descriptive</td><td>beautiful, tall, heavy, cold</td></tr>
+          <tr><td>Numeral</td><td>one, first, many, few</td></tr>
+          <tr><td>Demonstrative</td><td>this, that, these, those</td></tr>
+          <tr><td>Possessive</td><td>my, your, his, her, our</td></tr>
+          <tr><td>Interrogative</td><td>which, what, whose</td></tr>
+          <tr><td>Distributive</td><td>each, every, either, neither</td></tr>
+          <tr><td>Proper</td><td>Indian, French, American</td></tr>
+        </table></div>
+        <h4 style="margin:.75rem 0 .5rem">Degrees of Comparison</h4>
+        <div class="tw"><table>
+          <tr><th>Adjective</th><th>Comparative</th><th>Superlative</th></tr>
+          <tr><td>tall</td><td>taller</td><td>tallest</td></tr>
+          <tr><td>beautiful</td><td>more beautiful</td><td>most beautiful</td></tr>
+          <tr><td>good</td><td>better</td><td>best</td></tr>
+          <tr><td>bad</td><td>worse</td><td>worst</td></tr>
+          <tr><td>little</td><td>less</td><td>least</td></tr>
+        </table></div>
+      </div>
+      <div class="card">
+        <h4 style="margin-bottom:1rem;color:var(--primary)">Examples &amp; Tips</h4>
+        <ul class="slist">
+          <li>She has a <em>beautiful</em> smile. (Descriptive)</li>
+          <li>Give me <em>three</em> books. (Numeral)</li>
+          <li>I want <em>that</em> red dress. (Demonstrative)</li>
+          <li><em>Every</em> student must attend. (Distributive)</li>
+          <li>He is <em>taller</em> than his brother. (Comparative)</li>
+          <li>She is the <em>most intelligent</em> student. (Superlative)</li>
+        </ul>
+        <div class="ib tip"><strong>Order of Adjectives:</strong> Opinion → Size → Age → Shape → Color → Origin → Material → Purpose<br>
+        Example: a <em>lovely little old rectangular green French silver whittling</em> knife</div>
+        <div class="ib warn"><strong>Common Mistake:</strong><br>
+        ✗ She is more taller → ✓ She is <strong>taller</strong><br>
+        ✗ This is the most best → ✓ This is the <strong>best</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ADVERB -->
+  <div class="tab-pane" id="pos-adverb">
+    <div class="g2">
+      <div class="card">
+        <div class="card-icon" style="background:linear-gradient(135deg,#06b6d4,#2563eb)"><i class="fas fa-bolt"></i></div>
+        <h3 style="margin-bottom:.5rem">Adverb <small style="color:var(--text2);font-weight:400">(modifying word)</small></h3>
+        <p style="font-size:.9rem;color:var(--text2);margin-bottom:1rem">An adverb modifies a verb, adjective, or another adverb — telling how, when, where, or to what extent.</p>
+        <div class="tw"><table>
+          <tr><th>Type</th><th>Question Answered</th><th>Examples</th></tr>
+          <tr><td>Manner</td><td>How?</td><td>quickly, slowly, well, badly</td></tr>
+          <tr><td>Time</td><td>When?</td><td>now, then, today, soon, already</td></tr>
+          <tr><td>Place</td><td>Where?</td><td>here, there, away, inside, outside</td></tr>
+          <tr><td>Frequency</td><td>How often?</td><td>always, often, never, rarely, daily</td></tr>
+          <tr><td>Degree</td><td>How much?</td><td>very, quite, almost, enough, too</td></tr>
+          <tr><td>Reason</td><td>Why?</td><td>therefore, hence, consequently</td></tr>
+        </table></div>
+      </div>
+      <div class="card">
+        <h4 style="margin-bottom:1rem;color:var(--primary)">Adverb Examples</h4>
+        <ul class="slist">
+          <li>She sings <em>beautifully</em>. (Manner)</li>
+          <li>He will come <em>tomorrow</em>. (Time)</li>
+          <li>The cat sat <em>there</em>. (Place)</li>
+          <li>I <em>always</em> brush my teeth. (Frequency)</li>
+          <li>This is <em>very</em> important. (Degree)</li>
+        </ul>
+        <div class="ib tip">Most adverbs of manner are formed by adding <strong>-ly</strong> to adjectives:<br>
+        slow→slowly, quick→quickly, happy→happily, easy→easily</div>
+        <div class="ib warn"><strong>Adjective vs Adverb:</strong><br>
+        • He is a <em>quick</em> runner. (adjective — describes noun)<br>
+        • He runs <em>quickly</em>. (adverb — describes verb)<br>
+        • She felt <em>bad</em>. (adjective after linking verb, NOT badly)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PREPOSITION -->
+  <div class="tab-pane" id="pos-preposition">
+    <div class="g2">
+      <div class="card">
+        <div class="card-icon" style="background:linear-gradient(135deg,#8b5cf6,#06b6d4)"><i class="fas fa-map-marker-alt"></i></div>
+        <h3 style="margin-bottom:.5rem">Preposition</h3>
+        <p style="font-size:.9rem;color:var(--text2);margin-bottom:1rem">A preposition shows the relationship of a noun/pronoun to another word — indicating position, direction, time, or manner.</p>
+        <div class="tw"><table>
+          <tr><th>Type</th><th>Prepositions</th></tr>
+          <tr><td>Place/Position</td><td>in, on, at, under, over, between, beside</td></tr>
+          <tr><td>Time</td><td>at, on, in, before, after, during, since, for</td></tr>
+          <tr><td>Direction</td><td>to, from, into, through, towards, across</td></tr>
+          <tr><td>Manner</td><td>with, by, like, as</td></tr>
+          <tr><td>Agent</td><td>by, with</td></tr>
+        </table></div>
+        <div class="ib tip"><strong>AT / IN / ON (Time):</strong><br>
+        • <strong>AT</strong>: specific time — at 5 o'clock, at noon, at night<br>
+        • <strong>ON</strong>: days/dates — on Monday, on 15 August<br>
+        • <strong>IN</strong>: months/years/seasons — in March, in 2024, in winter</div>
+      </div>
+      <div class="card">
+        <h4 style="margin-bottom:1rem;color:var(--primary)">Tricky Prepositions</h4>
+        <ul class="slist">
+          <li>She lives <em>in</em> London. (city/country)</li>
+          <li>The book is <em>on</em> the table.</li>
+          <li>Meet me <em>at</em> the station.</li>
+          <li>He has been working <em>since</em> Monday.</li>
+          <li>I waited <em>for</em> two hours.</li>
+          <li>She is afraid <em>of</em> darkness.</li>
+          <li>He is good <em>at</em> maths.</li>
+          <li>She is interested <em>in</em> music.</li>
+        </ul>
+        <div class="ib warn"><strong>Common Mistakes:</strong><br>
+        ✗ Discuss about → ✓ <strong>Discuss</strong> (no 'about')<br>
+        ✗ Return back → ✓ <strong>Return</strong> (back is redundant)<br>
+        ✗ Cope up with → ✓ <strong>Cope with</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONJUNCTION -->
+  <div class="tab-pane" id="pos-conjunction">
+    <div class="g2">
+      <div class="card">
+        <div class="card-icon" style="background:linear-gradient(135deg,#ef4444,#f59e0b)"><i class="fas fa-link"></i></div>
+        <h3 style="margin-bottom:.5rem">Conjunction <small style="color:var(--text2);font-weight:400">(joining word)</small></h3>
+        <p style="font-size:.9rem;color:var(--text2);margin-bottom:1rem">A conjunction joins words, phrases, or clauses.</p>
+        <div class="tw"><table>
+          <tr><th>Type</th><th>Words</th><th>Use</th></tr>
+          <tr><td>Coordinating</td><td>for, and, nor, but, or, yet, so (FANBOYS)</td><td>Joins equal parts</td></tr>
+          <tr><td>Subordinating</td><td>because, although, since, while, if, unless</td><td>Joins main+subordinate clause</td></tr>
+          <tr><td>Correlative</td><td>both…and, either…or, neither…nor, not only…but also</td><td>Used in pairs</td></tr>
+        </table></div>
+        <ul class="slist" style="margin-top:.75rem">
+          <li>I tried hard, <em>but</em> I failed. (Coordinating)</li>
+          <li>He left <em>because</em> it was late. (Subordinating)</li>
+          <li><em>Neither</em> she <em>nor</em> he was present. (Correlative)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4 style="margin-bottom:1rem;color:var(--primary)">Common Subordinating Conjunctions</h4>
+        <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1rem">
+          <span class="pill">because</span><span class="pill">since</span><span class="pill">although</span>
+          <span class="pill">though</span><span class="pill">while</span><span class="pill">when</span>
+          <span class="pill">before</span><span class="pill">after</span><span class="pill">if</span>
+          <span class="pill">unless</span><span class="pill">until</span><span class="pill">as</span>
+          <span class="pill">so that</span><span class="pill">in order that</span><span class="pill">even if</span>
+        </div>
+        <div class="ib tip">Use a comma after a subordinate clause at the start:<br>
+        <em>Although it was raining, we went out.</em></div>
+        <div class="ib warn"><strong>Common Mistake:</strong><br>
+        ✗ Although he tried hard, but he failed.<br>
+        ✓ <strong>Although</strong> he tried hard, he failed.<br>
+        ✓ He tried hard, <strong>but</strong> he failed. (not both)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERJECTION -->
+  <div class="tab-pane" id="pos-interjection">
+    <div class="card">
+      <div class="card-icon" style="background:linear-gradient(135deg,#f59e0b,#10b981)"><i class="fas fa-exclamation"></i></div>
+      <h3 style="margin-bottom:.5rem">Interjection <small style="color:var(--text2);font-weight:400">(exclamatory word)</small></h3>
+      <p style="font-size:.9rem;color:var(--text2);margin-bottom:1rem">An interjection expresses a sudden feeling or emotion and is grammatically independent of the rest of the sentence.</p>
+      <div class="g3">
+        <div>
+          <h4 style="color:var(--primary);margin-bottom:.75rem">Types &amp; Examples</h4>
+          <div class="tw"><table>
+            <tr><th>Emotion</th><th>Interjections</th><th>Example</th></tr>
+            <tr><td>Joy</td><td>Hurray! Yay! Wow!</td><td>Hurray! We won!</td></tr>
+            <tr><td>Sorrow</td><td>Alas! Oh! Ah!</td><td>Alas! She is gone.</td></tr>
+            <tr><td>Surprise</td><td>Oh! What! Really!</td><td>Oh! Is that true?</td></tr>
+            <tr><td>Approval</td><td>Bravo! Well done!</td><td>Bravo! Excellent work!</td></tr>
+            <tr><td>Contempt</td><td>Pooh! Bah! Fie!</td><td>Pooh! What rubbish!</td></tr>
+            <tr><td>Greeting</td><td>Hello! Hi! Hey!</td><td>Hello! How are you?</td></tr>
+            <tr><td>Pain</td><td>Ouch! Ow!</td><td>Ouch! That hurts!</td></tr>
+            <tr><td>Attention</td><td>Hush! Look! Listen!</td><td>Hush! Baby is sleeping.</td></tr>
+          </table></div>
+        </div>
+        <div>
+          <div class="ib tip"><strong>Punctuation with Interjections:</strong><br>
+          • Strong emotion → exclamation mark: <em>Wow! That's amazing!</em><br>
+          • Mild emotion → comma: <em>Well, I suppose so.</em><br>
+          • Can stand alone as a sentence</div>
+          <div class="ib ok" style="margin-top:1rem"><strong>Note:</strong> Interjections have no grammatical connection with the sentence. They are simply inserted to express emotion and are often followed by an exclamation mark.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DETERMINER -->
+  <div class="tab-pane" id="pos-determiner">
+    <div class="g2">
+      <div class="card">
+        <div class="card-icon" style="background:linear-gradient(135deg,#0ea5e9,#8b5cf6)"><i class="fas fa-filter"></i></div>
+        <h3 style="margin-bottom:.5rem">Determiner</h3>
+        <p style="font-size:.9rem;color:var(--text2);margin-bottom:1rem">A determiner is a word that introduces a noun and specifies it (which one, how many, whose).</p>
+        <div class="tw"><table>
+          <tr><th>Type</th><th>Words</th><th>Example</th></tr>
+          <tr><td>Articles</td><td>a, an, the</td><td>the book, a cat</td></tr>
+          <tr><td>Demonstrative</td><td>this, that, these, those</td><td>this pen</td></tr>
+          <tr><td>Possessive</td><td>my, your, his, her, its, our, their</td><td>my car</td></tr>
+          <tr><td>Quantifiers</td><td>some, any, many, much, few, little, all, both</td><td>some water</td></tr>
+          <tr><td>Numbers</td><td>one, two, first, second…</td><td>three boys</td></tr>
+          <tr><td>Distributive</td><td>each, every, either, neither</td><td>each student</td></tr>
+          <tr><td>Interrogative</td><td>which, what, whose</td><td>which way?</td></tr>
+          <tr><td>Exclamative</td><td>what, such</td><td>What a day!</td></tr>
+        </table></div>
+      </div>
+      <div class="card">
+        <h4 style="margin-bottom:1rem;color:var(--primary)">Some vs Any / Much vs Many</h4>
+        <div class="tw"><table>
+          <tr><th>Word</th><th>Use With</th><th>Context</th></tr>
+          <tr><td>some</td><td>both</td><td>affirmative sentences</td></tr>
+          <tr><td>any</td><td>both</td><td>negative/question sentences</td></tr>
+          <tr><td>much</td><td>uncountable</td><td>How much milk?</td></tr>
+          <tr><td>many</td><td>countable</td><td>How many books?</td></tr>
+          <tr><td>few</td><td>countable</td><td>few friends (negative)</td></tr>
+          <tr><td>a few</td><td>countable</td><td>a few friends (positive)</td></tr>
+          <tr><td>little</td><td>uncountable</td><td>little hope (negative)</td></tr>
+          <tr><td>a little</td><td>uncountable</td><td>a little hope (positive)</td></tr>
+        </table></div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end #pos -->
+</section>
+<!-- END PARTS OF SPEECH -->
+
+<!-- ======== 2. TENSES ======== -->
+<div class="sec-wrap alt" id="tenses">
+<div class="sec-inner">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-clock"></i> Complete Guide</span>
+    <h2 class="sec-title">All 12 Tenses</h2>
+    <p class="sec-sub">Master every tense with structure, formula, positive, negative, interrogative sentences and examples.</p>
+  </div>
+  <div class="tab-nav" id="tenseTabs">
+    <button class="tab-btn active" onclick="openTabG(event,'tense','present')">Present Tenses</button>
+    <button class="tab-btn" onclick="openTabG(event,'tense','past')">Past Tenses</button>
+    <button class="tab-btn" onclick="openTabG(event,'tense','future')">Future Tenses</button>
+    <button class="tab-btn" onclick="openTabG(event,'tense','chart')">Quick Chart</button>
+  </div>
+  <div class="tab-pane active" id="tense-present">
+    <div class="tbox"><div class="tbox-head"><span>Simple Present Tense</span></div><div class="tbox-body">
+      <div class="formula"><strong>(+)</strong> S + V1/Vs + O &nbsp;|&nbsp; <strong>(-)</strong> S + do/does not + V1 &nbsp;|&nbsp; <strong>(?)</strong> Do/Does + S + V1?</div>
+      <div class="g3">
+        <div><h5 style="color:var(--success);margin-bottom:.5rem"><span class="badge bp">+</span> Positive</h5><ul class="slist"><li>She <strong>reads</strong> books every day.</li><li>They <strong>play</strong> cricket on Sundays.</li><li>The sun <strong>rises</strong> in the east.</li></ul></div>
+        <div><h5 style="color:var(--danger);margin-bottom:.5rem"><span class="badge bn">-</span> Negative</h5><ul class="slist"><li>She <strong>does not read</strong> books.</li><li>They <strong>do not play</strong> cricket.</li><li>He <strong>does not like</strong> coffee.</li></ul></div>
+        <div><h5 style="color:var(--primary);margin-bottom:.5rem"><span class="badge bq">?</span> Interrogative</h5><ul class="slist"><li><strong>Does</strong> she read books?</li><li><strong>Do</strong> they play cricket?</li><li><strong>Does</strong> he like coffee?</li></ul></div>
+      </div>
+      <div class="ib tip"><strong>Uses:</strong> Habits, routines, universal truths, permanent states. <em>Signal words:</em> always, usually, often, never, every day/week</div>
+      <div class="ib warn"><strong>Common Mistake:</strong> He <u>go</u> to school daily. → He <strong>goes</strong> to school daily. (3rd person singular needs -s/es)</div>
+    </div></div>
+    <div class="tbox"><div class="tbox-head"><span>Present Continuous Tense</span></div><div class="tbox-body">
+      <div class="formula"><strong>(+)</strong> S + is/am/are + V-ing + O &nbsp;|&nbsp; <strong>(-)</strong> S + is/am/are + not + V-ing &nbsp;|&nbsp; <strong>(?)</strong> Is/Am/Are + S + V-ing?</div>
+      <div class="g3">
+        <div><h5 style="color:var(--success);margin-bottom:.5rem"><span class="badge bp">+</span> Positive</h5><ul class="slist"><li>She <strong>is reading</strong> now.</li><li>They <strong>are playing</strong> in the park.</li><li>I <strong>am writing</strong> a letter.</li></ul></div>
+        <div><h5 style="color:var(--danger);margin-bottom:.5rem"><span class="badge bn">-</span> Negative</h5><ul class="slist"><li>She <strong>is not reading</strong> now.</li><li>They <strong>are not playing</strong> outside.</li></ul></div>
+        <div><h5 style="color:var(--primary);margin-bottom:.5rem"><span class="badge bq">?</span> Interrogative</h5><ul class="slist"><li><strong>Is</strong> she reading a book?</li><li><strong>Are</strong> they playing?</li></ul></div>
+      </div>
+      <div class="ib tip"><strong>Uses:</strong> Actions happening right now, temporary situations, future plans. <em>Signal words:</em> now, at the moment, currently, right now, today</div>
+      <div class="ib warn"><strong>Stative verbs NOT used in continuous:</strong> know, believe, want, need, love, hate, see, hear, own, seem, contain, understand</div>
+    </div></div>
+    <div class="tbox"><div class="tbox-head"><span>Present Perfect Tense</span></div><div class="tbox-body">
+      <div class="formula"><strong>(+)</strong> S + has/have + V3 + O &nbsp;|&nbsp; <strong>(-)</strong> S + has/have + not + V3 &nbsp;|&nbsp; <strong>(?)</strong> Has/Have + S + V3?</div>
+      <div class="g3">
+        <div><h5 style="color:var(--success);margin-bottom:.5rem"><span class="badge bp">+</span> Positive</h5><ul class="slist"><li>She <strong>has written</strong> the report.</li><li>They <strong>have visited</strong> Paris.</li><li>I <strong>have just eaten</strong> lunch.</li></ul></div>
+        <div><h5 style="color:var(--danger);margin-bottom:.5rem"><span class="badge bn">-</span> Negative</h5><ul class="slist"><li>She <strong>has not written</strong> it.</li><li>I <strong>have not eaten</strong> yet.</li></ul></div>
+        <div><h5 style="color:var(--primary);margin-bottom:.5rem"><span class="badge bq">?</span> Interrogative</h5><ul class="slist"><li><strong>Has</strong> she written the report?</li><li><strong>Have</strong> you ever visited London?</li></ul></div>
+      </div>
+      <div class="ib tip"><strong>Uses:</strong> Past action with present relevance, life experience, recently completed actions. <em>Signal words:</em> just, already, yet, ever, never, recently, since, for, so far</div>
+    </div></div>
+    <div class="tbox"><div class="tbox-head"><span>Present Perfect Continuous Tense</span></div><div class="tbox-body">
+      <div class="formula"><strong>(+)</strong> S + has/have + been + V-ing + O &nbsp;|&nbsp; <strong>(?):</strong> Has/Have + S + been + V-ing + O?</div>
+      <div class="g3">
+        <div><h5 style="color:var(--success);margin-bottom:.5rem"><span class="badge bp">+</span> Positive</h5><ul class="slist"><li>She <strong>has been working</strong> since morning.</li><li>They <strong>have been playing</strong> for 2 hours.</li></ul></div>
+        <div><h5 style="color:var(--danger);margin-bottom:.5rem"><span class="badge bn">-</span> Negative</h5><ul class="slist"><li>She <strong>has not been working</strong> today.</li><li>He <strong>has not been feeling</strong> well.</li></ul></div>
+        <div><h5 style="color:var(--primary);margin-bottom:.5rem"><span class="badge bq">?</span> Interrogative</h5><ul class="slist"><li>How long <strong>have</strong> you been waiting?</li></ul></div>
+      </div>
+      <div class="ib tip"><strong>Uses:</strong> Action started in past and continuing to present, emphasizing duration. <em>Signal words:</em> since, for, all day, how long, lately, recently</div>
+    </div></div>
+  </div>
+  <div class="tab-pane" id="tense-past">
+    <div class="tbox"><div class="tbox-head"><span>Simple Past Tense</span></div><div class="tbox-body">
+      <div class="formula"><strong>(+)</strong> S + V2 + O &nbsp;|&nbsp; <strong>(-)</strong> S + did not + V1 + O &nbsp;|&nbsp; <strong>(?)</strong> Did + S + V1 + O?</div>
+      <div class="g3">
+        <div><h5 style="color:var(--success);margin-bottom:.5rem"><span class="badge bp">+</span> Positive</h5><ul class="slist"><li>She <strong>wrote</strong> a letter yesterday.</li><li>They <strong>played</strong> football last Sunday.</li><li>He <strong>went</strong> to school by bus.</li></ul></div>
+        <div><h5 style="color:var(--danger);margin-bottom:.5rem"><span class="badge bn">-</span> Negative</h5><ul class="slist"><li>She <strong>did not write</strong> a letter.</li><li>They <strong>did not play</strong> yesterday.</li></ul></div>
+        <div><h5 style="color:var(--primary);margin-bottom:.5rem"><span class="badge bq">?</span> Interrogative</h5><ul class="slist"><li><strong>Did</strong> she write a letter?</li><li><strong>Did</strong> they play football?</li></ul></div>
+      </div>
+      <div class="ib tip"><strong>Uses:</strong> Completed past actions at a specific time, sequence of events, past habits. <em>Signal words:</em> yesterday, last night/week, ago, in 1990, then, once</div>
+    </div></div>
+    <div class="tbox"><div class="tbox-head"><span>Past Continuous Tense</span></div><div class="tbox-body">
+      <div class="formula"><strong>(+)</strong> S + was/were + V-ing + O &nbsp;|&nbsp; <strong>(-)</strong> S + was/were + not + V-ing &nbsp;|&nbsp; <strong>(?)</strong> Was/Were + S + V-ing?</div>
+      <div class="g3">
+        <div><h5 style="color:var(--success);margin-bottom:.5rem"><span class="badge bp">+</span> Positive</h5><ul class="slist"><li>She <strong>was reading</strong> when he called.</li><li>They <strong>were playing</strong> at 5 p.m.</li><li>I <strong>was studying</strong> all evening.</li></ul></div>
+        <div><h5 style="color:var(--danger);margin-bottom:.5rem"><span class="badge bn">-</span> Negative</h5><ul class="slist"><li>She <strong>was not reading</strong> the book.</li><li>He <strong>was not sleeping</strong> properly.</li></ul></div>
+        <div><h5 style="color:var(--primary);margin-bottom:.5rem"><span class="badge bq">?</span> Interrogative</h5><ul class="slist"><li><strong>Was</strong> she reading?</li><li>What <strong>were</strong> you doing at 9 p.m.?</li></ul></div>
+      </div>
+      <div class="ib tip"><strong>Uses:</strong> Ongoing past action at a specific time, interrupted action (when/while). <em>Signal words:</em> at that time, when, while, as, all day yesterday</div>
+    </div></div>
+    <div class="tbox"><div class="tbox-head"><span>Past Perfect Tense</span></div><div class="tbox-body">
+      <div class="formula"><strong>(+)</strong> S + had + V3 + O &nbsp;|&nbsp; <strong>(-)</strong> S + had not + V3 &nbsp;|&nbsp; <strong>(?)</strong> Had + S + V3?</div>
+      <div class="g3">
+        <div><h5 style="color:var(--success);margin-bottom:.5rem"><span class="badge bp">+</span> Positive</h5><ul class="slist"><li>She <strong>had finished</strong> work before he arrived.</li><li>The train <strong>had left</strong> before we reached.</li></ul></div>
+        <div><h5 style="color:var(--danger);margin-bottom:.5rem"><span class="badge bn">-</span> Negative</h5><ul class="slist"><li>She <strong>had not finished</strong> the work.</li><li>They <strong>had not met</strong> before.</li></ul></div>
+        <div><h5 style="color:var(--primary);margin-bottom:.5rem"><span class="badge bq">?</span> Interrogative</h5><ul class="slist"><li><strong>Had</strong> she finished the work?</li><li><strong>Had</strong> he ever visited London?</li></ul></div>
+      </div>
+      <div class="ib tip"><strong>Uses:</strong> Action completed before another past action ("the earlier of two past events"). <em>Signal words:</em> before, after, already, by the time, when, once</div>
+    </div></div>
+    <div class="tbox"><div class="tbox-head"><span>Past Perfect Continuous Tense</span></div><div class="tbox-body">
+      <div class="formula"><strong>(+)</strong> S + had + been + V-ing + O &nbsp;|&nbsp; <strong>(?):</strong> Had + S + been + V-ing?</div>
+      <div class="g3">
+        <div><h5 style="color:var(--success);margin-bottom:.5rem"><span class="badge bp">+</span> Positive</h5><ul class="slist"><li>She <strong>had been working</strong> for 3 hours when he called.</li><li>They <strong>had been waiting</strong> for an hour.</li></ul></div>
+        <div><h5 style="color:var(--danger);margin-bottom:.5rem"><span class="badge bn">-</span> Negative</h5><ul class="slist"><li>She <strong>had not been sleeping</strong> well before the exam.</li></ul></div>
+        <div><h5 style="color:var(--primary);margin-bottom:.5rem"><span class="badge bq">?</span> Interrogative</h5><ul class="slist"><li>How long <strong>had</strong> he been studying?</li></ul></div>
+      </div>
+      <div class="ib tip"><strong>Uses:</strong> Continuous action up to a point in the past, emphasizing duration. <em>Signal words:</em> for, since, all day, when</div>
+    </div></div>
+  </div>
+  <div class="tab-pane" id="tense-future">
+    <div class="tbox"><div class="tbox-head"><span>Simple Future Tense</span></div><div class="tbox-body">
+      <div class="formula"><strong>(+)</strong> S + will + V1 + O &nbsp;|&nbsp; <strong>(-)</strong> S + will not (won't) + V1 &nbsp;|&nbsp; <strong>(?)</strong> Will + S + V1?</div>
+      <div class="g3">
+        <div><h5 style="color:var(--success);margin-bottom:.5rem"><span class="badge bp">+</span> Positive</h5><ul class="slist"><li>She <strong>will write</strong> the exam tomorrow.</li><li>They <strong>will visit</strong> us next week.</li><li>I <strong>will help</strong> you with this.</li></ul></div>
+        <div><h5 style="color:var(--danger);margin-bottom:.5rem"><span class="badge bn">-</span> Negative</h5><ul class="slist"><li>She <strong>will not write</strong> the exam.</li><li>He <strong>won't attend</strong> the meeting.</li></ul></div>
+        <div><h5 style="color:var(--primary);margin-bottom:.5rem"><span class="badge bq">?</span> Interrogative</h5><ul class="slist"><li><strong>Will</strong> she write the exam?</li><li><strong>Will</strong> you help me?</li></ul></div>
+      </div>
+      <div class="ib tip"><strong>Uses:</strong> Predictions, spontaneous decisions, promises, offers, future facts. <em>Signal words:</em> tomorrow, next week/month/year, soon, in future, one day</div>
+    </div></div>
+    <div class="tbox"><div class="tbox-head"><span>Future Continuous Tense</span></div><div class="tbox-body">
+      <div class="formula"><strong>(+)</strong> S + will + be + V-ing + O &nbsp;|&nbsp; <strong>(-)</strong> S + will not + be + V-ing &nbsp;|&nbsp; <strong>(?)</strong> Will + S + be + V-ing?</div>
+      <div class="g3">
+        <div><h5 style="color:var(--success);margin-bottom:.5rem"><span class="badge bp">+</span> Positive</h5><ul class="slist"><li>She <strong>will be working</strong> at 9 p.m.</li><li>I <strong>will be sleeping</strong> by midnight.</li><li>They <strong>will be travelling</strong> next week.</li></ul></div>
+        <div><h5 style="color:var(--danger);margin-bottom:.5rem"><span class="badge bn">-</span> Negative</h5><ul class="slist"><li>She <strong>will not be working</strong> tonight.</li></ul></div>
+        <div><h5 style="color:var(--primary);margin-bottom:.5rem"><span class="badge bq">?</span> Interrogative</h5><ul class="slist"><li><strong>Will</strong> she be working at 9?</li></ul></div>
+      </div>
+      <div class="ib tip"><strong>Uses:</strong> Ongoing action at a specific future time, planned events. <em>Signal words:</em> at this time tomorrow, at 8 p.m. tonight, this time next week</div>
+    </div></div>
+    <div class="tbox"><div class="tbox-head"><span>Future Perfect Tense</span></div><div class="tbox-body">
+      <div class="formula"><strong>(+)</strong> S + will + have + V3 + O &nbsp;|&nbsp; <strong>(-)</strong> S + will not + have + V3 &nbsp;|&nbsp; <strong>(?)</strong> Will + S + have + V3?</div>
+      <div class="g3">
+        <div><h5 style="color:var(--success);margin-bottom:.5rem"><span class="badge bp">+</span> Positive</h5><ul class="slist"><li>She <strong>will have finished</strong> the project by Friday.</li><li>They <strong>will have left</strong> before you arrive.</li></ul></div>
+        <div><h5 style="color:var(--danger);margin-bottom:.5rem"><span class="badge bn">-</span> Negative</h5><ul class="slist"><li>He <strong>won't have reached</strong> by noon.</li></ul></div>
+        <div><h5 style="color:var(--primary);margin-bottom:.5rem"><span class="badge bq">?</span> Interrogative</h5><ul class="slist"><li><strong>Will</strong> she have finished by Friday?</li></ul></div>
+      </div>
+      <div class="ib tip"><strong>Uses:</strong> Action completed before a specific future time. <em>Signal words:</em> by, by the time, before (+ future point)</div>
+    </div></div>
+    <div class="tbox"><div class="tbox-head"><span>Future Perfect Continuous Tense</span></div><div class="tbox-body">
+      <div class="formula"><strong>(+)</strong> S + will + have + been + V-ing + O &nbsp;|&nbsp; <strong>(-)</strong> S + will + not + have + been + V-ing &nbsp;|&nbsp; <strong>(?)</strong> Will + S + have + been + V-ing?</div>
+      <div class="g3">
+        <div><h5 style="color:var(--success);margin-bottom:.5rem"><span class="badge bp">+</span> Positive</h5><ul class="slist"><li>By 2025, she <strong>will have been teaching</strong> for 10 years.</li><li>I <strong>will have been waiting</strong> for 2 hours by 5 p.m.</li><li>By March, he <strong>will have been running</strong> for 3 months.</li></ul></div>
+        <div><h5 style="color:var(--danger);margin-bottom:.5rem"><span class="badge bn">-</span> Negative</h5><ul class="slist"><li>By then, she <strong>will not have been working</strong> long enough.</li><li>He <strong>won't have been studying</strong> for even a week.</li><li>They <strong>will not have been living</strong> here for long.</li></ul></div>
+        <div><h5 style="color:var(--primary);margin-bottom:.5rem"><span class="badge bq">?</span> Interrogative</h5><ul class="slist"><li><strong>Will</strong> she have been teaching for 10 years?</li><li>How long <strong>will</strong> he have been waiting?</li><li><strong>Will</strong> they have been living here long?</li></ul></div>
+      </div>
+      <div class="ib tip"><strong>Uses:</strong> Continuous action ongoing up to a specific future time, emphasizing duration. <em>Signal words:</em> for + time, by, by the time</div>
+    </div></div>
+  </div>
+  <div class="tab-pane" id="tense-chart">
+    <div class="tw"><table>
+      <tr><th>Tense</th><th>Formula</th><th>Signal Words</th><th>Example</th></tr>
+      <tr><td>Simple Present</td><td>S + V1/Vs</td><td>always, usually, every</td><td>She writes daily.</td></tr>
+      <tr><td>Present Continuous</td><td>S + is/am/are + V-ing</td><td>now, at the moment</td><td>She is writing now.</td></tr>
+      <tr><td>Present Perfect</td><td>S + has/have + V3</td><td>just, already, yet, ever</td><td>She has written it.</td></tr>
+      <tr><td>Present Perfect Cont.</td><td>S + has/have + been + V-ing</td><td>since, for, all day</td><td>She has been writing.</td></tr>
+      <tr><td>Simple Past</td><td>S + V2</td><td>yesterday, ago, last</td><td>She wrote yesterday.</td></tr>
+      <tr><td>Past Continuous</td><td>S + was/were + V-ing</td><td>when, while, at that time</td><td>She was writing when I called.</td></tr>
+      <tr><td>Past Perfect</td><td>S + had + V3</td><td>before, after, already, by</td><td>She had written before he came.</td></tr>
+      <tr><td>Past Perfect Cont.</td><td>S + had + been + V-ing</td><td>for, since, when</td><td>She had been writing for hours.</td></tr>
+      <tr><td>Simple Future</td><td>S + will + V1</td><td>tomorrow, next, soon</td><td>She will write tomorrow.</td></tr>
+      <tr><td>Future Continuous</td><td>S + will + be + V-ing</td><td>at this time tomorrow</td><td>She will be writing at 9.</td></tr>
+      <tr><td>Future Perfect</td><td>S + will + have + V3</td><td>by, by the time, before</td><td>She will have written by 5.</td></tr>
+      <tr><td>Future Perfect Cont.</td><td>S + will + have + been + V-ing</td><td>for + time, by</td><td>She will have been writing for 2 hrs.</td></tr>
+    </table></div>
+    <div class="ib tip" style="margin-top:1rem"><strong>Subject-Auxiliary Agreement:</strong> I → am/was/have | He/She/It → is/was/has | You/We/They → are/were/have</div>
+  </div>
+</div></div>
+
+<!-- ======== 3. ACTIVE & PASSIVE VOICE ======== -->
+<section id="voice"><div class="sec">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-exchange-alt"></i> Voice</span>
+    <h2 class="sec-title">Active &amp; Passive Voice</h2>
+    <p class="sec-sub">Transform sentences from active to passive voice across all tenses.</p>
+  </div>
+  <div class="g2">
+    <div class="card"><h3 style="color:var(--primary);margin-bottom:.75rem"><i class="fas fa-arrow-right"></i> Active Voice</h3>
+      <p style="font-size:.9rem;color:var(--text2);margin-bottom:.75rem">The subject performs the action.</p>
+      <div class="formula"><strong>Structure:</strong> Subject + Verb + Object</div>
+      <ul class="slist"><li>The cat caught the mouse.</li><li>She is writing a letter.</li><li>They have built the bridge.</li></ul>
+    </div>
+    <div class="card"><h3 style="color:var(--secondary);margin-bottom:.75rem"><i class="fas fa-arrow-left"></i> Passive Voice</h3>
+      <p style="font-size:.9rem;color:var(--text2);margin-bottom:.75rem">The object of active becomes subject; subject goes to end with "by".</p>
+      <div class="formula"><strong>Structure:</strong> Object + be (correct form) + V3 + by + Subject</div>
+      <ul class="slist"><li>The mouse was caught by the cat.</li><li>A letter is being written by her.</li><li>The bridge has been built by them.</li></ul>
+    </div>
+  </div>
+  <div class="tw" style="margin-top:1.5rem"><h4 style="margin-bottom:.75rem;color:var(--primary)">Passive Conversion Chart</h4>
+    <table>
+      <tr><th>Tense</th><th>Active</th><th>Passive</th></tr>
+      <tr><td>Simple Present</td><td>She writes a letter.</td><td>A letter is written by her.</td></tr>
+      <tr><td>Present Continuous</td><td>She is writing a letter.</td><td>A letter is being written by her.</td></tr>
+      <tr><td>Present Perfect</td><td>She has written a letter.</td><td>A letter has been written by her.</td></tr>
+      <tr><td>Simple Past</td><td>She wrote a letter.</td><td>A letter was written by her.</td></tr>
+      <tr><td>Past Continuous</td><td>She was writing a letter.</td><td>A letter was being written by her.</td></tr>
+      <tr><td>Past Perfect</td><td>She had written a letter.</td><td>A letter had been written by her.</td></tr>
+      <tr><td>Simple Future</td><td>She will write a letter.</td><td>A letter will be written by her.</td></tr>
+      <tr><td>Modal (can/must)</td><td>She can write a letter.</td><td>A letter can be written by her.</td></tr>
+    </table>
+  </div>
+  <div class="g2" style="margin-top:1.5rem">
+    <div class="ib tip"><strong>Pronoun Changes:</strong> I→me | we→us | he→him | she→her | they→them</div>
+    <div class="ib ok"><strong>When to Use Passive:</strong> When the doer is unknown ("The wallet was stolen."), unimportant, or in formal/scientific writing.</div>
+  </div>
+</div></section>
+
+<!-- ======== 4. DIRECT & INDIRECT SPEECH ======== -->
+<div class="sec-wrap alt" id="speech"><div class="sec-inner">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-comments"></i> Speech</span>
+    <h2 class="sec-title">Direct &amp; Indirect Speech</h2>
+    <p class="sec-sub">Master the rules for converting direct speech to reported (indirect) speech.</p>
+  </div>
+  <div class="g2">
+    <div class="card"><h3 style="color:var(--primary);margin-bottom:.75rem">Direct Speech</h3>
+      <div class="formula">He said, "I am happy."</div>
+      <ul class="slist"><li>She said, "I <em>am</em> going to school."</li><li>He said, "I <em>will help</em> you."</li></ul>
+    </div>
+    <div class="card"><h3 style="color:var(--secondary);margin-bottom:.75rem">Indirect Speech</h3>
+      <div class="formula">He said that he <em>was</em> happy.</div>
+      <ul class="slist"><li>She said that she <em>was</em> going to school.</li><li>He said that he <em>would help</em> me.</li></ul>
+    </div>
+  </div>
+  <div class="g2" style="margin-top:1.5rem">
+    <div><div class="tw"><h4 style="margin-bottom:.75rem;color:var(--primary)">Tense Back-shift Rules</h4>
+      <table>
+        <tr><th>Direct Speech</th><th>Indirect Speech</th></tr>
+        <tr><td>Simple Present</td><td>Simple Past</td></tr>
+        <tr><td>Present Continuous</td><td>Past Continuous</td></tr>
+        <tr><td>Present Perfect</td><td>Past Perfect</td></tr>
+        <tr><td>Simple Past</td><td>Past Perfect</td></tr>
+        <tr><td>will</td><td>would</td></tr>
+        <tr><td>can</td><td>could</td></tr>
+        <tr><td>may</td><td>might</td></tr>
+        <tr><td>must</td><td>had to</td></tr>
+      </table></div>
+    </div>
+    <div><div class="tw"><h4 style="margin-bottom:.75rem;color:var(--primary)">Time/Place Word Changes</h4>
+      <table>
+        <tr><th>Direct</th><th>Indirect</th></tr>
+        <tr><td>now</td><td>then</td></tr>
+        <tr><td>today</td><td>that day</td></tr>
+        <tr><td>yesterday</td><td>the day before</td></tr>
+        <tr><td>tomorrow</td><td>the next day</td></tr>
+        <tr><td>here</td><td>there</td></tr>
+        <tr><td>this/these</td><td>that/those</td></tr>
+        <tr><td>ago</td><td>before</td></tr>
+      </table></div>
+    </div>
+  </div>
+  <div class="g2" style="margin-top:1rem">
+    <div class="ib tip"><strong>Yes/No Questions → if/whether:</strong><br>Direct: "Are you coming?" → Indirect: He asked <strong>if</strong> I was coming.</div>
+    <div class="ib ok"><strong>Commands → to-infinitive:</strong><br>Direct: "Open the window." → Indirect: He told me <strong>to open</strong> the window.</div>
+  </div>
+</div></div>
+
+<!-- ======== 5. ARTICLES ======== -->
+<section id="articles"><div class="sec">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-font"></i> Articles</span>
+    <h2 class="sec-title">Articles: A, An, The &amp; Zero Article</h2>
+  </div>
+  <div class="g4">
+    <div class="card" style="border-top:4px solid #2563eb"><h3 style="color:#2563eb;margin-bottom:.5rem">A</h3><p style="font-size:.83rem;color:var(--text2)">Before consonant sounds. Singular countable nouns.</p><ul class="slist" style="font-size:.83rem"><li>a book, a car</li><li>a university (/j/ sound)</li><li>a one-way street (/w/ sound)</li></ul></div>
+    <div class="card" style="border-top:4px solid #7c3aed"><h3 style="color:#7c3aed;margin-bottom:.5rem">An</h3><p style="font-size:.83rem;color:var(--text2)">Before vowel sounds.</p><ul class="slist" style="font-size:.83rem"><li>an apple, an egg, an idea</li><li>an hour (silent h)</li><li>an MBA, an X-ray</li></ul></div>
+    <div class="card" style="border-top:4px solid #10b981"><h3 style="color:#10b981;margin-bottom:.5rem">The</h3><p style="font-size:.83rem;color:var(--text2)">Definite article — specific/known noun.</p><ul class="slist" style="font-size:.83rem"><li>the sun, the moon, the Earth</li><li>the Taj Mahal, the Ganges</li><li>the best, the first</li></ul></div>
+    <div class="card" style="border-top:4px solid #f59e0b"><h3 style="color:#f59e0b;margin-bottom:.5rem">Zero Article</h3><p style="font-size:.83rem;color:var(--text2)">No article used.</p><ul class="slist" style="font-size:.83rem"><li>proper nouns: India, Paris</li><li>languages: English, Hindi</li><li>sports: play cricket</li><li>meals: have breakfast</li></ul></div>
+  </div>
+  <div class="g2" style="margin-top:1.5rem">
+    <div class="ib warn"><strong>A vs An — Sound Rule (NOT spelling):</strong><br>• a university (/juː/ consonant sound)<br>• an hour (/aʊ/ — h is silent)<br>• an MLA (/em/ vowel sound)</div>
+    <div class="ib err"><strong>Common Mistakes:</strong><br>✗ I am a honest person → ✓ <strong>an</strong> honest person<br>✗ I play the cricket → ✓ I play <strong>cricket</strong> (sports take no article)<br>✗ The gold is expensive → ✓ <strong>Gold</strong> is expensive (general)</div>
+  </div>
+</div></section>
+
+<!-- ======== 6. SUBJECT-VERB AGREEMENT ======== -->
+<div class="sec-wrap alt" id="sva"><div class="sec-inner">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-equals"></i> Grammar Rule</span>
+    <h2 class="sec-title">Subject-Verb Agreement</h2>
+    <p class="sec-sub">The verb must agree with the subject in number and person.</p>
+  </div>
+  <div class="acc">
+    <div class="acc-item"><button class="acc-hdr open" onclick="toggleAcc(this)">Rule 1: Singular subject → Singular verb <i class="fas fa-chevron-down"></i></button><div class="acc-body open">A singular subject takes a singular verb.<br><em>The dog <strong>barks</strong>.</em> | <em>She <strong>plays</strong> tennis.</em></div></div>
+    <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Rule 2: Plural subject → Plural verb <i class="fas fa-chevron-down"></i></button><div class="acc-body"><em>The dogs <strong>bark</strong>.</em> | <em>Birds <strong>fly</strong> high.</em></div></div>
+    <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Rule 3: Two subjects joined by AND → Plural verb <i class="fas fa-chevron-down"></i></button><div class="acc-body">Ram and Shyam <strong>are</strong> friends. | Bread and butter <strong>are</strong> my breakfast.<br><strong>Exception:</strong> "The poet and singer <strong>is</strong> arriving." (same person)</div></div>
+    <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Rule 4: Either/or, Neither/nor — verb agrees with nearer subject <i class="fas fa-chevron-down"></i></button><div class="acc-body"><em>Either you or <strong>he is</strong> wrong.</em> | <em>Neither he nor <strong>they are</strong> responsible.</em></div></div>
+    <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Rule 5: Collective nouns <i class="fas fa-chevron-down"></i></button><div class="acc-body">As a unit → singular: "The team <strong>is</strong> ready." | Individually → plural: "The team <strong>are</strong> arguing."</div></div>
+    <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Rule 6: Everyone, each, nobody, either → singular <i class="fas fa-chevron-down"></i></button><div class="acc-body"><em>Everyone <strong>is</strong> invited.</em> | <em>Each of the students <strong>has</strong> a book.</em></div></div>
+    <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Rule 7: News, Mathematics, Physics → singular <i class="fas fa-chevron-down"></i></button><div class="acc-body"><em>The news <strong>is</strong> shocking.</em> | <em>Mathematics <strong>is</strong> my favourite subject.</em></div></div>
+    <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Rule 8: There is / There are — verb agrees with following noun <i class="fas fa-chevron-down"></i></button><div class="acc-body"><em>There <strong>is</strong> a book on the table.</em> | <em>There <strong>are</strong> many books on the shelf.</em></div></div>
+    <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Rule 9: Fractions/Percentages agree with noun after "of" <i class="fas fa-chevron-down"></i></button><div class="acc-body"><em>Half of the students <strong>are</strong> present.</em> | <em>Half of the bread <strong>is</strong> eaten.</em></div></div>
+    <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Rule 10: Amounts/distances as a whole → singular <i class="fas fa-chevron-down"></i></button><div class="acc-body"><em>Ten kilometres <strong>is</strong> a long distance.</em> | <em>Five hundred rupees <strong>is</strong> enough.</em></div></div>
+  </div>
+</div></div>
+
+<!-- ======== 7. MODALS ======== -->
+<section id="modals"><div class="sec">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-key"></i> Modals</span>
+    <h2 class="sec-title">Modal Auxiliary Verbs</h2>
+    <p class="sec-sub">Modals express ability, possibility, permission, obligation, and more. Always followed by V1 (base verb).</p>
+  </div>
+  <div class="g3">
+    <div class="card" style="border-left:4px solid #2563eb"><h3 style="color:#2563eb;margin-bottom:.5rem">Can / Could</h3>
+      <ul class="slist" style="font-size:.85rem"><li>She <em>can</em> speak five languages. (ability)</li><li><em>Can</em> I use your phone? (permission)</li><li>He <em>could</em> swim as a child. (past ability)</li><li><em>Could</em> you help me? (polite request)</li><li>It <em>could</em> rain. (possibility)</li></ul>
+    </div>
+    <div class="card" style="border-left:4px solid #7c3aed"><h3 style="color:#7c3aed;margin-bottom:.5rem">May / Might</h3>
+      <ul class="slist" style="font-size:.85rem"><li><em>May</em> I come in? (formal permission)</li><li>It <em>may</em> rain tonight. (~50% possibility)</li><li>She <em>might</em> come to the party. (~30%)</li><li>You <em>might</em> try a different approach. (suggestion)</li></ul>
+    </div>
+    <div class="card" style="border-left:4px solid #10b981"><h3 style="color:#10b981;margin-bottom:.5rem">Shall / Should</h3>
+      <ul class="slist" style="font-size:.85rem"><li><em>Shall</em> we start? (offer/suggestion)</li><li>You <em>should</em> exercise daily. (advice)</li><li>You <em>should</em> apologise. (moral obligation)</li><li>She <em>should</em> be here by now. (expectation)</li></ul>
+    </div>
+    <div class="card" style="border-left:4px solid #f59e0b"><h3 style="color:#f59e0b;margin-bottom:.5rem">Will / Would</h3>
+      <ul class="slist" style="font-size:.85rem"><li>I <em>will</em> call you tomorrow. (future)</li><li><em>Would</em> you like some tea? (polite)</li><li>He <em>would</em> walk to school as a child. (past habit)</li><li>I <em>would</em> help if I could. (conditional)</li></ul>
+    </div>
+    <div class="card" style="border-left:4px solid #ef4444"><h3 style="color:#ef4444;margin-bottom:.5rem">Must / Ought To</h3>
+      <ul class="slist" style="font-size:.85rem"><li>You <em>must</em> wear a seatbelt. (strong obligation)</li><li>She <em>must</em> be very tired. (deduction)</li><li>You <em>must not</em> smoke here. (prohibition)</li><li>You <em>ought to</em> respect your elders. (moral duty)</li></ul>
+    </div>
+    <div class="card" style="border-left:4px solid #06b6d4"><h3 style="color:#06b6d4;margin-bottom:.5rem">Need / Used To / Dare</h3>
+      <ul class="slist" style="font-size:.85rem"><li>You <em>needn't</em> shout; I can hear. (not necessary)</li><li>He <em>used to</em> smoke, but he quit. (past habit)</li><li><em>Dare</em> you challenge me? (challenge)</li><li>She <em>needs to</em> see a doctor. (necessity)</li></ul>
+    </div>
+  </div>
+</div></section>
+
+<!-- ======== 8. SENTENCE TYPES ======== -->
+<div class="sec-wrap alt" id="sentences"><div class="sec-inner">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-align-left"></i> Sentences</span>
+    <h2 class="sec-title">Types of Sentences</h2>
+    <p class="sec-sub">Sentences are classified based on their function and structure.</p>
+  </div>
+  <div class="g3">
+    <div class="card" style="border-top:4px solid #2563eb"><h3 style="color:#2563eb;margin-bottom:.5rem">Assertive (Declarative)</h3><p style="font-size:.85rem;color:var(--text2)">States a fact or opinion. Ends with full stop.</p><ul class="slist" style="font-size:.85rem"><li>The Earth is round.</li><li>She went to school yesterday.</li><li>I love reading books.</li></ul></div>
+    <div class="card" style="border-top:4px solid #7c3aed"><h3 style="color:#7c3aed;margin-bottom:.5rem">Interrogative</h3><p style="font-size:.85rem;color:var(--text2)">Asks a question. Ends with question mark.</p><ul class="slist" style="font-size:.85rem"><li>Where do you live?</li><li>Have you eaten?</li><li>Is she coming tomorrow?</li></ul></div>
+    <div class="card" style="border-top:4px solid #10b981"><h3 style="color:#10b981;margin-bottom:.5rem">Imperative</h3><p style="font-size:.85rem;color:var(--text2)">Command, request, advice. Subject "you" implied.</p><ul class="slist" style="font-size:.85rem"><li>Close the door.</li><li>Please sit down.</li><li>Do not touch the wire.</li></ul></div>
+    <div class="card" style="border-top:4px solid #ef4444"><h3 style="color:#ef4444;margin-bottom:.5rem">Exclamatory</h3><p style="font-size:.85rem;color:var(--text2)">Expresses strong emotion. Ends with exclamation mark.</p><ul class="slist" style="font-size:.85rem"><li>What a beautiful sunset!</li><li>How clever she is!</li><li>What nonsense!</li></ul></div>
+    <div class="card" style="border-top:4px solid #f59e0b"><h3 style="color:#f59e0b;margin-bottom:.5rem">Optative</h3><p style="font-size:.85rem;color:var(--text2)">Expresses a wish, prayer, or desire.</p><ul class="slist" style="font-size:.85rem"><li>May you live long!</li><li>May God bless you!</li><li>Long live the king!</li></ul></div>
+  </div>
+</div></div>
+
+<!-- ======== 9. CLAUSES & PHRASES ======== -->
+<section id="clauses"><div class="sec">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-sitemap"></i> Clauses &amp; Phrases</span>
+    <h2 class="sec-title">Clauses &amp; Phrases</h2>
+  </div>
+  <h3 style="color:var(--primary);margin-bottom:1rem">Clauses</h3>
+  <div class="g3" style="margin-bottom:2rem">
+    <div class="card" style="border-top:4px solid #2563eb"><h3 style="color:#2563eb;margin-bottom:.5rem">Noun Clause</h3><p style="font-size:.85rem;color:var(--text2);margin-bottom:.5rem">Acts as a noun. Begins with: that, what, who, whether, how, why.</p><ul class="slist" style="font-size:.83rem"><li><em>What she said</em> surprised everyone. (Subject)</li><li>I know <em>that she is honest</em>. (Object)</li><li>The fact is <em>that he lied</em>. (Complement)</li></ul></div>
+    <div class="card" style="border-top:4px solid #7c3aed"><h3 style="color:#7c3aed;margin-bottom:.5rem">Adjective Clause</h3><p style="font-size:.85rem;color:var(--text2);margin-bottom:.5rem">Modifies a noun. Begins with: who, whom, whose, which, that.</p><ul class="slist" style="font-size:.83rem"><li>The man <em>who called you</em> is my uncle.</li><li>The book <em>that I read</em> was interesting.</li><li>The girl <em>whose bag was stolen</em> is crying.</li></ul></div>
+    <div class="card" style="border-top:4px solid #10b981"><h3 style="color:#10b981;margin-bottom:.5rem">Adverb Clause</h3><p style="font-size:.85rem;color:var(--text2);margin-bottom:.5rem">Modifies a verb. Tells when, where, why, how, condition.</p><ul class="slist" style="font-size:.83rem"><li>She left <em>before he arrived</em>. (time)</li><li>He failed <em>because he was lazy</em>. (reason)</li><li>I'll help you <em>if I am free</em>. (condition)</li></ul></div>
+  </div>
+  <h3 style="color:var(--primary);margin-bottom:1rem" id="phrases">Phrases</h3>
+  <div class="g4">
+    <div class="card" style="border-top:4px solid #2563eb"><h3 style="color:#2563eb;font-size:.95rem;margin-bottom:.5rem">Noun Phrase</h3><ul class="slist" style="font-size:.83rem"><li><em>The tall man in blue</em> is my father.</li><li>I love <em>reading mystery novels</em>.</li></ul></div>
+    <div class="card" style="border-top:4px solid #7c3aed"><h3 style="color:#7c3aed;font-size:.95rem;margin-bottom:.5rem">Verb Phrase</h3><ul class="slist" style="font-size:.83rem"><li>She <em>has been sleeping</em> for hours.</li><li>He <em>will have finished</em> by noon.</li></ul></div>
+    <div class="card" style="border-top:4px solid #10b981"><h3 style="color:#10b981;font-size:.95rem;margin-bottom:.5rem">Adjective Phrase</h3><ul class="slist" style="font-size:.83rem"><li>The girl <em>with golden hair</em> is beautiful.</li><li>A man <em>of great courage</em> stood up.</li></ul></div>
+    <div class="card" style="border-top:4px solid #f59e0b"><h3 style="color:#f59e0b;font-size:.95rem;margin-bottom:.5rem">Adverb Phrase</h3><ul class="slist" style="font-size:.83rem"><li>She speaks <em>in a soft voice</em>.</li><li>He arrived <em>at the crack of dawn</em>.</li></ul></div>
+  </div>
+</div></section>
+
+<!-- ======== 10. CONDITIONALS ======== -->
+<div class="sec-wrap alt" id="conditionals"><div class="sec-inner">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-code-branch"></i> Conditionals</span>
+    <h2 class="sec-title">Conditional Sentences</h2>
+    <p class="sec-sub">Conditional sentences express "if" situations and their results.</p>
+  </div>
+  <div class="g2">
+    <div class="tbox"><div class="tbox-head" style="background:linear-gradient(135deg,#064e3b,#10b981)"><span>Zero Conditional — General Truths</span></div><div class="tbox-body">
+      <div class="formula">If + Simple Present, Simple Present</div>
+      <ul class="slist" style="font-size:.88rem"><li>If you heat water to 100°C, it <em>boils</em>.</li><li>If you don't eat, you <em>get</em> hungry.</li><li>Plants die if they don't <em>get</em> water.</li></ul>
+    </div></div>
+    <div class="tbox"><div class="tbox-head" style="background:linear-gradient(135deg,#1e3a8a,#2563eb)"><span>First Conditional — Real / Likely Future</span></div><div class="tbox-body">
+      <div class="formula">If + Simple Present, will + V1</div>
+      <ul class="slist" style="font-size:.88rem"><li>If it rains, I <em>will</em> stay home.</li><li>If you study hard, you <em>will</em> pass.</li><li>She <em>will</em> be happy if you call her.</li></ul>
+    </div></div>
+    <div class="tbox"><div class="tbox-head" style="background:linear-gradient(135deg,#581c87,#7c3aed)"><span>Second Conditional — Unreal / Hypothetical Present</span></div><div class="tbox-body">
+      <div class="formula">If + Simple Past, would + V1</div>
+      <ul class="slist" style="font-size:.88rem"><li>If I were rich, I <em>would</em> travel the world.</li><li>If she knew, she <em>would</em> tell you.</li></ul>
+      <div class="ib warn" style="font-size:.82rem">Use "were" for all persons: If I <strong>were</strong>..., If he <strong>were</strong>...</div>
+    </div></div>
+    <div class="tbox"><div class="tbox-head" style="background:linear-gradient(135deg,#7f1d1d,#ef4444)"><span>Third Conditional — Unreal / Hypothetical Past</span></div><div class="tbox-body">
+      <div class="formula">If + Past Perfect, would have + V3</div>
+      <ul class="slist" style="font-size:.88rem"><li>If I <em>had studied</em>, I <em>would have passed</em>.</li><li>If she <em>had known</em>, she <em>would have helped</em>.</li></ul>
+    </div></div>
+  </div>
+</div></div>
+
+<!-- ======== 11. VOCABULARY BUILDER ======== -->
+<section id="vocabulary"><div class="sec">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-spell-check"></i> Vocabulary</span>
+    <h2 class="sec-title">Vocabulary Builder — 1000+ Words</h2>
+    <p class="sec-sub">Build your word power with meanings and usage examples. Search or filter alphabetically.</p>
+  </div>
+  <div class="search-row"><input class="sinput" id="vocabSearch" type="text" placeholder="Search a word..." oninput="filterVocab()"><button class="sbtn" onclick="filterVocab()"><i class="fas fa-search"></i></button></div>
+  <div class="alpha" id="vocabAlpha"></div>
+  <div class="wgrid" id="vocabGrid"></div>
+</div></section>
+
+<!-- ======== 12. SYNONYMS ======== -->
+<div class="sec-wrap alt" id="synonyms"><div class="sec-inner">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-equals"></i> Synonyms</span>
+    <h2 class="sec-title">Synonyms — 500+ Words</h2>
+    <p class="sec-sub">Words with similar meanings. Search or browse alphabetically.</p>
+  </div>
+  <div class="search-row"><input class="sinput" id="synSearch" type="text" placeholder="Search synonym..." oninput="filterSyn()"><button class="sbtn" onclick="filterSyn()"><i class="fas fa-search"></i></button></div>
+  <div class="alpha" id="synAlpha"></div>
+  <div class="wgrid" id="synGrid"></div>
+</div></div>
+
+<!-- ======== 13. ANTONYMS ======== -->
+<section id="antonyms"><div class="sec">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-not-equal"></i> Antonyms</span>
+    <h2 class="sec-title">Antonyms — 500+ Words</h2>
+    <p class="sec-sub">Words with opposite meanings. Search or browse alphabetically.</p>
+  </div>
+  <div class="search-row"><input class="sinput" id="antSearch" type="text" placeholder="Search antonym..." oninput="filterAnt()"><button class="sbtn" onclick="filterAnt()"><i class="fas fa-search"></i></button></div>
+  <div class="alpha" id="antAlpha"></div>
+  <div class="wgrid" id="antGrid"></div>
+</div></section>
+
+<!-- ======== 14. IDIOMS & PHRASES ======== -->
+<div class="sec-wrap alt" id="idioms"><div class="sec-inner">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-quote-left"></i> Idioms</span>
+    <h2 class="sec-title">Idioms &amp; Phrases</h2>
+    <p class="sec-sub">Common English idioms with meanings and example sentences.</p>
+  </div>
+  <div class="search-row"><input class="sinput" id="idiomSearch" type="text" placeholder="Search idiom..." oninput="filterIdioms()"><button class="sbtn" onclick="filterIdioms()"><i class="fas fa-search"></i></button></div>
+  <div class="g3" id="idiomGrid"></div>
+</div></div>
+
+<!-- ======== 15. PHRASAL VERBS ======== -->
+<section id="phrasal"><div class="sec">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-arrows-alt-h"></i> Phrasal Verbs</span>
+    <h2 class="sec-title">Phrasal Verbs</h2>
+    <p class="sec-sub">Verb + particle combinations with distinct meanings.</p>
+  </div>
+  <div class="search-row"><input class="sinput" id="phrasalSearch" type="text" placeholder="Search phrasal verb..." oninput="filterPhrasal()"><button class="sbtn" onclick="filterPhrasal()"><i class="fas fa-search"></i></button></div>
+  <div class="tw"><table id="phrasalTable">
+    <tr><th>Phrasal Verb</th><th>Meaning</th><th>Example</th></tr>
+  </table></div>
+</div></section>
+
+<!-- ======== 16. ONE WORD SUBSTITUTIONS ======== -->
+<div class="sec-wrap alt" id="oneword"><div class="sec-inner">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-compress-arrows-alt"></i> One Word</span>
+    <h2 class="sec-title">One Word Substitutions</h2>
+    <p class="sec-sub">Replace a group of words with a single precise word.</p>
+  </div>
+  <div class="search-row"><input class="sinput" id="owSearch" type="text" placeholder="Search..." oninput="filterOW()"><button class="sbtn" onclick="filterOW()"><i class="fas fa-search"></i></button></div>
+  <div class="tw"><table id="owTable">
+    <tr><th>Phrase/Description</th><th>One Word</th></tr>
+  </table></div>
+</div></div>
+
+<!-- ======== 17. COMMONLY CONFUSED WORDS ======== -->
+<section id="confused"><div class="sec">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-random"></i> Confused Words</span>
+    <h2 class="sec-title">Commonly Confused Words</h2>
+    <p class="sec-sub">Words that look or sound alike but have different meanings.</p>
+  </div>
+  <div id="confusedGrid"></div>
+</div></section>
+
+<!-- ======== 18. SPELLING RULES ======== -->
+<div class="sec-wrap alt" id="spelling"><div class="sec-inner">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-spell-check"></i> Spelling</span>
+    <h2 class="sec-title">Spelling Rules &amp; Common Mistakes</h2>
+  </div>
+  <div class="g2">
+    <div class="acc">
+      <div class="acc-item"><button class="acc-hdr open" onclick="toggleAcc(this)">Rule 1: i before e except after c <i class="fas fa-chevron-down"></i></button><div class="acc-body open">Write <em>ie</em> in most words: believe, achieve, piece, field, friend.<br>Write <em>ei</em> after c: receive, perceive, ceiling, deceit.<br><strong>Exceptions:</strong> weird, seize, either, neither, height, leisure, foreign</div></div>
+      <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Rule 2: Drop silent 'e' before vowel suffixes <i class="fas fa-chevron-down"></i></button><div class="acc-body">hope → hoping | love → loving | write → writing<br>But keep 'e' before consonant suffix: hope → hopeful | love → lovely</div></div>
+      <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Rule 3: Double the consonant — 1-1-1 rule <i class="fas fa-chevron-down"></i></button><div class="acc-body">1 syllable + 1 vowel + 1 consonant → double consonant before vowel suffix:<br>run → running | sit → sitting | hop → hopped | big → bigger</div></div>
+      <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Rule 4: Change y to i before suffixes <i class="fas fa-chevron-down"></i></button><div class="acc-body">happy → happiness | study → studied | cry → cried<br>But keep y before -ing: study → studying | cry → crying</div></div>
+      <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Rule 5: Plural rules <i class="fas fa-chevron-down"></i></button><div class="acc-body">• Add -s: book→books, pen→pens<br>• Add -es (s, x, z, ch, sh): box→boxes, watch→watches<br>• -f/-fe → -ves: leaf→leaves, wife→wives<br>• Irregular: child→children, tooth→teeth, mouse→mice</div></div>
+    </div>
+    <div>
+      <h4 style="color:var(--primary);margin-bottom:1rem">Commonly Misspelled Words</h4>
+      <div class="tw"><table>
+        <tr><th>Wrong</th><th>Correct</th></tr>
+        <tr><td>accomodate</td><td>accommodate</td></tr>
+        <tr><td>occured</td><td>occurred</td></tr>
+        <tr><td>recieve</td><td>receive</td></tr>
+        <tr><td>seperate</td><td>separate</td></tr>
+        <tr><td>definately</td><td>definitely</td></tr>
+        <tr><td>goverment</td><td>government</td></tr>
+        <tr><td>independance</td><td>independence</td></tr>
+        <tr><td>neccessary</td><td>necessary</td></tr>
+        <tr><td>priviledge</td><td>privilege</td></tr>
+        <tr><td>untill</td><td>until</td></tr>
+        <tr><td>tommorrow</td><td>tomorrow</td></tr>
+        <tr><td>wierd</td><td>weird</td></tr>
+        <tr><td>beleive</td><td>believe</td></tr>
+        <tr><td>grammer</td><td>grammar</td></tr>
+        <tr><td>calender</td><td>calendar</td></tr>
+      </table></div>
+    </div>
+  </div>
+</div></div>
+
+<!-- ======== 19. PUNCTUATION ======== -->
+<section id="punctuation"><div class="sec">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-paragraph"></i> Punctuation</span>
+    <h2 class="sec-title">Punctuation Marks</h2>
+    <p class="sec-sub">Correct punctuation gives your writing clarity, meaning, and rhythm.</p>
+  </div>
+  <div class="g3">
+    <div class="card"><h3 style="color:var(--primary)">. Full Stop</h3><p style="font-size:.85rem;color:var(--text2);margin:.4rem 0">Ends declarative and imperative sentences.</p><ul class="slist" style="font-size:.83rem"><li>She went to school.</li><li>Used in abbreviations: Mr., Dr., etc.</li><li>NOT after question/exclamation marks</li></ul></div>
+    <div class="card"><h3 style="color:var(--primary)">, Comma</h3><p style="font-size:.85rem;color:var(--text2);margin:.4rem 0">Separates items in a list; clauses; before conjunctions.</p><ul class="slist" style="font-size:.83rem"><li>I bought milk, bread, and eggs.</li><li>Although tired, she kept working.</li><li>He is tall, dark, and handsome.</li></ul></div>
+    <div class="card"><h3 style="color:var(--primary)">: Colon</h3><p style="font-size:.85rem;color:var(--text2);margin:.4rem 0">Introduces lists, explanations, or quotations.</p><ul class="slist" style="font-size:.83rem"><li>She has three pets: a dog, a cat, and a rabbit.</li><li>Remember one thing: honesty pays.</li></ul></div>
+    <div class="card"><h3 style="color:var(--primary)">; Semicolon</h3><p style="font-size:.85rem;color:var(--text2);margin:.4rem 0">Connects independent but related clauses; separates complex list items.</p><ul class="slist" style="font-size:.83rem"><li>She studied hard; she passed with honours.</li><li>We visited Paris, France; Rome, Italy; and Berlin, Germany.</li></ul></div>
+    <div class="card"><h3 style="color:var(--primary)">? Question Mark</h3><p style="font-size:.85rem;color:var(--text2);margin:.4rem 0">Ends direct questions.</p><ul class="slist" style="font-size:.83rem"><li>Where are you going?</li><li>Not used after indirect questions: He asked where I lived.</li></ul></div>
+    <div class="card"><h3 style="color:var(--primary)">! Exclamation Mark</h3><p style="font-size:.85rem;color:var(--text2);margin:.4rem 0">Expresses strong emotion, commands, or surprise.</p><ul class="slist" style="font-size:.83rem"><li>What a wonderful day!</li><li>Help! | Stop! | Hurray!</li></ul></div>
+    <div class="card"><h3 style="color:var(--primary)">" " Quotation Marks</h3><p style="font-size:.85rem;color:var(--text2);margin:.4rem 0">Enclose direct speech or quotations.</p><ul class="slist" style="font-size:.83rem"><li>He said, "I will be back."</li><li>The word "set" has many meanings.</li></ul></div>
+    <div class="card"><h3 style="color:var(--primary)">' Apostrophe</h3><p style="font-size:.85rem;color:var(--text2);margin:.4rem 0">Shows possession or contraction.</p><ul class="slist" style="font-size:.83rem"><li>Ravi's book (possession)</li><li>It's = It is | Don't = Do not</li><li>Its (possessive) — NO apostrophe</li></ul></div>
+    <div class="card"><h3 style="color:var(--primary)">- / — Hyphen &amp; Dash</h3><p style="font-size:.85rem;color:var(--text2);margin:.4rem 0">Hyphen joins compound words; dash sets off extra info.</p><ul class="slist" style="font-size:.83rem"><li>well-known, mother-in-law (hyphen)</li><li>She left early — without a word. (dash)</li></ul></div>
+  </div>
+</div></section>
+
+<!-- ======== 20. WRITING SKILLS ======== -->
+<div class="sec-wrap alt" id="writing"><div class="sec-inner">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-pen-nib"></i> Writing</span>
+    <h2 class="sec-title">Writing Skills</h2>
+    <p class="sec-sub">Master different types of writing for school, work, and exams.</p>
+  </div>
+  <div class="g3">
+    <div class="writing-card"><div class="wc-head"><i class="fas fa-file-alt"></i> Essay Writing</div><div class="wc-body">
+      <strong>Structure:</strong><ol class="nlist"><li><strong>Introduction</strong> — Hook + Thesis statement</li><li><strong>Body Para 1</strong> — Main point + Evidence + Example</li><li><strong>Body Para 2</strong> — Second point + Support</li><li><strong>Body Para 3</strong> — Third point + Analysis</li><li><strong>Conclusion</strong> — Restate thesis + Summary + Closing thought</li></ol>
+      <div class="ib tip" style="margin-top:.75rem;font-size:.83rem"><strong>Types:</strong> Descriptive | Narrative | Expository | Persuasive/Argumentative</div>
+    </div></div>
+    <div class="writing-card"><div class="wc-head"><i class="fas fa-envelope"></i> Letter Writing</div><div class="wc-body">
+      <strong>Formal Letter Format:</strong><ol class="nlist"><li>Sender's address &amp; date</li><li>Receiver's name, designation &amp; address</li><li>Subject line</li><li>Salutation (Dear Sir/Madam)</li><li>Body — Opening, Main content, Closing</li><li>Complimentary close (Yours sincerely/faithfully)</li><li>Signature &amp; name</li></ol>
+      <div class="ib tip" style="font-size:.83rem"><strong>Yours sincerely</strong> — when you know the name<br><strong>Yours faithfully</strong> — when you don't know the name</div>
+    </div></div>
+    <div class="writing-card"><div class="wc-head"><i class="fas fa-envelope-open-text"></i> Email Writing</div><div class="wc-body">
+      <strong>Format:</strong><ul class="slist"><li><strong>To:</strong> recipient's email</li><li><strong>Subject:</strong> clear and concise</li><li><strong>Salutation:</strong> Dear Mr./Ms. [Name]</li><li><strong>Opening:</strong> state the purpose</li><li><strong>Body:</strong> details, request, or information</li><li><strong>Closing:</strong> Thank you / Regards</li><li><strong>Signature</strong></li></ul>
+      <div class="ib tip" style="font-size:.83rem">Keep emails short, clear, and professional. Use bullet points for multiple points.</div>
+    </div></div>
+    <div class="writing-card"><div class="wc-head"><i class="fas fa-chart-bar"></i> Report Writing</div><div class="wc-body">
+      <strong>Structure:</strong><ol class="nlist"><li>Title / Heading</li><li>By: [Name], Date</li><li>Introduction / Background</li><li>Findings / Observations</li><li>Analysis / Discussion</li><li>Conclusion &amp; Recommendations</li></ol>
+      <div class="ib tip" style="font-size:.83rem">Written in third person, formal tone, past tense. Subheadings help organise content.</div>
+    </div></div>
+    <div class="writing-card"><div class="wc-head"><i class="fas fa-book-open"></i> Story Writing</div><div class="wc-body">
+      <strong>Elements of a Good Story:</strong><ul class="slist"><li><strong>Setting</strong> — When and where it happens</li><li><strong>Characters</strong> — Who is involved</li><li><strong>Plot</strong> — Beginning, conflict, climax, resolution</li><li><strong>Theme</strong> — Central message or moral</li><li><strong>Narrative voice</strong> — First or third person</li></ul>
+      <div class="ib tip" style="font-size:.83rem">Use vivid descriptions, dialogue, and show-don't-tell techniques.</div>
+    </div></div>
+    <div class="writing-card"><div class="wc-head"><i class="fas fa-bell"></i> Notice Writing</div><div class="wc-body">
+      <strong>Format:</strong><ol class="nlist"><li><strong>Name of Institution</strong> (School/Club/Society)</li><li><strong>NOTICE</strong> (heading in capitals)</li><li><strong>Date</strong></li><li><strong>Title/Subject</strong> of the notice</li><li><strong>Body</strong> — Who, What, When, Where, Why</li><li><strong>Signature</strong> — Name and Designation</li></ol>
+      <div class="ib tip" style="font-size:.83rem">Notices must be brief, factual, and written in third person. Word limit: 50–80 words. Use a box format in exams.</div>
+    </div></div>
+    <div class="writing-card"><div class="wc-head"><i class="fas fa-paragraph"></i> Paragraph Writing</div><div class="wc-body">
+      <strong>Structure of a Good Paragraph:</strong><ol class="nlist"><li><strong>Topic Sentence</strong> — States the main idea</li><li><strong>Supporting Sentences</strong> — Facts, examples, details</li><li><strong>Clincher/Concluding Sentence</strong> — Summarises or reinforces the idea</li></ol>
+      <div class="ib tip" style="font-size:.83rem"><strong>Key qualities:</strong> Unity (one main idea), Coherence (logical flow), Adequate development (enough detail). Transition words: firstly, moreover, however, therefore, in conclusion.</div>
+    </div></div>
+    <div class="writing-card"><div class="wc-head"><i class="fas fa-compress-alt"></i> Summary / Précis Writing</div><div class="wc-body">
+      <strong>Steps:</strong><ol class="nlist"><li>Read the passage carefully (2–3 times)</li><li>Identify the main points (ignore examples/repetitions)</li><li>Write in your own words</li><li>Use past tense, third person, indirect speech</li><li>Length: ⅓ of original passage</li><li>Give a suitable title</li></ol>
+      <div class="ib tip" style="font-size:.83rem">A précis must be compact, complete, and clear. Do NOT add your own opinions.</div>
+    </div></div>
+  </div>
+</div></div>
+
+<!-- ======== 21. READING COMPREHENSION ======== -->
+<section id="comprehension"><div class="sec">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-book-reader"></i> Comprehension</span>
+    <h2 class="sec-title">Reading Comprehension</h2>
+    <p class="sec-sub">Practice reading comprehension with passages, questions, and detailed answers.</p>
+  </div>
+  <div class="tab-nav" id="compTabs">
+    <button class="tab-btn active" onclick="openTab(event,'comprehension','pass1')">Passage 1</button>
+    <button class="tab-btn" onclick="openTab(event,'comprehension','pass2')">Passage 2</button>
+    <button class="tab-btn" onclick="openTab(event,'comprehension','pass3')">Passage 3</button>
+  </div>
+  <div class="tab-pane active" id="comprehension-pass1">
+    <div class="passage-box"><strong>The Importance of Trees</strong><br><br>Trees are the lungs of the Earth. They absorb carbon dioxide from the atmosphere and release oxygen, making life possible. A single tree can provide enough oxygen for two human beings to breathe for a whole year. Trees also regulate the climate by absorbing heat and releasing water vapour through a process called transpiration. Forests cover about 31% of the Earth's surface and are home to more than 80% of the world's terrestrial biodiversity. However, deforestation — the large-scale cutting of trees — poses a serious threat. Every year, an area of forest equivalent to the size of Portugal is destroyed. This not only reduces oxygen levels but also leads to soil erosion, flooding, loss of wildlife habitats, and accelerated climate change. Planting trees, therefore, is not just an environmental act but a survival strategy for humanity.</div>
+    <h4 style="color:var(--primary);margin-bottom:1rem">Questions &amp; Answers</h4>
+    <div class="acc">
+      <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Q1. What do trees absorb and release? <i class="fas fa-chevron-down"></i></button><div class="acc-body"><strong>Answer:</strong> Trees absorb <em>carbon dioxide</em> from the atmosphere and release <em>oxygen</em>, making life possible on Earth.</div></div>
+      <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Q2. What percentage of the Earth's surface do forests cover? <i class="fas fa-chevron-down"></i></button><div class="acc-body"><strong>Answer:</strong> Forests cover about <em>31%</em> of the Earth's surface.</div></div>
+      <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Q3. What is deforestation and what are its effects? <i class="fas fa-chevron-down"></i></button><div class="acc-body"><strong>Answer:</strong> Deforestation is the large-scale cutting of trees. Its effects include: reduced oxygen levels, soil erosion, flooding, loss of wildlife habitats, and accelerated climate change.</div></div>
+      <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Q4. Find a word from the passage that means "the process by which plants release water vapour". <i class="fas fa-chevron-down"></i></button><div class="acc-body"><strong>Answer:</strong> <em>Transpiration</em></div></div>
+      <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Q5. Give a suitable title to this passage. <i class="fas fa-chevron-down"></i></button><div class="acc-body"><strong>Answer:</strong> "Trees — The Lifeline of Earth" or "Save Trees, Save Life" or "The Importance of Forests".</div></div>
+    </div>
+  </div>
+  <div class="tab-pane" id="comprehension-pass2">
+    <div class="passage-box"><strong>The Power of Habit</strong><br><br>Habits are the invisible architecture of daily life. Researchers estimate that 40 to 45 percent of what we do every day feels like a decision, but it is actually a habit. The brain loves habits because they save energy — once a behaviour becomes automatic, the brain can focus on other tasks. Habits form through a three-step loop: a cue (a trigger that tells the brain to go into automatic mode), a routine (the behaviour itself), and a reward (which tells the brain whether this loop is worth remembering for the future). Understanding this loop is the key to changing habits. To break a bad habit, you must keep the old cue and reward but insert a new routine. For example, if stress (cue) leads to eating junk food (routine) for the pleasure it brings (reward), you can replace junk food with a walk or meditation while keeping the same cue and reward. Building good habits is not about willpower — it is about designing your environment.</div>
+    <h4 style="color:var(--primary);margin-bottom:1rem">Questions &amp; Answers</h4>
+    <div class="acc">
+      <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Q1. What percentage of our daily actions are actually habits? <i class="fas fa-chevron-down"></i></button><div class="acc-body"><strong>Answer:</strong> Researchers estimate that <em>40 to 45 percent</em> of what we do every day is actually habit, though it feels like a decision.</div></div>
+      <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Q2. Explain the three-step habit loop. <i class="fas fa-chevron-down"></i></button><div class="acc-body"><strong>Answer:</strong> The three steps are: (1) <em>Cue</em> — a trigger that starts automatic behaviour; (2) <em>Routine</em> — the behaviour itself; (3) <em>Reward</em> — what reinforces the loop in the brain.</div></div>
+      <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Q3. How can a bad habit be changed according to the passage? <i class="fas fa-chevron-down"></i></button><div class="acc-body"><strong>Answer:</strong> To change a bad habit, keep the old cue and reward but replace the routine with a new, healthier behaviour.</div></div>
+      <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Q4. What does "invisible architecture" mean in the context of the passage? <i class="fas fa-chevron-down"></i></button><div class="acc-body"><strong>Answer:</strong> "Invisible architecture" is a metaphor meaning that habits invisibly structure and shape our daily lives, just as architecture gives shape to a building.</div></div>
+    </div>
+  </div>
+  <div class="tab-pane" id="comprehension-pass3">
+    <div class="passage-box"><strong>Mahatma Gandhi — Father of the Nation</strong><br><br>Mohandas Karamchand Gandhi, popularly known as Mahatma Gandhi, was born on 2 October 1869 in Porbandar, Gujarat. He was a lawyer, political leader, and social activist who became the foremost leader of India's independence movement against British rule. Gandhi's philosophy of non-violent resistance, which he called Satyagraha (truth-force), profoundly influenced movements for civil rights and freedom across the world. He led numerous campaigns including the Non-Cooperation Movement (1920), the Civil Disobedience Movement (1930), and the Quit India Movement (1942). His famous Dandi March of 1930, a 240-mile walk to the sea to protest against the British salt tax, became a symbol of peaceful resistance worldwide. Gandhi believed in the equality of all religions and worked tirelessly for the eradication of untouchability. On 30 January 1948, he was assassinated by Nathuram Godse. His birthday, 2 October, is celebrated as the International Day of Non-Violence by the United Nations.</div>
+    <h4 style="color:var(--primary);margin-bottom:1rem">Questions &amp; Answers</h4>
+    <div class="acc">
+      <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Q1. What was Gandhi's philosophy of non-violent resistance called? <i class="fas fa-chevron-down"></i></button><div class="acc-body"><strong>Answer:</strong> Gandhi's philosophy of non-violent resistance was called <em>Satyagraha</em>, meaning "truth-force".</div></div>
+      <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Q2. What was the significance of the Dandi March? <i class="fas fa-chevron-down"></i></button><div class="acc-body"><strong>Answer:</strong> The Dandi March was a 240-mile walk to the sea to protest against the British salt tax. It became a symbol of peaceful resistance worldwide.</div></div>
+      <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Q3. When is Gandhi's birthday celebrated internationally? <i class="fas fa-chevron-down"></i></button><div class="acc-body"><strong>Answer:</strong> Gandhi's birthday, 2 October, is celebrated as the <em>International Day of Non-Violence</em> by the United Nations.</div></div>
+      <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Q4. What does "Satyagraha" mean and why did Gandhi use it? <i class="fas fa-chevron-down"></i></button><div class="acc-body"><strong>Answer:</strong> "Satyagraha" means <em>truth-force</em> or soul-force. Gandhi used it as a philosophy of non-violent resistance to fight colonial rule and injustice — believing that truth and non-violence were more powerful than weapons.</div></div>
+      <div class="acc-item"><button class="acc-hdr" onclick="toggleAcc(this)">Q5. Mention any two values we learn from Mahatma Gandhi's life. <i class="fas fa-chevron-down"></i></button><div class="acc-body"><strong>Answer:</strong> (1) <em>Non-violence (Ahimsa)</em> — Gandhi proved that conflicts can be resolved without violence. (2) <em>Perseverance</em> — Despite being jailed and facing hardships, he never gave up the struggle for freedom. (3) <em>Religious tolerance</em> — He believed all religions are equal and promoted communal harmony.</div></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ======== 22. GRAMMAR QUIZ ======== -->
+<div class="sec-wrap alt" id="quiz"><div class="sec-inner">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-question-circle"></i> Quiz</span>
+    <h2 class="sec-title">Interactive Grammar Quiz</h2>
+    <p class="sec-sub">Test your knowledge with instant feedback, correct answers, and score tracking.</p>
+  </div>
+  <div class="tab-nav" id="quizTabs">
+    <button class="tab-btn active" onclick="loadQuiz('tenses',event)">Tenses Quiz</button>
+    <button class="tab-btn" onclick="loadQuiz('voice',event)">Voice Quiz</button>
+    <button class="tab-btn" onclick="loadQuiz('speech',event)">Speech Quiz</button>
+    <button class="tab-btn" onclick="loadQuiz('vocab',event)">Vocabulary Quiz</button>
+    <button class="tab-btn" onclick="loadQuiz('mixed',event)">Mixed Quiz</button>
+  </div>
+  <div class="quiz-wrap" id="quizContainer">
+    <div id="quizContent"></div>
+  </div>
+</div></div>
+
+<!-- ======== 23. PRACTICE TESTS ======== -->
+<section id="tests"><div class="sec">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-clipboard-list"></i> Practice Tests</span>
+    <h2 class="sec-title">Practice Tests</h2>
+    <p class="sec-sub">Full-length timed tests with result analysis for all levels.</p>
+  </div>
+  <div class="g4" style="margin-bottom:2rem">
+    <div class="card" style="text-align:center;border-top:4px solid #10b981"><h3 style="color:#10b981">Beginner</h3><p style="font-size:.85rem;color:var(--text2);margin:.5rem 0">20 questions | 20 minutes<br>Basic grammar concepts</p><button class="btn" style="background:#10b981;color:white;margin-top:.5rem" onclick="startTest('beginner')"><i class="fas fa-play"></i> Start</button></div>
+    <div class="card" style="text-align:center;border-top:4px solid #2563eb"><h3 style="color:#2563eb">Intermediate</h3><p style="font-size:.85rem;color:var(--text2);margin:.5rem 0">20 questions | 25 minutes<br>Tenses, voice, speech</p><button class="btn" style="background:#2563eb;color:white;margin-top:.5rem" onclick="startTest('intermediate')"><i class="fas fa-play"></i> Start</button></div>
+    <div class="card" style="text-align:center;border-top:4px solid #7c3aed"><h3 style="color:#7c3aed">Advanced</h3><p style="font-size:.85rem;color:var(--text2);margin:.5rem 0">20 questions | 30 minutes<br>Advanced grammar</p><button class="btn" style="background:#7c3aed;color:white;margin-top:.5rem" onclick="startTest('advanced')"><i class="fas fa-play"></i> Start</button></div>
+    <div class="card" style="text-align:center;border-top:4px solid #ef4444"><h3 style="color:#ef4444">Competitive</h3><p style="font-size:.85rem;color:var(--text2);margin:.5rem 0">20 questions | 20 minutes<br>Exam-level difficulty</p><button class="btn" style="background:#ef4444;color:white;margin-top:.5rem" onclick="startTest('competitive')"><i class="fas fa-play"></i> Start</button></div>
+  </div>
+  <div id="testContainer" style="display:none">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem;flex-wrap:wrap;gap:.5rem">
+      <h3 id="testTitle" style="color:var(--primary)"></h3>
+      <div class="timer-box" id="testTimer">00:00</div>
+    </div>
+    <div class="quiz-wrap" id="testContent"></div>
+  </div>
+</div></section>
+
+<!-- ======== 24. DICTIONARY ======== -->
+<div class="sec-wrap alt" id="dictionary"><div class="sec-inner">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-book"></i> Dictionary</span>
+    <h2 class="sec-title">Dictionary</h2>
+    <p class="sec-sub">Search for word meanings, pronunciation hints, and example sentences.</p>
+  </div>
+  <div class="search-row" style="max-width:500px;margin:0 auto 1.5rem">
+    <input class="sinput" id="dictInput" type="text" placeholder="Enter a word..." onkeydown="if(event.key==='Enter')searchDict()">
+    <button class="sbtn" onclick="searchDict()"><i class="fas fa-search"></i> Search</button>
+  </div>
+  <div id="dictResult" style="max-width:600px;margin:0 auto"></div>
+</div></div>
+
+<!-- ======== 25. QUICK REFERENCE ======== -->
+<section id="quickref"><div class="sec">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-table"></i> Quick Reference</span>
+    <h2 class="sec-title">Grammar Quick Reference Charts</h2>
+    <p class="sec-sub">Printable grammar tables for quick revision.</p>
+    <button class="btn" style="background:var(--primary);color:white;margin-top:1rem" onclick="printQuickRef()"><i class="fas fa-print"></i> Print / Save as PDF</button>
+  </div>
+  <div class="g2">
+    <div>
+      <h4 style="color:var(--primary);margin-bottom:.75rem">Irregular Verbs</h4>
+      <div class="tw"><table>
+        <tr><th>V1 (Base)</th><th>V2 (Past)</th><th>V3 (Past Participle)</th></tr>
+        <tr><td>be</td><td>was/were</td><td>been</td></tr>
+        <tr><td>begin</td><td>began</td><td>begun</td></tr>
+        <tr><td>break</td><td>broke</td><td>broken</td></tr>
+        <tr><td>bring</td><td>brought</td><td>brought</td></tr>
+        <tr><td>buy</td><td>bought</td><td>bought</td></tr>
+        <tr><td>choose</td><td>chose</td><td>chosen</td></tr>
+        <tr><td>come</td><td>came</td><td>come</td></tr>
+        <tr><td>do</td><td>did</td><td>done</td></tr>
+        <tr><td>drive</td><td>drove</td><td>driven</td></tr>
+        <tr><td>eat</td><td>ate</td><td>eaten</td></tr>
+        <tr><td>fall</td><td>fell</td><td>fallen</td></tr>
+        <tr><td>feel</td><td>felt</td><td>felt</td></tr>
+        <tr><td>find</td><td>found</td><td>found</td></tr>
+        <tr><td>fly</td><td>flew</td><td>flown</td></tr>
+        <tr><td>forget</td><td>forgot</td><td>forgotten</td></tr>
+        <tr><td>get</td><td>got</td><td>got/gotten</td></tr>
+        <tr><td>give</td><td>gave</td><td>given</td></tr>
+        <tr><td>go</td><td>went</td><td>gone</td></tr>
+        <tr><td>grow</td><td>grew</td><td>grown</td></tr>
+        <tr><td>have</td><td>had</td><td>had</td></tr>
+        <tr><td>know</td><td>knew</td><td>known</td></tr>
+        <tr><td>make</td><td>made</td><td>made</td></tr>
+        <tr><td>meet</td><td>met</td><td>met</td></tr>
+        <tr><td>read</td><td>read</td><td>read</td></tr>
+        <tr><td>run</td><td>ran</td><td>run</td></tr>
+        <tr><td>say</td><td>said</td><td>said</td></tr>
+        <tr><td>see</td><td>saw</td><td>seen</td></tr>
+        <tr><td>sell</td><td>sold</td><td>sold</td></tr>
+        <tr><td>send</td><td>sent</td><td>sent</td></tr>
+        <tr><td>speak</td><td>spoke</td><td>spoken</td></tr>
+        <tr><td>take</td><td>took</td><td>taken</td></tr>
+        <tr><td>teach</td><td>taught</td><td>taught</td></tr>
+        <tr><td>think</td><td>thought</td><td>thought</td></tr>
+        <tr><td>write</td><td>wrote</td><td>written</td></tr>
+      </table></div>
+    </div>
+    <div>
+      <h4 style="color:var(--primary);margin-bottom:.75rem">Pronoun Chart</h4>
+      <div class="tw"><table>
+        <tr><th>Person</th><th>Subject</th><th>Object</th><th>Possessive Adj</th><th>Possessive Pro</th><th>Reflexive</th></tr>
+        <tr><td>1st sing</td><td>I</td><td>me</td><td>my</td><td>mine</td><td>myself</td></tr>
+        <tr><td>2nd sing</td><td>you</td><td>you</td><td>your</td><td>yours</td><td>yourself</td></tr>
+        <tr><td>3rd sing (m)</td><td>he</td><td>him</td><td>his</td><td>his</td><td>himself</td></tr>
+        <tr><td>3rd sing (f)</td><td>she</td><td>her</td><td>her</td><td>hers</td><td>herself</td></tr>
+        <tr><td>3rd sing (n)</td><td>it</td><td>it</td><td>its</td><td>its</td><td>itself</td></tr>
+        <tr><td>1st pl</td><td>we</td><td>us</td><td>our</td><td>ours</td><td>ourselves</td></tr>
+        <tr><td>2nd pl</td><td>you</td><td>you</td><td>your</td><td>yours</td><td>yourselves</td></tr>
+        <tr><td>3rd pl</td><td>they</td><td>them</td><td>their</td><td>theirs</td><td>themselves</td></tr>
+      </table></div>
+      <h4 style="color:var(--primary);margin:1.5rem 0 .75rem">Prepositions of Time</h4>
+      <div class="tw"><table>
+        <tr><th>Preposition</th><th>Used With</th><th>Examples</th></tr>
+        <tr><td>at</td><td>specific time, festivals</td><td>at 5 o'clock, at Christmas</td></tr>
+        <tr><td>on</td><td>days, dates</td><td>on Monday, on 15 August</td></tr>
+        <tr><td>in</td><td>months, years, seasons, periods</td><td>in June, in 2024, in summer</td></tr>
+        <tr><td>since</td><td>point in time</td><td>since 2020, since Monday</td></tr>
+        <tr><td>for</td><td>duration</td><td>for two hours, for years</td></tr>
+        <tr><td>by</td><td>deadline</td><td>by Friday, by 5 p.m.</td></tr>
+        <tr><td>during</td><td>period/event</td><td>during the meeting, during summer</td></tr>
+        <tr><td>until/till</td><td>up to a time</td><td>until midnight, till Monday</td></tr>
+      </table></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ======== 26. PROGRESS DASHBOARD ======== -->
+<div class="sec-wrap alt" id="dashboard"><div class="sec-inner">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-chart-line"></i> Dashboard</span>
+    <h2 class="sec-title">Progress Dashboard</h2>
+    <p class="sec-sub">Track your learning journey, quiz scores, and overall progress.</p>
+  </div>
+  <div class="g4" style="margin-bottom:2rem">
+    <div class="dash-card"><div class="dash-num" id="dashLessons">0</div><div class="dash-label"><i class="fas fa-book"></i> Lessons Viewed</div></div>
+    <div class="dash-card"><div class="dash-num" id="dashQuizBest">0%</div><div class="dash-label"><i class="fas fa-star"></i> Best Quiz Score</div></div>
+    <div class="dash-card"><div class="dash-num" id="dashTestBest">0%</div><div class="dash-label"><i class="fas fa-trophy"></i> Best Test Score</div></div>
+    <div class="dash-card"><div class="dash-num" id="dashTotal">27</div><div class="dash-label"><i class="fas fa-list"></i> Total Topics</div></div>
+  </div>
+  <div style="margin-bottom:1.5rem">
+    <h4 style="color:var(--primary);margin-bottom:.75rem">Quiz Score History</h4>
+    <div id="scoreHistory" style="font-size:.9rem;color:var(--text2)">No quiz attempts yet. Take a quiz to see your scores here.</div>
+  </div>
+  <button class="btn" style="background:var(--danger);color:white" onclick="resetProgress()"><i class="fas fa-trash"></i> Reset Progress</button>
+</div></div>
+
+<!-- ======== FOOTER ======== -->
+<footer>
+  <div style="max-width:1000px;margin:0 auto">
+    <div style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--primary);margin-bottom:.5rem"><i class="fas fa-book-open"></i> English Grammar Mastery A to Z</div>
+    <p style="margin-bottom:1.5rem;font-size:.95rem">Complete English Grammar Learning Portal — For Students, Teachers &amp; Competitive Exam Aspirants</p>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;margin-bottom:1.5rem">
+      <a href="#pos" style="color:var(--primary);text-decoration:none;font-size:.82rem">Parts of Speech</a> •
+      <a href="#tenses" style="color:var(--primary);text-decoration:none;font-size:.82rem">Tenses</a> •
+      <a href="#voice" style="color:var(--primary);text-decoration:none;font-size:.82rem">Voice</a> •
+      <a href="#speech" style="color:var(--primary);text-decoration:none;font-size:.82rem">Speech</a> •
+      <a href="#articles" style="color:var(--primary);text-decoration:none;font-size:.82rem">Articles</a> •
+      <a href="#modals" style="color:var(--primary);text-decoration:none;font-size:.82rem">Modals</a> •
+      <a href="#vocabulary" style="color:var(--primary);text-decoration:none;font-size:.82rem">Vocabulary</a> •
+      <a href="#synonyms" style="color:var(--primary);text-decoration:none;font-size:.82rem">Synonyms</a> •
+      <a href="#antonyms" style="color:var(--primary);text-decoration:none;font-size:.82rem">Antonyms</a> •
+      <a href="#idioms" style="color:var(--primary);text-decoration:none;font-size:.82rem">Idioms</a> •
+      <a href="#quiz" style="color:var(--primary);text-decoration:none;font-size:.82rem">Quiz</a> •
+      <a href="#tests" style="color:var(--primary);text-decoration:none;font-size:.82rem">Tests</a> •
+      <a href="#dictionary" style="color:var(--primary);text-decoration:none;font-size:.82rem">Dictionary</a> •
+      <a href="#dashboard" style="color:var(--primary);text-decoration:none;font-size:.82rem">Dashboard</a>
+    </div>
+    <div style="border-top:1px solid var(--border);padding-top:1.5rem;margin-top:.5rem">
+      <div style="display:inline-flex;align-items:center;gap:.75rem;background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;padding:.6rem 1.4rem;border-radius:50px;font-size:.9rem;font-weight:600;margin-bottom:1rem">
+        <i class="fas fa-user-circle"></i>
+        Created by <strong>Vikash Pandey</strong> &nbsp;|&nbsp; 2026
+      </div>
+      <p style="font-size:.82rem;color:var(--textm)">© 2026 English Grammar Mastery A to Z &nbsp;|&nbsp; Built with pure HTML, CSS &amp; JavaScript &nbsp;|&nbsp; All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-arrow-up"></i></button>
+
+<script>
+// ---- THEME ----
+function toggleTheme(){
+  const b=document.body,ic=document.getElementById('themeIcon');
+  if(b.dataset.theme==='dark'){b.removeAttribute('data-theme');ic.className='fas fa-moon';localStorage.setItem('theme','light')}
+  else{b.dataset.theme='dark';ic.className='fas fa-sun';localStorage.setItem('theme','dark')}
+}
+(function(){const t=localStorage.getItem('theme');if(t==='dark'){document.body.dataset.theme='dark';const ic=document.getElementById('themeIcon');if(ic)ic.className='fas fa-sun'}})();
+
+// ---- MOBILE MENU ----
+function toggleMob(){document.getElementById('mobMenu').classList.toggle('open')}
+function closeMob(){document.getElementById('mobMenu').classList.remove('open')}
+document.addEventListener('click',function(e){const m=document.getElementById('mobMenu');if(m&&m.classList.contains('open')&&!m.contains(e.target)&&!e.target.closest('.hamburger'))closeMob()});
+
+// ---- TABS (section-scoped) ----
+function openTab(e,group,name){
+  const sec=document.getElementById(group);
+  if(!sec)return;
+  sec.querySelectorAll('.tab-pane').forEach(p=>p.classList.remove('active'));
+  sec.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  const pane=document.getElementById(group+'-'+name);
+  if(pane)pane.classList.add('active');
+  if(e&&e.target)e.target.classList.add('active');
+}
+
+// ---- TABS (global prefix) ----
+function openTabG(e,group,name){
+  document.querySelectorAll('[id^="'+group+'-"]').forEach(p=>p.classList.remove('active'));
+  const pane=document.getElementById(group+'-'+name);
+  if(pane)pane.classList.add('active');
+  e.target.closest('.tab-nav').querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  e.target.classList.add('active');
+}
+
+// ---- ACCORDION ----
+function toggleAcc(el){
+  const body=el.nextElementSibling;
+  const isOpen=body.classList.contains('open');
+  el.closest('.acc').querySelectorAll('.acc-body').forEach(b=>b.classList.remove('open'));
+  el.closest('.acc').querySelectorAll('.acc-hdr').forEach(h=>h.classList.remove('open'));
+  if(!isOpen){body.classList.add('open');el.classList.add('open')}
+}
+
+// ---- BACK TO TOP ----
+window.addEventListener('scroll',function(){
+  const btn=document.getElementById('backTop');
+  if(btn){if(window.scrollY>300)btn.classList.add('show');else btn.classList.remove('show');}
+});
+
+// ---- PROGRESS TRACKING ----
+const progress={lessons:[],quizScores:{},testScores:{}};
+function loadProgress(){const s=localStorage.getItem('grammarProgress');if(s){try{Object.assign(progress,JSON.parse(s))}catch(e){}}}
+function saveProgress(){localStorage.setItem('grammarProgress',JSON.stringify(progress))}
+function markLesson(id){if(!progress.lessons.includes(id)){progress.lessons.push(id);saveProgress();updateDashboard()}}
+function updateDashboard(){
+  const el=document.getElementById('dashLessons');
+  if(el)el.textContent=progress.lessons.length;
+  const qb=document.getElementById('dashQuizBest');
+  if(qb){const scores=Object.values(progress.quizScores);qb.textContent=scores.length?Math.max(...scores)+'%':'0%';}
+  const tb=document.getElementById('dashTestBest');
+  if(tb){const ts=Object.values(progress.testScores);tb.textContent=ts.length?Math.max(...ts)+'%':'0%';}
+  const sh=document.getElementById('scoreHistory');
+  if(sh){
+    const all=[...Object.entries(progress.quizScores).map(([k,v])=>`<span class="pill">${k}: ${v}%</span>`),...Object.entries(progress.testScores).map(([k,v])=>`<span class="pill pill-p">${k}: ${v}%</span>`)];
+    sh.innerHTML=all.length?all.join(' '):'No quiz attempts yet. Take a quiz to see your scores here.';
+  }
+}
+function resetProgress(){if(confirm('Reset all progress?')){localStorage.removeItem('grammarProgress');Object.assign(progress,{lessons:[],quizScores:{},testScores:{}});updateDashboard();alert('Progress reset.');}}
+loadProgress();
+
+// ============ DATA ============
+const vocabData=[
+  {w:'Abound',m:'Exist in large numbers',e:'Fish abound in this river.'},
+  {w:'Acumen',m:'Keen insight; sharpness of mind',e:'His business acumen is remarkable.'},
+  {w:'Adept',m:'Highly skilled or proficient',e:'She is adept at playing the piano.'},
+  {w:'Adverse',m:'Harmful or unfavorable',e:'Adverse weather delayed the flight.'},
+  {w:'Affable',m:'Friendly and easy to talk to',e:'He is an affable host.'},
+  {w:'Agile',m:'Able to move quickly and easily',e:'The agile monkey leapt from tree to tree.'},
+  {w:'Aloof',m:'Not friendly; distant',e:'She remained aloof during the party.'},
+  {w:'Ambiguous',m:'Open to more than one interpretation',e:'His answer was ambiguous.'},
+  {w:'Amiable',m:'Having a friendly disposition',e:'She has an amiable personality.'},
+  {w:'Ample',m:'More than enough; plentiful',e:'There is ample time to finish the work.'},
+  {w:'Ardent',m:'Very enthusiastic or passionate',e:'She is an ardent supporter of the cause.'},
+  {w:'Arduous',m:'Involving great effort; difficult',e:'Climbing Everest is an arduous task.'},
+  {w:'Arrogant',m:'Having an exaggerated sense of importance',e:'His arrogant attitude annoyed everyone.'},
+  {w:'Articulate',m:'Expressing oneself clearly',e:'She is a very articulate speaker.'},
+  {w:'Astute',m:'Clever and quick to understand',e:'An astute businessman never misses an opportunity.'},
+  {w:'Atrocious',m:'Horrifyingly wicked; extremely bad',e:'The war crimes were atrocious.'},
+  {w:'Audacious',m:'Showing willingness to take bold risks',e:'It was audacious of him to challenge the champion.'},
+  {w:'Austere',m:'Simple; without luxury',e:'He led an austere life as a monk.'},
+  {w:'Authentic',m:'Genuine; not a copy',e:'This painting is authentic.'},
+  {w:'Avarice',m:'Extreme greed for wealth',e:'His avarice led to his downfall.'},
+  {w:'Benevolent',m:'Kind and generous',e:'The benevolent king fed the poor.'},
+  {w:'Blatant',m:'Done openly and unashamedly',e:'It was a blatant lie.'},
+  {w:'Brevity',m:'Conciseness; using few words',e:'Brevity is the soul of wit.'},
+  {w:'Callous',m:'Insensitive; showing no sympathy',e:'His callous remarks hurt her deeply.'},
+  {w:'Candid',m:'Truthful and straightforward',e:'Please be candid about your feelings.'},
+  {w:'Capitulate',m:'To surrender; to give in',e:'The enemy was forced to capitulate.'},
+  {w:'Capricious',m:'Given to sudden changes of mood',e:'Her capricious nature makes her unpredictable.'},
+  {w:'Censure',m:'Strong disapproval; to criticize harshly',e:'The leader faced public censure.'},
+  {w:'Circumspect',m:'Cautious and wary',e:'Be circumspect when signing legal documents.'},
+  {w:'Clandestine',m:'Kept secret or done secretly',e:'They had a clandestine meeting.'},
+  {w:'Coerce',m:'To persuade by force or threats',e:'He was coerced into signing the papers.'},
+  {w:'Cogent',m:'Clear, logical, and convincing',e:'She made a cogent argument.'},
+  {w:'Complacent',m:'Self-satisfied; uncritically content',e:'Don\'t be complacent about your health.'},
+  {w:'Condescending',m:'Showing feelings of superiority',e:'His condescending tone offended the staff.'},
+  {w:'Conspicuous',m:'Clearly visible; attracting notice',e:'Her red hat was conspicuous in the crowd.'},
+  {w:'Contempt',m:'Feeling that something is worthless',e:'He looked at the coward with contempt.'},
+  {w:'Corrupt',m:'Willing to act dishonestly for personal gain',e:'The corrupt official took bribes.'},
+  {w:'Credible',m:'Able to be believed; trustworthy',e:'He is a credible witness.'},
+  {w:'Cunning',m:'Skilled at achieving goals in clever ways',e:'The fox is known for its cunning.'},
+  {w:'Deceptive',m:'Giving an impression different from the truth',e:'Appearances can be deceptive.'},
+  {w:'Decisive',m:'Settling an issue; showing decisiveness',e:'We need decisive action now.'},
+  {w:'Defiant',m:'Boldly resistant to authority',e:'The defiant student refused to sit down.'},
+  {w:'Diligent',m:'Showing care and effort in work',e:'A diligent student always succeeds.'},
+  {w:'Discern',m:'To recognize or identify',e:'It is hard to discern the truth.'},
+  {w:'Disdain',m:'A feeling of contempt',e:'She looked at the beggar with disdain.'},
+  {w:'Eloquent',m:'Fluent and persuasive in speaking',e:'She gave an eloquent speech.'},
+  {w:'Eminent',m:'Famous and respected',e:'He is an eminent scientist.'},
+  {w:'Empathy',m:'Ability to understand others\' feelings',e:'A good nurse shows empathy.'},
+  {w:'Enigma',m:'A mysterious person or thing',e:'His motive remains an enigma.'},
+  {w:'Enormous',m:'Very large in size',e:'An enormous crowd gathered in the stadium.'},
+  {w:'Erratic',m:'Unpredictable; not consistent',e:'His erratic behaviour worried his parents.'},
+  {w:'Evasive',m:'Tending to avoid commitment',e:'His evasive answers raised suspicion.'},
+  {w:'Exemplary',m:'Serving as a desirable model',e:'Her exemplary conduct earned her an award.'},
+  {w:'Exorbitant',m:'Unreasonably high in price',e:'The hotel charged an exorbitant rate.'},
+  {w:'Explicit',m:'Stated clearly and in detail',e:'The instructions were explicit and easy to follow.'},
+  {w:'Facade',m:'An outward appearance that hides the truth',e:'His smile was just a facade.'},
+  {w:'Fallacy',m:'A mistaken belief; faulty reasoning',e:'It is a fallacy that all snakes are dangerous.'},
+  {w:'Ferocious',m:'Savagely fierce',e:'The ferocious lion attacked the deer.'},
+  {w:'Fervent',m:'Having intense feeling; passionate',e:'She is a fervent advocate for peace.'},
+  {w:'Fickle',m:'Changing frequently, especially in loyalty',e:'Fortune is fickle.'},
+  {w:'Flamboyant',m:'Tending to attract attention by being confident',e:'Her flamboyant style made her stand out.'},
+  {w:'Frugal',m:'Sparing in use of resources; thrifty',e:'He lived a frugal life.'},
+  {w:'Futile',m:'Incapable of producing results; useless',e:'It is futile to resist.'},
+  {w:'Gullible',m:'Easily deceived',e:'Don\'t be so gullible — verify before trusting.'},
+  {w:'Hamper',m:'To hinder; to obstruct',e:'Bad weather hampered the rescue effort.'},
+  {w:'Harbinger',m:'A sign of things to come',e:'The robin is a harbinger of spring.'},
+  {w:'Haughty',m:'Arrogantly superior',e:'Her haughty attitude alienated her colleagues.'},
+  {w:'Humility',m:'Having a modest view of oneself',e:'True greatness comes with humility.'},
+  {w:'Hypothesis',m:'A proposed explanation for observation',e:'The scientist tested his hypothesis.'},
+  {w:'Impede',m:'To obstruct or delay progress',e:'Lack of funds impeded the project.'},
+  {w:'Impetuous',m:'Acting quickly without thought',e:'His impetuous decision cost him dearly.'},
+  {w:'Implicit',m:'Implied though not directly stated',e:'There was an implicit understanding between them.'},
+  {w:'Incentive',m:'A thing that motivates action',e:'Bonuses are an incentive to work harder.'},
+  {w:'Incognito',m:'Having one\'s identity concealed',e:'The celebrity travelled incognito.'},
+  {w:'Indignant',m:'Feeling righteous anger',e:'She was indignant at the false accusation.'},
+  {w:'Inevitable',m:'Certain to happen',e:'Change is inevitable.'},
+  {w:'Infallible',m:'Incapable of making mistakes',e:'No one is infallible.'},
+  {w:'Ingenious',m:'Clever and original',e:'It was an ingenious solution.'},
+  {w:'Insolent',m:'Showing a rude and arrogant lack of respect',e:'The insolent reply angered the teacher.'},
+  {w:'Integrity',m:'The quality of being honest and moral',e:'A leader must have integrity.'},
+  {w:'Intimidate',m:'To frighten someone into doing something',e:'Do not let anyone intimidate you.'},
+  {w:'Jeopardise',m:'To put at risk',e:'His actions jeopardised the whole mission.'},
+  {w:'Jubilant',m:'Feeling great happiness',e:'The team was jubilant after winning.'},
+  {w:'Keen',m:'Having a sharp edge; eager; interested',e:'She has a keen interest in science.'},
+  {w:'Lament',m:'To express grief or regret',e:'She lamented the loss of her friend.'},
+  {w:'Lenient',m:'Permissive; not strict',e:'The lenient judge gave a light sentence.'},
+  {w:'Lethal',m:'Sufficient to cause death',e:'The snake\'s venom is lethal.'},
+  {w:'Loquacious',m:'Very talkative',e:'My loquacious neighbour talks non-stop.'},
+  {w:'Lucid',m:'Clearly expressed; easy to understand',e:'Give a lucid explanation.'},
+  {w:'Magnanimous',m:'Generous in forgiving',e:'The magnanimous winner praised his opponent.'},
+  {w:'Meticulous',m:'Showing great attention to detail',e:'She is a meticulous planner.'},
+  {w:'Mitigate',m:'To make less severe',e:'Trees help mitigate climate change.'},
+  {w:'Mundane',m:'Lacking interest; dull; ordinary',e:'He was tired of his mundane routine.'},
+  {w:'Nefarious',m:'Wicked and criminal',e:'The nefarious plot was uncovered in time.'},
+  {w:'Nostalgic',m:'A longing for the past',e:'Old songs make me nostalgic.'},
+  {w:'Notorious',m:'Famous for something bad',e:'He is a notorious criminal.'},
+  {w:'Novice',m:'A person new to a skill',e:'She is a novice at chess.'},
+  {w:'Oblivious',m:'Not aware of what is happening around',e:'He was oblivious to the danger.'},
+  {w:'Obsolete',m:'No longer in use; outdated',e:'Fax machines are almost obsolete.'},
+  {w:'Ominous',m:'Giving the impression that something bad will happen',e:'There was an ominous silence before the storm.'},
+  {w:'Optimistic',m:'Hopeful and confident about the future',e:'Stay optimistic — things will improve.'},
+  {w:'Ostracise',m:'To exclude from society',e:'He was ostracised by his community.'},
+  {w:'Paradox',m:'A statement that seems contradictory but may be true',e:'"Less is more" is a paradox.'},
+  {w:'Peril',m:'Serious danger',e:'The firefighters risked their lives in peril.'},
+  {w:'Persevere',m:'To continue despite difficulty',e:'If you persevere, you will succeed.'},
+  {w:'Plagiarise',m:'To use another\'s work and pass it off as your own',e:'He was expelled for plagiarising his essay.'},
+  {w:'Plausible',m:'Seeming reasonable or probable',e:'That is a plausible explanation.'},
+  {w:'Pragmatic',m:'Dealing with things practically',e:'We need a pragmatic approach.'},
+  {w:'Precarious',m:'Not secure; likely to fall or fail',e:'The hiker was in a precarious position.'},
+  {w:'Prejudice',m:'Preconceived opinion not based on reason',e:'Prejudice leads to discrimination.'},
+  {w:'Profound',m:'Having deep insight; thorough',e:'She made a profound observation.'},
+  {w:'Prudent',m:'Acting with careful thought',e:'It is prudent to save for the future.'},
+  {w:'Querulous',m:'Complaining in a petty way',e:'His querulous tone irritated everyone.'},
+  {w:'Rampant',m:'Flourishing or spreading unchecked',e:'Corruption is rampant in some regions.'},
+  {w:'Resilient',m:'Able to recover quickly from difficulties',e:'Children are surprisingly resilient.'},
+  {w:'Reticent',m:'Not revealing one\'s thoughts; quiet',e:'She was reticent about her past.'},
+  {w:'Rigid',m:'Not flexible; firm',e:'He has a rigid attitude toward change.'},
+  {w:'Ruthless',m:'Having no pity',e:'The ruthless tyrant oppressed his people.'},
+  {w:'Sagacious',m:'Having practical wisdom',e:'The sagacious elder guided the tribe.'},
+  {w:'Sanguine',m:'Optimistic, especially in a difficult situation',e:'He remained sanguine despite the losses.'},
+  {w:'Scrutinise',m:'To examine carefully',e:'The auditors scrutinised the accounts.'},
+  {w:'Serene',m:'Calm and peaceful',e:'The lake was serene at dawn.'},
+  {w:'Shrewd',m:'Having sharp powers of judgement',e:'She is a shrewd businesswoman.'},
+  {w:'Skeptical',m:'Not easily convinced',e:'He was skeptical about the new cure.'},
+  {w:'Spontaneous',m:'Performed without planning',e:'The crowd burst into spontaneous applause.'},
+  {w:'Steadfast',m:'Resolutely firm and unwavering',e:'She remained steadfast in her beliefs.'},
+  {w:'Stringent',m:'Strict; severe',e:'The new law has stringent penalties.'},
+  {w:'Subtle',m:'So delicate as to be difficult to detect',e:'There was a subtle change in her mood.'},
+  {w:'Superfluous',m:'More than necessary; extra',e:'Remove all superfluous words from the essay.'},
+  {w:'Suppress',m:'To forcibly put an end to',e:'The government suppressed the rebellion.'},
+  {w:'Tenacious',m:'Holding fast; persistent',e:'A tenacious athlete never gives up.'},
+  {w:'Transparent',m:'Easy to see through; obvious',e:'His motive was transparent.'},
+  {w:'Treacherous',m:'Guilty of betrayal; unreliable',e:'The treacherous river claimed many lives.'},
+  {w:'Trivial',m:'Of little value or importance',e:'Don\'t waste time on trivial matters.'},
+  {w:'Unanimous',m:'Fully in agreement',e:'The decision was unanimous.'},
+  {w:'Undaunted',m:'Not deterred by danger or difficulty',e:'Undaunted by failure, she tried again.'},
+  {w:'Vehement',m:'Showing strong feeling; forceful',e:'She made a vehement protest.'},
+  {w:'Verbose',m:'Using more words than necessary',e:'His verbose writing bored readers.'},
+  {w:'Versatile',m:'Able to adapt to many functions',e:'She is a versatile actress.'},
+  {w:'Vigilant',m:'Keeping careful watch',e:'Be vigilant about online scams.'},
+  {w:'Virtuous',m:'Having high moral standards',e:'A virtuous person is admired by all.'},
+  {w:'Vivid',m:'Producing clear mental images; bright',e:'She gave a vivid description of the scene.'},
+  {w:'Voracious',m:'Wanting large amounts eagerly',e:'He is a voracious reader.'},
+  {w:'Wary',m:'Feeling cautious about possible dangers',e:'Be wary of strangers online.'},
+  {w:'Whimsical',m:'Playfully quaint or fanciful',e:'The story had a whimsical tone.'},
+  {w:'Zealous',m:'Having great energy in pursuit of a cause',e:'She is zealous about environmental issues.'},
+  {w:'Zenith',m:'The highest point; peak of achievement',e:'She reached the zenith of her career.'}
+];
+
+const synonymData=[
+  {w:'Abandon',s:'Forsake, desert, relinquish, yield'},
+  {w:'Able',s:'Capable, competent, skilled, proficient'},
+  {w:'Achieve',s:'Accomplish, attain, reach, realise'},
+  {w:'Admire',s:'Respect, esteem, appreciate, revere'},
+  {w:'Affluent',s:'Wealthy, rich, prosperous, well-off'},
+  {w:'Angry',s:'Furious, irate, enraged, wrathful'},
+  {w:'Arrogant',s:'Haughty, proud, conceited, pompous'},
+  {w:'Ask',s:'Inquire, query, question, request'},
+  {w:'Begin',s:'Start, commence, initiate, embark'},
+  {w:'Brave',s:'Courageous, bold, valiant, gallant'},
+  {w:'Bright',s:'Brilliant, luminous, radiant, vivid'},
+  {w:'Calm',s:'Serene, tranquil, peaceful, composed'},
+  {w:'Careful',s:'Cautious, prudent, meticulous, vigilant'},
+  {w:'Change',s:'Alter, modify, transform, convert'},
+  {w:'Clear',s:'Lucid, transparent, obvious, evident'},
+  {w:'Complain',s:'Grumble, protest, lament, gripe'},
+  {w:'Complete',s:'Finish, conclude, accomplish, fulfil'},
+  {w:'Copy',s:'Duplicate, replicate, imitate, reproduce'},
+  {w:'Correct',s:'Accurate, precise, right, exact'},
+  {w:'Create',s:'Make, produce, generate, fabricate'},
+  {w:'Cruel',s:'Brutal, savage, merciless, ruthless'},
+  {w:'Curious',s:'Inquisitive, nosy, interested, eager'},
+  {w:'Dark',s:'Dim, gloomy, shadowy, murky'},
+  {w:'Decrease',s:'Reduce, diminish, decline, lessen'},
+  {w:'Defeat',s:'Overcome, conquer, vanquish, beat'},
+  {w:'Eager',s:'Keen, enthusiastic, zealous, avid'},
+  {w:'Elderly',s:'Aged, old, senior, veteran'},
+  {w:'End',s:'Conclude, terminate, cease, finish'},
+  {w:'Evident',s:'Obvious, clear, apparent, manifest'},
+  {w:'Famous',s:'Renowned, celebrated, eminent, illustrious'},
+  {w:'Fast',s:'Quick, swift, rapid, speedy'},
+  {w:'Fear',s:'Dread, terror, fright, alarm'},
+  {w:'Forgive',s:'Pardon, excuse, absolve, overlook'},
+  {w:'Fragile',s:'Delicate, brittle, frail, vulnerable'},
+  {w:'Free',s:'Liberate, release, emancipate, unshackle'},
+  {w:'Funny',s:'Amusing, comical, humorous, witty'},
+  {w:'Generous',s:'Liberal, charitable, benevolent, munificent'},
+  {w:'Genuine',s:'Authentic, real, original, bona fide'},
+  {w:'Give',s:'Donate, bestow, grant, present'},
+  {w:'Good',s:'Excellent, splendid, superb, magnificent'},
+  {w:'Happy',s:'Joyful, glad, elated, content'},
+  {w:'Hard',s:'Difficult, tough, arduous, strenuous'},
+  {w:'Help',s:'Assist, aid, support, facilitate'},
+  {w:'Hide',s:'Conceal, secrete, camouflage, mask'},
+  {w:'Honest',s:'Truthful, sincere, candid, upright'},
+  {w:'Hope',s:'Aspire, wish, expect, anticipate'},
+  {w:'Important',s:'Significant, crucial, vital, essential'},
+  {w:'Improve',s:'Enhance, upgrade, advance, develop'},
+  {w:'Innocent',s:'Guiltless, blameless, pure, naive'},
+  {w:'Interesting',s:'Engaging, fascinating, captivating, absorbing'},
+  {w:'Kind',s:'Gentle, benevolent, compassionate, tender'},
+  {w:'Knowledge',s:'Information, wisdom, learning, education'},
+  {w:'Large',s:'Big, enormous, vast, immense'},
+  {w:'Lazy',s:'Idle, sluggish, lethargic, indolent'},
+  {w:'Leader',s:'Chief, head, commander, director'},
+  {w:'Lonely',s:'Solitary, isolated, forsaken, desolate'},
+  {w:'Love',s:'Adore, cherish, treasure, worship'},
+  {w:'Loyal',s:'Faithful, devoted, trustworthy, steadfast'},
+  {w:'Mad',s:'Insane, crazy, irate, furious'},
+  {w:'Many',s:'Numerous, several, multiple, abundant'},
+  {w:'Mean',s:'Cruel, unkind, malicious, spiteful'},
+  {w:'Mistake',s:'Error, blunder, fault, slip'},
+  {w:'New',s:'Fresh, novel, modern, recent'},
+  {w:'Obedient',s:'Compliant, submissive, dutiful, docile'},
+  {w:'Obstacle',s:'Hindrance, barrier, impediment, hurdle'},
+  {w:'Old',s:'Ancient, antique, aged, veteran'},
+  {w:'Oppose',s:'Resist, contradict, challenge, rebut'},
+  {w:'Pain',s:'Ache, agony, suffering, distress'},
+  {w:'Patient',s:'Calm, tolerant, composed, persevering'},
+  {w:'Praise',s:'Commend, applaud, admire, extol'},
+  {w:'Protect',s:'Guard, shield, safeguard, defend'},
+  {w:'Proud',s:'Arrogant, conceited, haughty, vain'},
+  {w:'Punish',s:'Penalise, discipline, chastise, correct'},
+  {w:'Quick',s:'Fast, swift, rapid, speedy'},
+  {w:'Quiet',s:'Silent, still, calm, peaceful'},
+  {w:'Refuse',s:'Reject, deny, decline, rebuff'},
+  {w:'Rich',s:'Affluent, wealthy, prosperous, opulent'},
+  {w:'Rude',s:'Impolite, discourteous, insolent, impudent'},
+  {w:'Sad',s:'Unhappy, sorrowful, melancholy, dejected'},
+  {w:'Show',s:'Display, exhibit, demonstrate, reveal'},
+  {w:'Smart',s:'Intelligent, clever, astute, brilliant'},
+  {w:'Strange',s:'Unusual, bizarre, peculiar, odd'},
+  {w:'Strong',s:'Powerful, robust, sturdy, mighty'},
+  {w:'Stupid',s:'Foolish, idiotic, senseless, absurd'},
+  {w:'Talk',s:'Speak, converse, discuss, communicate'},
+  {w:'Thin',s:'Slim, lean, slender, gaunt'},
+  {w:'Tired',s:'Exhausted, weary, fatigued, drained'},
+  {w:'True',s:'Accurate, correct, valid, factual'},
+  {w:'Ugly',s:'Hideous, unsightly, grotesque, repulsive'},
+  {w:'Useful',s:'Helpful, practical, functional, beneficial'},
+  {w:'Wise',s:'Sagacious, prudent, judicious, astute'},
+  {w:'Wrong',s:'Incorrect, erroneous, mistaken, false'},
+  {w:'Young',s:'Youthful, juvenile, adolescent, immature'},
+  {w:'Zeal',s:'Enthusiasm, passion, fervour, ardour'}
+];
+
+const antonymData=[
+  {w:'Absent',a:'Present'},{w:'Accept',a:'Reject'},{w:'Add',a:'Subtract'},
+  {w:'Advantage',a:'Disadvantage'},{w:'Agree',a:'Disagree'},{w:'Ancient',a:'Modern'},
+  {w:'Arrogant',a:'Humble'},{w:'Ascend',a:'Descend'},{w:'Attack',a:'Defend'},
+  {w:'Beautiful',a:'Ugly'},{w:'Begin',a:'End'},{w:'Bold',a:'Timid'},
+  {w:'Brave',a:'Cowardly'},{w:'Bright',a:'Dark/Dim'},{w:'Build',a:'Destroy'},
+  {w:'Busy',a:'Idle/Lazy'},{w:'Buy',a:'Sell'},{w:'Calm',a:'Agitated'},
+  {w:'Careful',a:'Careless'},{w:'Cheap',a:'Expensive'},{w:'Clean',a:'Dirty'},
+  {w:'Clever',a:'Stupid'},{w:'Cold',a:'Hot'},{w:'Courage',a:'Cowardice'},
+  {w:'Create',a:'Destroy'},{w:'Credit',a:'Debit'},{w:'Cruel',a:'Kind'},
+  {w:'Dangerous',a:'Safe'},{w:'Day',a:'Night'},{w:'Deep',a:'Shallow'},
+  {w:'Defeat',a:'Victory'},{w:'Dense',a:'Sparse'},{w:'Despair',a:'Hope'},
+  {w:'Discipline',a:'Disorder'},{w:'Divide',a:'Multiply/Unite'},{w:'Early',a:'Late'},
+  {w:'Easy',a:'Difficult'},{w:'Elegant',a:'Clumsy'},{w:'Empty',a:'Full'},
+  {w:'Encourage',a:'Discourage'},{w:'Enemy',a:'Friend'},{w:'Expand',a:'Contract'},
+  {w:'Failure',a:'Success'},{w:'False',a:'True'},{w:'Famous',a:'Unknown'},
+  {w:'Fast',a:'Slow'},{w:'Fat',a:'Thin'},{w:'Fictional',a:'Real'},
+  {w:'Flexible',a:'Rigid'},{w:'Foolish',a:'Wise'},{w:'Forget',a:'Remember'},
+  {w:'Freedom',a:'Slavery'},{w:'Fresh',a:'Stale'},{w:'Genuine',a:'Fake'},
+  {w:'Good',a:'Bad/Evil'},{w:'Guilty',a:'Innocent'},{w:'Happy',a:'Sad'},
+  {w:'Hard',a:'Easy/Soft'},{w:'Hate',a:'Love'},{w:'Heaven',a:'Hell'},
+  {w:'Help',a:'Hinder'},{w:'Honest',a:'Dishonest'},{w:'Hope',a:'Despair'},
+  {w:'Humble',a:'Proud'},{w:'Increase',a:'Decrease'},{w:'Interior',a:'Exterior'},
+  {w:'Join',a:'Separate'},{w:'Joy',a:'Sorrow'},{w:'Kind',a:'Cruel'},
+  {w:'Knowledge',a:'Ignorance'},{w:'Laugh',a:'Cry/Weep'},{w:'Leader',a:'Follower'},
+  {w:'Legal',a:'Illegal'},{w:'Lenient',a:'Strict'},{w:'Light',a:'Heavy/Dark'},
+  {w:'Like',a:'Dislike'},{w:'Loud',a:'Quiet/Soft'},{w:'Love',a:'Hate'},
+  {w:'Maximum',a:'Minimum'},{w:'Modern',a:'Ancient'},{w:'Narrow',a:'Wide'},
+  {w:'Negative',a:'Positive'},{w:'New',a:'Old'},{w:'Noisy',a:'Silent'},
+  {w:'Obey',a:'Disobey'},{w:'Optimist',a:'Pessimist'},{w:'Order',a:'Chaos'},
+  {w:'Peace',a:'War'},{w:'Permanent',a:'Temporary'},{w:'Plain',a:'Fancy'},
+  {w:'Polite',a:'Rude'},{w:'Poor',a:'Rich'},{w:'Praise',a:'Criticise'},
+  {w:'Proud',a:'Humble'},{w:'Public',a:'Private'},{w:'Pure',a:'Corrupt'},
+  {w:'Question',a:'Answer'},{w:'Quick',a:'Slow'},{w:'Real',a:'Fake/Unreal'},
+  {w:'Reward',a:'Punishment'},{w:'Right',a:'Wrong'},{w:'Rise',a:'Fall'},
+  {w:'Rough',a:'Smooth'},{w:'Rural',a:'Urban'},{w:'Safe',a:'Dangerous'},
+  {w:'Serious',a:'Funny'},{w:'Sharp',a:'Blunt'},{w:'Shy',a:'Bold'},
+  {w:'Simple',a:'Complex'},{w:'Slim',a:'Fat'},{w:'Slow',a:'Fast'},
+  {w:'Small',a:'Large'},{w:'Smart',a:'Dumb'},{w:'Soft',a:'Hard'},
+  {w:'Start',a:'Stop'},{w:'Strong',a:'Weak'},{w:'Success',a:'Failure'},
+  {w:'Sweet',a:'Sour/Bitter'},{w:'Tall',a:'Short'},{w:'Transparent',a:'Opaque'},
+  {w:'Trust',a:'Distrust'},{w:'Truth',a:'Lie/Falsehood'},{w:'Unity',a:'Division'},
+  {w:'Victory',a:'Defeat'},{w:'Virtue',a:'Vice'},{w:'Warm',a:'Cold'},
+  {w:'Wisdom',a:'Foolishness'},{w:'Work',a:'Rest/Leisure'},{w:'Young',a:'Old'}
+];
+
+const idiomData=[
+  {p:'A blessing in disguise',m:'Something that seems bad but turns out to be good',e:'Losing that job was a blessing in disguise — I found a much better one.'},
+  {p:'Beat around the bush',m:'Avoid talking about what is important',e:'Stop beating around the bush and tell me the truth.'},
+  {p:'Bite the bullet',m:'Endure a painful experience',e:'Just bite the bullet and visit the dentist.'},
+  {p:'Break a leg',m:'Good luck (used in theatre)',e:'Break a leg at your performance tonight!'},
+  {p:'Break the ice',m:'Make people feel comfortable at the start',e:'He told a joke to break the ice.'},
+  {p:'Burn bridges',m:'Permanently damage a relationship',e:'Don\'t burn bridges with your old employer.'},
+  {p:'Burn the midnight oil',m:'Work late into the night',e:'She burned the midnight oil to finish the project.'},
+  {p:'Bite the dust',m:'To fail; to die',e:'Many small businesses bit the dust during the pandemic.'},
+  {p:'Bite off more than you can chew',m:'Take on more than you can handle',e:'He bit off more than he could chew by taking three jobs.'},
+  {p:'Back to the drawing board',m:'Start over from the beginning',e:'The plan failed, so it\'s back to the drawing board.'},
+  {p:'Cost an arm and a leg',m:'Very expensive',e:'That designer bag costs an arm and a leg.'},
+  {p:'Cut corners',m:'Do something in a quick, cheap way',e:'Don\'t cut corners when it comes to safety.'},
+  {p:'Hit the nail on the head',m:'Be exactly right',e:'You hit the nail on the head with your analysis.'},
+  {p:'Hit the books',m:'Study hard',e:'I need to hit the books before the exam.'},
+  {p:'Hit the sack',m:'Go to bed',e:'I\'m exhausted — I\'m going to hit the sack.'},
+  {p:'Kill two birds with one stone',m:'Accomplish two things with one action',e:'By exercising in the park, she killed two birds with one stone — fresh air and fitness.'},
+  {p:'Let the cat out of the bag',m:'Accidentally reveal a secret',e:'He let the cat out of the bag about the surprise party.'},
+  {p:'Once in a blue moon',m:'Very rarely',e:'He visits us once in a blue moon.'},
+  {p:'On the fence',m:'Undecided about something',e:'She is still on the fence about changing jobs.'},
+  {p:'Piece of cake',m:'Something very easy',e:'The test was a piece of cake.'},
+  {p:'Pull someone\'s leg',m:'Joke with someone',e:'Don\'t worry, I\'m just pulling your leg!'},
+  {p:'Spill the beans',m:'Reveal secret information',e:'Who spilled the beans about the surprise?'},
+  {p:'Take it with a pinch of salt',m:'Be sceptical about something',e:'Take media reports with a pinch of salt.'},
+  {p:'The ball is in your court',m:'It is your turn to take action',e:'I\'ve made my offer — the ball is in your court.'},
+  {p:'Under the weather',m:'Feeling ill',e:'I\'m a bit under the weather today.'},
+  {p:'Up in the air',m:'Still uncertain',e:'The plans are still up in the air.'},
+  {p:'Actions speak louder than words',m:'What you do matters more than what you say',e:'Show your love through actions — actions speak louder than words.'},
+  {p:'All ears',m:'Fully listening',e:'Go ahead — I\'m all ears.'},
+  {p:'Barking up the wrong tree',m:'Pursuing a mistaken course of action',e:'If you suspect me, you\'re barking up the wrong tree.'},
+  {p:'Bite the hand that feeds you',m:'Act badly towards someone who helps you',e:'Don\'t bite the hand that feeds you.'},
+  {p:'Blow hot and cold',m:'Be inconsistent or indecisive',e:'He keeps blowing hot and cold about the deal.'},
+  {p:'Carry the day',m:'Win or succeed',e:'Her brilliant speech carried the day.'},
+  {p:'Drop the ball',m:'Make a mistake; fail to take action',e:'We dropped the ball on that client presentation.'},
+  {p:'Eat humble pie',m:'Apologise and accept that you were wrong',e:'After the mistake, he had to eat humble pie.'},
+  {p:'Face the music',m:'Accept the consequences',e:'He made the mistake and had to face the music.'},
+  {p:'Get out of hand',m:'Become uncontrollable',e:'The party got out of hand.'},
+  {p:'Give the benefit of the doubt',m:'Trust despite uncertainty',e:'Let\'s give him the benefit of the doubt.'},
+  {p:'Go the extra mile',m:'Make more effort than required',e:'She always goes the extra mile for her students.'},
+  {p:'Hit the ground running',m:'Start with great energy',e:'She hit the ground running on her first day.'},
+  {p:'In the same boat',m:'In the same difficult situation',e:'We\'re all in the same boat.'},
+  {p:'Jump on the bandwagon',m:'Join a popular trend',e:'Everyone jumped on the bandwagon.'},
+  {p:'Keep an eye on',m:'Watch carefully',e:'Please keep an eye on my bag.'},
+  {p:'Leave no stone unturned',m:'Try everything possible',e:'She left no stone unturned to find her lost child.'},
+  {p:'Miss the boat',m:'Miss an opportunity',e:'You missed the boat on that investment.'},
+  {p:'No pain, no gain',m:'Progress requires effort',e:'Train hard — no pain, no gain.'},
+  {p:'On the tip of one\'s tongue',m:'About to be remembered',e:'Her name is on the tip of my tongue.'},
+  {p:'Open a can of worms',m:'Create more problems',e:'Bringing up that topic will open a can of worms.'},
+  {p:'Sit on the fence',m:'Avoid taking a side',e:'Stop sitting on the fence and make a decision.'},
+  {p:'Steal someone\'s thunder',m:'Take credit for someone\'s achievement',e:'He stole her thunder by announcing the news first.'},
+  {p:'Throw in the towel',m:'Give up; accept defeat',e:'After years of trying, he finally threw in the towel.'},
+  {p:'Weather the storm',m:'Survive a difficult period',e:'The company weathered the storm of the recession.'}
+];
+
+const phrasalData=[
+  ['Break down','Fail (machinery) / lose emotional control','The car broke down on the highway. She broke down crying.'],
+  ['Break in','Enter by force / interrupt','Thieves broke in last night. He kept breaking in on my speech.'],
+  ['Break out','Escape / start suddenly','A fire broke out in the building. Prisoners broke out of jail.'],
+  ['Break up','End a relationship / dissolve','They broke up after five years. The meeting broke up at noon.'],
+  ['Bring about','Cause something to happen','Technology has brought about great changes.'],
+  ['Bring up','Raise a child / mention a topic','She was brought up by her grandparents. He brought up the budget issue.'],
+  ['Call off','Cancel something','The match was called off due to rain.'],
+  ['Call on','Visit / ask to speak','Let\'s call on our old friends. The teacher called on Priya.'],
+  ['Carry on','Continue','Carry on — don\'t let me disturb you.'],
+  ['Carry out','Perform / execute','The doctor carried out a surgery. He carried out his duties well.'],
+  ['Come across','Find/meet by chance','I came across an old photo album.'],
+  ['Come up with','Think of an idea','She came up with a brilliant solution.'],
+  ['Cut down (on)','Reduce','You should cut down on sugar.'],
+  ['Do away with','Abolish/eliminate','We should do away with unnecessary rules.'],
+  ['Draw up','Write a plan or document','The lawyer drew up the contract.'],
+  ['Drop out','Quit / leave school','He dropped out of college.'],
+  ['Fall apart','Break into pieces / fail','Their plan fell apart at the last minute.'],
+  ['Fall back on','Use as a last resort','He fell back on his savings.'],
+  ['Fall out','Quarrel','The two friends fell out over money.'],
+  ['Figure out','Understand / solve','Can you figure out this puzzle?'],
+  ['Get along (with)','Have a good relationship','She gets along with everyone.'],
+  ['Get away with','Escape without punishment','He got away with cheating.'],
+  ['Get over','Recover from','It took her months to get over the illness.'],
+  ['Give in','Surrender / agree reluctantly','After hours of debate, he gave in.'],
+  ['Give up','Stop trying','Never give up on your dreams.'],
+  ['Go ahead','Proceed','Please go ahead with the plan.'],
+  ['Go through','Experience / examine carefully','She went through a lot of hardship.'],
+  ['Hand in','Submit / deliver','Please hand in your assignments today.'],
+  ['Hold on','Wait / grasp tightly','Hold on a second! | Hold on to the railing.'],
+  ['Keep up','Maintain a rate/level','Keep up the good work!'],
+  ['Let down','Disappoint','He let his team down by missing the deadline.'],
+  ['Look after','Take care of','She looked after her elderly parents.'],
+  ['Look into','Investigate','The police looked into the matter.'],
+  ['Look up','Search for information / improve','Look it up in the dictionary. Things are looking up.'],
+  ['Make out','Understand / see clearly','I couldn\'t make out what he was saying.'],
+  ['Make up','Invent / reconcile','He made up a story. They made up after the argument.'],
+  ['Pass away','Die (euphemism)','His grandfather passed away peacefully.'],
+  ['Pick up','Learn casually / collect','She picked up French quickly. Pick me up at 8.'],
+  ['Point out','Draw attention to','He pointed out the error in the report.'],
+  ['Put off','Postpone','Don\'t put off till tomorrow what you can do today.'],
+  ['Put up with','Tolerate','I can\'t put up with this noise.'],
+  ['Run into','Meet by chance / encounter a problem','I ran into my old teacher at the mall.'],
+  ['Run out of','Exhaust the supply','We\'ve run out of ink.'],
+  ['Set up','Establish / arrange','They set up a new company.'],
+  ['Show off','Display proudly / boast','He likes to show off his wealth.'],
+  ['Stand up for','Defend / support','Always stand up for what is right.'],
+  ['Take after','Resemble a parent/relative','She takes after her mother in looks.'],
+  ['Take off','Remove / leave the ground / become successful','Take off your shoes. The plane took off. Her career took off.'],
+  ['Turn down','Refuse / lower volume','He turned down the job offer. Turn down the TV.'],
+  ['Work out','Exercise / find a solution','She works out every morning. Let\'s work out the problem.'],
+  ['Write off','Dismiss / cancel a debt','He wrote off the failed venture as a lesson.']
+];
+
+const owData=[
+  ['One who can speak many languages','Polyglot'],['One who eats no meat','Vegetarian'],
+  ['One who cannot read or write','Illiterate'],['Government by the people','Democracy'],
+  ['Government by one ruler','Autocracy'],['Fear of open spaces','Agoraphobia'],
+  ['Fear of water','Hydrophobia'],['One who believes in God','Theist'],
+  ['One who does not believe in God','Atheist'],['Study of birds','Ornithology'],
+  ['Study of insects','Entomology'],['Study of ancient things','Archaeology'],
+  ['One who heals diseases','Physician'],['One who deals in flowers','Florist'],
+  ['One who walks on foot','Pedestrian'],['One who lives in foreign country','Immigrant'],
+  ['Murder of a human being','Homicide'],['Murder of one\'s father','Patricide'],
+  ['Murder of one\'s mother','Matricide'],['Murder of one\'s brother','Fratricide'],
+  ['Murder of one\'s king','Regicide'],['Murder of new-born child','Infanticide'],
+  ['One who travels to holy places','Pilgrim'],['Science of heavenly bodies','Astronomy'],
+  ['One who hates women','Misogynist'],['One who hates men','Misandrist'],
+  ['Words written on a tomb','Epitaph'],['A speech delivered at a funeral','Eulogy'],
+  ['One who can use both hands equally','Ambidextrous'],['A place for sick people','Hospital'],
+  ['A place where bees are kept','Apiary'],['A place where fish are kept','Aquarium'],
+  ['A place where birds are kept','Aviary'],['A place for old people','Geriatric home'],
+  ['One who copies others\' work','Plagiarist'],['One who is present everywhere','Omnipresent'],
+  ['One who knows everything','Omniscient'],['One who can do everything','Omnipotent'],
+  ['A remedy for all diseases','Panacea'],['Written by hand','Manuscript'],
+  ['Occurring twice a year','Biannual'],['Occurring once in two years','Biennial'],
+  ['One who is new to a job','Novice'],['A short stay in a place','Sojourn'],
+  ['One who pretends to be what he is not','Hypocrite'],['A person who never tells a lie','Veracious'],
+  ['An animal that lives on plants','Herbivore'],['An animal that feeds on flesh','Carnivore'],
+  ['An animal that eats both plants and flesh','Omnivore'],['A person who is 100 years old','Centenarian'],
+  ['Words having the same meaning','Synonym'],['Words having opposite meaning','Antonym'],
+  ['Words that sound alike but mean differently','Homophone']
+];
+
+const confusedData=[
+  {a:'Affect',at:'Verb — to influence',ae:'The cold weather affects her health.',b:'Effect',bt:'Noun — result/outcome',be:'The effect of the medicine was remarkable.'},
+  {a:'Accept',at:'Verb — to receive willingly',ae:'She accepted the award graciously.',b:'Except',bt:'Preposition — excluding',be:'Everyone came except Ravi.'},
+  {a:'Their',at:'Possessive pronoun (belonging to them)',ae:'Their house is very big.',b:"There",bt:'Place or existence',be:"There is a book on the table."},
+  {a:'Then',at:'Adverb — time (after that)',ae:'We had dinner and then watched a movie.',b:'Than',bt:'Conjunction — comparison',be:'She is taller than her sister.'},
+  {a:'Its',at:"Possessive of 'it'",ae:'The dog wagged its tail.',b:"It's",bt:"Contraction of 'it is'",be:"It's raining today."},
+  {a:'Your',at:'Possessive of you',ae:'Is this your pen?',b:"You're",bt:"Contraction of 'you are'",be:"You're doing great!"},
+  {a:'Lose',at:'Verb — to fail to keep',ae:'I always lose my keys.',b:'Loose',bt:'Adjective — not tight',be:'This shirt is too loose.'},
+  {a:'Principle',at:'Noun — rule or belief',ae:'She stood by her principles.',b:'Principal',bt:'Main; head of a school',be:'The principal addressed the students.'},
+  {a:'Stationary',at:'Adjective — not moving',ae:'The car remained stationary.',b:'Stationery',bt:'Noun — writing materials',be:'She bought new stationery for school.'},
+  {a:'Complement',at:'Verb — to complete/enhance',ae:'The wine complements the meal.',b:'Compliment',bt:'Noun/Verb — praise',be:'He gave her a lovely compliment.'},
+  {a:'Imply',at:'To suggest indirectly',ae:'His tone implied he was angry.',b:'Infer',bt:'To draw a conclusion from evidence',be:'I inferred from his silence that he disagreed.'},
+  {a:'Emigrate',at:'To leave one\'s country',ae:'He emigrated from India to Canada.',b:'Immigrate',bt:'To enter a new country',be:'She immigrated to the UK in 2010.'}
+];
+
+const dictData={...Object.fromEntries(vocabData.map(v=>[v.w.toLowerCase(),{word:v.w,meaning:v.m,example:v.e,type:'Adjective/Noun/Verb'}]))};
+
+// ============ QUIZ DATA ============
+const quizData={
+  tenses:[
+    {q:'She ___ to school every day.',opts:['go','goes','going','gone'],ans:1},
+    {q:'They ___ football when it started to rain.',opts:['played','were playing','have played','play'],ans:1},
+    {q:'By next Friday, I ___ this project.',opts:['will finish','will have finished','am finishing','finish'],ans:1},
+    {q:'She ___ here since 2018.',opts:['lives','lived','has lived','was living'],ans:2},
+    {q:'When I arrived, he ___ dinner.',opts:['had cooked','cooked','was cooking','has cooked'],ans:2},
+    {q:'He ___ his homework before watching TV.',opts:['did','was doing','had done','has done'],ans:2},
+    {q:'I ___ him three times but he didn\'t answer.',opts:['call','have called','called','was calling'],ans:1},
+    {q:'Look! It ___.',opts:['rains','is raining','rained','has rained'],ans:1},
+    {q:'By 2030, she ___ for this company for 20 years.',opts:['will work','will have been working','has worked','was working'],ans:1},
+    {q:'Water ___ at 100°C.',opts:['is boiling','was boiling','boils','will boil'],ans:2}
+  ],
+  voice:[
+    {q:'Convert to passive: "She writes a letter."',opts:['A letter is written by her.','A letter was written by her.','A letter has been written by her.','A letter had been written by her.'],ans:0},
+    {q:'Convert to passive: "He ate the cake."',opts:['The cake is eaten by him.','The cake was eaten by him.','The cake has been eaten by him.','The cake had been eaten by him.'],ans:1},
+    {q:'Convert to passive: "They are building a bridge."',opts:['A bridge is being built by them.','A bridge was being built by them.','A bridge is built by them.','A bridge has been built by them.'],ans:0},
+    {q:'Convert to passive: "She had written the report."',opts:['The report was written by her.','The report had been written by her.','The report is written by her.','The report has been written by her.'],ans:1},
+    {q:'"The letter ___ by Ravi." Choose the correct form.',opts:['wrote','written','was written','is writing'],ans:2},
+    {q:'Identify active voice:',opts:['The book was read by him.','He was reading the book.','The window was broken.','A song is being sung.'],ans:1},
+    {q:'Convert to passive: "She will write the report."',opts:['The report will write by her.','The report will be written by her.','The report would be written by her.','The report is written by her.'],ans:1},
+    {q:'Convert to passive: "She can solve the problem."',opts:['The problem can solved by her.','The problem can be solve by her.','The problem can be solved by her.','The problem could be solved by her.'],ans:2},
+    {q:'Which sentence is in passive voice?',opts:['He kicked the ball.','They have cleaned the room.','The window was broken by the stone.','She is cooking dinner.'],ans:2},
+    {q:'"I" becomes ___ in passive voice.',opts:['me','my','mine','myself'],ans:0}
+  ],
+  speech:[
+    {q:'She said, "I am happy." Change to indirect.',opts:['She said that she is happy.','She said that she was happy.','She said that she will be happy.','She told that she was happy.'],ans:1},
+    {q:'He said to me, "Will you help me?" Change to indirect.',opts:['He asked me if I will help him.','He asked me whether I would help him.','He asked me that I would help him.','He told me to help him.'],ans:1},
+    {q:'"Come here," she said to him. Change to indirect.',opts:['She said to him to come there.','She told him to come here.','She told him to come there.','She asked him come there.'],ans:2},
+    {q:'He said, "I went to school yesterday." Change to indirect.',opts:['He said that he went to school the day before.','He said that he had gone to school the day before.','He said that he has gone to school yesterday.','He said that he goes to school yesterday.'],ans:1},
+    {q:'She said, "I have finished the work." Change to indirect.',opts:['She said that she finished the work.','She said that she had finished the work.','She said that she has finished the work.','She said that she was finishing the work.'],ans:1},
+    {q:'"today" in direct speech becomes ___ in indirect speech.',opts:['this day','that day','today','the following day'],ans:1},
+    {q:'"tomorrow" in direct speech becomes ___ in indirect speech.',opts:['the next day','tomorrow','that day','the previous day'],ans:0},
+    {q:'He said, "May I come in?" Change to indirect.',opts:['He asked if he may come in.','He asked if he might come in.','He told that he may come in.','He asked that he could come in.'],ans:1},
+    {q:'"now" in direct speech becomes ___ in indirect speech.',opts:['now','here','then','there'],ans:2},
+    {q:'"will" in direct speech becomes ___ in indirect speech (past reporting verb).',opts:['will','shall','would','should'],ans:2}
+  ],
+  vocab:[
+    {q:'What does "Eloquent" mean?',opts:['Slow','Fluent and persuasive','Lazy','Angry'],ans:1},
+    {q:'What does "Tenacious" mean?',opts:['Tired','Dishonest','Persistent; not giving up','Quiet'],ans:2},
+    {q:'What does "Pragmatic" mean?',opts:['Dreamy','Practical and realistic','Romantic','Emotional'],ans:1},
+    {q:'What does "Meticulous" mean?',opts:['Careless','Very attentive to detail','Forgetful','Brave'],ans:1},
+    {q:'What is the synonym of "Affluent"?',opts:['Poor','Sad','Wealthy','Angry'],ans:2},
+    {q:'What is the antonym of "Benevolent"?',opts:['Kind','Malevolent/Cruel','Honest','Brave'],ans:1},
+    {q:'What does "Avarice" mean?',opts:['Fear','Extreme greed','Kindness','Love'],ans:1},
+    {q:'What does "Acumen" mean?',opts:['Weakness','Illness','Keen insight/sharpness','Confusion'],ans:2},
+    {q:'Which word means "not able to be changed"?',opts:['Flexible','Immutable/Irreversible','Temporary','Volatile'],ans:1},
+    {q:'What does "Frugal" mean?',opts:['Wasteful','Generous','Sparing; thrifty','Expensive'],ans:2}
+  ],
+  mixed:[
+    {q:'Choose the correct sentence:',opts:['She don\'t know the answer.','She doesn\'t know the answer.','She not know the answer.','She isn\'t know the answer.'],ans:1},
+    {q:'Choose the correct article: "___ European country"',opts:['A','An','The','No article'],ans:0},
+    {q:'Choose the correct preposition: "She has been working ___ 2019."',opts:['for','since','from','during'],ans:1},
+    {q:'Choose the correct conjunction: "___ she tried hard, she failed."',opts:['But','So','Although','Because'],ans:2},
+    {q:'Choose the correct form: "Neither of the students ___ present."',opts:['are','were','is','have been'],ans:2},
+    {q:'Which is the correct passive of "They will build a house."?',opts:['A house is built by them.','A house will built by them.','A house will be built by them.','A house will have been built by them.'],ans:2},
+    {q:'Which tense is: "She had been crying for hours"?',opts:['Past Perfect','Past Perfect Continuous','Past Continuous','Present Perfect Continuous'],ans:1},
+    {q:'Choose the correct sentence:',opts:['He is more taller than me.','He is taller than me.','He is most tall than me.','He is tallest than me.'],ans:1},
+    {q:'"Each of the boys ___ a book." Choose correct verb.',opts:['have','are having','has','had have'],ans:2},
+    {q:'What type of clause is "what she said" in "What she said surprised me"?',opts:['Adverb clause','Adjective clause','Noun clause','Independent clause'],ans:2}
+  ]
+};
+
+const testData={
+  beginner:[
+    {q:'Choose the correct verb: "He ___ to school daily."',opts:['go','goes','going','gone'],ans:1},
+    {q:'Choose the correct article: "___ apple a day keeps the doctor away."',opts:['A','An','The','No article'],ans:1},
+    {q:'Choose the correct pronoun: "___ and I went to the market."',opts:['Me','Myself','He','Him'],ans:2},
+    {q:'Choose the correct preposition: "She is good ___ maths."',opts:['in','on','at','with'],ans:2},
+    {q:'Choose the correct plural: "leaf" →',opts:['leafs','leafes','leaves','leeves'],ans:2},
+    {q:'Which is the adjective in "She has a beautiful smile."?',opts:['She','has','beautiful','smile'],ans:2},
+    {q:'Choose the correct conjunction: "I tried, ___ I failed."',opts:['so','but','and','or'],ans:1},
+    {q:'"I am writing a letter." This is ___ tense.',opts:['Simple Present','Present Continuous','Present Perfect','Simple Past'],ans:1},
+    {q:'Choose the correct sentence:',opts:['She don\'t eat meat.','She doesn\'t eats meat.','She doesn\'t eat meat.','She not eating meat.'],ans:2},
+    {q:'Identify the noun: "The train arrived early."',opts:['The','arrived','early','train'],ans:3},
+    {q:'Choose the correct past form of "go":',opts:['goed','goes','gone','went'],ans:3},
+    {q:'Choose the correct sentence:',opts:['He is more intelligent than her.','He is more intelligenter than her.','He is most intelligent than her.','He is intelligenter than her.'],ans:0},
+    {q:'"They played cricket yesterday." What tense is this?',opts:['Present','Future','Past','Perfect'],ans:2},
+    {q:'Choose the correct word: "The sun ___ in the east."',opts:['rise','rises','rising','rose'],ans:1},
+    {q:'Which is the adverb in "She speaks slowly."?',opts:['She','speaks','slowly','the'],ans:2},
+    {q:'Choose the correct sentence:',opts:['He has a lot of informations.','He has a lot of information.','He has many informations.','He have a lot of information.'],ans:1},
+    {q:'"May I come in?" This is an ___ sentence.',opts:['Assertive','Interrogative','Exclamatory','Imperative'],ans:1},
+    {q:'"Sit down." This is an ___ sentence.',opts:['Assertive','Interrogative','Exclamatory','Imperative'],ans:3},
+    {q:'Choose the correct word: "There are ___ students in the hall."',opts:['much','a little','many','less'],ans:2},
+    {q:'Choose the antonym of "beautiful":',opts:['Pretty','Lovely','Ugly','Handsome'],ans:2}
+  ],
+  intermediate:[
+    {q:'She ___ for this company since 2015.',opts:['worked','has been working','is working','was working'],ans:1},
+    {q:'Convert to passive: "He ate the apple."',opts:['The apple is eaten by him.','The apple was eaten by him.','The apple had been eaten by him.','The apple has been eaten by him.'],ans:1},
+    {q:'He said that he ___ go the next day.',opts:['will','shall','would','could'],ans:2},
+    {q:'Neither he nor ___ is wrong.',opts:['I','me','my','myself'],ans:0},
+    {q:'The news ___ shocking.',opts:['are','were','is','have been'],ans:2},
+    {q:'Choose the correct conditional: "If it rains, ___."',opts:['I stay home.','I will stay home.','I would stay home.','I had stayed home.'],ans:1},
+    {q:'"She had been studying for three hours." This is ___ tense.',opts:['Past Perfect','Past Continuous','Past Perfect Continuous','Present Perfect Continuous'],ans:2},
+    {q:'Choose the correct sentence:',opts:['She is more taller than me.','She is more tall than me.','She is taller than me.','She is tallest than me.'],ans:2},
+    {q:'The phrasal verb "give up" means:',opts:['offer something','surrender/stop trying','donate','give back'],ans:1},
+    {q:'Which sentence uses the Present Perfect correctly?',opts:['I have seen him yesterday.','I have seen him last week.','I have seen him before.','I have see him already.'],ans:2},
+    {q:'"What a beautiful painting!" This is an ___ sentence.',opts:['Assertive','Interrogative','Exclamatory','Imperative'],ans:2},
+    {q:'Choose the correct word: "The thief ___ the window."',opts:['brake','broke','broken','braked'],ans:1},
+    {q:'Choose the correct form: "I wish I ___ rich."',opts:['am','was','were','will be'],ans:2},
+    {q:'"He told me to open the door." In direct speech this was:',opts:['"Open the door," he told me.','He said, "Open the door."','He told, "I open the door."','"You open the door," he said.'],ans:1},
+    {q:'Choose the correct word: "The decision was ___."',opts:['unanimous','unanimous\'','unanimously','unanmous'],ans:0},
+    {q:'Which is the subordinating conjunction?',opts:['and','but','although','or'],ans:2},
+    {q:'Choose correct preposition: "She has been ill ___ Monday."',opts:['for','from','since','during'],ans:2},
+    {q:'"Each of the girls ___ a pen."',opts:['have','are having','has','had have'],ans:2},
+    {q:'Identify the type: "The man who called is my friend."',opts:['Noun clause','Adjective clause','Adverb clause','Simple sentence'],ans:1},
+    {q:'Choose the correct word: "His ___ was questioned."',opts:['integrity','integrety','integreity','intergrity'],ans:0}
+  ],
+  advanced:[
+    {q:'Choose the correct sentence for third conditional:',opts:['If I was rich, I would travel.','If I had been rich, I would have travelled.','If I were rich, I will travel.','If I am rich, I would travel.'],ans:1},
+    {q:'"He is known ___ his honesty."',opts:['by','for','with','of'],ans:1},
+    {q:'What does "Sanguine" mean?',opts:['Pessimistic','Angry','Optimistic','Confused'],ans:2},
+    {q:'The idiom "bite the bullet" means:',opts:['Eat something hard','Endure a painful experience','Make a mistake','Take a risk'],ans:1},
+    {q:'Choose correct sentence:',opts:['The committee have decided unanimously.','The committee has decided unanimously.','The committee is deciding unanimously.','The committee had decide unanimously.'],ans:1},
+    {q:'"Mathematics ___ my strongest subject."',opts:['are','were','is','have been'],ans:2},
+    {q:'Which is NOT a stative verb?',opts:['believe','know','run','understand'],ans:2},
+    {q:'Choose correct form: "She would rather ___ home."',opts:['to stay','staying','stay','stayed'],ans:2},
+    {q:'One word for "a place where birds are kept":',opts:['Apiary','Aquarium','Aviary','Zoo'],ans:2},
+    {q:'Convert to passive: "Someone stole my wallet."',opts:['My wallet stole by someone.','My wallet was stolen.','My wallet is stolen by someone.','My wallet has stolen.'],ans:1},
+    {q:'"Despite being tired, she continued working." The underlined is:',opts:['Noun phrase','Verb phrase','Adverb phrase','Adjective phrase'],ans:2},
+    {q:'Choose the correct word: "The ___ cat sat quietly." (referring to a known cat)',opts:['a','an','the','no article'],ans:2},
+    {q:'"Loquacious" means:',opts:['Lazy','Very talkative','Extremely fast','Very quiet'],ans:1},
+    {q:'He ___ by the noise outside.',opts:['disturbed','was disturbing','was disturbed','has disturbed'],ans:2},
+    {q:'Choose correct correlative conjunction:',opts:['Either she or I are wrong.','Either she or I is wrong.','Either she or I am wrong.','Either she or I be wrong.'],ans:2},
+    {q:'Identify the type: "I know that she is honest."',opts:['Adjective clause','Adverb clause','Noun clause','Main clause'],ans:2},
+    {q:'What does "Circumspect" mean?',opts:['Circular','Cautious and wary','Cheerful','Confused'],ans:1},
+    {q:'Choose the correct spelling:',opts:['accomodate','accommodate','acomodate','accommadate'],ans:1},
+    {q:'"She is the most intelligent student in the class." The superlative is formed by:',opts:['Adding -er','Adding most','Adding -est','Adding more'],ans:1},
+    {q:'"Cogent" means:',opts:['Aggressive','Weak','Clear and convincing','Dishonest'],ans:2}
+  ],
+  competitive:[
+    {q:'"The scenery of these hills ___ magnificent."',opts:['are','were','is','have been'],ans:2},
+    {q:'Choose the correct sentence:',opts:['He is one of the best student.','He is one of the best students.','He is one of best student.','He is one of a best students.'],ans:1},
+    {q:'"Hardly had she left ___ it began to rain."',opts:['when','than','that','before'],ans:0},
+    {q:'Choose the correct preposition: "He was acquitted ___ the charge."',opts:['for','of','from','on'],ans:1},
+    {q:'"No sooner did she arrive ___ the meeting started."',opts:['when','than','that','before'],ans:1},
+    {q:'Which sentence is grammatically correct?',opts:['Between you and I, it\'s true.','Between you and me, it\'s true.','Between you and myself, it\'s true.','Between I and you, it\'s true.'],ans:1},
+    {q:'"The cattle ___ grazing in the field."',opts:['is','was','are','has been'],ans:2},
+    {q:'Choose the correct form: "I wish I ___ there yesterday."',opts:['was','were','had been','have been'],ans:2},
+    {q:'"Braggadocio" means:',opts:['A type of dance','Loud boastful talk','An ancient weapon','A form of poetry'],ans:1},
+    {q:'Choose the correct sentence:',opts:['She is more superior than him.','She is superior to him.','She is superior than him.','She is the most superior to him.'],ans:1},
+    {q:'One word for "murder of one\'s brother":',opts:['Homicide','Patricide','Fratricide','Matricide'],ans:2},
+    {q:'Choose the correct preposition: "She prevailed ___ her fears."',opts:['on','over','upon','against'],ans:1},
+    {q:'"Bowdlerise" means:',opts:['To honour someone','To censor offensive parts','To advertise widely','To eat greedily'],ans:1},
+    {q:'Choose the correct sentence:',opts:['He did not went to school.','He didn\'t went to school.','He did not go to school.','He doesn\'t went to school.'],ans:2},
+    {q:'"Solipsism" refers to:',opts:['Group thinking','Belief that only oneself exists','Love of solitude','Fear of being alone'],ans:1},
+    {q:'Choose the correct form: "Had she known, she ___ told you."',opts:['would','will','would have','had'],ans:2},
+    {q:'"Caveat" means:',opts:['A type of cheese','A warning/caution','A hidden treasure','A legal document'],ans:1},
+    {q:'Choose the correct passive: "People speak English all over the world."',opts:['English is spoken all over the world.','English is being spoken by people.','English was spoken all over the world.','English has been spoken all over the world.'],ans:0},
+    {q:'What does "Zeitgeist" mean?',opts:['Weather forecast','Spirit of the times','Love of music','Fear of change'],ans:1},
+    {q:'"Pleonasm" is:',opts:['Use of fewer words','Repetition using different words','A figure of speech','Use of difficult words'],ans:1}
+  ]
+};
+
+// ============ RENDER FUNCTIONS ============
+function renderWordGrid(data,gridId,searchId,isAlpha,type){
+  const grid=document.getElementById(gridId);
+  const search=document.getElementById(searchId)?document.getElementById(searchId).value.toLowerCase():'';
+  if(!grid)return;
+  let filtered=data.filter(d=>{
+    const word=(d.w||d.word||'').toLowerCase();
+    return word.includes(search)||
+    (d.m||d.meaning||'').toLowerCase().includes(search)||
+    (d.s||'').toLowerCase().includes(search)||
+    (d.a||'').toLowerCase().includes(search);
+  });
+  if(isAlpha&&isAlpha!=='all'){filtered=filtered.filter(d=>(d.w||d.word||'').toUpperCase().startsWith(isAlpha));}
+  grid.innerHTML=filtered.length?filtered.map(d=>{
+    let sub='',extra='';
+    if(type==='vocab'){sub=d.m;extra=`<div class="e">"${d.e}"</div>`;}
+    else if(type==='syn'){sub='Synonyms: '+d.s;extra='';}
+    else if(type==='ant'){sub='Antonym: '+d.a;extra='';}
+    return `<div class="wcard"><div class="w">${d.w||d.word}</div><div class="m">${sub}</div>${extra}</div>`;
+  }).join(''):'<div style="grid-column:1/-1;color:var(--text2);padding:2rem;text-align:center">No results found.</div>';
+}
+
+function buildAlpha(alphaId,gridId,searchId,data,type){
+  const el=document.getElementById(alphaId);
+  if(!el)return;
+  let current='all';
+  const letters=['all',...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')];
+  el.innerHTML=letters.map(l=>`<button class="abtn${l==='all'?' active':''}" onclick="setAlpha('${alphaId}','${gridId}','${searchId}',event,'${l}','${type}')">${l==='all'?'All':l}</button>`).join('');
+}
+
+function setAlpha(alphaId,gridId,searchId,event,letter,type){
+  document.getElementById(alphaId).querySelectorAll('.abtn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+  const data=type==='vocab'?vocabData:type==='syn'?synonymData:antonymData;
+  renderWordGrid(data,gridId,searchId,letter,type);
+}
+
+function filterVocab(){renderWordGrid(vocabData,'vocabGrid','vocabSearch','all','vocab');}
+function filterSyn(){renderWordGrid(synonymData,'synGrid','synSearch','all','syn');}
+function filterAnt(){renderWordGrid(antonymData,'antGrid','antSearch','all','ant');}
+
+function buildPhrasalTable(){
+  const t=document.getElementById('phrasalTable');
+  if(!t)return;
+  t.innerHTML='<tr><th>Phrasal Verb</th><th>Meaning</th><th>Example</th></tr>'+
+    phrasalData.map(r=>`<tr><td><strong>${r[0]}</strong></td><td>${r[1]}</td><td><em>${r[2]}</em></td></tr>`).join('');
+}
+
+function filterPhrasal(){
+  const q=document.getElementById('phrasalSearch').value.toLowerCase();
+  const t=document.getElementById('phrasalTable');
+  if(!t)return;
+  const rows=phrasalData.filter(r=>r[0].toLowerCase().includes(q)||r[1].toLowerCase().includes(q));
+  t.innerHTML='<tr><th>Phrasal Verb</th><th>Meaning</th><th>Example</th></tr>'+
+    rows.map(r=>`<tr><td><strong>${r[0]}</strong></td><td>${r[1]}</td><td><em>${r[2]}</em></td></tr>`).join('');
+}
+
+function buildOWTable(){
+  const t=document.getElementById('owTable');
+  if(!t)return;
+  t.innerHTML='<tr><th>Phrase/Description</th><th>One Word</th></tr>'+
+    owData.map(r=>`<tr><td>${r[0]}</td><td><strong>${r[1]}</strong></td></tr>`).join('');
+}
+
+function filterOW(){
+  const q=document.getElementById('owSearch').value.toLowerCase();
+  const t=document.getElementById('owTable');
+  if(!t)return;
+  const rows=owData.filter(r=>r[0].toLowerCase().includes(q)||r[1].toLowerCase().includes(q));
+  t.innerHTML='<tr><th>Phrase/Description</th><th>One Word</th></tr>'+
+    rows.map(r=>`<tr><td>${r[0]}</td><td><strong>${r[1]}</strong></td></tr>`).join('');
+}
+
+function buildConfused(){
+  const g=document.getElementById('confusedGrid');
+  if(!g)return;
+  g.innerHTML=confusedData.map(d=>`
+    <div class="confused-row">
+      <div class="cbox a"><div class="cword">${d.a}</div><p style="font-size:.82rem;color:var(--text2)">${d.at}</p><em style="font-size:.82rem">${d.ae}</em></div>
+      <div class="cbox b"><div class="cword">${d.b}</div><p style="font-size:.82rem;color:var(--text2)">${d.bt}</p><em style="font-size:.82rem">${d.be}</em></div>
+    </div>`).join('');
+}
+
+function filterIdioms(){
+  const q=document.getElementById('idiomSearch').value.toLowerCase();
+  buildIdiomGrid(q);
+}
+
+function buildIdiomGrid(filter){
+  const g=document.getElementById('idiomGrid');
+  if(!g)return;
+  const filtered=filter?idiomData.filter(d=>d.p.toLowerCase().includes(filter)||d.m.toLowerCase().includes(filter)):idiomData;
+  g.innerHTML=filtered.map(d=>`
+    <div class="card">
+      <h4 style="color:var(--primary);margin-bottom:.35rem"><i class="fas fa-quote-left" style="font-size:.75rem"></i> ${d.p}</h4>
+      <p style="font-size:.85rem;color:var(--text2);margin-bottom:.35rem">${d.m}</p>
+      <em style="font-size:.82rem;color:var(--textm)">"${d.e}"</em>
+    </div>`).join('');
+}
+
+// ============ QUIZ ENGINE ============
+let currentQuiz=null,quizIdx=0,quizScore=0,quizName='';
+function loadQuiz(type,event){
+  if(event){
+    document.getElementById('quizTabs').querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+    event.target.classList.add('active');
+  }
+  quizName=type;quizIdx=0;quizScore=0;currentQuiz=quizData[type];
+  renderQuestion();
+}
+
+function renderQuestion(){
+  const c=document.getElementById('quizContent');
+  if(!c)return;
+  if(quizIdx>=currentQuiz.length){showQuizResult();return;}
+  const q=currentQuiz[quizIdx];
+  const pct=Math.round((quizIdx/currentQuiz.length)*100);
+  c.innerHTML=`
+    <div class="qprog"><div class="pbar"><div class="pfill" style="width:${pct}%"></div></div><span style="font-size:.85rem;color:var(--text2)">${quizIdx+1}/${currentQuiz.length}</span></div>
+    <div class="quiz-q">Q${quizIdx+1}. ${q.q}</div>
+    <div class="quiz-opts">${q.opts.map((o,i)=>`<button class="qopt" onclick="selectQuizAns(${i})">${String.fromCharCode(65+i)}. ${o}</button>`).join('')}</div>`;
+}
+
+function selectQuizAns(idx){
+  const q=currentQuiz[quizIdx];
+  const opts=document.querySelectorAll('.qopt');
+  opts.forEach(o=>o.classList.add('answered'));
+  opts[idx].classList.add(idx===q.ans?'correct':'wrong');
+  if(idx!==q.ans)opts[q.ans].classList.add('correct');
+  if(idx===q.ans)quizScore++;
+  setTimeout(()=>{quizIdx++;renderQuestion();},1200);
+}
+
+function showQuizResult(){
+  const pct=Math.round((quizScore/currentQuiz.length)*100);
+  const c=document.getElementById('quizContent');
+  const msg=pct>=80?'Excellent! 🎉':pct>=60?'Good Job! 👍':'Keep Practising! 💪';
+  c.innerHTML=`<div class="qscore">
+    <div class="score-circle"><span>${pct}%</span></div>
+    <h3>${msg}</h3>
+    <p style="color:var(--text2);margin:.5rem 0">You scored <strong>${quizScore}</strong> out of <strong>${currentQuiz.length}</strong></p>
+    <button class="btn" style="background:var(--primary);color:white;margin-top:1rem" onclick="loadQuiz('${quizName}')"><i class="fas fa-redo"></i> Try Again</button>
+  </div>`;
+  progress.quizScores[quizName]=Math.max(pct,progress.quizScores[quizName]||0);
+  saveProgress();updateDashboard();
+}
+
+// ============ TEST ENGINE ============
+let testTimer=null,testSeconds=1200,testQuiz=[],testIdx=0,testScore=0,testKey='';
+function startTest(level){
+  testKey=level;testIdx=0;testScore=0;testQuiz=testData[level];
+  testSeconds=level==='beginner'?1200:level==='intermediate'?1500:level==='advanced'?1800:1200;
+  const tc=document.getElementById('testContainer');
+  const tt=document.getElementById('testTitle');
+  if(tc)tc.style.display='block';
+  if(tt)tt.textContent=level.charAt(0).toUpperCase()+level.slice(1)+' Test';
+  tc.scrollIntoView({behavior:'smooth'});
+  if(testTimer)clearInterval(testTimer);
+  testTimer=setInterval(()=>{
+    testSeconds--;
+    const m=Math.floor(testSeconds/60).toString().padStart(2,'0');
+    const s=(testSeconds%60).toString().padStart(2,'0');
+    const el=document.getElementById('testTimer');
+    if(el)el.textContent=m+':'+s;
+    if(testSeconds<=0){clearInterval(testTimer);showTestResult();}
+  },1000);
+  renderTestQ();
+}
+
+function renderTestQ(){
+  const c=document.getElementById('testContent');
+  if(!c)return;
+  if(testIdx>=testQuiz.length){showTestResult();return;}
+  const q=testQuiz[testIdx];
+  const pct=Math.round((testIdx/testQuiz.length)*100);
+  c.innerHTML=`
+    <div class="qprog"><div class="pbar"><div class="pfill" style="width:${pct}%"></div></div><span style="font-size:.85rem;color:var(--text2)">${testIdx+1}/${testQuiz.length}</span></div>
+    <div class="quiz-q">Q${testIdx+1}. ${q.q}</div>
+    <div class="quiz-opts">${q.opts.map((o,i)=>`<button class="qopt" onclick="selectTestAns(${i})">${String.fromCharCode(65+i)}. ${o}</button>`).join('')}</div>`;
+}
+
+function selectTestAns(idx){
+  const q=testQuiz[testIdx];
+  const opts=document.querySelectorAll('#testContent .qopt');
+  opts.forEach(o=>o.classList.add('answered'));
+  opts[idx].classList.add(idx===q.ans?'correct':'wrong');
+  if(idx!==q.ans)opts[q.ans].classList.add('correct');
+  if(idx===q.ans)testScore++;
+  setTimeout(()=>{testIdx++;renderTestQ();},1200);
+}
+
+function showTestResult(){
+  clearInterval(testTimer);
+  const pct=Math.round((testScore/testQuiz.length)*100);
+  const c=document.getElementById('testContent');
+  const msg=pct>=80?'Excellent! Ready for exams! 🎉':pct>=60?'Good performance! Keep it up! 👍':pct>=40?'Average. More practice needed. 📚':'Needs improvement. Review the topics. 💪';
+  let analysis=`<div style="margin-top:1rem;text-align:left">`;
+  testQuiz.forEach((q,i)=>{analysis+=`<div style="padding:.4rem 0;border-bottom:1px solid var(--border);font-size:.85rem"><strong>Q${i+1}:</strong> ${q.q}<br><span style="color:var(--success)">✓ ${q.opts[q.ans]}</span></div>`;});
+  analysis+='</div>';
+  c.innerHTML=`<div class="qscore">
+    <div class="score-circle"><span>${pct}%</span></div>
+    <h3>${msg}</h3>
+    <p style="color:var(--text2);margin:.5rem 0">Score: <strong>${testScore}/${testQuiz.length}</strong> | Level: <strong>${testKey.charAt(0).toUpperCase()+testKey.slice(1)}</strong></p>
+    <button class="btn" style="background:var(--primary);color:white;margin-top:1rem" onclick="startTest('${testKey}')"><i class="fas fa-redo"></i> Retake</button>
+  </div>${analysis}`;
+  progress.testScores[testKey]=Math.max(pct,progress.testScores[testKey]||0);
+  saveProgress();updateDashboard();
+}
+
+// ============ DICTIONARY ============
+function searchDict(){
+  const word=(document.getElementById('dictInput').value||'').trim().toLowerCase();
+  const r=document.getElementById('dictResult');
+  if(!word){r.innerHTML='<div class="ib warn">Please enter a word to search.</div>';return;}
+  const found=vocabData.find(v=>v.w.toLowerCase()===word)||vocabData.find(v=>v.w.toLowerCase().startsWith(word));
+  if(found){
+    r.innerHTML=`<div class="card">
+      <h2 style="color:var(--primary);margin-bottom:.25rem">${found.w}</h2>
+      <div style="color:var(--text2);font-size:.85rem;margin-bottom:.75rem">🔊 /${found.w.toLowerCase()}/</div>
+      <div class="formula"><strong>Meaning:</strong> ${found.m}</div>
+      <div class="ib ok" style="margin-top:.75rem"><strong>Example:</strong> <em>${found.e}</em></div>
+      <div style="margin-top:.75rem">
+        ${(synonymData.find(s=>s.w.toLowerCase()===word)||{s:''}).s?`<div class="ib tip"><strong>Synonyms:</strong> ${(synonymData.find(s=>s.w.toLowerCase()===word)||{s:''}).s}</div>`:''}
+        ${(antonymData.find(a=>a.w.toLowerCase()===word)||{a:''}).a?`<div class="ib warn"><strong>Antonym:</strong> ${(antonymData.find(a=>a.w.toLowerCase()===word)||{a:''}).a}</div>`:''}
+      </div>
+    </div>`;
+  }else{
+    r.innerHTML=`<div class="ib err">Word not found. Try a different word from our vocabulary list.</div>
+    <div style="margin-top:1rem"><strong>Did you mean?</strong><br>${vocabData.filter(v=>v.w.toLowerCase().includes(word.slice(0,3))).slice(0,6).map(v=>`<button class="pill" onclick="document.getElementById('dictInput').value='${v.w}';searchDict()">${v.w}</button>`).join('')}</div>`;
+  }
+}
+
+// ============ ACTIVE NAV HIGHLIGHT ON SCROLL ============
+function initScrollSpy(){
+  const sections=document.querySelectorAll('section[id],div[id].sec-wrap');
+  const navLinks=document.querySelectorAll('.nav-links a');
+  const observer=new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        navLinks.forEach(a=>a.style.background='');
+        navLinks.forEach(a=>a.style.color='');
+        const active=document.querySelector('.nav-links a[href="#'+entry.target.id+'"]');
+        if(active){active.style.background='var(--primary)';active.style.color='#fff';}
+        markLesson(entry.target.id);
+      }
+    });
+  },{rootMargin:'-62px 0px -60% 0px'});
+  sections.forEach(s=>observer.observe(s));
+}
+
+// ============ KEYBOARD SEARCH SUPPORT ============
+document.addEventListener('keydown',function(e){
+  if(e.ctrlKey&&e.key==='f'){
+    e.preventDefault();
+    const dict=document.getElementById('dictInput');
+    if(dict){dict.focus();dict.scrollIntoView({behavior:'smooth',block:'center'});}
+  }
+});
+
+// ============ PRINT QUICK REF ============
+function printQuickRef(){
+  window.print();
+}
+
+// ============ INIT ============
+document.addEventListener('DOMContentLoaded',function(){
+  buildAlpha('vocabAlpha','vocabGrid','vocabSearch',vocabData,'vocab');
+  renderWordGrid(vocabData,'vocabGrid','vocabSearch','all','vocab');
+  buildAlpha('synAlpha','synGrid','synSearch',synonymData,'syn');
+  renderWordGrid(synonymData,'synGrid','synSearch','all','syn');
+  buildAlpha('antAlpha','antGrid','antSearch',antonymData,'ant');
+  renderWordGrid(antonymData,'antGrid','antSearch','all','ant');
+  buildIdiomGrid();
+  buildPhrasalTable();
+  buildOWTable();
+  buildConfused();
+  loadQuiz('tenses',null);
+  updateDashboard();
+  initScrollSpy();
+});
+</script>
+</body>
+</html>
