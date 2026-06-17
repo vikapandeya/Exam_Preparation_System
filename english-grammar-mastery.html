@@ -166,6 +166,58 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
 .cword{font-size:1.2rem;font-weight:700;margin-bottom:.4rem}
 .cbox.a .cword{color:var(--primary)}.cbox.b .cword{color:var(--secondary)}
 .passage-box{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.5rem;margin-bottom:1.5rem;line-height:1.9;font-style:italic;border-left:4px solid var(--primary)}
+/* ---- ERRORS & PHRASES ---- */
+.err-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:.75rem;align-items:start}
+@media(max-width:600px){.err-row{grid-template-columns:1fr}}
+.err-box{padding:.9rem 1.1rem;border-radius:10px;font-size:.88rem;line-height:1.6}
+.err-box.wrong{background:#fef2f2;border:2px solid #ef4444;color:#991b1b}
+.err-box.right{background:#ecfdf5;border:2px solid #10b981;color:#065f46}
+[data-theme=dark] .err-box.wrong{background:#450a0a;color:#fca5a5;border-color:#dc2626}
+[data-theme=dark] .err-box.right{background:#022c22;color:#6ee7b7;border-color:#059669}
+.err-label{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:.3rem;opacity:.75}
+.phrase-cat{font-size:.78rem;font-weight:700;color:var(--primary);text-transform:uppercase;letter-spacing:.5px;margin:1.25rem 0 .5rem;padding-bottom:.25rem;border-bottom:2px solid var(--primary)}
+.phrase-list{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.5rem}
+.phrase-chip{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.4rem .8rem;font-size:.83rem;color:var(--text);cursor:default;transition:all .2s}
+.phrase-chip:hover{background:var(--primary);color:#fff;border-color:var(--primary)}
+/* ---- NARRATIONS ---- */
+.narr-box{background:var(--bgcard);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;margin-bottom:1.5rem}
+.narr-head{background:linear-gradient(135deg,#7c3aed,#2563eb);color:#fff;padding:1rem 1.5rem;font-weight:700;display:flex;align-items:center;gap:.6rem}
+.narr-body{padding:1.5rem;line-height:1.9;font-size:.91rem}
+.narr-body p{margin-bottom:.75rem;color:var(--text)}
+.seq-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.75rem;margin:.75rem 0}
+.seq-card{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;border-radius:10px;padding:.8rem 1rem;text-align:center;font-size:.88rem;font-weight:600}
+.seq-card small{display:block;font-size:.72rem;opacity:.85;margin-top:.2rem;font-weight:400}
+.story-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin:1rem 0}
+.story-step{background:var(--bgcard);border:1px solid var(--border);border-radius:10px;padding:1.1rem;border-top:4px solid var(--primary)}
+.story-step:nth-child(2){border-top-color:#f59e0b}
+.story-step:nth-child(3){border-top-color:#ef4444}
+.story-step:nth-child(4){border-top-color:#10b981}
+.story-step h5{color:var(--primary);margin-bottom:.4rem;font-size:.9rem}
+.story-step:nth-child(2) h5{color:#f59e0b}
+.story-step:nth-child(3) h5{color:#ef4444}
+.story-step:nth-child(4) h5{color:#10b981}
+/* ---- SPOKEN ENGLISH ---- */
+.convo-wrap{display:flex;flex-direction:column;gap:.9rem;padding:.5rem 0}
+.bubble{max-width:78%;padding:.85rem 1.2rem;border-radius:18px;font-size:.9rem;line-height:1.6;position:relative}
+.bubble.a{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;border-bottom-left-radius:4px;align-self:flex-start}
+.bubble.b{background:var(--bg2);border:1px solid var(--border);color:var(--text);border-bottom-right-radius:4px;align-self:flex-end}
+.bubble-name{font-size:.72rem;font-weight:700;margin-bottom:.25rem;opacity:.8}
+.spoken-tip{background:var(--bgcard);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:.75rem;display:flex;gap:1rem;align-items:flex-start}
+.spoken-tip-icon{width:36px;height:36px;min-width:36px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;display:flex;align-items:center;justify-content:center;font-size:.95rem}
+.spoken-tip-body{flex:1;font-size:.88rem;line-height:1.6}
+.spoken-tip-body strong{color:var(--primary)}
+.fi-table{width:100%}
+.fi-table th{background:var(--primary);color:#fff;padding:.6rem 1rem;font-size:.85rem}
+.fi-table td{padding:.55rem 1rem;border-bottom:1px solid var(--border);font-size:.85rem;vertical-align:top}
+.fi-table tr:nth-child(even) td{background:var(--bg)}
+[data-theme=dark] .fi-table tr:nth-child(even) td{background:#162032}
+.convo-scene{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:1.5rem;margin-bottom:1.5rem}
+.convo-scene h4{color:var(--primary);margin-bottom:1rem;font-size:.95rem;display:flex;align-items:center;gap:.5rem}
+.pron-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.75rem;margin:.75rem 0}
+.pron-card{background:var(--bgcard);border:1px solid var(--border);border-radius:10px;padding:.9rem;font-size:.86rem}
+.pron-word{font-size:1rem;font-weight:700;color:var(--primary)}
+.pron-ipa{color:var(--text2);font-style:italic;margin:.1rem 0}
+.pron-tip{color:var(--text);font-size:.8rem}
 </style>
 </head>
 <body>
@@ -197,6 +249,9 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
       <li><a href="#comprehension">Comprehension</a></li>
       <li><a href="#quiz">Quiz</a></li>
       <li><a href="#tests">Practice Tests</a></li>
+      <li><a href="#errors">Errors &amp; Phrases</a></li>
+      <li><a href="#narrations">Narrations</a></li>
+      <li><a href="#spoken">Spoken English</a></li>
       <li><a href="#dictionary">Dictionary</a></li>
       <li><a href="#quickref">Quick Ref</a></li>
       <li><a href="#dashboard">Dashboard</a></li>
@@ -221,8 +276,9 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
     <a href="#confused" onclick="closeMob()">Confused Words</a><a href="#spelling" onclick="closeMob()">Spelling</a>
     <a href="#punctuation" onclick="closeMob()">Punctuation</a><a href="#writing" onclick="closeMob()">Writing Skills</a>
     <a href="#quiz" onclick="closeMob()">Quiz</a><a href="#tests" onclick="closeMob()">Practice Tests</a>
-    <a href="#dictionary" onclick="closeMob()">Dictionary</a><a href="#quickref" onclick="closeMob()">Quick Ref</a>
-    <a href="#dashboard" onclick="closeMob()">Dashboard</a>
+    <a href="#errors" onclick="closeMob()">Errors &amp; Phrases</a><a href="#narrations" onclick="closeMob()">Narrations</a>
+    <a href="#spoken" onclick="closeMob()">Spoken English</a><a href="#dictionary" onclick="closeMob()">Dictionary</a>
+    <a href="#quickref" onclick="closeMob()">Quick Ref</a><a href="#dashboard" onclick="closeMob()">Dashboard</a>
   </div>
 </div>
 
@@ -242,7 +298,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
       <a href="#dashboard" class="btn btn-outline-white"><i class="fas fa-chart-bar"></i> Dashboard</a>
     </div>
     <div class="hero-stats">
-      <div class="hero-stat"><strong>27+</strong><span>Topics Covered</span></div>
+      <div class="hero-stat"><strong>30+</strong><span>Topics Covered</span></div>
       <div class="hero-stat"><strong>12</strong><span>Complete Tenses</span></div>
       <div class="hero-stat"><strong>1000+</strong><span>Words &amp; Phrases</span></div>
       <div class="hero-stat"><strong>200+</strong><span>Quiz Questions</span></div>
@@ -1371,7 +1427,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
     <div class="dash-card"><div class="dash-num" id="dashLessons">0</div><div class="dash-label"><i class="fas fa-book"></i> Lessons Viewed</div></div>
     <div class="dash-card"><div class="dash-num" id="dashQuizBest">0%</div><div class="dash-label"><i class="fas fa-star"></i> Best Quiz Score</div></div>
     <div class="dash-card"><div class="dash-num" id="dashTestBest">0%</div><div class="dash-label"><i class="fas fa-trophy"></i> Best Test Score</div></div>
-    <div class="dash-card"><div class="dash-num" id="dashTotal">27</div><div class="dash-label"><i class="fas fa-list"></i> Total Topics</div></div>
+    <div class="dash-card"><div class="dash-num" id="dashTotal">30</div><div class="dash-label"><i class="fas fa-list"></i> Total Topics</div></div>
   </div>
   <div style="margin-bottom:1.5rem">
     <h4 style="color:var(--primary);margin-bottom:.75rem">Quiz Score History</h4>
@@ -1379,6 +1435,752 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
   </div>
   <button class="btn" style="background:var(--danger);color:white" onclick="resetProgress()"><i class="fas fa-trash"></i> Reset Progress</button>
 </div></div>
+
+<!-- ======== COMMON ERRORS & PHRASES ======== -->
+<section id="errors">
+<div class="sec">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-exclamation-triangle"></i> Grammar Errors</span>
+    <h2 class="sec-title">Common Errors &amp; Phrases</h2>
+    <p class="sec-sub">Identify and fix the most common grammar mistakes in English and master everyday phrases.</p>
+  </div>
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="openTabG(event,'err','errors')">Common Errors</button>
+    <button class="tab-btn" onclick="openTabG(event,'err','types')">Error Types</button>
+    <button class="tab-btn" onclick="openTabG(event,'err','daily')">Daily Phrases</button>
+    <button class="tab-btn" onclick="openTabG(event,'err','formal')">Formal Phrases</button>
+  </div>
+
+  <!-- COMMON ERRORS -->
+  <div class="tab-pane active" id="err-errors">
+    <div class="ib tip"><i class="fas fa-lightbulb"></i> <strong>Tip:</strong> Red = incorrect usage, Green = correct usage. Study each pair carefully.</div>
+    <!-- pair 1 -->
+    <div class="err-row">
+      <div class="err-box wrong"><div class="err-label">✗ Incorrect</div>She <strong>don't</strong> know the answer.</div>
+      <div class="err-box right"><div class="err-label">✓ Correct</div>She <strong>doesn't</strong> know the answer.</div>
+    </div>
+    <div class="err-row">
+      <div class="err-box wrong"><div class="err-label">✗ Incorrect</div>I am <strong>agree</strong> with you.</div>
+      <div class="err-box right"><div class="err-label">✓ Correct</div>I <strong>agree</strong> with you.</div>
+    </div>
+    <div class="err-row">
+      <div class="err-box wrong"><div class="err-label">✗ Incorrect</div>He <strong>went</strong> to school yesterday and <strong>study</strong> hard.</div>
+      <div class="err-box right"><div class="err-label">✓ Correct</div>He <strong>went</strong> to school yesterday and <strong>studied</strong> hard.</div>
+    </div>
+    <div class="err-row">
+      <div class="err-box wrong"><div class="err-label">✗ Incorrect</div>He is <strong>more taller</strong> than his brother.</div>
+      <div class="err-box right"><div class="err-label">✓ Correct</div>He is <strong>taller</strong> than his brother.</div>
+    </div>
+    <div class="err-row">
+      <div class="err-box wrong"><div class="err-label">✗ Incorrect</div>I have <strong>saw</strong> that movie.</div>
+      <div class="err-box right"><div class="err-label">✓ Correct</div>I have <strong>seen</strong> that movie.</div>
+    </div>
+    <div class="err-row">
+      <div class="err-box wrong"><div class="err-label">✗ Incorrect</div>The news <strong>are</strong> shocking.</div>
+      <div class="err-box right"><div class="err-label">✓ Correct</div>The news <strong>is</strong> shocking.</div>
+    </div>
+    <div class="err-row">
+      <div class="err-box wrong"><div class="err-label">✗ Incorrect</div>Each of the students <strong>were</strong> present.</div>
+      <div class="err-box right"><div class="err-label">✓ Correct</div>Each of the students <strong>was</strong> present.</div>
+    </div>
+    <div class="err-row">
+      <div class="err-box wrong"><div class="err-label">✗ Incorrect</div>She plays <strong>a</strong> piano beautifully.</div>
+      <div class="err-box right"><div class="err-label">✓ Correct</div>She plays <strong>the</strong> piano beautifully.</div>
+    </div>
+    <div class="err-row">
+      <div class="err-box wrong"><div class="err-label">✗ Incorrect</div>I am <strong>born</strong> in 2000.</div>
+      <div class="err-box right"><div class="err-label">✓ Correct</div>I <strong>was born</strong> in 2000.</div>
+    </div>
+    <div class="err-row">
+      <div class="err-box wrong"><div class="err-label">✗ Incorrect</div>He <strong>suggested me</strong> to take rest.</div>
+      <div class="err-box right"><div class="err-label">✓ Correct</div>He <strong>suggested that I</strong> take rest.</div>
+    </div>
+    <div class="err-row">
+      <div class="err-box wrong"><div class="err-label">✗ Incorrect</div>I didn't <strong>went</strong> there.</div>
+      <div class="err-box right"><div class="err-label">✓ Correct</div>I didn't <strong>go</strong> there.</div>
+    </div>
+    <div class="err-row">
+      <div class="err-box wrong"><div class="err-label">✗ Incorrect</div>She is <strong>my cousin sister</strong>.</div>
+      <div class="err-box right"><div class="err-label">✓ Correct</div>She is my <strong>cousin</strong>.</div>
+    </div>
+    <div class="err-row">
+      <div class="err-box wrong"><div class="err-label">✗ Incorrect</div>I need an <strong>informations</strong>.</div>
+      <div class="err-box right"><div class="err-label">✓ Correct</div>I need some <strong>information</strong>.</div>
+    </div>
+    <div class="err-row">
+      <div class="err-box wrong"><div class="err-label">✗ Incorrect</div>Despite <strong>of</strong> the rain, we went out.</div>
+      <div class="err-box right"><div class="err-label">✓ Correct</div><strong>Despite</strong> the rain, we went out.</div>
+    </div>
+    <div class="err-row">
+      <div class="err-box wrong"><div class="err-label">✗ Incorrect</div>He is working <strong>since</strong> two hours.</div>
+      <div class="err-box right"><div class="err-label">✓ Correct</div>He has been working <strong>for</strong> two hours.</div>
+    </div>
+    <div class="err-row">
+      <div class="err-box wrong"><div class="err-label">✗ Incorrect</div>I am <strong>much</strong> tired today.</div>
+      <div class="err-box right"><div class="err-label">✓ Correct</div>I am <strong>very</strong> tired today.</div>
+    </div>
+    <div class="err-row">
+      <div class="err-box wrong"><div class="err-label">✗ Incorrect</div>Neither Ram nor Shyam <strong>are</strong> coming.</div>
+      <div class="err-box right"><div class="err-label">✓ Correct</div>Neither Ram nor Shyam <strong>is</strong> coming.</div>
+    </div>
+    <div class="err-row">
+      <div class="err-box wrong"><div class="err-label">✗ Incorrect</div>One of my friends <strong>are</strong> a doctor.</div>
+      <div class="err-box right"><div class="err-label">✓ Correct</div>One of my friends <strong>is</strong> a doctor.</div>
+    </div>
+    <div class="err-row">
+      <div class="err-box wrong"><div class="err-label">✗ Incorrect</div>He asked me <strong>that</strong> where I live.</div>
+      <div class="err-box right"><div class="err-label">✓ Correct</div>He asked me <strong>where</strong> I live.</div>
+    </div>
+    <div class="err-row">
+      <div class="err-box wrong"><div class="err-label">✗ Incorrect</div>I have <strong>completed</strong> my work tomorrow.</div>
+      <div class="err-box right"><div class="err-label">✓ Correct</div>I <strong>will complete</strong> my work tomorrow.</div>
+    </div>
+  </div>
+
+  <!-- ERROR TYPES -->
+  <div class="tab-pane" id="err-types">
+    <div class="acc">
+      <div class="acc-item">
+        <button class="acc-hdr" onclick="toggleAcc(this)">1. Subject-Verb Agreement Errors <i class="fas fa-chevron-down"></i></button>
+        <div class="acc-body">
+          <p>The verb must agree with the subject in number (singular/plural).</p>
+          <ul class="slist">
+            <li><span class="badge bn">✗</span> The group of students <strong>are</strong> waiting. → <span class="badge bp">✓</span> The group <strong>is</strong> waiting.</li>
+            <li><span class="badge bn">✗</span> Mathematics <strong>are</strong> a difficult subject. → <span class="badge bp">✓</span> Mathematics <strong>is</strong> a difficult subject.</li>
+            <li><span class="badge bn">✗</span> Either of them <strong>are</strong> coming. → <span class="badge bp">✓</span> Either of them <strong>is</strong> coming.</li>
+            <li><strong>Rule:</strong> Collective nouns, uncountable nouns, and subjects joined by "either...or / neither...nor" take singular verbs.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-hdr" onclick="toggleAcc(this)">2. Tense Errors <i class="fas fa-chevron-down"></i></button>
+        <div class="acc-body">
+          <p>Tense must be consistent and match the time reference.</p>
+          <ul class="slist">
+            <li><span class="badge bn">✗</span> He <strong>goes</strong> to the market and <strong>bought</strong> vegetables. → <span class="badge bp">✓</span> He <strong>went</strong> ... and <strong>bought</strong>.</li>
+            <li><span class="badge bn">✗</span> If I <strong>will have</strong> money, I would help. → <span class="badge bp">✓</span> If I <strong>had</strong> money, I would help.</li>
+            <li><span class="badge bn">✗</span> I <strong>am knowing</strong> her. → <span class="badge bp">✓</span> I <strong>know</strong> her. (stative verb)</li>
+            <li><strong>Rule:</strong> Stative verbs (know, believe, want, own) are not used in continuous tenses.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-hdr" onclick="toggleAcc(this)">3. Article Errors (a / an / the) <i class="fas fa-chevron-down"></i></button>
+        <div class="acc-body">
+          <ul class="slist">
+            <li><span class="badge bn">✗</span> She is <strong>a</strong> honest person. → <span class="badge bp">✓</span> She is <strong>an</strong> honest person. (vowel sound)</li>
+            <li><span class="badge bn">✗</span> He plays <strong>a</strong> guitar. → <span class="badge bp">✓</span> He plays <strong>the</strong> guitar. (instruments → the)</li>
+            <li><span class="badge bn">✗</span> <strong>The</strong> honesty is the best policy. → <span class="badge bp">✓</span> Honesty is the best policy. (abstract noun → no article)</li>
+            <li><strong>Rule:</strong> Use "an" before vowel sounds; "the" before unique/specific nouns; no article before abstract nouns in general sense.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-hdr" onclick="toggleAcc(this)">4. Preposition Errors <i class="fas fa-chevron-down"></i></button>
+        <div class="acc-body">
+          <ul class="slist">
+            <li><span class="badge bn">✗</span> She is married <strong>with</strong> him. → <span class="badge bp">✓</span> She is married <strong>to</strong> him.</li>
+            <li><span class="badge bn">✗</span> He is good <strong>in</strong> maths. → <span class="badge bp">✓</span> He is good <strong>at</strong> maths.</li>
+            <li><span class="badge bn">✗</span> I am fond <strong>for</strong> music. → <span class="badge bp">✓</span> I am fond <strong>of</strong> music.</li>
+            <li><span class="badge bn">✗</span> We discussed <strong>about</strong> the plan. → <span class="badge bp">✓</span> We discussed the plan. (no preposition needed)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-hdr" onclick="toggleAcc(this)">5. Pronoun Errors <i class="fas fa-chevron-down"></i></button>
+        <div class="acc-body">
+          <ul class="slist">
+            <li><span class="badge bn">✗</span> Between you and <strong>I</strong>, it's a secret. → <span class="badge bp">✓</span> Between you and <strong>me</strong>.</li>
+            <li><span class="badge bn">✗</span> Everyone must bring <strong>their</strong> own book. → Can use "their" as gender-neutral singular now.</li>
+            <li><span class="badge bn">✗</span> <strong>Me</strong> and my friend went out. → <span class="badge bp">✓</span> <strong>My friend and I</strong> went out.</li>
+            <li><strong>Rule:</strong> Use subject pronouns (I, he, she, we, they) as subjects; object pronouns (me, him, her, us, them) as objects.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-hdr" onclick="toggleAcc(this)">6. Double Negative Errors <i class="fas fa-chevron-down"></i></button>
+        <div class="acc-body">
+          <ul class="slist">
+            <li><span class="badge bn">✗</span> I <strong>don't know nothing</strong>. → <span class="badge bp">✓</span> I <strong>don't know anything</strong>.</li>
+            <li><span class="badge bn">✗</span> She <strong>never</strong> does <strong>nothing</strong>. → <span class="badge bp">✓</span> She <strong>never</strong> does <strong>anything</strong>.</li>
+            <li><strong>Rule:</strong> Two negatives in one clause make a positive in Standard English. Avoid double negatives.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-hdr" onclick="toggleAcc(this)">7. Comparative & Superlative Errors <i class="fas fa-chevron-down"></i></button>
+        <div class="acc-body">
+          <ul class="slist">
+            <li><span class="badge bn">✗</span> He is <strong>more faster</strong>. → <span class="badge bp">✓</span> He is <strong>faster</strong>.</li>
+            <li><span class="badge bn">✗</span> She is the <strong>most fastest</strong>. → <span class="badge bp">✓</span> She is the <strong>fastest</strong>.</li>
+            <li><span class="badge bn">✗</span> This is <strong>more better</strong>. → <span class="badge bp">✓</span> This is <strong>better</strong>.</li>
+            <li><strong>Rule:</strong> Never use "more/most" with -er/-est forms. One modifier is enough.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-hdr" onclick="toggleAcc(this)">8. Redundancy Errors (Pleonasm) <i class="fas fa-chevron-down"></i></button>
+        <div class="acc-body">
+          <ul class="slist">
+            <li><span class="badge bn">✗</span> <strong>Revert back</strong> to me. → <span class="badge bp">✓</span> <strong>Revert</strong> to me.</li>
+            <li><span class="badge bn">✗</span> <strong>Join together</strong> for a cause. → <span class="badge bp">✓</span> <strong>Join</strong> for a cause.</li>
+            <li><span class="badge bn">✗</span> <strong>Advance planning</strong> is important. → <span class="badge bp">✓</span> <strong>Planning</strong> is important.</li>
+            <li><span class="badge bn">✗</span> <strong>End result</strong> was positive. → <span class="badge bp">✓</span> <strong>Result</strong> was positive.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAILY PHRASES -->
+  <div class="tab-pane" id="err-daily">
+    <div class="phrase-cat"><i class="fas fa-sun"></i> Greetings & Farewells</div>
+    <div class="phrase-list">
+      <span class="phrase-chip">Good morning!</span><span class="phrase-chip">Good afternoon!</span><span class="phrase-chip">Good evening!</span>
+      <span class="phrase-chip">How are you?</span><span class="phrase-chip">How do you do?</span><span class="phrase-chip">Nice to meet you!</span>
+      <span class="phrase-chip">Long time no see!</span><span class="phrase-chip">See you later!</span><span class="phrase-chip">Take care!</span>
+      <span class="phrase-chip">Have a great day!</span><span class="phrase-chip">Goodbye!</span><span class="phrase-chip">Catch you later!</span>
+    </div>
+    <div class="phrase-cat"><i class="fas fa-hand-holding-heart"></i> Gratitude & Apology</div>
+    <div class="phrase-list">
+      <span class="phrase-chip">Thank you so much!</span><span class="phrase-chip">I really appreciate it.</span><span class="phrase-chip">That's very kind of you.</span>
+      <span class="phrase-chip">I'm sorry for the trouble.</span><span class="phrase-chip">I beg your pardon.</span><span class="phrase-chip">Please forgive me.</span>
+      <span class="phrase-chip">My apologies.</span><span class="phrase-chip">No worries!</span><span class="phrase-chip">Don't mention it.</span>
+    </div>
+    <div class="phrase-cat"><i class="fas fa-question-circle"></i> Asking for Help</div>
+    <div class="phrase-list">
+      <span class="phrase-chip">Could you please help me?</span><span class="phrase-chip">Would you mind...?</span><span class="phrase-chip">Can I ask you something?</span>
+      <span class="phrase-chip">I was wondering if...</span><span class="phrase-chip">Do you happen to know...?</span><span class="phrase-chip">Is it okay if...?</span>
+      <span class="phrase-chip">I need your assistance.</span><span class="phrase-chip">May I borrow...?</span>
+    </div>
+    <div class="phrase-cat"><i class="fas fa-comments"></i> Agreement & Disagreement</div>
+    <div class="phrase-list">
+      <span class="phrase-chip">Absolutely!</span><span class="phrase-chip">That's right.</span><span class="phrase-chip">I couldn't agree more.</span>
+      <span class="phrase-chip">You've got a point.</span><span class="phrase-chip">I'm afraid I disagree.</span><span class="phrase-chip">I see your point, but...</span>
+      <span class="phrase-chip">That's not quite right.</span><span class="phrase-chip">I beg to differ.</span><span class="phrase-chip">On the contrary...</span>
+    </div>
+    <div class="phrase-cat"><i class="fas fa-lightbulb"></i> Expressing Opinions</div>
+    <div class="phrase-list">
+      <span class="phrase-chip">In my opinion...</span><span class="phrase-chip">I believe that...</span><span class="phrase-chip">From my point of view...</span>
+      <span class="phrase-chip">As far as I'm concerned...</span><span class="phrase-chip">It seems to me that...</span><span class="phrase-chip">I feel strongly that...</span>
+      <span class="phrase-chip">To be honest...</span><span class="phrase-chip">Personally, I think...</span>
+    </div>
+    <div class="phrase-cat"><i class="fas fa-map-marker-alt"></i> Asking Directions</div>
+    <div class="phrase-list">
+      <span class="phrase-chip">How do I get to...?</span><span class="phrase-chip">Could you direct me to...?</span><span class="phrase-chip">Is this the way to...?</span>
+      <span class="phrase-chip">Turn left / right.</span><span class="phrase-chip">Go straight ahead.</span><span class="phrase-chip">It's just around the corner.</span>
+      <span class="phrase-chip">You can't miss it.</span><span class="phrase-chip">It's within walking distance.</span>
+    </div>
+    <div class="phrase-cat"><i class="fas fa-store"></i> Shopping Phrases</div>
+    <div class="phrase-list">
+      <span class="phrase-chip">How much does it cost?</span><span class="phrase-chip">Do you have this in a different size?</span><span class="phrase-chip">Can I try this on?</span>
+      <span class="phrase-chip">Is there a discount?</span><span class="phrase-chip">I'll take it.</span><span class="phrase-chip">Do you accept cards?</span>
+      <span class="phrase-chip">Can I get a receipt?</span><span class="phrase-chip">Just looking, thank you.</span>
+    </div>
+  </div>
+
+  <!-- FORMAL PHRASES -->
+  <div class="tab-pane" id="err-formal">
+    <div class="ib tip">Formal phrases are used in professional emails, letters, meetings, and official communication.</div>
+    <div class="tw"><table>
+      <tr><th>Situation</th><th>Formal Phrase</th><th>Informal Equivalent</th></tr>
+      <tr><td>Opening a letter</td><td>Dear Sir/Madam, I am writing to...</td><td>Hi, I wanted to...</td></tr>
+      <tr><td>Making a request</td><td>I would be grateful if you could...</td><td>Can you please...</td></tr>
+      <tr><td>Apologizing</td><td>I sincerely apologize for the inconvenience.</td><td>Sorry about that.</td></tr>
+      <tr><td>Agreeing</td><td>I concur with your assessment.</td><td>Yeah, I agree.</td></tr>
+      <tr><td>Disagreeing</td><td>I respectfully disagree with this view.</td><td>I don't think that's right.</td></tr>
+      <tr><td>Giving information</td><td>Please be informed that...</td><td>Just so you know...</td></tr>
+      <tr><td>Requesting urgency</td><td>I would appreciate a prompt response.</td><td>Please reply soon.</td></tr>
+      <tr><td>Closing a letter</td><td>Yours sincerely / Yours faithfully</td><td>Thanks, / Cheers,</td></tr>
+      <tr><td>Enclosing documents</td><td>Please find attached herewith...</td><td>I'm sending you...</td></tr>
+      <tr><td>Referring to previous</td><td>Further to our earlier discussion...</td><td>About what we talked about...</td></tr>
+      <tr><td>Asking for clarification</td><td>Could you kindly elaborate on...?</td><td>Can you explain...?</td></tr>
+      <tr><td>Thanking</td><td>I express my sincere gratitude for...</td><td>Thanks a lot for...</td></tr>
+      <tr><td>Confirming receipt</td><td>This is to acknowledge receipt of...</td><td>Got your email.</td></tr>
+      <tr><td>Meeting opener</td><td>Shall we commence the proceedings?</td><td>Let's get started.</td></tr>
+      <tr><td>Expressing concern</td><td>I wish to bring to your attention...</td><td>I want to tell you...</td></tr>
+    </table></div>
+    <div class="ib ok" style="margin-top:1rem"><strong>Email Phrases Toolkit:</strong> Subject: "Regarding...", "Follow-up on...", "Request for..." &nbsp;|&nbsp; Body: "I hope this email finds you well.", "As per our conversation...", "Please revert at your earliest convenience." &nbsp;|&nbsp; Closing: "Looking forward to your response.", "Thanking you in anticipation."</div>
+  </div>
+</div>
+</section>
+
+<!-- ======== NARRATIONS ======== -->
+<div class="sec-wrap" id="narrations"><div class="sec-inner">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-book-reader"></i> Narrations</span>
+    <h2 class="sec-title">Narrations</h2>
+    <p class="sec-sub">Learn how to narrate stories, events, and experiences effectively using proper structure and connectors.</p>
+  </div>
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="openTabG(event,'narr','intro')">What is Narration?</button>
+    <button class="tab-btn" onclick="openTabG(event,'narr','seq')">Sequence Connectors</button>
+    <button class="tab-btn" onclick="openTabG(event,'narr','structure')">Story Structure</button>
+    <button class="tab-btn" onclick="openTabG(event,'narr','samples')">Sample Narrations</button>
+  </div>
+
+  <!-- WHAT IS NARRATION -->
+  <div class="tab-pane active" id="narr-intro">
+    <div class="g2">
+      <div class="card">
+        <div class="card-icon" style="background:linear-gradient(135deg,#7c3aed,#2563eb)"><i class="fas fa-book"></i></div>
+        <h3>What is Narration?</h3>
+        <p style="color:var(--text2);font-size:.9rem;margin-top:.5rem">Narration is the act of telling a story or describing a series of events. A narrator communicates events to the reader or listener in a structured way with a clear beginning, middle, and end.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" style="background:linear-gradient(135deg,#f59e0b,#ef4444)"><i class="fas fa-user-circle"></i></div>
+        <h3>Types of Narration</h3>
+        <ul class="slist" style="margin-top:.5rem">
+          <li><strong>First Person:</strong> Narrator is part of the story. Uses "I, me, we". <em>e.g., "I walked into the room..."</em></li>
+          <li><strong>Second Person:</strong> Addresses reader directly. Uses "you". <em>e.g., "You open the door..."</em></li>
+          <li><strong>Third Person:</strong> Narrator is outside the story. Uses "he, she, they". <em>e.g., "She walked into the room..."</em></li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon" style="background:linear-gradient(135deg,#10b981,#059669)"><i class="fas fa-eye"></i></div>
+        <h3>Narrative Point of View</h3>
+        <ul class="slist" style="margin-top:.5rem">
+          <li><strong>Omniscient:</strong> Narrator knows all thoughts, feelings, and events.</li>
+          <li><strong>Limited:</strong> Narrator knows only one character's thoughts.</li>
+          <li><strong>Objective:</strong> Narrator reports only what is seen/heard — no inner thoughts.</li>
+          <li><strong>Unreliable:</strong> Narrator's account may be biased or incorrect.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-icon" style="background:linear-gradient(135deg,#2563eb,#10b981)"><i class="fas fa-pen-fancy"></i></div>
+        <h3>Elements of a Good Narration</h3>
+        <ul class="slist" style="margin-top:.5rem">
+          <li><strong>Setting:</strong> Time and place of the story.</li>
+          <li><strong>Characters:</strong> People involved in the events.</li>
+          <li><strong>Plot:</strong> Sequence of events.</li>
+          <li><strong>Conflict:</strong> Problem or challenge faced.</li>
+          <li><strong>Resolution:</strong> How the conflict is solved.</li>
+          <li><strong>Theme:</strong> Central message or lesson.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ib tip"><i class="fas fa-info-circle"></i> <strong>Reported Speech &amp; Narration:</strong> In narration of speech (indirect speech), we change pronouns, tense, and time expressions. E.g., "I will go tomorrow" → He said that he would go the next day.</div>
+  </div>
+
+  <!-- SEQUENCE CONNECTORS -->
+  <div class="tab-pane" id="narr-seq">
+    <div class="ib ok">Use sequence connectors to make your narration flow smoothly and logically from one event to the next.</div>
+    <div class="seq-grid">
+      <div class="seq-card">First of all<small>To begin the story</small></div>
+      <div class="seq-card">To begin with<small>Starting point</small></div>
+      <div class="seq-card">Initially<small>At the very start</small></div>
+      <div class="seq-card">Once upon a time<small>Story opening</small></div>
+      <div class="seq-card">Then / Next<small>What happened after</small></div>
+      <div class="seq-card">After that<small>Continuing sequence</small></div>
+      <div class="seq-card">Subsequently<small>Formal: what followed</small></div>
+      <div class="seq-card">Meanwhile<small>At the same time</small></div>
+      <div class="seq-card">Shortly after<small>Soon after an event</small></div>
+      <div class="seq-card">Later on<small>Sometime afterward</small></div>
+      <div class="seq-card">Eventually<small>After a long time</small></div>
+      <div class="seq-card">All of a sudden<small>Unexpected event</small></div>
+      <div class="seq-card">Suddenly<small>Quick unexpected change</small></div>
+      <div class="seq-card">Before long<small>After a short time</small></div>
+      <div class="seq-card">As soon as<small>Immediately when</small></div>
+      <div class="seq-card">At that moment<small>Exact point in time</small></div>
+      <div class="seq-card">In the end<small>Final outcome</small></div>
+      <div class="seq-card">Finally<small>Last event in sequence</small></div>
+      <div class="seq-card">At last<small>After a long wait</small></div>
+      <div class="seq-card">To conclude<small>Wrapping up the story</small></div>
+    </div>
+    <div class="ib tip" style="margin-top:1.5rem"><strong>Transition Phrases for contrast:</strong> However · Nevertheless · On the other hand · Despite this · Even so · Contrary to expectation · Unexpectedly · To everyone's surprise</div>
+    <div class="ib warn"><strong>Cause &amp; Effect in narration:</strong> Because of · As a result · Consequently · Therefore · Due to this · This led to · Hence</div>
+  </div>
+
+  <!-- STORY STRUCTURE -->
+  <div class="tab-pane" id="narr-structure">
+    <div class="story-steps">
+      <div class="story-step">
+        <h5><i class="fas fa-map-marker"></i> 1. Introduction (Setting)</h5>
+        <p style="font-size:.88rem;color:var(--text2)">Introduce the characters, setting (time &amp; place), and the initial situation. Hook the reader's attention.</p>
+        <div class="ib tip" style="margin-top:.5rem;font-size:.82rem"><em>Example: "It was a stormy night in December when Ravi found an old, dusty letter under his grandfather's bed."</em></div>
+      </div>
+      <div class="story-step">
+        <h5><i class="fas fa-fire"></i> 2. Rising Action</h5>
+        <p style="font-size:.88rem;color:var(--text2)">Events build up tension. The main character faces challenges. Use sequence connectors to link events.</p>
+        <div class="ib warn" style="margin-top:.5rem;font-size:.82rem"><em>Example: "As he read the letter, his hands trembled. The letter spoke of a hidden treasure — and a dark secret his family had kept for decades."</em></div>
+      </div>
+      <div class="story-step">
+        <h5><i class="fas fa-bolt"></i> 3. Climax</h5>
+        <p style="font-size:.88rem;color:var(--text2)">The highest point of tension. The turning point of the story where the main conflict reaches its peak.</p>
+        <div class="ib err" style="margin-top:.5rem;font-size:.82rem"><em>Example: "Suddenly, the lights went off. Ravi heard footsteps. Someone else had found out about the letter!"</em></div>
+      </div>
+      <div class="story-step">
+        <h5><i class="fas fa-check-circle"></i> 4. Resolution</h5>
+        <p style="font-size:.88rem;color:var(--text2)">The conflict is resolved. Loose ends are tied up. The story comes to a satisfying conclusion with a lesson/moral.</p>
+        <div class="ib ok" style="margin-top:.5rem;font-size:.82rem"><em>Example: "In the end, Ravi realised that the treasure was not gold — it was a collection of letters that taught him the value of honesty and family bonds."</em></div>
+      </div>
+    </div>
+    <div class="ib tip" style="margin-top:1rem">
+      <strong>Narration Tenses:</strong> Past simple is the most common tense in narration (he walked, she said). Past continuous is used for background actions (the rain was falling). Past perfect shows earlier events (he had already left).
+    </div>
+    <h4 style="color:var(--primary);margin:1.5rem 0 1rem">Tips for Effective Narration</h4>
+    <div class="g3">
+      <div class="card"><i class="fas fa-eye" style="color:var(--primary)"></i> <strong>Show, don't tell</strong><p style="font-size:.85rem;color:var(--text2);margin-top:.4rem">Instead of "He was scared", write "His heart pounded and his palms went cold."</p></div>
+      <div class="card"><i class="fas fa-volume-up" style="color:var(--secondary)"></i> <strong>Use dialogue</strong><p style="font-size:.85rem;color:var(--text2);margin-top:.4rem">Bring characters to life with direct speech. "Don't go there!" she warned.</p></div>
+      <div class="card"><i class="fas fa-paint-brush" style="color:#f59e0b"></i> <strong>Vivid descriptions</strong><p style="font-size:.85rem;color:var(--text2);margin-top:.4rem">Use sensory details — what was seen, heard, smelt, felt, and tasted.</p></div>
+      <div class="card"><i class="fas fa-link" style="color:#10b981"></i> <strong>Logical flow</strong><p style="font-size:.85rem;color:var(--text2);margin-top:.4rem">Use connectors to link events. Avoid jumping between time frames without signals.</p></div>
+      <div class="card"><i class="fas fa-balance-scale" style="color:#ef4444"></i> <strong>Consistent tense</strong><p style="font-size:.85rem;color:var(--text2);margin-top:.4rem">Stick to past or present tense throughout. Switching randomly confuses the reader.</p></div>
+      <div class="card"><i class="fas fa-flag-checkered" style="color:#7c3aed"></i> <strong>Strong ending</strong><p style="font-size:.85rem;color:var(--text2);margin-top:.4rem">End with a moral, reflection, or twist that leaves a lasting impression.</p></div>
+    </div>
+  </div>
+
+  <!-- SAMPLE NARRATIONS -->
+  <div class="tab-pane" id="narr-samples">
+    <div class="narr-box">
+      <div class="narr-head"><i class="fas fa-user"></i> Sample 1 — First Person Narration (Personal Experience)</div>
+      <div class="narr-body">
+        <p>It was the morning of my final examination, and I had barely slept the night before. <span class="badge bq">Setting</span></p>
+        <p>First of all, I woke up early and revised my notes. Then, I had a quick breakfast and set off to school. <span class="badge bq">Rising Action</span></p>
+        <p>As I entered the hall, I realised I had left my admit card at home. My heart sank. All of a sudden, I saw my friend waving at me — she had an extra copy. <span class="badge bp">Climax → Relief</span></p>
+        <p>Eventually, I sat down, took a deep breath, and wrote my best exam ever. In the end, all my hard work paid off when I scored 98 out of 100. <span class="badge bp">Resolution</span></p>
+        <p style="color:var(--textm);font-style:italic;font-size:.85rem">Moral: Panic never helps. Stay calm and trust your preparation.</p>
+      </div>
+    </div>
+    <div class="narr-box">
+      <div class="narr-head"><i class="fas fa-users"></i> Sample 2 — Third Person Narration (Short Story)</div>
+      <div class="narr-body">
+        <p>Once upon a time, in a small village near the hills, there lived a young girl named Priya who loved to paint. <span class="badge bq">Introduction</span></p>
+        <p>One day, as she was walking through the forest, she found an old injured sparrow. She gently picked it up and took it home. Day after day, she fed it and cared for it. <span class="badge bq">Rising Action</span></p>
+        <p>After a few weeks, the sparrow recovered. But when Priya opened the cage, the sparrow did not fly away. It chirped sweetly and perched on her shoulder. <span class="badge bp">Climax</span></p>
+        <p>From that day on, the sparrow became Priya's closest companion, inspiring her paintings and reminding her that kindness always returns. <span class="badge bp">Resolution</span></p>
+        <p style="color:var(--textm);font-style:italic;font-size:.85rem">Moral: Kindness towards living beings always comes back to us in beautiful ways.</p>
+      </div>
+    </div>
+    <div class="narr-box">
+      <div class="narr-head"><i class="fas fa-newspaper"></i> Sample 3 — Narration of an Event (Formal/Descriptive)</div>
+      <div class="narr-body">
+        <p>On the 15th of August, our school organised a grand Independence Day celebration. <span class="badge bq">Introduction</span></p>
+        <p>Initially, the programme began with the hoisting of the national flag by the principal, accompanied by the national anthem. Subsequently, students from various classes performed patriotic songs, dances, and skits depicting India's struggle for freedom. <span class="badge bq">Sequence of Events</span></p>
+        <p>The highlight of the event was an inspiring speech by our school's oldest alumna, who spoke about Mahatma Gandhi's vision for India. The audience was visibly moved. <span class="badge bq">Climax / Highlight</span></p>
+        <p>Finally, sweets were distributed among all students and staff. The celebration concluded with a unanimous pledge to serve our nation with honesty and dedication. <span class="badge bp">Conclusion</span></p>
+      </div>
+    </div>
+  </div>
+</div></div>
+
+<!-- ======== SPOKEN ENGLISH ======== -->
+<section id="spoken">
+<div class="sec">
+  <div class="sec-head">
+    <span class="sec-tag"><i class="fas fa-microphone-alt"></i> Spoken English</span>
+    <h2 class="sec-title">Spoken English</h2>
+    <p class="sec-sub">Master real-life conversations, pronunciation, polite expressions, telephone etiquette, and interview language.</p>
+  </div>
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="openTabG(event,'spk','convo')">Daily Conversations</button>
+    <button class="tab-btn" onclick="openTabG(event,'spk','pron')">Pronunciation</button>
+    <button class="tab-btn" onclick="openTabG(event,'spk','polite')">Polite Expressions</button>
+    <button class="tab-btn" onclick="openTabG(event,'spk','phone')">Telephone English</button>
+    <button class="tab-btn" onclick="openTabG(event,'spk','interview')">Interview English</button>
+    <button class="tab-btn" onclick="openTabG(event,'spk','fivsi')">Formal vs Informal</button>
+  </div>
+
+  <!-- DAILY CONVERSATIONS -->
+  <div class="tab-pane active" id="spk-convo">
+    <div class="g2">
+      <div class="convo-scene">
+        <h4><i class="fas fa-handshake"></i> Scene 1: Meeting Someone New</h4>
+        <div class="convo-wrap">
+          <div class="bubble a"><div class="bubble-name">Ravi</div>Hello! I don't think we've met. I'm Ravi.</div>
+          <div class="bubble b"><div class="bubble-name">Priya</div>Hi Ravi! Nice to meet you. I'm Priya. Are you new here?</div>
+          <div class="bubble a"><div class="bubble-name">Ravi</div>Yes, I just joined last week. What department are you in?</div>
+          <div class="bubble b"><div class="bubble-name">Priya</div>I'm in the Marketing team. Welcome aboard!</div>
+          <div class="bubble a"><div class="bubble-name">Ravi</div>Thank you! It's great to be here. I look forward to working with everyone.</div>
+        </div>
+      </div>
+      <div class="convo-scene">
+        <h4><i class="fas fa-utensils"></i> Scene 2: At a Restaurant</h4>
+        <div class="convo-wrap">
+          <div class="bubble b"><div class="bubble-name">Waiter</div>Good evening! Welcome. Do you have a reservation?</div>
+          <div class="bubble a"><div class="bubble-name">Customer</div>Yes, I booked a table for two under the name Sharma.</div>
+          <div class="bubble b"><div class="bubble-name">Waiter</div>Right this way, please. Here is our menu. Can I get you something to drink?</div>
+          <div class="bubble a"><div class="bubble-name">Customer</div>Water for now, please. Could we have a few minutes to decide?</div>
+          <div class="bubble b"><div class="bubble-name">Waiter</div>Of course, take your time. I'll be right back.</div>
+        </div>
+      </div>
+      <div class="convo-scene">
+        <h4><i class="fas fa-clinic-medical"></i> Scene 3: At the Doctor's</h4>
+        <div class="convo-wrap">
+          <div class="bubble b"><div class="bubble-name">Doctor</div>Good morning. Please have a seat. What seems to be the problem?</div>
+          <div class="bubble a"><div class="bubble-name">Patient</div>I've had a bad headache and fever since yesterday morning.</div>
+          <div class="bubble b"><div class="bubble-name">Doctor</div>I see. Have you taken any medication? Any allergies I should know about?</div>
+          <div class="bubble a"><div class="bubble-name">Patient</div>I took paracetamol last night. No allergies.</div>
+          <div class="bubble b"><div class="bubble-name">Doctor</div>Alright, I'll prescribe some medicine. Make sure to get plenty of rest and stay hydrated.</div>
+        </div>
+      </div>
+      <div class="convo-scene">
+        <h4><i class="fas fa-train"></i> Scene 4: Asking for Directions</h4>
+        <div class="convo-wrap">
+          <div class="bubble a"><div class="bubble-name">Visitor</div>Excuse me, could you tell me how to get to the railway station?</div>
+          <div class="bubble b"><div class="bubble-name">Local</div>Sure! Go straight down this road, then take the second left. Walk about 5 minutes and you'll see it on your right.</div>
+          <div class="bubble a"><div class="bubble-name">Visitor</div>Is it very far? Should I take an auto?</div>
+          <div class="bubble b"><div class="bubble-name">Local</div>It's about a kilometre. You can walk if you're not in a hurry. You can't miss it!</div>
+          <div class="bubble a"><div class="bubble-name">Visitor</div>Thank you so much! You've been very helpful.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRONUNCIATION TIPS -->
+  <div class="tab-pane" id="spk-pron">
+    <div class="ib tip"><i class="fas fa-volume-up"></i> <strong>Key Rule:</strong> English pronunciation does not always match spelling. Focus on how words <em>sound</em>, not just how they are spelled.</div>
+    <h4 style="color:var(--primary);margin:1rem 0 .75rem">Commonly Mispronounced Words</h4>
+    <div class="pron-grid">
+      <div class="pron-card"><div class="pron-word">Wednesday</div><div class="pron-ipa">/ˈwenzdeɪ/</div><div class="pron-tip">The 'd' is silent. Say "Wenz-day".</div></div>
+      <div class="pron-card"><div class="pron-word">Colonel</div><div class="pron-ipa">/ˈkɜːrnəl/</div><div class="pron-tip">Sounds like "kernel". The 'l' is silent.</div></div>
+      <div class="pron-card"><div class="pron-word">February</div><div class="pron-ipa">/ˈfebrʊeri/</div><div class="pron-tip">Often said as "Feb-yoo-ary" but "Feb-roo-ary" is correct.</div></div>
+      <div class="pron-card"><div class="pron-word">Pronunciation</div><div class="pron-ipa">/prəˌnʌnsiˈeɪʃən/</div><div class="pron-tip">Note: not "pro-NOUN-ciation".</div></div>
+      <div class="pron-card"><div class="pron-word">Comfortable</div><div class="pron-ipa">/ˈkʌmftəbl/</div><div class="pron-tip">3 syllables. "Kumf-tuh-bul", not "com-for-ta-bul".</div></div>
+      <div class="pron-card"><div class="pron-word">Receipt</div><div class="pron-ipa">/rɪˈsiːt/</div><div class="pron-tip">Silent 'p'. Say "ri-seet".</div></div>
+      <div class="pron-card"><div class="pron-word">Debt</div><div class="pron-ipa">/det/</div><div class="pron-tip">Silent 'b'. Say "det".</div></div>
+      <div class="pron-card"><div class="pron-word">Scissors</div><div class="pron-ipa">/ˈsɪzərz/</div><div class="pron-tip">Silent 'c'. Say "si-zerz".</div></div>
+      <div class="pron-card"><div class="pron-word">Subtle</div><div class="pron-ipa">/ˈsʌtl/</div><div class="pron-tip">Silent 'b'. Say "sut-ul".</div></div>
+      <div class="pron-card"><div class="pron-word">Yacht</div><div class="pron-ipa">/jɒt/</div><div class="pron-tip">Say "yot". The 'ch' is silent.</div></div>
+      <div class="pron-card"><div class="pron-word">Clothes</div><div class="pron-ipa">/kloʊðz/</div><div class="pron-tip">The 'th' is voiced. Say "klohthz".</div></div>
+      <div class="pron-card"><div class="pron-word">Hierarchy</div><div class="pron-ipa">/ˈhaɪərɑːrki/</div><div class="pron-tip">Say "hi-er-ar-kee".</div></div>
+    </div>
+    <h4 style="color:var(--primary);margin:1.5rem 0 .75rem">Word Stress Rules</h4>
+    <div class="g2">
+      <div class="card">
+        <h4 style="color:var(--primary);margin-bottom:.75rem">Nouns vs Verbs (Same spelling, different stress)</h4>
+        <div class="tw"><table>
+          <tr><th>Word</th><th>As Noun</th><th>As Verb</th></tr>
+          <tr><td>REcord</td><td>RE-cord (noun)</td><td>re-CORD (verb)</td></tr>
+          <tr><td>PROtest</td><td>PRO-test (noun)</td><td>pro-TEST (verb)</td></tr>
+          <tr><td>PERmit</td><td>PER-mit (noun)</td><td>per-MIT (verb)</td></tr>
+          <tr><td>PREsent</td><td>PRE-sent (noun/adj)</td><td>pre-SENT (verb)</td></tr>
+          <tr><td>OBject</td><td>OB-ject (noun)</td><td>ob-JECT (verb)</td></tr>
+        </table></div>
+      </div>
+      <div class="card">
+        <h4 style="color:var(--secondary);margin-bottom:.75rem">Silent Letter Groups</h4>
+        <ul class="slist">
+          <li><strong>Silent K:</strong> know, knee, knight, knob, knock</li>
+          <li><strong>Silent W:</strong> write, wrap, wrist, wrong, wrestle</li>
+          <li><strong>Silent B:</strong> bomb, comb, climb, lamb, numb, thumb</li>
+          <li><strong>Silent G:</strong> gnaw, sign, reign, foreign, campaign</li>
+          <li><strong>Silent H:</strong> honest, hour, heir, vehicle, ghost</li>
+          <li><strong>Silent P:</strong> psychology, pneumonia, receipt, psalm</li>
+          <li><strong>Silent T:</strong> castle, whistle, listen, often, soften</li>
+          <li><strong>Silent L:</strong> calm, palm, walk, talk, could, would</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ib warn" style="margin-top:1rem"><strong>Intonation Tip:</strong> In English, rising intonation (↑) is used for yes/no questions. Falling intonation (↓) is used for statements and wh-questions. E.g., "Are you coming? ↑" vs "I am coming ↓."</div>
+  </div>
+
+  <!-- POLITE EXPRESSIONS -->
+  <div class="tab-pane" id="spk-polite">
+    <div class="g2">
+      <div class="card">
+        <h4 style="color:var(--primary);margin-bottom:.75rem"><i class="fas fa-pray"></i> Requests (Polite)</h4>
+        <ul class="slist">
+          <li>Could you please pass the salt?</li>
+          <li>Would you mind closing the window?</li>
+          <li>May I use your pen, please?</li>
+          <li>Do you think you could help me?</li>
+          <li>I was wondering if you could spare a moment.</li>
+          <li>Would it be possible to reschedule?</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4 style="color:var(--danger);margin-bottom:.75rem"><i class="fas fa-heart-broken"></i> Apologies</h4>
+        <ul class="slist">
+          <li>I'm terribly sorry for the inconvenience.</li>
+          <li>Please accept my sincere apologies.</li>
+          <li>I apologise for the delay.</li>
+          <li>I'm afraid I owe you an apology.</li>
+          <li>I'm sorry, that was my fault entirely.</li>
+          <li>I hope you can forgive me.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4 style="color:var(--success);margin-bottom:.75rem"><i class="fas fa-thumbs-up"></i> Compliments</h4>
+        <ul class="slist">
+          <li>You've done an excellent job!</li>
+          <li>That's a really impressive piece of work.</li>
+          <li>I love your outfit — you look great!</li>
+          <li>You handled that situation very well.</li>
+          <li>Your presentation was outstanding.</li>
+          <li>I must say, you're very talented.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4 style="color:var(--accent);margin-bottom:.75rem"><i class="fas fa-user-friends"></i> Offering Help</h4>
+        <ul class="slist">
+          <li>Can I help you with anything?</li>
+          <li>Is there anything I can do for you?</li>
+          <li>Allow me to assist you.</li>
+          <li>Let me know if you need a hand.</li>
+          <li>I'd be happy to help.</li>
+          <li>Please don't hesitate to ask.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4 style="color:var(--secondary);margin-bottom:.75rem"><i class="fas fa-times-circle"></i> Saying No Politely</h4>
+        <ul class="slist">
+          <li>I'm afraid I'm not available at that time.</li>
+          <li>I'd love to, but I have a prior commitment.</li>
+          <li>Unfortunately, that won't be possible.</li>
+          <li>I'm sorry, but I have to decline.</li>
+          <li>Thank you for the offer, but I'll have to pass.</li>
+          <li>I appreciate it, but I can't commit right now.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4 style="color:var(--primary);margin-bottom:.75rem"><i class="fas fa-handshake"></i> Agreeing &amp; Disagreeing</h4>
+        <ul class="slist">
+          <li><strong>Agree:</strong> Absolutely! · Certainly! · That's a good point.</li>
+          <li><strong>Partly agree:</strong> I see what you mean, but... · Up to a point, yes...</li>
+          <li><strong>Disagree politely:</strong> I'm not entirely sure I agree. · With all due respect... · I see it differently.</li>
+          <li><strong>Neutral:</strong> That's an interesting perspective. · I can see why you'd think that.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- TELEPHONE ENGLISH -->
+  <div class="tab-pane" id="spk-phone">
+    <div class="convo-scene">
+      <h4><i class="fas fa-phone-alt"></i> Making a Business Call</h4>
+      <div class="convo-wrap">
+        <div class="bubble a"><div class="bubble-name">Caller (Amit)</div>Good morning. Could I speak to Ms. Priya Singh, please?</div>
+        <div class="bubble b"><div class="bubble-name">Receptionist</div>Good morning! May I ask who's calling?</div>
+        <div class="bubble a"><div class="bubble-name">Amit</div>Yes, this is Amit Sharma from ABC Technologies.</div>
+        <div class="bubble b"><div class="bubble-name">Receptionist</div>Please hold for a moment, Mr. Sharma. I'll transfer your call.</div>
+        <div class="bubble a"><div class="bubble-name">Amit</div>Thank you.</div>
+        <div class="bubble b"><div class="bubble-name">Priya</div>Hello, this is Priya Singh speaking. How can I help you?</div>
+        <div class="bubble a"><div class="bubble-name">Amit</div>Hello Ms. Singh, I'm calling regarding the proposal we sent last week. I was wondering if you had a chance to review it.</div>
+        <div class="bubble b"><div class="bubble-name">Priya</div>Yes, I've gone through it. Could we schedule a meeting to discuss the details?</div>
+        <div class="bubble a"><div class="bubble-name">Amit</div>Absolutely. Would Thursday afternoon work for you?</div>
+        <div class="bubble b"><div class="bubble-name">Priya</div>Thursday at 3 PM suits me perfectly. I'll send a calendar invite.</div>
+        <div class="bubble a"><div class="bubble-name">Amit</div>Wonderful. Thank you, Ms. Singh. Looking forward to it. Have a good day.</div>
+      </div>
+    </div>
+    <h4 style="color:var(--primary);margin:1.5rem 0 .75rem">Key Telephone Phrases</h4>
+    <div class="g2">
+      <div class="card">
+        <h5 style="color:var(--primary);margin-bottom:.6rem">Answering a Call</h5>
+        <ul class="slist">
+          <li>"Hello, [Company Name], [Your Name] speaking."</li>
+          <li>"Good morning, how may I direct your call?"</li>
+          <li>"Thank you for calling. How can I assist you?"</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h5 style="color:var(--secondary);margin-bottom:.6rem">When You Can't Hear</h5>
+        <ul class="slist">
+          <li>"I'm sorry, could you speak up a little?"</li>
+          <li>"I'm afraid the line is not very clear."</li>
+          <li>"Could you repeat that, please?"</li>
+          <li>"I didn't quite catch that."</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h5 style="color:#f59e0b;margin-bottom:.6rem">Taking a Message</h5>
+        <ul class="slist">
+          <li>"I'm afraid she's not available at the moment."</li>
+          <li>"Can I take a message?"</li>
+          <li>"I'll make sure she gets your message."</li>
+          <li>"Could I have your contact number?"</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h5 style="color:#10b981;margin-bottom:.6rem">Ending a Call</h5>
+        <ul class="slist">
+          <li>"Thank you for calling. Have a great day."</li>
+          <li>"I'll get back to you shortly."</li>
+          <li>"It was lovely speaking with you."</li>
+          <li>"Goodbye and take care."</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERVIEW ENGLISH -->
+  <div class="tab-pane" id="spk-interview">
+    <div class="ib tip"><i class="fas fa-briefcase"></i> Use formal, confident, and clear language in interviews. Avoid slang. Structure your answers using the STAR method: <strong>S</strong>ituation, <strong>T</strong>ask, <strong>A</strong>ction, <strong>R</strong>esult.</div>
+    <div class="convo-scene" style="margin-top:1rem">
+      <h4><i class="fas fa-user-tie"></i> Mock Interview Conversation</h4>
+      <div class="convo-wrap">
+        <div class="bubble b"><div class="bubble-name">Interviewer</div>Good morning. Please have a seat. Tell me about yourself.</div>
+        <div class="bubble a"><div class="bubble-name">Candidate</div>Good morning, thank you for having me. I'm Rahul Sharma, a Computer Science graduate from Delhi University. I have two years of experience in software development and I'm passionate about building efficient and user-friendly applications.</div>
+        <div class="bubble b"><div class="bubble-name">Interviewer</div>Why do you want to work with our company?</div>
+        <div class="bubble a"><div class="bubble-name">Candidate</div>I've always admired your company's commitment to innovation and your work culture. I believe this role aligns perfectly with my skills in Java and cloud computing, and I am eager to contribute to your team's goals.</div>
+        <div class="bubble b"><div class="bubble-name">Interviewer</div>What is your greatest weakness?</div>
+        <div class="bubble a"><div class="bubble-name">Candidate</div>I tend to be overly detail-oriented, which sometimes slows me down. However, I've been actively working on prioritising tasks and managing time more effectively, which has significantly improved my productivity.</div>
+        <div class="bubble b"><div class="bubble-name">Interviewer</div>Where do you see yourself in five years?</div>
+        <div class="bubble a"><div class="bubble-name">Candidate</div>I envision myself in a senior technical role, leading projects and mentoring junior developers. I'd love to grow with this organisation and contribute to its long-term vision.</div>
+      </div>
+    </div>
+    <h4 style="color:var(--primary);margin:1.5rem 0 .75rem">Essential Interview Phrases</h4>
+    <div class="g3">
+      <div class="card"><h5 style="color:var(--primary);margin-bottom:.5rem">Opening</h5><ul class="slist"><li>"Thank you for this opportunity."</li><li>"I'm delighted to be here."</li><li>"It's a pleasure to meet you."</li></ul></div>
+      <div class="card"><h5 style="color:var(--secondary);margin-bottom:.5rem">Clarifying</h5><ul class="slist"><li>"Could you please clarify...?"</li><li>"If I understand correctly..."</li><li>"Just to be sure I understand..."</li></ul></div>
+      <div class="card"><h5 style="color:#f59e0b;margin-bottom:.5rem">Answering</h5><ul class="slist"><li>"In my previous role, I..."</li><li>"One example that comes to mind is..."</li><li>"I handled this by..."</li></ul></div>
+      <div class="card"><h5 style="color:#10b981;margin-bottom:.5rem">Asking Questions</h5><ul class="slist"><li>"Could you tell me more about the team?"</li><li>"What does success look like in this role?"</li><li>"What are the growth opportunities?"</li></ul></div>
+      <div class="card"><h5 style="color:#ef4444;margin-bottom:.5rem">Strengths</h5><ul class="slist"><li>"I am highly organised and detail-oriented."</li><li>"I work well under pressure."</li><li>"I'm a quick learner and a team player."</li></ul></div>
+      <div class="card"><h5 style="color:#7c3aed;margin-bottom:.5rem">Closing</h5><ul class="slist"><li>"Thank you for your time."</li><li>"I look forward to hearing from you."</li><li>"I'm very enthusiastic about this opportunity."</li></ul></div>
+    </div>
+  </div>
+
+  <!-- FORMAL vs INFORMAL -->
+  <div class="tab-pane" id="spk-fivsi">
+    <div class="ib warn">Knowing when to use formal and informal language is crucial in spoken English. Use formal language with strangers, superiors, or in professional settings. Use informal language with friends and family.</div>
+    <div class="tw"><table class="fi-table">
+      <tr><th>Situation</th><th>Informal</th><th>Formal</th></tr>
+      <tr><td>Greeting</td><td>Hey! / What's up?</td><td>Good morning. / How do you do?</td></tr>
+      <tr><td>Asking for something</td><td>Can you give me...?</td><td>Could you please provide me with...?</td></tr>
+      <tr><td>Agreeing</td><td>Yeah, totally!</td><td>I fully concur with that view.</td></tr>
+      <tr><td>Saying no</td><td>Nah, I can't.</td><td>I'm afraid that won't be possible.</td></tr>
+      <tr><td>Apologizing</td><td>Sorry! My bad.</td><td>I sincerely apologize for the inconvenience.</td></tr>
+      <tr><td>Leaving</td><td>Gotta go! Bye!</td><td>I'm afraid I must take my leave. Goodbye.</td></tr>
+      <tr><td>Showing excitement</td><td>That's awesome!</td><td>That is truly remarkable.</td></tr>
+      <tr><td>Asking someone's name</td><td>What's your name?</td><td>May I know your good name?</td></tr>
+      <tr><td>Describing a problem</td><td>It's messed up.</td><td>There seems to be a complication.</td></tr>
+      <tr><td>Thanking</td><td>Thanks a lot!</td><td>I'm most grateful for your assistance.</td></tr>
+      <tr><td>Suggesting</td><td>Why don't you...?</td><td>Might I suggest that you consider...?</td></tr>
+      <tr><td>Expressing surprise</td><td>No way! Really?</td><td>That is quite unexpected, I must say.</td></tr>
+      <tr><td>Promising</td><td>I'll do it, promise!</td><td>I give you my word that I shall...</td></tr>
+      <tr><td>Asking to wait</td><td>Hold on a sec.</td><td>Would you kindly wait for a moment?</td></tr>
+    </table></div>
+    <div class="g2" style="margin-top:1.5rem">
+      <div class="card">
+        <h4 style="color:var(--primary);margin-bottom:.75rem"><i class="fas fa-comment-dots"></i> Informal Contractions in Spoken English</h4>
+        <div class="tw"><table>
+          <tr><th>Full Form</th><th>Contraction</th></tr>
+          <tr><td>I am going</td><td>I'm going</td></tr>
+          <tr><td>I would have</td><td>I would've / I'd've</td></tr>
+          <tr><td>They are not</td><td>They aren't / They're not</td></tr>
+          <tr><td>Did you</td><td>Didya / Did you (spoken)</td></tr>
+          <tr><td>Want to</td><td>Wanna (informal)</td></tr>
+          <tr><td>Going to</td><td>Gonna (informal)</td></tr>
+          <tr><td>Got to</td><td>Gotta (informal)</td></tr>
+          <tr><td>Have to</td><td>Hafta (very informal)</td></tr>
+        </table></div>
+      </div>
+      <div class="card">
+        <h4 style="color:var(--secondary);margin-bottom:.75rem"><i class="fas fa-lightbulb"></i> Small Talk Topics &amp; Starters</h4>
+        <ul class="slist">
+          <li><strong>Weather:</strong> "Lovely weather today, isn't it?"</li>
+          <li><strong>Current events:</strong> "Did you catch the match last night?"</li>
+          <li><strong>Weekend:</strong> "Any plans for the weekend?"</li>
+          <li><strong>Complimenting:</strong> "I love what you've done with the place."</li>
+          <li><strong>Food:</strong> "Have you tried the new restaurant nearby?"</li>
+          <li><strong>Travel:</strong> "Have you been anywhere interesting lately?"</li>
+          <li><strong>Work:</strong> "How's work been treating you these days?"</li>
+          <li><strong>Ending small talk:</strong> "Well, it was great catching up! See you around."</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
 
 <!-- ======== FOOTER ======== -->
 <footer>
