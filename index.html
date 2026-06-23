@@ -40,6 +40,9 @@ input,select{font-family:inherit}
 #main{margin-left:var(--sidebar);flex:1;display:flex;flex-direction:column;min-height:100vh}
 #topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;gap:12px;position:sticky;top:0;z-index:50}
 #topbar h1{font-size:1rem;font-weight:700;flex:1}
+.page-links{display:flex;flex-wrap:wrap;gap:8px;align-items:center;max-width:420px}
+.page-links a{font-size:.78rem;color:var(--text);background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;transition:all .2s;text-decoration:none}
+.page-links a:hover{background:var(--brand);color:#fff;border-color:var(--brand)}
 .search-wrap{position:relative;display:flex;align-items:center}
 .search-wrap input{background:var(--bg);border:1px solid var(--border);border-radius:20px;padding:6px 12px 6px 32px;font-size:.84rem;width:220px;color:var(--text)}
 .search-wrap .si{position:absolute;left:10px;font-size:.9rem;color:var(--muted)}
@@ -514,6 +517,14 @@ body.dark .pyq-tag-diff{background:rgba(220,38,38,.2);color:#fca5a5}
   <div id="topbar">
     <button id="ham" onclick="toggleSidebar()">☰</button>
     <h1 id="page-title">Dashboard</h1>
+    <div class="page-links">
+      <a href="index.html">Home</a>
+      <a href="Science.html">Science</a>
+      <a href="Computer.html">Computer</a>
+      <a href="Current_Affairs.html">Current Affairs</a>
+      <a href="english-grammar-mastery.html">English</a>
+      <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html">Maths</a>
+    </div>
     <div class="search-wrap">
       <span class="si">🔍</span>
       <input type="text" id="global-search" placeholder="Search questions, formulas..." oninput="doSearch(this.value)">
