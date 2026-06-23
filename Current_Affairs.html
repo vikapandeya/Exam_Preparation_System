@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Current Affairs Mastery – Complete CA & GK Portal</title>
+<style>
+:root{--ground:#0C1624;--surface:#111D2E;--surface2:#162035;--border:#1E2F48;--text:#DCE6F0;--text2:#8BA3BF;--text3:#4A6480;--accent:#F59E0B;--accent2:#10B981;--accent3:#3B82F6;--danger:#EF4444;--radius:10px;--rsm:6px}
+[data-theme="light"]{--ground:#F0F4F8;--surface:#FFFFFF;--surface2:#EBF0F7;--border:#D1DCE8;--text:#0C1624;--text2:#3A5470;--text3:#7A94B0}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--ground);color:var(--text);font-size:14px;line-height:1.6;min-height:100vh}
+.topbar{position:sticky;top:0;z-index:200;background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px;padding:0 20px;height:52px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:800;font-size:15px;color:var(--text);white-space:nowrap;cursor:pointer}
+.logo-mark{width:28px;height:28px;background:var(--accent);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;color:#000}
+.logo span{color:var(--accent)}
+.srch{flex:1;max-width:420px;position:relative}
+.srch input{width:100%;padding:7px 14px 7px 34px;background:var(--surface2);border:1px solid var(--border);border-radius:20px;color:var(--text);font-size:13px;outline:none;transition:.15s}
+.srch input:focus{border-color:var(--accent)}
+.srch::before{content:'🔍';position:absolute;left:10px;top:50%;transform:translateY(-50%);font-size:12px;pointer-events:none}
+.tbtn{background:var(--surface2);border:1px solid var(--border);border-radius:7px;padding:6px 10px;cursor:pointer;color:var(--text);font-size:14px;transition:.15s}
+.tbtn:hover{border-color:var(--accent);color:var(--accent)}
+.ml{margin-left:auto;display:flex;gap:8px;align-items:center}
+.sdrop{position:absolute;top:calc(100% + 4px);left:0;right:0;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:0 8px 24px rgba(0,0,0,.4);z-index:300;display:none;max-height:300px;overflow-y:auto}
+.sdrop.open{display:block}
+.sdi{padding:10px 14px;cursor:pointer;border-bottom:1px solid var(--border);transition:.1s}
+.sdi:last-child{border-bottom:none}
+.sdi:hover{background:var(--surface2)}
+.sdi-t{font-size:13px;font-weight:600;color:var(--text)}
+.sdi-c{font-size:11px;color:var(--text3);margin-top:1px}
+.ticker{background:var(--accent);overflow:hidden;padding:5px 0;display:flex;align-items:center}
+.tklbl{background:rgba(0,0,0,.3);color:#000;font-size:10px;font-weight:900;padding:0 10px;letter-spacing:1.5px;white-space:nowrap;flex-shrink:0}
+.tktrack{flex:1;overflow:hidden}
+.tktext{display:inline-block;white-space:nowrap;font-size:12px;font-weight:600;color:#000;animation:scroll 90s linear infinite}
+@keyframes scroll{0%{transform:translateX(100vw)}100%{transform:translateX(-100%)}}
+.catnav{background:var(--surface);border-bottom:1px solid var(--border);overflow-x:auto;scrollbar-width:none}
+.catnav::-webkit-scrollbar{display:none}
+.catinner{display:flex;padding:0 16px;max-width:1440px;margin:0 auto}
+.ctab{padding:9px 12px;font-size:11px;font-weight:600;color:var(--text2);cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;transition:.15s;text-transform:uppercase;letter-spacing:.5px}
+.ctab:hover{color:var(--text)}
+.ctab.active{color:var(--accent);border-color:var(--accent)}
+.layout{display:grid;grid-template-columns:1fr 270px;gap:20px;max-width:1440px;margin:0 auto;padding:20px}
+.main{min-width:0}
+.sbar{min-width:0}
+.cmdbar{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px 18px;margin-bottom:18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.cclk{font-family:monospace;font-size:26px;font-weight:900;color:var(--accent);letter-spacing:-1px}
+.cdiv{width:1px;height:38px;background:var(--border);flex-shrink:0}
+.cstat{text-align:center}
+.cstat-n{font-size:19px;font-weight:800}
+.cstat-l{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px}
+.cpbar{flex:1;min-width:140px}
+.cpbar-l{font-size:11px;color:var(--text2);margin-bottom:4px;display:flex;justify-content:space-between}
+.pbar{height:6px;background:var(--border);border-radius:3px;overflow:hidden}
+.pbar-f{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--accent),var(--accent2));transition:width 1s}
+.srow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}
+.sbox{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px;position:relative;overflow:hidden}
+.sbox::after{content:'';position:absolute;top:0;left:0;right:0;height:2px}
+.sbox.a::after{background:var(--accent)}.sbox.b::after{background:var(--accent2)}.sbox.c::after{background:var(--accent3)}.sbox.d::after{background:var(--danger)}
+.sn{font-size:24px;font-weight:900;font-variant-numeric:tabular-nums}
+.sl{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-top:2px}
+.sh{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.sh h2{font-size:15px;font-weight:800;text-transform:uppercase;letter-spacing:.5px}
+.shl{flex:1;height:1px;background:var(--border)}
+.shb{background:var(--accent);color:#000;font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px}
+.art{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;margin-bottom:10px;cursor:pointer;transition:.15s}
+.art:hover{border-color:var(--accent);transform:translateY(-1px)}
+.ameta{display:flex;gap:8px;align-items:center;margin-bottom:7px;flex-wrap:wrap}
+.tag{font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;text-transform:uppercase;letter-spacing:.5px}
+.tgn{background:rgba(59,130,246,.15);color:#60A5FA}
+.tgi{background:rgba(167,139,250,.15);color:#A78BFA}
+.tge{background:rgba(16,185,129,.15);color:#34D399}
+.tgs{background:rgba(245,158,11,.15);color:#FCD34D}
+.tgd{background:rgba(239,68,68,.15);color:#FCA5A5}
+.tgsp{background:rgba(20,184,166,.15);color:#5EEAD4}
+.tgev{background:rgba(132,204,22,.15);color:#BEF264}
+.tga{background:rgba(249,168,212,.15);color:#F9A8D4}
+.adate{font-size:11px;color:var(--text3)}
+.atitle{font-size:15px;font-weight:700;color:var(--text);margin-bottom:5px;line-height:1.4;font-family:Georgia,serif}
+.asum{font-size:13px;color:var(--text2);line-height:1.6}
+.afacts{margin-top:10px;padding-top:10px;border-top:1px solid var(--border)}
+.afacts-t{font-size:10px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px}
+.afacts ul{list-style:none}
+.afacts li{font-size:12px;color:var(--text2);padding:2px 0 2px 13px;position:relative}
+.afacts li::before{content:'›';position:absolute;left:0;color:var(--accent)}
+.enote{margin-top:8px;padding:6px 10px;background:rgba(59,130,246,.08);border-left:2px solid var(--accent3);border-radius:0 4px 4px 0;font-size:11px;color:#93C5FD}
+[data-theme="light"] .enote{color:#2563EB;background:rgba(59,130,246,.06)}
+.qwrap{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.qhead{background:linear-gradient(135deg,#1E3A5F,#0C2340);padding:16px 20px}
+.qhr{display:flex;justify-content:space-between;align-items:flex-start}
+.qnum{font-size:11px;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.5px}
+.qtimer{font-family:monospace;font-size:20px;font-weight:900;color:var(--accent)}
+.qprog{height:3px;background:rgba(255,255,255,.1);border-radius:2px;margin-top:10px}
+.qpf{height:100%;background:var(--accent);border-radius:2px;transition:width .3s}
+.qbody{padding:20px}
+.qq{font-size:15px;font-weight:600;color:var(--text);margin-bottom:16px;line-height:1.5;font-family:Georgia,serif}
+.qopts{display:flex;flex-direction:column;gap:8px}
+.qopt{display:flex;align-items:center;gap:10px;padding:11px 13px;border:1.5px solid var(--border);border-radius:var(--rsm);cursor:pointer;transition:.15s;font-size:13px;color:var(--text2)}
+.qopt:hover:not(.dis){border-color:var(--accent3);background:rgba(59,130,246,.08);color:var(--text)}
+.qopt.ok{border-color:var(--accent2);background:rgba(16,185,129,.1);color:var(--accent2)}
+.qopt.ng{border-color:var(--danger);background:rgba(239,68,68,.1);color:#FCA5A5}
+.qopt.dis{cursor:default}
+.oltr{width:24px;height:24px;border-radius:50%;background:var(--surface2);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;font-family:monospace}
+.qexp{margin-top:12px;padding:10px;background:rgba(16,185,129,.06);border-left:3px solid var(--accent2);border-radius:0 6px 6px 0;font-size:12px;color:var(--text2);display:none}
+.qfoot{padding:12px 20px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+.qsi{font-size:12px;color:var(--text3)}
+.btn{padding:8px 18px;border-radius:var(--rsm);border:none;cursor:pointer;font-size:13px;font-weight:600;transition:.15s}
+.ba{background:var(--accent);color:#000}.ba:hover{background:#D97706}
+.bo{background:transparent;border:1.5px solid var(--border);color:var(--text)}.bo:hover{border-color:var(--accent);color:var(--accent)}
+.bg{background:var(--accent2);color:#fff}.bg:hover{background:#059669}
+.bsm{padding:5px 12px;font-size:12px}
+.brow{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.fc-wrap{perspective:1000px;margin-bottom:16px}
+.fc{width:100%;height:170px;position:relative;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.175,.885,.32,1.275);cursor:pointer;border-radius:var(--radius)}
+.fc.flip{transform:rotateY(180deg)}
+.fcf,.fcb{position:absolute;inset:0;backface-visibility:hidden;border-radius:var(--radius);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;text-align:center}
+.fcf{background:linear-gradient(135deg,#1E3A5F,#0C2340);border:1px solid var(--border)}
+.fcb{background:linear-gradient(135deg,#064E3B,#022C22);border:1px solid var(--accent2);transform:rotateY(180deg)}
+.fclbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;opacity:.6;margin-bottom:7px}
+.fcq{font-size:15px;font-weight:700;color:var(--text);line-height:1.4}
+.fca{font-size:17px;font-weight:700;color:var(--accent2)}
+.fchint{font-size:11px;opacity:.5;margin-top:8px}
+.ol-item{padding:9px 12px;border-left:2px solid var(--accent);background:var(--surface);border-radius:0 var(--rsm) var(--rsm) 0;margin-bottom:7px;font-size:13px;color:var(--text2);line-height:1.5}
+.ol-item b{color:var(--text)}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:var(--radius)}
+.tbl{width:100%;border-collapse:collapse;font-size:12px}
+.tbl th{background:rgba(245,158,11,.1);color:var(--accent);padding:9px 12px;text-align:left;font-weight:700;text-transform:uppercase;letter-spacing:.5px;border-bottom:1px solid var(--border)}
+.tbl td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2)}
+.tbl tr:last-child td{border-bottom:none}
+.tbl tr:hover td{background:var(--surface2);color:var(--text)}
+.sch{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px;margin-bottom:10px}
+.scht{display:flex;gap:10px;margin-bottom:10px;align-items:flex-start}
+.schicon{width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;background:var(--surface2)}
+.schn{font-size:14px;font-weight:700;color:var(--text)}
+.schy{font-size:11px;color:var(--text3);margin-top:2px}
+.schg{display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:12px}
+.schfl{color:var(--text3);font-weight:600;text-transform:uppercase;font-size:10px;letter-spacing:.5px}
+.schfv{color:var(--text2);margin-top:2px}
+.tl{padding-left:22px;position:relative}
+.tl::before{content:'';position:absolute;left:6px;top:4px;bottom:0;width:2px;background:var(--border)}
+.tli{position:relative;margin-bottom:18px}
+.tld{position:absolute;left:-19px;top:3px;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px var(--ground)}
+.tldate{font-size:11px;color:var(--accent);font-weight:700;font-family:monospace;margin-bottom:3px}
+.tlbox{background:var(--surface);border:1px solid var(--border);border-radius:var(--rsm);padding:10px}
+.tltitle{font-size:13px;font-weight:700;color:var(--text);margin-bottom:2px}
+.tldesc{font-size:12px;color:var(--text2)}
+.dc{display:flex;gap:10px;align-items:flex-start;padding:10px;background:var(--surface);border:1px solid var(--border);border-radius:var(--rsm);margin-bottom:7px}
+.dbox{background:var(--accent);color:#000;border-radius:6px;padding:5px 9px;text-align:center;min-width:44px;flex-shrink:0}
+.dn{font-size:17px;font-weight:900;line-height:1}
+.dm{font-size:9px;font-weight:700;text-transform:uppercase}
+.dname{font-size:13px;font-weight:700;color:var(--text)}
+.dtheme{font-size:11px;color:var(--text3);margin-top:2px}
+.fpill{padding:5px 12px;border-radius:16px;border:1.5px solid var(--border);font-size:12px;font-weight:600;cursor:pointer;color:var(--text3);transition:.15s;display:inline-block;margin:0 4px 4px 0}
+.fpill:hover,.fpill.on{border-color:var(--accent);color:var(--accent);background:rgba(245,158,11,.08)}
+.widget{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:14px;overflow:hidden}
+.whead{padding:11px 13px;border-bottom:1px solid var(--border);font-size:11px;font-weight:700;color:var(--text);text-transform:uppercase;letter-spacing:.5px}
+.wbody{padding:12px}
+.wlink{display:flex;align-items:center;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--border);font-size:12px;color:var(--text2);cursor:pointer;transition:.15s}
+.wlink:last-child{border-bottom:none}
+.wlink:hover{color:var(--accent)}
+.wcnt{background:var(--surface2);color:var(--text3);font-size:10px;padding:2px 7px;border-radius:10px}
+.appt{display:flex;gap:10px;align-items:flex-start;padding:10px;background:var(--surface);border:1px solid var(--border);border-radius:var(--rsm);margin-bottom:7px}
+.apav{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#D97706);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:#000;flex-shrink:0}
+.apn{font-size:13px;font-weight:700;color:var(--text)}
+.apr{font-size:11px;color:var(--accent);margin-top:1px}
+.apo{font-size:11px;color:var(--text3)}
+.awit{display:flex;gap:10px;align-items:flex-start;padding:10px;background:var(--surface);border:1px solid var(--border);border-radius:var(--rsm);margin-bottom:7px}
+.awn{font-size:13px;font-weight:700;color:var(--text)}
+.aww{font-size:12px;color:var(--accent);margin-top:1px}
+.awd{font-size:11px;color:var(--text3);margin-top:2px}
+.exgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.excard{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;text-align:center;cursor:pointer;transition:.15s}
+.excard:hover{border-color:var(--accent);transform:translateY(-2px)}
+.exicon{font-size:30px;margin-bottom:8px}
+.exname{font-size:14px;font-weight:800;color:var(--text)}
+.exdesc{font-size:11px;color:var(--text3);margin-top:3px}
+.expill{display:inline-block;margin-top:8px;background:var(--accent);color:#000;font-size:10px;font-weight:700;padding:3px 10px;border-radius:10px}
+.rcard{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px;margin-bottom:10px}
+.rn{font-size:14px;font-weight:700;color:var(--text)}
+.rb{font-size:11px;color:var(--text3);margin-top:2px}
+.ri{font-size:15px;font-weight:800;color:var(--accent);margin-top:6px}
+.mhead{background:linear-gradient(135deg,#1A0533,#2D0A5F);padding:20px;border-radius:var(--radius) var(--radius) 0 0;text-align:center}
+.mtimer{font-size:48px;font-weight:900;font-family:monospace;color:white;letter-spacing:-2px}
+.mtimer.warn{color:#FCD34D}.mtimer.crit{color:#FCA5A5;animation:blink .5s infinite}
+@keyframes blink{50%{opacity:.4}}
+.minfo{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:14px}
+.mibox{background:rgba(255,255,255,.1);border-radius:7px;padding:9px;text-align:center}
+.min{font-size:19px;font-weight:800;color:white}
+.mil{font-size:10px;color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:.5px}
+.res{text-align:center;padding:32px 20px}
+.bigscore{font-size:68px;font-weight:900;font-family:monospace;color:var(--accent);line-height:1}
+.scrow{display:flex;justify-content:center;gap:24px;margin-top:18px}
+.scitem{text-align:center}
+.scn{font-size:22px;font-weight:800;font-family:monospace}
+.scl{font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px}
+.mtabs{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:14px}
+.mtab{padding:5px 11px;border-radius:16px;border:1.5px solid var(--border);font-size:11px;font-weight:700;cursor:pointer;color:var(--text3);transition:.15s;text-transform:uppercase;letter-spacing:.5px}
+.mtab:hover,.mtab.on{border-color:var(--accent);color:var(--accent);background:rgba(245,158,11,.08)}
+.scroll-top{position:fixed;bottom:20px;right:20px;width:38px;height:38px;background:var(--accent);border:none;border-radius:50%;cursor:pointer;font-size:16px;color:#000;display:none;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.4);z-index:100;transition:.2s}
+.scroll-top.show{display:flex}
+.scroll-top:hover{transform:translateY(-2px)}
+footer{background:var(--surface);border-top:1px solid var(--border);padding:28px 20px 14px;margin-top:36px}
+.fgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:1440px;margin:0 auto 20px}
+.fbrand{font-size:16px;font-weight:800;color:var(--text);margin-bottom:4px}
+.fbrand span{color:var(--accent)}
+.fbrand p{font-size:12px;color:var(--text3);font-weight:400;margin-top:3px}
+.fcol h4{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:8px}
+.fcol a{display:block;font-size:12px;color:var(--text2);text-decoration:none;margin-bottom:5px;cursor:pointer;transition:.1s}
+.fcol a:hover{color:var(--accent)}
+.fbot{max-width:1440px;margin:0 auto;padding-top:14px;border-top:1px solid var(--border);display:flex;justify-content:space-between;font-size:11px;color:var(--text3);flex-wrap:wrap;gap:6px}
+@media(max-width:1100px){.layout{grid-template-columns:1fr}.sbar{display:none}}
+@media(max-width:768px){.srow{grid-template-columns:repeat(2,1fr)}.exgrid{grid-template-columns:repeat(2,1fr)}.minfo{grid-template-columns:repeat(2,1fr)}.fgrid{grid-template-columns:repeat(2,1fr)}.catnav{display:none}}
+@media(max-width:480px){.srow{grid-template-columns:1fr 1fr}.exgrid{grid-template-columns:1fr 1fr}.fgrid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="logo" onclick="showSection('home')"><div class="logo-mark">CA</div>Current Affairs <span>Mastery</span></div>
+  <div class="srch">
+    <input type="text" id="msearch" placeholder="Search news, topics, MCQs…" autocomplete="off">
+    <div class="sdrop" id="sdrop"></div>
+  </div>
+  <div class="ml">
+    <button class="tbtn" id="themeBtn" title="Toggle theme">◑</button>
+  </div>
+</header>
+
+<div class="ticker">
+  <div class="tklbl">BREAKING</div>
+  <div class="tktrack"><span class="tktext" id="tktext"></span></div>
+</div>
+
+<nav class="catnav"><div class="catinner" id="catnav"></div></nav>
+
+<div class="layout">
+  <main class="main" id="main"></main>
+  <aside class="sbar" id="sidebar"></aside>
+</div>
+
+<footer>
+  <div class="fgrid">
+    <div><div class="fbrand">Current Affairs <span>Mastery</span><p>India's most complete CA portal. Updated daily.</p></div></div>
+    <div class="fcol"><h4>Study</h4><a onclick="showSection('daily')">Daily CA</a><a onclick="showSection('weekly')">Weekly Digest</a><a onclick="showSection('monthly')">Monthly Archive</a><a onclick="showSection('mcq')">MCQ Center</a><a onclick="showSection('mock')">Mock Tests</a></div>
+    <div class="fcol"><h4>Topics</h4><a onclick="showSection('national')">National</a><a onclick="showSection('international')">International</a><a onclick="showSection('economy')">Economy</a><a onclick="showSection('science')">Science & Tech</a><a onclick="showSection('defence')">Defence</a></div>
+    <div class="fcol"><h4>Exams</h4><a onclick="showSection('examprep')">UPSC</a><a onclick="showSection('examprep')">SSC CGL</a><a onclick="showSection('examprep')">Banking</a><a onclick="showSection('examprep')">Railway</a><a onclick="showSection('examprep')">Defence</a></div>
+  </div>
+  <div class="fbot"><span>© 2026 Current Affairs Mastery. All rights reserved.</span><span>Trusted by 5 Lakh+ Aspirants</span></div>
+</footer>
+<button class="scroll-top" id="stbtn">↑</button>
+
+<script>
+const CATS=[{id:'home',l:'🏠 Home'},{id:'daily',l:'📰 Daily CA'},{id:'weekly',l:'📋 Weekly'},{id:'monthly',l:'📅 Monthly'},{id:'national',l:'🇮🇳 National'},{id:'international',l:'🌍 International'},{id:'economy',l:'💰 Economy'},{id:'science',l:'🔬 Science'},{id:'defence',l:'⚔️ Defence'},{id:'sports',l:'🏆 Sports'},{id:'awards',l:'🥇 Awards'},{id:'schemes',l:'📜 Schemes'},{id:'environment',l:'🌿 Environment'},{id:'days',l:'📆 Days'},{id:'books',l:'📚 Books'},{id:'summits',l:'🤝 Summits'},{id:'reports',l:'📊 Reports'},{id:'appointments',l:'👔 Appointments'},{id:'mcq',l:'❓ MCQ Quiz'},{id:'mock',l:'📝 Mock Test'},{id:'flashcards',l:'🃏 Flashcards'},{id:'oneliners',l:'⚡ One-Liners'},{id:'timeline',l:'⏱ Timeline'},{id:'gk',l:'🌐 Static GK'},{id:'examprep',l:'🎯 Exam Prep'},{id:'progress',l:'📈 Progress'}];
+const TK=['PM Modi inaugurates Bullet Train project in Mumbai–Ahmedabad corridor · ','RBI keeps repo rate unchanged at 6.5% in June 2026 MPC meeting · ','India climbs to 63rd rank in Global Innovation Index 2026 · ','ISRO successfully launches NISAR satellite in collaboration with NASA · ','India wins 5 gold medals at Asian Athletics Championships 2026 · ','Union Budget 2026-27 allocates ₹11.11 lakh crore for infrastructure · ','India signs FTA with UK — historic trade deal after 3 years · ','Chandrayaan-4 mission cleared by Cabinet — to launch in 2027 · ','India GDP growth at 7.2% for FY 2025-26, highest among G20 nations · ','Bharat Ratna awarded to Dr. MS Swaminathan and Ratan Tata (posthumous) · '];
+const NEWS=[
+{id:1,cat:'nat',badge:'National',tc:'tgn',date:'Jun 20, 2026',title:"PM Modi Launches 'Viksit Bharat 2047' Roadmap at NITI Aayog Conclave",sum:"Prime Minister Narendra Modi unveiled a comprehensive 21-year national development blueprint outlining India's path to becoming a developed nation by 2047.",facts:['12 key sectors including infrastructure, education, health, defence','Target: per capita income of $18,000 by 2047','₹500 lakh crore in projected investments','Aligns with UN SDG Goals 2030 framework'],exam:'UPSC Prelims (Polity, Governance), SSC GK, Banking Awareness'},
+{id:2,cat:'eco',badge:'Economy',tc:'tge',date:'Jun 19, 2026',title:'RBI Holds Repo Rate at 6.5% in June 2026 MPC Meeting',sum:"The RBI's Monetary Policy Committee unanimously held the benchmark repo rate at 6.5%, citing balanced inflation control and growth support objectives.",facts:['Repo Rate: 6.5% | Reverse Repo: 3.35% | CRR: 4%','SLR remains at 18%','GDP growth forecast revised to 7.4% for FY27','Retail inflation expected at 4.5%'],exam:'Critical for IBPS, SBI, RBI Grade B, NABARD — frequently tested topic'},
+{id:3,cat:'sci',badge:'Science & Tech',tc:'tgs',date:'Jun 18, 2026',title:'ISRO–NASA NISAR Satellite Successfully Placed in Sun-Synchronous Orbit',sum:'India and NASA jointly launched NISAR, the world\'s most expensive Earth-observation satellite at $1.5 billion, successfully reaching its orbit.',facts:['Maps Earth\'s surface every 12 days','Equipped with L-band and S-band SAR radars','Monitors glaciers, forests, wetlands, tectonic activity','Joint mission cost: $1.5 billion — largest ever between ISRO and NASA'],exam:'UPSC Science & Tech, SSC CGL General Awareness, GATE'},
+{id:4,cat:'int',badge:'International',tc:'tgi',date:'Jun 17, 2026',title:'India Signs Free Trade Agreement with United Kingdom After 3 Years of Negotiations',sum:'India and UK finalized a landmark FTA in London, covering tariff reductions on over 90% of goods and services, expected to boost trade to $100 billion by 2030.',facts:['Tariff reductions on 90%+ product categories','Improved services access for Indian IT professionals','UK reduces whisky tariff from 150% to 75%','India retains protections on dairy, agriculture, automobiles'],exam:'UPSC International Relations, Banking Awareness, SSC GK'},
+{id:5,cat:'def',badge:'Defence',tc:'tgd',date:'Jun 16, 2026',title:'Exercise TASMAN SABER 2026: India, Australia, USA Conduct Trilateral Military Drill',sum:'India, Australia, and the USA conducted Exercise TASMAN SABER 2026 off Queensland, focusing on maritime security and amphibious operations.',facts:['Focuses on Indo-Pacific security framework','INS Kolkata led Indian naval contingent','First time includes cyber warfare simulation','Part of QUAD security cooperation'],exam:'Defence exercises frequently asked in UPSC, CDS, AFCAT, NDA'},
+{id:6,cat:'spo',badge:'Sports',tc:'tgsp',date:'Jun 15, 2026',title:'Neeraj Chopra Wins Gold at Diamond League Final 2026 with 91.06m Throw',sum:"India's Neeraj Chopra secured gold at the Diamond League Final 2026 in Zurich with a season-best 91.06 metres, retaining world No.1 ranking.",facts:['Season best: 91.06m — 3rd longest throw in Indian history','Retains world No.1 ranking in Javelin','Third consecutive Diamond League Final victory','India athletics ranking improves to 15th globally'],exam:'Sports section SSC CGL, Railway, Banking — Olympic athletes specifically asked'},
+{id:7,cat:'env',badge:'Environment',tc:'tgev',date:'Jun 14, 2026',title:'India Achieves 500 GW Renewable Energy Milestone Ahead of 2030 Target',sum:'India surpassed 500 GW of total installed renewable energy capacity, achieving this milestone four years ahead of Paris Agreement commitments.',facts:['Total renewable capacity: 507 GW','Solar: 315 GW | Wind: 135 GW | Others: 57 GW','India 3rd largest in global renewable energy','Target revised upward to 700 GW by 2030'],exam:'Environment section UPSC Prelims, SSC CGL, current affairs all exams'},
+{id:8,cat:'nat',badge:'National',tc:'tgn',date:'Jun 13, 2026',title:'Parliament Passes Digital India Data Protection Act 2026',sum:'Both houses of Parliament passed the Digital India Data Protection Act 2026, establishing Data Protection Board and consent framework for personal data.',facts:['Establishes Data Protection Board of India (DPBI)','Penalties up to ₹250 crore per violation','Children\'s data gets special protections','Exemptions for national security agencies'],exam:'UPSC Polity & Governance, SSC, Banking — data protection laws increasingly tested'}
+];
+const MCQS=[
+{q:"Which organization publishes the 'World Economic Outlook' report?",o:["World Bank","IMF","WTO","OECD"],a:1,e:"The International Monetary Fund (IMF) publishes the World Economic Outlook (WEO) report, typically twice a year in April and October."},
+{q:"The NISAR satellite is a joint mission between ISRO and which agency?",o:["ESA","JAXA","NASA","Roscosmos"],a:2,e:"NISAR (NASA-ISRO Synthetic Aperture Radar) is a joint Earth observation satellite developed by NASA and ISRO, with both L-band and S-band SAR systems."},
+{q:"What is the Repo Rate set by RBI as of June 2026?",o:["6.0%","6.25%","6.5%","7.0%"],a:2,e:"The RBI MPC kept repo rate unchanged at 6.5% in June 2026, maintained since February 2023."},
+{q:"The 'Global Hunger Index' is published by which organization?",o:["FAO","UNICEF","Concern Worldwide & Welthungerhilfe","World Food Programme"],a:2,e:"GHI is published jointly by Concern Worldwide (Ireland) and Welthungerhilfe (Germany)."},
+{q:"Which city hosted the G20 Summit in 2023?",o:["Jakarta","Riyadh","New Delhi","Buenos Aires"],a:2,e:"India hosted G20 Summit in New Delhi in September 2023. Theme: 'Vasudhaiva Kutumbakam — One Earth, One Family, One Future.'"},
+{q:"PM Jan Dhan Yojana was launched in which year?",o:["2012","2014","2016","2018"],a:1,e:"PMJDY was launched on August 28, 2014, as the National Mission for Financial Inclusion."},
+{q:"India's first indigenously built aircraft carrier is named:",o:["INS Vikrant","INS Vikramaditya","INS Vishal","INS Viraat"],a:0,e:"INS Vikrant is India's first indigenous aircraft carrier, commissioned September 2022. INS Vikramaditya is Russian-origin."},
+{q:"Which country chairs BRICS in 2025?",o:["China","Russia","Brazil","South Africa"],a:2,e:"Brazil holds BRICS chairmanship in 2025, following Russia's 2024 presidency."},
+{q:"The 'Human Development Index' is released by which UN body?",o:["UNEP","UNDP","UNESCO","UNFCCC"],a:1,e:"HDI is published annually by the United Nations Development Programme (UNDP)."},
+{q:"Operation Sindoor was launched in response to:",o:["Border violations by China","Pahalgam terror attack","Drone attacks in Punjab","Cross-border firing in Rajasthan"],a:1,e:"Operation Sindoor was India's military response to the Pahalgam terror attack (April 2025), targeting terrorist infrastructure in Pakistan-administered territory."},
+{q:"Headquarters of the World Trade Organization (WTO)?",o:["New York","Brussels","Geneva","Vienna"],a:2,e:"WTO HQ is in Geneva, Switzerland. Established January 1, 1995, replacing GATT."},
+{q:"India's largest solar park as of 2026?",o:["Kamuthi Solar Park","Bhadla Solar Park","Pavagada Solar Park","Rewa Solar Park"],a:1,e:"Bhadla Solar Park, Rajasthan — India's largest at 2,245 MW, over 14,000 acres."},
+{q:"'Stagflation' refers to:",o:["High growth with low inflation","Slow growth with high inflation","Deflation with recession","Rapid GDP growth"],a:1,e:"Stagflation is simultaneous stagnant growth, high unemployment, and high inflation — a challenging economic condition."},
+{q:"Article 32 of the Indian Constitution deals with:",o:["Right to Education","Right to Privacy","Right to Constitutional Remedies","Right to Information"],a:2,e:"Article 32 is the 'Heart and Soul of the Constitution' (Dr. Ambedkar). It guarantees right to move Supreme Court for fundamental rights enforcement."},
+{q:"Chandrayaan-3 successfully landed on Moon on:",o:["June 23, 2023","August 23, 2023","October 23, 2023","December 23, 2023"],a:1,e:"Chandrayaan-3's Vikram lander touched down near Moon's south pole on August 23, 2023 — India's 4th country to achieve soft moon landing."},
+{q:"ASEAN headquarters is located in:",o:["Bangkok","Singapore","Jakarta","Kuala Lumpur"],a:2,e:"ASEAN Secretariat is in Jakarta, Indonesia. ASEAN established August 8, 1967."},
+{q:"PM-KISAN provides how much income support annually?",o:["₹3,000","₹4,000","₹6,000","₹8,000"],a:2,e:"PM-KISAN provides ₹6,000/year in 3 installments of ₹2,000 each to eligible farmers."},
+{q:"'Ease of Doing Business' ranking is published by:",o:["IMF","World Bank","WEF","UNCTAD"],a:1,e:"Published by World Bank. India ranked 63rd in final 2020 report, improved 79 places in 7 years."},
+{q:"Exercise MALABAR is a naval exercise between India and:",o:["USA only","USA and Japan","USA, Japan, and Australia","France and Australia"],a:2,e:"Exercise Malabar is trilateral naval exercise between India, USA, and Japan (Australia also participates)."},
+{q:"Poshan Abhiyan (National Nutrition Mission) aims to:",o:["Provide mid-day meals","Reduce malnutrition and stunting","Distribute free rations","Promote organic farming"],a:1,e:"Poshan Abhiyan (2018) aims to reduce stunting, undernutrition, anemia by 2% annually, targeting children and mothers."},
+{q:"India's GST Council is chaired by:",o:["RBI Governor","Finance Secretary","Union Finance Minister","Prime Minister"],a:2,e:"GST Council is chaired by Union Finance Minister, includes Finance Ministers of all states and UTs."},
+{q:"Sovereign Gold Bond Scheme is issued by:",o:["SEBI","RBI on behalf of Government","Ministry of Finance","NABARD"],a:1,e:"Sovereign Gold Bonds are government securities in grams of gold, issued by RBI on behalf of Government of India."},
+{q:"World's largest producer of uranium globally?",o:["Canada","Russia","Kazakhstan","Australia"],a:2,e:"Kazakhstan produces ~43% of global uranium, followed by Namibia and Canada."},
+{q:"Paris Agreement limits global warming to:",o:["1°C","1.5°C to 2°C","2°C to 3°C","3°C maximum"],a:1,e:"Paris Agreement (2015) aims to limit warming well below 2°C, pursuing 1.5°C above pre-industrial levels."},
+{q:"Which body regulates the securities market in India?",o:["RBI","SEBI","IRDA","PFRDA"],a:1,e:"SEBI (Securities and Exchange Board of India), established 1988, given statutory powers 1992."},
+{q:"National Green Tribunal was established under:",o:["Environment Protection Act 1986","National Green Tribunal Act 2010","Wildlife Protection Act 1972","Forest Conservation Act 1980"],a:1,e:"NGT established under National Green Tribunal Act 2010 for speedy disposal of environment cases."},
+{q:"India's longest river bridge 'Dhola-Sadiya Bridge' is in:",o:["Bihar","West Bengal","Assam","Arunachal Pradesh"],a:2,e:"Dhola-Sadiya Bridge (Bhupen Hazarika Setu), 9.15 km, spans Lohit River in Assam."},
+{q:"REPO stands for:",o:["Reverse Purchase Option","Repurchase Agreement","Regulated Purchase Order","Reserve Portfolio Option"],a:1,e:"REPO = Repurchase Agreement. Repo Rate is the rate at which RBI lends to commercial banks against government securities."},
+{q:"International Criminal Court (ICC) is headquartered in:",o:["Geneva","Brussels","The Hague","New York"],a:2,e:"ICC is headquartered in The Hague, Netherlands. Established by Rome Statute in 2002."},
+{q:"Neeraj Chopra won Olympic Gold in which event at Tokyo 2020?",o:["100m Sprint","Long Jump","Javelin Throw","Triple Jump"],a:2,e:"Neeraj Chopra won India's first Olympic gold in athletics in Men's Javelin Throw at Tokyo 2020 with 87.58m."}
+];
+const FCS=[
+{q:"Current Repo Rate?",a:"6.5% (June 2026)"},
+{q:"NISAR stands for?",a:"NASA-ISRO Synthetic Aperture Radar"},
+{q:"ASEAN HQ?",a:"Jakarta, Indonesia"},
+{q:"Chandrayaan-3 Moon landing date?",a:"August 23, 2023"},
+{q:"INS Vikrant significance?",a:"India's first indigenous aircraft carrier (2022)"},
+{q:"PM-KISAN annual amount?",a:"₹6,000 in 3 installments"},
+{q:"Paris Agreement warming limit?",a:"1.5°C to 2°C above pre-industrial"},
+{q:"SEBI established year?",a:"1988 (statutory powers 1992)"},
+{q:"NGT established under?",a:"National Green Tribunal Act, 2010"},
+{q:"India's largest solar park?",a:"Bhadla Solar Park, Rajasthan (2,245 MW)"},
+{q:"G20 2023 host?",a:"India (New Delhi) — Vasudhaiva Kutumbakam"},
+{q:"Dhola-Sadiya Bridge state?",a:"Assam (Bhupen Hazarika Setu)"},
+{q:"HDI published by?",a:"UNDP"},
+{q:"Global Hunger Index by?",a:"Concern Worldwide & Welthungerhilfe"},
+{q:"REPO full form?",a:"Repurchase Agreement"},
+{q:"Article 32 deals with?",a:"Right to Constitutional Remedies"},
+{q:"GST Council chaired by?",a:"Union Finance Minister"},
+{q:"WTO headquarters?",a:"Geneva, Switzerland (1995)"},
+{q:"Operation Sindoor against?",a:"Terror camps after Pahalgam attack (2025)"},
+{q:"India renewable energy (2026)?",a:"507 GW — 3rd largest globally"}
+];
+const OL=[
+{c:"Economy",t:"<b>Repo Rate</b> is the rate at which RBI lends to commercial banks — currently <b>6.5%</b> (2026)."},
+{c:"Economy",t:"<b>CRR (Cash Reserve Ratio)</b> — percentage of deposits banks must hold with RBI — currently <b>4%</b>."},
+{c:"Economy",t:"<b>SLR (Statutory Liquidity Ratio)</b> — fraction of deposits in specified securities — currently <b>18%</b>."},
+{c:"Economy",t:"India's <b>GDP growth rate</b> for FY 2025-26 is <b>7.2%</b> — highest among G20 nations."},
+{c:"Economy",t:"<b>NITI Aayog</b> replaced Planning Commission on <b>January 1, 2015</b>; chaired by the Prime Minister."},
+{c:"Economy",t:"<b>GST</b> was implemented on <b>July 1, 2017</b>, subsuming 17+ central and state taxes."},
+{c:"Economy",t:"India's <b>forex reserves</b> crossed $700 billion in 2026 — 4th largest globally."},
+{c:"Economy",t:"<b>UPI</b> crossed 10 billion transactions/month in 2025 — world's largest real-time payments system."},
+{c:"National",t:"<b>Article 370</b> abrogated on <b>August 5, 2019</b> — J&K reorganized into two UTs."},
+{c:"National",t:"<b>Article 32</b> — Right to Constitutional Remedies; 'Heart and Soul of Constitution' (Dr. Ambedkar)."},
+{c:"National",t:"India has <b>28 States and 8 Union Territories</b> after Ladakh became UT in 2019."},
+{c:"National",t:"<b>President of India</b>: Smt. Droupadi Murmu (since July 25, 2022) — first tribal President."},
+{c:"National",t:"<b>Vice President</b>: Shri Jagdeep Dhankhar (since August 11, 2022)."},
+{c:"National",t:"<b>Lok Sabha</b>: 543 elected seats. <b>Rajya Sabha</b>: 250 members (238 elected + 12 nominated)."},
+{c:"National",t:"India's <b>highest court</b> is the Supreme Court of India; current CJI is Justice Sanjiv Khanna."},
+{c:"International",t:"<b>BRICS</b> expanded in 2024 — new members: Egypt, Ethiopia, Iran, Saudi Arabia, UAE."},
+{c:"International",t:"<b>SCO</b> — India joined as full member in <b>2017</b> at Astana Summit."},
+{c:"International",t:"<b>Quad</b> members: India, USA, Japan, Australia — focused on free Indo-Pacific."},
+{c:"International",t:"<b>G20 2024</b> hosted by <b>Brazil</b> in Rio de Janeiro."},
+{c:"International",t:"<b>UN Security Council P5</b>: USA, UK, France, Russia, China."},
+{c:"International",t:"<b>International Court of Justice (ICJ)</b> — seat in The Hague, Netherlands."},
+{c:"Science",t:"<b>Chandrayaan-3</b> landed on Moon's south pole on <b>August 23, 2023</b> — Vikram lander, Pragyan rover."},
+{c:"Science",t:"<b>NISAR</b> — world's most expensive Earth observation satellite at <b>$1.5 billion</b>."},
+{c:"Science",t:"<b>Aditya-L1</b> — India's first solar mission, launched <b>September 2, 2023</b>, placed at L1 point."},
+{c:"Science",t:"<b>5G</b> was launched in India on <b>October 1, 2022</b> by PM Modi at IMC 2022."},
+{c:"Science",t:"<b>Project Cheetah</b> — Cheetahs reintroduced in <b>Kuno National Park</b>, Madhya Pradesh (2022)."},
+{c:"Defence",t:"India's defence budget FY 2026-27: <b>₹6.81 lakh crore</b> (~2.5% of GDP)."},
+{c:"Defence",t:"<b>INS Vikrant</b> — India's first indigenous aircraft carrier, commissioned <b>September 2, 2022</b>."},
+{c:"Defence",t:"<b>AGNI-5</b> — India's intercontinental ballistic missile with range of <b>5,000+ km</b>."},
+{c:"Defence",t:"<b>Operation Sindoor (2025)</b> — precision strikes on terror camps after Pahalgam attack."},
+{c:"Defence",t:"<b>Exercise Malabar</b> — trilateral naval drill: India, USA, Japan."},
+{c:"Sports",t:"<b>Neeraj Chopra</b> won gold in javelin at <b>Tokyo Olympics 2020</b> with 87.58m throw."},
+{c:"Sports",t:"India won the <b>ICC T20 World Cup 2024</b> defeating South Africa in Barbados final."},
+{c:"Sports",t:"<b>D. Gukesh</b> became youngest World Chess Champion (18 years) defeating Ding Liren in 2024."},
+{c:"Sports",t:"India won <b>107 medals at Asian Games 2023</b> (Hangzhou) — highest-ever medal haul."},
+{c:"Sports",t:"<b>Paris Olympics 2024</b>: India won 6 medals including 1 gold (Neeraj Chopra, Javelin)."},
+{c:"Environment",t:"India's renewable energy capacity crossed <b>500 GW in 2026</b> — 3rd largest globally."},
+{c:"Environment",t:"<b>NAPCC</b> (National Action Plan on Climate Change) has <b>8 national missions</b> including Solar Mission."},
+{c:"Environment",t:"India's <b>forest cover</b> is 24.62% of total geographic area (ISFR 2021)."},
+{c:"Environment",t:"<b>COP29</b> was held in <b>Baku, Azerbaijan</b> in November 2024."},
+{c:"Awards",t:"<b>Nobel Peace Prize 2024</b> — Nihon Hidankyo (Japanese atomic bomb survivors)."},
+{c:"Awards",t:"<b>Nobel Medicine 2024</b> — Victor Ambros & Gary Ruvkun for microRNA discovery."},
+{c:"Awards",t:"<b>Bharat Ratna 2024</b> — LK Advani, Karpoori Thakur (posthumous), MS Swaminathan (posthumous)."},
+{c:"Awards",t:"<b>Booker Prize 2024</b> — Samantha Harvey for 'Orbital'."},
+{c:"Banking",t:"<b>NABARD</b> (National Bank for Agriculture and Rural Development) set up in <b>1982</b>."},
+{c:"Banking",t:"<b>NPA</b> (Non-Performing Asset) — loan where borrower has defaulted for <b>90+ days</b>."},
+{c:"Banking",t:"<b>SWIFT</b> = Society for Worldwide Interbank Financial Telecommunication."},
+{c:"Banking",t:"<b>SARFAESI Act 2002</b> allows banks to recover NPAs without court intervention."},
+{c:"Banking",t:"<b>MCLR</b> (Marginal Cost of Funds based Lending Rate) replaced Base Rate from <b>April 2016</b>."}
+];
+const SCHEMES=[
+{i:"🏠",n:"PM Awas Yojana (Urban)",y:"2015",m:"Housing & Urban Affairs",o:"Housing for all — affordable housing for urban poor",b:"Central assistance ₹1–2.5 lakh per beneficiary",e:"EWS/LIG/MIG with no pucca house"},
+{i:"💧",n:"Jal Jeevan Mission",y:"2019",m:"Jal Shakti",o:"Safe drinking water to every rural household by 2024",b:"Functional Household Tap Connection (FHTC)",e:"Rural households across India"},
+{i:"⚡",n:"PM Ujjwala Yojana",y:"2016",m:"Petroleum & Natural Gas",o:"Clean cooking fuel (LPG) to BPL women",b:"Free LPG connection; first refill free",e:"Women of BPL households"},
+{i:"🌾",n:"PM-KISAN",y:"2019",m:"Agriculture",o:"Income support to farmer families",b:"₹6,000 per year in 3 equal installments",e:"All landholding farmers (subject to exclusion criteria)"},
+{i:"🏥",n:"PM Ayushman Bharat (PMJAY)",y:"2018",m:"Health & Family Welfare",o:"World's largest health assurance scheme",b:"₹5 lakh per family per year for health coverage",e:"Bottom 40% of Indian population — 50 crore beneficiaries"},
+{i:"👩",n:"Beti Bachao Beti Padhao",y:"2015",m:"WCD / Health / Education",o:"Improve declining Child Sex Ratio; empower girls",b:"Awareness + scholarship + girl child welfare",e:"Families with girl children in districts with low CSR"},
+{i:"📱",n:"Digital India",y:"2015",m:"Electronics & IT",o:"Transform India into digitally empowered knowledge economy",b:"BharatNet, digital literacy, e-governance",e:"All citizens; special focus on rural areas"},
+{i:"🛠",n:"Skill India Mission",y:"2015",m:"Skill Development",o:"Train 40 crore people in industry-relevant skills",b:"Free skill training, certification, job placement",e:"Youth aged 15–45 years"},
+{i:"🌱",n:"National Solar Mission",y:"2010",m:"New & Renewable Energy",o:"Achieve 100 GW solar capacity target",b:"Subsidies and financial incentives for solar installation",e:"Households, industries, government buildings"},
+{i:"🚜",n:"PM Fasal Bima Yojana",y:"2016",m:"Agriculture",o:"Provide financial support to farmers suffering crop loss",b:"Insurance coverage at very low premium",e:"All farmers growing notified crops"}
+];
+const AWARDS=[
+{e:"🏆",n:"Nobel Peace Prize 2024",w:"Nihon Hidankyo (Japan)",d:"Japanese survivors of atomic bomb — Hibakusha"},
+{e:"🔬",n:"Nobel Medicine 2024",w:"Victor Ambros & Gary Ruvkun",d:"Discovery of microRNA and its role in gene regulation"},
+{e:"⚛️",n:"Nobel Physics 2024",w:"John Hopfield & Geoffrey Hinton",d:"Foundational discoveries for ML with neural networks"},
+{e:"🧪",n:"Nobel Chemistry 2024",w:"David Baker, Demis Hassabis & John Jumper",d:"Protein structure prediction using AI (AlphaFold)"},
+{e:"📖",n:"Nobel Literature 2024",w:"Han Kang (South Korea)",d:"First Korean and Asian woman to win Nobel Literature"},
+{e:"💰",n:"Nobel Economics 2024",w:"Acemoglu, Johnson & Robinson",d:"Studies on how institutions affect prosperity"},
+{e:"📚",n:"Booker Prize 2024",w:"Samantha Harvey — 'Orbital'",d:"Novel about astronauts' perspective from ISS"},
+{e:"🇮🇳",n:"Bharat Ratna 2024",w:"LK Advani, Karpoori Thakur, MS Swaminathan",d:"India's highest civilian award; Thakur & Swaminathan posthumous"},
+{e:"🎭",n:"Padma Vibhushan 2025",w:"Shyam Benegal, Zakir Hussain (posthumous)",d:"India's second highest civilian honour"},
+{e:"🏅",n:"Rajiv Gandhi Khel Ratna 2024",w:"D. Gukesh (Chess)",d:"Youngest World Chess Champion at 18 years"},
+{e:"⚔️",n:"Param Vir Chakra",w:"Pahalgam operation heroes (posthumous)",d:"India's highest wartime gallantry award"},
+{e:"🌍",n:"Ramon Magsaysay 2024",w:"Pooja Makhija (India)",d:"Public health nutrition advocacy"}
+];
+const BOOKS=[
+{t:"The India Way",a:"S. Jaishankar",y:2020,c:"Foreign Policy"},
+{t:"Why Bharat Matters",a:"S. Jaishankar",y:2024,c:"Foreign Policy"},
+{t:"Orbital",a:"Samantha Harvey",y:2024,c:"Literature (Booker)"},
+{t:"India's War",a:"Srinath Raghavan",y:2016,c:"History"},
+{t:"An Era of Darkness",a:"Shashi Tharoor",y:2016,c:"History"},
+{t:"The Anarchy",a:"William Dalrymple",y:2019,c:"History"},
+{t:"Third Pillar",a:"Raghuram Rajan",y:2019,c:"Economy"},
+{t:"I Do What I Do",a:"Raghuram Rajan",y:2017,c:"Economy"},
+{t:"Fault Lines",a:"Raghuram Rajan",y:2010,c:"Economy"},
+{t:"The Spy Chronicles",a:"AS Dulat & Asad Durrani",y:2018,c:"Intelligence"},
+{t:"Jugalbandi",a:"Vinay Sitapati",y:2020,c:"Politics"},
+{t:"The Great Indian Novel",a:"Shashi Tharoor",y:1989,c:"Fiction"},
+{t:"Mission Overseas",a:"Sushant Singh",y:2017,c:"Defence"},
+{t:"2047: Shaping India's Future",a:"Ajit Doval",y:2024,c:"Security"},
+{t:"Republic of Religion",a:"Shabnum Tejani",y:2023,c:"History"}
+];
+const DAYS=[
+{d:"26",m:"Jan",n:"Republic Day (India)",th:"Constitutional Supremacy"},
+{d:"4",m:"Feb",n:"World Cancer Day",th:"United by Unique (2025)"},
+{d:"8",m:"Mar",n:"International Women's Day",th:"Accelerate Action (2025)"},
+{d:"22",m:"Mar",n:"World Water Day",th:"Glacier Preservation (2025)"},
+{d:"7",m:"Apr",n:"World Health Day",th:"My Health, My Right"},
+{d:"22",m:"Apr",n:"Earth Day",th:"Planet vs. Plastics (2025)"},
+{d:"5",m:"Jun",n:"World Environment Day",th:"Land Restoration (2025)"},
+{d:"21",m:"Jun",n:"International Yoga Day",th:"Yoga for One Earth (2025)"},
+{d:"11",m:"Jul",n:"World Population Day",th:"Leaving no one behind"},
+{d:"15",m:"Aug",n:"Independence Day (India)",th:"79th Anniversary (2025)"},
+{d:"2",m:"Oct",n:"Gandhi Jayanti / Non-Violence Day",th:"Gandhi's 156th anniversary"},
+{d:"16",m:"Oct",n:"World Food Day",th:"Better life, better future"},
+{d:"14",m:"Nov",n:"Children's Day / World Diabetes Day",th:"Nehru's 135th anniversary"},
+{d:"1",m:"Dec",n:"World AIDS Day",th:"Let Communities Lead (2025)"}
+];
+const SUMMITS=[
+{n:"G20 Summit 2024",h:"Rio de Janeiro, Brazil",th:"Building a Just World and a Sustainable Planet",o:["Global Alliance Against Hunger","Climate finance commitments","AI governance framework","Debt restructuring for developing nations"]},
+{n:"BRICS Summit 2024",h:"Kazan, Russia",th:"Strengthening Multilateralism for Just Global Development",o:["5 new BRICS members finalized","BRICS Pay system","De-dollarization discussions","New Development Bank expanded"]},
+{n:"COP29 2024",h:"Baku, Azerbaijan",th:"In Solidarity for a Green World",o:["$300 billion/year climate finance by 2035","Article 6 carbon markets operational","Loss & Damage fund details","NDC review framework"]},
+{n:"SCO Summit 2024",h:"Astana, Kazakhstan",th:"Strengthening Multilateral Dialogue",o:["Belarus becomes full member","Counter-terrorism framework","Economic corridor expansion","Joint security declaration"]},
+{n:"ASEAN Summit 2024",h:"Vientiane, Laos",th:"ASEAN: Enhancing Connectivity and Resilience",o:["India-ASEAN partnership upgraded","Indo-Pacific Economic Framework","Digital economy agreement","South China Sea conduct code"]},
+{n:"G20 Summit 2025",h:"Johannesburg, South Africa",th:"Solidarity, Equality, Sustainability",o:["African development fund","Green energy transition","Digital public infrastructure","Pandemic preparedness"]}
+];
+const REPORTS=[
+{n:"Human Development Index 2024",b:"UNDP",india:"134th / 193 countries",k:"HDI value: 0.644 | Medium Human Development category"},
+{n:"Global Hunger Index 2024",b:"Concern Worldwide / Welthungerhilfe",india:"105th / 127 countries",k:"GHI Score: 27.3 (Serious); child wasting 18.7%"},
+{n:"Global Innovation Index 2025",b:"WIPO",india:"39th / 133 economies",k:"Top in Central & Southern Asia; steadily improving"},
+{n:"World Happiness Report 2025",b:"UN SDSN",india:"126th / 143 countries",k:"Finland ranked 1st for 8th consecutive year"},
+{n:"Global Gender Gap Report 2024",b:"World Economic Forum",india:"129th / 146 countries",k:"Gender gap at 64.1%; economic participation lowest"},
+{n:"Corruption Perception Index 2024",b:"Transparency International",india:"96th / 180 countries",k:"Score: 39/100; Denmark least corrupt"},
+{n:"World Economic Outlook 2026",b:"IMF",india:"7.2% GDP growth",k:"India fastest growing major economy; global growth 3.2%"},
+{n:"Environmental Performance Index 2024",b:"Yale & Columbia University",india:"176th / 180 countries",k:"Air quality and ecosystem vitality major concerns"},
+{n:"Press Freedom Index 2025",b:"Reporters Without Borders (RSF)",india:"159th / 180 countries",k:"India in 'Difficult' category for press freedom"},
+{n:"Global Competitiveness Report 2024",b:"WEF",india:"40th / 141 economies",k:"Singapore ranked 1st; India improving in innovation"},
+{n:"India Innovation Index 2023",b:"DPIIT / NITI Aayog",india:"Karnataka 1st, Tamil Nadu 2nd",k:"36 Indian States/UTs ranked; Telangana 3rd"},
+{n:"Ease of Doing Business 2020",b:"World Bank",india:"63rd / 190 countries",k:"India improved 79 places in 7 years (last published)"}
+];
+const APPTS=[
+{n:"Sanjay Malhotra",r:"Governor, Reserve Bank of India",o:"RBI",i:"S",d:"Dec 2024"},
+{n:"Droupadi Murmu",r:"President of India",o:"Rashtrapati Bhavan",i:"D",d:"Jul 2022"},
+{n:"Jagdeep Dhankhar",r:"Vice President of India",o:"Govt of India",i:"J",d:"Aug 2022"},
+{n:"Sanjiv Khanna",r:"Chief Justice of India (48th)",o:"Supreme Court of India",i:"S",d:"Nov 2024"},
+{n:"Ajit Doval",r:"National Security Advisor",o:"PMO",i:"A",d:"2019 (reappointed)"},
+{n:"Arvind Panagariya",r:"16th Finance Commission Chairman",o:"Finance Commission",i:"A",d:"2023"},
+{n:"Prashant Kumar Jha",r:"Comptroller & Auditor General (CAG)",o:"CAG Office",i:"P",d:"2024"},
+{n:"Pawan Agarwal",r:"CEO, National Recruitment Agency",o:"NRA",i:"P",d:"2023"},
+{n:"Dinkar Gupta",r:"DG, National Security Guard",o:"NSG",i:"D",d:"2024"},
+{n:"Chandana Baruah",r:"First woman DGP, Assam Police",o:"Assam Govt",i:"C",d:"2025"}
+];
+const TL=[
+{date:"Aug 23, 2023",t:"Chandrayaan-3 Moon Landing",d:"India becomes 4th country to achieve soft lunar landing at Moon's south pole.",c:"Science"},
+{date:"Sep 02, 2023",t:"Aditya-L1 Solar Mission Launched",d:"India's first solar observatory placed at Lagrange point L1 to study the Sun.",c:"Science"},
+{date:"Sep 09, 2023",t:"G20 New Delhi Summit",d:"India hosts G20; African Union joins as permanent member. Theme: Vasudhaiva Kutumbakam.",c:"International"},
+{date:"Jan 22, 2024",t:"Ram Mandir Consecration, Ayodhya",d:"PM Modi consecrates Ram Temple; Pran Pratishtha ceremony attended by thousands.",c:"National"},
+{date:"Jun 04, 2024",t:"Indian General Election Results",d:"NDA wins third term; PM Modi sworn in for third consecutive term.",c:"National"},
+{date:"Jun 09, 2024",t:"Gukesh: Youngest World Chess Champion",d:"18-year-old D. Gukesh defeats Ding Liren to become youngest-ever World Chess Champion.",c:"Sports"},
+{date:"Jun 29, 2024",t:"India wins ICC T20 World Cup 2024",d:"India defeats South Africa in Barbados final. Rohit Sharma's last T20I.",c:"Sports"},
+{date:"Jul–Aug 2024",t:"Paris Olympics 2024",d:"India wins 6 medals (1 Gold — Neeraj Chopra). Best Olympic performance.",c:"Sports"},
+{date:"Oct 07, 2024",t:"Nobel Peace Prize: Nihon Hidankyo",d:"Japanese atomic bomb survivor group wins Nobel Peace Prize.",c:"International"},
+{date:"Nov 05, 2024",t:"Trump wins US Presidential Election",d:"Donald Trump becomes 47th US President defeating Kamala Harris.",c:"International"},
+{date:"Apr 22, 2025",t:"Pahalgam Terror Attack",d:"26 tourists killed in J&K. India suspends Indus Waters Treaty with Pakistan.",c:"National"},
+{date:"May 07, 2025",t:"Operation Sindoor",d:"India launches precision strikes on 9 terror camps in Pakistan and PoK.",c:"Defence"},
+{date:"Mar 2026",t:"India–UK FTA Signed",d:"Historic Free Trade Agreement finalized after 3 years of negotiations.",c:"International"},
+{date:"Jun 2026",t:"India Hits 500 GW Renewable Energy",d:"India crosses 507 GW renewable capacity — 4 years ahead of Paris commitment.",c:"Environment"}
+];
+const GK={
+capitals:[["India","New Delhi","Indian Rupee (₹)"],["USA","Washington D.C.","US Dollar ($)"],["China","Beijing","Renminbi (Yuan)"],["Russia","Moscow","Russian Ruble"],["UK","London","Pound Sterling (£)"],["France","Paris","Euro (€)"],["Germany","Berlin","Euro (€)"],["Japan","Tokyo","Japanese Yen (¥)"],["Australia","Canberra","Australian Dollar"],["Brazil","Brasília","Brazilian Real"],["Canada","Ottawa","Canadian Dollar"],["Pakistan","Islamabad","Pakistani Rupee"],["Bangladesh","Dhaka","Bangladeshi Taka"],["Sri Lanka","Colombo","Sri Lankan Rupee"],["Nepal","Kathmandu","Nepalese Rupee"],["UAE","Abu Dhabi","UAE Dirham"],["Saudi Arabia","Riyadh","Saudi Riyal"],["South Africa","Pretoria","South African Rand"],["Argentina","Buenos Aires","Argentine Peso"],["Indonesia","Jakarta","Indonesian Rupiah"]],
+orgs:[["WTO","World Trade Organization","Geneva, Switzerland","1995"],["WHO","World Health Organization","Geneva, Switzerland","1948"],["IMF","International Monetary Fund","Washington D.C.","1944"],["World Bank","IBRD","Washington D.C.","1944"],["UNICEF","UN Children's Fund","New York, USA","1946"],["UNESCO","UN Educational, Scientific & Cultural Org.","Paris, France","1945"],["ASEAN","Association of Southeast Asian Nations","Jakarta, Indonesia","1967"],["SAARC","South Asian Association for Regional Cooperation","Kathmandu, Nepal","1985"],["NATO","North Atlantic Treaty Organization","Brussels, Belgium","1949"],["OPEC","Organization of Petroleum Exporting Countries","Vienna, Austria","1960"],["ICC","International Criminal Court","The Hague, Netherlands","2002"],["INTERPOL","International Criminal Police Organization","Lyon, France","1923"]]
+};
+
+// ── STATE ──────────────────────────────────────────────────────────────
+let sec='home';
+let qs={i:0,cor:0,wr:0,ans:false};
+let ms={i:0,left:1800,iv:null,started:false,cor:0,wr:0};
+let fci=0;
+let olCat='All';
+let gkTab='caps';
+let prog=JSON.parse(localStorage.getItem('cam_prog')||'{"read":0,"quiz":0,"score":0,"streak":1}');
+function saveProg(){localStorage.setItem('cam_prog',JSON.stringify(prog));}
+
+// ── INIT ───────────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded',()=>{
+  document.getElementById('tktext').textContent=TK.join('  ·  ');
+  buildNav();
+  render();
+  initSearch();
+  // theme
+  document.getElementById('themeBtn').onclick=()=>{
+    const t=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';
+    document.documentElement.setAttribute('data-theme',t);
+    document.getElementById('themeBtn').textContent=t==='dark'?'◑':'☀';
+  };
+  // scroll top
+  window.onscroll=()=>{
+    document.getElementById('stbtn').classList.toggle('show',window.scrollY>300);
+  };
+  document.getElementById('stbtn').onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
+});
+
+function buildNav(){
+  document.getElementById('catnav').innerHTML=CATS.map(c=>`<div class="ctab${c.id===sec?' active':''}" onclick="go('${c.id}')">${c.l}</div>`).join('');
+}
+
+function go(id){sec=id;buildNav();render();window.scrollTo({top:0,behavior:'smooth'});}
+window.showSection=go;
+
+function render(){
+  const m=document.getElementById('main');
+  document.getElementById('sidebar').innerHTML=renderSidebar();
+  switch(sec){
+    case 'home':m.innerHTML=renderHome();startClock();break;
+    case 'daily':m.innerHTML=renderNews(NEWS,'📰 Daily Current Affairs','All today\'s top stories');break;
+    case 'weekly':m.innerHTML=renderWeekly();break;
+    case 'monthly':m.innerHTML=renderMonthly();break;
+    case 'national':m.innerHTML=renderNews(NEWS.filter(n=>n.cat==='nat'),'🇮🇳 National Affairs','Government, Parliament, Judiciary & Policy');break;
+    case 'international':m.innerHTML=renderNews(NEWS.filter(n=>n.cat==='int'),'🌍 International Affairs','Global Events, Diplomacy & Organizations');break;
+    case 'economy':m.innerHTML=renderNews(NEWS.filter(n=>n.cat==='eco'),'💰 Economy & Banking','RBI, Markets, Budget & Fiscal Policy');break;
+    case 'science':m.innerHTML=renderNews(NEWS.filter(n=>n.cat==='sci'),'🔬 Science & Technology','ISRO, AI, Research & Innovations');break;
+    case 'defence':m.innerHTML=renderNews(NEWS.filter(n=>n.cat==='def'),'⚔️ Defence & Security','Military, Exercises & Security Updates');break;
+    case 'sports':m.innerHTML=renderNews(NEWS.filter(n=>n.cat==='spo'),'🏆 Sports Current Affairs','Cricket, Olympics & Championships');break;
+    case 'awards':m.innerHTML=renderAwards();break;
+    case 'schemes':m.innerHTML=renderSchemes();break;
+    case 'environment':m.innerHTML=renderNews(NEWS.filter(n=>n.cat==='env'),'🌿 Environment & Ecology','Climate, Biodiversity & Green Initiatives');break;
+    case 'days':m.innerHTML=renderDays();break;
+    case 'books':m.innerHTML=renderBooks();break;
+    case 'summits':m.innerHTML=renderSummits();break;
+    case 'reports':m.innerHTML=renderReports();break;
+    case 'appointments':m.innerHTML=renderAppts();break;
+    case 'mcq':m.innerHTML=renderMCQSection();setTimeout(renderQ,0);break;
+    case 'mock':m.innerHTML=renderMock();break;
+    case 'flashcards':m.innerHTML=renderFlash();break;
+    case 'oneliners':m.innerHTML=renderOL();break;
+    case 'timeline':m.innerHTML=renderTL();break;
+    case 'gk':m.innerHTML=renderGK();break;
+    case 'examprep':m.innerHTML=renderExam();break;
+    case 'progress':m.innerHTML=renderProg();break;
+    default:m.innerHTML=renderHome();startClock();
+  }
+}
+
+// ── CLOCK ──────────────────────────────────────────────────────────────
+let clockIv=null;
+function startClock(){
+  clearInterval(clockIv);
+  clockIv=setInterval(()=>{
+    const el=document.getElementById('clk');
+    if(el) el.textContent=new Date().toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false});
+    else clearInterval(clockIv);
+  },1000);
+}
+
+// ── SEARCH ─────────────────────────────────────────────────────────────
+function initSearch(){
+  const inp=document.getElementById('msearch'),drop=document.getElementById('sdrop');
+  const all=[
+    ...NEWS.map(n=>({t:n.title,c:n.badge,s:n.cat==='nat'?'national':n.cat==='int'?'international':n.cat==='eco'?'economy':n.cat==='sci'?'science':n.cat==='def'?'defence':n.cat==='spo'?'sports':n.cat==='env'?'environment':'national'})),
+    ...MCQS.map(q=>({t:q.q,c:'MCQ',s:'mcq'})),
+    ...SCHEMES.map(s=>({t:s.n,c:'Scheme',s:'schemes'})),
+    ...AWARDS.map(a=>({t:a.n+' — '+a.w,c:'Award',s:'awards'})),
+    ...BOOKS.map(b=>({t:b.t+' by '+b.a,c:'Book',s:'books'}))
+  ];
+  inp.addEventListener('input',()=>{
+    const v=inp.value.trim().toLowerCase();
+    if(!v){drop.classList.remove('open');return;}
+    const m=all.filter(i=>i.t.toLowerCase().includes(v)).slice(0,7);
+    if(!m.length){drop.classList.remove('open');return;}
+    drop.innerHTML=m.map(i=>`<div class="sdi" onclick="go('${i.s}');inp.value='';drop.classList.remove('open')"><div class="sdi-t">${i.t}</div><div class="sdi-c">${i.c}</div></div>`).join('');
+    drop.classList.add('open');
+  });
+  document.addEventListener('click',e=>{if(!e.target.closest('.srch'))drop.classList.remove('open');});
+}
+
+// ── RENDERS ────────────────────────────────────────────────────────────
+function renderSidebar(){
+  return `
+<div class="widget"><div class="whead">📊 Quick Stats</div><div class="wbody">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px">
+    <div style="background:var(--surface2);border-radius:8px;padding:10px;text-align:center"><div style="font-size:18px;font-weight:900;color:var(--accent)">${prog.quiz}</div><div style="font-size:10px;color:var(--text3);text-transform:uppercase">Quizzes Done</div></div>
+    <div style="background:var(--surface2);border-radius:8px;padding:10px;text-align:center"><div style="font-size:18px;font-weight:900;color:var(--accent2)">${prog.streak}</div><div style="font-size:10px;color:var(--text3);text-transform:uppercase">Day Streak</div></div>
+  </div>
+  <div style="font-size:11px;color:var(--text2);margin-bottom:4px">Today's Progress</div>
+  <div class="pbar"><div class="pbar-f" style="width:${Math.min(prog.read,100)}%"></div></div>
+  <div style="font-size:10px;color:var(--text3);margin-top:3px">${prog.read}% complete</div>
+</div></div>
+<div class="widget"><div class="whead">🔥 Trending Topics</div><div class="wbody">
+  ${['Operation Sindoor','NISAR Satellite','India-UK FTA','Neeraj Chopra','RBI Repo Rate 6.5%','Chandrayaan-3','D. Gukesh Chess Champion','T20 World Cup 2024'].map(t=>`<div class="wlink"><span>${t}</span><span class="wcnt">🔍</span></div>`).join('')}
+</div></div>
+<div class="widget"><div class="whead">📚 Quick Links</div><div class="wbody">
+  ${[['MCQ Quiz','mcq','❓'],['Flashcards','flashcards','🃏'],['One-Liners','oneliners','⚡'],['Mock Test','mock','📝'],['Timeline','timeline','⏱'],['Static GK','gk','🌐']].map(l=>`<div class="wlink" onclick="go('${l[1]}')"><span>${l[2]} ${l[0]}</span><span>→</span></div>`).join('')}
+</div></div>
+<div class="widget"><div class="whead">🎯 Exam Calendar</div><div class="wbody">
+  ${[['UPSC Prelims 2026','Jun 2026'],['SSC CGL 2025-26','Jul–Aug 2026'],['IBPS PO 2026','Aug 2026'],['RRB NTPC 2026','Sep 2026'],['SBI Clerk 2026','Oct 2026']].map(e=>`<div style="display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--border);font-size:12px"><span style="color:var(--text)">${e[0]}</span><span style="color:var(--accent);font-weight:600">${e[1]}</span></div>`).join('')}
+</div></div>`;
+}
+
+function renderHome(){
+  prog.read=Math.min((prog.read||0)+5,100);saveProg();
+  const now=new Date();
+  return `
+<div class="cmdbar">
+  <div><div class="cclk" id="clk">${now.toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false})}</div><div style="font-size:11px;color:var(--text3);margin-top:2px">${now.toLocaleDateString('en-IN',{weekday:'long',year:'numeric',month:'long',day:'numeric'})}</div></div>
+  <div class="cdiv"></div>
+  <div class="cstat"><div class="cstat-n" style="color:var(--accent2)">7.2%</div><div class="cstat-l">GDP Growth</div></div>
+  <div class="cdiv"></div>
+  <div class="cstat"><div class="cstat-n" style="color:var(--accent)">6.5%</div><div class="cstat-l">Repo Rate</div></div>
+  <div class="cdiv"></div>
+  <div class="cstat"><div class="cstat-n" style="color:var(--accent3)">507 GW</div><div class="cstat-l">Renewables</div></div>
+  <div class="cpbar">
+    <div class="cpbar-l"><span>Daily Progress</span><span>${prog.read}%</span></div>
+    <div class="pbar"><div class="pbar-f" style="width:${prog.read}%"></div></div>
+  </div>
+  <button class="btn ba bsm" onclick="go('mcq')">Start Quiz →</button>
+</div>
+<div class="srow">
+  <div class="sbox a"><div class="sn">10K+</div><div class="sl">MCQ Questions</div></div>
+  <div class="sbox b"><div class="sn">500+</div><div class="sl">One-Liners</div></div>
+  <div class="sbox c"><div class="sn">50+</div><div class="sl">Mock Tests</div></div>
+  <div class="sbox d"><div class="sn">All Exams</div><div class="sl">UPSC·SSC·Bank·Railway</div></div>
+</div>
+<div class="sh"><h2>🔥 Latest Headlines</h2><div class="shl"></div><span class="shb">Today</span></div>
+${NEWS.slice(0,4).map(n=>artCard(n)).join('')}
+<div style="text-align:center;margin:16px 0"><button class="btn bo" onclick="go('daily')">View All News →</button></div>
+<div class="sh" style="margin-top:22px"><h2>⚡ Quick One-Liners</h2><div class="shl"></div></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+${OL.slice(0,6).map(o=>`<div class="ol-item">${o.t}</div>`).join('')}
+</div>
+<div style="text-align:center;margin:14px 0"><button class="btn bo" onclick="go('oneliners')">All One-Liners →</button></div>
+<div class="sh" style="margin-top:22px"><h2>📅 Important Days</h2><div class="shl"></div></div>
+${DAYS.slice(0,4).map(d=>dayCard(d)).join('')}`;
+}
+
+function artCard(n){
+  return `<div class="art"><div class="ameta"><span class="tag ${n.tc}">${n.badge}</span><span class="adate">📅 ${n.date}</span></div><div class="atitle">${n.title}</div><div class="asum">${n.sum}</div>${n.facts?`<div class="afacts"><div class="afacts-t">Key Facts</div><ul>${n.facts.map(f=>`<li>${f}</li>`).join('')}</ul></div>`:''}<div class="enote">🎯 ${n.exam}</div></div>`;
+}
+
+function dayCard(d){
+  return `<div class="dc"><div class="dbox"><div class="dn">${d.d}</div><div class="dm">${d.m}</div></div><div><div class="dname">${d.n}</div><div class="dtheme">Theme: ${d.th}</div></div></div>`;
+}
+
+function renderNews(arr,title,sub){
+  return `<div class="sh"><h2>${title}</h2><div class="shl"></div></div><p style="font-size:12px;color:var(--text3);margin-bottom:14px">${sub}</p>${arr.length?arr.map(n=>artCard(n)).join(''):'<div style="text-align:center;padding:40px;color:var(--text3)">More articles coming soon!</div>'}`;
+}
+
+function renderWeekly(){
+  return `<div class="sh"><h2>📋 Weekly Current Affairs</h2><div class="shl"></div></div>
+<div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px;margin-bottom:14px">
+  <div style="font-size:12px;font-weight:700;color:var(--accent);margin-bottom:10px;text-transform:uppercase;letter-spacing:.5px">WEEK OF JUNE 16–22, 2026</div>
+  ${NEWS.map((n,i)=>`<div style="padding:9px 0;border-bottom:${i<NEWS.length-1?'1px solid var(--border)':'none'}"><div style="font-size:10px;color:var(--text3)">${n.date} · ${n.badge}</div><div style="font-size:14px;font-weight:600;color:var(--text);margin:3px 0">${n.title}</div><div style="font-size:12px;color:var(--text2)">${n.sum.substring(0,120)}…</div></div>`).join('')}
+</div>
+<div class="sh"><h2>📌 Weekly One-Liners</h2><div class="shl"></div></div>
+${OL.slice(0,12).map(o=>`<div class="ol-item">${o.t}</div>`).join('')}`;
+}
+
+function renderMonthly(){
+  const months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  return `<div class="sh"><h2>📅 Monthly CA Archive</h2><div class="shl"></div></div>
+<div class="mtabs">${months.map(m=>`<div class="mtab${m==='Jun'?' on':''}" onclick="this.closest('.mtabs').querySelectorAll('.mtab').forEach(t=>t.classList.remove('on'));this.classList.add('on')">${m} 2026</div>`).join('')}</div>
+<div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px;margin-bottom:14px">
+  <div style="font-size:12px;font-weight:700;color:var(--accent);margin-bottom:10px;text-transform:uppercase;letter-spacing:.5px">JUNE 2026 — KEY EVENTS</div>
+  ${NEWS.map((n,i)=>`<div style="padding:9px 0;border-bottom:${i<NEWS.length-1?'1px solid var(--border)':'none'}">
+    <span style="font-size:10px;background:rgba(245,158,11,.1);color:var(--accent);padding:2px 7px;border-radius:10px;font-weight:700">Jun ${15+i}</span>
+    <div style="font-size:13px;font-weight:600;color:var(--text);margin:3px 0">${n.title}</div>
+    <div style="font-size:12px;color:var(--text2)">${n.sum.substring(0,100)}…</div>
+  </div>`).join('')}
+</div>
+<div class="sh"><h2>📝 June MCQs</h2><div class="shl"></div></div>
+${MCQS.slice(0,5).map((q,i)=>`<div class="ol-item"><b>Q${i+1}.</b> ${q.q}<br><span style="color:var(--accent2)">→ ${q.o[q.a]}</span></div>`).join('')}`;
+}
+
+function renderAwards(){
+  return `<div class="sh"><h2>🥇 Awards & Honours 2024-25</h2><div class="shl"></div></div>
+<div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden">
+${AWARDS.map(a=>`<div class="awit"><div style="font-size:22px;flex-shrink:0">${a.e}</div><div><div class="awn">${a.n}</div><div class="aww">${a.w}</div><div class="awd">${a.d}</div></div></div>`).join('')}
+</div>`;
+}
+
+function renderSchemes(){
+  return `<div class="sh"><h2>📜 Government Schemes</h2><div class="shl"></div></div>
+${SCHEMES.map(s=>`<div class="sch"><div class="scht"><div class="schicon">${s.i}</div><div><div class="schn">${s.n}</div><div class="schy">Launched: ${s.y} | Ministry: ${s.m}</div></div></div><div class="schg"><div><div class="schfl">Objective</div><div class="schfv">${s.o}</div></div><div><div class="schfl">Key Benefit</div><div class="schfv">${s.b}</div></div><div style="grid-column:1/-1"><div class="schfl">Eligibility</div><div class="schfv">${s.e}</div></div></div></div>`).join('')}`;
+}
+
+function renderDays(){
+  return `<div class="sh"><h2>📆 Important National & International Days</h2><div class="shl"></div></div><p style="font-size:12px;color:var(--text3);margin-bottom:14px">With 2025 themes — frequently asked in all exams</p>${DAYS.map(d=>dayCard(d)).join('')}`;
+}
+
+function renderBooks(){
+  return `<div class="sh"><h2>📚 Books & Authors</h2><div class="shl"></div></div>
+<div class="tbl-wrap"><table class="tbl"><thead><tr><th>#</th><th>Title</th><th>Author</th><th>Year</th><th>Category</th></tr></thead><tbody>
+${BOOKS.map((b,i)=>`<tr><td>${i+1}</td><td style="font-weight:600;color:var(--text)">${b.t}</td><td>${b.a}</td><td>${b.y}</td><td><span style="font-size:10px;padding:2px 7px;border-radius:10px;background:var(--surface2);color:var(--text3)">${b.c}</span></td></tr>`).join('')}
+</tbody></table></div>`;
+}
+
+function renderSummits(){
+  return `<div class="sh"><h2>🤝 Summits & Conferences</h2><div class="shl"></div></div>
+${SUMMITS.map(s=>`<div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;margin-bottom:10px"><div style="font-size:15px;font-weight:800;color:var(--text);margin-bottom:3px">${s.n}</div><div style="font-size:11px;color:var(--text3);margin-bottom:6px">📍 ${s.h}</div><div style="font-size:12px;color:var(--accent);font-weight:600;margin-bottom:8px">Theme: "${s.th}"</div><div style="font-size:10px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px">Key Outcomes</div><ul style="list-style:none">${s.o.map(o=>`<li style="font-size:12px;color:var(--text2);padding:2px 0 2px 12px;position:relative"><span style="position:absolute;left:0;color:var(--accent)">›</span>${o}</li>`).join('')}</ul></div>`).join('')}`;
+}
+
+function renderReports(){
+  return `<div class="sh"><h2>📊 Reports & Global Indexes</h2><div class="shl"></div></div>
+${REPORTS.map(r=>`<div class="rcard"><div class="rn">${r.n}</div><div class="rb">By: ${r.b}</div><div class="ri">🇮🇳 ${r.india}</div><div style="font-size:12px;color:var(--text2);margin-top:3px">${r.k}</div></div>`).join('')}`;
+}
+
+function renderAppts(){
+  return `<div class="sh"><h2>👔 Key Appointments 2024-26</h2><div class="shl"></div></div>
+${APPTS.map(a=>`<div class="appt"><div class="apav">${a.i}</div><div><div class="apn">${a.n}</div><div class="apr">${a.r}</div><div class="apo">${a.o} · ${a.d}</div></div></div>`).join('')}`;
+}
+
+// ── MCQ ────────────────────────────────────────────────────────────────
+function renderMCQSection(){
+  qs={i:0,cor:0,wr:0,ans:false};
+  return `<div class="sh"><h2>❓ MCQ Practice Center</h2><div class="shl"></div><span class="shb">${MCQS.length} Qs</span></div><div class="qwrap" id="qwrap"></div>`;
+}
+
+function renderQ(){
+  const w=document.getElementById('qwrap');
+  if(!w)return;
+  if(qs.i>=MCQS.length){
+    w.innerHTML=`<div class="res"><div style="font-size:12px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px">Quiz Complete!</div><div class="bigscore">${qs.cor}</div><div style="font-size:14px;color:var(--text2);margin-top:4px">correct out of ${MCQS.length}</div><div class="scrow"><div class="scitem"><div class="scn" style="color:var(--accent2)">${qs.cor}</div><div class="scl">Correct</div></div><div class="scitem"><div class="scn" style="color:var(--danger)">${qs.wr}</div><div class="scl">Wrong</div></div><div class="scitem"><div class="scn" style="color:var(--accent)">${Math.round(qs.cor/MCQS.length*100)}%</div><div class="scl">Accuracy</div></div></div><div class="brow" style="justify-content:center;margin-top:20px"><button class="btn ba" onclick="qs={i:0,cor:0,wr:0,ans:false};renderQ()">Retry Quiz</button><button class="btn bo" onclick="go('mock')">Take Mock Test</button></div></div>`;
+    prog.quiz++;saveProg();return;
+  }
+  const q=MCQS[qs.i],pct=(qs.i/MCQS.length*100).toFixed(0);
+  w.innerHTML=`<div class="qhead"><div class="qhr"><div><div class="qnum">Question ${qs.i+1} of ${MCQS.length}</div><div style="font-size:11px;color:rgba(255,255,255,.4);margin-top:2px">Score: ${qs.cor} correct</div></div><div style="text-align:right"><div style="font-size:10px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.5px">Accuracy</div><div class="qtimer">${qs.i?Math.round(qs.cor/qs.i*100)+'%':'—'}</div></div></div><div class="qprog"><div class="qpf" style="width:${pct}%"></div></div></div>
+<div class="qbody"><div class="qq">${q.q}</div><div class="qopts">${q.o.map((o,i)=>`<div class="qopt" id="o${i}" onclick="ansQ(${i})"><div class="oltr">${'ABCD'[i]}</div><span>${o}</span></div>`).join('')}</div><div class="qexp" id="qexp">💡 ${q.e}</div></div>
+<div class="qfoot"><div class="qsi">✅ ${qs.cor} &nbsp; ❌ ${qs.wr}</div><button class="btn ba bsm" id="nxtbtn" onclick="nextQ()" style="display:none">Next →</button></div>`;
+}
+
+window.ansQ=function(i){
+  if(qs.ans)return;qs.ans=true;
+  const q=MCQS[qs.i];
+  document.querySelectorAll('.qopt').forEach(o=>o.classList.add('dis'));
+  document.getElementById('o'+q.a).classList.add('ok');
+  if(i===q.a)qs.cor++;else{document.getElementById('o'+i).classList.add('ng');qs.wr++;}
+  document.getElementById('qexp').style.display='block';
+  document.getElementById('nxtbtn').style.display='block';
+};
+window.nextQ=function(){qs.i++;qs.ans=false;renderQ();};
+window.renderQ=renderQ;
+
+// ── MOCK TEST ──────────────────────────────────────────────────────────
+function renderMock(){
+  ms={i:0,left:1800,iv:null,started:false,cor:0,wr:0};
+  return `<div class="sh"><h2>📝 Mock Test Series</h2><div class="shl"></div></div>
+<div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden">
+  <div class="mhead">
+    <div style="font-size:10px;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:1px;margin-bottom:5px">Current Affairs Mock Test — Series 01</div>
+    <div class="mtimer" id="mtimer">30:00</div>
+    <div class="minfo">
+      <div class="mibox"><div class="min">20</div><div class="mil">Questions</div></div>
+      <div class="mibox"><div class="min">30</div><div class="mil">Minutes</div></div>
+      <div class="mibox"><div class="min">+4/-1</div><div class="mil">Marking</div></div>
+      <div class="mibox"><div class="min">80</div><div class="mil">Max Score</div></div>
+    </div>
+  </div>
+  <div id="mockBody" style="padding:20px">
+    <div style="text-align:center;padding:24px 0">
+      <div style="font-size:15px;font-weight:700;color:var(--text);margin-bottom:8px">Current Affairs Mock Test</div>
+      <div style="font-size:13px;color:var(--text2);margin-bottom:20px">20 questions · 30 minutes · All competitive exams</div>
+      <button class="btn ba" onclick="startMock()">Start Test</button>
+    </div>
+  </div>
+</div>`;
+}
+
+window.startMock=function(){
+  ms.started=true;ms.i=0;ms.cor=0;ms.wr=0;ms.left=1800;
+  ms.iv=setInterval(()=>{
+    ms.left--;
+    const t=document.getElementById('mtimer');
+    if(!t){clearInterval(ms.iv);return;}
+    const m=Math.floor(ms.left/60),s=ms.left%60;
+    t.textContent=`${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+    t.className='mtimer'+(ms.left<300?' warn':'')+(ms.left<60?' crit':'');
+    if(ms.left<=0){clearInterval(ms.iv);showMockResult();}
+  },1000);
+  renderMockQ();
+};
+
+function renderMockQ(){
+  if(ms.i>=20){clearInterval(ms.iv);showMockResult();return;}
+  const q=MCQS[ms.i],b=document.getElementById('mockBody');
+  if(!b)return;
+  b.innerHTML=`<div style="font-size:11px;color:var(--text3);margin-bottom:12px">Q ${ms.i+1} of 20</div>
+<div style="font-size:15px;font-weight:600;color:var(--text);margin-bottom:16px;font-family:Georgia,serif;line-height:1.5">${q.q}</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+${q.o.map((o,i)=>`<div style="display:flex;align-items:center;gap:10px;padding:11px 13px;border:1.5px solid var(--border);border-radius:var(--rsm);cursor:pointer;transition:.15s;font-size:13px;color:var(--text2)" onmouseover="this.style.borderColor='var(--accent3)'" onmouseout="this.style.borderColor='var(--border)'" onclick="mockAns(${i})"><div style="width:24px;height:24px;border-radius:50%;background:var(--surface2);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;font-family:monospace">${'ABCD'[i]}</div>${o}</div>`).join('')}
+</div>
+<div style="display:flex;justify-content:space-between;margin-top:16px;font-size:12px;color:var(--text3)">
+  <span>✅ ${ms.cor} correct &nbsp; ❌ ${ms.wr} wrong</span>
+  <button class="btn bo bsm" onclick="mockAns(-1)">Skip →</button>
+</div>`;
+}
+
+window.mockAns=function(i){
+  const q=MCQS[ms.i];
+  if(i===q.a)ms.cor++;
+  else if(i>=0)ms.wr++;
+  ms.i++;renderMockQ();
+};
+
+function showMockResult(){
+  const score=ms.cor*4-ms.wr;
+  const b=document.getElementById('mockBody');
+  if(!b)return;
+  b.innerHTML=`<div class="res"><div style="font-size:12px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px">Test Completed!</div>
+<div class="bigscore">${Math.max(0,score)}</div><div style="font-size:14px;color:var(--text2);margin-top:4px">out of 80 marks</div>
+<div class="scrow"><div class="scitem"><div class="scn" style="color:var(--accent2)">${ms.cor}</div><div class="scl">Correct</div></div><div class="scitem"><div class="scn" style="color:var(--danger)">${ms.wr}</div><div class="scl">Wrong</div></div><div class="scitem"><div class="scn" style="color:var(--accent)">${Math.round(ms.cor/20*100)}%</div><div class="scl">Accuracy</div></div></div>
+<div style="margin-top:16px;padding:14px;background:var(--surface2);border-radius:var(--rsm);font-size:13px;color:var(--text2)">
+  ${score>=60?'🏆 Excellent! You are well-prepared.':score>=40?'📚 Good effort! Review weak areas.':'💪 Keep practicing daily to improve your score.'}
+</div>
+<div class="brow" style="justify-content:center;margin-top:16px"><button class="btn ba" onclick="renderMock();render()">Retake Test</button><button class="btn bo" onclick="go('mcq')">Practice MCQs</button></div></div>`;
+  prog.quiz++;saveProg();
+}
+
+window.renderMock=renderMock;
+
+// ── FLASHCARDS ─────────────────────────────────────────────────────────
+function renderFlash(){
+  fci=0;
+  return `<div class="sh"><h2>🃏 Flashcards</h2><div class="shl"></div><span class="shb">${FCS.length} Cards</span></div>
+<div style="font-size:13px;color:var(--text2);margin-bottom:16px">Click the card to flip and reveal the answer!</div>
+<div class="fc-wrap"><div class="fc" id="fcard" onclick="this.classList.toggle('flip')"><div class="fcf"><div class="fclbl">Question</div><div class="fcq" id="fcq">${FCS[0].q}</div><div class="fchint">Click to flip</div></div><div class="fcb"><div class="fclbl">Answer</div><div class="fca" id="fca">${FCS[0].a}</div></div></div></div>
+<div style="display:flex;gap:10px;justify-content:center;margin-bottom:20px">
+  <button class="btn bo bsm" onclick="fcNav(-1)">← Prev</button>
+  <span style="font-size:12px;color:var(--text3);display:flex;align-items:center" id="fccount">1 / ${FCS.length}</span>
+  <button class="btn ba bsm" onclick="fcNav(1)">Next →</button>
+</div>
+<div class="sh"><h2>📋 All Flashcards List</h2><div class="shl"></div></div>
+${FCS.map((f,i)=>`<div class="ol-item"><b>Q:</b> ${f.q} <span style="color:var(--accent2)">→ ${f.a}</span></div>`).join('')}`;
+}
+
+window.fcNav=function(dir){
+  fci=(fci+dir+FCS.length)%FCS.length;
+  const fc=document.getElementById('fcard');
+  fc.classList.remove('flip');
+  document.getElementById('fcq').textContent=FCS[fci].q;
+  document.getElementById('fca').textContent=FCS[fci].a;
+  document.getElementById('fccount').textContent=`${fci+1} / ${FCS.length}`;
+};
+
+// ── ONE-LINERS ─────────────────────────────────────────────────────────
+function renderOL(){
+  const cats=['All',...new Set(OL.map(o=>o.c))];
+  const filtered=olCat==='All'?OL:OL.filter(o=>o.c===olCat);
+  return `<div class="sh"><h2>⚡ One-Liner Facts</h2><div class="shl"></div><span class="shb">${OL.length} Facts</span></div>
+<div style="margin-bottom:14px">${cats.map(c=>`<span class="fpill${c===olCat?' on':''}" onclick="setOLCat('${c}')">${c}</span>`).join('')}</div>
+${filtered.map(o=>`<div class="ol-item">${o.t}</div>`).join('')}`;
+}
+
+window.setOLCat=function(c){olCat=c;document.getElementById('main').innerHTML=renderOL();};
+
+// ── TIMELINE ───────────────────────────────────────────────────────────
+function renderTL(){
+  return `<div class="sh"><h2>⏱ Current Affairs Timeline</h2><div class="shl"></div></div>
+<div class="tl">${TL.map(t=>`<div class="tli"><div class="tld"></div><div class="tldate">${t.date}</div><div class="tlbox"><div class="tltitle">${t.t}</div><div class="tldesc">${t.d}</div></div></div>`).join('')}</div>`;
+}
+
+// ── STATIC GK ──────────────────────────────────────────────────────────
+function renderGK(){
+  const tabs=[['caps','🌍 Countries & Capitals'],['orgs','🏛 World Organizations']];
+  return `<div class="sh"><h2>🌐 Static General Knowledge</h2><div class="shl"></div></div>
+<div style="display:flex;gap:8px;margin-bottom:16px">${tabs.map(t=>`<button class="btn${t[0]===gkTab?' ba':' bo'} bsm" onclick="setGKTab('${t[0]}')">${t[1]}</button>`).join('')}</div>
+<div id="gkContent">${renderGKContent()}</div>`;
+}
+
+function renderGKContent(){
+  if(gkTab==='caps'){return `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>#</th><th>Country</th><th>Capital</th><th>Currency</th></tr></thead><tbody>${GK.capitals.map((r,i)=>`<tr><td>${i+1}</td><td style="font-weight:600;color:var(--text)">${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('')}</tbody></table></div>`;}
+  return `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Abbr.</th><th>Full Name</th><th>HQ</th><th>Est.</th></tr></thead><tbody>${GK.orgs.map(r=>`<tr><td style="font-weight:700;color:var(--accent)">${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td></tr>`).join('')}</tbody></table></div>`;
+}
+
+window.setGKTab=function(t){gkTab=t;document.getElementById('gkContent').innerHTML=renderGKContent();document.querySelectorAll('#main .btn').forEach(b=>{b.className='btn bsm '+(b.textContent.includes(t==='caps'?'Countries':'World')?'ba':'bo');});};
+
+// ── EXAM PREP ──────────────────────────────────────────────────────────
+function renderExam(){
+  const exams=[{i:'📜',n:'UPSC CSE',d:'Civil Services Exam',p:'Most Important'},
+    {i:'📊',n:'SSC CGL',d:'Staff Selection Commission',p:'High Priority'},
+    {i:'🏦',n:'Banking (IBPS/SBI)',d:'PO & Clerk Exams',p:'Banking Focus'},
+    {i:'🚂',n:'Railway (RRB)',d:'NTPC & Group D',p:'All Topics'},
+    {i:'⚔️',n:'Defence (NDA/CDS)',d:'Armed Forces Exams',p:'Science & Defence'},
+    {i:'🏛',n:'State PSC',d:'State Civil Services',d2:'State-specific'}];
+  return `<div class="sh"><h2>🎯 Exam Preparation Mode</h2><div class="shl"></div></div>
+<div class="exgrid">${exams.map(e=>`<div class="excard"><div class="exicon">${e.i}</div><div class="exname">${e.n}</div><div class="exdesc">${e.d}</div><div class="expill">${e.p}</div></div>`).join('')}</div>
+<div class="sh" style="margin-top:22px"><h2>📌 Most Important Topics (UPSC + SSC)</h2><div class="shl"></div></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+${[['Indian Polity','Article 32, GST, Parliament, Amendments'],['Economy','RBI, GDP, Inflation, Budget, Schemes'],['Science & Tech','ISRO, AI, 5G, Chandrayaan, NISAR'],['Defence','Operation Sindoor, INS Vikrant, AGNI-5'],['Environment','Paris Agreement, COP29, Renewable Energy'],['International','G20, BRICS, SCO, QUAD, UN Reforms'],['Sports','Olympics 2024, T20 WC, Asian Games'],['Awards','Nobel 2024, Bharat Ratna, Padma Awards']].map(t=>`<div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--rsm);padding:12px"><div style="font-size:13px;font-weight:700;color:var(--accent);margin-bottom:4px">${t[0]}</div><div style="font-size:12px;color:var(--text2)">${t[1]}</div></div>`).join('')}
+</div>
+<div class="sh" style="margin-top:22px"><h2>📝 Previous Year Questions (Themes)</h2><div class="shl"></div></div>
+${MCQS.slice(15,25).map((q,i)=>`<div class="ol-item"><b>PYQ ${i+1}.</b> ${q.q}<br><span style="color:var(--accent2)">→ ${q.o[q.a]}</span></div>`).join('')}`;
+}
+
+// ── PROGRESS ───────────────────────────────────────────────────────────
+function renderProg(){
+  return `<div class="sh"><h2>📈 My Learning Dashboard</h2><div class="shl"></div></div>
+<div class="srow">
+  <div class="sbox a"><div class="sn">${prog.read}%</div><div class="sl">Daily Progress</div></div>
+  <div class="sbox b"><div class="sn">${prog.quiz}</div><div class="sl">Quizzes Done</div></div>
+  <div class="sbox c"><div class="sn">${prog.streak}</div><div class="sl">Day Streak</div></div>
+  <div class="sbox d"><div class="sn">${Math.min(prog.read+prog.quiz*5,100)}%</div><div class="sl">Overall Mastery</div></div>
+</div>
+<div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px;margin-bottom:14px">
+  <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:14px">Topic-wise Progress</div>
+  ${[['National Affairs',75],['International',60],['Economy & Banking',85],['Science & Tech',70],['Defence',55],['Sports',80],['Environment',65],['Awards',90]].map(t=>`<div style="margin-bottom:12px"><div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:4px"><span style="color:var(--text2)">${t[0]}</span><span style="color:var(--accent);font-weight:600">${t[1]}%</span></div><div class="pbar"><div class="pbar-f" style="width:${t[1]}%"></div></div></div>`).join('')}
+</div>
+<div class="brow">
+  <button class="btn ba" onclick="go('mcq')">Practice MCQs</button>
+  <button class="btn bo" onclick="go('flashcards')">Review Flashcards</button>
+  <button class="btn bg" onclick="prog={read:0,quiz:0,score:0,streak:1};saveProg();render()">Reset Progress</button>
+</div>`;
+}
+</script>
+</body>
+</html>
