@@ -6,6 +6,9 @@
 <title>Current Affairs Mastery – Complete CA & GK Portal</title>
 <style>
 :root{--ground:#0C1624;--surface:#111D2E;--surface2:#162035;--border:#1E2F48;--text:#DCE6F0;--text2:#8BA3BF;--text3:#4A6480;--accent:#F59E0B;--accent2:#10B981;--accent3:#3B82F6;--danger:#EF4444;--radius:10px;--rsm:6px}
+.page-links{display:flex;flex-wrap:wrap;gap:8px;align-items:center;max-width:420px;}
+.page-links a{font-size:.78rem;color:var(--text);background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;transition:all .2s;}
+.page-links a:hover{background:var(--accent);color:#000;border-color:var(--accent);}
 [data-theme="light"]{--ground:#F0F4F8;--surface:#FFFFFF;--surface2:#EBF0F7;--border:#D1DCE8;--text:#0C1624;--text2:#3A5470;--text3:#7A94B0}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -221,13 +224,13 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:28px
     <input type="text" id="msearch" placeholder="Search news, topics, MCQs…" autocomplete="off">
     <div class="sdrop" id="sdrop"></div>
   </div>
-  <div class="page-links" style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;max-width:420px;margin-right:12px;">
-    <a href="index.html" style="font-size:.78rem;color:var(--text);background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;">Home</a>
-    <a href="Science.html" style="font-size:.78rem;color:var(--text);background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;">Science</a>
-    <a href="Computer.html" style="font-size:.78rem;color:var(--text);background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;">Computer</a>
-    <a href="Current_Affairs.html" style="font-size:.78rem;color:var(--text);background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;">Current Affairs</a>
-    <a href="english-grammar-mastery.html" style="font-size:.78rem;color:var(--text);background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;">English</a>
-    <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html" style="font-size:.78rem;color:var(--text);background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;">Maths</a>
+  <div class="page-links margin-right">
+    <a href="index.html">Home</a>
+    <a href="Science.html">Science</a>
+    <a href="Computer.html">Computer</a>
+    <a href="Current_Affairs.html">Current Affairs</a>
+    <a href="english-grammar-mastery.html">English</a>
+    <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html">Maths</a>
   </div>
   <div class="ml">
     <button class="tbtn" id="themeBtn" title="Toggle theme">◑</button>

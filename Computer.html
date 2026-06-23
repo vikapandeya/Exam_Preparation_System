@@ -33,6 +33,9 @@
   --font: 'Inter', sans-serif;
   --mono: 'Fira Code', monospace;
 }
+.page-links{display:flex;flex-wrap:wrap;gap:8px;align-items:center;max-width:420px;}
+.page-links a{font-size:.78rem;color:var(--text);background:var(--bg2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;transition:all .2s;}
+.page-links a:hover{background:var(--primary);color:#fff;border-color:var(--primary);}
 [data-theme="dark"] {
   --bg: #0f172a;
   --bg2: #1e293b;
@@ -388,13 +391,13 @@ kbd{display:inline-block;padding:2px 7px;border-radius:5px;border:1px solid var(
     <input type="text" id="global-search" placeholder="Search topics..." autocomplete="off">
     <div id="search-results"></div>
   </div>
-  <div class="page-links" style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;max-width:420px;margin-left:16px;">
-    <a href="index.html" style="font-size:.78rem;color:var(--text);background:var(--bg2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;">Home</a>
-    <a href="Science.html" style="font-size:.78rem;color:var(--text);background:var(--bg2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;">Science</a>
-    <a href="Computer.html" style="font-size:.78rem;color:var(--text);background:var(--bg2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;">Computer</a>
-    <a href="Current_Affairs.html" style="font-size:.78rem;color:var(--text);background:var(--bg2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;">Current Affairs</a>
-    <a href="english-grammar-mastery.html" style="font-size:.78rem;color:var(--text);background:var(--bg2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;">English</a>
-    <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html" style="font-size:.78rem;color:var(--text);background:var(--bg2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;">Maths</a>
+  <div class="page-links margin-left">
+    <a href="index.html">Home</a>
+    <a href="Science.html">Science</a>
+    <a href="Computer.html">Computer</a>
+    <a href="Current_Affairs.html">Current Affairs</a>
+    <a href="english-grammar-mastery.html">English</a>
+    <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html">Maths</a>
   </div>
   <div class="nav-links">
     <a href="#intro">Intro</a>

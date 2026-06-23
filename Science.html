@@ -16,6 +16,9 @@
   --shadow:0 4px 24px rgba(37,99,235,.08);
   --radius:12px;
 }
+.page-links{display:flex;flex-wrap:wrap;gap:8px;align-items:center;max-width:420px;}
+.page-links a{font-size:.78rem;color:var(--text);background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;transition:all .2s;}
+.page-links a:hover{background:var(--primary);color:#fff;border-color:var(--primary);}
 [data-theme="dark"]{
   --bg:#0b0f1a;--surface:#111827;--surface2:#1e293b;
   --border:#1e293b;--text:#f1f5f9;--muted:#94a3b8;
@@ -326,13 +329,13 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(
     <span class="cb-dot"></span>
     by Vikash Pandey
   </div>
-  <div class="page-links" style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;max-width:420px;margin-right:12px;">
-    <a href="index.html" style="font-size:.78rem;color:var(--text);background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;">Home</a>
-    <a href="Science.html" style="font-size:.78rem;color:var(--text);background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;">Science</a>
-    <a href="Computer.html" style="font-size:.78rem;color:var(--text);background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;">Computer</a>
-    <a href="Current_Affairs.html" style="font-size:.78rem;color:var(--text);background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;">Current Affairs</a>
-    <a href="english-grammar-mastery.html" style="font-size:.78rem;color:var(--text);background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;">English</a>
-    <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html" style="font-size:.78rem;color:var(--text);background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;">Maths</a>
+  <div class="page-links margin-right">
+    <a href="index.html">Home</a>
+    <a href="Science.html">Science</a>
+    <a href="Computer.html">Computer</a>
+    <a href="Current_Affairs.html">Current Affairs</a>
+    <a href="english-grammar-mastery.html">English</a>
+    <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html">Maths</a>
   </div>
   <div id="search-bar">
     <span class="ico">🔍</span>

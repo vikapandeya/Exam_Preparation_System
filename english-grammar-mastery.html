@@ -9,6 +9,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{--primary:#2563eb;--primary-dark:#1d4ed8;--secondary:#7c3aed;--accent:#f59e0b;--success:#10b981;--danger:#ef4444;--bg:#f8fafc;--bg2:#ffffff;--bgcard:#ffffff;--text:#1e293b;--text2:#64748b;--textm:#94a3b8;--border:#e2e8f0;--sh:0 4px 6px -1px rgba(0,0,0,.1);--shlg:0 10px 15px -3px rgba(0,0,0,.1);--r:12px;--navbg:rgba(255,255,255,.95)}
+.page-links{display:flex;flex-wrap:wrap;gap:8px;align-items:center;max-width:420px;}
+.page-links a{font-size:.78rem;color:var(--text);background:var(--bg2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;transition:all .2s;}
+.page-links a:hover{background:var(--primary);color:#fff;border-color:var(--primary);}
 [data-theme=dark]{--bg:#0f172a;--bg2:#1e293b;--bgcard:#1e293b;--text:#f1f5f9;--text2:#cbd5e1;--textm:#64748b;--border:#334155;--sh:0 4px 6px -1px rgba(0,0,0,.3);--shlg:0 10px 15px -3px rgba(0,0,0,.3);--navbg:rgba(15,23,42,.95)}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -256,13 +259,13 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
       <li><a href="#quickref">Quick Ref</a></li>
       <li><a href="#dashboard">Dashboard</a></li>
     </ul>
-    <div class="page-links" style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;max-width:420px;margin-top:.75rem;">
-      <a href="index.html" style="font-size:.78rem;color:var(--text);background:var(--bg2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;">Home</a>
-      <a href="Science.html" style="font-size:.78rem;color:var(--text);background:var(--bg2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;">Science</a>
-      <a href="Computer.html" style="font-size:.78rem;color:var(--text);background:var(--bg2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;">Computer</a>
-      <a href="Current_Affairs.html" style="font-size:.78rem;color:var(--text);background:var(--bg2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;">Current Affairs</a>
-      <a href="english-grammar-mastery.html" style="font-size:.78rem;color:var(--text);background:var(--bg2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;">English</a>
-      <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html" style="font-size:.78rem;color:var(--text);background:var(--bg2);border:1px solid var(--border);border-radius:999px;padding:6px 10px;text-decoration:none;">Maths</a>
+    <div class="page-links margin-top">
+      <a href="index.html">Home</a>
+      <a href="Science.html">Science</a>
+      <a href="Computer.html">Computer</a>
+      <a href="Current_Affairs.html">Current Affairs</a>
+      <a href="english-grammar-mastery.html">English</a>
+      <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html">Maths</a>
     </div>
     <div class="nav-right">
       <button class="btn-theme" onclick="toggleTheme()"><i class="fas fa-moon" id="themeIcon"></i></button>
