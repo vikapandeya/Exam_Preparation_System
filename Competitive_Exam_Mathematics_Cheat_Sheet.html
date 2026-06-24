@@ -49,13 +49,21 @@
       --rev: linear-gradient(135deg, rgba(194, 65, 12, 0.3), rgba(161, 98, 7, 0.3));
     }
 
-    .page-links{display:flex;flex-wrap:wrap;gap:4px;align-items:center;max-width:420px;margin:0;}
+    .page-links{display:flex;flex-wrap:wrap;gap:6px;align-items:center;max-width:440px;margin:0;}
     .page-links.margin-right{margin-right:12px;}
     .page-links.margin-left{margin-left:16px;}
     .page-links.margin-top{margin-top:.75rem;}
     .page-links.margin-bottom{margin:0 0 24px;}
-    .page-links a{font-size:.65rem;color:var(--text, #17324d);background:var(--surface-2, var(--bg2, #f7f9fc));border:1px solid var(--line);border-radius:999px;padding:3px 8px;text-decoration:none;transition:all .2s;}
+    .page-links a{font-size:.7rem;color:var(--text, #17324d);background:var(--surface-2, var(--bg2, #f7f9fc));border:1px solid var(--line);border-radius:999px;padding:4px 10px;text-decoration:none;transition:all .2s;font-weight:500;}
     .page-links a:hover{background:var(--brand);color:#fff;border-color:var(--brand);}
+    .page-links a.current{background:var(--brand);color:#fff !important;border-color:var(--brand);font-weight:700;pointer-events:none;box-shadow:0 2px 8px rgba(12,110,138,.35);}
+    @media(max-width:640px){.page-links{overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none;max-width:none;}.page-links::-webkit-scrollbar{display:none;}}
+    #mob-topnav{display:none;position:sticky;top:0;z-index:200;background:var(--surface);border-bottom:1px solid var(--line);padding:8px 14px;gap:6px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;}
+    #mob-topnav::-webkit-scrollbar{display:none;}
+    #mob-topnav a{font-size:.7rem;color:var(--text);background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:4px 10px;text-decoration:none;transition:all .2s;font-weight:500;white-space:nowrap;}
+    #mob-topnav a:hover{background:var(--brand);color:#fff;border-color:var(--brand);}
+    #mob-topnav a.current{background:var(--brand);color:#fff!important;border-color:var(--brand);font-weight:700;pointer-events:none;box-shadow:0 2px 8px rgba(12,110,138,.35);}
+    @media(max-width:720px){#mob-topnav{display:flex;}.toc .page-links{display:none;}}
 
     * {
       box-sizing: border-box;
@@ -751,6 +759,14 @@
   </style>
 </head>
 <body>
+  <div id="mob-topnav">
+    <a href="index.html">Home</a>
+    <a href="Science.html">Science</a>
+    <a href="Computer.html">Computer</a>
+    <a href="Current_Affairs.html">Current Affairs</a>
+    <a href="english-grammar-mastery.html">English</a>
+    <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html">Maths</a>
+  </div>
   <div class="app">
     <aside class="toc">
       <div class="brand">
@@ -3375,6 +3391,9 @@
     setupLanguageToggle();
     renderAllDynamicContent();
     setupActiveLinks();
+
+    // Mark current page in cross-page navigation (TOC pills + mobile topnav)
+    (function(){var p=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.page-links a, #mob-topnav a').forEach(function(a){if(a.getAttribute('href')===p)a.classList.add('current');});})();
   </script>
 </body>
 </html>

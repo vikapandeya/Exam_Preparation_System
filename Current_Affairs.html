@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Current Affairs Mastery – Complete CA & GK Portal</title>
 <style>
 :root{--ground:#0C1624;--surface:#111D2E;--surface2:#162035;--border:#1E2F48;--text:#DCE6F0;--text2:#8BA3BF;--text3:#4A6480;--accent:#F59E0B;--accent2:#10B981;--accent3:#3B82F6;--danger:#EF4444;--radius:10px;--rsm:6px}
-.page-links{display:flex;flex-wrap:wrap;gap:4px;align-items:center;max-width:420px;}
-.page-links a{font-size:.65rem;color:var(--text);background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:3px 8px;text-decoration:none;transition:all .2s;}
+.page-links{display:flex;flex-wrap:wrap;gap:6px;align-items:center;max-width:440px;}
+.page-links a{font-size:.7rem;color:var(--text);background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:4px 10px;text-decoration:none;transition:all .2s;font-weight:500;}
 .page-links a:hover{background:var(--accent);color:#000;border-color:var(--accent);}
+.page-links a.current{background:var(--accent);color:#000 !important;border-color:var(--accent);font-weight:700;pointer-events:none;box-shadow:0 2px 8px rgba(245,158,11,.4);}
+.page-links.margin-right{margin-right:12px;}
+.page-links.margin-left{margin-left:12px;}
+@media(max-width:640px){.page-links{overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none;max-width:none;}.page-links::-webkit-scrollbar{display:none;}}
 [data-theme="light"]{--ground:#F0F4F8;--surface:#FFFFFF;--surface2:#EBF0F7;--border:#D1DCE8;--text:#0C1624;--text2:#3A5470;--text3:#7A94B0}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -212,7 +216,8 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:28px
 .fbot{max-width:1440px;margin:0 auto;padding-top:14px;border-top:1px solid var(--border);display:flex;justify-content:space-between;font-size:11px;color:var(--text3);flex-wrap:wrap;gap:6px}
 @media(max-width:1100px){.layout{grid-template-columns:1fr}.sbar{display:none}}
 @media(max-width:768px){.srow{grid-template-columns:repeat(2,1fr)}.exgrid{grid-template-columns:repeat(2,1fr)}.minfo{grid-template-columns:repeat(2,1fr)}.fgrid{grid-template-columns:repeat(2,1fr)}.catnav{display:none}}
-@media(max-width:480px){.srow{grid-template-columns:1fr 1fr}.exgrid{grid-template-columns:1fr 1fr}.fgrid{grid-template-columns:1fr}}
+@media(max-width:640px){.srch{max-width:130px}.page-links{max-width:none;overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none}.page-links::-webkit-scrollbar{display:none}}
+@media(max-width:480px){.srow{grid-template-columns:1fr 1fr}.exgrid{grid-template-columns:1fr 1fr}.fgrid{grid-template-columns:1fr}.srch{display:none}}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 </style>
 </head>
@@ -508,11 +513,13 @@ document.addEventListener('DOMContentLoaded',()=>{
   buildNav();
   render();
   initSearch();
-  // theme
-  document.getElementById('themeBtn').onclick=()=>{
+  // theme — ◑ = dark mode active, ☀ = light mode active
+  const _tb=document.getElementById('themeBtn');
+  _tb.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'◑':'☀';
+  _tb.onclick=()=>{
     const t=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';
     document.documentElement.setAttribute('data-theme',t);
-    document.getElementById('themeBtn').textContent=t==='dark'?'◑':'☀';
+    _tb.textContent=t==='dark'?'◑':'☀';
   };
   // scroll top
   window.onscroll=()=>{
@@ -930,6 +937,9 @@ function renderProg(){
   <button class="btn bg" onclick="prog={read:0,quiz:0,score:0,streak:1};saveProg();render()">Reset Progress</button>
 </div>`;
 }
+
+// Mark current page in cross-page navigation
+(function(){var p=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.page-links a').forEach(function(a){if(a.getAttribute('href')===p)a.classList.add('current');});})();
 </script>
 </body>
 </html>

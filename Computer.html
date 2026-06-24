@@ -33,9 +33,19 @@
   --font: 'Inter', sans-serif;
   --mono: 'Fira Code', monospace;
 }
-.page-links{display:flex;flex-wrap:wrap;gap:4px;align-items:center;max-width:420px;}
-.page-links a{font-size:.65rem;color:var(--text);background:var(--bg2);border:1px solid var(--border);border-radius:999px;padding:3px 8px;text-decoration:none;transition:all .2s;}
+.page-links{display:flex;flex-wrap:wrap;gap:6px;align-items:center;max-width:440px;}
+.page-links a{font-size:.7rem;color:var(--text);background:var(--bg2);border:1px solid var(--border);border-radius:999px;padding:4px 10px;text-decoration:none;transition:all .2s;font-weight:500;}
 .page-links a:hover{background:var(--primary);color:#fff;border-color:var(--primary);}
+.page-links a.current{background:var(--primary);color:#fff !important;border-color:var(--primary);font-weight:700;pointer-events:none;box-shadow:0 2px 8px rgba(37,99,235,.35);}
+.page-links.margin-left{margin-left:12px;}
+.page-links.margin-right{margin-right:12px;}
+@media(max-width:640px){
+  :root{--nav-h:100px;}
+  #navbar{flex-wrap:wrap;height:auto;padding:.5rem 1rem;gap:.4rem .75rem;}
+  .page-links{width:100%;order:10;max-width:none;overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:2px 0;margin-left:0!important;margin-right:0!important;}
+  .page-links::-webkit-scrollbar{display:none;}
+  .nav-brand,.nav-search,#theme-toggle,#hamburger{order:1;}
+}
 [data-theme="dark"] {
   --bg: #0f172a;
   --bg2: #1e293b;
@@ -435,7 +445,7 @@ kbd{display:inline-block;padding:2px 7px;border-radius:5px;border:1px solid var(
     <a href="#dashboard" class="nav-btn">Dashboard</a>
   </div>
   <button id="theme-toggle" title="Toggle theme"><i class="fas fa-moon"></i></button>
-  <button id="hamburger"><i class="fas fa-bars"></i></button>
+  <button id="hamburger" aria-label="Toggle navigation menu"><i class="fas fa-bars"></i></button>
 </nav>
 <div id="mobile-menu">
   <a href="#intro">Introduction</a>
@@ -3911,6 +3921,9 @@ function escIde(s) {
     }
   });
 })();
+
+// Mark current page in cross-page navigation
+(function(){var p=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.page-links a').forEach(function(a){if(a.getAttribute('href')===p)a.classList.add('current');});})();
 </script>
 </body>
 </html>
