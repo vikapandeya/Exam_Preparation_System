@@ -33,19 +33,12 @@
   --font: 'Inter', sans-serif;
   --mono: 'Fira Code', monospace;
 }
-.page-links{display:flex;flex-wrap:wrap;gap:6px;align-items:center;max-width:440px;}
+.page-links{display:flex;flex-wrap:nowrap;gap:6px;align-items:center;overflow-x:auto;scrollbar-width:none;max-width:none;}
+.page-links::-webkit-scrollbar{display:none;}
 .page-links a{font-size:.7rem;color:var(--text);background:var(--bg2);border:1px solid var(--border);border-radius:999px;padding:4px 10px;text-decoration:none;transition:all .2s;font-weight:500;}
 .page-links a:hover{background:var(--primary);color:#fff;border-color:var(--primary);}
 .page-links a.current{background:var(--primary);color:#fff !important;border-color:var(--primary);font-weight:700;pointer-events:none;box-shadow:0 2px 8px rgba(37,99,235,.35);}
-.page-links.margin-left{margin-left:12px;}
-.page-links.margin-right{margin-right:12px;}
-@media(max-width:640px){
-  :root{--nav-h:100px;}
-  #navbar{flex-wrap:wrap;height:auto;padding:.5rem 1rem;gap:.4rem .75rem;}
-  .page-links{width:100%;order:10;max-width:none;overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:2px 0;margin-left:0!important;margin-right:0!important;}
-  .page-links::-webkit-scrollbar{display:none;}
-  .nav-brand,.nav-search,#theme-toggle,#hamburger{order:1;}
-}
+#sub-nav{position:sticky;top:var(--nav-h);z-index:998;background:var(--card);border-bottom:1px solid var(--border);padding:8px 24px;display:flex;align-items:center;}
 [data-theme="dark"] {
   --bg: #0f172a;
   --bg2: #1e293b;
@@ -86,12 +79,12 @@ img{max-width:100%}
 #theme-toggle{background:none;border:1px solid var(--border);border-radius:8px;padding:7px 10px;cursor:pointer;color:var(--text2);font-size:1rem;transition:all .2s}
 #theme-toggle:hover{border-color:var(--primary);color:var(--primary)}
 #hamburger{display:none;background:none;border:none;cursor:pointer;color:var(--text);font-size:1.4rem}
-#mobile-menu{display:none;position:fixed;top:var(--nav-h);left:0;right:0;background:var(--card);border-bottom:1px solid var(--border);padding:16px;z-index:999;flex-direction:column;gap:8px}
+#mobile-menu{display:none;position:fixed;top:calc(var(--nav-h) + 44px);left:0;right:0;background:var(--card);border-bottom:1px solid var(--border);padding:16px;z-index:999;flex-direction:column;gap:8px}
 #mobile-menu a{padding:10px 16px;border-radius:8px;color:var(--text2);font-weight:500;transition:all .2s}
 #mobile-menu a:hover{background:var(--primary-light);color:var(--primary)}
 
 /* MAIN */
-main{margin-top:var(--nav-h)}
+main{margin-top:calc(var(--nav-h) + 44px)}
 section{padding:80px 24px;max-width:1200px;margin:0 auto}
 
 /* HERO */
@@ -121,7 +114,7 @@ section{padding:80px 24px;max-width:1200px;margin:0 auto}
 .search-item i{color:var(--primary);width:20px}
 
 /* PROGRESS BAR */
-#progress-bar{position:fixed;top:var(--nav-h);left:0;height:3px;background:linear-gradient(90deg,var(--primary),var(--secondary));z-index:999;transition:width .3s}
+#progress-bar{position:fixed;top:calc(var(--nav-h) + 44px);left:0;height:3px;background:linear-gradient(90deg,var(--primary),var(--secondary));z-index:999;transition:width .3s}
 
 /* SECTION HEADERS */
 .sec-header{text-align:center;margin-bottom:48px}
@@ -401,14 +394,6 @@ kbd{display:inline-block;padding:2px 7px;border-radius:5px;border:1px solid var(
     <input type="text" id="global-search" placeholder="Search topics..." autocomplete="off">
     <div id="search-results"></div>
   </div>
-  <div class="page-links margin-left">
-    <a href="index.html">Home</a>
-    <a href="Science.html">Science</a>
-    <a href="Computer.html">Computer</a>
-    <a href="Current_Affairs.html">Current Affairs</a>
-    <a href="english-grammar-mastery.html">English</a>
-    <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html">Maths</a>
-  </div>
   <div class="nav-links">
     <a href="#intro">Intro</a>
     <a href="#hardware">Hardware</a>
@@ -447,6 +432,16 @@ kbd{display:inline-block;padding:2px 7px;border-radius:5px;border:1px solid var(
   <button id="theme-toggle" title="Toggle theme"><i class="fas fa-moon"></i></button>
   <button id="hamburger" aria-label="Toggle navigation menu"><i class="fas fa-bars"></i></button>
 </nav>
+<div id="sub-nav">
+  <div class="page-links">
+    <a href="index.html">Home</a>
+    <a href="Science.html">Science</a>
+    <a href="Computer.html">Computer</a>
+    <a href="Current_Affairs.html">Current Affairs</a>
+    <a href="english-grammar-mastery.html">English</a>
+    <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html">Maths</a>
+  </div>
+</div>
 <div id="mobile-menu">
   <a href="#intro">Introduction</a>
   <a href="#fundamentals">Fundamentals</a>
