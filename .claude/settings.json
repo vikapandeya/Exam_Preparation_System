@@ -6,7 +6,8 @@
       "Bash(find /usr /home /root -name \"playwright\" -type f 2>/dev/null | head -5 *)",
       "Read(//usr/**)",
       "Read(//workspaces/**)",
-      "Read(//tmp/css_audit2/**)"
+      "Read(//tmp/css_audit2/**)",
+      "Read(//tmp/redesign/**)"
     ]
   }
 }
