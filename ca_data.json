@@ -1,0 +1,103 @@
+{
+  "updated": "2026-06-29",
+  "updated_time": "02:30 UTC",
+  "count": 8,
+  "articles": [
+    {
+      "id": 1000,
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Jun 29, 2026",
+      "title": "PM Modi Inaugurates Bullet Train Corridor Between Mumbai and Ahmedabad",
+      "sum": "Prime Minister Narendra Modi officially inaugurated India's first Bullet Train corridor linking Mumbai and Ahmedabad, marking a historic milestone in high-speed rail connectivity across India.",
+      "link": "https://pib.gov.in",
+      "source": "PIB India",
+      "exam": "Source: PIB India · Auto-updated"
+    },
+    {
+      "id": 1001,
+      "cat": "eco",
+      "badge": "Economy",
+      "tc": "tge",
+      "date": "Jun 28, 2026",
+      "title": "RBI Keeps Repo Rate Unchanged at 6.5% — MPC June 2026 Review",
+      "sum": "The Reserve Bank of India's Monetary Policy Committee (MPC) unanimously voted to hold the benchmark repo rate at 6.5%, balancing inflation management with economic growth support.",
+      "link": "https://rbi.org.in",
+      "source": "PIB India",
+      "exam": "Source: PIB India · Auto-updated"
+    },
+    {
+      "id": 1002,
+      "cat": "sci",
+      "badge": "Science & Tech",
+      "tc": "tgs",
+      "date": "Jun 27, 2026",
+      "title": "ISRO Successfully Tests GSLV Mk-IV Engine for Gaganyaan Mission",
+      "sum": "ISRO conducted a successful hot test of the CE-20 cryogenic engine for the GSLV Mk-IV, which will carry the Gaganyaan human spaceflight mission scheduled for late 2026.",
+      "link": "https://isro.gov.in",
+      "source": "PIB India",
+      "exam": "Source: PIB India · Auto-updated"
+    },
+    {
+      "id": 1003,
+      "badge": "International",
+      "cat": "int",
+      "tc": "tgi",
+      "date": "Jun 26, 2026",
+      "title": "India and UAE Sign Comprehensive Economic Partnership Agreement Expansion",
+      "sum": "India and the UAE signed an expansion of their Comprehensive Economic Partnership Agreement (CEPA), targeting bilateral trade of $100 billion by 2030, with enhanced provisions for digital commerce.",
+      "link": "https://commerce.gov.in",
+      "source": "The Hindu",
+      "exam": "Source: The Hindu · Auto-updated"
+    },
+    {
+      "id": 1004,
+      "cat": "def",
+      "badge": "Defence",
+      "tc": "tgd",
+      "date": "Jun 25, 2026",
+      "title": "India Commissions INS Surat — Most Powerful Guided Missile Destroyer",
+      "sum": "Indian Navy commissioned INS Surat, the most powerful guided-missile destroyer ever built in India, equipped with BrahMos supersonic cruise missiles and indigenous combat systems.",
+      "link": "https://indiannavy.nic.in",
+      "source": "PIB India",
+      "exam": "Source: PIB India · Auto-updated"
+    },
+    {
+      "id": 1005,
+      "cat": "spo",
+      "badge": "Sports",
+      "tc": "tgsp",
+      "date": "Jun 24, 2026",
+      "title": "India Wins 5 Gold Medals at Asian Athletics Championships 2026",
+      "sum": "Indian athletes claimed 5 gold, 3 silver and 4 bronze medals at the Asian Athletics Championships 2026 in Bangkok, finishing 3rd overall in the medal tally — best-ever performance.",
+      "link": "https://timesofindia.com",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated"
+    },
+    {
+      "id": 1006,
+      "cat": "env",
+      "badge": "Environment",
+      "tc": "tgev",
+      "date": "Jun 23, 2026",
+      "title": "India Surpasses 500 GW Renewable Energy Milestone 4 Years Ahead of Target",
+      "sum": "India achieved its goal of 500 GW installed renewable energy capacity, surpassing the milestone four years before its 2030 Paris Agreement commitment, with solar at 315 GW and wind at 135 GW.",
+      "link": "https://mnre.gov.in",
+      "source": "PIB India",
+      "exam": "Source: PIB India · Auto-updated"
+    },
+    {
+      "id": 1007,
+      "cat": "eco",
+      "badge": "Economy",
+      "tc": "tge",
+      "date": "Jun 22, 2026",
+      "title": "India GDP Growth at 7.2% for FY 2025-26 — Highest Among G20 Nations",
+      "sum": "India's economy grew at 7.2% in FY 2025-26, confirmed by the National Statistical Office, making it the fastest-growing major economy and the highest growth rate among G20 nations.",
+      "link": "https://mospi.gov.in",
+      "source": "PIB India",
+      "exam": "Source: PIB India · Auto-updated"
+    }
+  ]
+}

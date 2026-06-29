@@ -223,6 +223,16 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:28px
 @media(max-width:640px){.srch{max-width:130px}}
 @media(max-width:480px){.srow{grid-template-columns:1fr 1fr}.exgrid{grid-template-columns:1fr 1fr}.fgrid{grid-template-columns:1fr}.srch{display:none}}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+/* ── Live Feed ── */
+.live-header{display:flex;align-items:center;gap:8px;margin-bottom:12px;padding:9px 14px;background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.18);border-radius:10px}
+.live-dot{width:7px;height:7px;border-radius:50%;background:#ef4444;flex-shrink:0;animation:lpulse 1.4s ease-in-out infinite}
+@keyframes lpulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.85)}}
+.live-label{font-size:10px;font-weight:800;color:#ef4444;text-transform:uppercase;letter-spacing:.9px}
+.live-since{font-size:11px;color:var(--text3);margin-left:auto}
+.art-src{margin-top:6px;font-size:11px;color:var(--text3)}
+.art-src a{color:var(--accent);text-decoration:none;font-weight:600}
+.live-sep{margin:18px 0 16px;text-align:center;font-size:11px;color:var(--text3);display:flex;align-items:center;gap:8px}
+.live-sep::before,.live-sep::after{content:'';flex:1;height:1px;background:var(--border)}
 </style>
 </head>
 <body>
@@ -531,6 +541,19 @@ orgs:[["WTO","World Trade Organization","Geneva, Switzerland","1995"],["WHO","Wo
 
 // ── STATE ──────────────────────────────────────────────────────────────
 let sec='home';
+let LIVE_NEWS=[], LIVE_DATE='', LIVE_TIME='';
+function fetchLiveNews(){
+  fetch('ca_data.json?_='+Date.now())
+    .then(r=>r.ok?r.json():Promise.reject())
+    .then(d=>{
+      if(!d||!Array.isArray(d.articles)) return;
+      LIVE_NEWS=d.articles;
+      LIVE_DATE=d.updated||'';
+      LIVE_TIME=d.updated_time||'';
+      render();
+    })
+    .catch(()=>{});
+}
 let qs={i:0,cor:0,wr:0,ans:false};
 let ms={i:0,left:1800,iv:null,started:false,cor:0,wr:0};
 let fci=0;
@@ -544,6 +567,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   document.getElementById('tktext').textContent=TK.join('  ·  ');
   buildNav();
   render();
+  fetchLiveNews();
   initSearch();
   // theme — ◑ = dark mode active, ☀ = light mode active
   const _tb=document.getElementById('themeBtn');
@@ -572,15 +596,15 @@ function render(){
   document.getElementById('sidebar').innerHTML=renderSidebar();
   switch(sec){
     case 'home':m.innerHTML=renderHome();startClock();break;
-    case 'daily':m.innerHTML=renderNews(NEWS,'📰 Daily Current Affairs','All today\'s top stories');break;
+    case 'daily':m.innerHTML=renderNews(NEWS,'📰 Daily Current Affairs','All today\'s top stories',null);break;
     case 'weekly':m.innerHTML=renderWeekly();break;
     case 'monthly':m.innerHTML=renderMonthly();break;
-    case 'national':m.innerHTML=renderNews(NEWS.filter(n=>n.cat==='nat'),'🇮🇳 National Affairs','Government, Parliament, Judiciary & Policy');break;
-    case 'international':m.innerHTML=renderNews(NEWS.filter(n=>n.cat==='int'),'🌍 International Affairs','Global Events, Diplomacy & Organizations');break;
-    case 'economy':m.innerHTML=renderNews(NEWS.filter(n=>n.cat==='eco'),'💰 Economy & Banking','RBI, Markets, Budget & Fiscal Policy');break;
-    case 'science':m.innerHTML=renderNews(NEWS.filter(n=>n.cat==='sci'),'🔬 Science & Technology','ISRO, AI, Research & Innovations');break;
-    case 'defence':m.innerHTML=renderNews(NEWS.filter(n=>n.cat==='def'),'⚔️ Defence & Security','Military, Exercises & Security Updates');break;
-    case 'sports':m.innerHTML=renderNews(NEWS.filter(n=>n.cat==='spo'),'🏆 Sports Current Affairs','Cricket, Olympics & Championships');break;
+    case 'national':m.innerHTML=renderNews(NEWS.filter(n=>n.cat==='nat'),'🇮🇳 National Affairs','Government, Parliament, Judiciary & Policy','nat');break;
+    case 'international':m.innerHTML=renderNews(NEWS.filter(n=>n.cat==='int'),'🌍 International Affairs','Global Events, Diplomacy & Organizations','int');break;
+    case 'economy':m.innerHTML=renderNews(NEWS.filter(n=>n.cat==='eco'),'💰 Economy & Banking','RBI, Markets, Budget & Fiscal Policy','eco');break;
+    case 'science':m.innerHTML=renderNews(NEWS.filter(n=>n.cat==='sci'),'🔬 Science & Technology','ISRO, AI, Research & Innovations','sci');break;
+    case 'defence':m.innerHTML=renderNews(NEWS.filter(n=>n.cat==='def'),'⚔️ Defence & Security','Military, Exercises & Security Updates','def');break;
+    case 'sports':m.innerHTML=renderNews(NEWS.filter(n=>n.cat==='spo'),'🏆 Sports Current Affairs','Cricket, Olympics & Championships','spo');break;
     case 'awards':m.innerHTML=renderAwards();break;
     case 'schemes':m.innerHTML=renderSchemes();break;
     case 'environment':m.innerHTML=renderNews(NEWS.filter(n=>n.cat==='env'),'🌿 Environment & Ecology','Climate, Biodiversity & Green Initiatives');break;
@@ -693,8 +717,9 @@ function renderHome(){
   <div class="sbox c"><div class="sn">50+</div><div class="sl">Mock Tests</div></div>
   <div class="sbox d"><div class="sn">All Exams</div><div class="sl">UPSC·SSC·Bank·Railway</div></div>
 </div>
-<div class="sh"><h2>🔥 Latest Headlines</h2><div class="shl"></div><span class="shb">Today</span></div>
-${NEWS.slice(0,4).map(n=>artCard(n)).join('')}
+<div class="sh"><h2>🔥 Latest Headlines</h2><div class="shl"></div><span class="shb">${LIVE_DATE||'Today'}</span></div>
+${LIVE_NEWS.length?`<div class="live-header"><div class="live-dot"></div><span class="live-label">Live Feed</span>${LIVE_TIME?`<span class="live-since">${LIVE_TIME}</span>`:''}</div>`:''}
+${(LIVE_NEWS.length?LIVE_NEWS.slice(0,4):NEWS.slice(0,4)).map(n=>artCard(n)).join('')}
 <div style="text-align:center;margin:16px 0"><button class="btn bo" onclick="go('daily')">View All News →</button></div>
 <div class="sh" style="margin-top:22px"><h2>⚡ Quick One-Liners</h2><div class="shl"></div></div>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
@@ -706,15 +731,28 @@ ${DAYS.slice(0,4).map(d=>dayCard(d)).join('')}`;
 }
 
 function artCard(n){
-  return `<div class="art"><div class="ameta"><span class="tag ${n.tc}">${n.badge}</span><span class="adate">📅 ${n.date}</span></div><div class="atitle">${n.title}</div><div class="asum">${n.sum}</div>${n.facts?`<div class="afacts"><div class="afacts-t">Key Facts</div><ul>${n.facts.map(f=>`<li>${f}</li>`).join('')}</ul></div>`:''}<div class="enote">🎯 ${n.exam}</div></div>`;
+  const footer = n.link
+    ? `<div class="art-src">📡 ${n.source||'Live'} &nbsp;·&nbsp; <a href="${n.link}" target="_blank" rel="noopener noreferrer">Read original →</a></div>`
+    : `<div class="enote">🎯 ${n.exam}</div>`;
+  return `<div class="art"><div class="ameta"><span class="tag ${n.tc}">${n.badge}</span><span class="adate">📅 ${n.date}</span></div><div class="atitle">${n.title}</div><div class="asum">${n.sum}</div>${n.facts?`<div class="afacts"><div class="afacts-t">Key Facts</div><ul>${n.facts.map(f=>`<li>${f}</li>`).join('')}</ul></div>`:''} ${footer}</div>`;
 }
 
 function dayCard(d){
   return `<div class="dc"><div class="dbox"><div class="dn">${d.d}</div><div class="dm">${d.m}</div></div><div><div class="dname">${d.n}</div><div class="dtheme">Theme: ${d.th}</div></div></div>`;
 }
 
-function renderNews(arr,title,sub){
-  return `<div class="sh"><h2>${title}</h2><div class="shl"></div></div><p style="font-size:12px;color:var(--text3);margin-bottom:14px">${sub}</p>${arr.length?arr.map(n=>artCard(n)).join(''):'<div style="text-align:center;padding:40px;color:var(--text3)">More articles coming soon!</div>'}`;
+function renderNews(arr,title,sub,catFilter){
+  const liveArr = catFilter ? LIVE_NEWS.filter(n=>n.cat===catFilter) : LIVE_NEWS;
+  const liveSection = liveArr.length ? `
+    <div class="live-header">
+      <div class="live-dot"></div>
+      <span class="live-label">Live Feed</span>
+      ${LIVE_DATE?`<span class="live-since">Updated ${LIVE_DATE}${LIVE_TIME?' · '+LIVE_TIME:''}</span>`:''}
+    </div>
+    ${liveArr.map(n=>artCard(n)).join('')}
+    <div class="live-sep">Curated Articles</div>
+  ` : '';
+  return `<div class="sh"><h2>${title}</h2><div class="shl"></div></div><p style="font-size:12px;color:var(--text3);margin-bottom:14px">${sub}</p>${liveSection}${arr.length?arr.map(n=>artCard(n)).join(''):'<div style="text-align:center;padding:40px;color:var(--text3)">More articles coming soon!</div>'}`;
 }
 
 function renderWeekly(){
