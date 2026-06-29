@@ -16,19 +16,12 @@
   --shadow:0 4px 24px rgba(37,99,235,.08);
   --radius:12px;
 }
-.page-links{display:flex;flex-wrap:wrap;gap:6px;align-items:center;max-width:440px;}
-.page-links a{font-size:.7rem;color:var(--text);background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:4px 10px;text-decoration:none;transition:all .2s;font-weight:500;}
+.page-links{display:flex;flex-wrap:nowrap;gap:6px;align-items:center;max-width:none;overflow-x:auto;scrollbar-width:none;}
+.page-links::-webkit-scrollbar{display:none;}
+.page-links a{font-size:.7rem;color:var(--text);background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:4px 10px;text-decoration:none;transition:all .2s;font-weight:500;white-space:nowrap;}
 .page-links a:hover{background:var(--primary);color:#fff;border-color:var(--primary);}
 .page-links a.current{background:var(--primary);color:#fff !important;border-color:var(--primary);font-weight:700;pointer-events:none;box-shadow:0 2px 8px rgba(37,99,235,.35);}
-.page-links.margin-right{margin-right:12px;}
-.page-links.margin-left{margin-left:12px;}
-@media(max-width:640px){
-  :root{--hdr:100px;}
-  #header{flex-wrap:wrap;height:auto;padding:.5rem 1rem;gap:.4rem .75rem;align-items:center;}
-  .page-links{width:100%;order:10;max-width:none;overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:2px 0;margin-right:0!important;margin-left:0!important;}
-  .page-links::-webkit-scrollbar{display:none;}
-  #hamburger,#logo,.header-right{order:1;}
-}
+#sub-nav{position:fixed;top:var(--hdr);left:0;right:0;z-index:999;background:var(--surface);border-bottom:1px solid var(--border);padding:8px 1rem;display:flex;align-items:center;}
 [data-theme="dark"]{
   --bg:#0b0f1a;--surface:#111827;--surface2:#1e293b;
   --border:#1e293b;--text:#f1f5f9;--muted:#94a3b8;
@@ -68,7 +61,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(
 #progress-pill{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;border-radius:99px;padding:.3rem .85rem;font-size:.8rem;font-weight:600;cursor:pointer;}
 
 /* ── SIDEBAR ── */
-#sidebar{position:fixed;top:var(--hdr);left:0;bottom:0;width:var(--sidebar);background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;transform:translateX(0);transition:.3s;z-index:900;padding-bottom:2rem;}
+#sidebar{position:fixed;top:calc(var(--hdr) + 44px);left:0;bottom:0;width:var(--sidebar);background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;transform:translateX(0);transition:.3s;z-index:900;padding-bottom:2rem;}
 #sidebar.closed{transform:translateX(calc(-1 * var(--sidebar)));}
 .sb-section{padding:.5rem 0;}
 .sb-heading{padding:.5rem 1.2rem;font-size:.72rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;}
@@ -79,7 +72,7 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(
 .sb-divider{height:1px;background:var(--border);margin:.3rem 0;}
 
 /* ── MAIN CONTENT ── */
-#main{margin-left:var(--sidebar);margin-top:var(--hdr);padding:2rem;min-height:calc(100vh - var(--hdr));transition:margin-left .3s;}
+#main{margin-left:var(--sidebar);margin-top:calc(var(--hdr) + 44px);padding:2rem;min-height:calc(100vh - var(--hdr) - 44px);transition:margin-left .3s;}
 #main.full{margin-left:0;}
 
 /* ── SECTION ── */
@@ -345,14 +338,6 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(
     <span class="cb-dot"></span>
     by Vikash Pandey
   </div>
-  <div class="page-links margin-right">
-    <a href="index.html">Home</a>
-    <a href="Science.html">Science</a>
-    <a href="Computer.html">Computer</a>
-    <a href="Current_Affairs.html">Current Affairs</a>
-    <a href="english-grammar-mastery.html">English</a>
-    <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html">Maths</a>
-  </div>
   <div id="search-bar">
     <span class="ico">🔍</span>
     <input type="text" id="search-input" placeholder="Search topics, formulas, terms…" autocomplete="off">
@@ -364,6 +349,16 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(
     <div id="progress-pill" onclick="showPage('dashboard')">📊 Progress</div>
   </div>
 </header>
+<div id="sub-nav">
+  <div class="page-links">
+    <a href="index.html">Home</a>
+    <a href="Science.html">Science</a>
+    <a href="Computer.html">Computer</a>
+    <a href="Current_Affairs.html">Current Affairs</a>
+    <a href="english-grammar-mastery.html">English</a>
+    <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html">Maths</a>
+  </div>
+</div>
 
 <!-- SIDEBAR -->
 <nav id="sidebar">

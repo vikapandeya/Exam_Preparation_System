@@ -42,21 +42,15 @@ a{text-decoration:none;color:inherit}
 }
 .brand{display:flex;align-items:center;gap:.55rem;font-weight:800;font-size:1rem;white-space:nowrap;color:var(--brand)}
 .brand-icon{font-size:1.45rem;line-height:1}
-.page-links{display:flex;flex-wrap:wrap;gap:6px;align-items:center;max-width:440px}
+.page-links{display:flex;flex-wrap:nowrap;gap:6px;align-items:center;max-width:none;overflow-x:auto;scrollbar-width:none;}
+.page-links::-webkit-scrollbar{display:none;}
 .page-links a{font-size:.7rem;color:var(--text2);background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:4px 10px;text-decoration:none;transition:all .2s;font-weight:500;white-space:nowrap}
 .page-links a:hover{background:var(--brand);color:#fff;border-color:var(--brand)}
 .page-links a.current{background:var(--brand);color:#fff!important;border-color:var(--brand);font-weight:700;pointer-events:none;box-shadow:0 2px 8px rgba(79,70,229,.35)}
 .topbar-right{margin-left:auto;display:flex;align-items:center}
 #themeBtn{background:none;border:1.5px solid var(--border);border-radius:999px;padding:.3rem .75rem;cursor:pointer;font-size:.88rem;color:var(--text);transition:all .2s;font-family:inherit}
 #themeBtn:hover{border-color:var(--brand);color:var(--brand)}
-@media(max-width:640px){
-  :root{--hdr:100px}
-  #topbar{flex-wrap:wrap;height:auto;padding:.55rem 1rem;gap:.35rem .75rem}
-  .brand,.topbar-right{order:1}
-  .topbar-right{margin-left:auto}
-  .page-links{order:10;width:100%;max-width:none;overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:2px 0}
-  .page-links::-webkit-scrollbar{display:none}
-}
+#sub-nav{position:sticky;top:var(--hdr);z-index:999;background:var(--surface);border-bottom:1px solid var(--border);padding:8px 1.5rem;display:flex;align-items:center;}
 @media(max-width:380px){.brand-text{display:none}}
 
 /* ─── HERO ─── */
@@ -178,6 +172,11 @@ footer a:hover{text-decoration:underline}
     <span class="brand-icon">🎯</span>
     <span class="brand-text">Exam Prep System</span>
   </div>
+  <div class="topbar-right">
+    <button id="themeBtn" aria-label="Toggle dark mode">🌙</button>
+  </div>
+</header>
+<div id="sub-nav">
   <nav class="page-links">
     <a href="index.html">Home</a>
     <a href="Science.html">Science</a>
@@ -186,10 +185,7 @@ footer a:hover{text-decoration:underline}
     <a href="english-grammar-mastery.html">English</a>
     <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html">Maths</a>
   </nav>
-  <div class="topbar-right">
-    <button id="themeBtn" aria-label="Toggle dark mode">🌙</button>
-  </div>
-</header>
+</div>
 
 <!-- HERO -->
 <section class="hero">
