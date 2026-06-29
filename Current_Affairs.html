@@ -2,6 +2,9 @@
 <html lang="en" data-theme="light">
 <head>
 <meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Current Affairs Mastery – Complete CA & GK Portal</title>
 <style>
@@ -15,10 +18,10 @@
 [data-theme="light"]{--ground:#F0F4F8;--surface:#FFFFFF;--surface2:#EBF0F7;--border:#D1DCE8;--text:#0C1624;--text2:#3A5470;--text3:#7A94B0}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--ground);color:var(--text);font-size:14px;line-height:1.6;min-height:100vh}
-.topbar{position:sticky;top:0;z-index:200;background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px;padding:0 20px;height:52px}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--ground);color:var(--text);font-size:14px;line-height:1.6;min-height:100vh}
+.topbar{position:sticky;top:0;z-index:200;background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px;padding:0 20px;height:52px;backdrop-filter:blur(10px);}
 .logo{display:flex;align-items:center;gap:8px;font-weight:800;font-size:15px;color:var(--text);white-space:nowrap;cursor:pointer}
-.logo-mark{width:28px;height:28px;background:var(--accent);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;color:#000}
+.logo-mark{width:30px;height:30px;background:linear-gradient(135deg,var(--accent),#d97706);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:#000;box-shadow:0 2px 8px rgba(245,158,11,.3)}
 .logo span{color:var(--accent)}
 .srch{flex:1;max-width:420px;position:relative}
 .srch input{width:100%;padding:7px 14px 7px 34px;background:var(--surface2);border:1px solid var(--border);border-radius:20px;color:var(--text);font-size:13px;outline:none;transition:.15s}
@@ -34,7 +37,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 .sdi:hover{background:var(--surface2)}
 .sdi-t{font-size:13px;font-weight:600;color:var(--text)}
 .sdi-c{font-size:11px;color:var(--text3);margin-top:1px}
-.ticker{background:var(--accent);overflow:hidden;padding:5px 0;display:flex;align-items:center}
+.ticker{background:linear-gradient(90deg,var(--accent),#d97706);overflow:hidden;padding:5px 0;display:flex;align-items:center}
 .tklbl{background:rgba(0,0,0,.3);color:#000;font-size:10px;font-weight:900;padding:0 10px;letter-spacing:1.5px;white-space:nowrap;flex-shrink:0}
 .tktrack{flex:1;overflow:hidden}
 .tktext{display:inline-block;white-space:nowrap;font-size:12px;font-weight:600;color:#000;animation:scroll 90s linear infinite}
@@ -44,11 +47,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 .catinner{display:flex;padding:0 16px;max-width:1440px;margin:0 auto}
 .ctab{padding:9px 12px;font-size:11px;font-weight:600;color:var(--text2);cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;transition:.15s;text-transform:uppercase;letter-spacing:.5px}
 .ctab:hover{color:var(--text)}
-.ctab.active{color:var(--accent);border-color:var(--accent)}
+.ctab.active{color:var(--accent);border-color:var(--accent);font-weight:700}
 .layout{display:grid;grid-template-columns:1fr 270px;gap:20px;max-width:1440px;margin:0 auto;padding:20px}
 .main{min-width:0}
 .sbar{min-width:0}
-.cmdbar{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px 18px;margin-bottom:18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.cmdbar{background:linear-gradient(135deg,var(--surface),var(--surface2));border:1px solid var(--border);border-radius:var(--radius);padding:16px 20px;margin-bottom:20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;box-shadow:0 2px 12px rgba(245,158,11,.08);}
 .cclk{font-family:monospace;font-size:26px;font-weight:900;color:var(--accent);letter-spacing:-1px}
 .cdiv{width:1px;height:38px;background:var(--border);flex-shrink:0}
 .cstat{text-align:center}
@@ -58,18 +61,19 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 .cpbar-l{font-size:11px;color:var(--text2);margin-bottom:4px;display:flex;justify-content:space-between}
 .pbar{height:6px;background:var(--border);border-radius:3px;overflow:hidden}
 .pbar-f{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--accent),var(--accent2));transition:width 1s}
-.srow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}
-.sbox{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px;position:relative;overflow:hidden}
-.sbox::after{content:'';position:absolute;top:0;left:0;right:0;height:2px}
-.sbox.a::after{background:var(--accent)}.sbox.b::after{background:var(--accent2)}.sbox.c::after{background:var(--accent3)}.sbox.d::after{background:var(--danger)}
-.sn{font-size:24px;font-weight:900;font-variant-numeric:tabular-nums}
-.sl{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-top:2px}
-.sh{display:flex;align-items:center;gap:10px;margin-bottom:14px}
-.sh h2{font-size:15px;font-weight:800;text-transform:uppercase;letter-spacing:.5px}
-.shl{flex:1;height:1px;background:var(--border)}
-.shb{background:var(--accent);color:#000;font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px}
-.art{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;margin-bottom:10px;cursor:pointer;transition:.15s}
-.art:hover{border-color:var(--accent);transform:translateY(-1px)}
+.srow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}
+.sbox{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s;}
+.sbox:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.12);}
+.sbox::after{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.sbox.a::after{background:linear-gradient(90deg,var(--accent),var(--accent2))}.sbox.b::after{background:linear-gradient(90deg,var(--accent2),var(--accent3))}.sbox.c::after{background:linear-gradient(90deg,var(--accent3),var(--accent))}.sbox.d::after{background:linear-gradient(90deg,var(--danger),var(--accent))}
+.sn{font-size:26px;font-weight:900;font-variant-numeric:tabular-nums;background:linear-gradient(135deg,var(--text),var(--text2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.sl{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.6px;margin-top:4px;font-weight:600}
+.sh{display:flex;align-items:center;gap:10px;margin-bottom:16px;margin-top:4px;}
+.sh h2{font-size:16px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--text)}
+.shl{flex:1;height:2px;background:linear-gradient(90deg,var(--accent),transparent);margin-left:.3rem;border-radius:1px}
+.shb{background:var(--accent);color:#000;font-size:10px;font-weight:700;padding:3px 10px;border-radius:10px}
+.art{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px;margin-bottom:12px;cursor:pointer;transition:all .2s;border-left:3px solid transparent;}
+.art:hover{border-left-color:var(--accent);transform:translateX(3px);box-shadow:0 4px 20px rgba(245,158,11,.1);}
 .ameta{display:flex;gap:8px;align-items:center;margin-bottom:7px;flex-wrap:wrap}
 .tag{font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;text-transform:uppercase;letter-spacing:.5px}
 .tgn{background:rgba(59,130,246,.15);color:#60A5FA}
@@ -109,7 +113,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 .qexp{margin-top:12px;padding:10px;background:rgba(16,185,129,.06);border-left:3px solid var(--accent2);border-radius:0 6px 6px 0;font-size:12px;color:var(--text2);display:none}
 .qfoot{padding:12px 20px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
 .qsi{font-size:12px;color:var(--text3)}
-.btn{padding:8px 18px;border-radius:var(--rsm);border:none;cursor:pointer;font-size:13px;font-weight:600;transition:.15s}
+.btn{padding:8px 18px;border-radius:var(--rsm);border:none;cursor:pointer;font-size:13px;font-weight:600;transition:.15s;font-family:inherit}
 .ba{background:var(--accent);color:#000}.ba:hover{background:#D97706}
 .bo{background:transparent;border:1.5px solid var(--border);color:var(--text)}.bo:hover{border-color:var(--accent);color:var(--accent)}
 .bg{background:var(--accent2);color:#fff}.bg:hover{background:#059669}
@@ -133,7 +137,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 .tbl td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text2)}
 .tbl tr:last-child td{border-bottom:none}
 .tbl tr:hover td{background:var(--surface2);color:var(--text)}
-.sch{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px;margin-bottom:10px}
+.sch{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;margin-bottom:10px;transition:.2s}
+.sch:hover{border-color:var(--accent);box-shadow:0 4px 16px rgba(245,158,11,.1)}
 .scht{display:flex;gap:10px;margin-bottom:10px;align-items:flex-start}
 .schicon{width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;background:var(--surface2)}
 .schn{font-size:14px;font-weight:700;color:var(--text)}
@@ -158,12 +163,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 .fpill{padding:5px 12px;border-radius:16px;border:1.5px solid var(--border);font-size:12px;font-weight:600;cursor:pointer;color:var(--text3);transition:.15s;display:inline-block;margin:0 4px 4px 0}
 .fpill:hover,.fpill.on{border-color:var(--accent);color:var(--accent);background:rgba(245,158,11,.08)}
 .widget{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:14px;overflow:hidden}
-.whead{padding:11px 13px;border-bottom:1px solid var(--border);font-size:11px;font-weight:700;color:var(--text);text-transform:uppercase;letter-spacing:.5px}
-.wbody{padding:12px}
-.wlink{display:flex;align-items:center;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--border);font-size:12px;color:var(--text2);cursor:pointer;transition:.15s}
+.whead{background:linear-gradient(135deg,var(--surface2),var(--surface));padding:10px 14px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;color:var(--accent);border-bottom:1px solid var(--border)}
+.wbody{padding:12px 14px}
+.wlink{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);font-size:12px;cursor:pointer;transition:.15s;color:var(--text)}
 .wlink:last-child{border-bottom:none}
-.wlink:hover{color:var(--accent)}
-.wcnt{background:var(--surface2);color:var(--text3);font-size:10px;padding:2px 7px;border-radius:10px}
+.wlink:hover{color:var(--accent);padding-left:4px}
+.wcnt{font-size:11px;color:var(--text3)}
 .appt{display:flex;gap:10px;align-items:flex-start;padding:10px;background:var(--surface);border:1px solid var(--border);border-radius:var(--rsm);margin-bottom:7px}
 .apav{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#D97706);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:#000;flex-shrink:0}
 .apn{font-size:13px;font-weight:700;color:var(--text)}
@@ -277,7 +282,11 @@ const NEWS=[
 {id:5,cat:'def',badge:'Defence',tc:'tgd',date:'Jun 16, 2026',title:'Exercise TASMAN SABER 2026: India, Australia, USA Conduct Trilateral Military Drill',sum:'India, Australia, and the USA conducted Exercise TASMAN SABER 2026 off Queensland, focusing on maritime security and amphibious operations.',facts:['Focuses on Indo-Pacific security framework','INS Kolkata led Indian naval contingent','First time includes cyber warfare simulation','Part of QUAD security cooperation'],exam:'Defence exercises frequently asked in UPSC, CDS, AFCAT, NDA'},
 {id:6,cat:'spo',badge:'Sports',tc:'tgsp',date:'Jun 15, 2026',title:'Neeraj Chopra Wins Gold at Diamond League Final 2026 with 91.06m Throw',sum:"India's Neeraj Chopra secured gold at the Diamond League Final 2026 in Zurich with a season-best 91.06 metres, retaining world No.1 ranking.",facts:['Season best: 91.06m — 3rd longest throw in Indian history','Retains world No.1 ranking in Javelin','Third consecutive Diamond League Final victory','India athletics ranking improves to 15th globally'],exam:'Sports section SSC CGL, Railway, Banking — Olympic athletes specifically asked'},
 {id:7,cat:'env',badge:'Environment',tc:'tgev',date:'Jun 14, 2026',title:'India Achieves 500 GW Renewable Energy Milestone Ahead of 2030 Target',sum:'India surpassed 500 GW of total installed renewable energy capacity, achieving this milestone four years ahead of Paris Agreement commitments.',facts:['Total renewable capacity: 507 GW','Solar: 315 GW | Wind: 135 GW | Others: 57 GW','India 3rd largest in global renewable energy','Target revised upward to 700 GW by 2030'],exam:'Environment section UPSC Prelims, SSC CGL, current affairs all exams'},
-{id:8,cat:'nat',badge:'National',tc:'tgn',date:'Jun 13, 2026',title:'Parliament Passes Digital India Data Protection Act 2026',sum:'Both houses of Parliament passed the Digital India Data Protection Act 2026, establishing Data Protection Board and consent framework for personal data.',facts:['Establishes Data Protection Board of India (DPBI)','Penalties up to ₹250 crore per violation','Children\'s data gets special protections','Exemptions for national security agencies'],exam:'UPSC Polity & Governance, SSC, Banking — data protection laws increasingly tested'}
+{id:8,cat:'nat',badge:'National',tc:'tgn',date:'Jun 13, 2026',title:'Parliament Passes Digital India Data Protection Act 2026',sum:'Both houses of Parliament passed the Digital India Data Protection Act 2026, establishing Data Protection Board and consent framework for personal data.',facts:['Establishes Data Protection Board of India (DPBI)','Penalties up to ₹250 crore per violation','Children\'s data gets special protections','Exemptions for national security agencies'],exam:'UPSC Polity & Governance, SSC, Banking — data protection laws increasingly tested'},
+{id:9,cat:'nat',badge:'National',tc:'tgn',date:'Jun 12, 2026',title:'Union Budget 2026-27: ₹11.11 Lakh Crore Infrastructure Push',sum:'Finance Minister presented Union Budget 2026-27 with record infrastructure outlay of ₹11.11 lakh crore, focusing on railways, highways, urban infra and green energy.',facts:['Capital expenditure at ₹11.11 lakh crore — 33% of total outlay','PM Gati Shakti Mission gets ₹2.5 lakh crore','100 new PM SHRI schools under NM Education Policy','Defence allocation ₹6.81 lakh crore (2.5% of GDP)'],exam:'UPSC Economy & Budget, Banking Awareness, SSC GK — Union Budget is most tested current affairs topic'},
+{id:10,cat:'int',badge:'International',tc:'tgi',date:'Jun 11, 2026',title:'India Elected as Non-Permanent Member of UN Security Council 2026-27',sum:'India was elected as a Non-Permanent Member of the UN Security Council for the term 2026-27, garnering 180 out of 193 votes in the General Assembly.',facts:['8th time India elected as UNSC non-permanent member','Term: January 2026 – December 2027','Asia-Pacific group seat','India continues push for permanent UNSC membership'],exam:'UPSC International Relations, SSC GK, Banking — UN body composition frequently asked'},
+{id:11,cat:'sci',badge:'Science & Tech',tc:'tgs',date:'Jun 10, 2026',title:'Chandrayaan-4 Mission Cleared by Union Cabinet — Launch in 2027',sum:'The Union Cabinet approved the Chandrayaan-4 mission with a budget of ₹2,104 crore. The mission aims to collect lunar samples and return them to Earth.',facts:['Budget: ₹2,104 crore','Objective: collect 3kg lunar samples and return to Earth','Launch window: late 2027','Partnership with JAXA (Japan) for docking technology'],exam:'UPSC Science & Tech, SSC General Awareness — ISRO missions are frequently asked'},
+{id:12,cat:'def',badge:'Defence',tc:'tgd',date:'Jun 09, 2026',title:"India Launches DRDO Hypersonic Missile SFDR — Mach 8+ Speed",sum:"DRDO successfully tested India's Solid Fuel Ducted Ramjet (SFDR) propulsion technology for a long-range hypersonic missile, making India 4th country with hypersonic capability.",facts:['SFDR propulsion: Solid Fuel Ducted Ramjet technology','Speed: Mach 8+ (over 9,800 km/h)','Range: 100+ km with maneuvering capability','India joins USA, Russia, China in hypersonic club'],exam:'UPSC Defence & Science, SSC CGL, CDS, AFCAT — DRDO projects increasingly tested'}
 ];
 const MCQS=[
 {q:"Which organization publishes the 'World Economic Outlook' report?",o:["World Bank","IMF","WTO","OECD"],a:1,e:"The International Monetary Fund (IMF) publishes the World Economic Outlook (WEO) report, typically twice a year in April and October."},
@@ -309,7 +318,15 @@ const MCQS=[
 {q:"India's longest river bridge 'Dhola-Sadiya Bridge' is in:",o:["Bihar","West Bengal","Assam","Arunachal Pradesh"],a:2,e:"Dhola-Sadiya Bridge (Bhupen Hazarika Setu), 9.15 km, spans Lohit River in Assam."},
 {q:"REPO stands for:",o:["Reverse Purchase Option","Repurchase Agreement","Regulated Purchase Order","Reserve Portfolio Option"],a:1,e:"REPO = Repurchase Agreement. Repo Rate is the rate at which RBI lends to commercial banks against government securities."},
 {q:"International Criminal Court (ICC) is headquartered in:",o:["Geneva","Brussels","The Hague","New York"],a:2,e:"ICC is headquartered in The Hague, Netherlands. Established by Rome Statute in 2002."},
-{q:"Neeraj Chopra won Olympic Gold in which event at Tokyo 2020?",o:["100m Sprint","Long Jump","Javelin Throw","Triple Jump"],a:2,e:"Neeraj Chopra won India's first Olympic gold in athletics in Men's Javelin Throw at Tokyo 2020 with 87.58m."}
+{q:"Neeraj Chopra won Olympic Gold in which event at Tokyo 2020?",o:["100m Sprint","Long Jump","Javelin Throw","Triple Jump"],a:2,e:"Neeraj Chopra won India's first Olympic gold in athletics in Men's Javelin Throw at Tokyo 2020 with 87.58m."},
+{q:"India's rank in Human Development Index 2024?",o:["128th","130th","134th","140th"],a:2,e:"India ranked 134th out of 193 countries in UNDP's HDI 2024, with HDI value of 0.644 — Medium Human Development category."},
+{q:"Operation Sindoor was launched in which year?",o:["2024","2025","2026","2023"],a:1,e:"Operation Sindoor was launched in May 2025 by India in response to the Pahalgam terror attack (April 22, 2025) that killed 26 tourists."},
+{q:"Which country holds BRICS chairmanship in 2025?",o:["China","Russia","Brazil","South Africa"],a:2,e:"Brazil holds BRICS chairmanship in 2025 (successor to Russia's 2024 presidency). Brazil hosted BRICS Summit in Rio de Janeiro."},
+{q:"India's forex reserves crossed what milestone in 2026?",o:["$500 billion","$600 billion","$700 billion","$800 billion"],a:2,e:"India's foreign exchange reserves crossed $700 billion in 2026, making India the 4th largest holder of forex reserves globally."},
+{q:"The Dhola-Sadiya Bridge spans which river?",o:["Brahmaputra","Lohit","Ganga","Yamuna"],a:1,e:"Bhupen Hazarika Setu (Dhola-Sadiya Bridge), India's longest river bridge at 9.15 km, spans the Lohit river in Assam."},
+{q:"COP29 was held in which city?",o:["Dubai","Glasgow","Baku","Sharm el-Sheikh"],a:2,e:"COP29 (UNFCCC Conference of Parties) was held in Baku, Azerbaijan in November 2024, with theme 'In Solidarity for a Green World.'"},
+{q:"Which article grants Right to Constitutional Remedies?",o:["Article 19","Article 21","Article 32","Article 44"],a:2,e:"Article 32 grants the Right to Constitutional Remedies — called 'Heart and Soul of Constitution' by Dr. B.R. Ambedkar. Allows approaching SC directly."},
+{q:"D. Gukesh defeated whom to become World Chess Champion?",o:["Magnus Carlsen","Fabiano Caruana","Ian Nepomniachtchi","Ding Liren"],a:3,e:"D. Gukesh (18 years) defeated reigning champion Ding Liren of China in December 2024, becoming the youngest World Chess Champion ever."}
 ];
 const FCS=[
 {q:"Current Repo Rate?",a:"6.5% (June 2026)"},
@@ -331,7 +348,13 @@ const FCS=[
 {q:"GST Council chaired by?",a:"Union Finance Minister"},
 {q:"WTO headquarters?",a:"Geneva, Switzerland (1995)"},
 {q:"Operation Sindoor against?",a:"Terror camps after Pahalgam attack (2025)"},
-{q:"India renewable energy (2026)?",a:"507 GW — 3rd largest globally"}
+{q:"India renewable energy (2026)?",a:"507 GW — 3rd largest globally"},
+{q:"Chandrayaan-4 budget?",a:"₹2,104 crore — lunar sample return mission (2027)"},
+{q:"BRICS 2025 chair?",a:"Brazil (Rio de Janeiro Summit)"},
+{q:"India forex reserves 2026?",a:"$700+ billion — 4th largest globally"},
+{q:"COP29 location?",a:"Baku, Azerbaijan — November 2024"},
+{q:"Operation Sindoor — when?",a:"May 7, 2025 — after Pahalgam attack (April 2025)"},
+{q:"India UNSC 2026-27?",a:"Non-permanent member — 8th time, 180/193 votes"}
 ];
 const OL=[
 {c:"Economy",t:"<b>Repo Rate</b> is the rate at which RBI lends to commercial banks — currently <b>6.5%</b> (2026)."},
@@ -382,7 +405,13 @@ const OL=[
 {c:"Banking",t:"<b>NPA</b> (Non-Performing Asset) — loan where borrower has defaulted for <b>90+ days</b>."},
 {c:"Banking",t:"<b>SWIFT</b> = Society for Worldwide Interbank Financial Telecommunication."},
 {c:"Banking",t:"<b>SARFAESI Act 2002</b> allows banks to recover NPAs without court intervention."},
-{c:"Banking",t:"<b>MCLR</b> (Marginal Cost of Funds based Lending Rate) replaced Base Rate from <b>April 2016</b>."}
+{c:"Banking",t:"<b>MCLR</b> (Marginal Cost of Funds based Lending Rate) replaced Base Rate from <b>April 2016</b>."},
+{c:"Science",t:"<b>Chandrayaan-4</b> approved by Cabinet — <b>₹2,104 crore</b> budget, aims to return lunar samples to Earth by <b>2027</b>."},
+{c:"International",t:"India elected as <b>UNSC non-permanent member</b> for <b>2026-27</b> — 8th time, with 180/193 votes."},
+{c:"Defence",t:"<b>SFDR (Hypersonic)</b> tested by DRDO — Mach 8+, makes India <b>4th country</b> with hypersonic capability."},
+{c:"Economy",t:"India's <b>forex reserves crossed $700 billion</b> in 2026 — <b>4th largest</b> globally after China, Japan, Switzerland."},
+{c:"National",t:"<b>Union Budget 2026-27</b> — capital expenditure of <b>₹11.11 lakh crore</b>, highest ever."},
+{c:"Awards",t:"<b>Nobel Literature 2024</b> — <b>Han Kang</b> (South Korea) — first Korean and first Asian woman to win."}
 ];
 const SCHEMES=[
 {i:"🏠",n:"PM Awas Yojana (Urban)",y:"2015",m:"Housing & Urban Affairs",o:"Housing for all — affordable housing for urban poor",b:"Central assistance ₹1–2.5 lakh per beneficiary",e:"EWS/LIG/MIG with no pucca house"},
@@ -475,7 +504,9 @@ const APPTS=[
 {n:"Prashant Kumar Jha",r:"Comptroller & Auditor General (CAG)",o:"CAG Office",i:"P",d:"2024"},
 {n:"Pawan Agarwal",r:"CEO, National Recruitment Agency",o:"NRA",i:"P",d:"2023"},
 {n:"Dinkar Gupta",r:"DG, National Security Guard",o:"NSG",i:"D",d:"2024"},
-{n:"Chandana Baruah",r:"First woman DGP, Assam Police",o:"Assam Govt",i:"C",d:"2025"}
+{n:"Chandana Baruah",r:"First woman DGP, Assam Police",o:"Assam Govt",i:"C",d:"2025"},
+{n:"Vinod Kumar Yadav",r:"Chairman, Railway Board",o:"Indian Railways",i:"V",d:"2025"},
+{n:"Alka Mittal",r:"CMD, Oil and Natural Gas Corporation",o:"ONGC",i:"A",d:"2025"}
 ];
 const TL=[
 {date:"Aug 23, 2023",t:"Chandrayaan-3 Moon Landing",d:"India becomes 4th country to achieve soft lunar landing at Moon's south pole.",c:"Science"},
@@ -629,6 +660,19 @@ function renderHome(){
   prog.read=Math.min((prog.read||0)+5,100);saveProg();
   const now=new Date();
   return `
+<div style="background:linear-gradient(135deg,#1a0a00 0%,#3d1a00 40%,#0c1624 100%);border-radius:16px;padding:28px 24px;color:#fff;margin-bottom:18px;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;background:url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%23fff\' fill-opacity=\'.025\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/svg%3E');pointer-events:none"></div>
+  <div style="position:relative;z-index:1">
+    <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;color:rgba(245,158,11,.9);text-transform:uppercase;margin-bottom:8px">📰 Current Affairs Mastery · June 2026</div>
+    <h1 style="font-size:clamp(1.4rem,3vw,2rem);font-weight:900;margin:0 0 8px;line-height:1.2">Stay Ahead in Every Exam <span style="color:#F59E0B">.</span></h1>
+    <p style="font-size:.9rem;opacity:.8;margin:0 0 20px;max-width:560px">Daily updated current affairs, MCQs, one-liners, flashcards and mock tests — curated for UPSC, SSC, Banking & Railway aspirants.</p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <button class="btn ba" onclick="go('mcq')" style="background:#F59E0B;color:#000">Start MCQ Quiz →</button>
+      <button class="btn bo" onclick="go('flashcards')" style="color:#fff;border-color:rgba(255,255,255,.3)">Flashcards 🃏</button>
+      <button class="btn bo" onclick="go('oneliners')" style="color:#fff;border-color:rgba(255,255,255,.3)">One-Liners ⚡</button>
+    </div>
+  </div>
+</div>
 <div class="cmdbar">
   <div><div class="cclk" id="clk">${now.toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false})}</div><div style="font-size:11px;color:var(--text3);margin-top:2px">${now.toLocaleDateString('en-IN',{weekday:'long',year:'numeric',month:'long',day:'numeric'})}</div></div>
   <div class="cdiv"></div>
