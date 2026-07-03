@@ -1,0 +1,25 @@
+{
+  "name": "Exam Preparation System",
+  "short_name": "ExamPrep",
+  "description": "Complete exam preparation portal — Science, Computer, Current Affairs, English, Maths, Syllabus & Mock Tests for SSC, Railway, Banking and more.",
+  "start_url": "/Exam_Preparation_System/",
+  "scope": "/Exam_Preparation_System/",
+  "display": "standalone",
+  "background_color": "#f0f4ff",
+  "theme_color": "#2563eb",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    { "name": "Science", "url": "/Exam_Preparation_System/Science.html", "description": "Physics, Chemistry, Biology" },
+    { "name": "Syllabus Hub", "url": "/Exam_Preparation_System/Syllabus.html", "description": "All exam syllabi" },
+    { "name": "Current Affairs", "url": "/Exam_Preparation_System/Current_Affairs.html", "description": "Daily news & GK" },
+    { "name": "Mock Tests", "url": "/Exam_Preparation_System/exam-portal.html", "description": "100+ practice tests" }
+  ]
+}
