@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Exam Syllabus Hub – Complete Indian Competitive Exam Syllabi</title>
 <meta name="description" content="Complete syllabi, paper patterns and question counts for all major Indian competitive exams — UPSC, SSC, Banking, Railway, Bihar Specific, Defence and State PSC.">
+<script>(function(){var t=localStorage.getItem('eps-theme');if(t)document.documentElement.setAttribute('data-theme',t);})()</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -224,6 +225,15 @@ a{text-decoration:none;color:inherit}
 .acc-body.open{display:block}
 .acc-tags{display:flex;flex-wrap:wrap;gap:.4rem}
 .acc-tag{background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:.2rem .65rem;font-size:.72rem;color:var(--text)}
+/* Study checklist */
+.acc-tag{cursor:pointer;user-select:none;transition:all .15s;position:relative}
+.acc-tag:hover{border-color:var(--primary);color:var(--primary)}
+.acc-tag.done{background:rgba(16,185,129,.12);border-color:#10b981;color:#059669;text-decoration:line-through;opacity:.7}
+.acc-tag.done::after{content:'✓';margin-left:.3rem;font-weight:700}
+.checklist-bar{display:flex;align-items:center;gap:.75rem;font-size:.75rem;color:var(--muted);margin-bottom:.5rem}
+.checklist-progress{flex:1;height:4px;background:var(--surface2);border-radius:2px;overflow:hidden}
+.checklist-fill{height:100%;background:#10b981;border-radius:2px;transition:width .3s}
+
 
 /* ── EMPTY STATE ── */
 .empty-state{text-align:center;padding:3rem 1rem;color:var(--muted)}
@@ -243,6 +253,16 @@ a{text-decoration:none;color:inherit}
   .hero-pills{gap:.4rem}
   .hero-pill{font-size:.72rem;padding:.3rem .75rem}
   .tab-btn{padding:.45rem .75rem;font-size:.75rem}
+  .overview-grid{grid-template-columns:1fr 1fr}
+}
+
+/* Print button */
+#print-btn{display:flex;align-items:center;gap:.4rem;background:none;border:1.5px solid var(--border);border-radius:var(--r);padding:.4rem .9rem;font-size:.8rem;color:var(--text);cursor:pointer;font-family:inherit;transition:.2s;margin-left:auto}
+#print-btn:hover{border-color:var(--primary);color:var(--primary)}
+@media print{
+  #topbar,#sub-nav,.cat-bar,#mobile-exam-btn,#left-panel,#print-btn,.tabs,.exam-modal-overlay,.tab-btn:not(.active-tab){display:none!important}
+  #right-panel{padding:0}
+  .acc-body{display:block!important}
   .overview-grid{grid-template-columns:1fr 1fr}
 }
 </style>
@@ -941,6 +961,8 @@ function iconBg(cat) {
 ══════════════════════════════════════════════════════════ */
 function renderDetail() {
   const e = currentExam;
+  // Update URL hash for deep linking
+  history.replaceState(null, '', '#' + e.id);
   const stagesHtml = e.stages.map((s, i) => `<span class="stage-chip">${s}</span>${i < e.stages.length - 1 ? '<span class="stage-arrow">→</span>' : ''}`).join('');
 
   const tabs = ['overview','pattern','syllabus'];
@@ -988,8 +1010,13 @@ function renderDetail() {
           <span class="acc-title">${s.subject}</span>
           <span class="acc-chevron">${i === 0 ? '▲' : '▼'}</span>
         </div>
-        <div class="acc-body${i === 0 ? ' open' : ''}">
-          <div class="acc-tags">${s.topics.map(t => `<span class="acc-tag">${t}</span>`).join('')}</div>
+        <div class="acc-body${i === 0 ? ' open' : ''}" data-section="${s.subject}">
+          <div class="checklist-bar">
+            <span class="cl-count">0/${s.topics.length} done</span>
+            <div class="checklist-progress"><div class="checklist-fill" style="width:0%"></div></div>
+            <button onclick="clearSection(this.closest('.acc-body'))" style="font-size:.68rem;background:none;border:none;color:var(--muted);cursor:pointer;padding:0">clear</button>
+          </div>
+          <div class="acc-tags">${s.topics.map(t => `<span class="acc-tag" data-topic="${encodeURIComponent(t)}">${t}</span>`).join('')}</div>
         </div>
       </div>
     `).join('');
@@ -1000,11 +1027,16 @@ function renderDetail() {
 
   document.getElementById('exam-detail').innerHTML = `
     <div class="exam-detail-header">
-      <h2>${e.icon} ${e.name}</h2>
-      <div class="exam-meta-row">
-        <span class="exam-meta-pill">${e.body}</span>
-        <span class="exam-meta-pill">${e.level}</span>
-        <span class="exam-meta-pill">${e.eligibility}</span>
+      <div style="display:flex;align-items:flex-start;gap:.75rem;flex-wrap:wrap">
+        <div style="flex:1;min-width:0">
+          <h2>${e.icon} ${e.name}</h2>
+          <div class="exam-meta-row">
+            <span class="exam-meta-pill">${e.body}</span>
+            <span class="exam-meta-pill">${e.level}</span>
+            <span class="exam-meta-pill">${e.eligibility}</span>
+          </div>
+        </div>
+        <button id="print-btn" onclick="window.print()" title="Print this syllabus">🖨️ Print</button>
       </div>
     </div>
     <div class="tabs">${tabBtns}</div>
@@ -1012,6 +1044,7 @@ function renderDetail() {
   `;
 
   // Tab click
+  attachChecklist();
   document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       currentTab = btn.dataset.tab;
@@ -1086,6 +1119,17 @@ function closeModal() {
   document.body.style.overflow = '';
 }
 document.getElementById('mobile-exam-btn').addEventListener('click', openModal);
+
+/* Keyboard shortcuts */
+document.addEventListener('keydown', function(e) {
+  if (e.key === '/' && e.target.tagName !== 'INPUT') {
+    e.preventDefault();
+    const s = document.getElementById('exam-search');
+    if (s) { s.focus(); s.select(); }
+  }
+  if (e.key === 'Escape') closeModal();
+});
+
 document.getElementById('exam-modal-overlay').addEventListener('click', closeModal);
 
 /* ══════════════════════════════════════════════════════════
@@ -1117,6 +1161,57 @@ themeBtn.addEventListener('click', () => {
 /* ══════════════════════════════════════════════════════════
    INIT
 ══════════════════════════════════════════════════════════ */
+
+/* ══════════════════════════════════════════════════════════
+   STUDY CHECKLIST
+══════════════════════════════════════════════════════════ */
+function clKey(examId, section, topic) {
+  return 'cl_' + examId + '_' + section + '_' + topic;
+}
+function updateBar(accBody) {
+  const tags = accBody.querySelectorAll('.acc-tag');
+  const done = accBody.querySelectorAll('.acc-tag.done').length;
+  const total = tags.length;
+  const bar = accBody.querySelector('.checklist-fill');
+  const count = accBody.querySelector('.cl-count');
+  if (bar) bar.style.width = (total ? (done/total*100) : 0) + '%';
+  if (count) count.textContent = done + '/' + total + ' done';
+}
+function clearSection(accBody) {
+  const examId = currentExam.id;
+  accBody.querySelectorAll('.acc-tag.done').forEach(t => {
+    t.classList.remove('done');
+    localStorage.removeItem(clKey(examId, accBody.dataset.section, t.dataset.topic));
+  });
+  updateBar(accBody);
+}
+function attachChecklist() {
+  const examId = currentExam.id;
+  document.querySelectorAll('.acc-body').forEach(body => {
+    const section = body.dataset.section || '';
+    body.querySelectorAll('.acc-tag').forEach(tag => {
+      const topic = tag.dataset.topic;
+      if (localStorage.getItem(clKey(examId, section, topic))) tag.classList.add('done');
+      tag.addEventListener('click', function() {
+        this.classList.toggle('done');
+        const k = clKey(examId, section, topic);
+        if (this.classList.contains('done')) localStorage.setItem(k, '1');
+        else localStorage.removeItem(k);
+        updateBar(body);
+      });
+    });
+    updateBar(body);
+  });
+}
+
+// Read URL hash for deep-link on load
+(function(){
+  const hash = location.hash.slice(1);
+  if(hash){
+    const exam = EXAMS.find(x => x.id === hash);
+    if(exam){ currentExam = exam; currentCat = 'all'; }
+  }
+})();
 renderAll();
 </script>
 </body>

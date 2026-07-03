@@ -234,6 +234,7 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:28px
 .live-sep{margin:18px 0 16px;text-align:center;font-size:11px;color:var(--text3);display:flex;align-items:center;gap:8px}
 .live-sep::before,.live-sep::after{content:'';flex:1;height:1px;background:var(--border)}
 </style>
+<script>(function(){var t=localStorage.getItem('eps-theme');if(t)document.documentElement.setAttribute('data-theme',t);})()</script>
 </head>
 <body>
 
@@ -572,11 +573,13 @@ document.addEventListener('DOMContentLoaded',()=>{
   initSearch();
   // theme — ◑ = dark mode active, ☀ = light mode active
   const _tb=document.getElementById('themeBtn');
+  const _savedT=localStorage.getItem('eps-theme');if(_savedT)document.documentElement.setAttribute('data-theme',_savedT);
   _tb.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'◑':'☀';
   _tb.onclick=()=>{
     const t=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';
     document.documentElement.setAttribute('data-theme',t);
     _tb.textContent=t==='dark'?'◑':'☀';
+    localStorage.setItem('eps-theme',t);
   };
   // scroll top
   window.onscroll=()=>{

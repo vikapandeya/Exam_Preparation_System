@@ -225,7 +225,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
 .pron-ipa{color:var(--text2);font-style:italic;margin:.1rem 0}
 .pron-tip{color:var(--text);font-size:.8rem}
 </style>
-<script>(function(){var t=localStorage.getItem('theme');if(t==='dark')document.documentElement.setAttribute('data-theme','dark');})()</script>
+<script>(function(){var t=localStorage.getItem('eps-theme');if(t==='dark')document.documentElement.setAttribute('data-theme','dark');})()</script>
 </head>
 <body>
 <div id="read-progress"></div>
@@ -2240,10 +2240,10 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
 // ---- THEME ----
 function toggleTheme(){
   const b=document.body,ic=document.getElementById('themeIcon');
-  if(b.dataset.theme==='dark'){b.removeAttribute('data-theme');ic.className='fas fa-moon';localStorage.setItem('theme','light')}
-  else{b.dataset.theme='dark';ic.className='fas fa-sun';localStorage.setItem('theme','dark')}
+  if(b.dataset.theme==='dark'){b.removeAttribute('data-theme');ic.className='fas fa-moon';localStorage.setItem('eps-theme','light')}
+  else{b.dataset.theme='dark';ic.className='fas fa-sun';localStorage.setItem('eps-theme','dark')}
 }
-(function(){const t=localStorage.getItem('theme');if(t==='dark'){document.body.dataset.theme='dark';const ic=document.getElementById('themeIcon');if(ic)ic.className='fas fa-sun'}})();
+(function(){const t=localStorage.getItem('eps-theme');if(t==='dark'){document.body.dataset.theme='dark';const ic=document.getElementById('themeIcon');if(ic)ic.className='fas fa-sun'}})();
 
 // ---- MOBILE MENU ----
 function toggleMob(){document.getElementById('mobMenu').classList.toggle('open')}

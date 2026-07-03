@@ -318,6 +318,7 @@ body{font-family:'Inter','Segoe UI',system-ui,sans-serif;background:var(--bg);co
 .career-card p{font-size:.82rem;color:var(--muted);}
 .career-card .salary{margin-top:.65rem;font-size:.8rem;font-weight:600;color:var(--success);}
 </style>
+<script>(function(){var t=localStorage.getItem('eps-theme');if(t)document.documentElement.setAttribute('data-theme',t);})()</script>
 </head>
 <body>
 
@@ -1326,7 +1327,7 @@ function switchTab(btn, panelId) {
 
 // Dark Mode
 const themeBtn = document.getElementById('theme-btn');
-const savedTheme = localStorage.getItem('sm-theme') || 'light';
+const savedTheme = localStorage.getItem('eps-theme') || 'light';
 document.documentElement.setAttribute('data-theme', savedTheme);
 themeBtn.textContent = savedTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
 
@@ -1335,7 +1336,7 @@ themeBtn.addEventListener('click', () => {
   const next = cur === 'dark' ? 'light' : 'dark';
   document.documentElement.setAttribute('data-theme', next);
   themeBtn.textContent = next === 'dark' ? '☀️ Light' : '🌙 Dark';
-  localStorage.setItem('sm-theme', next);
+  localStorage.setItem('eps-theme', next);
 });
 
 // (back-to-top + scroll-progress handled in the combined listener above)

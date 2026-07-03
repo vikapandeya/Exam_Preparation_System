@@ -380,7 +380,7 @@ ul.styled li::before{content:'\f058';font-family:'Font Awesome 6 Free';font-weig
 .ide-preview-frame{width:100%;border:none;min-height:360px;background:#fff;display:block}
 kbd{display:inline-block;padding:2px 7px;border-radius:5px;border:1px solid var(--border);background:var(--bg2);font-family:'Fira Code',monospace;font-size:.78rem;color:var(--text)}
 </style>
-<script>(function(){var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);})()</script>
+<script>(function(){var t=localStorage.getItem('eps-theme');if(t)document.documentElement.setAttribute('data-theme',t);})()</script>
 </head>
 <body>
 
@@ -2875,7 +2875,7 @@ db.users.<span class="fn">deleteOne</span>({ name: <span class="st">"Alice"</spa
 // =================== THEME TOGGLE ===================
 const html = document.documentElement;
 const themeBtn = document.getElementById('theme-toggle');
-const savedTheme = localStorage.getItem('theme') || 'light';
+const savedTheme = localStorage.getItem('eps-theme') || 'light';
 html.setAttribute('data-theme', savedTheme);
 themeBtn.innerHTML = savedTheme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
 
@@ -2883,7 +2883,7 @@ themeBtn.addEventListener('click', () => {
   const curr = html.getAttribute('data-theme');
   const next = curr === 'dark' ? 'light' : 'dark';
   html.setAttribute('data-theme', next);
-  localStorage.setItem('theme', next);
+  localStorage.setItem('eps-theme', next);
   themeBtn.innerHTML = next === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
 });
 
