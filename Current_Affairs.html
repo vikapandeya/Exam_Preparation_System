@@ -677,7 +677,7 @@ function renderSidebar(){
   ${[['MCQ Quiz','mcq','❓'],['Flashcards','flashcards','🃏'],['One-Liners','oneliners','⚡'],['Mock Test','mock','📝'],['Timeline','timeline','⏱'],['Static GK','gk','🌐']].map(l=>`<div class="wlink" onclick="go('${l[1]}')"><span>${l[2]} ${l[0]}</span><span>→</span></div>`).join('')}
 </div></div>
 <div class="widget"><div class="whead">🎯 Exam Calendar</div><div class="wbody">
-  ${[['UPSC Prelims 2026','Jun 2026'],['SSC CGL 2025-26','Jul–Aug 2026'],['IBPS PO 2026','Aug 2026'],['RRB NTPC 2026','Sep 2026'],['SBI Clerk 2026','Oct 2026']].map(e=>`<div style="display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--border);font-size:12px"><span style="color:var(--text)">${e[0]}</span><span style="color:var(--accent);font-weight:600">${e[1]}</span></div>`).join('')}
+  ${[['UPSC Mains 2026','Sep 2026'],['SSC CGL Tier-II','Jul–Aug 2026'],['IBPS PO 2026','Aug 2026'],['BPSC 70th Mains','Aug 2026'],['RRB NTPC 2026','Sep–Oct 2026'],['SBI Clerk 2026','Oct 2026']].map(e=>`<div style="display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--border);font-size:12px"><span style="color:var(--text)">${e[0]}</span><span style="color:var(--accent);font-weight:600">${e[1]}</span></div>`).join('')}
 </div></div>`;
 }
 

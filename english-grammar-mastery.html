@@ -225,8 +225,10 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
 .pron-ipa{color:var(--text2);font-style:italic;margin:.1rem 0}
 .pron-tip{color:var(--text);font-size:.8rem}
 </style>
+<script>(function(){var t=localStorage.getItem('theme');if(t==='dark')document.documentElement.setAttribute('data-theme','dark');})()</script>
 </head>
 <body>
+<div id="read-progress"></div>
 <!-- ======== NAVBAR ======== -->
 <nav class="navbar">
   <div class="nav-wrap">
@@ -2276,6 +2278,17 @@ function toggleAcc(el){
   el.closest('.acc').querySelectorAll('.acc-hdr').forEach(h=>h.classList.remove('open'));
   if(!isOpen){body.classList.add('open');el.classList.add('open')}
 }
+
+
+// ---- READING PROGRESS ----
+window.addEventListener('scroll', function(){
+  var el = document.getElementById('read-progress');
+  if(el){
+    var s = document.documentElement;
+    var pct = (s.scrollTop || document.body.scrollTop) / (s.scrollHeight - s.clientHeight) * 100;
+    el.style.width = Math.min(pct, 100) + '%';
+  }
+});
 
 // ---- BACK TO TOP ----
 window.addEventListener('scroll',function(){

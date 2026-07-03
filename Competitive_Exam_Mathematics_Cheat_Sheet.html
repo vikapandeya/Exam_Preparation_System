@@ -574,6 +574,13 @@
       background: linear-gradient(180deg, var(--brand), var(--brand-2));
     }
 
+    /* Topic-colored left borders on formula cards */
+    .formula-card.tc-arithmetic::before{background:linear-gradient(180deg,#f59e0b,#d97706)}
+    .formula-card.tc-algebra::before{background:linear-gradient(180deg,#10b981,#059669)}
+    .formula-card.tc-geometry::before{background:linear-gradient(180deg,#a855f7,#7c3aed)}
+    .formula-card.tc-other::before{background:linear-gradient(180deg,#3b82f6,#2563eb)}
+
+
     .formula-card h5,
     .example-card h5,
     .practice-card h5 {
@@ -3143,18 +3150,20 @@
       topFormulaGrid.innerHTML = "";
       const formulas = topics.flatMap(topic => {
         const hd = (currentLang === "hinglish" && hinglishData[topic.id]) ? hinglishData[topic.id] : null;
+        const tc = topic.theme === 'topic-arithmetic' ? 'tc-arithmetic' : topic.theme === 'topic-algebra' ? 'tc-algebra' : topic.theme === 'topic-geometry' ? 'tc-geometry' : 'tc-other';
         return topic.formulas.map((f, i) => ({
           title: `${topic.title}: ${f.title}`,
           formula: f.formula,
           meaning: (hd && hd.formulas && hd.formulas[i]) ? hd.formulas[i].meaning : f.meaning,
           shortcut: (hd && hd.formulas && hd.formulas[i]) ? hd.formulas[i].shortcut : f.shortcut,
-          examTip: (hd && hd.formulas && hd.formulas[i]) ? hd.formulas[i].examTip : f.examTip
+          examTip: (hd && hd.formulas && hd.formulas[i]) ? hd.formulas[i].examTip : f.examTip,
+          tc: tc
         }));
       }).slice(0, 100);
 
       formulas.forEach((formula, index) => {
         const card = document.createElement("article");
-        card.className = "formula-card";
+        card.className = "formula-card " + formula.tc;
         card.innerHTML = `
           <h5>${index + 1}. ${formula.title}</h5>
           <span class="formula-label">${t.formula}</span>

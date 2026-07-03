@@ -21,11 +21,21 @@ FEEDS = [
 EXAM_KW = [
     'appoint','award','launch','scheme','minister','president','governor',
     'budget','railway','defence','defense','mission','satellite','summit',
-    'agreement','rank','index','report','committee','bill','act','policy',
+    'agreement','rank','index','report','committee','legislation','ordinance',
     'medal','champion','tiger','national park','world record','isro','drdo',
-    'rbi','sebi','export','gdp','inflation','treaty','fta','accord','g20',
+    'rbi','sebi','export','inflation','treaty','accord','g20','policy',
     'brics','united nations','climate','carbon','solar','olympic','cricket',
     'pm modi','india wins','india signs','india launches','india achieves',
+    'upsc','ssc','bpsc','daroga','railway recruitment','government scheme',
+    'parliament','cabinet','supreme court','high court','election commission',
+]
+# Short keywords matched with word-boundary regex to avoid false positives
+EXAM_KW_WORD = ['gdp', 'fta', 'bill', 'act']
+# Blacklist: skip articles containing these entertainment/noise keywords
+BLACKLIST_KW = [
+    'box office', 'bollywood', ' actor ', ' actress ', 'celebrity', 'film festival',
+    'web series', 'ott release', 'dating', 'fashion week', 'reality show',
+    'music video', 'trailer launch', 'movie review',
 ]
 
 # Category inference (ordered — first match wins; last entry is default)
@@ -65,6 +75,13 @@ def infer_cat(text: str) -> str:
 def fmt_date(pub: str) -> str:
     if not pub:
         return ''
+    # Handle ISO format: 2026-07-03T10:12 or 2026-07-03 10:12
+    iso_m = re.match(r'(\d{4})-(\d{2})-(\d{2})', pub.strip())
+    if iso_m:
+        y, m, d = int(iso_m.group(1)), int(iso_m.group(2)), int(iso_m.group(3))
+        if 1 <= m <= 12:
+            return f"{MONTH_SHORT[m-1]} {d:02d}, {y}"
+    # Handle RSS pubDate: Mon, 03 Jul 2026 10:12:00 GMT
     m = re.search(r'(\d{1,2})\s+(\w{3})\s+(\d{4})', pub, re.I)
     if m:
         d, mon, y = int(m.group(1)), m.group(2).lower()[:3], m.group(3)
@@ -72,6 +89,20 @@ def fmt_date(pub: str) -> str:
                      'jul':7,'aug':8,'sep':9,'oct':10,'nov':11,'dec':12}.get(mon, 1)
         return f"{MONTH_SHORT[month_idx-1]} {d:02d}, {y}"
     return pub[:16]
+
+
+def is_exam_relevant(combined: str) -> bool:
+    t = combined.lower()
+    # Blacklist check first
+    if any(bl in t for bl in BLACKLIST_KW):
+        return False
+    # Substring keywords
+    if any(kw in t for kw in EXAM_KW):
+        return True
+    # Word-boundary keywords
+    if any(re.search(r'\b' + re.escape(kw) + r'\b', t) for kw in EXAM_KW_WORD):
+        return True
+    return False
 
 
 def fetch_feed(url: str, source: str) -> list:
@@ -94,7 +125,7 @@ def fetch_feed(url: str, source: str) -> list:
             if not title:
                 continue
             combined = (title + ' ' + desc).lower()
-            if not any(kw in combined for kw in EXAM_KW):
+            if not is_exam_relevant(combined):
                 continue
             cat = infer_cat(combined)
             articles.append({
@@ -103,7 +134,7 @@ def fetch_feed(url: str, source: str) -> list:
                 'tc':     TC_MAP.get(cat, 'tgn'),
                 'date':   fmt_date(pub),
                 'title':  title,
-                'sum':    (desc[:280] + '…') if len(desc) > 280 else desc or title,
+                'sum':    (desc[:280] + '...') if len(desc) > 280 else desc or title,
                 'link':   link,
                 'source': source,
                 'exam':   f'Source: {source} · Auto-updated',
