@@ -115,7 +115,7 @@ def fetch_feed(url: str, source: str) -> list:
         with urllib.request.urlopen(req, timeout=15) as resp:
             xml_bytes = resp.read()
         root = ET.fromstring(xml_bytes)
-        channel = root.find('channel') or root
+        channel = root.find('channel'); channel = channel if channel is not None else root
         items = channel.findall('item') or []
         for item in items[:12]:
             title = clean_html(item.findtext('title', ''))
