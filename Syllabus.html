@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Exam Syllabus Hub – Complete Indian Competitive Exam Syllabi</title>
+<meta name="description" content="Complete syllabi, paper patterns and question counts for all major Indian competitive exams — UPSC, SSC, Banking, Railway, Bihar Specific, Defence and State PSC.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ── TOKENS ── */
+:root{
+  --primary:#2563eb;--secondary:#7c3aed;--accent:#f59e0b;
+  --bg:#f0f4ff;--surface:#ffffff;--surface2:#f8fafc;
+  --border:#e2e8f0;--text:#1e293b;--muted:#64748b;
+  --hdr:56px;--subnav:44px;
+  --r:10px;--rsm:6px;
+  --sh:0 1px 3px rgba(0,0,0,.07),0 1px 2px rgba(0,0,0,.04);
+  --sh-md:0 4px 20px rgba(0,0,0,.08);
+}
+[data-theme="dark"]{
+  --bg:#0f172a;--surface:#1e293b;--surface2:#0f172a;
+  --border:#334155;--text:#f1f5f9;--muted:#94a3b8;
+  --sh:0 1px 3px rgba(0,0,0,.4);--sh-md:0 4px 20px rgba(0,0,0,.5);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh;transition:background .25s,color .25s}
+a{text-decoration:none;color:inherit}
+
+/* ── HEADER ── */
+#topbar{
+  position:sticky;top:0;z-index:1000;height:var(--hdr);
+  background:var(--surface);border-bottom:1px solid var(--border);
+  backdrop-filter:blur(12px);
+  display:flex;align-items:center;padding:0 1.25rem;gap:1rem;
+  box-shadow:var(--sh);
+}
+.brand{display:flex;align-items:center;gap:.5rem;font-weight:800;font-size:.95rem;white-space:nowrap;color:var(--primary)}
+.brand-icon{font-size:1.35rem;line-height:1}
+.topbar-right{margin-left:auto;display:flex;align-items:center}
+#theme-btn{background:none;border:1.5px solid var(--border);border-radius:999px;padding:.3rem .75rem;cursor:pointer;font-size:.82rem;color:var(--text);transition:.2s;font-family:inherit;display:flex;align-items:center;gap:.3rem}
+#theme-btn:hover{border-color:var(--primary);color:var(--primary)}
+
+/* ── SUB-NAV ── */
+#sub-nav{
+  position:sticky;top:var(--hdr);z-index:999;
+  background:var(--surface);border-bottom:1px solid var(--border);
+  padding:6px 1.25rem;display:flex;align-items:center;
+}
+.page-links{display:flex;flex-wrap:nowrap;gap:6px;align-items:center;overflow-x:auto;scrollbar-width:none;}
+.page-links::-webkit-scrollbar{display:none;}
+.page-links a{font-size:.7rem;color:var(--text);background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:4px 10px;transition:all .2s;font-weight:500;white-space:nowrap;}
+.page-links a:hover{background:var(--primary);color:#fff;border-color:var(--primary);}
+.page-links a.current{background:var(--primary);color:#fff!important;border-color:var(--primary);font-weight:700;pointer-events:none;box-shadow:0 2px 8px rgba(37,99,235,.35);}
+
+/* ── HERO ── */
+.hero{
+  background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 30%,#2563eb 65%,#7c3aed 100%);
+  padding:4rem 1.5rem 3.5rem;text-align:center;color:#fff;
+  position:relative;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23fff' fill-opacity='.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E")
+}
+.hero-inner{position:relative;z-index:1;max-width:760px;margin:0 auto}
+.hero h1{font-size:clamp(1.75rem,4.5vw,3rem);font-weight:800;line-height:1.15;margin-bottom:.85rem;letter-spacing:-.025em}
+.hero-sub{font-size:1rem;opacity:.82;margin-bottom:2rem;max-width:560px;margin-left:auto;margin-right:auto}
+.hero-pills{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center}
+.hero-pill{background:rgba(255,255,255,.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.2);padding:.35rem 1rem;border-radius:999px;font-size:.82rem;font-weight:600;color:#fff}
+.hero-pill span{color:#fbbf24}
+
+/* ── CATEGORY FILTER ── */
+.cat-bar{background:var(--surface);border-bottom:1px solid var(--border);overflow-x:auto;scrollbar-width:none;}
+.cat-bar::-webkit-scrollbar{display:none;}
+.cat-inner{display:flex;padding:0 1.25rem;max-width:1440px;margin:0 auto;}
+.cat-tab{padding:10px 16px;font-size:.75rem;font-weight:600;color:var(--muted);cursor:pointer;white-space:nowrap;border-bottom:2.5px solid transparent;transition:.15s;text-transform:uppercase;letter-spacing:.5px;}
+.cat-tab:hover{color:var(--text)}
+.cat-tab.active{color:var(--primary);border-color:var(--primary);font-weight:700}
+
+/* ── MAIN LAYOUT ── */
+.layout{display:flex;gap:0;max-width:1400px;margin:0 auto;min-height:calc(100vh - var(--hdr) - var(--subnav) - 44px)}
+
+/* ── LEFT PANEL ── */
+#left-panel{
+  width:300px;flex-shrink:0;
+  border-right:1px solid var(--border);
+  background:var(--surface);
+  position:sticky;top:calc(var(--hdr) + var(--subnav));
+  height:calc(100vh - var(--hdr) - var(--subnav) - 44px);
+  overflow-y:auto;scrollbar-width:thin;
+  scrollbar-color:var(--border) transparent;
+  display:flex;flex-direction:column;
+}
+#left-panel::-webkit-scrollbar{width:5px;}
+#left-panel::-webkit-scrollbar-track{background:transparent;}
+#left-panel::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px;}
+.left-search{padding:.75rem;border-bottom:1px solid var(--border);flex-shrink:0;}
+.left-search input{
+  width:100%;padding:.45rem .75rem .45rem 2rem;
+  background:var(--surface2);border:1px solid var(--border);
+  border-radius:var(--r);color:var(--text);font-size:.82rem;
+  outline:none;font-family:inherit;transition:.2s;
+}
+.left-search input:focus{border-color:var(--primary)}
+.search-wrap{position:relative}
+.search-wrap::before{content:'🔍';position:absolute;left:.6rem;top:50%;transform:translateY(-50%);font-size:.75rem;pointer-events:none}
+.exam-list{flex:1;overflow-y:auto;scrollbar-width:none;}
+.exam-list::-webkit-scrollbar{display:none;}
+.exam-item{
+  display:flex;align-items:center;gap:.6rem;
+  padding:.65rem .85rem;cursor:pointer;
+  border-bottom:1px solid var(--border);
+  transition:background .15s;
+}
+.exam-item:hover{background:var(--bg)}
+.exam-item.active{background:rgba(37,99,235,.08);border-left:3px solid var(--primary)}
+.exam-item.active .exam-name{color:var(--primary);font-weight:700}
+.exam-icon{width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
+.exam-name{font-size:.82rem;font-weight:600;line-height:1.3}
+.exam-body-name{font-size:.68rem;color:var(--muted)}
+.cat-badge{font-size:.6rem;font-weight:700;padding:2px 6px;border-radius:999px;text-transform:uppercase;letter-spacing:.4px;flex-shrink:0;margin-left:auto}
+.badge-upsc{background:rgba(37,99,235,.15);color:#2563eb}
+.badge-ssc{background:rgba(16,185,129,.15);color:#059669}
+.badge-banking{background:rgba(245,158,11,.15);color:#d97706}
+.badge-railway{background:rgba(239,68,68,.15);color:#dc2626}
+.badge-bihar{background:rgba(124,58,237,.15);color:#7c3aed}
+.badge-defence{background:rgba(15,118,110,.15);color:#0f766e}
+.badge-statepsc{background:rgba(234,88,12,.15);color:#ea580c}
+
+/* ── MOBILE TOGGLE ── */
+#mobile-exam-btn{
+  display:none;margin:1rem;padding:.65rem 1.2rem;
+  background:var(--primary);color:#fff;border:none;border-radius:var(--r);
+  font-size:.85rem;font-weight:700;cursor:pointer;font-family:inherit;
+  width:calc(100% - 2rem);
+}
+#mobile-exam-btn:active{opacity:.85}
+#exam-modal-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.5);backdrop-filter:blur(4px)}
+#exam-modal{
+  position:fixed;bottom:0;left:0;right:0;z-index:2001;
+  background:var(--surface);border-radius:16px 16px 0 0;
+  padding:1rem;max-height:80vh;display:flex;flex-direction:column;
+  transform:translateY(100%);transition:transform .3s;
+}
+#exam-modal.open{transform:translateY(0)}
+#exam-modal-overlay.open{display:block}
+.modal-handle{width:40px;height:4px;background:var(--border);border-radius:2px;margin:0 auto .75rem}
+.modal-search-wrap{position:relative;margin-bottom:.75rem}
+.modal-search-wrap::before{content:'🔍';position:absolute;left:.6rem;top:50%;transform:translateY(-50%);font-size:.75rem;pointer-events:none}
+.modal-search-wrap input{
+  width:100%;padding:.45rem .75rem .45rem 2rem;
+  background:var(--surface2);border:1px solid var(--border);
+  border-radius:var(--r);color:var(--text);font-size:.85rem;
+  outline:none;font-family:inherit;
+}
+.modal-exam-list{overflow-y:auto;flex:1;}
+.modal-exam-item{
+  display:flex;align-items:center;gap:.65rem;
+  padding:.65rem .5rem;border-bottom:1px solid var(--border);cursor:pointer;
+}
+.modal-exam-item:hover{background:var(--bg)}
+
+/* ── RIGHT PANEL ── */
+#right-panel{flex:1;min-width:0;padding:1.5rem;overflow-y:auto;}
+
+/* ── EXAM DETAIL ── */
+.exam-detail-header{
+  background:linear-gradient(135deg,#1e1b4b,#2563eb);
+  color:#fff;border-radius:var(--r);padding:1.5rem;margin-bottom:1.25rem;
+}
+.exam-detail-header h2{font-size:1.4rem;font-weight:800;margin-bottom:.3rem}
+.exam-meta-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.75rem}
+.exam-meta-pill{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:.25rem .75rem;font-size:.72rem;font-weight:600}
+
+/* ── TABS ── */
+.tabs{display:flex;gap:.35rem;margin-bottom:1.25rem;border-bottom:1px solid var(--border);padding-bottom:0;}
+.tab-btn{padding:.55rem 1.1rem;font-size:.8rem;font-weight:600;color:var(--muted);cursor:pointer;border:none;background:none;font-family:inherit;border-bottom:2.5px solid transparent;margin-bottom:-1px;transition:.15s;}
+.tab-btn:hover{color:var(--text)}
+.tab-btn.active{color:var(--primary);border-bottom-color:var(--primary);}
+.tab-pane{display:none}
+.tab-pane.active{display:block}
+
+/* ── OVERVIEW ── */
+.overview-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:.75rem;margin-bottom:1.25rem}
+.ov-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:.9rem;box-shadow:var(--sh)}
+.ov-label{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:.3rem}
+.ov-value{font-size:.9rem;font-weight:700;color:var(--text)}
+.overview-desc{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1rem;box-shadow:var(--sh);margin-bottom:1rem}
+.overview-desc h3{font-size:.9rem;font-weight:700;margin-bottom:.5rem;color:var(--primary)}
+.overview-desc p{font-size:.85rem;color:var(--muted);line-height:1.7}
+.stages-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.75rem;align-items:center}
+.stage-chip{background:var(--primary);color:#fff;border-radius:999px;padding:.25rem .8rem;font-size:.72rem;font-weight:700}
+.stage-arrow{color:var(--muted);font-weight:700;font-size:.85rem}
+
+/* ── PATTERN TABLE ── */
+.table-wrap{overflow-x:auto;border-radius:var(--r);border:1px solid var(--border);box-shadow:var(--sh)}
+.pattern-table{width:100%;border-collapse:collapse;font-size:.8rem;background:var(--surface)}
+.pattern-table th{background:var(--primary);color:#fff;padding:.65rem .85rem;text-align:left;font-weight:700;white-space:nowrap;font-size:.72rem;text-transform:uppercase;letter-spacing:.4px}
+.pattern-table td{padding:.6rem .85rem;border-bottom:1px solid var(--border);vertical-align:top;color:var(--text);line-height:1.5}
+.pattern-table tr:last-child td{border-bottom:none}
+.pattern-table tr:nth-child(even) td{background:var(--surface2)}
+.total-row td{font-weight:700;background:rgba(37,99,235,.07)!important;color:var(--primary)}
+.neg-mark{display:inline-flex;align-items:center;gap:.25rem;font-size:.72rem;background:rgba(239,68,68,.1);color:#dc2626;padding:2px 6px;border-radius:4px;font-weight:700}
+.note-cell{font-size:.72rem;color:var(--muted);font-style:italic}
+
+/* ── SYLLABUS ACCORDION ── */
+.accordion{display:flex;flex-direction:column;gap:.5rem}
+.acc-item{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh)}
+.acc-header{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:.75rem 1rem;cursor:pointer;
+  background:var(--surface);transition:background .15s;
+  -webkit-user-select:none;user-select:none;
+}
+.acc-header:hover{background:var(--surface2)}
+.acc-header.open{background:rgba(37,99,235,.06);border-bottom:1px solid var(--border)}
+.acc-title{font-size:.85rem;font-weight:700;color:var(--text)}
+.acc-chevron{font-size:.75rem;color:var(--muted);transition:transform .25s;flex-shrink:0}
+.acc-header.open .acc-chevron{transform:rotate(180deg)}
+.acc-body{display:none;padding:.85rem 1rem;border-top:1px solid var(--border)}
+.acc-body.open{display:block}
+.acc-tags{display:flex;flex-wrap:wrap;gap:.4rem}
+.acc-tag{background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:.2rem .65rem;font-size:.72rem;color:var(--text)}
+
+/* ── EMPTY STATE ── */
+.empty-state{text-align:center;padding:3rem 1rem;color:var(--muted)}
+.empty-state .icon{font-size:3rem;margin-bottom:.75rem}
+.empty-state p{font-size:.9rem}
+
+/* ── RESPONSIVE ── */
+@media(max-width:800px){
+  #left-panel{display:none}
+  #mobile-exam-btn{display:block}
+  .hero{padding:2.5rem 1rem 2rem}
+  .hero h1{font-size:1.65rem}
+  #right-panel{padding:0 .85rem 1.5rem}
+  .overview-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:480px){
+  .hero-pills{gap:.4rem}
+  .hero-pill{font-size:.72rem;padding:.3rem .75rem}
+  .tab-btn{padding:.45rem .75rem;font-size:.75rem}
+  .overview-grid{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header id="topbar">
+  <div class="brand">
+    <span class="brand-icon">📚</span>
+    <span>Exam Prep System</span>
+  </div>
+  <div class="topbar-right">
+    <button id="theme-btn">🌙 Dark</button>
+  </div>
+</header>
+
+<!-- ── SUB-NAV ── -->
+<div id="sub-nav">
+  <nav class="page-links">
+    <a href="index.html">Home</a>
+    <a href="Science.html">Science</a>
+    <a href="Computer.html">Computer</a>
+    <a href="Current_Affairs.html">Current Affairs</a>
+    <a href="english-grammar-mastery.html">English</a>
+    <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html">Maths</a>
+    <a href="Syllabus.html" class="current">Syllabus</a>
+  </nav>
+</div>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-inner">
+    <h1>Complete Exam Syllabus Hub</h1>
+    <p class="hero-sub">All major Indian competitive exam syllabi, paper patterns &amp; question counts in one place</p>
+    <div class="hero-pills">
+      <div class="hero-pill"><span>19</span> Exams</div>
+      <div class="hero-pill">All Patterns</div>
+      <div class="hero-pill">Full Syllabus</div>
+      <div class="hero-pill">Free</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CATEGORY FILTER ── -->
+<div class="cat-bar">
+  <div class="cat-inner" id="cat-tabs">
+    <button class="cat-tab active" data-cat="all">All</button>
+    <button class="cat-tab" data-cat="UPSC">UPSC</button>
+    <button class="cat-tab" data-cat="SSC">SSC</button>
+    <button class="cat-tab" data-cat="Banking">Banking</button>
+    <button class="cat-tab" data-cat="Railway">Railway</button>
+    <button class="cat-tab" data-cat="Bihar Specific">Bihar Specific</button>
+    <button class="cat-tab" data-cat="Defence">Defence</button>
+    <button class="cat-tab" data-cat="State PSC">State PSC</button>
+  </div>
+</div>
+
+<!-- ── MOBILE TOGGLE ── -->
+<button id="mobile-exam-btn">Change Exam ↓</button>
+
+<!-- ── EXAM MODAL (mobile) ── -->
+<div id="exam-modal-overlay"></div>
+<div id="exam-modal">
+  <div class="modal-handle"></div>
+  <div class="modal-search-wrap">
+    <input type="text" id="modal-search" placeholder="Search exam…">
+  </div>
+  <div class="modal-exam-list" id="modal-exam-list"></div>
+</div>
+
+<!-- ── MAIN LAYOUT ── -->
+<div class="layout">
+  <!-- LEFT PANEL -->
+  <aside id="left-panel">
+    <div class="left-search">
+      <div class="search-wrap">
+        <input type="text" id="exam-search" placeholder="Search exams…">
+      </div>
+    </div>
+    <div class="exam-list" id="exam-list"></div>
+  </aside>
+
+  <!-- RIGHT PANEL -->
+  <main id="right-panel">
+    <div id="exam-detail"></div>
+  </main>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════════
+   EXAM DATA
+══════════════════════════════════════════════════════════ */
+const EXAMS = [
+  {
+    id: 'upsc-cse',
+    name: 'UPSC Civil Services (IAS/IPS/IFS)',
+    shortName: 'UPSC CSE',
+    icon: '🏛️',
+    category: 'UPSC',
+    body: 'Union Public Service Commission',
+    level: 'National',
+    eligibility: 'Graduation, Age 21–32',
+    stages: ['Prelims', 'Mains', 'Interview'],
+    overview: 'The most prestigious civil services examination in India, conducted annually by UPSC. Successful candidates are appointed to the Indian Administrative Service (IAS), Indian Police Service (IPS), Indian Foreign Service (IFS) and other Central Services. Total Mains + Interview: 2025 marks.',
+    pattern: [
+      { stage:'Prelims', paper:'GS Paper I', qs:'100', marks:'200', duration:'2 hr', neg:'-0.66 (1/3)', notes:'MCQ' },
+      { stage:'Prelims', paper:'CSAT Paper II', qs:'80', marks:'200', duration:'2 hr', neg:'-0.83 (1/3)', notes:'Qualifying — 33% needed' },
+      { stage:'Mains', paper:'Essay', qs:'—', marks:'250', duration:'3 hr', neg:'None', notes:'Descriptive' },
+      { stage:'Mains', paper:'GS Paper I', qs:'—', marks:'250', duration:'3 hr', neg:'None', notes:'Descriptive' },
+      { stage:'Mains', paper:'GS Paper II', qs:'—', marks:'250', duration:'3 hr', neg:'None', notes:'Descriptive' },
+      { stage:'Mains', paper:'GS Paper III', qs:'—', marks:'250', duration:'3 hr', neg:'None', notes:'Descriptive' },
+      { stage:'Mains', paper:'GS Paper IV (Ethics)', qs:'—', marks:'250', duration:'3 hr', neg:'None', notes:'Descriptive' },
+      { stage:'Mains', paper:'Optional Paper I', qs:'—', marks:'250', duration:'3 hr', neg:'None', notes:'Descriptive — 2 papers' },
+      { stage:'Mains', paper:'Optional Paper II', qs:'—', marks:'250', duration:'3 hr', neg:'None', notes:'Descriptive' },
+      { stage:'Mains', paper:'English (Qualifying)', qs:'—', marks:'300', duration:'3 hr', neg:'None', notes:'Qualifying' },
+      { stage:'Mains', paper:'Indian Language (Qualifying)', qs:'—', marks:'300', duration:'3 hr', neg:'None', notes:'Qualifying' },
+      { stage:'Interview', paper:'Personality Test', qs:'—', marks:'275', duration:'~30 min', neg:'None', notes:'Personality & leadership' },
+      { stage:'TOTAL', paper:'Mains + Interview', qs:'—', marks:'2025', duration:'—', neg:'—', notes:'Merit list basis', isTotal:true },
+    ],
+    syllabus: [
+      { subject:'Prelims GS Paper I', topics:['Current Events of National & International Importance','History of India & Indian National Movement','Indian & World Geography — Physical, Social, Economic','Indian Polity & Governance — Constitution, Political System, Panchayati Raj, Public Policy, Rights Issues','Economic & Social Development — Sustainable Development, Poverty, Inclusion, Demographics, Social Sector Initiatives','General Issues on Environmental Ecology, Bio-diversity & Climate Change','General Science'] },
+      { subject:'CSAT (Paper II) — Qualifying', topics:['Reading Comprehension','Interpersonal Skills incl. Communication','Logical Reasoning & Analytical Ability','Decision Making & Problem Solving','General Mental Ability','Basic Numeracy (Class X level)','Data Interpretation — Charts, Graphs, Tables'] },
+      { subject:'Mains GS I — Heritage, History & Geography', topics:['Indian Culture — Art Forms, Literature & Architecture from ancient to modern times','Modern Indian History (1757–1947) — Major Events, Personalities, Issues','Post-Independence Consolidation & Reorganisation','World History — Colonialism, Decolonisation, World Wars, Bipolar World','Salient Features of Indian Society, Diversity','Role of Women & Women\'s Organisations','Social Empowerment, Communalism, Regionalism & Secularism','Physical Geography, Indian Geography, World Economic Geography','Distribution of Key Natural Resources','Disaster Management — Vulnerability, Disaster Risk Reduction'] },
+      { subject:'Mains GS II — Polity, Constitution, Governance, Social Justice & IR', topics:['Indian Constitution — Historical Underpinnings, Evolution, Features, Amendments, Significant Provisions','Functions & Responsibilities of Union & States','Parliament & State Legislatures — Structure, Functioning, Powers','Federalism — Centre-State Relations','Judiciary — Structure, Organisation & Functioning','Local Governments — Urban & Rural','Social Justice — Welfare Schemes for Vulnerable Sections','Governance — Transparency & Accountability, E-Governance','India & Its Neighbourhood Relations','Bilateral, Regional & Global Groupings','Effect of Policies & Politics of Developed & Developing Countries','Important International Institutions, Agencies & Fora','Statutory, Regulatory & Quasi-judicial Bodies'] },
+      { subject:'Mains GS III — Economy, Agriculture, Science & Environment', topics:['Indian Economy — Planning, Mobilisation of Resources, Growth, Development & Employment','Issues related to Poverty & Hunger','Inclusive Growth & Issues','Government Budgeting','Land Reforms in India','Economics of Animal-Rearing','Food Processing & Related Industries','Major Crops — Cropping Patterns','Science & Technology — Developments & their Applications & Effects in Everyday Life','Achievements of Indians in S&T, Indigenisation of Technology','Environmental Impact Assessment','Disaster & Disaster Management','Security Challenges — Role of Media & Social Networking Sites','Internal Security — Linkages of Organised Crime with Terrorism','Money Laundering & its Prevention'] },
+      { subject:'Mains GS IV — Ethics, Integrity & Aptitude', topics:['Ethics & Human Interface — Essence, Determinants & Consequences of Ethics','Attitude — Content, Structure, Function; Influence & Relation with Thought & Behaviour','Aptitude & Foundational Values for Civil Service — Integrity, Impartiality, Non-partisanship','Emotional Intelligence — Concepts & Utilisation in Administration & Governance','Contributions of Moral Thinkers & Philosophers — India & World','Public/Civil Service Values & Ethics in Public Administration','Probity in Governance — Concept of Public Service, Philosophical Basis','Case Studies on above issues'] },
+    ]
+  },
+  {
+    id: 'upsc-cds',
+    name: 'UPSC CDS (Combined Defence Services)',
+    shortName: 'UPSC CDS',
+    icon: '⚔️',
+    category: 'UPSC',
+    body: 'Union Public Service Commission',
+    level: 'National',
+    eligibility: 'Graduation (IMA/AFA), Class 12 (NA), Age 19–24',
+    stages: ['Written Exam', 'SSB Interview'],
+    overview: 'Conducted twice a year by UPSC for recruitment into the Indian Military Academy (IMA), Indian Naval Academy (INA), Air Force Academy (AFA) and Officers\' Training Academy (OTA). SSB Interview carries 300 marks spread over 5 days.',
+    pattern: [
+      { stage:'Written', paper:'English', qs:'120', marks:'100', duration:'2 hr', neg:'-0.33', notes:'IMA/AFA/OTA/NA' },
+      { stage:'Written', paper:'General Knowledge', qs:'120', marks:'100', duration:'2 hr', neg:'-0.33', notes:'All academies' },
+      { stage:'Written', paper:'Elementary Mathematics', qs:'100', marks:'100', duration:'2 hr', neg:'-0.33', notes:'IMA & AFA only' },
+      { stage:'Interview', paper:'SSB Interview', qs:'—', marks:'300', duration:'5 days', neg:'None', notes:'Psychological & Group Tasks' },
+    ],
+    syllabus: [
+      { subject:'English', topics:['Reading Comprehension','Grammar — Parts of Speech, Tenses, Narration, Voice','Vocabulary — Synonyms, Antonyms, Spellings','Sentence Completion & Ordering','Idioms & Phrases','Error Detection & Correction'] },
+      { subject:'General Knowledge', topics:['Current Events — National & International','History of India','Indian & World Geography','Indian Polity','Indian Economy','Defence & Armed Forces','Science & Technology','Books & Authors','Sports & Awards'] },
+      { subject:'Elementary Mathematics', topics:['Algebra — Basic Operations, Simple Factors, Remainder Theorem, HCF, LCM','Arithmetic — Number System, Unitary Method, Time-Work, Percentage, Ratio','Trigonometry — Angles, Trigonometric Ratios, Simple Cases of Heights & Distances','Geometry — Lines, Angles, Triangles, Quadrilaterals, Circles','Mensuration — Areas & Volumes','Statistics — Frequency Distribution, Mean, Median, Mode'] },
+    ]
+  },
+  {
+    id: 'upsc-nda',
+    name: 'UPSC NDA (National Defence Academy)',
+    shortName: 'UPSC NDA',
+    icon: '🎖️',
+    category: 'UPSC',
+    body: 'Union Public Service Commission',
+    level: 'National',
+    eligibility: 'Class 12 (PCM for Army/Navy/AF), Age 16.5–19.5',
+    stages: ['Written Exam', 'SSB Interview'],
+    overview: 'Conducted twice a year for admission to National Defence Academy (Army, Navy, Air Force wings) and Indian Naval Academy. Total marks: Written 900 + SSB 900 = 1800. One of the most competitive defence exams for young aspirants after Class 12.',
+    pattern: [
+      { stage:'Written', paper:'Mathematics', qs:'120', marks:'300', duration:'2.5 hr', neg:'-0.83', notes:'MCQ — 2.5 marks per Q' },
+      { stage:'Written', paper:'GAT (General Ability Test)', qs:'150', marks:'600', duration:'2.5 hr', neg:'-1.33', notes:'English 200M + GK 400M' },
+      { stage:'Written', paper:'Total Written', qs:'270', marks:'900', duration:'5 hr', neg:'—', notes:'', isTotal:true },
+      { stage:'Interview', paper:'SSB Interview', qs:'—', marks:'900', duration:'5 days', neg:'None', notes:'Psychological, GTO, Interview' },
+    ],
+    syllabus: [
+      { subject:'Mathematics', topics:['Algebra — Sets, Operations, Relations, Equivalence Relations','Matrices & Determinants','Trigonometry — Angles, Inverse Circular Functions, Multiple Angles','Analytical Geometry — 2D & 3D','Differential Calculus','Integral Calculus & Differential Equations','Vector Algebra','Statistics & Probability'] },
+      { subject:'GAT — English (200 Marks)', topics:['Grammar & Usage','Vocabulary','Comprehension & Cohesion','Spotting Errors','Fill in the Blanks','Synonyms & Antonyms'] },
+      { subject:'GAT — General Knowledge (400 Marks)', topics:['Physics — Physical Properties, Thermo-dynamics, Newton\'s Laws, Optics, Electricity','Chemistry — Physical & Chemical Changes, Elements, Mixtures, Compounds, Acids & Bases','Biology — Living World, Photosynthesis, Circulatory System, Nutrition','History — Freedom Movement, Broad Survey of Indian History','Geography — Earth, Atmosphere, Ocean Currents, Rocks, Earthquakes, India Geography','Civics & Current Events — Indian Constitution, Polity, International Organisations','General Science Applications & Discoveries'] },
+    ]
+  },
+  {
+    id: 'ssc-cgl',
+    name: 'SSC CGL (Combined Graduate Level)',
+    shortName: 'SSC CGL',
+    icon: '📋',
+    category: 'SSC',
+    body: 'Staff Selection Commission',
+    level: 'National',
+    eligibility: 'Graduation, Age 18–32',
+    stages: ['Tier I', 'Tier II'],
+    overview: 'One of the most popular government exams in India for Group B & C posts under Central Government Ministries & Departments. Posts include Assistant Section Officer, Auditor, Tax Assistant, Statistical Investigator, Sub-Inspector CBI, etc.',
+    pattern: [
+      { stage:'Tier I', paper:'GI & Reasoning', qs:'25', marks:'50', duration:'60 min (combined)', neg:'-0.50', notes:'Online CBE' },
+      { stage:'Tier I', paper:'General Awareness', qs:'25', marks:'50', duration:'—', neg:'-0.50', notes:'' },
+      { stage:'Tier I', paper:'Quantitative Aptitude', qs:'25', marks:'50', duration:'—', neg:'-0.50', notes:'' },
+      { stage:'Tier I', paper:'English Comprehension', qs:'25', marks:'50', duration:'—', neg:'-0.50', notes:'' },
+      { stage:'Tier I', paper:'Total', qs:'100', marks:'200', duration:'60 min', neg:'—', notes:'', isTotal:true },
+      { stage:'Tier II Sess.1', paper:'Mathematical Abilities', qs:'30', marks:'90', duration:'3 hr (combined)', neg:'-1', notes:'Compulsory' },
+      { stage:'Tier II Sess.1', paper:'Reasoning & GI', qs:'30', marks:'90', duration:'—', neg:'-1', notes:'Compulsory' },
+      { stage:'Tier II Sess.1', paper:'English Language & Comprehension', qs:'45', marks:'135', duration:'—', neg:'-1', notes:'Compulsory' },
+      { stage:'Tier II Sess.1', paper:'General & Financial Awareness', qs:'25', marks:'75', duration:'—', neg:'-1', notes:'Compulsory' },
+      { stage:'Tier II Sess.2', paper:'Statistics (JSO posts)', qs:'100', marks:'200', duration:'2 hr', neg:'-1', notes:'JSO posts only' },
+      { stage:'Tier II Sess.2', paper:'Finance & Economics (AAO posts)', qs:'100', marks:'200', duration:'2 hr', neg:'-1', notes:'AAO posts only' },
+    ],
+    syllabus: [
+      { subject:'Quantitative Aptitude', topics:['Number System — Integers, Decimals, Fractions, LCM & HCF','Percentage, Ratio & Proportion','Average, Age Problems','Simple & Compound Interest','Profit, Loss & Discount','Time & Work, Pipe & Cistern','Time, Speed & Distance — Trains, Boats','Algebra — Linear & Quadratic Equations','Geometry — Triangles, Circles, Quadrilaterals','Trigonometry — Heights & Distances','Mensuration — 2D & 3D','Data Interpretation — Tables, Bar, Pie, Line Charts'] },
+      { subject:'English Language', topics:['Spotting Errors','Fill in the Blanks','Synonyms & Antonyms','Spelling Corrections','Idioms & Phrases','One Word Substitution','Sentence Improvement','Sentence Rearrangement (Para Jumbles)','Comprehension Passage','Cloze Test'] },
+      { subject:'General Awareness (GK)', topics:['History — Ancient, Medieval & Modern India','Geography — Indian & World','Indian Polity & Constitution','Indian Economy — Planning, Banking, Budget','Science — Physics, Chemistry, Biology','Environment & Ecology','Current Affairs — National & International','Sports, Awards & Honours','Books & Authors','Static GK — Countries, Currencies, Capitals'] },
+      { subject:'GI & Reasoning', topics:['Analogy','Classification','Series — Number, Alphabetic','Coding-Decoding','Blood Relations','Direction & Distance','Syllogism','Matrix','Venn Diagram','Mirror & Water Image','Paper Folding & Cutting','Embedded Figures','Missing Number'] },
+    ]
+  },
+  {
+    id: 'ssc-chsl',
+    name: 'SSC CHSL (Combined Higher Secondary Level)',
+    shortName: 'SSC CHSL',
+    icon: '📝',
+    category: 'SSC',
+    body: 'Staff Selection Commission',
+    level: 'National',
+    eligibility: 'Class 12, Age 18–27',
+    stages: ['Tier I', 'Tier II'],
+    overview: 'Recruitment for Lower Division Clerk (LDC), Junior Secretariat Assistant (JSA), Postal Assistant (PA), Sorting Assistant (SA) and Data Entry Operator (DEO) posts in Central Government offices. Skill test/typing test is qualifying.',
+    pattern: [
+      { stage:'Tier I', paper:'GI & Reasoning', qs:'25', marks:'50', duration:'60 min', neg:'-0.50', notes:'Online CBE' },
+      { stage:'Tier I', paper:'General Awareness', qs:'25', marks:'50', duration:'—', neg:'-0.50', notes:'' },
+      { stage:'Tier I', paper:'Quantitative Aptitude', qs:'25', marks:'50', duration:'—', neg:'-0.50', notes:'' },
+      { stage:'Tier I', paper:'English Language', qs:'25', marks:'50', duration:'—', neg:'-0.50', notes:'' },
+      { stage:'Tier I', paper:'Total', qs:'100', marks:'200', duration:'60 min', neg:'—', notes:'', isTotal:true },
+      { stage:'Tier II Part A', paper:'English Language & Comprehension', qs:'100', marks:'200', duration:'1 hr', neg:'-1', notes:'All candidates' },
+      { stage:'Tier II Part B', paper:'GK & Reasoning', qs:'75', marks:'150', duration:'1 hr', neg:'-1', notes:'All candidates' },
+      { stage:'Tier II Part C', paper:'Math Basic', qs:'75', marks:'150', duration:'1 hr', neg:'-1', notes:'All candidates' },
+      { stage:'Tier II Part D', paper:'Skill / Typing Test', qs:'—', marks:'Qualifying', duration:'15 min', neg:'—', notes:'Typing/DEO skill' },
+    ],
+    syllabus: [
+      { subject:'Quantitative Aptitude (Class 10+2 level)', topics:['Number System, Fraction, Decimals, Surds & Indices','Percentage, Ratio & Proportion','Simple & Compound Interest','Profit & Loss, Discount','Time & Work, Speed & Distance','Geometry — Triangles, Quadrilaterals, Circles','Mensuration — Areas & Volumes','Basic Algebra & Trigonometry','Data Interpretation'] },
+      { subject:'English Language', topics:['Spotting Errors, Phrases & Idioms','One Word Substitution','Spelling Corrections','Fill in the Blanks','Synonyms & Antonyms','Reading Comprehension','Sentence Correction & Improvement','Para Jumbles','Cloze Test'] },
+      { subject:'General Awareness', topics:['History, Geography, Polity, Economy','Science & Technology','Current Affairs','Sports & Awards','Books & Authors','Static GK'] },
+      { subject:'Reasoning', topics:['Analogy, Classification, Series','Coding-Decoding, Blood Relations','Directions, Syllogism','Mirror Image, Cube & Dice','Paper Folding, Embedded Figures'] },
+    ]
+  },
+  {
+    id: 'ssc-gd',
+    name: 'SSC GD Constable',
+    shortName: 'SSC GD',
+    icon: '🚓',
+    category: 'SSC',
+    body: 'Staff Selection Commission',
+    level: 'National',
+    eligibility: 'Class 10, Age 18–23',
+    stages: ['CBE', 'PET', 'PST', 'Medical'],
+    overview: 'Recruitment for Constable (GD) in CAPFs — BSF, CISF, CRPF, SSB, ITBP, SAI, NCB and Rifleman in Assam Rifles. Physical tests are qualifying. Final merit is based on written exam marks.',
+    pattern: [
+      { stage:'CBE', paper:'GI & Reasoning', qs:'20', marks:'40', duration:'60 min', neg:'-0.50', notes:'Online' },
+      { stage:'CBE', paper:'General Knowledge & General Awareness', qs:'20', marks:'40', duration:'—', neg:'-0.50', notes:'' },
+      { stage:'CBE', paper:'Elementary Mathematics', qs:'20', marks:'40', duration:'—', neg:'-0.50', notes:'' },
+      { stage:'CBE', paper:'English / Hindi', qs:'20', marks:'40', duration:'—', neg:'-0.50', notes:'Choice of language' },
+      { stage:'CBE', paper:'Total', qs:'80', marks:'160', duration:'60 min', neg:'—', notes:'', isTotal:true },
+      { stage:'PET', paper:'Physical Efficiency Test', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'Run/Beam/Long Jump' },
+      { stage:'PST', paper:'Physical Standard Test', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'Height, Chest, Weight' },
+      { stage:'Medical', paper:'Medical Examination', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'' },
+    ],
+    syllabus: [
+      { subject:'Elementary Mathematics (Class 10)', topics:['Number System, LCM, HCF','Percentage, Ratio, Proportion','Simple & Compound Interest','Average, Time & Work','Speed, Distance & Time','Mensuration & Geometry Basics','Data Handling'] },
+      { subject:'English / Hindi', topics:['Grammar — Tense, Voice, Narration','Vocabulary — Synonyms, Antonyms','Reading Comprehension','Fill in the Blanks','Error Detection'] },
+      { subject:'General Knowledge & General Awareness', topics:['Current Affairs — National & International','Indian History','Geography','Indian Polity & Constitution','Science & Technology','Sports & Awards'] },
+      { subject:'GI & Reasoning', topics:['Analogy, Classification','Series Completion','Coding-Decoding','Blood Relations','Direction Test','Mirror Image, Dice'] },
+    ]
+  },
+  {
+    id: 'ssc-mts',
+    name: 'SSC MTS (Multi Tasking Staff)',
+    shortName: 'SSC MTS',
+    icon: '🗂️',
+    category: 'SSC',
+    body: 'Staff Selection Commission',
+    level: 'National',
+    eligibility: 'Class 10, Age 18–25',
+    stages: ['Session I', 'Session II', 'Document Verification'],
+    overview: 'Recruitment for Multi Tasking Staff (Non-Technical) and Havaldar (CBIC & CBN) in Central Government offices. No negative marking. Session II is only for Havaldar posts.',
+    pattern: [
+      { stage:'Session I', paper:'Numerical & Mathematical Ability', qs:'20', marks:'60', duration:'45 min', neg:'None', notes:'All MTS & Havaldar' },
+      { stage:'Session I', paper:'Reasoning & Problem Solving', qs:'20', marks:'60', duration:'—', neg:'None', notes:'' },
+      { stage:'Session II', paper:'General Awareness', qs:'25', marks:'75', duration:'45 min', neg:'None', notes:'Havaldar posts only' },
+      { stage:'Session II', paper:'English Language & Comprehension', qs:'25', marks:'75', duration:'—', neg:'None', notes:'Havaldar posts only' },
+    ],
+    syllabus: [
+      { subject:'Numerical & Mathematical Ability', topics:['Number System, Integers, Fractions','LCM & HCF, Decimals','Simple Equations, Percentages','Profit & Loss, Discount','Ratio & Proportion','Basic Mensuration','Elementary Statistics'] },
+      { subject:'Reasoning & Problem Solving', topics:['Non-Verbal Reasoning — Figures, Patterns','Analogy, Similarity & Differences','Space Visualization, Spatial Orientation','Discrimination & Observation','Relationships, Arithmetical Reasoning','Problem-Solving, Analysis, Judgment'] },
+      { subject:'General Awareness (Havaldar)', topics:['Current Events','Indian History & Geography','Polity & Governance','Science & Technology','Environment','Sports & Cultural Events'] },
+      { subject:'English Language (Havaldar)', topics:['Vocabulary, Grammar','Sentence Structure','Synonyms, Antonyms','Reading Comprehension','Fill in the Blanks','Spotting Errors'] },
+    ]
+  },
+  {
+    id: 'ssc-cpo',
+    name: 'SSC CPO (SI CAPF / ASI CISF)',
+    shortName: 'SSC CPO',
+    icon: '🔒',
+    category: 'SSC',
+    body: 'Staff Selection Commission',
+    level: 'National',
+    eligibility: 'Graduation, Age 20–25',
+    stages: ['Paper I', 'PET/PST/Medical', 'Paper II'],
+    overview: 'Recruitment for Sub-Inspector in CPO (BSF, CISF, CRPF, SSB, ITBP) and ASI in CISF. Paper II is English-focused and tests language proficiency specifically.',
+    pattern: [
+      { stage:'Paper I', paper:'GI & Reasoning', qs:'50', marks:'50', duration:'2 hr (combined)', neg:'-0.25', notes:'Online CBE' },
+      { stage:'Paper I', paper:'General Knowledge & Awareness', qs:'50', marks:'50', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Paper I', paper:'Quantitative Aptitude', qs:'50', marks:'50', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Paper I', paper:'English Comprehension', qs:'50', marks:'50', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Paper I', paper:'Total', qs:'200', marks:'200', duration:'2 hr', neg:'—', notes:'', isTotal:true },
+      { stage:'Physical Tests', paper:'PET + PST + Medical', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'Qualifying — must clear' },
+      { stage:'Paper II', paper:'English Language & Comprehension', qs:'200', marks:'200', duration:'2 hr', neg:'-0.25', notes:'English proficiency' },
+    ],
+    syllabus: [
+      { subject:'Quantitative Aptitude', topics:['Number System, HCF, LCM','Percentage, Average, Ratio','Profit & Loss, SI & CI','Time & Work, Speed & Distance','Algebra, Geometry, Trigonometry','Mensuration','Data Interpretation'] },
+      { subject:'English Comprehension (Paper I & II)', topics:['Spotting Errors','Fill in the Blanks, Synonyms & Antonyms','Spelling, Idioms & Phrases','One Word Substitution','Sentence Improvement','Active/Passive Voice, Direct/Indirect Speech','Comprehension Passages','Para Jumbles, Cloze Test'] },
+      { subject:'General Knowledge', topics:['Indian History, Culture, Heritage','Geography — Physical, Indian, World','Polity & Constitution','Economy & Planning','Science — Physics, Chemistry, Biology','Environment & Ecology','Current Affairs, Sports, Books & Authors'] },
+      { subject:'GI & Reasoning', topics:['Analogies, Similarities & Differences','Spatial Visualisation, Discrimination','Observation, Relationships','Arithmetical Reasoning','Verbal & Figure Classification','Series, Coding-Decoding'] },
+    ]
+  },
+  {
+    id: 'ibps-po',
+    name: 'IBPS PO (Probationary Officer)',
+    shortName: 'IBPS PO',
+    icon: '🏦',
+    category: 'Banking',
+    body: 'Institute of Banking Personnel Selection',
+    level: 'National',
+    eligibility: 'Graduation, Age 20–30',
+    stages: ['Prelims', 'Mains', 'Interview'],
+    overview: 'Common recruitment process for Probationary Officers in 11+ Public Sector Banks across India. Final merit is 80% Mains + 20% Interview. Mains includes a 30-min descriptive English paper.',
+    pattern: [
+      { stage:'Prelims', paper:'English Language', qs:'30', marks:'30', duration:'20 min', neg:'-0.25', notes:'Sectional time limits' },
+      { stage:'Prelims', paper:'Quantitative Aptitude', qs:'35', marks:'35', duration:'20 min', neg:'-0.25', notes:'' },
+      { stage:'Prelims', paper:'Reasoning Ability', qs:'35', marks:'35', duration:'20 min', neg:'-0.25', notes:'' },
+      { stage:'Prelims', paper:'Total', qs:'100', marks:'100', duration:'60 min', neg:'—', notes:'', isTotal:true },
+      { stage:'Mains', paper:'Reasoning & Computer Aptitude', qs:'45', marks:'60', duration:'60 min', neg:'-0.25', notes:'' },
+      { stage:'Mains', paper:'English Language', qs:'35', marks:'40', duration:'40 min', neg:'-0.25', notes:'' },
+      { stage:'Mains', paper:'Data Analysis & Interpretation', qs:'35', marks:'60', duration:'45 min', neg:'-0.25', notes:'' },
+      { stage:'Mains', paper:'General Economy & Banking Awareness', qs:'40', marks:'40', duration:'35 min', neg:'-0.25', notes:'' },
+      { stage:'Mains', paper:'English Descriptive', qs:'2 essays/letters', marks:'25', duration:'30 min', neg:'None', notes:'Essay + Letter' },
+      { stage:'Mains', paper:'Total Objective', qs:'155', marks:'200', duration:'3 hr', neg:'—', notes:'', isTotal:true },
+      { stage:'Interview', paper:'Personal Interview', qs:'—', marks:'100', duration:'~15 min', neg:'None', notes:'Merit: 80% Mains + 20% Interview' },
+    ],
+    syllabus: [
+      { subject:'Quantitative Aptitude / Data Analysis', topics:['Number Series, Simplification, Approximation','Quadratic Equations','Data Interpretation — Tables, Bar Graph, Pie Chart, Line Graph, Mixed Chart','Inequality, Quantity I & II','Time & Work, Pipe & Cistern','Time, Speed & Distance — Trains, Boats & Streams','Profit, Loss & Discount, Partnership','Compound & Simple Interest','Average, Percentage, Ratio & Proportion','Mixture & Alligation','Probability'] },
+      { subject:'Reasoning Ability', topics:['Puzzles & Seating Arrangement — Linear, Circular, Square, Tabular','Inequalities — Mathematical & Coded','Syllogism','Input-Output Machine','Blood Relations','Coding-Decoding','Directions & Distances','Order & Ranking','Alpha-Numeric-Symbol Series','Data Sufficiency'] },
+      { subject:'English Language', topics:['Reading Comprehension','Error Detection & Correction','Sentence Rearrangement (Para Jumbles)','Cloze Test & Fillers','Word Usage / Vocabulary','Sentence Completion','Para/Sentence Completion','Essay Writing, Letter Writing (Mains Descriptive)'] },
+      { subject:'General Economy & Banking Awareness', topics:['RBI — Functions, Policies, Monetary Tools','Banking Terminology & Concepts','Financial Awareness — Budget, Economic Survey','Government Schemes — Pradhan Mantri Yojanas','Capital Market — SEBI, Stock Exchanges','International Organisations — IMF, World Bank, WTO','Current Affairs — last 6 months','Static GK — Countries, Currencies, HQs'] },
+    ]
+  },
+  {
+    id: 'ibps-clerk',
+    name: 'IBPS Clerk',
+    shortName: 'IBPS Clerk',
+    icon: '💼',
+    category: 'Banking',
+    body: 'Institute of Banking Personnel Selection',
+    level: 'National',
+    eligibility: 'Graduation, Age 20–28',
+    stages: ['Prelims', 'Mains'],
+    overview: 'Common recruitment for Clerical Cadre posts in Public Sector Banks. No interview stage. Recruitment is state-wise with language proficiency requirements for local language.',
+    pattern: [
+      { stage:'Prelims', paper:'English Language', qs:'30', marks:'30', duration:'20 min', neg:'-0.25', notes:'Sectional time limits' },
+      { stage:'Prelims', paper:'Numerical Ability', qs:'35', marks:'35', duration:'20 min', neg:'-0.25', notes:'' },
+      { stage:'Prelims', paper:'Reasoning Ability', qs:'35', marks:'35', duration:'20 min', neg:'-0.25', notes:'' },
+      { stage:'Prelims', paper:'Total', qs:'100', marks:'100', duration:'60 min', neg:'—', notes:'', isTotal:true },
+      { stage:'Mains', paper:'Reasoning & Computer Aptitude', qs:'50', marks:'60', duration:'45 min', neg:'-0.25', notes:'' },
+      { stage:'Mains', paper:'English Language', qs:'40', marks:'40', duration:'35 min', neg:'-0.25', notes:'' },
+      { stage:'Mains', paper:'Quantitative Aptitude', qs:'50', marks:'50', duration:'45 min', neg:'-0.25', notes:'' },
+      { stage:'Mains', paper:'General / Financial Awareness', qs:'50', marks:'50', duration:'35 min', neg:'-0.25', notes:'' },
+      { stage:'Mains', paper:'Total', qs:'190', marks:'200', duration:'2hr 40 min', neg:'—', notes:'', isTotal:true },
+    ],
+    syllabus: [
+      { subject:'Numerical Ability / Quantitative Aptitude', topics:['Number System, Simplification','Data Interpretation (Table, Bar, Pie, Line)','Number Series, Quadratic Equations','Average, Percentage, Ratio','Profit & Loss, SI & CI','Time & Work, Speed & Distance','Mixture & Alligation','Mensuration Basics'] },
+      { subject:'Reasoning Ability & Computer Aptitude', topics:['Seating Arrangement & Puzzles','Syllogism, Inequalities','Blood Relations, Direction & Distance','Coding-Decoding','Alpha-Numeric Series, Order & Ranking','Computer Fundamentals — Hardware, Software, Networking','MS Office, Internet Basics','Number System (Binary, Decimal)'] },
+      { subject:'English Language', topics:['Reading Comprehension','Error Detection','Cloze Test','Fill in the Blanks','Sentence Rearrangement','Vocabulary — Synonyms, Antonyms'] },
+      { subject:'General / Financial Awareness', topics:['Banking & Financial Terminology','Current Affairs — last 3–6 months','RBI Policies & Guidelines','Government Schemes','Static GK'] },
+    ]
+  },
+  {
+    id: 'sbi-po',
+    name: 'SBI PO (Probationary Officer)',
+    shortName: 'SBI PO',
+    icon: '🏧',
+    category: 'Banking',
+    body: 'State Bank of India',
+    level: 'National',
+    eligibility: 'Graduation, Age 21–30',
+    stages: ['Prelims', 'Mains', 'Group Exercise + Interview'],
+    overview: 'One of the most prestigious banking exams for Probationary Officer posts in State Bank of India. Final merit: 50% Mains + 30% Group Exercise + 20% Interview. SBI independently conducts this exam (not through IBPS).',
+    pattern: [
+      { stage:'Prelims', paper:'English Language', qs:'30', marks:'30', duration:'20 min', neg:'-0.25', notes:'' },
+      { stage:'Prelims', paper:'Quantitative Aptitude', qs:'35', marks:'35', duration:'20 min', neg:'-0.25', notes:'' },
+      { stage:'Prelims', paper:'Reasoning Ability', qs:'35', marks:'35', duration:'20 min', neg:'-0.25', notes:'' },
+      { stage:'Prelims', paper:'Total', qs:'100', marks:'100', duration:'60 min', neg:'—', notes:'', isTotal:true },
+      { stage:'Mains', paper:'Reasoning & Computer Aptitude', qs:'45', marks:'60', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Mains', paper:'Data Analysis & Interpretation', qs:'35', marks:'60', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Mains', paper:'General Economy & Banking Awareness', qs:'40', marks:'40', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Mains', paper:'English Language', qs:'35', marks:'40', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Mains', paper:'English Descriptive', qs:'2 Qs', marks:'50', duration:'30 min', neg:'None', notes:'Essay + Letter/Precis' },
+      { stage:'Mains', paper:'Objective Total', qs:'155', marks:'200', duration:'3 hr', neg:'—', notes:'', isTotal:true },
+      { stage:'GE + Interview', paper:'Group Exercise', qs:'—', marks:'30', duration:'20 min', neg:'None', notes:'50% Mains + 30% GE + 20% Interview' },
+      { stage:'GE + Interview', paper:'Personal Interview', qs:'—', marks:'20', duration:'~15 min', neg:'None', notes:'' },
+    ],
+    syllabus: [
+      { subject:'Quantitative Aptitude / Data Analysis', topics:['Data Interpretation — Advanced Charts, Caselets','Quadratic & Cubic Equations','Number Series, Simplification','Time-Work, Speed-Distance, Boats & Streams','Profit-Loss, Percentage, SI & CI','Probability, Permutation & Combination','Mensuration & Geometry Basics'] },
+      { subject:'Reasoning & Computer Aptitude', topics:['Advanced Puzzles & Seating Arrangement','High-Level Input-Output','Data Sufficiency','Logical Reasoning — Cause & Effect, Course of Action','Computer Fundamentals, Database, Networking, Security','MS Office Applications'] },
+      { subject:'English Language & Descriptive', topics:['Reading Comprehension (Advanced)','Vocabulary — Fill in Blanks, Error Detection','Para Jumbles, Sentence Correction','Essay Writing — Current Topics','Letter Writing — Formal & Informal','Precis Writing'] },
+      { subject:'General Economy & Banking Awareness', topics:['Monetary Policy — Repo, Reverse Repo, CRR, SLR','Banking Acts — RBI Act, Banking Regulation Act','Current Banking News','Union Budget & Economic Survey Highlights','International Financial Institutions','Government Economic Schemes'] },
+    ]
+  },
+  {
+    id: 'rbi-grade-b',
+    name: 'RBI Grade B Officer',
+    shortName: 'RBI Grade B',
+    icon: '🏦',
+    category: 'Banking',
+    body: 'Reserve Bank of India',
+    level: 'National',
+    eligibility: 'Graduation 60%, Age 21–30',
+    stages: ['Phase I', 'Phase II', 'Interview'],
+    overview: 'Direct recruitment to Grade B (Officers\') cadre in Reserve Bank of India — one of the most coveted banking roles. Phase II is highly specialised covering Economics, Finance and Management with both objective and descriptive questions.',
+    pattern: [
+      { stage:'Phase I', paper:'General Awareness', qs:'80', marks:'80', duration:'25 min', neg:'-0.25', notes:'Screening' },
+      { stage:'Phase I', paper:'English Language', qs:'30', marks:'30', duration:'25 min', neg:'-0.25', notes:'' },
+      { stage:'Phase I', paper:'Quantitative Aptitude', qs:'30', marks:'30', duration:'25 min', neg:'-0.25', notes:'' },
+      { stage:'Phase I', paper:'Reasoning', qs:'60', marks:'60', duration:'45 min', neg:'-0.25', notes:'' },
+      { stage:'Phase I', paper:'Total', qs:'200', marks:'200', duration:'120 min', neg:'—', notes:'', isTotal:true },
+      { stage:'Phase II', paper:'Economic & Social Issues (ESI)', qs:'Obj+Desc', marks:'100', duration:'90 min', neg:'-0.25 (Obj)', notes:'Objective + Descriptive' },
+      { stage:'Phase II', paper:'English Writing Skills', qs:'Descriptive', marks:'100', duration:'90 min', neg:'None', notes:'Essay, Comprehension, Precis' },
+      { stage:'Phase II', paper:'Finance & Management', qs:'Obj+Desc', marks:'100', duration:'90 min', neg:'-0.25 (Obj)', notes:'Objective + Descriptive' },
+      { stage:'Phase II', paper:'Total', qs:'—', marks:'300', duration:'270 min', neg:'—', notes:'', isTotal:true },
+      { stage:'Interview', paper:'Personal Interview', qs:'—', marks:'75', duration:'~20 min', neg:'None', notes:'Final selection' },
+    ],
+    syllabus: [
+      { subject:'Economic & Social Issues (ESI)', topics:['Indian Economy — Growth, Development, Planning','Monetary & Fiscal Policy','Inflation, WPI, CPI','RBI Functions & Monetary Instruments','Financial Inclusion & Digital Payments','WTO, IMF, World Bank, ADB','Balance of Payments, Exchange Rate','Poverty, Employment & Social Issues','Sustainable Development Goals','Government Schemes — Economic & Social'] },
+      { subject:'Finance & Management', topics:['Financial System of India — Commercial Banks, NBFCs, MFIs','Capital Market — SEBI, IPO, FPO, Mutual Funds','FRBM Act, Fiscal Consolidation','International Finance — FOREX, Derivatives','Management — Planning, Organising, Directing, Controlling','Organisation Behaviour — Motivation, Leadership, Communication','HR Management — Recruitment, Training, Performance','Strategic Management Concepts'] },
+      { subject:'English Writing Skills', topics:['Essay Writing — Economic & Social Topics','Reading Comprehension — Advanced','Precis Writing','Business Letter Writing','Vocabulary & Grammar in Context'] },
+      { subject:'General Awareness (Phase I)', topics:['Current Affairs — last 12 months','Banking & Financial News','RBI Circulars & Guidelines','Government Economic Policy','International Events','Awards, Sports, Science'] },
+    ]
+  },
+  {
+    id: 'rrb-ntpc',
+    name: 'RRB NTPC (Non-Technical Popular Categories)',
+    shortName: 'RRB NTPC',
+    icon: '🚂',
+    category: 'Railway',
+    body: 'Railway Recruitment Board',
+    level: 'National',
+    eligibility: 'Class 12 / Graduation (varies by post), Age 18–33',
+    stages: ['CBT 1', 'CBT 2', 'Skill Test / Typing', 'Document Verification'],
+    overview: 'One of the largest government recruitment drives. Covers posts from Level 2 to Level 6 in Indian Railways. Posts: Junior Clerk, Traffic Assistant, Station Master, Goods Guard, Commercial Apprentice, etc. CBT 2 has higher difficulty than CBT 1.',
+    pattern: [
+      { stage:'CBT 1', paper:'Mathematics', qs:'30', marks:'30', duration:'90 min (combined)', neg:'-0.33 (1/3)', notes:'Screening exam' },
+      { stage:'CBT 1', paper:'General Intelligence & Reasoning', qs:'30', marks:'30', duration:'—', neg:'-0.33', notes:'' },
+      { stage:'CBT 1', paper:'General Awareness', qs:'40', marks:'40', duration:'—', neg:'-0.33', notes:'' },
+      { stage:'CBT 1', paper:'Total', qs:'100', marks:'100', duration:'90 min', neg:'—', notes:'', isTotal:true },
+      { stage:'CBT 2', paper:'Mathematics', qs:'35', marks:'35', duration:'90 min (combined)', neg:'-0.33', notes:'Higher difficulty; Graduate level posts: 120 Qs' },
+      { stage:'CBT 2', paper:'General Intelligence & Reasoning', qs:'35', marks:'35', duration:'—', neg:'-0.33', notes:'' },
+      { stage:'CBT 2', paper:'General Awareness', qs:'50', marks:'50', duration:'—', neg:'-0.33', notes:'' },
+      { stage:'CBT 2', paper:'Total', qs:'120', marks:'120', duration:'90 min', neg:'—', notes:'', isTotal:true },
+      { stage:'Skill Test', paper:'Typing Test / Aptitude Test', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'Post-specific' },
+    ],
+    syllabus: [
+      { subject:'Mathematics', topics:['Number System, Decimals, Fractions, LCM & HCF','Ratio & Proportions, Percentages','Mensuration — 2D & 3D','Time & Work, Pipe & Cistern','Time, Speed & Distance','Simple & Compound Interest','Profit & Loss, Discount','Elementary Algebra','Geometry & Trigonometry','Elementary Statistics & Data Interpretation'] },
+      { subject:'General Intelligence & Reasoning', topics:['Analogies, Alphabetical & Number Series','Coding-Decoding','Mathematical Operations','Similarities & Differences','Relationships, Analytical Reasoning','Syllogism, Jumbling','Venn Diagram','Data Sufficiency','Conclusions & Decision Making','Maps, Interpretation of Graphs'] },
+      { subject:'General Awareness', topics:['Current Events — National & International','Science & Technology — New Discoveries & Innovations','Sports & Awards — National & International','Art & Culture, Indian History & Heritage','India\'s Geography, Flora & Fauna','Indian Economy & Trade','Indian Polity & Governance','Famous Personalities','General Scientific & Technological Developments','Games & Sports of India','Abbreviations & Economic Terminology'] },
+    ]
+  },
+  {
+    id: 'rrb-group-d',
+    name: 'RRB Group D',
+    shortName: 'RRB Group D',
+    icon: '🛤️',
+    category: 'Railway',
+    body: 'Railway Recruitment Board',
+    level: 'National',
+    eligibility: 'Class 10 / ITI, Age 18–33',
+    stages: ['CBT', 'PET', 'Document Verification'],
+    overview: 'Recruitment for Level 1 posts in Indian Railways — Track Maintainer Grade IV, Helper/Assistant in various technical departments, Assistant Pointsman, Porter, etc. Physical Efficiency Test is qualifying.',
+    pattern: [
+      { stage:'CBT', paper:'Mathematics', qs:'25', marks:'25', duration:'90 min (combined)', neg:'-0.33 (1/3)', notes:'Online' },
+      { stage:'CBT', paper:'General Intelligence & Reasoning', qs:'30', marks:'30', duration:'—', neg:'-0.33', notes:'' },
+      { stage:'CBT', paper:'General Science', qs:'25', marks:'25', duration:'—', neg:'-0.33', notes:'' },
+      { stage:'CBT', paper:'General Awareness & Current Affairs', qs:'20', marks:'20', duration:'—', neg:'-0.33', notes:'' },
+      { stage:'CBT', paper:'Total', qs:'100', marks:'100', duration:'90 min', neg:'—', notes:'', isTotal:true },
+      { stage:'PET', paper:'Physical Efficiency Test', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'Run, Weight Lifting tests' },
+    ],
+    syllabus: [
+      { subject:'Mathematics (Class 10)', topics:['Number System, BODMAS','Decimals, Fractions, LCM & HCF','Ratio & Proportions','Percentages, Mensuration','Time & Work, Time & Distance','Simple & Compound Interest','Profit & Loss, Discount','Elementary Algebra, Geometry'] },
+      { subject:'General Science (Class 10)', topics:['Physics — Units, Measurements, Motion, Newton\'s Laws, Work-Energy, Sound, Light, Electricity, Magnetism','Chemistry — Elements, Compounds, Mixtures, Acids & Bases, Salts, Metals & Non-metals','Life Sciences — Cell, Plant Physiology, Human Body — Digestive, Circulatory, Nervous Systems, Diseases','Environmental Science Basics'] },
+      { subject:'General Intelligence & Reasoning', topics:['Analogies, Alphabetical & Number Series','Coding & Decoding, Mathematical Operations','Similarities & Differences, Jumbling','Venn Diagram, Data Interpretation & Sufficiency','Conclusions & Decision Making'] },
+      { subject:'General Awareness & Current Affairs', topics:['Current Events — last 1 year','Indian History, Geography, Polity','Environment, Science & Technology','Sports & Prominent Personalities'] },
+    ]
+  },
+  {
+    id: 'bpsc-cce',
+    name: 'BPSC CCE (Combined Competitive Exam)',
+    shortName: 'BPSC CCE',
+    icon: '🏙️',
+    category: 'Bihar Specific',
+    body: 'Bihar Public Service Commission',
+    level: 'State',
+    eligibility: 'Graduation, Age 20–37',
+    stages: ['Prelims', 'Mains', 'Interview'],
+    overview: 'The gateway to Group A & B services in Bihar. Key posts include Deputy Collector, DSP, CDPO, Revenue Officer, Sub-Registrar. No negative marking in Prelims. Mains is entirely descriptive. Bihar-specific content is crucial in both Prelims & Mains.',
+    pattern: [
+      { stage:'Prelims', paper:'General Studies (Single Paper)', qs:'150', marks:'150', duration:'2 hr', neg:'None', notes:'No negative marking — unique feature' },
+      { stage:'Mains', paper:'Hindi (Qualifying)', qs:'—', marks:'100 (of 900 allotted)', duration:'3 hr', neg:'None', notes:'Qualifying; must clear' },
+      { stage:'Mains', paper:'GS Paper I', qs:'—', marks:'300', duration:'3 hr', neg:'None', notes:'Descriptive' },
+      { stage:'Mains', paper:'GS Paper II', qs:'—', marks:'300', duration:'3 hr', neg:'None', notes:'Descriptive' },
+      { stage:'Mains', paper:'Optional Subject Paper', qs:'—', marks:'300', duration:'3 hr', neg:'None', notes:'1 paper; 34 subjects to choose' },
+      { stage:'Mains', paper:'Total (GS1+GS2+Optional)', qs:'—', marks:'900', duration:'—', neg:'—', notes:'', isTotal:true },
+      { stage:'Interview', paper:'Personality Test', qs:'—', marks:'120', duration:'~20 min', neg:'None', notes:'Final selection' },
+    ],
+    syllabus: [
+      { subject:'Prelims General Studies', topics:['General Science — Physics, Chemistry, Biology (Applied aspects)','Current National & International Events','History of India with special emphasis on Bihar','Geography of India with special emphasis on Bihar','Indian Polity & Economy','Changes & Development in Indian Economy','Role & Impact of Science & Technology in India\'s Development','Mental Ability Test — Logical Reasoning, Numerical Ability, Data Interpretation'] },
+      { subject:'Mains GS Paper I', topics:['Indian Culture & Civilization — Contributions of Bihar & Patna','Modern History of India & Bihar (1857–1947) — Freedom Movement, Major Events & Personalities','Indian Geography — Physical, Economic, Social','Bihar Geography — River System, Soil, Agriculture, Natural Resources','Post-independence India — Major Events, Political & Economic Development','Disaster Management — Natural Disasters & Bihar Context','Climate — Monsoon, Weather Patterns, Bihar Climate'] },
+      { subject:'Mains GS Paper II', topics:['Indian Political System — Parliament, Judiciary, Executive','Panchayati Raj System — 73rd & 74th Constitutional Amendment','Planning Process — Five Year Plans to NITI Aayog','Indian Economy & Reforms since 1991 — Liberalisation, Privatisation, Globalisation','Social Issues — Caste, Communalism, Poverty, Unemployment','Women\'s Issues — Self-help Groups, Empowerment Schemes','Bihar Special — Statistics, Demographic Profile, Government Schemes','Science & Technology — Contemporary Indian Developments','National & International Current Events','Role of Bihar in Indian Freedom Struggle — Gandhi, Rajendra Prasad, Jayaprakash Narayan'] },
+      { subject:'Optional Subjects (Choose 1 of 34)', topics:['Agriculture','Animal Husbandry','Anthropology','Botany','Chemistry','Civil Engineering','Commerce & Accountancy','Economics','Electrical Engineering','Geography','Geology','Hindi Literature','History','Law','Management','Mathematics','Mechanical Engineering','Medical Science','Philosophy','Physics','Political Science','Psychology','Public Administration','Sociology','Statistics','Zoology','…and more'] },
+    ]
+  },
+  {
+    id: 'bihar-si',
+    name: 'Bihar Daroga / SI (BPSSC)',
+    shortName: 'Bihar SI',
+    icon: '👮',
+    category: 'Bihar Specific',
+    body: 'Bihar Police Subordinate Services Commission',
+    level: 'State',
+    eligibility: 'Graduation, Age 20–37',
+    stages: ['Preliminary Written', 'Mains Written', 'PET / PST'],
+    overview: 'Recruitment of Sub-Inspectors in Bihar Police. Preliminary exam covers Hindi & General Studies. Final merit is based on Prelims + Mains combined score. Physical tests are qualifying. Hindi is a major focus in both stages.',
+    pattern: [
+      { stage:'Preliminary', paper:'General Hindi', qs:'50', marks:'100', duration:'2 hr (combined)', neg:'-0.20', notes:'Prelims screening' },
+      { stage:'Preliminary', paper:'General Studies', qs:'50', marks:'100', duration:'—', neg:'-0.20', notes:'' },
+      { stage:'Preliminary', paper:'Total', qs:'100', marks:'200', duration:'2 hr', neg:'—', notes:'', isTotal:true },
+      { stage:'Mains', paper:'General Hindi', qs:'100', marks:'200', duration:'2 hr', neg:'-0.20', notes:'Hindi proficiency focus' },
+      { stage:'Physical Tests', paper:'PET + PST', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'Run, Height, Chest qualifying' },
+    ],
+    syllabus: [
+      { subject:'General Hindi', topics:['Hindi Grammar — Sandhi, Samas, Karak, Upsarg, Pratyay, Alankar','Vocabulary — Paryayvachi, Vilom, Muhavare, Lokoktiyan','Reading Comprehension in Hindi','Hindi Literature Basics — Major Works & Authors','Letter Writing in Hindi','Error Detection & Correction in Hindi sentences'] },
+      { subject:'General Studies', topics:['Bihar History — Ancient, Medieval, Modern Bihar','Bihar Culture & Heritage — Festivals, Art, Literature','Bihar Geography — Rivers, Soil, Agriculture, Districts & Headquarters','National Current Events — last 6 months','Science & Technology — Applied Science for daily life','Indian Polity — Parliament, Constitution, Panchayati Raj','Indian Economy — Key Indicators, RBI, Banking Basics','Social Issues — Women Empowerment, Child Rights, SC/ST Issues','Sports — National & International','Literature & Books — National Level Awards'] },
+    ]
+  },
+  {
+    id: 'bihar-constable',
+    name: 'Bihar Police Constable (CSBC)',
+    shortName: 'Bihar Constable',
+    icon: '🚔',
+    category: 'Bihar Specific',
+    body: 'Central Selection Board of Constable (Bihar)',
+    level: 'State',
+    eligibility: 'Class 10+2, Age 18–25',
+    stages: ['Written Exam', 'PST', 'PET', 'Medical'],
+    overview: 'Recruitment of Constables in Bihar Police. No negative marking in written exam. All physical tests are qualifying. Subject-wise: Hindi 25 Qs + General Studies 35 Qs + Current Affairs 10 Qs + Maths 20 Qs + Science & Tech 10 Qs = 100 Qs.',
+    pattern: [
+      { stage:'Written', paper:'Hindi', qs:'25', marks:'25', duration:'2 hr (combined)', neg:'None', notes:'No negative marking' },
+      { stage:'Written', paper:'General Studies', qs:'35', marks:'35', duration:'—', neg:'None', notes:'' },
+      { stage:'Written', paper:'Current Affairs', qs:'10', marks:'10', duration:'—', neg:'None', notes:'' },
+      { stage:'Written', paper:'Mathematics', qs:'20', marks:'20', duration:'—', neg:'None', notes:'' },
+      { stage:'Written', paper:'Science & Technology', qs:'10', marks:'10', duration:'—', neg:'None', notes:'' },
+      { stage:'Written', paper:'Total', qs:'100', marks:'100', duration:'2 hr', neg:'None', notes:'', isTotal:true },
+      { stage:'Physical Tests', paper:'PST + PET', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'Run, Height, Weight qualifying' },
+      { stage:'Medical', paper:'Medical Examination', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'' },
+    ],
+    syllabus: [
+      { subject:'Hindi', topics:['Basic Hindi Grammar — Nouns, Pronouns, Verbs, Adjectives','Sandhi, Samas — Basic Concepts','Vocabulary — Common Synonyms, Antonyms','Muhavare & Lokoktiyan — Common Phrases','Simple Comprehension Passage','Fill in the Blanks in Hindi'] },
+      { subject:'General Studies', topics:['Bihar History — Important Events, Kingdoms, Freedom Movement','Bihar Geography — Major Rivers, Mountains, Districts','Indian History — Freedom Struggle','Indian Geography — Major Physical Divisions','Indian Polity — Constitution Basics, Parliament, Fundamental Rights','Basic Economic Concepts','Culture & Heritage of Bihar'] },
+      { subject:'Mathematics (Class 10)', topics:['Number System, Arithmetic Operations','LCM & HCF, Fractions, Decimals','Percentage, Ratio & Proportion','Simple Interest','Average, Time & Work','Basic Geometry — Area, Perimeter'] },
+      { subject:'Science & Technology', topics:['Basic Physics — Motion, Energy, Light, Sound','Basic Chemistry — Elements, Compounds, Mixtures','Biology — Human Body Basics, Diseases','Environment & Ecology Basics','Scientific Discoveries & Inventions'] },
+      { subject:'Current Affairs', topics:['Recent National Events — last 3–6 months','Bihar State News','Sports — Recent Champions & Events','Awards & Honours','New Government Schemes'] },
+    ]
+  },
+  {
+    id: 'uppcs',
+    name: 'UPPCS (UP PCS) — Uttar Pradesh',
+    shortName: 'UP PCS',
+    icon: '🗺️',
+    category: 'State PSC',
+    body: 'Uttar Pradesh Public Service Commission',
+    level: 'State',
+    eligibility: 'Graduation, Age 21–40',
+    stages: ['Prelims', 'Mains', 'Interview'],
+    overview: 'Recruitment to Group A & B services in Uttar Pradesh. Posts include Deputy Collector, DSP, Assistant Commissioner, Block Development Officer (BDO), etc. CSAT is qualifying. UP-specific content features heavily in mains. One of the most competitive state PSC exams.',
+    pattern: [
+      { stage:'Prelims', paper:'GS Paper I', qs:'150', marks:'150', duration:'2 hr', neg:'-0.33 (1/3)', notes:'Merit-based shortlisting' },
+      { stage:'Prelims', paper:'CSAT Paper II', qs:'100', marks:'200', duration:'2 hr', neg:'—', notes:'Qualifying — 33% needed; no merit' },
+      { stage:'Mains', paper:'General Studies I', qs:'—', marks:'200', duration:'3 hr', neg:'None', notes:'Descriptive' },
+      { stage:'Mains', paper:'General Studies II', qs:'—', marks:'200', duration:'3 hr', neg:'None', notes:'Descriptive' },
+      { stage:'Mains', paper:'General Studies III', qs:'—', marks:'200', duration:'3 hr', neg:'None', notes:'Descriptive' },
+      { stage:'Mains', paper:'General Studies IV (Ethics)', qs:'—', marks:'200', duration:'3 hr', neg:'None', notes:'Descriptive' },
+      { stage:'Mains', paper:'Hindi (Qualifying)', qs:'—', marks:'150', duration:'3 hr', neg:'None', notes:'Must qualify' },
+      { stage:'Mains', paper:'Optional Paper I', qs:'—', marks:'200', duration:'3 hr', neg:'None', notes:'Descriptive' },
+      { stage:'Mains', paper:'Optional Paper II', qs:'—', marks:'200', duration:'3 hr', neg:'None', notes:'Descriptive' },
+      { stage:'Mains', paper:'Total Written', qs:'—', marks:'1400', duration:'—', neg:'—', notes:'', isTotal:true },
+      { stage:'Interview', paper:'Personality Test', qs:'—', marks:'100', duration:'~20 min', neg:'None', notes:'Final selection' },
+    ],
+    syllabus: [
+      { subject:'Prelims GS I', topics:['History — Ancient, Medieval, Modern India with UP emphasis','Geography — Indian & UP Geography','Indian Polity & Governance','Indian Economy','General Science','Environment & Ecology','Current Affairs — National, International, UP State','Elementary Arithmetic & Statistical Analysis','General Hindi'] },
+      { subject:'Prelims CSAT (Qualifying)', topics:['Reading Comprehension','Logical Reasoning & Analytical Ability','General Mental Ability','Basic Numeracy (Class X level)','Data Interpretation','Communication Skill & Interpersonal Skill'] },
+      { subject:'Mains GS I — History, Art & Culture, Geography', topics:['History of India from earliest times to 1857','1857 to Independence — National Movement','Post-Independence India','Indian Art & Culture — especially UP heritage','UP\'s History — Major Kingdoms, Events, Personalities','Physical, Economic & Social Geography of India','Geography of UP — Rivers, Soil, Agriculture, Forests'] },
+      { subject:'Mains GS II — Governance, Constitution, Polity', topics:['Indian Constitutional Framework — Historical Development, Salient Features, Amendments','Functioning of Union & State Government','Panchayati Raj — 73rd & 74th Amendments','Social Justice & Welfare Schemes','UP Administrative System & Governance','India\'s Foreign Policy & International Relations','Role of Civil Society & NGOs'] },
+      { subject:'Mains GS III — Economy, S&T, Environment', topics:['Indian Economy — Growth, Planning, Development','UP Economy — Agriculture, Industry, Infrastructure','Science & Technology — Developments & Innovations','Environmental Issues — Climate Change, Biodiversity','Disaster Management — UP Context','Energy Resources — Conventional & Non-conventional'] },
+      { subject:'Mains GS IV — Ethics, Integrity & Aptitude', topics:['Essence, Determinants & Consequences of Ethics','Public Service Values & Ethics in Administration','Accountability & Ethical Concerns','Emotional Intelligence & Its Application','Contributions of Moral Thinkers from India & World','Case Studies — Administrative Ethics','Probity in Governance, Anti-corruption Measures'] },
+    ]
+  },
+  {
+    id: 'afcat',
+    name: 'AFCAT (Air Force Common Admission Test)',
+    shortName: 'AFCAT',
+    icon: '✈️',
+    category: 'Defence',
+    body: 'Indian Air Force',
+    level: 'National',
+    eligibility: 'Graduation 60%, Age 20–26',
+    stages: ['AFCAT Written', 'EKT (Technical Branch)', 'AFSB Interview'],
+    overview: 'Conducted twice a year by IAF for Flying Branch, Technical Branch and Ground Duty Branch officer recruitment. EKT (Engineering Knowledge Test) is only for Technical Branch. Negative marking: -1 per wrong answer. AFSB is a 5-day selection process.',
+    pattern: [
+      { stage:'AFCAT Written', paper:'General Awareness', qs:'25', marks:'75', duration:'2 hr (combined)', neg:'-1', notes:'3 marks per Q' },
+      { stage:'AFCAT Written', paper:'Verbal Ability in English', qs:'25', marks:'75', duration:'—', neg:'-1', notes:'' },
+      { stage:'AFCAT Written', paper:'Numerical Ability', qs:'15', marks:'45', duration:'—', neg:'-1', notes:'' },
+      { stage:'AFCAT Written', paper:'Reasoning & Military Aptitude', qs:'35', marks:'105', duration:'—', neg:'-1', notes:'' },
+      { stage:'AFCAT Written', paper:'Total', qs:'100', marks:'300', duration:'2 hr', neg:'—', notes:'', isTotal:true },
+      { stage:'EKT', paper:'Engineering Knowledge Test', qs:'50', marks:'150', duration:'45 min', neg:'-1', notes:'Technical Branch only — 3 marks per Q; Mech/CS/Elec/Civil streams' },
+      { stage:'AFSB', paper:'Air Force Selection Board Interview', qs:'—', marks:'—', duration:'5 days', neg:'None', notes:'Psychological Tests, GTO, Interview' },
+    ],
+    syllabus: [
+      { subject:'General Awareness', topics:['History — India, World, Defence History','Geography — India, World Physical Geography','Civics & Polity — Constitution, Parliament, Governance','Political Science — Political Systems','Economics — Basic Concepts, Indian Economy','Science — Physics (Motion, Electricity), Chemistry (Basic), Biology (Human body)','Defence & Military History — IAF History, Wars, Weapons','Current Affairs — National & International','Sports — Cricket, Olympics, Commonwealth Games'] },
+      { subject:'Verbal Ability in English', topics:['Comprehension Passage','Fill in the Blanks','Error Detection','Synonyms & Antonyms','Sentence Completion & Ordering','Cloze Test','Vocabulary — Idioms, Phrases'] },
+      { subject:'Numerical Ability', topics:['Decimal & Fractions, LCM & HCF','Time & Work, Pipe & Cisterns','Profit & Loss, Discount','Ratio & Proportions, Percentages','Averages','Simple & Compound Interest','Simple Equations, Linear Algebra Basics','Speed, Time & Distance'] },
+      { subject:'Reasoning & Military Aptitude', topics:['Verbal Reasoning — Analogies, Classification, Series','Non-Verbal Reasoning — Figure Classification, Series, Matrix','Spatial Reasoning — Figure Completion, Mirror Image','Mechanical Aptitude — Levers, Gears, Pulleys, Hydraulics','Military Aptitude — Leadership, Spatial Awareness'] },
+      { subject:'EKT (Engineering Knowledge Test)', topics:['Mechanical: Thermodynamics, Manufacturing Processes, Theory of Machines, Fluid Mechanics','Electronics & Communication: Basic Electronics, Signals & Systems, Communication Systems','Computer Science: Computer Fundamentals, Programming, Data Structures, Networks','Civil: Structural Analysis, Fluid Mechanics, Construction Materials'] },
+    ]
+  },
+];
+
+/* ══════════════════════════════════════════════════════════
+   STATE
+══════════════════════════════════════════════════════════ */
+let currentCat = 'all';
+let currentExam = EXAMS[0];
+let currentTab = 'overview';
+let searchQuery = '';
+
+/* ══════════════════════════════════════════════════════════
+   RENDER EXAM LIST
+══════════════════════════════════════════════════════════ */
+function catClass(cat) {
+  const m = { 'UPSC':'badge-upsc','SSC':'badge-ssc','Banking':'badge-banking','Railway':'badge-railway','Bihar Specific':'badge-bihar','Defence':'badge-defence','State PSC':'badge-statepsc' };
+  return m[cat] || 'badge-upsc';
+}
+
+function filteredExams() {
+  return EXAMS.filter(e => {
+    const matchCat = currentCat === 'all' || e.category === currentCat;
+    const matchQ = !searchQuery || e.name.toLowerCase().includes(searchQuery) || e.shortName.toLowerCase().includes(searchQuery) || e.body.toLowerCase().includes(searchQuery);
+    return matchCat && matchQ;
+  });
+}
+
+function renderList(containerId, examData, isMobile) {
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  if (!examData.length) {
+    el.innerHTML = '<div class="empty-state"><div class="icon">🔍</div><p>No exams found</p></div>';
+    return;
+  }
+  el.innerHTML = examData.map(e => `
+    <div class="exam-item${isMobile ? ' modal-exam-item' : ''}${e.id === currentExam.id ? ' active' : ''}" data-id="${e.id}">
+      <div class="exam-icon" style="background:${iconBg(e.category)}">${e.icon}</div>
+      <div style="min-width:0;flex:1">
+        <div class="exam-name">${e.shortName}</div>
+        <div class="exam-body-name">${e.body}</div>
+      </div>
+      <span class="cat-badge ${catClass(e.category)}">${e.category}</span>
+    </div>
+  `).join('');
+
+  el.querySelectorAll('.exam-item, .modal-exam-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const exam = EXAMS.find(x => x.id === item.dataset.id);
+      if (exam) {
+        currentExam = exam;
+        currentTab = 'overview';
+        renderAll();
+        if (isMobile) closeModal();
+        document.getElementById('right-panel').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+}
+
+function iconBg(cat) {
+  const m = { 'UPSC':'rgba(37,99,235,.1)','SSC':'rgba(16,185,129,.1)','Banking':'rgba(245,158,11,.1)','Railway':'rgba(239,68,68,.1)','Bihar Specific':'rgba(124,58,237,.1)','Defence':'rgba(15,118,110,.1)','State PSC':'rgba(234,88,12,.1)' };
+  return m[cat] || 'rgba(37,99,235,.1)';
+}
+
+/* ══════════════════════════════════════════════════════════
+   RENDER EXAM DETAIL
+══════════════════════════════════════════════════════════ */
+function renderDetail() {
+  const e = currentExam;
+  const stagesHtml = e.stages.map((s, i) => `<span class="stage-chip">${s}</span>${i < e.stages.length - 1 ? '<span class="stage-arrow">→</span>' : ''}`).join('');
+
+  const tabs = ['overview','pattern','syllabus'];
+  const tabLabels = { overview:'Overview', pattern:'Paper Pattern', syllabus:'Syllabus' };
+
+  let tabContent = '';
+  if (currentTab === 'overview') {
+    tabContent = `
+      <div class="overview-grid">
+        <div class="ov-card"><div class="ov-label">Conducting Body</div><div class="ov-value">${e.body}</div></div>
+        <div class="ov-card"><div class="ov-label">Level</div><div class="ov-value">${e.level}</div></div>
+        <div class="ov-card"><div class="ov-label">Category</div><div class="ov-value">${e.category}</div></div>
+        <div class="ov-card"><div class="ov-label">Eligibility</div><div class="ov-value">${e.eligibility}</div></div>
+      </div>
+      <div class="overview-desc">
+        <h3>About this Exam</h3>
+        <p>${e.overview}</p>
+        <div class="stages-row">${stagesHtml}</div>
+      </div>
+    `;
+  } else if (currentTab === 'pattern') {
+    const rows = e.pattern.map(p => `
+      <tr${p.isTotal ? ' class="total-row"' : ''}>
+        <td>${p.stage}</td>
+        <td>${p.paper}</td>
+        <td>${p.qs}</td>
+        <td>${p.marks}</td>
+        <td>${p.duration}</td>
+        <td>${p.neg === 'None' ? '<span style="color:var(--muted);font-size:.75rem">None</span>' : p.neg === '—' ? '—' : `<span class="neg-mark">⚠ ${p.neg}</span>`}</td>
+        <td class="note-cell">${p.notes}</td>
+      </tr>
+    `).join('');
+    tabContent = `
+      <div class="table-wrap">
+        <table class="pattern-table">
+          <thead><tr><th>Stage</th><th>Paper / Subject</th><th>Questions</th><th>Marks</th><th>Duration</th><th>Negative Marking</th><th>Notes</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+    `;
+  } else if (currentTab === 'syllabus') {
+    const items = e.syllabus.map((s, i) => `
+      <div class="acc-item">
+        <div class="acc-header${i === 0 ? ' open' : ''}" data-idx="${i}">
+          <span class="acc-title">${s.subject}</span>
+          <span class="acc-chevron">${i === 0 ? '▲' : '▼'}</span>
+        </div>
+        <div class="acc-body${i === 0 ? ' open' : ''}">
+          <div class="acc-tags">${s.topics.map(t => `<span class="acc-tag">${t}</span>`).join('')}</div>
+        </div>
+      </div>
+    `).join('');
+    tabContent = `<div class="accordion">${items}</div>`;
+  }
+
+  const tabBtns = tabs.map(t => `<button class="tab-btn${currentTab === t ? ' active' : ''}" data-tab="${t}">${tabLabels[t]}</button>`).join('');
+
+  document.getElementById('exam-detail').innerHTML = `
+    <div class="exam-detail-header">
+      <h2>${e.icon} ${e.name}</h2>
+      <div class="exam-meta-row">
+        <span class="exam-meta-pill">${e.body}</span>
+        <span class="exam-meta-pill">${e.level}</span>
+        <span class="exam-meta-pill">${e.eligibility}</span>
+      </div>
+    </div>
+    <div class="tabs">${tabBtns}</div>
+    <div id="tab-content">${tabContent}</div>
+  `;
+
+  // Tab click
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      currentTab = btn.dataset.tab;
+      renderDetail();
+    });
+  });
+
+  // Accordion
+  document.querySelectorAll('.acc-header').forEach(hdr => {
+    hdr.addEventListener('click', () => {
+      const body = hdr.nextElementSibling;
+      const isOpen = body.classList.contains('open');
+      // close all
+      document.querySelectorAll('.acc-header').forEach(h => { h.classList.remove('open'); h.querySelector('.acc-chevron').textContent = '▼'; });
+      document.querySelectorAll('.acc-body').forEach(b => b.classList.remove('open'));
+      if (!isOpen) {
+        hdr.classList.add('open');
+        hdr.querySelector('.acc-chevron').textContent = '▲';
+        body.classList.add('open');
+      }
+    });
+  });
+}
+
+/* ══════════════════════════════════════════════════════════
+   RENDER ALL
+══════════════════════════════════════════════════════════ */
+function renderAll() {
+  const exams = filteredExams();
+  renderList('exam-list', exams, false);
+  renderList('modal-exam-list', exams, true);
+  renderDetail();
+}
+
+/* ══════════════════════════════════════════════════════════
+   CATEGORY FILTER
+══════════════════════════════════════════════════════════ */
+document.getElementById('cat-tabs').addEventListener('click', e => {
+  const btn = e.target.closest('.cat-tab');
+  if (!btn) return;
+  currentCat = btn.dataset.cat;
+  document.querySelectorAll('.cat-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const exams = filteredExams();
+  renderList('exam-list', exams, false);
+  renderList('modal-exam-list', exams, true);
+});
+
+/* ══════════════════════════════════════════════════════════
+   SEARCH
+══════════════════════════════════════════════════════════ */
+document.getElementById('exam-search').addEventListener('input', e => {
+  searchQuery = e.target.value.toLowerCase().trim();
+  renderList('exam-list', filteredExams(), false);
+});
+document.getElementById('modal-search').addEventListener('input', e => {
+  searchQuery = e.target.value.toLowerCase().trim();
+  renderList('modal-exam-list', filteredExams(), true);
+});
+
+/* ══════════════════════════════════════════════════════════
+   MOBILE MODAL
+══════════════════════════════════════════════════════════ */
+function openModal() {
+  document.getElementById('exam-modal').classList.add('open');
+  document.getElementById('exam-modal-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  document.getElementById('exam-modal').classList.remove('open');
+  document.getElementById('exam-modal-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.getElementById('mobile-exam-btn').addEventListener('click', openModal);
+document.getElementById('exam-modal-overlay').addEventListener('click', closeModal);
+
+/* ══════════════════════════════════════════════════════════
+   THEME TOGGLE
+══════════════════════════════════════════════════════════ */
+const themeBtn = document.getElementById('theme-btn');
+const saved = localStorage.getItem('eps-theme') || 'light';
+document.documentElement.setAttribute('data-theme', saved);
+themeBtn.textContent = saved === 'dark' ? '☀️ Light' : '🌙 Dark';
+
+themeBtn.addEventListener('click', () => {
+  const cur = document.documentElement.getAttribute('data-theme');
+  const next = cur === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  themeBtn.textContent = next === 'dark' ? '☀️ Light' : '🌙 Dark';
+  localStorage.setItem('eps-theme', next);
+});
+
+/* ══════════════════════════════════════════════════════════
+   ACTIVE NAV HIGHLIGHT
+══════════════════════════════════════════════════════════ */
+(function(){
+  var p = location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.page-links a').forEach(function(a){
+    if(a.getAttribute('href') === p) a.classList.add('current');
+  });
+})();
+
+/* ══════════════════════════════════════════════════════════
+   INIT
+══════════════════════════════════════════════════════════ */
+renderAll();
+</script>
+</body>
+</html>
