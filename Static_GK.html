@@ -41,6 +41,9 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--t
 .page{display:none;animation:fadeIn .3s ease;}.page.active{display:block;}
 @keyframes fadeIn{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);}}
 .hero{background:linear-gradient(135deg,#4c1d95 0%,#3730a3 40%,#0f172a 100%);border-radius:20px;padding:3rem 2.5rem;color:#fff;margin-bottom:2rem;}
+.hero-stats{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,.15);}
+.hero-stat .num{font-size:1.6rem;font-weight:800;background:linear-gradient(90deg,#c4b5fd,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.hero-stat .lbl{font-size:.76rem;opacity:.75;margin-top:.1rem;}
 .hero h1{font-size:clamp(1.6rem,3.5vw,2.5rem);font-weight:800;line-height:1.2;margin-bottom:.8rem;}
 .hero h1 span{background:linear-gradient(90deg,#c4b5fd,#a5b4fc,#86efac);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
 .hero p{font-size:.95rem;opacity:.85;max-width:580px;}
@@ -119,6 +122,12 @@ tr:nth-child(even) td{background:var(--surface2);}
   <div class="hero">
     <h1>Static General Knowledge<br><span>Countries · Awards · Days · Books · Sports</span></h1>
     <p>All the static GK you need for SSC, Banking, Railway, UPSC, State PSC, Police and other competitive exams — systematically organized for quick revision.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="num">195+</div><div class="lbl">Countries</div></div>
+      <div class="hero-stat"><div class="num">15</div><div class="lbl">National Symbols</div></div>
+      <div class="hero-stat"><div class="num">50+</div><div class="lbl">Important Awards</div></div>
+      <div class="hero-stat"><div class="num">365</div><div class="lbl">Important Days</div></div>
+    </div>
   </div>
   <div class="section-title">🏵️ India's National Symbols (Quick Ref)</div>
   <div class="card">
