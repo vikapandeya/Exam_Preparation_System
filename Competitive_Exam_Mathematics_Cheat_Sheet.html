@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta name="description" content="Complete competitive exam mathematics formula cheat sheet — Top 100 formulas, 50 fast tricks, tables, and exam shortcuts for SSC, Railway, Banking.">
+<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Complete Competitive Exam Mathematics Formula Cheat Sheet</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -82,6 +83,13 @@
     .sfm-links a{color:var(--text-2);text-decoration:none}
     .sfm-copy{font-size:.72rem;color:var(--text-2);text-align:right}
 
+
+#btt{position:fixed;bottom:1.5rem;right:1.5rem;width:42px;height:42px;
+  background:var(--primary,#2563eb);color:#fff;border:none;border-radius:50%;
+  font-size:1.1rem;cursor:pointer;box-shadow:0 4px 14px rgba(37,99,235,.4);
+  transition:all .2s;opacity:0;pointer-events:none;z-index:999;display:flex;align-items:center;justify-content:center}
+#btt.show{opacity:1;pointer-events:auto}
+#btt:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(37,99,235,.5)}
     * {
       box-sizing: border-box;
     }
@@ -3519,5 +3527,12 @@
     <div class="sfm-copy">© 2026 Mathematics Mastery · Built by <strong>Vikash Pandey</strong></div>
   </div>
 </footer>
+<button id="btt" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+// Back to top
+(function(){
+  var b=document.getElementById('btt');
+  window.addEventListener('scroll',function(){if(b)b.classList.toggle('show',window.scrollY>400);});
+})();
 </body>
 </html>

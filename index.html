@@ -190,6 +190,14 @@ footer a:hover{text-decoration:underline}
 .qs-hint{padding:.6rem 1.1rem;font-size:.72rem;color:var(--muted);border-top:1px solid var(--border);display:flex;gap:1.5rem}
 .qs-hint span{display:flex;align-items:center;gap:.3rem}
 kbd{display:inline-block;background:var(--surface2);border:1px solid var(--border);border-radius:4px;padding:1px 5px;font-size:.65rem;font-family:monospace}
+
+#btt{position:fixed;bottom:1.5rem;right:1.5rem;width:42px;height:42px;
+  background:var(--brand,#4f46e5);color:#fff;border:none;border-radius:50%;
+  font-size:1.1rem;cursor:pointer;box-shadow:0 4px 14px rgba(79,70,229,.4);
+  transition:all .2s;opacity:0;pointer-events:none;z-index:999;
+  display:flex;align-items:center;justify-content:center}
+#btt.show{opacity:1;pointer-events:auto}
+#btt:hover{transform:translateY(-3px)}
 </style>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
 <script>(function(){var t=localStorage.getItem('eps-theme');if(t)document.documentElement.setAttribute('data-theme',t);})()</script>
@@ -285,7 +293,7 @@ kbd{display:inline-block;background:var(--surface2);border:1px solid var(--borde
 <!-- FOOTER -->
 <footer>
   <div class="foot-brand">🎯 Exam Preparation System</div>
-  <p>Built by <a href="#">Vikash Pandey</a> &nbsp;·&nbsp; SSC GD &nbsp;·&nbsp; SSC CGL &nbsp;·&nbsp; Railway NTPC &nbsp;·&nbsp; Group D &nbsp;·&nbsp; State Police &nbsp;·&nbsp; CET &nbsp;·&nbsp; Banking</p>
+  <p>© 2026 Exam Prep System · Built by <a href="#">Vikash Pandey</a> &nbsp;·&nbsp; SSC GD &nbsp;·&nbsp; SSC CGL &nbsp;·&nbsp; Railway NTPC &nbsp;·&nbsp; Group D &nbsp;·&nbsp; State Police &nbsp;·&nbsp; CET &nbsp;·&nbsp; Banking</p>
 </footer>
 
 <script>
@@ -456,6 +464,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   }
 });
 
+(function(){var b=document.getElementById("btt");window.addEventListener("scroll",function(){if(b)b.classList.toggle("show",window.scrollY>300);});})()
 /* Active link */
 (function(){
   const p = location.pathname.split('/').pop()||'index.html';
@@ -481,5 +490,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     </div>
   </div>
 </div>
+<button id="btt" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 </body>
 </html>
