@@ -109,6 +109,13 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:14px
   .hero h2{font-size:1.3rem;}
   .grid2{grid-template-columns:1fr;}
 }
+/* PRACTICE QUESTIONS */
+.practice-set{margin-top:12px;}
+.pq-item{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:14px;margin-bottom:10px;}
+.pq-q{font-size:.85rem;font-weight:600;margin-bottom:8px;color:var(--text);}
+.pq-opts{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px;}
+.pq-opt{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:4px 10px;font-size:.8rem;}
+.pq-ans{font-size:.8rem;color:var(--primary);border-top:1px solid var(--border);padding-top:8px;margin-top:4px;}
 </style>
 </head>
 <body>
@@ -264,6 +271,45 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:14px
     </ul>
 
     <div class="tip-box"><strong>Quick Tip:</strong> For SSC/Railway, 80% of series questions use difference, squares, or Fibonacci-type patterns. Always check 2nd-order differences first if the 1st difference is not constant.</div>
+
+    <h4 style="margin-top:20px;">Practice Questions</h4>
+    <div class="practice-set">
+      <div class="pq-item">
+        <div class="pq-q">Q1. 2, 6, 18, 54, ?</div>
+        <div class="pq-opts"><span class="pq-opt">A) 108</span><span class="pq-opt">B) 162</span><span class="pq-opt">C) 144</span><span class="pq-opt">D) 216</span></div>
+        <div class="pq-ans">Answer: <strong>B) 162</strong> — <em>Each term is multiplied by 3 (Geometric series ×3: 2→6→18→54→162)</em></div>
+      </div>
+      <div class="pq-item">
+        <div class="pq-q">Q2. 1, 4, 9, 16, 25, ?</div>
+        <div class="pq-opts"><span class="pq-opt">A) 30</span><span class="pq-opt">B) 35</span><span class="pq-opt">C) 36</span><span class="pq-opt">D) 49</span></div>
+        <div class="pq-ans">Answer: <strong>C) 36</strong> — <em>Perfect squares: 1², 2², 3², 4², 5², 6² = 36</em></div>
+      </div>
+      <div class="pq-item">
+        <div class="pq-q">Q3. 7, 14, 28, 56, ?</div>
+        <div class="pq-opts"><span class="pq-opt">A) 98</span><span class="pq-opt">B) 112</span><span class="pq-opt">C) 124</span><span class="pq-opt">D) 130</span></div>
+        <div class="pq-ans">Answer: <strong>B) 112</strong> — <em>Each term is doubled (×2): 56 × 2 = 112</em></div>
+      </div>
+      <div class="pq-item">
+        <div class="pq-q">Q4. 3, 7, 13, 21, 31, ?</div>
+        <div class="pq-opts"><span class="pq-opt">A) 41</span><span class="pq-opt">B) 43</span><span class="pq-opt">C) 45</span><span class="pq-opt">D) 47</span></div>
+        <div class="pq-ans">Answer: <strong>B) 43</strong> — <em>Differences are 4, 6, 8, 10, 12 (AP with common difference 2): 31 + 12 = 43</em></div>
+      </div>
+      <div class="pq-item">
+        <div class="pq-q">Q5. 1, 1, 2, 3, 5, 8, 13, ?</div>
+        <div class="pq-opts"><span class="pq-opt">A) 18</span><span class="pq-opt">B) 19</span><span class="pq-opt">C) 21</span><span class="pq-opt">D) 23</span></div>
+        <div class="pq-ans">Answer: <strong>C) 21</strong> — <em>Fibonacci sequence: each term = sum of the previous two (8 + 13 = 21)</em></div>
+      </div>
+      <div class="pq-item">
+        <div class="pq-q">Q6. 100, 96, 89, 79, 66, ?</div>
+        <div class="pq-opts"><span class="pq-opt">A) 50</span><span class="pq-opt">B) 52</span><span class="pq-opt">C) 54</span><span class="pq-opt">D) 56</span></div>
+        <div class="pq-ans">Answer: <strong>A) 50</strong> — <em>Differences: 4, 7, 10, 13, 16 (increasing by 3 each time): 66 − 16 = 50</em></div>
+      </div>
+      <div class="pq-item">
+        <div class="pq-q">Q7. 2, 3, 5, 9, 17, ?</div>
+        <div class="pq-opts"><span class="pq-opt">A) 29</span><span class="pq-opt">B) 31</span><span class="pq-opt">C) 33</span><span class="pq-opt">D) 35</span></div>
+        <div class="pq-ans">Answer: <strong>C) 33</strong> — <em>Each term = 2 × previous term − 1: 17 × 2 − 1 = 33. Differences double each time: 1, 2, 4, 8, 16</em></div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -287,6 +333,15 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:14px
     </table></div>
 
     <div class="tip-box"><strong>Strategy:</strong> Always identify the exact relationship in the first pair before looking at options. Be specific — "Lion : Cub" is Parent:Young, not just Animal:Animal.</div>
+
+    <h4 style="margin-top:20px;">Practice Questions</h4>
+    <div class="practice-set">
+      <div class="pq-item"><div class="pq-q">Q1. Book : Library :: Fish : ?</div><div class="pq-opts"><span class="pq-opt">A) Water</span><span class="pq-opt">B) Aquarium</span><span class="pq-opt">C) River</span><span class="pq-opt">D) Net</span></div><div class="pq-ans">Answer: <strong>B) Aquarium</strong> — <em>Books are stored/displayed in Library; Fish are stored/displayed in Aquarium</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q2. 4 : 64 :: 5 : ?</div><div class="pq-opts"><span class="pq-opt">A) 25</span><span class="pq-opt">B) 100</span><span class="pq-opt">C) 125</span><span class="pq-opt">D) 75</span></div><div class="pq-ans">Answer: <strong>C) 125</strong> — <em>4³=64, so 5³=125</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q3. Cricket : Pitch :: Tennis : ?</div><div class="pq-opts"><span class="pq-opt">A) Field</span><span class="pq-opt">B) Court</span><span class="pq-opt">C) Ring</span><span class="pq-opt">D) Track</span></div><div class="pq-ans">Answer: <strong>B) Court</strong> — <em>Cricket is played on a Pitch; Tennis is played on a Court</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q4. ABCD : DCBA :: MNOP : ?</div><div class="pq-opts"><span class="pq-opt">A) PONM</span><span class="pq-opt">B) OPNM</span><span class="pq-opt">C) NOPQ</span><span class="pq-opt">D) MNOP</span></div><div class="pq-ans">Answer: <strong>A) PONM</strong> — <em>The word is reversed: ABCD→DCBA, so MNOP→PONM</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q5. Painter : Brush :: Writer : ?</div><div class="pq-opts"><span class="pq-opt">A) Book</span><span class="pq-opt">B) Pen</span><span class="pq-opt">C) Paper</span><span class="pq-opt">D) Ink</span></div><div class="pq-ans">Answer: <strong>B) Pen</strong> — <em>A Painter uses a Brush; a Writer uses a Pen (tool of the trade)</em></div></div>
+    </div>
   </div>
 </div>
 
@@ -307,6 +362,15 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:14px
     </ul>
 
     <div class="tip-box"><strong>Tip:</strong> Look for the MOST specific common property. If three terms share two properties and one shares only one, the one-property term is the odd one out.</div>
+
+    <h4 style="margin-top:20px;">Practice Questions</h4>
+    <div class="practice-set">
+      <div class="pq-item"><div class="pq-q">Q1. Find the odd one out: Mango, Apple, Banana, Potato</div><div class="pq-opts"><span class="pq-opt">A) Mango</span><span class="pq-opt">B) Apple</span><span class="pq-opt">C) Banana</span><span class="pq-opt">D) Potato</span></div><div class="pq-ans">Answer: <strong>D) Potato</strong> — <em>All others are fruits; Potato is a vegetable</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q2. Find the odd one out: 2, 4, 6, 9, 12</div><div class="pq-opts"><span class="pq-opt">A) 2</span><span class="pq-opt">B) 4</span><span class="pq-opt">C) 9</span><span class="pq-opt">D) 12</span></div><div class="pq-ans">Answer: <strong>C) 9</strong> — <em>All others are even numbers; 9 is odd</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q3. Find the odd one out: Doctor, Engineer, Lawyer, Hospital</div><div class="pq-opts"><span class="pq-opt">A) Doctor</span><span class="pq-opt">B) Engineer</span><span class="pq-opt">C) Lawyer</span><span class="pq-opt">D) Hospital</span></div><div class="pq-ans">Answer: <strong>D) Hospital</strong> — <em>All others are professions; Hospital is a place</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q4. Find the odd one out: AZ, BY, CX, DW, EW</div><div class="pq-opts"><span class="pq-opt">A) AZ</span><span class="pq-opt">B) BY</span><span class="pq-opt">C) EW</span><span class="pq-opt">D) DW</span></div><div class="pq-ans">Answer: <strong>C) EW</strong> — <em>In each pair, position of 1st letter + position of 2nd letter = 27 (A+Z=1+26=27, B+Y=2+25=27, C+X=3+24=27, D+W=4+23=27, but E+W=5+23=28 ≠ 27)</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q5. Find the odd one out: Square, Rectangle, Circle, Triangle</div><div class="pq-opts"><span class="pq-opt">A) Square</span><span class="pq-opt">B) Rectangle</span><span class="pq-opt">C) Circle</span><span class="pq-opt">D) Triangle</span></div><div class="pq-ans">Answer: <strong>C) Circle</strong> — <em>Square, Rectangle, Triangle all have sides and angles; Circle has no sides or angles</em></div></div>
+    </div>
   </div>
 </div>
 
@@ -334,6 +398,15 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:14px
     <div class="formula">Opposite: A(1)↔Z(26)  B(2)↔Y(25)  C(3)↔X(24)  Rule: position + opposite = 27</div>
 
     <div class="tip-box"><strong>Speed Trick:</strong> If ABCD=1234, then ABC+2 = CDE. Always write out the alphabet with position numbers on your rough sheet. The most common shift is +3 or −3.</div>
+
+    <h4 style="margin-top:20px;">Practice Questions</h4>
+    <div class="practice-set">
+      <div class="pq-item"><div class="pq-q">Q1. If COLD = EQNF, then WARM = ?</div><div class="pq-opts"><span class="pq-opt">A) YCTS</span><span class="pq-opt">B) YCTO</span><span class="pq-opt">C) XBSO</span><span class="pq-opt">D) ZDWU</span></div><div class="pq-ans">Answer: <strong>B) YCTO</strong> — <em>Each letter +2: W→Y, A→C, R→T, M→O</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q2. If APPLE is coded as ELPPA, then MANGO is coded as?</div><div class="pq-opts"><span class="pq-opt">A) OGNAM</span><span class="pq-opt">B) NAMGO</span><span class="pq-opt">C) ONGAM</span><span class="pq-opt">D) OGMAN</span></div><div class="pq-ans">Answer: <strong>A) OGNAM</strong> — <em>The word is reversed: APPLE→ELPPA, so MANGO→OGNAM</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q3. If KING = LJOH, then QUEEN = ?</div><div class="pq-opts"><span class="pq-opt">A) RVFFO</span><span class="pq-opt">B) RVFEO</span><span class="pq-opt">C) RFVFO</span><span class="pq-opt">D) RVEFO</span></div><div class="pq-ans">Answer: <strong>A) RVFFO</strong> — <em>Each letter +1: Q→R, U→V, E→F, E→F, N→O</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q4. If CAT = 3-1-20, then DOG = ?</div><div class="pq-opts"><span class="pq-opt">A) 4-15-7</span><span class="pq-opt">B) 4-14-7</span><span class="pq-opt">C) 5-15-7</span><span class="pq-opt">D) 4-15-6</span></div><div class="pq-ans">Answer: <strong>A) 4-15-7</strong> — <em>Alphabet position: D=4, O=15, G=7</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q5. If 2=4, 3=9, 4=16, then 5=?</div><div class="pq-opts"><span class="pq-opt">A) 10</span><span class="pq-opt">B) 20</span><span class="pq-opt">C) 25</span><span class="pq-opt">D) 30</span></div><div class="pq-ans">Answer: <strong>C) 25</strong> — <em>Each number is squared: 2²=4, 3²=9, 4²=16, 5²=25</em></div></div>
+    </div>
   </div>
 </div>
 
@@ -367,6 +440,15 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:14px
     </div>
 
     <div class="tip-box"><strong>Method:</strong> Draw a family tree diagram. Use △ for male, ○ for female, = for married, — for siblings, | for parent-child. Never assume gender unless stated.</div>
+
+    <h4 style="margin-top:20px;">Practice Questions</h4>
+    <div class="practice-set">
+      <div class="pq-item"><div class="pq-q">Q1. A is father of B. C is mother of D. A and C are married. How is B related to D?</div><div class="pq-opts"><span class="pq-opt">A) Cousin</span><span class="pq-opt">B) Sibling</span><span class="pq-opt">C) Nephew</span><span class="pq-opt">D) Uncle</span></div><div class="pq-ans">Answer: <strong>B) Sibling</strong> — <em>A (father) married to C (mother), so B and D are children of same parents = siblings</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q2. X is Y's brother. Y is Z's sister. Z is P's son. How is X related to P?</div><div class="pq-opts"><span class="pq-opt">A) Nephew</span><span class="pq-opt">B) Son</span><span class="pq-opt">C) Cousin</span><span class="pq-opt">D) Grandson</span></div><div class="pq-ans">Answer: <strong>B) Son</strong> — <em>Z is P's son; Y is Z's sister (so Y is also P's child); X is Y's brother (so X is also P's child = P's son)</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q3. Pointing to Rama, Hari says, "His mother is the only daughter of my mother." How is Hari related to Rama?</div><div class="pq-opts"><span class="pq-opt">A) Uncle</span><span class="pq-opt">B) Brother</span><span class="pq-opt">C) Father</span><span class="pq-opt">D) Grandfather</span></div><div class="pq-ans">Answer: <strong>A) Uncle</strong> — <em>Only daughter of Hari's mother = Hari's sister. So Rama's mother = Hari's sister. Therefore Hari is Rama's maternal uncle</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q4. Seema's brother's only sister's mother's husband is Ram. How is Ram related to Seema?</div><div class="pq-opts"><span class="pq-opt">A) Brother</span><span class="pq-opt">B) Uncle</span><span class="pq-opt">C) Father</span><span class="pq-opt">D) Grandfather</span></div><div class="pq-ans">Answer: <strong>C) Father</strong> — <em>Seema's brother → his only sister = Seema herself → Seema's mother → Seema's mother's husband = Ram = Seema's Father</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q5. If A + B means A is father of B, A – B means A is sister of B, then P + Q – R means?</div><div class="pq-opts"><span class="pq-opt">A) P is grandfather of R</span><span class="pq-opt">B) P is uncle of R</span><span class="pq-opt">C) P is father of R</span><span class="pq-opt">D) R is P's nephew</span></div><div class="pq-ans">Answer: <strong>C) P is father of R</strong> — <em>P+Q = P is Q's father; Q-R = Q is R's sister. So P is father of Q (who is R's sister) → P is father of R</em></div></div>
+    </div>
   </div>
 </div>
 
@@ -402,6 +484,15 @@ NE = 45°  NW = 135°  SE = 315°  SW = 225°</div>
     </ul>
 
     <div class="tip-box"><strong>Distance Tip:</strong> If movement is in opposite directions (N then S), subtract. If perpendicular, use Pythagoras: d = √(a² + b²). Draw the path on rough paper — it saves time.</div>
+
+    <h4 style="margin-top:20px;">Practice Questions</h4>
+    <div class="practice-set">
+      <div class="pq-item"><div class="pq-q">Q1. Ram walks 10km North, turns East and walks 6km, then turns South and walks 10km. How far and in which direction is he from start?</div><div class="pq-opts"><span class="pq-opt">A) 6km West</span><span class="pq-opt">B) 10km South</span><span class="pq-opt">C) 6km East</span><span class="pq-opt">D) 16km East</span></div><div class="pq-ans">Answer: <strong>C) 6km East</strong> — <em>North 10 and South 10 cancel out; East 6 remains → 6km East of start</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q2. A man walks 5km East, 3km North, 5km West. Where is he from start?</div><div class="pq-opts"><span class="pq-opt">A) 3km North</span><span class="pq-opt">B) 3km South</span><span class="pq-opt">C) 5km West</span><span class="pq-opt">D) 5km North</span></div><div class="pq-ans">Answer: <strong>A) 3km North</strong> — <em>East 5 and West 5 cancel; only North 3 remains → 3km North</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q3. A and B start from same point. A walks 4km North, B walks 3km East. What is the straight-line distance between them?</div><div class="pq-opts"><span class="pq-opt">A) 7km</span><span class="pq-opt">B) 5km</span><span class="pq-opt">C) 6km</span><span class="pq-opt">D) 4km</span></div><div class="pq-ans">Answer: <strong>B) 5km</strong> — <em>Pythagoras: √(4²+3²) = √(16+9) = √25 = 5km</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q4. If you face North and turn 90° clockwise, then 180° clockwise, which direction do you face?</div><div class="pq-opts"><span class="pq-opt">A) North</span><span class="pq-opt">B) South</span><span class="pq-opt">C) East</span><span class="pq-opt">D) West</span></div><div class="pq-ans">Answer: <strong>D) West</strong> — <em>N + 90° CW = East; East + 180° CW = West</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q5. At 9 AM, the shadow of a pole falls towards the West. In which direction is the sun?</div><div class="pq-opts"><span class="pq-opt">A) West</span><span class="pq-opt">B) South</span><span class="pq-opt">C) East</span><span class="pq-opt">D) North</span></div><div class="pq-ans">Answer: <strong>C) East</strong> — <em>Morning sun is in the East; shadows fall opposite to the sun's direction = West</em></div></div>
+    </div>
   </div>
 </div>
 
@@ -427,6 +518,14 @@ NE = 45°  NW = 135°  SE = 315°  SW = 225°</div>
     </div>
     <div class="tip-box">
       In a row, A is 5th from left, B is 8th from right. If there are 3 persons between them and A is to the left of B, Total = 5 + 3 + 8 = <strong>16 persons</strong>.
+    </div>
+
+    <h4 style="margin-top:20px;">Practice Questions</h4>
+    <div class="practice-set">
+      <div class="pq-item"><div class="pq-q">Q1. Ravi ranks 10th from top in a class of 40. What is his rank from bottom?</div><div class="pq-opts"><span class="pq-opt">A) 30</span><span class="pq-opt">B) 31</span><span class="pq-opt">C) 29</span><span class="pq-opt">D) 32</span></div><div class="pq-ans">Answer: <strong>B) 31</strong> — <em>Rank from bottom = Total − Rank from top + 1 = 40 − 10 + 1 = 31</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q2. Seema is 5th from top and 25th from bottom. How many students are there?</div><div class="pq-opts"><span class="pq-opt">A) 30</span><span class="pq-opt">B) 28</span><span class="pq-opt">C) 29</span><span class="pq-opt">D) 31</span></div><div class="pq-ans">Answer: <strong>C) 29</strong> — <em>Total = Rank from top + Rank from bottom − 1 = 5 + 25 − 1 = 29</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q3. In a row of 30 people, A is 12th from left and B is 8th from right. How many people are between them?</div><div class="pq-opts"><span class="pq-opt">A) 9</span><span class="pq-opt">B) 11</span><span class="pq-opt">C) 10</span><span class="pq-opt">D) 12</span></div><div class="pq-ans">Answer: <strong>C) 10</strong> — <em>People between = Total − (Rank from left + Rank from right) = 30 − (12+8) = 10</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q4. Anil is 6 ranks ahead of Sunil in a class of 45. If Sunil's rank is 25 from the top, what is Anil's rank from bottom?</div><div class="pq-opts"><span class="pq-opt">A) 26</span><span class="pq-opt">B) 27</span><span class="pq-opt">C) 25</span><span class="pq-opt">D) 32</span></div><div class="pq-ans">Answer: <strong>B) 27</strong> — <em>Anil rank from top = 25−6=19; Rank from bottom = 45−19+1 = 27</em></div></div>
     </div>
   </div>
 </div>
@@ -455,6 +554,14 @@ NE = 45°  NW = 135°  SE = 315°  SW = 225°</div>
     </ul>
 
     <div class="tip-box"><strong>Exam Tip:</strong> In circular arrangements, if persons face the centre, "A sits to the left of B" means A is in the anticlockwise direction from B.</div>
+
+    <h4 style="margin-top:20px;">Practice Questions</h4>
+    <div class="practice-set">
+      <div class="pq-item"><div class="pq-q">Q1. Six persons A, B, C, D, E, F sit in a circle facing the centre. A sits opposite D, B sits between A and C. Who sits to the immediate right of A?</div><div class="pq-opts"><span class="pq-opt">A) B</span><span class="pq-opt">B) C</span><span class="pq-opt">C) E</span><span class="pq-opt">D) F</span></div><div class="pq-ans">Answer: <strong>A) B</strong> — <em>B is between A and C, and in a circle facing centre, right of A = the person in clockwise direction; B sits adjacent to A (between A and C), so B is to the right of A</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q2. In a linear row of 7 people facing North, P is 3rd from left, Q is 5th from left. How many people sit between P and Q?</div><div class="pq-opts"><span class="pq-opt">A) 1</span><span class="pq-opt">B) 2</span><span class="pq-opt">C) 3</span><span class="pq-opt">D) 0</span></div><div class="pq-ans">Answer: <strong>A) 1</strong> — <em>P is at position 3, Q at position 5; between positions 3 and 5 is only position 4 → 1 person between them</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q3. In a two-row arrangement, Row 1 faces South and Row 2 faces North. A (Row 1) faces B (Row 2). Who sits to A's left?</div><div class="pq-opts"><span class="pq-opt">A) Person to the East of A</span><span class="pq-opt">B) Person to the West of A</span><span class="pq-opt">C) Person directly behind A</span><span class="pq-opt">D) Cannot determine</span></div><div class="pq-ans">Answer: <strong>A) Person to the East of A</strong> — <em>Row 1 faces South. When facing South, East is to the left (since left of South-facing = East direction)</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q4. In a circular arrangement of 6 people (A,B,C,D,E,F), A is 3rd to the right of D. B is 2nd to the left of A. How many people are between B and D (going clockwise)?</div><div class="pq-opts"><span class="pq-opt">A) 0</span><span class="pq-opt">B) 1</span><span class="pq-opt">C) 2</span><span class="pq-opt">D) 3</span></div><div class="pq-ans">Answer: <strong>C) 2</strong> — <em>D→3 right→A (positions: D=1,_=2,_=3,A=4 clockwise). B is 2 left of A → B is at position 2. Clockwise from B(2) to D(1): goes through 3,4,5,6,1 = 4 people, but anticlockwise B(2) to D(1) = 0; between them clockwise = 5-1=2 others between B and D</em></div></div>
+    </div>
   </div>
 </div>
 
@@ -483,6 +590,14 @@ NE = 45°  NW = 135°  SE = 315°  SW = 225°</div>
     </ul>
 
     <div class="tip-box"><strong>New Pattern:</strong> In newer exams (SSC CGL, IBPS PO), "Either-Or" conclusions are tested. "Either Conclusion I or II follows" is correct when neither follows individually but together they cover all cases.</div>
+
+    <h4 style="margin-top:20px;">Practice Questions</h4>
+    <div class="practice-set">
+      <div class="pq-item"><div class="pq-q">Q1. Statements: All dogs are animals. All animals are living beings. Conclusions: I. All dogs are living beings. II. Some living beings are dogs.</div><div class="pq-opts"><span class="pq-opt">A) Only I</span><span class="pq-opt">B) Only II</span><span class="pq-opt">C) Both I &amp; II</span><span class="pq-opt">D) Neither</span></div><div class="pq-ans">Answer: <strong>C) Both I &amp; II</strong> — <em>All dogs are animals + All animals are living beings → All dogs are living beings (I). If all dogs are living beings, some living beings are dogs (II follows by conversion)</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q2. Statements: Some cats are dogs. All dogs are pets. Conclusions: I. Some cats are pets. II. All cats are pets.</div><div class="pq-opts"><span class="pq-opt">A) Only I</span><span class="pq-opt">B) Only II</span><span class="pq-opt">C) Both</span><span class="pq-opt">D) Neither</span></div><div class="pq-ans">Answer: <strong>A) Only I follows</strong> — <em>Some cats are dogs + All dogs are pets → Some cats are pets (I). We cannot say ALL cats are pets since only SOME cats are dogs (II fails)</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q3. Statements: No rose is a flower. All flowers are red. Conclusions: I. No rose is red. II. Some red things are flowers.</div><div class="pq-opts"><span class="pq-opt">A) Only I</span><span class="pq-opt">B) Only II</span><span class="pq-opt">C) Both</span><span class="pq-opt">D) Neither</span></div><div class="pq-ans">Answer: <strong>B) Only II follows</strong> — <em>All flowers are red → Some red things are flowers (II follows). I fails because roses may still be red through another connection</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q4. Statements: Some mangoes are fruits. All fruits are healthy. Conclusions: I. Some mangoes are healthy. II. All healthy things are mangoes.</div><div class="pq-opts"><span class="pq-opt">A) Only I</span><span class="pq-opt">B) Only II</span><span class="pq-opt">C) Both</span><span class="pq-opt">D) Neither</span></div><div class="pq-ans">Answer: <strong>A) Only I follows</strong> — <em>Some mangoes are fruits + All fruits are healthy → Some mangoes are healthy (I). II fails (healthy is a broader category than mangoes)</em></div></div>
+    </div>
   </div>
 </div>
 
@@ -508,6 +623,13 @@ NE = 45°  NW = 135°  SE = 315°  SW = 225°</div>
       <li>A course of action that is too drastic or involves external parties → usually weak</li>
       <li>Emotional arguments without logical basis → Weak arguments</li>
     </ul>
+
+    <h4 style="margin-top:20px;">Practice Questions</h4>
+    <div class="practice-set">
+      <div class="pq-item"><div class="pq-q">Q1. Statement: "Our products are better than those of competitors." Conclusion: I. Competitors' products are inferior. II. Our products are the best in the world.</div><div class="pq-opts"><span class="pq-opt">A) Only I follows</span><span class="pq-opt">B) Only II follows</span><span class="pq-opt">C) Both follow</span><span class="pq-opt">D) Neither follows</span></div><div class="pq-ans">Answer: <strong>A) Only I follows</strong> — <em>I directly restates the statement in different words (follows). II is too extreme — "better than competitors" does not mean best in the world</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q2. Statement: "The government has decided to increase petrol prices." Assumption: I. People will reduce petrol usage. II. The government needs more revenue.</div><div class="pq-opts"><span class="pq-opt">A) Only I</span><span class="pq-opt">B) Only II</span><span class="pq-opt">C) Both</span><span class="pq-opt">D) Neither</span></div><div class="pq-ans">Answer: <strong>D) Neither is implicit</strong> — <em>Neither assumption is taken for granted in the statement. The decision may be for various reasons not stated; both assumptions bring in external reasoning not implicit in the statement</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q3. Statement: "Ravi was caught stealing in the market." Course of Action: I. He should be handed to police. II. The market should be closed immediately.</div><div class="pq-opts"><span class="pq-opt">A) Only I</span><span class="pq-opt">B) Only II</span><span class="pq-opt">C) Both</span><span class="pq-opt">D) Neither</span></div><div class="pq-ans">Answer: <strong>A) Only I follows</strong> — <em>Handing to police is a practical, direct action. Closing the market is too drastic and doesn't address the problem</em></div></div>
+    </div>
   </div>
 </div>
 
@@ -538,6 +660,13 @@ NE = 45°  NW = 135°  SE = 315°  SW = 225°</div>
     </ul>
 
     <div class="tip-box"><strong>Exam Tip (IBPS/SBI):</strong> Puzzle sets typically contain 5 questions from one set. Solving the arrangement once gives all 5 marks. Prioritize puzzles over single-question types.</div>
+
+    <h4 style="margin-top:20px;">Practice Questions</h4>
+    <div class="practice-set">
+      <div class="pq-item"><div class="pq-q">Q1. Five people A, B, C, D, E live on floors 1–5 (1=lowest). D lives on an even-numbered floor. A lives above D. B lives on floor 1. C lives between A and D. Who lives on floor 3?</div><div class="pq-opts"><span class="pq-opt">A) A</span><span class="pq-opt">B) C</span><span class="pq-opt">C) D</span><span class="pq-opt">D) E</span></div><div class="pq-ans">Answer: <strong>B) C</strong> — <em>B=floor 1, D on even floor: D=2 or 4. A above D, C between A and D. If D=2, A=4 or 5, C=3. If D=4, A=5, C between 4 and 5 impossible. So D=2, A=4 or 5, C=3</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q2. In a puzzle, P, Q, R, S are born in Jan, Mar, Jun, Sep (not necessarily in order). P is born before Q. R is born in the last month among them. S is not born in Jan. Who is born in Jan?</div><div class="pq-opts"><span class="pq-opt">A) P</span><span class="pq-opt">B) Q</span><span class="pq-opt">C) R</span><span class="pq-opt">D) S</span></div><div class="pq-ans">Answer: <strong>A) P</strong> — <em>R is born in Sep (last). S is not born in Jan. P is born before Q. The only person who can be in Jan (first month) is P</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q3. Six boxes are stacked 1(bottom) to 6(top). Box A is immediately above Box B. Box C is 3rd from top. Box D is between B and C. Which box is at the bottom?</div><div class="pq-opts"><span class="pq-opt">A) A</span><span class="pq-opt">B) B</span><span class="pq-opt">C) C</span><span class="pq-opt">D) D</span></div><div class="pq-ans">Answer: <strong>B) B</strong> — <em>C is 3rd from top = position 4. D is between B and C. A is immediately above B. So order (bottom up): B, A, ..., D, C (4th). For D between B and C: B lowest, then A above B, D above A, C at 4</em></div></div>
+    </div>
   </div>
 </div>
 
@@ -557,6 +686,13 @@ NE = 45°  NW = 135°  SE = 315°  SW = 225°</div>
     </ul>
 
     <div class="tip-box"><strong>Time Tip:</strong> Non-verbal questions are visual — eliminate obviously wrong options first. Usually 2-3 options can be eliminated based on one obvious feature (shape, number of sides, shading).</div>
+
+    <h4 style="margin-top:20px;">Practice Questions</h4>
+    <div class="practice-set">
+      <div class="pq-item"><div class="pq-q">Q1. In a 3×3 matrix where each row contains ○, △, □ in some order, and each column also contains each shape once, what shape goes in the bottom-right cell if top row is ○△□ and middle row is △□○?</div><div class="pq-opts"><span class="pq-opt">A) ○</span><span class="pq-opt">B) △</span><span class="pq-opt">C) □</span><span class="pq-opt">D) Cannot determine</span></div><div class="pq-ans">Answer: <strong>B) △</strong> — <em>Bottom row must be □○△ (each shape once per row). Right column has □,○,? → must be △ to complete all three shapes</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q2. A figure rotates 90° clockwise in each step. If at step 1 an arrow points North (↑), at step 4 it points?</div><div class="pq-opts"><span class="pq-opt">A) North</span><span class="pq-opt">B) South</span><span class="pq-opt">C) East</span><span class="pq-opt">D) West</span></div><div class="pq-ans">Answer: <strong>D) West</strong> — <em>Step 1: N(↑), Step 2: E(→), Step 3: S(↓), Step 4: W(←). Each 90° CW rotation: N→E→S→W</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q3. In a series of figures, the number of dots increases: 1, 3, 6, 10, ?</div><div class="pq-opts"><span class="pq-opt">A) 12</span><span class="pq-opt">B) 13</span><span class="pq-opt">C) 15</span><span class="pq-opt">D) 16</span></div><div class="pq-ans">Answer: <strong>C) 15</strong> — <em>Triangular numbers: differences are 2,3,4,5 → next difference = 5, so 10+5=15</em></div></div>
+    </div>
   </div>
 </div>
 
@@ -583,6 +719,14 @@ Up↔Down swapped. Left/Right unchanged.</div>
     </table></div>
 
     <div class="tip-box"><strong>Clock Mirror:</strong> If a clock shows 3:15, its mirror image shows 8:45. Formula: Mirror time = 11:60 − original time (or 12:00 − original if exact hour).</div>
+
+    <h4 style="margin-top:20px;">Practice Questions</h4>
+    <div class="practice-set">
+      <div class="pq-item"><div class="pq-q">Q1. What is the mirror image of the word "REASON" when placed in front of a vertical mirror?</div><div class="pq-opts"><span class="pq-opt">A) REASON</span><span class="pq-opt">B) NOSAER</span><span class="pq-opt">C) ЯƎAƧOИ (reversed)</span><span class="pq-opt">D) Same but upside down</span></div><div class="pq-ans">Answer: <strong>C) Each letter is laterally reversed</strong> — <em>Vertical mirror reverses left↔right. Each letter appears flipped horizontally (R→Я, E→Ǝ etc.). The word order appears reversed to a reader facing the mirror</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q2. A clock shows 9:25. What time does it show in its mirror image?</div><div class="pq-opts"><span class="pq-opt">A) 2:35</span><span class="pq-opt">B) 3:35</span><span class="pq-opt">C) 2:45</span><span class="pq-opt">D) 3:25</span></div><div class="pq-ans">Answer: <strong>A) 2:35</strong> — <em>Formula: 11:60 − 9:25 = 2:35</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q3. Which letters look the same in their water image (horizontal mirror)?</div><div class="pq-opts"><span class="pq-opt">A) B and D</span><span class="pq-opt">B) C and D</span><span class="pq-opt">C) H and X</span><span class="pq-opt">D) P and Q</span></div><div class="pq-ans">Answer: <strong>C) H and X</strong> — <em>Letters with horizontal symmetry look the same in water image: H, I, O, X have horizontal symmetry (top half = mirror of bottom half)</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q4. A figure has a triangle pointing up (△). What is its water image?</div><div class="pq-opts"><span class="pq-opt">A) △ (same)</span><span class="pq-opt">B) ▽ (pointing down)</span><span class="pq-opt">C) ◁ (pointing left)</span><span class="pq-opt">D) ▷ (pointing right)</span></div><div class="pq-ans">Answer: <strong>B) ▽ (pointing down)</strong> — <em>Water image flips top↔bottom: a triangle pointing up becomes one pointing down</em></div></div>
+    </div>
   </div>
 </div>
 
@@ -600,6 +744,13 @@ Up↔Down swapped. Left/Right unchanged.</div>
       <li>Lines of the embedded figure should not be broken by the host figure's lines</li>
     </ul>
     <div class="tip-box"><strong>Tip:</strong> Start by checking if the number of sides/lines in the question figure matches what's visible in each option. Eliminate options that don't have enough matching line segments.</div>
+
+    <h4 style="margin-top:20px;">Practice Questions</h4>
+    <div class="practice-set">
+      <div class="pq-item"><div class="pq-q">Q1. A triangle (△) is the question figure. Which of the following complex figures would most likely contain it as an embedded figure?</div><div class="pq-opts"><span class="pq-opt">A) A circle</span><span class="pq-opt">B) A rectangle divided diagonally</span><span class="pq-opt">C) A circle with a dot</span><span class="pq-opt">D) A square with a cross inside</span></div><div class="pq-ans">Answer: <strong>B) A rectangle divided diagonally</strong> — <em>A diagonal line across a rectangle creates two triangles; the triangle (△) is embedded within it. Options A, C, D have no triangular regions</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q2. How many triangles are there in a Star of David (✡) figure?</div><div class="pq-opts"><span class="pq-opt">A) 6</span><span class="pq-opt">B) 8</span><span class="pq-opt">C) 12</span><span class="pq-opt">D) 2</span></div><div class="pq-ans">Answer: <strong>C) 12</strong> — <em>A Star of David has 6 small outer triangles + 6 larger triangles formed by overlapping = 12 triangles in total (including various sizes)</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q3. In a square divided into 4 equal parts by horizontal and vertical lines, how many rectangles (including squares) are embedded in total?</div><div class="pq-opts"><span class="pq-opt">A) 4</span><span class="pq-opt">B) 6</span><span class="pq-opt">C) 8</span><span class="pq-opt">D) 9</span></div><div class="pq-ans">Answer: <strong>D) 9</strong> — <em>Formula for m×n grid: (m+1)C2 × (n+1)C2 = 3C2 × 3C2 = 3 × 3 = 9 rectangles</em></div></div>
+    </div>
   </div>
 </div>
 
@@ -626,6 +777,13 @@ Up↔Down swapped. Left/Right unchanged.</div>
       <span class="pill">Diagonal fold</span>
     </div>
     <div class="tip-box"><strong>Method:</strong> Trace the fold mentally. Imagine the top sheet as transparent. Where the punch lands on both top and bottom layers are where holes appear after unfolding.</div>
+
+    <h4 style="margin-top:20px;font-size:.9rem;">📝 Practice Questions</h4>
+    <div class="practice-set">
+      <div class="pq-item"><div class="pq-q">Q1. A square paper is folded in half (left half over right). One hole is punched. How many holes appear after unfolding?</div><div class="pq-opts"><span class="pq-opt">A) 1</span><span class="pq-opt">B) 2</span><span class="pq-opt">C) 3</span><span class="pq-opt">D) 4</span></div><div class="pq-ans">Answer: <strong>B) 2</strong> — <em>One fold → 2¹ = 2 holes; the punch passes through both layers, creating a symmetrical hole on each side of the fold</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q2. A paper is folded twice (once horizontally, once vertically) and one hole is punched. How many holes appear after unfolding?</div><div class="pq-opts"><span class="pq-opt">A) 2</span><span class="pq-opt">B) 3</span><span class="pq-opt">C) 4</span><span class="pq-opt">D) 8</span></div><div class="pq-ans">Answer: <strong>C) 4</strong> — <em>Two folds → 2² = 4 holes; each fold doubles the number of holes because the punch goes through all stacked layers</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q3. A rectangular paper is folded so that the right edge meets the left edge. A cut is made at the top-right corner. After unfolding, what does the paper look like?</div><div class="pq-opts"><span class="pq-opt">A) One cut at top-right only</span><span class="pq-opt">B) Symmetric cuts at both top corners</span><span class="pq-opt">C) Cut at the centre only</span><span class="pq-opt">D) No cut visible</span></div><div class="pq-ans">Answer: <strong>B) Symmetric cuts at both top corners</strong> — <em>Folding aligns both layers; cutting one corner cuts the same position on both layers, creating symmetric notches at both top corners when unfolded</em></div></div>
+    </div>
   </div>
 </div>
 
@@ -655,6 +813,13 @@ Up↔Down swapped. Left/Right unchanged.</div>
     </ul>
 
     <div class="tip-box"><strong>Unfolding Tip:</strong> There are 11 ways to unfold a cube. The key rule: faces directly opposite each other in an unfolded cross are the OPPOSITE faces of the cube.</div>
+
+    <h4 style="margin-top:20px;font-size:.9rem;">📝 Practice Questions</h4>
+    <div class="practice-set">
+      <div class="pq-item"><div class="pq-q">Q1. A cube painted red on all faces is cut into 27 equal cubes (3×3×3). How many smaller cubes have exactly 2 faces painted?</div><div class="pq-opts"><span class="pq-opt">A) 6</span><span class="pq-opt">B) 12</span><span class="pq-opt">C) 8</span><span class="pq-opt">D) 24</span></div><div class="pq-ans">Answer: <strong>B) 12</strong> — <em>Edge cubes (2 faces painted) = 12(n−2) = 12(3−2) = 12. These are the cubes sitting on each edge of the large cube</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q2. A cube painted on all faces is cut into 64 equal cubes (4×4×4). How many smaller cubes have no face painted?</div><div class="pq-opts"><span class="pq-opt">A) 4</span><span class="pq-opt">B) 8</span><span class="pq-opt">C) 16</span><span class="pq-opt">D) 24</span></div><div class="pq-ans">Answer: <strong>B) 8</strong> — <em>Inside cubes (no face painted) = (n−2)³ = (4−2)³ = 2³ = 8</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q3. On a standard die, 1 is opposite 6, 2 is opposite 5, 3 is opposite 4. If 3 is on top and 1 faces you, which number is on the right?</div><div class="pq-opts"><span class="pq-opt">A) 2</span><span class="pq-opt">B) 4</span><span class="pq-opt">C) 5</span><span class="pq-opt">D) 6</span></div><div class="pq-ans">Answer: <strong>A) 2</strong> — <em>3 on top → 4 on bottom; 1 facing you → 6 at the back; remaining faces 2 and 5 are on left/right. By standard orientation, 2 is on the right</em></div></div>
+    </div>
   </div>
 </div>
 
@@ -674,6 +839,13 @@ Up↔Down swapped. Left/Right unchanged.</div>
     </ul>
 
     <div class="tip-box"><strong>Strategy:</strong> Identify 2-3 consistent rules in the top two rows, then apply them to find the missing figure in row 3. The correct answer must satisfy ALL rules, not just one.</div>
+
+    <h4 style="margin-top:20px;font-size:.9rem;">📝 Practice Questions</h4>
+    <div class="practice-set">
+      <div class="pq-item"><div class="pq-q">Q1. In a 3×3 matrix: Row 1: ○ △ □ | Row 2: △ □ ○ | Row 3: □ ○ ? — What fills the missing cell?</div><div class="pq-opts"><span class="pq-opt">A) ○</span><span class="pq-opt">B) △</span><span class="pq-opt">C) □</span><span class="pq-opt">D) Any shape</span></div><div class="pq-ans">Answer: <strong>B) △</strong> — <em>Each row and column must contain ○, △, □ exactly once. Row 3 already has □ and ○, so △ is missing. Column 3 also has □ and ○, confirming △</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q2. In a figure matrix, each column shows shapes with increasing sides (3→4→5). Middle row, column 2 has a square (4 sides). What is in middle row, column 3?</div><div class="pq-opts"><span class="pq-opt">A) Triangle</span><span class="pq-opt">B) Square</span><span class="pq-opt">C) Pentagon</span><span class="pq-opt">D) Hexagon</span></div><div class="pq-ans">Answer: <strong>C) Pentagon</strong> — <em>Pattern: col 1 = triangle (3 sides), col 2 = square (4 sides), col 3 = pentagon (5 sides); this rule applies to every row</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q3. A 2×2 matrix has: top-left = filled circle, top-right = empty circle, bottom-left = filled square. What is the bottom-right figure?</div><div class="pq-opts"><span class="pq-opt">A) Filled circle</span><span class="pq-opt">B) Empty square</span><span class="pq-opt">C) Filled square</span><span class="pq-opt">D) Empty triangle</span></div><div class="pq-ans">Answer: <strong>B) Empty square</strong> — <em>Rule: left column = filled, right column = empty; top row = circles, bottom row = squares. Bottom-right = empty square</em></div></div>
+    </div>
   </div>
 </div>
 
@@ -703,6 +875,14 @@ Up↔Down swapped. Left/Right unchanged.</div>
     </ul>
 
     <div class="tip-box"><strong>Key:</strong> Always decode first, then form the chain. If the chain has a "break" (one &gt; then one &lt;), you cannot draw a definite conclusion between the ends.</div>
+
+    <h4 style="margin-top:20px;font-size:.9rem;">📝 Practice Questions</h4>
+    <div class="practice-set">
+      <div class="pq-item"><div class="pq-q">Q1. If P &gt; Q = R &lt; S, which conclusion is definitely true?</div><div class="pq-opts"><span class="pq-opt">A) P &gt; S</span><span class="pq-opt">B) S &gt; Q</span><span class="pq-opt">C) P &gt; R</span><span class="pq-opt">D) S = P</span></div><div class="pq-ans">Answer: <strong>C) P &gt; R</strong> — <em>P &gt; Q and Q = R → P &gt; R (transitive). We cannot compare P and S because the chain breaks at R &lt; S</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q2. If A ≥ B &gt; C = D, which conclusions follow? I) A &gt; D  II) B ≥ D</div><div class="pq-opts"><span class="pq-opt">A) Only I</span><span class="pq-opt">B) Only II</span><span class="pq-opt">C) Both I and II</span><span class="pq-opt">D) Neither</span></div><div class="pq-ans">Answer: <strong>C) Both I and II</strong> — <em>A ≥ B &gt; C = D → A &gt; D (I follows). B &gt; C = D → B &gt; D, so B ≥ D is also true (II follows)</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q3. If P ≥ Q &gt; R ≤ S = T, which conclusions follow? I) P &gt; R  II) T ≥ R</div><div class="pq-opts"><span class="pq-opt">A) Only I</span><span class="pq-opt">B) Only II</span><span class="pq-opt">C) Both I and II</span><span class="pq-opt">D) Neither</span></div><div class="pq-ans">Answer: <strong>C) Both I and II</strong> — <em>P ≥ Q &gt; R → P &gt; R (I follows). R ≤ S = T → T ≥ R (II follows)</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q4. Coded: A @ B = A &gt; B; A # B = A = B; A % B = A &lt; B. If P @ Q % R # S, which is true?</div><div class="pq-opts"><span class="pq-opt">A) P &gt; S</span><span class="pq-opt">B) P &lt; R</span><span class="pq-opt">C) Q &lt; S</span><span class="pq-opt">D) Cannot determine P vs S</span></div><div class="pq-ans">Answer: <strong>D) Cannot determine P vs S</strong> — <em>Decoded: P &gt; Q &lt; R = S. Chain breaks at Q: P &gt; Q but Q &lt; R = S, so no definite relation between P and S</em></div></div>
+    </div>
   </div>
 </div>
 
@@ -727,6 +907,14 @@ Up↔Down swapped. Left/Right unchanged.</div>
       <li>Mark vowels, consonants, numbers, symbols separately if needed</li>
       <li>Re-number after removal/rearrangement before answering</li>
     </ul>
+
+    <h4 style="margin-top:20px;font-size:.9rem;">📝 Practice Questions</h4>
+    <div class="practice-set">
+      <div class="pq-item"><div class="pq-q">Q1. Series: A, 2, C, 4, E, 6, G, ? — What comes next?</div><div class="pq-opts"><span class="pq-opt">A) H</span><span class="pq-opt">B) 7</span><span class="pq-opt">C) 8</span><span class="pq-opt">D) I</span></div><div class="pq-ans">Answer: <strong>C) 8</strong> — <em>Alternating pattern: odd positions = letters (A,C,E,G — every other letter); even positions = even numbers (2,4,6,8). Next term at even position = 8</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q2. Series: B, F, J, N, ? — What comes next?</div><div class="pq-opts"><span class="pq-opt">A) P</span><span class="pq-opt">B) Q</span><span class="pq-opt">C) R</span><span class="pq-opt">D) S</span></div><div class="pq-ans">Answer: <strong>C) R</strong> — <em>Each letter jumps +4 positions: B(2)→F(6)→J(10)→N(14)→R(18)</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q3. Series: AZ, BY, CX, DW, ? — What comes next?</div><div class="pq-opts"><span class="pq-opt">A) EV</span><span class="pq-opt">B) EW</span><span class="pq-opt">C) FV</span><span class="pq-opt">D) EU</span></div><div class="pq-ans">Answer: <strong>A) EV</strong> — <em>First letter goes forward (A,B,C,D,E); second letter goes backward (Z,Y,X,W,V). Next pair = EV</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q4. Series: Z, X, V, T, ? — What comes next?</div><div class="pq-opts"><span class="pq-opt">A) S</span><span class="pq-opt">B) R</span><span class="pq-opt">C) Q</span><span class="pq-opt">D) P</span></div><div class="pq-ans">Answer: <strong>B) R</strong> — <em>Each letter moves back by 2: Z(26)→X(24)→V(22)→T(20)→R(18)</em></div></div>
+    </div>
   </div>
 </div>
 
@@ -766,6 +954,14 @@ If clock gains X min in Y hours, it runs fast.</div>
       <li>Divisible by 100 but NOT 400 → NOT a leap year (e.g., 1900)</li>
       <li>Divisible by 400 → Leap year (e.g., 2000)</li>
     </ul>
+
+    <h4 style="margin-top:20px;font-size:.9rem;">📝 Practice Questions</h4>
+    <div class="practice-set">
+      <div class="pq-item"><div class="pq-q">Q1. What is the angle between the hands of a clock at 3:30?</div><div class="pq-opts"><span class="pq-opt">A) 90°</span><span class="pq-opt">B) 75°</span><span class="pq-opt">C) 105°</span><span class="pq-opt">D) 60°</span></div><div class="pq-ans">Answer: <strong>B) 75°</strong> — <em>Formula: |30H − 5.5M| = |30×3 − 5.5×30| = |90 − 165| = 75°</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q2. What is the angle between the hands of a clock at 8:20?</div><div class="pq-opts"><span class="pq-opt">A) 110°</span><span class="pq-opt">B) 130°</span><span class="pq-opt">C) 150°</span><span class="pq-opt">D) 120°</span></div><div class="pq-ans">Answer: <strong>B) 130°</strong> — <em>|30×8 − 5.5×20| = |240 − 110| = 130°</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q3. Jan 1, 2024 is Monday (2024 is a leap year). What day is Jan 1, 2025?</div><div class="pq-opts"><span class="pq-opt">A) Monday</span><span class="pq-opt">B) Wednesday</span><span class="pq-opt">C) Tuesday</span><span class="pq-opt">D) Thursday</span></div><div class="pq-ans">Answer: <strong>B) Wednesday</strong> — <em>2024 is a leap year = 366 days = 52 weeks + 2 odd days. Monday + 2 = Wednesday</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q4. How many times do the hands of a clock coincide in 12 hours?</div><div class="pq-opts"><span class="pq-opt">A) 12 times</span><span class="pq-opt">B) 11 times</span><span class="pq-opt">C) 10 times</span><span class="pq-opt">D) 22 times</span></div><div class="pq-ans">Answer: <strong>B) 11 times</strong> — <em>Hands meet every 65.45 min; in 720 min: 720 ÷ 65.45 ≈ 11 times (they do NOT coincide at 12:00 a second time within the 12-hour cycle)</em></div></div>
+    </div>
   </div>
 </div>
 
@@ -831,6 +1027,13 @@ At 6:00 → 180° (straight line)</div>
       <tr><td>Direction</td><td>2-3 Qs</td><td>2-3 Qs</td><td>1-2 Qs</td><td>2-3 Qs</td></tr>
       <tr><td>Non-Verbal</td><td>8-12 Qs</td><td>5-8 Qs</td><td>0-2 Qs</td><td>3-5 Qs</td></tr>
     </table></div>
+
+    <h4 style="margin-top:20px;font-size:.9rem;">📝 Quick Practice — Mixed</h4>
+    <div class="practice-set">
+      <div class="pq-item"><div class="pq-q">Q1. x% of y = y% of ?</div><div class="pq-opts"><span class="pq-opt">A) y</span><span class="pq-opt">B) x</span><span class="pq-opt">C) xy</span><span class="pq-opt">D) 100</span></div><div class="pq-ans">Answer: <strong>B) x</strong> — <em>x% of y = (x/100)×y and y% of x = (y/100)×x = same value. So x% of y = y% of x → the missing value is x</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q2. A train 200m long passes a pole in 20 seconds. What is the speed of the train?</div><div class="pq-opts"><span class="pq-opt">A) 36 km/h</span><span class="pq-opt">B) 72 km/h</span><span class="pq-opt">C) 18 km/h</span><span class="pq-opt">D) 54 km/h</span></div><div class="pq-ans">Answer: <strong>A) 36 km/h</strong> — <em>Speed = 200m ÷ 20s = 10 m/s. Convert to km/h: 10 × (18/5) = 36 km/h</em></div></div>
+      <div class="pq-item"><div class="pq-q">Q3. What is the Simple Interest on ₹1000 at 10% per annum for 3 years?</div><div class="pq-opts"><span class="pq-opt">A) ₹100</span><span class="pq-opt">B) ₹300</span><span class="pq-opt">C) ₹330</span><span class="pq-opt">D) ₹1300</span></div><div class="pq-ans">Answer: <strong>B) ₹300</strong> — <em>SI = (P × R × T) / 100 = (1000 × 10 × 3) / 100 = ₹300</em></div></div>
+    </div>
   </div>
 </div>
 
