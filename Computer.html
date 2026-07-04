@@ -276,7 +276,9 @@ ul.styled li::before{content:'\f058';font-family:'Font Awesome 6 Free';font-weig
 /* RESPONSIVE */
 @media(max-width:768px){
   .nav-links{display:none}
-  #hamburger{display:block}
+  #hamburger{display:none!important}
+  #theme-toggle{display:none!important}
+  .nav-search{display:none}
   #mobile-menu{display:none}
   #mobile-menu.open{display:flex}
   .hero-stats{gap:20px}
@@ -413,7 +415,10 @@ kbd{display:inline-block;padding:2px 7px;border-radius:5px;border:1px solid var(
 <nav id="mob-sidebar">
   <div class="mob-sb-header">
     <span class="mob-sb-logo">💻 Computer Science</span>
-    <button class="mob-sb-close" onclick="closeMobSidebar()">✕</button>
+    <div style="display:flex;align-items:center;gap:8px">
+      <button id="mob-theme-btn" onclick="toggleTheme()" title="Toggle theme" style="background:none;border:1px solid rgba(255,255,255,.3);border-radius:6px;padding:4px 8px;cursor:pointer;color:inherit;font-size:.95rem">🌙</button>
+      <button class="mob-sb-close" onclick="closeMobSidebar()">✕</button>
+    </div>
   </div>
   <div class="mob-sb-section">
     <div class="mob-sb-heading">Getting Started</div>
