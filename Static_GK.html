@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Static GK — Countries, Capitals, Currencies, National Parks, Awards, Important Days, Books & Authors for competitive exams. By Vikash Pandey.">
+<meta name="author" content="Vikash Pandey">
+<link rel="manifest" href="manifest.json">
+<title>Static GK — Countries, Capitals, Awards & More | Exam Prep</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>(function(){var t=localStorage.getItem('eps-theme');if(t)document.documentElement.setAttribute('data-theme',t);})()</script>
+<style>
+:root{--primary:#7c3aed;--secondary:#2563eb;--bg:#f5f3ff;--surface:#ffffff;--surface2:#f5f3ff;--border:#ede9fe;--text:#1e293b;--muted:#64748b;--sidebar:260px;--hdr:64px;--radius:12px;}
+[data-theme="dark"]{--bg:#0f0a1e;--surface:#14102a;--surface2:#1e1838;--border:#2d2558;--text:#f1f5f9;--muted:#94a3b8;}
+*{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;transition:background .3s,color .3s;}
+::-webkit-scrollbar{width:6px;}::-webkit-scrollbar-thumb{background:var(--primary);border-radius:99px;}
+.page-links{display:flex;flex-wrap:nowrap;gap:6px;align-items:center;overflow-x:auto;scrollbar-width:none;}
+.page-links::-webkit-scrollbar{display:none;}
+.page-links a{font-size:.7rem;color:var(--text);background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:4px 10px;text-decoration:none;transition:all .2s;font-weight:500;white-space:nowrap;}
+.page-links a:hover,.page-links a.current{background:var(--primary);color:#fff;border-color:var(--primary);}
+.page-links a.current{font-weight:700;pointer-events:none;}
+#sub-nav{position:fixed;top:var(--hdr);left:0;right:0;z-index:999;background:var(--surface);border-bottom:1px solid var(--border);padding:8px 1rem;}
+#header{position:fixed;top:0;left:0;right:0;height:var(--hdr);background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 1rem;gap:1rem;z-index:1000;}
+#hamburger{background:none;border:none;cursor:pointer;display:flex;flex-direction:column;gap:4px;padding:4px;}
+#hamburger span{display:block;width:22px;height:2px;background:var(--text);border-radius:2px;}
+#logo{display:flex;align-items:center;gap:.5rem;font-weight:800;font-size:1.05rem;text-decoration:none;color:var(--text);}
+#logo .grd{background:linear-gradient(135deg,var(--primary),var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.header-right{margin-left:auto;}
+#theme-btn{background:none;border:1.5px solid var(--border);border-radius:99px;padding:.35rem .8rem;cursor:pointer;font-size:.85rem;color:var(--text);}
+#sidebar{position:fixed;top:calc(var(--hdr)+44px);left:0;bottom:0;width:var(--sidebar);background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;transition:.3s;z-index:900;padding-bottom:2rem;}
+#sidebar.closed{transform:translateX(calc(-1 * var(--sidebar)));}
+.sb-section{padding:.5rem 0;}.sb-heading{padding:.5rem 1.2rem;font-size:.72rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;}
+.sb-item{display:flex;align-items:center;gap:.65rem;padding:.55rem 1.2rem;cursor:pointer;font-size:.85rem;transition:.15s;color:var(--text);border-left:3px solid transparent;}
+.sb-item:hover{background:var(--surface2);}.sb-item.active{background:rgba(124,58,237,.08);border-left-color:var(--primary);color:var(--primary);font-weight:600;}
+.sb-divider{height:1px;background:var(--border);margin:.3rem 0;}
+#main{margin-left:var(--sidebar);margin-top:calc(var(--hdr)+44px);padding:2rem;transition:margin-left .3s;}
+#main.full{margin-left:0;}
+.page{display:none;animation:fadeIn .3s ease;}.page.active{display:block;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);}}
+.hero{background:linear-gradient(135deg,#4c1d95 0%,#3730a3 40%,#0f172a 100%);border-radius:20px;padding:3rem 2.5rem;color:#fff;margin-bottom:2rem;}
+.hero h1{font-size:clamp(1.6rem,3.5vw,2.5rem);font-weight:800;line-height:1.2;margin-bottom:.8rem;}
+.hero h1 span{background:linear-gradient(90deg,#c4b5fd,#a5b4fc,#86efac);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.hero p{font-size:.95rem;opacity:.85;max-width:580px;}
+.section-title{font-size:1.3rem;font-weight:700;margin-bottom:1.25rem;display:flex;align-items:center;gap:.5rem;}
+.section-title::after{content:'';flex:1;height:2px;background:linear-gradient(90deg,var(--primary),transparent);margin-left:.5rem;}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.25rem;}
+.card h2{font-size:1.1rem;font-weight:700;margin-bottom:.75rem;color:var(--primary);}
+.card h3{font-size:.95rem;font-weight:700;margin:.75rem 0 .4rem;}
+.card p,.card li{font-size:.88rem;line-height:1.7;margin-bottom:.4rem;}
+.card ul{padding-left:1.2rem;}
+table{width:100%;border-collapse:collapse;font-size:.84rem;margin:.5rem 0 1rem;}
+th{background:var(--primary);color:#fff;padding:.55rem .75rem;text-align:left;font-weight:600;}
+td{padding:.5rem .75rem;border-bottom:1px solid var(--border);}
+tr:nth-child(even) td{background:var(--surface2);}
+.highlight{background:rgba(124,58,237,.06);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1rem 1.25rem;margin:.75rem 0;font-size:.88rem;}
+#btt{position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;border-radius:50%;background:var(--primary);color:#fff;border:none;font-size:1.2rem;cursor:pointer;display:none;align-items:center;justify-content:center;z-index:800;}
+#btt.show{display:flex;}
+#site-footer{background:var(--surface);border-top:1px solid var(--border);margin-left:var(--sidebar);transition:margin-left .3s;padding:2rem;}
+#main.full~#site-footer,#site-footer.full{margin-left:0;}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;font-size:.8rem;color:var(--muted);}
+.footer-author{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;padding:.35rem .9rem;border-radius:99px;font-size:.82rem;font-weight:600;}
+@media(max-width:768px){#sidebar{transform:translateX(calc(-1 * var(--sidebar)));} #sidebar.open{transform:translateX(0);} #main,#site-footer{margin-left:0;}}
+</style>
+</head>
+<body>
+<header id="header">
+  <button id="hamburger" onclick="toggleSidebar()"><span></span><span></span><span></span></button>
+  <a href="index.html" id="logo">🌍 <span class="grd">Static GK</span></a>
+  <div class="header-right"><button id="theme-btn" onclick="toggleTheme()">🌙 Theme</button></div>
+</header>
+<div id="sub-nav">
+  <div class="page-links">
+    <a href="index.html">🏠 Home</a>
+    <a href="Science.html">🔬 Science</a>
+    <a href="Computer.html">💻 Computer</a>
+    <a href="Current_Affairs.html">📰 Current Affairs</a>
+    <a href="english-grammar-mastery.html">📝 English</a>
+    <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html">🧮 Maths</a>
+    <a href="Indian_Polity.html">⚖️ Polity</a>
+    <a href="Indian_History.html">🏛️ History</a>
+    <a href="Indian_Geography.html">🗺️ Geography</a>
+    <a href="Static_GK.html">🌍 Static GK</a>
+    <a href="Indian_Economy.html">💰 Economy</a>
+    <a href="Bihar_Special_GK.html">🌾 Bihar GK</a>
+    <a href="Reasoning_Guide.html">🧠 Reasoning</a>
+    <a href="Syllabus.html">📋 Syllabus</a>
+  </div>
+</div>
+<nav id="sidebar">
+  <div class="sb-section">
+    <div class="sb-heading">World</div>
+    <div class="sb-item active" onclick="showPage('home')">🏠 Overview</div>
+    <div class="sb-item" onclick="showPage('capitals')">🌍 Countries & Capitals</div>
+    <div class="sb-item" onclick="showPage('currencies')">💱 Currencies</div>
+    <div class="sb-item" onclick="showPage('intlorg')">🤝 International Organisations</div>
+  </div>
+  <div class="sb-divider"></div>
+  <div class="sb-section">
+    <div class="sb-heading">India — National</div>
+    <div class="sb-item" onclick="showPage('symbols')">🏵️ National Symbols</div>
+    <div class="sb-item" onclick="showPage('awards')">🏆 Awards & Honours</div>
+    <div class="sb-item" onclick="showPage('days')">📅 Important Days</div>
+    <div class="sb-item" onclick="showPage('books')">📚 Books & Authors</div>
+    <div class="sb-item" onclick="showPage('sports')">🏅 Sports & Trophies</div>
+    <div class="sb-item" onclick="showPage('firsts')">🥇 Firsts in India</div>
+  </div>
+  <div class="sb-divider"></div>
+  <div class="sb-section">
+    <div class="sb-heading">Miscellaneous</div>
+    <div class="sb-item" onclick="showPage('dances')">💃 Classical Dances & Arts</div>
+    <div class="sb-item" onclick="showPage('boundaries')">📐 Important Lines & Boundaries</div>
+  </div>
+</nav>
+<main id="main">
+<section class="page active" id="pg-home">
+  <div class="hero">
+    <h1>Static General Knowledge<br><span>Countries · Awards · Days · Books · Sports</span></h1>
+    <p>All the static GK you need for SSC, Banking, Railway, UPSC, State PSC, Police and other competitive exams — systematically organized for quick revision.</p>
+  </div>
+  <div class="section-title">🏵️ India's National Symbols (Quick Ref)</div>
+  <div class="card">
+    <table>
+      <tr><th>Symbol</th><th>Name</th><th>Scientific Name / Notes</th></tr>
+      <tr><td>National Animal</td><td>Bengal Tiger (Panthera tigris tigris)</td><td>Project Tiger launched 1973; 53 Tiger Reserves</td></tr>
+      <tr><td>National Bird</td><td>Indian Peacock (Pavo cristatus)</td><td>Declared 1963; protected under Wildlife Protection Act</td></tr>
+      <tr><td>National Flower</td><td>Lotus (Nelumbo nucifera)</td><td>Symbol of purity and spiritual awakening</td></tr>
+      <tr><td>National Tree</td><td>Indian Banyan (Ficus benghalensis)</td><td>Longest living tree; aerial roots form new trunks</td></tr>
+      <tr><td>National Fruit</td><td>Mango (Mangifera indica)</td><td>"King of fruits"</td></tr>
+      <tr><td>National River</td><td>Ganga (Ganges)</td><td>Declared National River 2008</td></tr>
+      <tr><td>National Aquatic Animal</td><td>River Dolphin (Platanista gangetica)</td><td>Also called Susu; Gangetic dolphin</td></tr>
+      <tr><td>National Heritage Animal</td><td>Indian Elephant (Elephas maximus indicus)</td><td>Declared 2010; Project Elephant 1992</td></tr>
+      <tr><td>National Reptile</td><td>King Cobra (Ophiophagus hannah)</td><td>World's longest venomous snake</td></tr>
+      <tr><td>National Currency</td><td>Indian Rupee (₹)</td><td>Symbol ₹ adopted 2010; designed by D. Udaya Kumar</td></tr>
+      <tr><td>National Emblem</td><td>Lion Capital of Ashoka (Sarnath)</td><td>Adopted Jan 26, 1950; motto "Satyameva Jayate" (Truth Alone Triumphs) — from Mundaka Upanishad</td></tr>
+      <tr><td>National Flag</td><td>Tiranga — Saffron, White, Green + Ashoka Chakra (24 spokes)</td><td>Designed by Pingali Venkayya; adopted July 22, 1947</td></tr>
+      <tr><td>National Anthem</td><td>Jana Gana Mana (Rabindranath Tagore)</td><td>Adopted Jan 24, 1950; duration 52 seconds</td></tr>
+      <tr><td>National Song</td><td>Vande Mataram (Bankim Chandra Chattopadhyay)</td><td>From novel Anandamath (1882); equal status with National Anthem</td></tr>
+      <tr><td>National Calendar</td><td>Saka Calendar</td><td>Adopted March 22, 1957; starts with Chaitra; 1 Chaitra = March 22 (or March 21 in leap year)</td></tr>
+    </table>
+  </div>
+</section>
+<section class="page" id="pg-capitals">
+  <div class="section-title">🌍 Countries & Capitals</div>
+  <div class="card">
+    <h2>Asia — Key Countries</h2>
+    <table>
+      <tr><th>Country</th><th>Capital</th><th>Notable</th></tr>
+      <tr><td>China</td><td>Beijing</td><td>Most populous; Great Wall; Yangtze river</td></tr>
+      <tr><td>Japan</td><td>Tokyo</td><td>Island nation; Mount Fuji; 3rd largest economy</td></tr>
+      <tr><td>South Korea</td><td>Seoul</td><td>K-pop; Samsung, Hyundai; Korean War</td></tr>
+      <tr><td>North Korea</td><td>Pyongyang</td><td>Communist state; nuclear programme</td></tr>
+      <tr><td>Pakistan</td><td>Islamabad</td><td>Shares Indus valley; K2; Lahore historic</td></tr>
+      <tr><td>Bangladesh</td><td>Dhaka</td><td>Brahmaputra delta; Padma; garments</td></tr>
+      <tr><td>Sri Lanka</td><td>Sri Jayawardenepura Kotte (legislative); Colombo (commercial)</td><td>Pearl of Indian Ocean; tea; Adam's Bridge</td></tr>
+      <tr><td>Nepal</td><td>Kathmandu</td><td>Mt Everest; Hindu kingdom; Gurkha soldiers</td></tr>
+      <tr><td>Bhutan</td><td>Thimphu</td><td>Carbon negative; Gross National Happiness; Tiger's Nest monastery</td></tr>
+      <tr><td>Myanmar</td><td>Naypyidaw</td><td>Ruby; jade; Irrawaddy river; Aung San Suu Kyi</td></tr>
+      <tr><td>Thailand</td><td>Bangkok</td><td>Land of Smiles; Buddhism; Chao Phraya</td></tr>
+      <tr><td>Vietnam</td><td>Hanoi</td><td>Mekong delta; Ho Chi Minh City (Saigon); Vietnam War</td></tr>
+      <tr><td>Indonesia</td><td>Jakarta (moving to Nusantara)</td><td>Largest archipelago; Krakatoa; Bali; 4th most populous</td></tr>
+      <tr><td>Saudi Arabia</td><td>Riyadh</td><td>Mecca & Medina; largest oil producer; Rub' al Khali</td></tr>
+      <tr><td>Iran</td><td>Tehran</td><td>Persia; Shia Islam; nuclear deal; oil</td></tr>
+      <tr><td>Iraq</td><td>Baghdad</td><td>Mesopotamia (Tigris & Euphrates); Babylon; oil</td></tr>
+      <tr><td>Israel</td><td>Jerusalem (disputed); Tel Aviv (internationally recognised)</td><td>Middle East conflict; Dead Sea; startup nation</td></tr>
+      <tr><td>UAE</td><td>Abu Dhabi</td><td>Dubai — tallest building (Burj Khalifa); oil; trade hub</td></tr>
+      <tr><td>Afghanistan</td><td>Kabul</td><td>Landlocked; Hindukush; Taliban; opium</td></tr>
+      <tr><td>Russia</td><td>Moscow</td><td>Largest country; Lake Baikal (deepest); Trans-Siberian Railway</td></tr>
+    </table>
+    <h3>Europe — Key Countries</h3>
+    <table>
+      <tr><th>Country</th><th>Capital</th><th>Notable</th></tr>
+      <tr><td>France</td><td>Paris</td><td>Eiffel Tower; wine; Napoleon; 5th economy</td></tr>
+      <tr><td>Germany</td><td>Berlin</td><td>Brandenburg Gate; Autobahn; largest European economy; Oktoberfest</td></tr>
+      <tr><td>Italy</td><td>Rome</td><td>Colosseum; Vatican; Renaissance; pizza & pasta</td></tr>
+      <tr><td>Spain</td><td>Madrid</td><td>Sagrada Familia (Barcelona); flamenco; bull running</td></tr>
+      <tr><td>United Kingdom</td><td>London</td><td>Westminster; Big Ben; NHS; Brexit (2020)</td></tr>
+      <tr><td>Switzerland</td><td>Bern</td><td>UN Geneva; Alps; chocolate; banking secrecy (ended)</td></tr>
+      <tr><td>Netherlands</td><td>Amsterdam (capital); The Hague (govt seat)</td><td>Tulips; windmills; Anne Frank; ICC at The Hague</td></tr>
+      <tr><td>Greece</td><td>Athens</td><td>Birthplace of democracy; Olympics; Acropolis; Mediterranean</td></tr>
+      <tr><td>Ukraine</td><td>Kyiv (Kiev)</td><td>2022 Russia-Ukraine war; grain exporter; Chernobyl</td></tr>
+      <tr><td>Vatican City</td><td>Vatican City</td><td>Smallest country in world (0.44 km²); Pope; St Peter's Basilica</td></tr>
+    </table>
+    <h3>Africa — Key Countries</h3>
+    <table>
+      <tr><th>Country</th><th>Capital</th><th>Notable</th></tr>
+      <tr><td>Nigeria</td><td>Abuja</td><td>Most populous African country; oil; Niger Delta</td></tr>
+      <tr><td>South Africa</td><td>Pretoria (executive); Cape Town (legislative); Bloemfontein (judicial)</td><td>Three capitals; Apartheid history; Mandela; gold & diamonds; Cape of Good Hope</td></tr>
+      <tr><td>Egypt</td><td>Cairo</td><td>Pyramids; Sphinx; Suez Canal; Nile river</td></tr>
+      <tr><td>Kenya</td><td>Nairobi</td><td>Safari; Maasai Mara; Marathon runners; Rift Valley</td></tr>
+      <tr><td>Ethiopia</td><td>Addis Ababa</td><td>AU headquarters; Nile source; oldest nation; coffee origin</td></tr>
+    </table>
+    <h3>Americas</h3>
+    <table>
+      <tr><th>Country</th><th>Capital</th><th>Notable</th></tr>
+      <tr><td>USA</td><td>Washington D.C.</td><td>1st economy; Statue of Liberty; NASA; Hollywood</td></tr>
+      <tr><td>Canada</td><td>Ottawa</td><td>2nd largest country; maple leaf; Niagara Falls; G7</td></tr>
+      <tr><td>Brazil</td><td>Brasília</td><td>Largest in South America; Amazon; Rio Carnival; Christ the Redeemer</td></tr>
+      <tr><td>Argentina</td><td>Buenos Aires</td><td>Aconcagua; tango; Patagonia; Messi (football)</td></tr>
+      <tr><td>Mexico</td><td>Mexico City</td><td>Aztec empire; Teotihuacan; tequila; USMCA</td></tr>
+    </table>
+  </div>
+</section>
+<section class="page" id="pg-currencies">
+  <div class="section-title">💱 Currencies of the World</div>
+  <div class="card">
+    <h2>Important Currencies for Exams</h2>
+    <table>
+      <tr><th>Country</th><th>Currency</th></tr>
+      <tr><td>India</td><td>Indian Rupee (₹)</td></tr>
+      <tr><td>USA</td><td>US Dollar ($)</td></tr>
+      <tr><td>UK</td><td>Pound Sterling (£)</td></tr>
+      <tr><td>European Union</td><td>Euro (€)</td></tr>
+      <tr><td>Japan</td><td>Yen (¥)</td></tr>
+      <tr><td>China</td><td>Renminbi / Yuan (¥)</td></tr>
+      <tr><td>Russia</td><td>Ruble (₽)</td></tr>
+      <tr><td>Pakistan</td><td>Pakistani Rupee</td></tr>
+      <tr><td>Bangladesh</td><td>Taka</td></tr>
+      <tr><td>Nepal</td><td>Nepalese Rupee</td></tr>
+      <tr><td>Sri Lanka</td><td>Sri Lankan Rupee</td></tr>
+      <tr><td>Bhutan</td><td>Ngultrum</td></tr>
+      <tr><td>Saudi Arabia</td><td>Saudi Riyal</td></tr>
+      <tr><td>UAE</td><td>UAE Dirham</td></tr>
+      <tr><td>Israel</td><td>New Shekel</td></tr>
+      <tr><td>Iran</td><td>Iranian Rial</td></tr>
+      <tr><td>South Africa</td><td>Rand</td></tr>
+      <tr><td>Australia</td><td>Australian Dollar</td></tr>
+      <tr><td>Canada</td><td>Canadian Dollar</td></tr>
+      <tr><td>Brazil</td><td>Brazilian Real</td></tr>
+      <tr><td>Thailand</td><td>Baht</td></tr>
+      <tr><td>Indonesia</td><td>Rupiah</td></tr>
+      <tr><td>South Korea</td><td>Won</td></tr>
+      <tr><td>Malaysia</td><td>Ringgit</td></tr>
+      <tr><td>Switzerland</td><td>Swiss Franc</td></tr>
+      <tr><td>Turkey</td><td>Turkish Lira</td></tr>
+      <tr><td>Egypt</td><td>Egyptian Pound</td></tr>
+      <tr><td>Kenya</td><td>Kenyan Shilling</td></tr>
+      <tr><td>Myanmar</td><td>Kyat</td></tr>
+      <tr><td>Afghanistan</td><td>Afghani</td></tr>
+      <tr><td>Iraq</td><td>Iraqi Dinar</td></tr>
+      <tr><td>Kuwait</td><td>Kuwaiti Dinar (world's highest valued currency)</td></tr>
+      <tr><td>Vatican City</td><td>Euro</td></tr>
+    </table>
+  </div>
+</section>
+<section class="page" id="pg-intlorg">
+  <div class="section-title">🤝 International Organisations</div>
+  <div class="card">
+    <h2>Key International Bodies</h2>
+    <table>
+      <tr><th>Organisation</th><th>Full Name</th><th>HQ</th><th>Founded</th></tr>
+      <tr><td>UN</td><td>United Nations</td><td>New York, USA</td><td>1945</td></tr>
+      <tr><td>WHO</td><td>World Health Organisation</td><td>Geneva, Switzerland</td><td>1948</td></tr>
+      <tr><td>IMF</td><td>International Monetary Fund</td><td>Washington D.C., USA</td><td>1944</td></tr>
+      <tr><td>World Bank</td><td>International Bank for Reconstruction & Development (IBRD)</td><td>Washington D.C., USA</td><td>1944</td></tr>
+      <tr><td>WTO</td><td>World Trade Organisation</td><td>Geneva, Switzerland</td><td>1995 (replaced GATT)</td></tr>
+      <tr><td>UNESCO</td><td>UN Educational, Scientific & Cultural Organisation</td><td>Paris, France</td><td>1945</td></tr>
+      <tr><td>UNICEF</td><td>UN Children's Fund</td><td>New York, USA</td><td>1946</td></tr>
+      <tr><td>NATO</td><td>North Atlantic Treaty Organisation</td><td>Brussels, Belgium</td><td>1949</td></tr>
+      <tr><td>ASEAN</td><td>Association of Southeast Asian Nations</td><td>Jakarta, Indonesia</td><td>1967</td></tr>
+      <tr><td>SAARC</td><td>South Asian Association for Regional Cooperation</td><td>Kathmandu, Nepal</td><td>1985</td></tr>
+      <tr><td>BRICS</td><td>Brazil, Russia, India, China, South Africa (+ new members)</td><td>No fixed HQ; rotating</td><td>2006 (BRIC); 2010 (BRICS)</td></tr>
+      <tr><td>G20</td><td>Group of Twenty</td><td>No fixed HQ</td><td>1999; India hosted 2023</td></tr>
+      <tr><td>G7</td><td>Group of Seven (major democracies)</td><td>No fixed HQ</td><td>1975</td></tr>
+      <tr><td>SCO</td><td>Shanghai Cooperation Organisation</td><td>Beijing, China</td><td>2001; India joined 2017</td></tr>
+      <tr><td>ILO</td><td>International Labour Organisation</td><td>Geneva, Switzerland</td><td>1919</td></tr>
+      <tr><td>ICC</td><td>International Criminal Court</td><td>The Hague, Netherlands</td><td>2002</td></tr>
+      <tr><td>ICJ</td><td>International Court of Justice (World Court)</td><td>The Hague, Netherlands</td><td>1945</td></tr>
+      <tr><td>IAEA</td><td>International Atomic Energy Agency</td><td>Vienna, Austria</td><td>1957</td></tr>
+      <tr><td>INTERPOL</td><td>International Criminal Police Organisation</td><td>Lyon, France</td><td>1923</td></tr>
+      <tr><td>Commonwealth</td><td>Commonwealth of Nations</td><td>London, UK</td><td>1931 (Statute of Westminster)</td></tr>
+    </table>
+    <div class="highlight">📌 <strong>UN Security Council Permanent Members (P5):</strong> USA, UK, France, Russia, China — have veto power. <strong>India's bid for permanent seat</strong> — supported by USA, UK, France, Russia. <strong>UN Secretary General</strong> — António Guterres (Portugal); elected 2017, re-elected 2021.</div>
+  </div>
+</section>
+<section class="page" id="pg-awards">
+  <div class="section-title">🏆 Awards & Honours</div>
+  <div class="card">
+    <h2>India's Highest Civilian Awards</h2>
+    <table>
+      <tr><th>Award</th><th>Field</th><th>Established</th><th>Note</th></tr>
+      <tr><td>Bharat Ratna</td><td>Exceptional public service / highest achievement in any field</td><td>1954</td><td>Highest civilian award; maximum 3 per year; no monetary prize</td></tr>
+      <tr><td>Padma Vibhushan</td><td>Exceptional distinguished service</td><td>1954</td><td>2nd highest; awarded by President on Republic Day</td></tr>
+      <tr><td>Padma Bhushan</td><td>Distinguished service of high order</td><td>1954</td><td>3rd highest civilian award</td></tr>
+      <tr><td>Padma Shri</td><td>Distinguished service</td><td>1954</td><td>4th highest civilian award</td></tr>
+    </table>
+    <h3>Gallantry Awards (Military)</h3>
+    <table>
+      <tr><th>Award</th><th>Rank</th><th>Note</th></tr>
+      <tr><td>Param Vir Chakra (PVC)</td><td>Highest</td><td>Highest wartime gallantry; 21 recipients (as of 2023); last awarded to Capt Vikram Batra (posthumous, Kargil 1999)</td></tr>
+      <tr><td>Maha Vir Chakra</td><td>2nd</td><td>2nd highest wartime gallantry; symbol — 5-pointed star with Ashoka chakra</td></tr>
+      <tr><td>Vir Chakra</td><td>3rd</td><td>3rd highest wartime gallantry</td></tr>
+      <tr><td>Ashoka Chakra</td><td>Highest (peacetime)</td><td>Highest peacetime gallantry; given for bravery in counterterrorism/other non-war situations</td></tr>
+      <tr><td>Kirti Chakra</td><td>2nd (peacetime)</td><td>2nd highest peacetime; presented by President at Republic Day</td></tr>
+    </table>
+    <h3>Nobel Prizes — Indian Winners</h3>
+    <table>
+      <tr><th>Year</th><th>Person</th><th>Field</th><th>Reason</th></tr>
+      <tr><td>1913</td><td>Rabindranath Tagore</td><td>Literature</td><td>Gitanjali — first non-European Nobel in Literature</td></tr>
+      <tr><td>1930</td><td>C.V. Raman</td><td>Physics</td><td>Raman Effect (scattering of light)</td></tr>
+      <tr><td>1968</td><td>Har Gobind Khorana</td><td>Medicine</td><td>Interpretation of genetic code (US citizen of Indian origin)</td></tr>
+      <tr><td>1979</td><td>Mother Teresa</td><td>Peace</td><td>Serving the poor in India (Albanian-Indian)</td></tr>
+      <tr><td>1983</td><td>Subrahmanyan Chandrasekhar</td><td>Physics</td><td>Chandrasekhar Limit — structure and evolution of stars (US citizen)</td></tr>
+      <tr><td>1998</td><td>Amartya Sen</td><td>Economics</td><td>Welfare economics; capability approach</td></tr>
+      <tr><td>2001</td><td>V.S. Naipaul</td><td>Literature</td><td>Indian-origin Trinidadian-British writer</td></tr>
+      <tr><td>2009</td><td>Venkatraman Ramakrishnan</td><td>Chemistry</td><td>Structure and function of ribosomes (British-Indian)</td></tr>
+      <tr><td>2014</td><td>Kailash Satyarthi</td><td>Peace</td><td>Children's rights; against child labour; Bachpan Bachao Andolan</td></tr>
+      <tr><td>2019</td><td>Abhijit Banerjee</td><td>Economics</td><td>Experimental approach to alleviating poverty (US citizen of Indian origin)</td></tr>
+    </table>
+    <h3>Sports Awards (India)</h3>
+    <table>
+      <tr><th>Award</th><th>Field</th><th>Note</th></tr>
+      <tr><td>Major Dhyan Chand Khel Ratna</td><td>Sports (highest)</td><td>Highest sporting award; renamed from Rajiv Gandhi Khel Ratna in 2021</td></tr>
+      <tr><td>Arjuna Award</td><td>Sports</td><td>Outstanding performance over last 4 years in any sport</td></tr>
+      <tr><td>Dronacharya Award</td><td>Sports coaching</td><td>Coaches who produce outstanding sportspersons</td></tr>
+      <tr><td>Dhyan Chand Award</td><td>Lifetime achievement in sports</td><td>Formerly Dhyan Chand Award; for contribution to promotion of sports</td></tr>
+    </table>
+  </div>
+</section>
+<section class="page" id="pg-days">
+  <div class="section-title">📅 Important National & International Days</div>
+  <div class="card">
+    <h2>January — June</h2>
+    <table>
+      <tr><th>Date</th><th>Day</th></tr>
+      <tr><td>Jan 1</td><td>World Peace Day / New Year Day</td></tr>
+      <tr><td>Jan 12</td><td>National Youth Day (Birthday of Swami Vivekananda)</td></tr>
+      <tr><td>Jan 15</td><td>Army Day (India)</td></tr>
+      <tr><td>Jan 26</td><td>Republic Day (India); International Customs Day</td></tr>
+      <tr><td>Jan 30</td><td>Martyrs' Day (Assassination of Mahatma Gandhi); World Leprosy Eradication Day</td></tr>
+      <tr><td>Feb 4</td><td>World Cancer Day</td></tr>
+      <tr><td>Feb 14</td><td>Valentine's Day; World Radio Day</td></tr>
+      <tr><td>Feb 21</td><td>International Mother Language Day</td></tr>
+      <tr><td>Feb 28</td><td>National Science Day (Raman Effect announced 1928)</td></tr>
+      <tr><td>Mar 8</td><td>International Women's Day</td></tr>
+      <tr><td>Mar 15</td><td>World Consumer Rights Day</td></tr>
+      <tr><td>Mar 21</td><td>World Forestry Day / World Down Syndrome Day</td></tr>
+      <tr><td>Mar 22</td><td>World Water Day; Bihar Day</td></tr>
+      <tr><td>Mar 23</td><td>World Meteorological Day; Bhagat Singh, Sukhdev, Rajguru Martyrdom Day</td></tr>
+      <tr><td>Apr 5</td><td>National Maritime Day (India)</td></tr>
+      <tr><td>Apr 7</td><td>World Health Day (WHO founded)</td></tr>
+      <tr><td>Apr 14</td><td>Dr B.R. Ambedkar Jayanti; Fire Service Day</td></tr>
+      <tr><td>Apr 18</td><td>World Heritage Day (International Day for Monuments & Sites)</td></tr>
+      <tr><td>Apr 22</td><td>Earth Day</td></tr>
+      <tr><td>Apr 23</td><td>World Book & Copyright Day</td></tr>
+      <tr><td>May 1</td><td>International Labour Day (May Day); Maharashtra Day; Gujarat Day</td></tr>
+      <tr><td>May 3</td><td>World Press Freedom Day</td></tr>
+      <tr><td>May 8</td><td>World Red Cross Day</td></tr>
+      <tr><td>May 11</td><td>National Technology Day (India — Pokhran II nuclear test 1998)</td></tr>
+      <tr><td>Jun 5</td><td>World Environment Day</td></tr>
+      <tr><td>Jun 21</td><td>International Yoga Day (proposed by India, adopted by UN 2014)</td></tr>
+    </table>
+    <h2>July — December</h2>
+    <table>
+      <tr><th>Date</th><th>Day</th></tr>
+      <tr><td>Jul 1</td><td>Doctor's Day (India — B.C. Roy's birthday); National Chartered Accountants Day</td></tr>
+      <tr><td>Jul 11</td><td>World Population Day</td></tr>
+      <tr><td>Jul 26</td><td>Kargil Vijay Diwas (1999 Kargil War ended)</td></tr>
+      <tr><td>Aug 6</td><td>Hiroshima Day (1945)</td></tr>
+      <tr><td>Aug 9</td><td>Quit India Day (1942); Nagasaki Day; International Day of the World's Indigenous People</td></tr>
+      <tr><td>Aug 12</td><td>International Youth Day</td></tr>
+      <tr><td>Aug 15</td><td>Independence Day (India); World Humanitarian Day</td></tr>
+      <tr><td>Aug 29</td><td>National Sports Day (Major Dhyan Chand's birthday)</td></tr>
+      <tr><td>Sep 5</td><td>Teachers' Day (India — Dr Radhakrishnan's birthday)</td></tr>
+      <tr><td>Sep 8</td><td>International Literacy Day</td></tr>
+      <tr><td>Sep 14</td><td>Hindi Diwas (Hindi adopted as official language 1949)</td></tr>
+      <tr><td>Sep 16</td><td>World Ozone Day</td></tr>
+      <tr><td>Sep 29</td><td>World Heart Day</td></tr>
+      <tr><td>Oct 1</td><td>International Day of Older Persons; World Vegetarian Day</td></tr>
+      <tr><td>Oct 2</td><td>Gandhi Jayanti (Mahatma Gandhi's birthday); International Day of Non-Violence</td></tr>
+      <tr><td>Oct 8</td><td>Indian Air Force Day</td></tr>
+      <tr><td>Oct 16</td><td>World Food Day (FAO founded 1945)</td></tr>
+      <tr><td>Oct 24</td><td>United Nations Day; World Development Information Day</td></tr>
+      <tr><td>Nov 14</td><td>Children's Day (India — Nehru's birthday); World Diabetes Day</td></tr>
+      <tr><td>Nov 19</td><td>World Toilet Day; International Men's Day</td></tr>
+      <tr><td>Dec 1</td><td>World AIDS Day</td></tr>
+      <tr><td>Dec 3</td><td>World Disability Day; Bhopal Gas Tragedy Anniversary (1984)</td></tr>
+      <tr><td>Dec 4</td><td>Indian Navy Day</td></tr>
+      <tr><td>Dec 10</td><td>Human Rights Day (UN Declaration signed 1948)</td></tr>
+      <tr><td>Dec 22</td><td>National Mathematics Day (Ramanujan's birthday)</td></tr>
+      <tr><td>Dec 23</td><td>Kisan Diwas (Kisan/Farmer's Day — Chaudhary Charan Singh's birthday)</td></tr>
+      <tr><td>Dec 25</td><td>Christmas; Good Governance Day (Atal Bihari Vajpayee's birthday)</td></tr>
+    </table>
+  </div>
+</section>
+<section class="page" id="pg-books">
+  <div class="section-title">📚 Books & Authors</div>
+  <div class="card">
+    <h2>Important Books by Indian Authors</h2>
+    <table>
+      <tr><th>Book</th><th>Author</th><th>Note</th></tr>
+      <tr><td>Gitanjali</td><td>Rabindranath Tagore</td><td>Nobel Prize in Literature 1913</td></tr>
+      <tr><td>Discovery of India</td><td>Jawaharlal Nehru</td><td>Written in Ahmednagar jail 1944</td></tr>
+      <tr><td>Wings of Fire</td><td>A.P.J. Abdul Kalam</td><td>Autobiography; missile man; former President</td></tr>
+      <tr><td>My Experiments with Truth</td><td>Mahatma Gandhi</td><td>Gandhi's autobiography</td></tr>
+      <tr><td>India Wins Freedom</td><td>Maulana Abul Kalam Azad</td><td>30 years of autobiography suppressed; released in full 1988</td></tr>
+      <tr><td>The Story of My Life</td><td>B.R. Ambedkar</td><td>Autobiography; architect of Indian Constitution</td></tr>
+      <tr><td>Arthashastra</td><td>Kautilya/Chanakya</td><td>Ancient treatise on statecraft, economic policy, military strategy</td></tr>
+      <tr><td>Indica</td><td>Megasthenes</td><td>Greek ambassador's account of India during Chandragupta Maurya's reign</td></tr>
+      <tr><td>Ain-i-Akbari / Akbarnama</td><td>Abul Fazl</td><td>Historical text of Akbar's reign</td></tr>
+      <tr><td>Baburnama (Tuzuk-i-Baburi)</td><td>Babur</td><td>First autobiography in Turkic/Islamic world</td></tr>
+      <tr><td>Midnight's Children</td><td>Salman Rushdie</td><td>Booker Prize 1981; novel about India's independence</td></tr>
+      <tr><td>The God of Small Things</td><td>Arundhati Roy</td><td>Booker Prize 1997</td></tr>
+      <tr><td>Train to Pakistan</td><td>Khushwant Singh</td><td>Partition of India; Punjab</td></tr>
+      <tr><td>A Suitable Boy</td><td>Vikram Seth</td><td>Long English novel; post-partition India</td></tr>
+      <tr><td>The Argumentative Indian</td><td>Amartya Sen</td><td>India's intellectual, political and cultural traditions</td></tr>
+      <tr><td>Half a Rupee Stories</td><td>Gulzar</td><td>Short stories; also famous lyricist/poet</td></tr>
+      <tr><td>India After Gandhi</td><td>Ramachandra Guha</td><td>History of world's largest democracy</td></tr>
+      <tr><td>Ignited Minds</td><td>A.P.J. Abdul Kalam</td><td>Youth development; vision for India 2020</td></tr>
+    </table>
+    <h3>Famous World Books</h3>
+    <table>
+      <tr><th>Book</th><th>Author</th><th>Country</th></tr>
+      <tr><td>The Republic</td><td>Plato</td><td>Greece (ancient)</td></tr>
+      <tr><td>Hamlet, Macbeth, Othello</td><td>William Shakespeare</td><td>England</td></tr>
+      <tr><td>War and Peace</td><td>Leo Tolstoy</td><td>Russia</td></tr>
+      <tr><td>Les Misérables</td><td>Victor Hugo</td><td>France</td></tr>
+      <tr><td>Don Quixote</td><td>Miguel de Cervantes</td><td>Spain</td></tr>
+      <tr><td>Das Kapital</td><td>Karl Marx</td><td>Germany</td></tr>
+      <tr><td>Mein Kampf</td><td>Adolf Hitler</td><td>Germany (autobiography)</td></tr>
+      <tr><td>The Wealth of Nations</td><td>Adam Smith</td><td>Scotland (economics)</td></tr>
+      <tr><td>1984 / Animal Farm</td><td>George Orwell</td><td>UK</td></tr>
+      <tr><td>Harry Potter series</td><td>J.K. Rowling</td><td>UK</td></tr>
+    </table>
+  </div>
+</section>
+<section class="page" id="pg-sports">
+  <div class="section-title">🏅 Sports, Trophies & Tournaments</div>
+  <div class="card">
+    <h2>Important Sports Trophies in India</h2>
+    <table>
+      <tr><th>Trophy</th><th>Sport</th><th>Note</th></tr>
+      <tr><td>Durand Cup</td><td>Football</td><td>Oldest football tournament in India (1888); one of oldest in world</td></tr>
+      <tr><td>Santosh Trophy</td><td>Football</td><td>National football championship among state teams</td></tr>
+      <tr><td>Ranji Trophy</td><td>Cricket</td><td>Domestic cricket championship; first-class cricket; named after Ranjitsinhji</td></tr>
+      <tr><td>Vijay Hazare Trophy</td><td>Cricket</td><td>Domestic one-day cricket championship</td></tr>
+      <tr><td>Irani Trophy</td><td>Cricket</td><td>Ranji Trophy winners vs Rest of India</td></tr>
+      <tr><td>Deodhar Trophy</td><td>Cricket</td><td>Domestic one-day tournament among zones</td></tr>
+      <tr><td>Duleep Trophy</td><td>Cricket</td><td>Domestic first-class tournament among zones</td></tr>
+      <tr><td>Scindia Gold Cup</td><td>Polo</td><td>Prestigious polo tournament</td></tr>
+      <tr><td>Nehru Trophy</td><td>Football</td><td>International football; held in Kochi</td></tr>
+      <tr><td>Agha Khan Cup</td><td>Hockey</td><td>Prestigious international hockey tournament (Mumbai)</td></tr>
+      <tr><td>Dhyan Chand Trophy</td><td>Hockey</td><td>National hockey championship</td></tr>
+    </table>
+    <h3>World Sports Trophies</h3>
+    <table>
+      <tr><th>Trophy</th><th>Sport</th></tr>
+      <tr><td>FIFA World Cup</td><td>Football (every 4 years)</td></tr>
+      <tr><td>ICC Cricket World Cup</td><td>Cricket ODI (every 4 years)</td></tr>
+      <tr><td>Thomas Cup</td><td>Badminton (Men — team); India won first time 2022</td></tr>
+      <tr><td>Uber Cup</td><td>Badminton (Women — team)</td></tr>
+      <tr><td>Davis Cup</td><td>Tennis (Men — team)</td></tr>
+      <tr><td>Fed Cup (Billie Jean King Cup)</td><td>Tennis (Women — team)</td></tr>
+      <tr><td>Stanley Cup</td><td>Ice Hockey (North America)</td></tr>
+      <tr><td>Ryder Cup</td><td>Golf (Europe vs USA)</td></tr>
+      <tr><td>Ashes</td><td>Cricket (England vs Australia)</td></tr>
+    </table>
+  </div>
+</section>
+<section class="page" id="pg-firsts">
+  <div class="section-title">🥇 Firsts in India</div>
+  <div class="card">
+    <h2>Famous Firsts in Indian History</h2>
+    <table>
+      <tr><th>First</th><th>Person/Place/Year</th></tr>
+      <tr><td>First President of India</td><td>Dr. Rajendra Prasad (1950–1962)</td></tr>
+      <tr><td>First Prime Minister</td><td>Jawaharlal Nehru (1947–1964)</td></tr>
+      <tr><td>First female President</td><td>Pratibha Patil (2007–2012)</td></tr>
+      <tr><td>First female Prime Minister</td><td>Indira Gandhi (1966–1977, 1980–1984)</td></tr>
+      <tr><td>First CJI of India</td><td>H.J. Kania (1950)</td></tr>
+      <tr><td>First Governor General of India (British)</td><td>Warren Hastings (1772)</td></tr>
+      <tr><td>First Governor General of independent India</td><td>Lord Mountbatten (1947–1948); C. Rajagopalachari (Indian, last GG — 1948–1950)</td></tr>
+      <tr><td>First Nobel Prize winner from India</td><td>Rabindranath Tagore (1913, Literature)</td></tr>
+      <tr><td>First Indian in space</td><td>Rakesh Sharma (1984, Soviet mission Soyuz T-11)</td></tr>
+      <tr><td>First Indian woman in space</td><td>Kalpana Chawla (US citizen of Indian origin, 1997, NASA)</td></tr>
+      <tr><td>First woman IAS officer of India</td><td>Anna Rajam Malhotra (1951)</td></tr>
+      <tr><td>First woman Chief Minister</td><td>Sucheta Kripalani (Uttar Pradesh, 1963)</td></tr>
+      <tr><td>First woman Governor</td><td>Sarojini Naidu (Uttar Pradesh, 1947)</td></tr>
+      <tr><td>First Indian to win an individual Olympic gold</td><td>Abhinav Bindra (Shooting, Beijing 2008)</td></tr>
+      <tr><td>First railway in India</td><td>Bombay (Bori Bunder) to Thane — April 16, 1853; Lord Dalhousie's initiative</td></tr>
+      <tr><td>First modern university in India</td><td>University of Calcutta (1857)</td></tr>
+      <tr><td>First general elections in India</td><td>1951–52; Jawaharlal Nehru — first elected PM; D.S. Kothari — first CEC</td></tr>
+      <tr><td>First Five Year Plan</td><td>1951–56; focus on agriculture</td></tr>
+      <tr><td>First nuclear test</td><td>Pokhran-I (Smiling Buddha), May 18, 1974; Pokhran-II (Operation Shakti) May 11, 1998</td></tr>
+      <tr><td>First satellite of India</td><td>Aryabhata (1975, launched by USSR)</td></tr>
+    </table>
+  </div>
+</section>
+<section class="page" id="pg-dances">
+  <div class="section-title">💃 Classical Dances & Arts</div>
+  <div class="card">
+    <h2>Classical Dance Forms of India</h2>
+    <table>
+      <tr><th>Dance</th><th>State/Region</th><th>Feature</th></tr>
+      <tr><td>Bharatanatyam</td><td>Tamil Nadu</td><td>Oldest classical dance; temple dance tradition; devadasi system origin; Rukmini Devi Arundale revived</td></tr>
+      <tr><td>Kathak</td><td>North India (Lucknow, Jaipur, Varanasi Gharanas)</td><td>Story-telling through dance; Mughal influence; quick spins (chakkar); courtly tradition</td></tr>
+      <tr><td>Odissi</td><td>Odisha</td><td>Based on Maharis (temple dancers); Tribhangi posture; sculptures of Konark</td></tr>
+      <tr><td>Kuchipudi</td><td>Andhra Pradesh</td><td>Village dance drama tradition; fast footwork; performed originally by Brahmin boys</td></tr>
+      <tr><td>Manipuri</td><td>Manipur</td><td>Soft, lyrical movements; Ras Leela (Krishna stories); no heavy footwork</td></tr>
+      <tr><td>Mohiniyattam</td><td>Kerala</td><td>"Dance of the enchantress"; semi-classical; white and gold costume; graceful movements</td></tr>
+      <tr><td>Kathakali</td><td>Kerala</td><td>Dance drama; elaborate costumes and makeup; stories from epics; eye exercises</td></tr>
+      <tr><td>Sattriya</td><td>Assam</td><td>8th classical dance (recognized 2000); Vaishnava Sattra monasteries tradition</td></tr>
+    </table>
+    <div class="highlight">📌 <strong>Sangeet Natak Akademi</strong> recognises 8 classical dance forms. All are included in UNESCO's Intangible Cultural Heritage lists. Indian classical music: two main traditions — Hindustani (North India) and Carnatic (South India).</div>
+  </div>
+</section>
+<section class="page" id="pg-symbols">
+  <div class="section-title">🏵️ National Symbols</div>
+  <div class="card">
+    <h2>Complete National Symbols Reference</h2>
+    <table>
+      <tr><th>Symbol</th><th>Name</th><th>Key Facts</th></tr>
+      <tr><td>National Animal</td><td>Bengal Tiger</td><td>Project Tiger 1973; 53 Tiger Reserves; ~3,167 tigers (2022 census)</td></tr>
+      <tr><td>National Bird</td><td>Indian Peacock</td><td>Pavo cristatus; declared 1963; national bird of several countries historically</td></tr>
+      <tr><td>National Flower</td><td>Lotus</td><td>Nelumbo nucifera; grows in water but unstained — symbol of purity</td></tr>
+      <tr><td>National Tree</td><td>Indian Banyan</td><td>Ficus benghalensis; immortal; aerial prop roots; Great Banyan tree in Kolkata (world's largest canopy)</td></tr>
+      <tr><td>National Fruit</td><td>Mango</td><td>Mangifera indica; Alphonso, Langra, Dasheri — famous varieties; India — largest producer</td></tr>
+      <tr><td>National River</td><td>Ganga</td><td>Declared 2008; 2525 km; Namami Gange programme for cleaning</td></tr>
+      <tr><td>National Aquatic Animal</td><td>River Dolphin (Gangetic Dolphin)</td><td>Platanista gangetica; blind; found in Ganga-Brahmaputra system; endangered</td></tr>
+      <tr><td>National Heritage Animal</td><td>Indian Elephant</td><td>Declared 2010; Project Elephant 1992; 27,000–28,000 in India</td></tr>
+      <tr><td>National Sport</td><td>Field Hockey (de facto; no official declaration)</td><td>India won 8 Olympic gold medals in hockey; golden era 1928–1980</td></tr>
+      <tr><td>National Reptile</td><td>King Cobra</td><td>Ophiophagus hannah; world's longest venomous snake; lives in forests</td></tr>
+      <tr><td>National Butterfly</td><td>Orange Oakleaf</td><td>Kallima inachus; mimics dead leaf; declared 2012</td></tr>
+      <tr><td>National Emblem</td><td>Lion Capital of Ashoka</td><td>Sarnath (Varanasi, UP); 4 lions, 4 animals (horse, bull, lion, elephant), Dharma Chakra; adopted Jan 26, 1950</td></tr>
+      <tr><td>National Flag</td><td>Tiranga (Tricolour)</td><td>Saffron (courage), White (truth, peace), Green (faith, prosperity); Ashoka Chakra (24 spokes) in navy blue</td></tr>
+      <tr><td>National Anthem</td><td>Jana Gana Mana</td><td>Rabindranath Tagore; first sung Dec 27, 1911 (Calcutta INC session); officially adopted Jan 24, 1950; 52 sec duration</td></tr>
+      <tr><td>National Song</td><td>Vande Mataram</td><td>Bankim Chandra Chattopadhyay; from Anandamath (1882); first sung INC 1896; adopted Jan 24, 1950</td></tr>
+      <tr><td>National Currency</td><td>Indian Rupee (₹)</td><td>Symbol designed by D. Udaya Kumar; adopted 2010; regulated by RBI</td></tr>
+      <tr><td>National Vegetable</td><td>Pumpkin (Indian Round Gourd)</td><td>Not officially declared by government; commonly cited</td></tr>
+    </table>
+  </div>
+</section>
+<section class="page" id="pg-boundaries">
+  <div class="section-title">📐 Important Lines & Boundaries</div>
+  <div class="card">
+    <h2>Famous Lines in History & Geography</h2>
+    <table>
+      <tr><th>Line</th><th>Separates</th><th>Year</th><th>Note</th></tr>
+      <tr><td>Radcliffe Line</td><td>India – Pakistan (Punjab & Bengal)</td><td>1947</td><td>Drawn by Sir Cyril Radcliffe; partition line</td></tr>
+      <tr><td>Line of Control (LOC)</td><td>India – Pakistan (J&K)</td><td>1972</td><td>Shimla Agreement; ceasefire line since 1948 war; formalised 1972</td></tr>
+      <tr><td>McMahon Line</td><td>India – China (Arunachal Pradesh)</td><td>1914</td><td>Simla Convention; China doesn't recognise</td></tr>
+      <tr><td>Line of Actual Control (LAC)</td><td>India – China (Western Sector — Ladakh)</td><td>1962</td><td>After 1962 war; not precisely demarcated; disputes</td></tr>
+      <tr><td>Durand Line</td><td>Pakistan – Afghanistan</td><td>1893</td><td>Drawn by Sir Mortimer Durand; colonial boundary; disputed by Afghanistan</td></tr>
+      <tr><td>Mason-Dixon Line</td><td>USA (Pennsylvania / Maryland)</td><td>1763–67</td><td>Symbolic boundary between North and South USA; Civil War era</td></tr>
+      <tr><td>38th Parallel</td><td>North Korea – South Korea</td><td>1953</td><td>Korean War armistice line; Demilitarised Zone (DMZ)</td></tr>
+      <tr><td>17th Parallel</td><td>North Vietnam – South Vietnam</td><td>1954</td><td>Geneva Accords; ended after Vietnam War reunification (1975)</td></tr>
+      <tr><td>Maginot Line</td><td>France – Germany</td><td>1930s</td><td>French fortification; bypassed by Germany in WWII</td></tr>
+      <tr><td>International Date Line (IDL)</td><td>East/West (180° meridian)</td><td>—</td><td>Not straight; bends around island groups; going west = gaining a day; east = losing</td></tr>
+      <tr><td>Tropic of Cancer</td><td>23.5°N — India, tropics</td><td>—</td><td>Passes through 8 Indian states</td></tr>
+      <tr><td>Tropic of Capricorn</td><td>23.5°S</td><td>—</td><td>Passes through Brazil, South Africa, Australia</td></tr>
+      <tr><td>Arctic Circle</td><td>66.5°N</td><td>—</td><td>Above this: midnight sun in summer, polar night in winter</td></tr>
+    </table>
+  </div>
+</section>
+</main>
+<footer id="site-footer">
+  <div class="footer-bottom">
+    <span>© 2025 Exam Preparation System</span>
+    <span class="footer-author">🎓 By Vikash Pandey</span>
+  </div>
+</footer>
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script>
+function toggleTheme(){var r=document.documentElement;if(r.getAttribute('data-theme')==='dark'){r.removeAttribute('data-theme');localStorage.setItem('eps-theme','light');}else{r.setAttribute('data-theme','dark');localStorage.setItem('eps-theme','dark');}}
+function toggleSidebar(){var sb=document.getElementById('sidebar'),m=document.getElementById('main'),f=document.getElementById('site-footer');sb.classList.toggle('closed');sb.classList.toggle('open');if(sb.classList.contains('closed')){m.classList.add('full');f.classList.add('full');}else{m.classList.remove('full');f.classList.remove('full');}}
+function showPage(id){document.querySelectorAll('.page').forEach(function(p){p.classList.remove('active');});document.querySelectorAll('.sb-item').forEach(function(i){i.classList.remove('active');});var pg=document.getElementById('pg-'+id);if(pg)pg.classList.add('active');event.currentTarget.classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}
+(function(){var p=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.page-links a').forEach(function(a){if(a.getAttribute('href')===p)a.classList.add('current');});})();
+(function(){var b=document.getElementById('btt');window.addEventListener('scroll',function(){if(b)b.classList.toggle('show',window.scrollY>400);});})();
+</script>
+</body>
+</html>

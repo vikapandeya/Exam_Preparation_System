@@ -130,6 +130,9 @@ a{text-decoration:none;color:inherit}
 .badge-bihar{background:rgba(124,58,237,.15);color:#7c3aed}
 .badge-defence{background:rgba(15,118,110,.15);color:#0f766e}
 .badge-statepsc{background:rgba(234,88,12,.15);color:#ea580c}
+.badge-central{background:rgba(6,95,70,.15);color:#065f46}
+.badge-teaching{background:rgba(79,70,229,.15);color:#4f46e5}
+.badge-statepolice{background:rgba(220,38,38,.15);color:#dc2626}
 
 /* ── MOBILE TOGGLE ── */
 #mobile-exam-btn{
@@ -290,13 +293,20 @@ a{text-decoration:none;color:inherit}
 <!-- ── SUB-NAV ── -->
 <div id="sub-nav">
   <nav class="page-links">
-    <a href="index.html">Home</a>
-    <a href="Science.html">Science</a>
-    <a href="Computer.html">Computer</a>
-    <a href="Current_Affairs.html">Current Affairs</a>
-    <a href="english-grammar-mastery.html">English</a>
-    <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html">Maths</a>
-    <a href="Syllabus.html" class="current">Syllabus</a>
+    <a href="index.html">🏠 Home</a>
+    <a href="Science.html">🔬 Science</a>
+    <a href="Computer.html">💻 Computer</a>
+    <a href="Current_Affairs.html">📰 Current Affairs</a>
+    <a href="english-grammar-mastery.html">📝 English</a>
+    <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html">🧮 Maths</a>
+    <a href="Indian_Polity.html">⚖️ Polity</a>
+    <a href="Indian_History.html">🏛️ History</a>
+    <a href="Indian_Geography.html">🗺️ Geography</a>
+    <a href="Static_GK.html">🌍 Static GK</a>
+    <a href="Indian_Economy.html">💰 Economy</a>
+    <a href="Bihar_Special_GK.html">🌾 Bihar GK</a>
+    <a href="Reasoning_Guide.html">🧠 Reasoning</a>
+    <a href="Syllabus.html">📋 Syllabus</a>
   </nav>
 </div>
 
@@ -325,6 +335,9 @@ a{text-decoration:none;color:inherit}
     <button class="cat-tab" data-cat="Bihar Specific">Bihar Specific</button>
     <button class="cat-tab" data-cat="Defence">Defence</button>
     <button class="cat-tab" data-cat="State PSC">State PSC</button>
+    <button class="cat-tab" data-cat="State Police">State Police</button>
+    <button class="cat-tab" data-cat="Teaching">Teaching</button>
+    <button class="cat-tab" data-cat="Central Govt">Central Govt</button>
   </div>
 </div>
 
@@ -900,6 +913,991 @@ const EXAMS = [
       { subject:'EKT (Engineering Knowledge Test)', topics:['Mechanical: Thermodynamics, Manufacturing Processes, Theory of Machines, Fluid Mechanics','Electronics & Communication: Basic Electronics, Signals & Systems, Communication Systems','Computer Science: Computer Fundamentals, Programming, Data Structures, Networks','Civil: Structural Analysis, Fluid Mechanics, Construction Materials'] },
     ]
   },
+  /* ── SSC ── */
+  {
+    id: 'ssc-je',
+    name: 'SSC JE (Junior Engineer)',
+    shortName: 'SSC JE',
+    icon: '⚙️',
+    category: 'SSC',
+    body: 'Staff Selection Commission',
+    level: 'National',
+    eligibility: 'Diploma / Graduation in Engineering, Age 18–32',
+    stages: ['Paper I (CBT)', 'Paper II (Descriptive)', 'Document Verification'],
+    overview: 'Recruitment for Junior Engineer posts in Central Government departments — CPWD, CWC, MES, Border Roads Organisation, DFCCIL. Branches: Civil & Structural, Electrical, Mechanical. Paper II is a 3-hour descriptive test testing technical depth. One of the most sought-after engineering government jobs.',
+    pattern: [
+      { stage:'Paper I', paper:'General Intelligence & Reasoning', qs:'50', marks:'50', duration:'2 hr (combined)', neg:'-0.25', notes:'CBT — Online' },
+      { stage:'Paper I', paper:'General Awareness', qs:'50', marks:'50', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Paper I', paper:'General Engineering (Civil/Electrical/Mechanical — attempt one)', qs:'100', marks:'100', duration:'—', neg:'-0.25', notes:'Attempt one branch only' },
+      { stage:'Paper I', paper:'Total', qs:'200', marks:'200', duration:'2 hr', neg:'—', notes:'', isTotal:true },
+      { stage:'Paper II', paper:'General Engineering (Civil/Electrical/Mechanical)', qs:'—', marks:'300', duration:'3 hr', neg:'None', notes:'Descriptive — Pen & Paper mode' },
+    ],
+    syllabus: [
+      { subject:'General Intelligence & Reasoning', topics:['Classification, Analogy, Series','Coding-Decoding, Blood Relations','Direction & Distance','Venn Diagrams, Matrix, Figure-based Questions','Syllogism, Statement & Conclusion'] },
+      { subject:'General Awareness', topics:['Current Affairs — National & International','History, Geography, Indian Polity','Economy, Science & Technology','Sports, Awards, Books & Authors','Static GK'] },
+      { subject:'Civil & Structural Engineering', topics:['Building Materials — Bricks, Timber, Cement, Concrete','Estimating, Costing & Valuation','Surveying — Chain, Compass, Levelling, Theodolite','Soil Mechanics & Foundation Engineering','Hydraulics — Flow through Pipes, Open Channels','Irrigation Engineering','Transportation Engineering — Roads, Bridges, Railways','Environmental Engineering — Water Supply, Sanitation','RCC Design & Steel Structures','Structural Analysis — Trusses, Beams, Frames'] },
+      { subject:'Electrical Engineering', topics:['Basic Electrical — Ohm\'s Law, KVL, KCL, Network Theorems','AC & DC Circuits, Machines — DC Motors, Transformers, Induction Motors','Measurement & Instruments','Power Systems — Generation, Transmission, Distribution, Protection','Electronics — Semiconductors, Rectifiers, Amplifiers','Utilisation of Electrical Energy'] },
+      { subject:'Mechanical Engineering', topics:['Theory of Machines — Kinematics, Gear Trains, Governors','Fluid Mechanics & Hydraulic Machines','Thermodynamics — Laws, Cycles, Compressors','Strength of Materials — Stress, Strain, Bending, Torsion','Manufacturing Processes — Casting, Welding, Machining','Heat Transfer — Conduction, Convection, Radiation','IC Engines & Power Plants'] },
+    ]
+  },
+  /* ── Railway ── */
+  {
+    id: 'rrb-alp',
+    name: 'RRB ALP (Assistant Loco Pilot)',
+    shortName: 'RRB ALP',
+    icon: '🚆',
+    category: 'Railway',
+    body: 'Railway Recruitment Board',
+    level: 'National',
+    eligibility: 'ITI / Diploma in relevant trade, Age 18–28',
+    stages: ['CBT 1', 'CBT 2 Part A', 'CBT 2 Part B (Trade)', 'CBAT (Aptitude)', 'Document Verification'],
+    overview: 'Recruitment of Assistant Loco Pilots (train drivers) and Technicians. CBT 1 is a common screening exam. CBT 2 Part B tests specific ITI trade knowledge and is qualifying. CBAT (Computer Based Aptitude Test) is mandatory for ALP posts testing memory, attention and spatial ability.',
+    pattern: [
+      { stage:'CBT 1', paper:'Mathematics', qs:'20', marks:'20', duration:'60 min (combined)', neg:'-0.33 (1/3)', notes:'Screening — common for all' },
+      { stage:'CBT 1', paper:'General Intelligence & Reasoning', qs:'25', marks:'25', duration:'—', neg:'-0.33', notes:'' },
+      { stage:'CBT 1', paper:'General Science', qs:'20', marks:'20', duration:'—', neg:'-0.33', notes:'' },
+      { stage:'CBT 1', paper:'General Awareness & Current Affairs', qs:'10', marks:'10', duration:'—', neg:'-0.33', notes:'' },
+      { stage:'CBT 1', paper:'Total', qs:'75', marks:'75', duration:'60 min', neg:'—', notes:'', isTotal:true },
+      { stage:'CBT 2 Part A', paper:'Mathematics', qs:'25', marks:'25', duration:'90 min (combined)', neg:'-0.33', notes:'' },
+      { stage:'CBT 2 Part A', paper:'General Intelligence & Reasoning', qs:'25', marks:'25', duration:'—', neg:'-0.33', notes:'' },
+      { stage:'CBT 2 Part A', paper:'Basic Science & Engineering', qs:'40', marks:'40', duration:'—', neg:'-0.33', notes:'Physics, Engineering Drawing, IT, Units' },
+      { stage:'CBT 2 Part A', paper:'General Awareness & Current Affairs', qs:'10', marks:'10', duration:'—', neg:'-0.33', notes:'' },
+      { stage:'CBT 2 Part A', paper:'Total', qs:'100', marks:'100', duration:'90 min', neg:'—', notes:'', isTotal:true },
+      { stage:'CBT 2 Part B', paper:'Relevant Trade Syllabus (Qualifying)', qs:'75', marks:'75', duration:'60 min', neg:'-0.33', notes:'35% needed to qualify; trade-specific ITI content' },
+      { stage:'CBAT', paper:'Computer Based Aptitude Test', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'ALP post only — Memory, Attention, Spatial Aptitude' },
+    ],
+    syllabus: [
+      { subject:'Mathematics (Class 10)', topics:['Number System, BODMAS, LCM & HCF','Decimals, Fractions, Percentages, Ratio & Proportion','Average, Mensuration — Area, Volume, Perimeter','Time & Work, Time & Distance, Speed','Simple & Compound Interest, Profit & Loss','Elementary Algebra, Geometry'] },
+      { subject:'General Science (Class 10)', topics:['Physics — Motion, Force, Energy, Light, Sound, Electricity, Magnetism','Chemistry — Matter, Elements, Compounds, Acids, Bases, Salts, Periodic Table','Biology — Cell, Human Body Systems, Nutrition, Disease & Prevention','Environment — Ecosystem, Biodiversity, Pollution'] },
+      { subject:'Basic Science & Engineering (CBT 2 Part A)', topics:['Engineering Drawing — Scales, Symbols, 2D Projections','Units & Measurements — SI System, Conversions','Basic IT — Computer Fundamentals, OS, Internet','Physics — Motion, Electricity, Heat, Waves','Engineering Maths — Logarithm, Trigonometry, Basic Statistics'] },
+      { subject:'Trade Syllabus (CBT 2 Part B — ITI Level)', topics:['Electrician, Fitter, Diesel Mechanic, Heat Engine, Motor Vehicle, Tractor Mechanic, Electronic Mechanic, Instrument Mechanic, Wireman and other approved trades','Theory & practical aspects of the specific trade at ITI level'] },
+    ]
+  },
+  {
+    id: 'rrb-je',
+    name: 'RRB JE (Junior Engineer)',
+    shortName: 'RRB JE',
+    icon: '🔧',
+    category: 'Railway',
+    body: 'Railway Recruitment Board',
+    level: 'National',
+    eligibility: 'Diploma / B.E. / B.Tech in relevant Engineering, Age 18–36',
+    stages: ['CBT 1', 'CBT 2', 'Document Verification'],
+    overview: 'Recruitment of Junior Engineers in Civil, Mechanical, Electrical, Electronics & Signal/Telecom, and IT departments of Indian Railways. CBT 1 is a common screening test; CBT 2 tests branch-specific technical knowledge at diploma/degree level.',
+    pattern: [
+      { stage:'CBT 1', paper:'Mathematics', qs:'30', marks:'30', duration:'90 min (combined)', neg:'-0.33 (1/3)', notes:'Screening — common for all branches' },
+      { stage:'CBT 1', paper:'General Intelligence & Reasoning', qs:'25', marks:'25', duration:'—', neg:'-0.33', notes:'' },
+      { stage:'CBT 1', paper:'General Awareness', qs:'15', marks:'15', duration:'—', neg:'-0.33', notes:'' },
+      { stage:'CBT 1', paper:'General Science (Physics, Chemistry, Biology — Class 10)', qs:'30', marks:'30', duration:'—', neg:'-0.33', notes:'' },
+      { stage:'CBT 1', paper:'Total', qs:'100', marks:'100', duration:'90 min', neg:'—', notes:'', isTotal:true },
+      { stage:'CBT 2', paper:'General Awareness', qs:'15', marks:'15', duration:'2 hr (combined)', neg:'-0.33', notes:'Branch-specific technical exam' },
+      { stage:'CBT 2', paper:'Physics & Chemistry', qs:'15', marks:'15', duration:'—', neg:'-0.33', notes:'' },
+      { stage:'CBT 2', paper:'Basics of Computers & IT', qs:'10', marks:'10', duration:'—', neg:'-0.33', notes:'' },
+      { stage:'CBT 2', paper:'Basics of Environment & Pollution Control', qs:'10', marks:'10', duration:'—', neg:'-0.33', notes:'' },
+      { stage:'CBT 2', paper:'Technical Abilities (Branch Specific)', qs:'100', marks:'100', duration:'—', neg:'-0.33', notes:'Civil / Electrical / Mechanical / E&C / IT' },
+      { stage:'CBT 2', paper:'Total', qs:'150', marks:'150', duration:'2 hr', neg:'—', notes:'', isTotal:true },
+    ],
+    syllabus: [
+      { subject:'Civil Engineering (CBT 2)', topics:['Engineering Mechanics & Strength of Materials','Building Construction & Materials','Fluid Mechanics & Hydraulics, Irrigation','Soil Mechanics & Foundation Engineering','Environmental Engineering — Water Treatment, Sewage','Surveying — Levelling, Contouring, Theodolite','Transportation Engineering — Roads, Railways','RCC & Steel Structures, Estimating & Costing'] },
+      { subject:'Electrical Engineering (CBT 2)', topics:['DC & AC Circuits, Network Theorems','Electrical Machines — DC, Transformers, Induction Motors','Power Systems — Generation, Transmission, Distribution, Substations','Protection — Relays, Circuit Breakers','Instrumentation & Measurement','Electronics — Semiconductors, Op-Amp','Power Electronics'] },
+      { subject:'Mechanical Engineering (CBT 2)', topics:['Engineering Mechanics & Strength of Materials','Fluid Mechanics & Turbo Machinery','Thermodynamics & Heat Transfer','Theory of Machines — Kinematics, Gears, Balancing','Manufacturing — Casting, Welding, Machining','IC Engines & Power Plants','Workshop Technology, Metrology'] },
+      { subject:'Electronics & Communication (CBT 2)', topics:['Electronic Devices — Diodes, BJT, FET, Amplifiers, Rectifiers','Digital Electronics — Logic Gates, Flip-Flops, Counters, ADC/DAC','Communication Systems — AM, FM, Modulation, Antennas','Microprocessors & Microcontrollers','Control Systems','Signals & Systems — Fourier, Laplace, Z-Transforms','Railway Signalling Basics'] },
+    ]
+  },
+  {
+    id: 'rpf-constable',
+    name: 'RPF Constable (Railway Protection Force)',
+    shortName: 'RPF Constable',
+    icon: '🛡️',
+    category: 'Railway',
+    body: 'Railway Protection Force / Ministry of Railways',
+    level: 'National',
+    eligibility: 'Class 10 (Matric), Age 18–25',
+    stages: ['CBT', 'Physical Efficiency Test (PET)', 'Physical Measurement Test (PMT)', 'Medical Examination'],
+    overview: 'Recruitment of Constables in RPF/RPSF for protection of railway property and passengers. PET includes running (1600m/800m for Male/Female) and field events. No negative marking in the first 3 questions; -1/3 overall. Largest uniformed railway recruitment.',
+    pattern: [
+      { stage:'CBT', paper:'General Awareness', qs:'50', marks:'50', duration:'90 min (combined)', neg:'-0.33 (1/3)', notes:'Online CBT' },
+      { stage:'CBT', paper:'Arithmetic', qs:'35', marks:'35', duration:'—', neg:'-0.33', notes:'' },
+      { stage:'CBT', paper:'General Intelligence & Reasoning', qs:'35', marks:'35', duration:'—', neg:'-0.33', notes:'' },
+      { stage:'CBT', paper:'Total', qs:'120', marks:'120', duration:'90 min', neg:'—', notes:'', isTotal:true },
+      { stage:'PET', paper:'Physical Efficiency Test', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'Male: 1600m in 5:45 min, Long Jump 14ft, High Jump 4ft | Female: 800m in 3:40 min, LJ 9ft, HJ 3ft' },
+      { stage:'PMT', paper:'Physical Measurement Test', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'Male ≥165cm, Female ≥157cm (relaxation for SC/ST/Hill area)' },
+    ],
+    syllabus: [
+      { subject:'General Awareness', topics:['Current Events — National & International','History — Ancient, Medieval, Modern India','Indian Geography — Physical, Political','Indian Polity — Constitution, Parliament, Fundamental Rights','Economy — GDP, Inflation, Banking Basics','Science & Technology — Inventions, Discoveries','Railways — History, Zones, Important Acts & Functions','Sports, Awards, Books & Authors','Environment & Ecology Basics'] },
+      { subject:'Arithmetic (Class 10 Level)', topics:['Number System, LCM & HCF','Percentage, Average, Ratio & Proportion','Simple & Compound Interest, Profit & Loss, Discount','Time & Work, Time Speed Distance','Mensuration — Area, Volume','Simplification, Data Interpretation Basics'] },
+      { subject:'General Intelligence & Reasoning', topics:['Analogies, Classification, Series','Coding-Decoding, Blood Relations','Directions & Distances, Matrix','Venn Diagrams, Syllogism, Statement-Conclusion','Mathematical Operations, Mirror & Water Image','Figure-based Non-Verbal Reasoning'] },
+    ]
+  },
+  {
+    id: 'rpf-si',
+    name: 'RPF Sub-Inspector (SI)',
+    shortName: 'RPF SI',
+    icon: '🔰',
+    category: 'Railway',
+    body: 'Railway Protection Force / Ministry of Railways',
+    level: 'National',
+    eligibility: 'Graduation (any discipline), Age 20–28',
+    stages: ['CBT', 'Physical Efficiency Test (PET)', 'Physical Measurement Test (PMT)', 'Medical Examination'],
+    overview: 'Recruitment of Sub-Inspectors in RPF/RPSF for supervisory protection roles. Higher eligibility and larger question paper than RPF Constable. Requires graduation. Same physical standards. Better pay scale and career growth than Constable post.',
+    pattern: [
+      { stage:'CBT', paper:'General Awareness', qs:'50', marks:'50', duration:'2 hr (combined)', neg:'-0.33 (1/3)', notes:'Online CBT — higher difficulty than Constable' },
+      { stage:'CBT', paper:'Arithmetic', qs:'50', marks:'50', duration:'—', neg:'-0.33', notes:'' },
+      { stage:'CBT', paper:'General Intelligence & Reasoning', qs:'50', marks:'50', duration:'—', neg:'-0.33', notes:'' },
+      { stage:'CBT', paper:'Total', qs:'150', marks:'150', duration:'2 hr', neg:'—', notes:'', isTotal:true },
+      { stage:'PET', paper:'Physical Efficiency Test', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'Same standards as RPF Constable' },
+      { stage:'PMT', paper:'Physical Measurement Test', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'Same standards as RPF Constable' },
+    ],
+    syllabus: [
+      { subject:'General Awareness', topics:['Current Affairs — last 6–12 months','Indian History, Culture, Heritage','Geography — India & World','Indian Polity & Constitution, Governance','Indian Economy — Banking, RBI, Budget','Science & Technology — Applications & Discoveries','Railways — Zones, Policies, Railway Acts, Important Facts','Environment — Climate, Biodiversity, Pollution','Sports, Awards, Books & Authors'] },
+      { subject:'Arithmetic (Graduation Level)', topics:['Number System, LCM & HCF, Indices','Percentage, Average, Ratio & Proportion, Partnership','Simple & Compound Interest, Profit & Loss, Discount','Time & Work, Pipe & Cistern, Time Speed Distance — Trains, Boats, Streams','Mensuration — 2D & 3D Shapes','Data Interpretation — Tables, Graphs, Charts','Quadratic Equations, Basic Algebra'] },
+      { subject:'General Intelligence & Reasoning', topics:['Analogies, Classification, Alphabetical & Number Series','Coding-Decoding, Blood Relations, Directions','Seating Arrangement, Syllogism','Input-Output, Logical Reasoning','Venn Diagram, Matrix Reasoning','Non-Verbal — Figures, Mirror Image, Embedded Figures','Data Sufficiency'] },
+    ]
+  },
+  /* ── Banking ── */
+  {
+    id: 'sbi-clerk',
+    name: 'SBI Clerk (Junior Associate)',
+    shortName: 'SBI Clerk',
+    icon: '💳',
+    category: 'Banking',
+    body: 'State Bank of India',
+    level: 'National',
+    eligibility: 'Graduation, Age 20–28',
+    stages: ['Prelims', 'Mains', 'Language Proficiency Test'],
+    overview: 'Recruitment of Junior Associates (Customer Support & Sales) in State Bank of India. State-wise vacancies with local language proficiency test. No interview stage. Highest-vacancy banking exam; highly competitive due to SBI brand value and job security.',
+    pattern: [
+      { stage:'Prelims', paper:'English Language', qs:'30', marks:'30', duration:'20 min', neg:'-0.25', notes:'Sectional time limits' },
+      { stage:'Prelims', paper:'Numerical Ability', qs:'35', marks:'35', duration:'20 min', neg:'-0.25', notes:'' },
+      { stage:'Prelims', paper:'Reasoning Ability', qs:'35', marks:'35', duration:'20 min', neg:'-0.25', notes:'' },
+      { stage:'Prelims', paper:'Total', qs:'100', marks:'100', duration:'60 min', neg:'—', notes:'', isTotal:true },
+      { stage:'Mains', paper:'General/Financial Awareness', qs:'50', marks:'50', duration:'35 min', neg:'-0.25', notes:'' },
+      { stage:'Mains', paper:'English Language', qs:'40', marks:'40', duration:'35 min', neg:'-0.25', notes:'' },
+      { stage:'Mains', paper:'Quantitative Aptitude', qs:'50', marks:'50', duration:'45 min', neg:'-0.25', notes:'' },
+      { stage:'Mains', paper:'Reasoning Ability & Computer Aptitude', qs:'50', marks:'60', duration:'45 min', neg:'-0.25', notes:'' },
+      { stage:'Mains', paper:'Total', qs:'190', marks:'200', duration:'160 min', neg:'—', notes:'', isTotal:true },
+      { stage:'LPT', paper:'Language Proficiency Test', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'State official language reading, writing & speaking' },
+    ],
+    syllabus: [
+      { subject:'Numerical Ability / Quantitative Aptitude', topics:['Number System, Simplification, Approximation','Number Series, Quadratic Equations','Data Interpretation — Bar, Pie, Line, Table, Caselet','Percentage, Average, Ratio & Proportion, Profit & Loss','Partnership, SI & CI, Time & Work, Pipe & Cistern','Time Speed Distance — Trains, Boats','Mensuration, Mixture & Alligation, Probability'] },
+      { subject:'Reasoning Ability & Computer Aptitude', topics:['Seating Arrangement & Puzzles (Linear, Circular, Box, Floor)','Syllogism, Inequalities, Blood Relations, Direction & Distance','Coding-Decoding, Alphanumeric Series, Input-Output, Order & Ranking','Computer Fundamentals — Hardware, Software, OS','Networking — LAN, WAN, Internet, MS Office, Number Systems'] },
+      { subject:'English Language', topics:['Reading Comprehension (main focus)','Error Detection & Sentence Correction','Cloze Test & Double Fillers','Sentence Rearrangement (Para Jumbles)','Vocabulary — Synonyms, Antonyms, Word Usage','Paragraph & Sentence Completion'] },
+      { subject:'General & Financial Awareness', topics:['Banking Awareness — Terms, Instruments, Account Types','RBI — Structure, Policies, Repo/Reverse Repo/CRR/SLR Rates','Financial & Capital Market — SEBI, Mutual Funds, Stock Exchanges','Government Schemes — PM Jan Dhan, Mudra, PMAY, KCC','Current Affairs — last 3–6 months, Awards, Sports, Appointments','International Organisations — IMF, World Bank, ADB, NDB','Static GK — Capitals, Currencies, Bank HQs & Taglines'] },
+    ]
+  },
+  {
+    id: 'ibps-rrb-po',
+    name: 'IBPS RRB PO (Officer Scale-I)',
+    shortName: 'IBPS RRB PO',
+    icon: '🌾',
+    category: 'Banking',
+    body: 'Institute of Banking Personnel Selection',
+    level: 'National',
+    eligibility: 'Graduation, Age 18–30; local language proficiency mandatory',
+    stages: ['Prelims', 'Mains', 'Interview'],
+    overview: 'Recruitment of Officer Scale-I (equivalent to PO) in Regional Rural Banks. RRBs focus on rural lending — agriculture, small business, microfinance. Knowledge of the regional language is mandatory. Interview carries 20% weightage in final merit.',
+    pattern: [
+      { stage:'Prelims', paper:'Reasoning', qs:'40', marks:'40', duration:'45 min (combined)', neg:'-0.25', notes:'Screening exam' },
+      { stage:'Prelims', paper:'Quantitative Aptitude', qs:'40', marks:'40', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Prelims', paper:'Total', qs:'80', marks:'80', duration:'45 min', neg:'—', notes:'', isTotal:true },
+      { stage:'Mains', paper:'Reasoning', qs:'40', marks:'50', duration:'30 min', neg:'-0.25', notes:'' },
+      { stage:'Mains', paper:'Quantitative Aptitude', qs:'40', marks:'50', duration:'30 min', neg:'-0.25', notes:'' },
+      { stage:'Mains', paper:'General Awareness (Rural & Banking Focus)', qs:'40', marks:'40', duration:'20 min', neg:'-0.25', notes:'' },
+      { stage:'Mains', paper:'English / Hindi Language', qs:'40', marks:'40', duration:'20 min', neg:'-0.25', notes:'Candidate\'s choice of language' },
+      { stage:'Mains', paper:'Computer Knowledge', qs:'40', marks:'20', duration:'10 min', neg:'-0.25', notes:'' },
+      { stage:'Mains', paper:'Total', qs:'200', marks:'200', duration:'120 min', neg:'—', notes:'', isTotal:true },
+      { stage:'Interview', paper:'Personal Interview', qs:'—', marks:'—', duration:'~15 min', neg:'None', notes:'Merit: 80% Mains + 20% Interview' },
+    ],
+    syllabus: [
+      { subject:'Quantitative Aptitude', topics:['Number System, Simplification, Number Series, Quadratic Equations','Data Interpretation — Tables, Bar, Line, Pie, Missing Data DI','Average, Percentage, Ratio & Proportion, Profit & Loss, Partnership','SI & CI, Time & Work, Pipe & Cistern, Speed Distance','Probability, Permutation & Combination, Mensuration'] },
+      { subject:'Reasoning', topics:['Puzzles & Seating Arrangement (Linear, Circular, Complex)','Syllogism, Coded Inequalities, Blood Relations, Direction Sense','Coding-Decoding, Machine Input-Output, Alphanumeric Series','Data Sufficiency, Logical Reasoning — Cause & Effect, Assumptions'] },
+      { subject:'General Awareness (Rural & Banking Focus)', topics:['RRB Structure & Role in Rural Economy','Agricultural Credit — Kisan Credit Card, NABARD, Priority Sector Lending','Rural Development Schemes — PMAY-Gramin, MGNREGS, PM-KISAN','Microfinance & Self Help Groups (SHGs)','RBI Monetary Policy & Banking Regulation','Current Affairs — last 6 months (National & International)','Static GK — Banks HQ, Chairpersons, Financial Inclusion Initiatives'] },
+      { subject:'Computer Knowledge', topics:['Computer Fundamentals, Hardware, Software, Memory, OS','MS Office — Word, Excel, PowerPoint Shortcuts','Internet & Networking — Browser, Email, LAN/WAN','Database Basics — DBMS, SQL Concepts','Number Systems — Binary, Octal, Hexadecimal','Computer Security — Virus, Firewall, Encryption'] },
+    ]
+  },
+  {
+    id: 'ibps-rrb-clerk',
+    name: 'IBPS RRB Clerk (Office Assistant)',
+    shortName: 'IBPS RRB Clerk',
+    icon: '📋',
+    category: 'Banking',
+    body: 'Institute of Banking Personnel Selection',
+    level: 'National',
+    eligibility: 'Graduation, Age 18–28; regional language proficiency required',
+    stages: ['Prelims', 'Mains'],
+    overview: 'Recruitment of Office Assistants (Multipurpose) in Regional Rural Banks. No interview. State-wise cutoffs apply. Local language is compulsory — candidates must demonstrate proficiency in reading, writing and speaking of the state\'s regional language.',
+    pattern: [
+      { stage:'Prelims', paper:'Reasoning', qs:'40', marks:'40', duration:'45 min (combined)', neg:'-0.25', notes:'' },
+      { stage:'Prelims', paper:'Numerical Ability', qs:'40', marks:'40', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Prelims', paper:'Total', qs:'80', marks:'80', duration:'45 min', neg:'—', notes:'', isTotal:true },
+      { stage:'Mains', paper:'Reasoning', qs:'40', marks:'50', duration:'30 min', neg:'-0.25', notes:'' },
+      { stage:'Mains', paper:'Computer Knowledge', qs:'40', marks:'20', duration:'10 min', neg:'-0.25', notes:'' },
+      { stage:'Mains', paper:'General Awareness', qs:'40', marks:'40', duration:'20 min', neg:'-0.25', notes:'Rural Banking & CA focus' },
+      { stage:'Mains', paper:'English / Hindi Language', qs:'40', marks:'40', duration:'20 min', neg:'-0.25', notes:'Candidate chooses language' },
+      { stage:'Mains', paper:'Quantitative Aptitude', qs:'40', marks:'50', duration:'30 min', neg:'-0.25', notes:'' },
+      { stage:'Mains', paper:'Total', qs:'200', marks:'200', duration:'120 min', neg:'—', notes:'', isTotal:true },
+    ],
+    syllabus: [
+      { subject:'Numerical Ability / Quantitative Aptitude', topics:['Number System, Simplification, Number Series, Quadratic Equations','Data Interpretation — Tables, Bar, Pie, Line','Average, Percentage, Ratio & Proportion, Profit & Loss, SI & CI','Time & Work, Speed Distance, Mensuration Basics'] },
+      { subject:'Reasoning', topics:['Seating Arrangement & Puzzles, Syllogism, Inequalities','Blood Relations, Direction & Distance, Coding-Decoding','Alphanumeric Series, Order & Ranking, Input-Output'] },
+      { subject:'General Awareness (RRB Focus)', topics:['Rural Banking — RRB History, Structure, Functions','NABARD — Role, Schemes, Refinancing','Agricultural Finance — Crop Loans, Kisan Credit Card','Government Rural Schemes — PMGSY, PMAY-G, PM KUSUM, PM-KISAN','Financial Inclusion & Digital Banking in Rural India','Current Affairs — last 3–6 months','Important Committees on Agriculture & Banking Reform'] },
+      { subject:'Computer Knowledge', topics:['Computer Hardware & Software Basics, OS Concepts','MS Office — Word, Excel, PowerPoint','Internet — Browsers, Email, Search Engines','Networking — LAN, WAN, Modem, Router','Database Basics, Computer Shortcuts & Abbreviations'] },
+    ]
+  },
+  {
+    id: 'ibps-so',
+    name: 'IBPS SO (Specialist Officer)',
+    shortName: 'IBPS SO',
+    icon: '🔬',
+    category: 'Banking',
+    body: 'Institute of Banking Personnel Selection',
+    level: 'National',
+    eligibility: 'Relevant Professional Degree (varies by post), Age 20–30',
+    stages: ['Prelims', 'Mains', 'Interview'],
+    overview: 'Common recruitment for Specialist Officer posts in public sector banks: IT Officer, Agriculture Field Officer, Rajbhasha Adhikari, Law Officer, HR/Personnel Officer, Marketing Officer. Prelims is common; Mains has a post-specific technical/professional paper. Interview: 20% of final merit.',
+    pattern: [
+      { stage:'Prelims', paper:'English Language', qs:'50', marks:'25', duration:'40 min', neg:'-0.25', notes:'Except Rajbhasha Adhikari' },
+      { stage:'Prelims', paper:'Reasoning', qs:'50', marks:'50', duration:'40 min', neg:'-0.25', notes:'' },
+      { stage:'Prelims', paper:'Quantitative Aptitude', qs:'50', marks:'50', duration:'40 min', neg:'-0.25', notes:'Not for Law/HR/Rajbhasha posts' },
+      { stage:'Prelims', paper:'Total', qs:'150', marks:'125', duration:'120 min', neg:'—', notes:'', isTotal:true },
+      { stage:'Mains', paper:'Professional Knowledge (Post-specific)', qs:'60', marks:'60', duration:'45 min', neg:'-0.25', notes:'IT / Agriculture / Law / HR / Marketing / Hindi — separate papers' },
+      { stage:'Interview', paper:'Personal Interview', qs:'—', marks:'—', duration:'~15 min', neg:'None', notes:'Merit: 80% Mains + 20% Interview' },
+    ],
+    syllabus: [
+      { subject:'IT Officer — Professional Knowledge', topics:['Data Structures & Algorithms — Arrays, Linked Lists, Trees, Sorting, Searching','Database Management Systems — SQL, Normalization, Transactions','Networking — OSI Model, TCP/IP, LAN/WAN, VPN, Firewalls','Operating Systems — Process Management, Memory Management, File Systems','Software Engineering — SDLC, Testing, Agile, Scrum','Information Security — Cryptography, Cyber Attacks, ISO 27001','Banking Technology — CBS, RTGS, NEFT, Mobile Banking, UPI, ATM Systems','Cloud Computing Basics, Big Data Overview'] },
+      { subject:'Agriculture Field Officer — Professional Knowledge', topics:['Soil Science — Types, pH, Nutrient Management, Soil Conservation','Crop Production Technology — Kharif & Rabi Crops, Horticulture, Agronomy','Agricultural Economics — Farm Management, Cost Concepts, Agricultural Credit','Plant Protection — Pests, Diseases, Integrated Pest Management (IPM)','Irrigation & Water Management — Drip, Sprinkler, Canal Irrigation','Animal Husbandry — Dairy, Poultry, Animal Nutrition, Veterinary Basics','Government Agricultural Schemes — PM Fasal Bima, KCC, e-NAM, PMKSY, PMFBY','Agricultural Marketing — MSP, APMC Mandis, FCI, e-NAM Platform'] },
+      { subject:'Law Officer — Professional Knowledge', topics:['Indian Contract Act, Transfer of Property Act','Negotiable Instruments Act — Cheques, Bills, Promissory Notes','Banking Regulation Act, RBI Act 1934','SARFAESI Act 2002, DRT Act, IBC 2016','Companies Act 2013 Basics','Consumer Protection Act 2019','FEMA 1999, PMLA 2002 (Money Laundering)','Indian Evidence Act, Civil Procedure Code Basics','Constitutional Law — Fundamental Rights, Directive Principles'] },
+      { subject:'HR/Personnel Officer — Professional Knowledge', topics:['HR Management — Recruitment, Selection, Training & Development','Performance Appraisal — MBO, 360-Degree, Balanced Scorecard','Industrial Relations — Trade Unions, Collective Bargaining, Grievance Handling','Labour Laws — Industrial Disputes Act, PF Act, ESI Act, Minimum Wages Act','Organisational Behaviour — Motivation Theories, Leadership Styles, Group Dynamics','Compensation & Wage Administration, Pay Commission Reports'] },
+      { subject:'Marketing Officer — Professional Knowledge', topics:['Marketing Concepts — 4Ps, STP (Segmentation, Targeting, Positioning), Consumer Behaviour','Banking Products & Services Marketing — CASA, Loans, Insurance Bundling','Digital Marketing — Social Media, SEO, Email, Content Marketing','Customer Relationship Management (CRM) Systems in Banking','Brand Management, Advertising & Sales Promotion','Cross-selling & Up-selling Techniques in Banks','Market Research — Survey Methods, Sampling, Data Analysis'] },
+    ]
+  },
+  {
+    id: 'lic-aao',
+    name: 'LIC AAO (Assistant Administrative Officer)',
+    shortName: 'LIC AAO',
+    icon: '🛡️',
+    category: 'Banking',
+    body: 'Life Insurance Corporation of India',
+    level: 'National',
+    eligibility: 'Graduation 55% (50% for SC/ST), Age 21–30',
+    stages: ['Prelims', 'Mains', 'Interview', 'Pre-Recruitment Medical Test'],
+    overview: 'One of the most prestigious insurance sector jobs. Conducted by LIC for AAO posts in Generalist, IT, CA, Actuarial, Rajbhasha and Legal streams. Mains has post-specific descriptive paper. Confirmed permanent government-equivalent job with excellent perks and pension.',
+    pattern: [
+      { stage:'Prelims', paper:'Reasoning Ability', qs:'35', marks:'35', duration:'20 min', neg:'-0.25', notes:'Sectional time limits' },
+      { stage:'Prelims', paper:'Quantitative Aptitude', qs:'35', marks:'35', duration:'20 min', neg:'-0.25', notes:'' },
+      { stage:'Prelims', paper:'General Knowledge & Current Affairs', qs:'30', marks:'30', duration:'20 min', neg:'-0.25', notes:'' },
+      { stage:'Prelims', paper:'Total', qs:'100', marks:'100', duration:'60 min', neg:'—', notes:'', isTotal:true },
+      { stage:'Mains', paper:'Reasoning Ability', qs:'30', marks:'90', duration:'40 min', neg:'-0.25', notes:'3 marks per Q' },
+      { stage:'Mains', paper:'General Knowledge & Current Affairs', qs:'30', marks:'60', duration:'20 min', neg:'-0.25', notes:'2 marks per Q' },
+      { stage:'Mains', paper:'Insurance & Financial Market Awareness', qs:'30', marks:'60', duration:'20 min', neg:'-0.25', notes:'2 marks per Q' },
+      { stage:'Mains', paper:'English (Descriptive — Qualifying)', qs:'2 Qs', marks:'25', duration:'30 min', neg:'None', notes:'Essay + Comprehension; must qualify' },
+      { stage:'Mains', paper:'Total Objective', qs:'90', marks:'210', duration:'90 min', neg:'—', notes:'', isTotal:true },
+      { stage:'Interview', paper:'Personal Interview', qs:'—', marks:'—', duration:'~15 min', neg:'None', notes:'Final merit: objective mains marks + interview marks' },
+    ],
+    syllabus: [
+      { subject:'Reasoning Ability', topics:['Puzzles & Seating Arrangement (Complex, Multi-floor, Circular)','Syllogism, Coded Inequalities','Blood Relations, Direction & Distance','Machine Input-Output, Data Sufficiency','Logical Reasoning — Cause & Effect, Assumptions','Alphanumeric Series, Ranking & Ordering'] },
+      { subject:'Quantitative Aptitude', topics:['Data Interpretation — Caselets, Complex Charts, Mixed DI','Number Series, Quadratic Equations, Simplification','Average, Percentage, Ratio, Partnership, Profit & Loss, SI & CI','Time & Work, Time Speed Distance, Probability','Mensuration, Permutation & Combination'] },
+      { subject:'Insurance & Financial Market Awareness', topics:['LIC — History, Organisational Structure, LIC Products (Jeevan Anand, Jeevan Labh, Jeevan Umang, Term Plans)','Types of Insurance — Life, Non-Life, Health, Reinsurance, General Insurance','IRDAI — Functions, Regulations, Solvency Norms, Consumer Protection','Insurance Terminology — Premium, Surrender Value, Maturity, Nomination, Claim Settlement','Capital Markets — SEBI, NSE, BSE, Mutual Funds, Bonds, ETFs','Government Insurance Schemes — PMJJBY, PMSBY, Atal Pension Yojana, PM Fasal Bima','Financial Planning — Goal-based Planning, Wealth Management Basics','RBI Policies affecting Insurance Sector'] },
+      { subject:'General Knowledge & Current Affairs', topics:['Insurance Sector News — New Policies, Mergers, IRDAI Circulars','Economy — Budget Highlights, GDP, Inflation, GST News','Banking & Finance News — RBI Policy Changes, New Products','Current Affairs — National & International, last 6 months','Static GK — Countries, Capitals, Currencies, Awards, Appointments','Sports, Books & Authors, Important Days & Events'] },
+    ]
+  },
+  /* ── Bihar Specific ── */
+  {
+    id: 'bpsc-tre',
+    name: 'BPSC TRE (Teacher Recruitment Exam)',
+    shortName: 'BPSC TRE',
+    icon: '🏫',
+    category: 'Bihar Specific',
+    body: 'Bihar Public Service Commission',
+    level: 'State',
+    eligibility: 'B.Ed / D.El.Ed + Graduation/PG; CTET/BTET/STET qualified (varies by level)',
+    stages: ['Written Exam', 'Document Verification'],
+    overview: 'Mass teacher recruitment for Bihar government schools conducted by BPSC. Three levels: Primary (Class 1–5), Middle (Class 6–8), Secondary & Senior Secondary (Class 9–12). No negative marking in any paper. Subject knowledge, pedagogy, Bihar GK and Hindi are central areas of assessment.',
+    pattern: [
+      { stage:'Primary (Class 1–5)', paper:'Language (Hindi/Urdu/Bangla)', qs:'25', marks:'25', duration:'2.5 hr (combined)', neg:'None', notes:'No negative marking for all TRE papers' },
+      { stage:'Primary (Class 1–5)', paper:'General Studies (Science, Maths, Social Studies)', qs:'60', marks:'60', duration:'—', neg:'None', notes:'Class 1–5 level content' },
+      { stage:'Primary (Class 1–5)', paper:'Environment Studies', qs:'15', marks:'15', duration:'—', neg:'None', notes:'' },
+      { stage:'Primary (Class 1–5)', paper:'Child Development & Pedagogy', qs:'30', marks:'30', duration:'—', neg:'None', notes:'NCF, Learning Theories, Inclusive Education' },
+      { stage:'Primary (Class 1–5)', paper:'Total', qs:'150', marks:'150', duration:'2.5 hr', neg:'None', notes:'', isTotal:true },
+      { stage:'Middle (Class 6–8)', paper:'Language', qs:'25', marks:'25', duration:'2.5 hr (combined)', neg:'None', notes:'Hindi / English / Urdu / Bangla — candidate chooses' },
+      { stage:'Middle (Class 6–8)', paper:'General Studies', qs:'25', marks:'25', duration:'—', neg:'None', notes:'Bihar focus included' },
+      { stage:'Middle (Class 6–8)', paper:'Subject-specific Paper', qs:'80', marks:'80', duration:'—', neg:'None', notes:'Science / Maths / Social Science / Language — as per subject opted' },
+      { stage:'Middle (Class 6–8)', paper:'Total', qs:'150', marks:'150', duration:'2.5 hr', neg:'None', notes:'', isTotal:true },
+      { stage:'Secondary/Sr. Secondary (9–12)', paper:'Language + General Studies', qs:'30', marks:'30', duration:'2.5 hr (combined)', neg:'None', notes:'' },
+      { stage:'Secondary/Sr. Secondary (9–12)', paper:'Subject Knowledge Paper', qs:'120', marks:'120', duration:'—', neg:'None', notes:'Honours/PG level subject paper' },
+      { stage:'Secondary/Sr. Secondary (9–12)', paper:'Total', qs:'150', marks:'150', duration:'2.5 hr', neg:'None', notes:'', isTotal:true },
+    ],
+    syllabus: [
+      { subject:'General Studies (Common Component)', topics:['Bihar History — Ancient, Medieval, Modern; Freedom Struggle from Bihar (Champaran, Quit India, etc.)','Bihar Geography — Rivers (Ganga, Kosi, Gandak), Districts, Soil Types, Agriculture, Forest','Bihar Economy & Demography — Key Statistics, Major Industries, Government Schemes','Indian Polity — Constitution, Panchayati Raj, Fundamental Rights, RTE Act 2009','Science & Technology — Applications in Daily Life & Education','Current Affairs — Bihar & National Level, last 6 months','General Hindi — Grammar, Comprehension, Vocabulary'] },
+      { subject:'Child Development & Pedagogy (Primary Level)', topics:['Child Development Theories — Piaget (Cognitive), Vygotsky (ZPD), Erikson (Stages)','Learning Theories — Behaviourism, Constructivism, Social Learning','National Curriculum Framework (NCF 2005) & National Education Policy (NEP 2020)','Inclusive Education — Children with Special Needs, CWSN','Assessment & Evaluation — CCE, Portfolio, Formative & Summative','Teaching-Learning Methods — Activity-based, Play-based, Inquiry Learning','Child Psychology Basics, Motivation & Learning, Language Development'] },
+      { subject:'Subject Knowledge (As per Level & Subject)', topics:['Primary: Mathematics (Number System, Operations, Geometry, Measurement), Science (Animals, Plants, Earth, Human Body), Social Studies (Family, Community, Maps)','Middle: Graduation-level content for Science / Mathematics / Social Science / Hindi / English / Sanskrit / Urdu','Secondary/Sr. Secondary: Honours/PG level — Physics, Chemistry, Biology, Mathematics, History, Geography, Political Science, Economics, Hindi, English, Sanskrit, Commerce, Home Science, etc.'] },
+    ]
+  },
+  {
+    id: 'bpsc-cdpo',
+    name: 'BPSC CDPO (Child Development Project Officer)',
+    shortName: 'BPSC CDPO',
+    icon: '👶',
+    category: 'Bihar Specific',
+    body: 'Bihar Public Service Commission',
+    level: 'State',
+    eligibility: 'Graduation (Home Science / Sociology / Psychology preferred), Age 21–37',
+    stages: ['Prelims', 'Mains', 'Interview'],
+    overview: 'Recruitment for Child Development Project Officer posts under Bihar ICDS (Integrated Child Development Services). CDPOs supervise Anganwadi Centres and implement maternal-child health and nutrition schemes at block level. Bihar-specific social welfare schemes are critical.',
+    pattern: [
+      { stage:'Prelims', paper:'General Studies (Single Paper)', qs:'150', marks:'150', duration:'2 hr', neg:'None', notes:'No negative marking — same as BPSC CCE prelims pattern' },
+      { stage:'Mains', paper:'General Hindi (Qualifying)', qs:'—', marks:'100', duration:'3 hr', neg:'None', notes:'Qualifying paper; must pass' },
+      { stage:'Mains', paper:'General Studies Paper I', qs:'—', marks:'200', duration:'3 hr', neg:'None', notes:'Descriptive — Social, Historical, Geographical context' },
+      { stage:'Mains', paper:'General Studies Paper II', qs:'—', marks:'200', duration:'3 hr', neg:'None', notes:'Descriptive — Child Development, Nutrition, ICDS, Social Welfare' },
+      { stage:'Mains', paper:'Total', qs:'—', marks:'400', duration:'—', neg:'—', notes:'', isTotal:true },
+      { stage:'Interview', paper:'Personality Test', qs:'—', marks:'60', duration:'~15 min', neg:'None', notes:'Final selection' },
+    ],
+    syllabus: [
+      { subject:'General Studies (Prelims & Mains GS I)', topics:['Indian & Bihar History — Freedom Struggle, Post-independence Development in Bihar','Bihar Geography — Districts, Rivers, Natural Resources, Demographics','Indian Polity & Constitution — Parliament, Judiciary, Panchayati Raj, Women & Child Rights','Indian Economy — Planning, NITI Aayog, Key Economic Indicators','General Science — Physics, Chemistry, Biology Basics','Environment & Ecology — Biodiversity, Pollution, Conservation in Bihar','Social Development — Education, Health Indicators, Women Empowerment','Current Affairs — Bihar & National, last 6 months'] },
+      { subject:'Child Development, ICDS & Nutrition (Mains GS II Focus)', topics:['ICDS — History, Objectives, Structure, Services (Supplementary Nutrition, Immunisation, Health Check, Referral, Pre-school Education, Nutrition & Health Education)','Child Nutrition — Malnutrition (PEM), Stunting, Wasting, Underweight; Micronutrient Deficiencies (Iron, Vitamin A, Iodine)','Growth Monitoring — Weight-for-Age, Height-for-Age Charts, MUAC','Child Health — Immunization Schedule (UIP), Common Childhood Diseases, ORT, IMNCI','Infant & Young Child Feeding (IYCF) — Breastfeeding Practices, Complementary Feeding Guidelines','Child Rights — UNCRC, POCSO Act 2012, Juvenile Justice Act 2015','Women\'s Nutrition & Health — Maternal Mortality, Anaemia, Safe Motherhood, ANC','Government Schemes — PM POSHAN (formerly MDM), POSHAN Abhiyan, Beti Bachao Beti Padhao, PMMVY, Mission Vatsalya','Bihar ICDS — Administrative Structure, Supervisory & Monitoring Role of CDPO, Anganwadi Record Maintenance'] },
+    ]
+  },
+  /* ── State PSC ── */
+  {
+    id: 'mppsc',
+    name: 'MPPSC State Service Exam',
+    shortName: 'MPPSC',
+    icon: '🏞️',
+    category: 'State PSC',
+    body: 'Madhya Pradesh Public Service Commission',
+    level: 'State',
+    eligibility: 'Graduation, Age 21–40 (relaxations for reserved categories)',
+    stages: ['Prelims', 'Mains', 'Interview'],
+    overview: 'Main gateway to Group A & B services in Madhya Pradesh — Deputy Collector, DSP, Naib Tehsildar, Block Development Officer. Strong emphasis on MP-specific history, culture, geography and economy. CSAT is qualifying at 40%. Hindi is the medium of instruction for Mains.',
+    pattern: [
+      { stage:'Prelims', paper:'General Studies Paper I', qs:'100', marks:'200', duration:'2 hr', neg:'-0.33 (1/3)', notes:'2 marks per Q; merit-based shortlisting' },
+      { stage:'Prelims', paper:'General Aptitude Test (CSAT)', qs:'100', marks:'200', duration:'2 hr', neg:'-0.33', notes:'Qualifying — minimum 40% (80 marks) needed; not counted for merit' },
+      { stage:'Mains', paper:'General Studies I', qs:'—', marks:'300', duration:'3 hr', neg:'None', notes:'Descriptive — History, Art & Culture, Geography (MP focus)' },
+      { stage:'Mains', paper:'General Studies II', qs:'—', marks:'300', duration:'3 hr', neg:'None', notes:'Descriptive — Polity, Governance, Social Issues' },
+      { stage:'Mains', paper:'General Studies III', qs:'—', marks:'300', duration:'3 hr', neg:'None', notes:'Descriptive — Economy, Science & Technology, Environment' },
+      { stage:'Mains', paper:'General Studies IV (Ethics)', qs:'—', marks:'200', duration:'3 hr', neg:'None', notes:'Descriptive — Ethics, Integrity, Aptitude' },
+      { stage:'Mains', paper:'General Hindi (Qualifying)', qs:'—', marks:'200', duration:'3 hr', neg:'None', notes:'Must score 50% to qualify' },
+      { stage:'Mains', paper:'Hindi Essay & Letter Writing', qs:'—', marks:'100', duration:'2 hr', neg:'None', notes:'Essay, Letter, Report Writing in Hindi' },
+      { stage:'Mains', paper:'Total', qs:'—', marks:'1200', duration:'—', neg:'—', notes:'', isTotal:true },
+      { stage:'Interview', paper:'Personality Test', qs:'—', marks:'175', duration:'~20 min', neg:'None', notes:'Final merit: Mains + Interview' },
+    ],
+    syllabus: [
+      { subject:'History, Culture & Geography (MP Focus)', topics:['MP History — Major Dynasties (Chandela, Paramara, Holkar, Scindia), Freedom Fighters from MP (Chandra Shekhar Azad, Tantya Tope)','MP Geography — Rivers (Narmada, Tapti, Chambal, Betwa), Soil Types, Forest, Tribal Districts (Baiga, Gond, Bhil)','MP Culture — Folk Music (Malwa, Bundelkhand), Tribal Arts, Classical Music Gurus (Tansen of Gwalior)','Environment & Biodiversity — Tiger Reserves (Kanha, Pench, Bandhavgarh, Satpura), UNESCO Heritage (Sanchi, Khajuraho)','Indian History — Ancient, Medieval, Modern India and Indian National Movement'] },
+      { subject:'Polity, Governance & Social Issues', topics:['Indian Constitution — Salient Features, Amendments, Fundamental Rights & Duties','Parliament & State Legislature of MP (Vidhan Sabha)','Judiciary — Supreme Court, High Court of MP (Jabalpur Bench)','Panchayati Raj in MP — from Gram Panchayat to Zila Panchayat','MP Government Schemes — Ladli Laxmi Yojana, Kanya Vivah Yojana, Mukhyamantri Teerth Darshan Yojana, CM Rise Schools','Social Issues — Tribal Welfare, SC/ST Rights, Women Empowerment in MP','India\'s Foreign Policy, International Relations & Current Affairs'] },
+      { subject:'Economy, Science, Technology & Environment', topics:['Indian Economy — Growth Trends, Planning, NITI Aayog Initiatives','MP Economy — Agriculture (Soybean Belt, Wheat, Pulses), MSMEs, Industrial Areas (Pithampur, Dewas, Mandideep)','Science & Technology — ISRO, DRDO, Digital India, Biotechnology','Environment — Ken-Betwa River Link Project, MP Tiger Corridors, Solar Energy (Rewa Solar Plant — World\'s Largest at launch)','Industry — BHEL Bhopal, Ordnance Factory Jabalpur','Disaster Management — Flood-prone Districts of MP, SDMA'] },
+    ]
+  },
+  {
+    id: 'rpsc-ras',
+    name: 'RPSC RAS (Rajasthan Administrative Service)',
+    shortName: 'RPSC RAS',
+    icon: '🏜️',
+    category: 'State PSC',
+    body: 'Rajasthan Public Service Commission',
+    level: 'State',
+    eligibility: 'Graduation, Age 21–40 (General); up to 45 for reserved categories',
+    stages: ['Prelims', 'Mains', 'Interview'],
+    overview: 'Rajasthan\'s premier civil services exam for IAS-equivalent state services — RAS, RPS, Revenue Service, etc. Heavy emphasis on Rajasthan-specific history, art, culture and geography in all stages. No negative marking in Prelims since 2022. One of the most competitive state PSC exams.',
+    pattern: [
+      { stage:'Prelims', paper:'General Studies & General Science (Single Paper)', qs:'150', marks:'200', duration:'3 hr', neg:'None', notes:'No negative marking since 2022; merit-based shortlisting' },
+      { stage:'Mains', paper:'General Studies I — History, Art & Culture, Geography', qs:'—', marks:'200', duration:'3 hr', neg:'None', notes:'Descriptive' },
+      { stage:'Mains', paper:'General Studies II — Indian Polity, Governance, Rajasthan Administration', qs:'—', marks:'200', duration:'3 hr', neg:'None', notes:'Descriptive' },
+      { stage:'Mains', paper:'General Studies III — Economy, Science, Reasoning', qs:'—', marks:'200', duration:'3 hr', neg:'None', notes:'Descriptive' },
+      { stage:'Mains', paper:'General Hindi & General English', qs:'—', marks:'200', duration:'3 hr', neg:'None', notes:'Descriptive — translation, essay, comprehension in both languages' },
+      { stage:'Mains', paper:'Total', qs:'—', marks:'800', duration:'—', neg:'—', notes:'', isTotal:true },
+      { stage:'Interview', paper:'Personality Test', qs:'—', marks:'100', duration:'~20 min', neg:'None', notes:'Final merit: Mains + Interview' },
+    ],
+    syllabus: [
+      { subject:'History, Art & Culture (Rajasthan Focus)', topics:['Rajasthan History — Rajput Kingdoms (Mewar, Marwar, Amber), Battle of Haldighati, Prithviraj Chauhan','Rajasthan in Freedom Struggle — Bijolia Peasant Movement, 1857 Uprising, Tribal Movements','Art & Culture — Miniature Paintings (Bundi, Kishangarh, Jaipur Schools), Folk Music (Maand, Pabuji Ki Phad), Langa & Manganiyar Music','Fairs & Festivals — Pushkar Mela, Gangaur, Teej, Desert Festival, Nagaur Fair','Heritage — Forts (Chittorgarh, Mehrangarh, Kumbhalgarh, Amber), Stepwells, UNESCO World Heritage Sites','Architecture — Jharokha, Jali Work, Havelis of Shekhawati Region'] },
+      { subject:'Geography, Economy & Environment (Rajasthan Focus)', topics:['Rajasthan Geography — Thar Desert (Great Indian Desert), Aravalli Range, Eastern Plains, Hadouti Plateau','River System — Chambal, Banas, Luni, Ghaggar','Agriculture — Major Crops (Bajra, Jowar, Mustard, Guar), Irrigation Projects (Indira Gandhi Nahar, Rajasthan Canal)','Minerals — Marble (Kishangarh), Zinc & Lead (Zawar Mines), Gypsum, Salt (Sambhar Lake)','Wildlife — Desert National Park, Sariska Tiger Reserve, Ranthambore, Keoladeo (Bharatpur Bird Sanctuary)','Rajasthan Economy — GDP Contributions, DMIC Corridor, Industrial Areas (Bhiwadi, Neemrana)','Tourism — Golden Triangle, Heritage Hotels, Rural Tourism Policy','Major Dams & Projects — Bisalpur, Mahi Bajaj Sagar, Rana Pratap Sagar'] },
+      { subject:'Polity, Governance & Social Issues', topics:['Indian Constitution — Salient Features, Federalism, Fundamental Rights & Duties, DPSP','Rajasthan Legislature — Vidhan Sabha, Chief Minister, Governor','Panchayati Raj in Rajasthan — Zila Parishad, Panchayat Samiti, Gram Sabha','Important Constitutional & Statutory Bodies','Social Welfare Schemes — Mukhyamantri Chiranjeevi Swasthya Bima, Palanhar Yojana, Annapurna Food Security Scheme'] },
+    ]
+  },
+  {
+    id: 'jpsc',
+    name: 'JPSC CCE (Jharkhand Combined Competitive Exam)',
+    shortName: 'JPSC CCE',
+    icon: '🌿',
+    category: 'State PSC',
+    body: 'Jharkhand Public Service Commission',
+    level: 'State',
+    eligibility: 'Graduation, Age 21–35 (General); up to 38 for BC/OBC, 40 for SC/ST',
+    stages: ['Prelims', 'Mains', 'Interview'],
+    overview: 'Gateway to Jharkhand civil services — Deputy Collector, DSP, District Supply Officer, Block Development Officer. High focus on tribal culture, Jharkhand history, forest rights legislation and social issues. Hindi is the primary medium. Critical to know the Chhotanagpur Tenancy Act and Santhal Pargana Tenancy Act.',
+    pattern: [
+      { stage:'Prelims', paper:'General Studies I — History, Geography, Polity, GS', qs:'100', marks:'200', duration:'2 hr', neg:'-0.25', notes:'2 marks per Q' },
+      { stage:'Prelims', paper:'General Studies II — CSAT (Qualifying)', qs:'100', marks:'200', duration:'2 hr', neg:'-0.25', notes:'Qualifying — 33% needed; aptitude based' },
+      { stage:'Mains', paper:'General Hindi or Urdu (Qualifying)', qs:'—', marks:'100', duration:'3 hr', neg:'None', notes:'' },
+      { stage:'Mains', paper:'Regional Language (Qualifying)', qs:'—', marks:'100', duration:'3 hr', neg:'None', notes:'Santhali, Hindi, Urdu, Bengali, Odia, etc.' },
+      { stage:'Mains', paper:'General Studies I — History, Culture, Geography', qs:'—', marks:'200', duration:'3 hr', neg:'None', notes:'Descriptive' },
+      { stage:'Mains', paper:'General Studies II — Polity, Governance, Social Issues', qs:'—', marks:'200', duration:'3 hr', neg:'None', notes:'Descriptive' },
+      { stage:'Mains', paper:'General Studies III — Economy, Science, Environment', qs:'—', marks:'200', duration:'3 hr', neg:'None', notes:'Descriptive' },
+      { stage:'Mains', paper:'General Studies IV — Ethics, Integrity', qs:'—', marks:'200', duration:'3 hr', neg:'None', notes:'Descriptive' },
+      { stage:'Mains', paper:'Optional Subject (Choose 1 of 34 — 2 papers)', qs:'—', marks:'300', duration:'3 hr each', neg:'None', notes:'2 papers × 150 marks each' },
+      { stage:'Mains', paper:'Total GS + Optional', qs:'—', marks:'1100', duration:'—', neg:'—', notes:'', isTotal:true },
+      { stage:'Interview', paper:'Personality Test', qs:'—', marks:'100', duration:'~20 min', neg:'None', notes:'Final selection' },
+    ],
+    syllabus: [
+      { subject:'History & Culture (Jharkhand Focus)', topics:['Jharkhand History — Pre-colonial Tribal Society (Munda, Santhal, Ho, Oraon), Bhuinhari System','Tribal Uprisings — Kol Rebellion (1831), Santhal Hul (1855), Birsa Munda Uldugulaan (1900)','Jharkhand Freedom Fighters — Sidho-Kanhu, Birsa Munda, Tilka Manjhi','Jharkhand Statehood — Jharkhand Movement history, Formation in 2000','Tribal Culture — Sarhul, Karma, Soharai, Bandna Festivals; Chhau Dance, Jhumair, Domkach','Tribal Art — Sohrai and Khovar Paintings (UNESCO Intangible Heritage)','Historical Sites — Rajrappa (Maa Chinnamasta Temple), Deoghar (Baidyanath Dham), Palamau Fort, Hazaribagh'] },
+      { subject:'Geography, Economy & Environment', topics:['Jharkhand Geography — Chotanagpur Plateau, Damodar Valley, Subarnarekha & Koel Rivers','Minerals — Coal (Dhanbad, Jharia Coalfields), Iron Ore (Singhbhum), Mica, Bauxite, Copper, Uranium (Jadugoda)','Forest — 33% of Jharkhand covered by forests; Community Forest Rights under FRA 2006','Agriculture — Rice, Maize; Lac Production (India\'s leading producer)','Industries — SAIL Bokaro Steel Plant, Heavy Engineering Corporation (HEC) Ranchi, MECON','Wildlife — Betla National Park, Dalma Wildlife Sanctuary, Jharkhand Elephant Reserve'] },
+      { subject:'Polity, Tribal Rights & Governance', topics:['Jharkhand Legislature — Vidhan Sabha, Governor, Council of Ministers','Tribal Self-Governance — PESA Act 1996, Gram Sabha Powers in Schedule V Areas','Fifth Schedule of Indian Constitution — Tribal Area Administration, Governor\'s Special Powers','Land Rights — Chhotanagpur Tenancy Act (CNT Act), Santhal Pargana Tenancy Act (SPT Act) — critical land protection laws','Forest Rights Act 2006 — Community & Individual Forest Rights for tribals','Jharkhand Government Schemes — Mukhyamantri Protsahan Yojana, Phulo Jhano Aashirwad Yojana, Birsa Harit Gram Yojana','Naxalism in Jharkhand — Affected Districts, Government Response Strategy'] },
+    ]
+  },
+  {
+    id: 'hpsc-hcs',
+    name: 'HPSC HCS (Haryana Civil Services)',
+    shortName: 'HPSC HCS',
+    icon: '🏟️',
+    category: 'State PSC',
+    body: 'Haryana Public Service Commission',
+    level: 'State',
+    eligibility: 'Graduation, Age 21–42 (General); relaxations for OBC/SC/ST/Ex-servicemen',
+    stages: ['Prelims', 'Mains', 'Interview'],
+    overview: 'Entry to Haryana Civil Services (HCS, HPS) and allied services. Posts: Deputy Superintendent of Police, HCS Officer, Assistant Registrar. Strong Haryana-specific content across all stages. Notably higher age limit (42 years) than most state PSCs. One of the better-paying state civil services.',
+    pattern: [
+      { stage:'Prelims', paper:'General Studies (Single Paper)', qs:'100', marks:'100', duration:'2 hr', neg:'-0.25', notes:'Merit-based shortlisting; 1 mark per Q' },
+      { stage:'Mains', paper:'English (Essay, Grammar & Comprehension)', qs:'—', marks:'100', duration:'3 hr', neg:'None', notes:'Descriptive — must score minimum 33%' },
+      { stage:'Mains', paper:'Hindi / Sanskrit', qs:'—', marks:'100', duration:'3 hr', neg:'None', notes:'Descriptive — Grammar & Comprehension' },
+      { stage:'Mains', paper:'Social Sciences (History, Geography, Polity, Economics)', qs:'—', marks:'200', duration:'3 hr', neg:'None', notes:'Descriptive — Indian & Haryana focus' },
+      { stage:'Mains', paper:'Science & Technology / Agriculture (Optional)', qs:'—', marks:'200', duration:'3 hr', neg:'None', notes:'Candidate chooses one optional' },
+      { stage:'Mains', paper:'Mathematics / Statistics (Optional)', qs:'—', marks:'200', duration:'3 hr', neg:'None', notes:'Alternative optional' },
+      { stage:'Mains', paper:'Total (2 Compulsory Lang. + Social Sciences + Best Optional)', qs:'—', marks:'800', duration:'—', neg:'—', notes:'', isTotal:true },
+      { stage:'Interview', paper:'Personality Test', qs:'—', marks:'75', duration:'~15 min', neg:'None', notes:'Final merit: Mains + Interview' },
+    ],
+    syllabus: [
+      { subject:'History, Culture & Geography (Haryana Focus)', topics:['Haryana History — Indus Valley Sites (Rakhigarhi — world\'s largest IVC site, Banawali, Bhirrana)','Mahabharata & Kurukshetra — Battlefield, Brahma Sarovar, Jyotisar','Medieval Haryana — Panipat Battles (1526, 1556, 1761 — historic turning points of Indian history)','1857 in Haryana — Ambala Cantonment Uprising, Gurgaon revolt','Haryana Formation — 1966 Reorganisation, Satyagrah for Hindi-speaking state','Haryana Culture — Saang Theatre, Ragini Folk Music, Phag Songs, Alha recitation','Haryana Geography — Aravalli Hills (Morni Hills), Ghaggar River, Shivalik Foothills','Agriculture — Green Revolution in Haryana (Wheat, Rice, Cotton, Sugarcane)'] },
+      { subject:'Polity, Economy & Social Issues', topics:['Haryana Legislature — Vidhan Sabha, Chief Minister, Governor\'s role','Panchayati Raj in Haryana — District Level, Block Level, Village Level Institutions','Haryana Economy — Agriculture, IT (Gurugram — Millennium City), Automobile Industry (Manesar)','Important Dams & Canals — Bhakra Nangal (shared), Western Yamuna Canal, Indira Gandhi Canal','Haryana Schemes — Ladli Yojana, Mukhyamantri Vivah Shagun Yojana, Beti Bachao Beti Padhao (launched from Panipat)','Social Issues — Female Foeticide History, Khap Panchayat System, Sex Ratio Improvement Efforts','Sports — Haryana\'s Olympic Champions (Neeraj Chopra, Bajrang Punia, Sakshi Malik), Akhara Wrestling Culture','Educational Institutions — KUK, MDU Rohtak, Guru Jambheshwar University Hisar, Maharshi Dayanand University'] },
+    ]
+  },
+  /* ── Defence ── */
+  {
+    id: 'capf-ac',
+    name: 'CAPF AC (Central Armed Police Forces)',
+    shortName: 'CAPF AC',
+    icon: '🪖',
+    category: 'Defence',
+    body: 'Union Public Service Commission',
+    level: 'National',
+    eligibility: 'Graduation, Age 20–25',
+    stages: ['Paper I (Objective)', 'Paper II (Descriptive)', 'Physical/Medical Standards Test', 'Interview / Personality Test'],
+    overview: 'UPSC recruits Assistant Commandants in BSF, CRPF, CISF, ITBP, SSB and NSG through CAPF AC exam. Paper I is objective GS; Paper II is descriptive essay and comprehension. Physical and medical standards are stringent. Final merit formula: Paper I 25% + Paper II 25% + Interview 50%.',
+    pattern: [
+      { stage:'Paper I', paper:'General Ability & Intelligence (Objective)', qs:'125', marks:'250', duration:'2 hr', neg:'-0.33 (1/3)', notes:'GS, Reasoning, Elementary Maths, Science, English, Hindi — 2 marks per Q' },
+      { stage:'Paper II', paper:'General Studies, Essay & Comprehension (Descriptive)', qs:'—', marks:'200', duration:'3 hr', neg:'None', notes:'Section A: Essay (80M) | Section B: Précis + Comprehension (120M)' },
+      { stage:'Physical', paper:'Physical Standards Test', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'Height, weight, chest expansion — gender & category specific standards' },
+      { stage:'Medical', paper:'Medical Examination', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'Vision, hearing, physical fitness tests' },
+      { stage:'Interview', paper:'Personality Test', qs:'—', marks:'150', duration:'~30 min', neg:'None', notes:'Merit: Paper I 25% + Paper II 25% + Interview 50%' },
+    ],
+    syllabus: [
+      { subject:'General Ability & Intelligence (Paper I)', topics:['General Science — Physics, Chemistry, Biology Applications & Discoveries','Current Events — National & International, Science & Technology Developments','History of India — Ancient, Medieval, Modern','Indian Geography, Polity & Constitution, Indian Economy','Elementary Mathematics (Class 10) — Arithmetic, Mensuration, Algebra Basics','General Mental Ability — Analogies, Spatial Orientation, Number Series, Reasoning','English Comprehension & Language Skills','Hindi Comprehension & Language Skills'] },
+      { subject:'Essay & Comprehension (Paper II)', topics:['Essay Writing (80M) — Two essays: one on social/developmental topic, one on current affairs/security/ethics','Comprehension (120M) — Précis writing, vocabulary in context, grammar-based questions on passages','Essay Topics — Social Issues, Democracy, Internal Security, Science & Development, Environment, Women Empowerment','Analysis of administrative situations and governance dilemmas'] },
+      { subject:'Interview — Personality Assessment Themes', topics:['Leadership Qualities & Decision-Making under Pressure','Communication Skills, Confidence, Clarity of Thought','Knowledge of CAPF structure, Internal Security, Counter-insurgency, Borders','Motivation for CAPF, Awareness of the specific Force applied for (BSF, CRPF, CISF, ITBP, SSB, NSG)','Ethical Reasoning, Situational Judgment in Field Scenarios'] },
+    ]
+  },
+  {
+    id: 'army-soldier',
+    name: 'Indian Army Soldier Recruitment (CEE)',
+    shortName: 'Army Soldier',
+    icon: '🎽',
+    category: 'Defence',
+    body: 'Indian Army / Army Recruiting Offices',
+    level: 'National',
+    eligibility: 'Class 10–12 + ITI/Diploma (varies by category), Age 17.5–23',
+    stages: ['Physical Fitness Test (PFT)', 'Physical Measurement Test', 'Medical Examination', 'Common Entrance Exam (CEE)'],
+    overview: 'Rally-based recruitment for soldiers in multiple categories. Key categories: Soldier GD (Class 10, Age 17.5–21), Soldier Technical (Class 12 PCM, Age 17.5–23), Soldier Clerk/SKT (Class 12 with Maths & English, Age 17.5–23), Soldier Nursing Assistant (Class 12 PCM/Bio, Age 17.5–23), Tradesman (Class 8/10, Age 17.5–23). Physical rally comes first — only those cleared advance to CEE.',
+    pattern: [
+      { stage:'Physical Rally', paper:'Physical Fitness Test (PFT)', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'1.6 km run in 5:30 min (GD/Technical), Pull-ups (min 6), Zig-Zag Balance, 9 ft Ditch — all qualifying' },
+      { stage:'Physical Rally', paper:'Physical Measurement Test', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'Height ≥169 cm (varies by region/state); Chest expansion ≥5 cm; Weight proportional' },
+      { stage:'Medical', paper:'Medical Examination', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'Vision, Hearing, Limbs, Skin, Bones — all must be within prescribed standards' },
+      { stage:'CEE (Soldier GD)', paper:'General Knowledge', qs:'15', marks:'30', duration:'60 min (combined)', neg:'-1 per wrong', notes:'2 marks per correct Q; 1 mark per wrong Q deducted' },
+      { stage:'CEE (Soldier GD)', paper:'General Science', qs:'15', marks:'30', duration:'—', neg:'-1', notes:'' },
+      { stage:'CEE (Soldier GD)', paper:'Mathematics', qs:'15', marks:'30', duration:'—', neg:'-1', notes:'Class 10 level' },
+      { stage:'CEE (Soldier GD)', paper:'Computer & IT', qs:'5', marks:'10', duration:'—', neg:'-1', notes:'Basic computer knowledge' },
+      { stage:'CEE (Soldier GD)', paper:'Total', qs:'50', marks:'100', duration:'60 min', neg:'—', notes:'', isTotal:true },
+      { stage:'CEE (Clerk/SKT)', paper:'Part I — GK + GS + Maths + Computer', qs:'25', marks:'50', duration:'75 min (combined)', neg:'-1', notes:'' },
+      { stage:'CEE (Clerk/SKT)', paper:'Part II — English Language', qs:'25', marks:'50', duration:'—', neg:'-1', notes:'Grammar, Comprehension, Vocabulary' },
+      { stage:'CEE (Technical/NA)', paper:'GK + Physics + Chemistry + Maths/Biology', qs:'50', marks:'100', duration:'60 min', neg:'-1', notes:'Class 12 level (PCM for Technical, PCM or PCB for NA)' },
+    ],
+    syllabus: [
+      { subject:'General Knowledge (All CEE Categories)', topics:['Indian History — Major Events, Freedom Struggle, Post-Independence','Indian Geography — States, Rivers, Mountains, Capitals, Districts','Indian Polity — Constitution Basics, Parliament, Fundamental Rights','Science & Technology — Inventions, Space, Defence News, DRDO, ISRO','Current Affairs — National & International, last 6 months','Defence — Indian Army Structure, Regiments, Wars, Chief of Army Staff','Awards & Honours, Sports — Olympics, Commonwealth, Cricket, Asian Games','Books, Authors, Important Days & Themes'] },
+      { subject:'Mathematics (Class 10 Level)', topics:['Number System, LCM & HCF, BODMAS','Ratio & Proportion, Percentage, Average','Simple & Compound Interest, Profit & Loss, Discount','Time & Work, Time Speed Distance — Trains, Boats, Streams','Geometry — Area, Perimeter, Volume of standard shapes','Algebra — Linear Equations, Basic Identities','Trigonometry — Heights & Distances Basics'] },
+      { subject:'General Science (Class 10 Level)', topics:['Physics — Motion, Force, Work, Energy, Light, Sound, Electricity, Magnetism, Atomic Structure','Chemistry — Matter, Elements, Compounds, Acids & Bases, Metals & Non-metals, Carbon Compounds','Biology — Cell, Nutrition, Respiration, Human Organ Systems, Disease & Health, Reproduction','Environment — Ecosystems, Biodiversity Conservation, Pollution Types & Control'] },
+      { subject:'English (Clerk/SKT CEE)', topics:['Grammar — Parts of Speech, Tenses, Articles, Prepositions, Conjunctions, Voice & Narration','Vocabulary — Synonyms, Antonyms, Spelling, Word Meanings, One-Word Substitution','Comprehension — Short Passage with Questions','Fill in the Blanks, Error Detection, Sentence Formation & Ordering'] },
+      { subject:'Technical / Science Knowledge (Technical & NA CEE — Class 12 Level)', topics:['Physics — Optics, Electrostatics, Current Electricity, Magnetic Effects, EMI, EM Waves, Thermodynamics','Chemistry — Atomic Structure, Chemical Bonding, Electrochemistry, Organic Chemistry Basics, d-Block Elements','Mathematics (Technical) — Calculus, Coordinate Geometry, Matrices & Determinants, Probability, Trigonometry','Biology (NA) — Human Physiology, Cell Division, Genetics & Evolution, Disease & Immunity, Ecology & Environment'] },
+    ]
+  },
+  /* ── Bihar Specific ── */
+  {
+    id: 'bssc-cgl',
+    name: 'BSSC CGL (Bihar SSC Graduate Level)',
+    shortName: 'BSSC CGL',
+    icon: '📜',
+    category: 'Bihar Specific',
+    body: 'Bihar Staff Selection Commission',
+    level: 'State',
+    eligibility: 'Graduation, Age 18–37',
+    stages: ['Prelims (PT)', 'Mains', 'Document Verification'],
+    overview: 'Bihar\'s own equivalent of SSC CGL for Group C posts under Bihar state government — District Supply Officers, Revenue staff, Block-level posts, Labour enforcement, etc. One of the highest-volume Bihar state exams. No interview. Mains is the final merit-determining exam.',
+    pattern: [
+      { stage:'Prelims (PT)', paper:'General Studies', qs:'150', marks:'150', duration:'2.5 hr', neg:'None', notes:'No negative marking in prelims — Bihar SSC trademark' },
+      { stage:'Mains', paper:'General Hindi', qs:'50', marks:'100', duration:'2 hr (combined)', neg:'-0.20', notes:'' },
+      { stage:'Mains', paper:'General Studies & GK', qs:'50', marks:'100', duration:'—', neg:'-0.20', notes:'Bihar + National focus' },
+      { stage:'Mains', paper:'General Science & Mathematics', qs:'50', marks:'100', duration:'—', neg:'-0.20', notes:'Class 10–12 level' },
+      { stage:'Mains', paper:'Mental Ability & Reasoning', qs:'50', marks:'100', duration:'—', neg:'-0.20', notes:'' },
+      { stage:'Mains', paper:'Total', qs:'200', marks:'400', duration:'2 hr', neg:'—', notes:'', isTotal:true },
+    ],
+    syllabus: [
+      { subject:'General Hindi', topics:['Hindi Grammar — Sandhi, Samas, Karak, Upsarg, Pratyay','Vocabulary — Paryayvachi, Vilom, Anekarthi Shabd','Muhavare & Lokoktiyan','Reading Comprehension in Hindi','Letter & Essay Writing in Hindi','Error Detection & Correction'] },
+      { subject:'General Studies & GK', topics:['Bihar History — Ancient to Modern, Freedom Movement from Bihar','Bihar Geography — Rivers, Districts, Agriculture, Major Industries','Bihar Government Schemes — Har Ghar Bijli, Mukhyamantri Cycle Yojana, Har Ghar Nal Ka Jal','Indian History — Major Events, National Movement, Post-independence India','Indian Polity — Constitution, Parliament, Panchayati Raj','Indian Economy — Planning, Banking, Key Economic Indicators','Current Affairs — Bihar & National, last 6 months','Science & Technology, Sports, Awards'] },
+      { subject:'General Science & Mathematics', topics:['Physics — Motion, Energy, Light, Electricity, Magnetism','Chemistry — Elements, Compounds, Acids, Bases, Reactions','Biology — Human Body, Diseases, Plant Biology, Environment','Mathematics (Class 10) — Number System, Ratio, Percentage, Mensuration, Algebra, Geometry, SI/CI, Profit & Loss, Time-Work-Distance'] },
+      { subject:'Mental Ability & Reasoning', topics:['Analogies, Classification, Number & Alphabetical Series','Coding-Decoding, Blood Relations','Direction & Distance, Venn Diagrams','Syllogism, Statement-Assumption-Conclusion','Figure-based Reasoning — Mirror Image, Paper Folding, Embedded Figures','Mathematical Operations, Data Sufficiency'] },
+    ]
+  },
+  {
+    id: 'bssc-inter',
+    name: 'BSSC Inter Level (12th Level)',
+    shortName: 'BSSC Inter Level',
+    icon: '📗',
+    category: 'Bihar Specific',
+    body: 'Bihar Staff Selection Commission',
+    level: 'State',
+    eligibility: 'Class 12 (Inter), Age 18–37',
+    stages: ['Prelims (PT)', 'Mains', 'Document Verification'],
+    overview: 'Bihar SSC Inter Level exam for Group C posts requiring Class 12 qualification — Lower Division Clerk, Panchayat Secretary, Accountant Clerk, Tax Collector, etc. One of the most sought-after entry-level government job exams in Bihar. No negative marking in PT.',
+    pattern: [
+      { stage:'Prelims (PT)', paper:'General Studies (Single Paper)', qs:'150', marks:'150', duration:'2 hr', neg:'None', notes:'No negative marking in PT' },
+      { stage:'Mains', paper:'General Hindi', qs:'50', marks:'100', duration:'2 hr (combined)', neg:'-0.20', notes:'' },
+      { stage:'Mains', paper:'General Awareness & General Studies', qs:'50', marks:'100', duration:'—', neg:'-0.20', notes:'Bihar focus' },
+      { stage:'Mains', paper:'Mathematics & Science', qs:'50', marks:'100', duration:'—', neg:'-0.20', notes:'Class 10 & 12 level' },
+      { stage:'Mains', paper:'Mental Ability', qs:'50', marks:'100', duration:'—', neg:'-0.20', notes:'' },
+      { stage:'Mains', paper:'Total', qs:'200', marks:'400', duration:'2 hr', neg:'—', notes:'', isTotal:true },
+    ],
+    syllabus: [
+      { subject:'General Hindi', topics:['Bihar Board Inter Level Hindi Grammar — Vyakaran, Sandhi, Samas','Muhavare, Lokoktiyan, Paryayvachi, Vilom Shabd','Hindi Comprehension Passages','Letter Writing — Formal & Informal in Hindi','Error Detection in Hindi Sentences'] },
+      { subject:'General Awareness & GS (Bihar Focus)', topics:['Bihar History — Dynasties, Culture, Freedom Movement, Important Personalities','Bihar Geography — Districts, Rivers (Ganga, Kosi, Gandak), Soil, Forests, Economy','Bihar Government Schemes — Har Ghar Bijli Tak, Student Credit Card Scheme, Kanya Utthan Yojana','National Current Affairs — last 6 months','Indian Polity — Constitution Basics, Parliament, Fundamental Rights','General Science Applications, Technology News','Sports & Awards'] },
+      { subject:'Mathematics (Class 10–12)', topics:['Number System, BODMAS, LCM & HCF','Percentage, Average, Ratio & Proportion','Profit & Loss, SI & CI','Time & Work, Time Speed Distance','Algebra — Equations, Identities','Geometry — Area, Perimeter, Volume','Basic Trigonometry — Class 10 level','Coordinate Geometry Basics'] },
+      { subject:'Mental Ability', topics:['Number Series, Letter Series, Alphabetical Series','Analogy, Classification, Coding-Decoding','Blood Relations, Direction Sense','Seating Arrangement, Ranking','Syllogism, Mirror Image','Data Interpretation — Tables, Bar Chart Basics'] },
+    ]
+  },
+  /* ── SSC ── */
+  {
+    id: 'ssc-steno',
+    name: 'SSC Stenographer Grade C & D',
+    shortName: 'SSC Stenographer',
+    icon: '⌨️',
+    category: 'SSC',
+    body: 'Staff Selection Commission',
+    level: 'National',
+    eligibility: 'Class 12, Age 18–30 (Grade C: 18–30, Grade D: 18–27)',
+    stages: ['CBT', 'Skill Test (Stenography)', 'Document Verification'],
+    overview: 'Recruitment of Stenographers Grade C (Group B Non-Gazetted) and Grade D (Group C) in Central Government offices. The Skill Test is qualifying — candidates must achieve 100 wpm (Grade C) or 80 wpm (Grade D) dictation speed with 95% accuracy in transcription. No interview.',
+    pattern: [
+      { stage:'CBT', paper:'General Intelligence & Reasoning', qs:'50', marks:'50', duration:'2 hr (combined)', neg:'-0.25', notes:'Online CBT' },
+      { stage:'CBT', paper:'General Awareness', qs:'50', marks:'50', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'CBT', paper:'English Language & Comprehension', qs:'100', marks:'100', duration:'—', neg:'-0.25', notes:'English heavy — focus area' },
+      { stage:'CBT', paper:'Total', qs:'200', marks:'200', duration:'2 hr', neg:'—', notes:'', isTotal:true },
+      { stage:'Skill Test', paper:'Stenography — English or Hindi', qs:'—', marks:'Qualifying', duration:'50 min transcription', neg:'—', notes:'Grade C: 100 wpm dictation, 50 min transcription | Grade D: 80 wpm, 65 min transcription' },
+    ],
+    syllabus: [
+      { subject:'English Language & Comprehension (100 Questions)', topics:['Spotting Errors, Sentence Improvement','Fill in the Blanks — Grammar & Vocabulary','Synonyms & Antonyms','Idioms & Phrases, One Word Substitution','Para Jumbles — Sentence Rearrangement','Active/Passive Voice, Direct/Indirect Speech','Reading Comprehension Passages','Cloze Test, Spelling Correction'] },
+      { subject:'General Intelligence & Reasoning', topics:['Semantic Analogy, Classification, Series','Figural Analogy, Classification, Pattern Completion','Coding-Decoding, Blood Relations, Directions','Numerical Operations, Mathematical Reasoning','Venn Diagram, Syllogism','Critical Thinking, Problem Solving'] },
+      { subject:'General Awareness', topics:['Current Affairs — National & International','History, Geography, Polity, Economy','Science & Technology','Sports, Awards, Books & Authors','Static GK'] },
+      { subject:'Stenography Skill', topics:['Shorthand theory (Pitman/Hindi Steno)','Speed building — 80 wpm (Grade D), 100 wpm (Grade C)','Transcription accuracy — target 95%+','Transcription of official letters, speeches, reports in English or Hindi'] },
+    ]
+  },
+  /* ── Central Govt ── */
+  {
+    id: 'epfo-eo',
+    name: 'EPFO EO / SSA (Enforcement Officer / Social Security Assistant)',
+    shortName: 'EPFO EO/SSA',
+    icon: '🏢',
+    category: 'Central Govt',
+    body: 'Employees\' Provident Fund Organisation',
+    level: 'National',
+    eligibility: 'Graduation (EO: any degree; SSA: any degree), Age 18–30 (EO: up to 30, SSA: up to 27)',
+    stages: ['Prelims (CBT 1)', 'Mains (CBT 2)', 'Interview (EO only)', 'Computer Proficiency Test (SSA)'],
+    overview: 'Recruitment for two key roles: Enforcement Officer (Group B Gazetted — inspects establishments for PF compliance) and Social Security Assistant (Group C — processes PF claims at field offices). EO exam is conducted by UPSC; SSA by EPFO. Both are prestigious central government jobs with pension and perks.',
+    pattern: [
+      { stage:'Prelims (EO)', paper:'General Intelligence & Reasoning', qs:'33', marks:'33', duration:'1 hr (combined)', neg:'-0.25', notes:'UPSC-conducted for EO' },
+      { stage:'Prelims (EO)', paper:'General Awareness', qs:'34', marks:'34', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Prelims (EO)', paper:'Quantitative Aptitude', qs:'33', marks:'33', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Prelims (EO)', paper:'Total', qs:'100', marks:'100', duration:'1 hr', neg:'—', notes:'', isTotal:true },
+      { stage:'Mains (EO)', paper:'General English', qs:'—', marks:'100', duration:'—', neg:'—', notes:'Descriptive — UPSC conducted' },
+      { stage:'Mains (EO)', paper:'General Studies & Labour Laws', qs:'—', marks:'150', duration:'—', neg:'—', notes:'Industrial Relations, PF Laws, Labour Welfare' },
+      { stage:'Mains (EO)', paper:'Industrial Relations & Labour Laws', qs:'—', marks:'150', duration:'—', neg:'—', notes:'Descriptive' },
+      { stage:'Interview (EO)', paper:'Personality Test', qs:'—', marks:'100', duration:'~20 min', neg:'None', notes:'EO only; SSA has CPT instead' },
+      { stage:'SSA Pattern', paper:'Phase I — Prelims (Online)', qs:'200', marks:'200', duration:'2 hr', neg:'-0.25', notes:'Reasoning 50 + Quant 50 + English 50 + General Awareness 50' },
+      { stage:'SSA Pattern', paper:'Phase II — Mains (Online)', qs:'200', marks:'200', duration:'3 hr', neg:'-0.25', notes:'Reasoning 50 + Quant 50 + English 50 + Social Security Awareness 50' },
+    ],
+    syllabus: [
+      { subject:'General Awareness (Social Security Focus)', topics:['EPFO — History, Structure, Functions, PF Act, EPS, EDLI Scheme','Labour Laws — Employees\' Provident Funds & MP Act 1952, Employees\' State Insurance Act 1948, Minimum Wages Act, Payment of Wages Act, Industrial Disputes Act','Social Security in India — Concept, Evolution, Current Schemes','Current Affairs — Economy, Banking, Finance, Labour Ministry News','Indian Economy — GDP, Inflation, Union Budget highlights','International Labour Organisation (ILO) — Key Conventions ratified by India'] },
+      { subject:'Quantitative Aptitude', topics:['Number System, Simplification, Percentage, Ratio & Proportion, Average','Profit & Loss, SI & CI, Time & Work, Speed & Distance','Data Interpretation — Tables, Pie Chart, Bar Graph','Quadratic Equations, Number Series (for Mains level)'] },
+      { subject:'Reasoning', topics:['Logical Reasoning — Syllogism, Statements & Conclusions, Assumptions','Coding-Decoding, Blood Relations, Direction & Distance','Seating Arrangement & Puzzles','Series, Analogy, Classification','Data Sufficiency'] },
+      { subject:'English Language', topics:['Reading Comprehension, Vocabulary','Error Detection, Sentence Correction','Cloze Test, Para Jumbles','Essay Writing (EO Mains — formal essay on labour/social topics)'] },
+    ]
+  },
+  {
+    id: 'fci-recruitment',
+    name: 'FCI (Food Corporation of India)',
+    shortName: 'FCI',
+    icon: '🌾',
+    category: 'Central Govt',
+    body: 'Food Corporation of India',
+    level: 'National',
+    eligibility: 'Class 10/Graduation/Engineering (varies by post), Age 18–28',
+    stages: ['Phase I (Online Screening)', 'Phase II (CBT)', 'Medical / Skill Test (post-specific)'],
+    overview: 'FCI recruits for multiple posts: Manager (General/Accounts/Technical/Civil/Electrical/Depot), Junior Engineer (Civil/Electrical/Mechanical), Assistant Grade II (Hindi/General/Accounts/Technical), and Watchman/MTS. Phase I is common; Phase II is post-specific. Vast recruitment drive with lakhs of vacancies.',
+    pattern: [
+      { stage:'Phase I (AG II / MTS)', paper:'Reasoning', qs:'25', marks:'25', duration:'60 min (combined)', neg:'-0.25', notes:'Online screening — common for all AG II posts' },
+      { stage:'Phase I (AG II / MTS)', paper:'English', qs:'25', marks:'25', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Phase I (AG II / MTS)', paper:'Quantitative Aptitude', qs:'25', marks:'25', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Phase I (AG II / MTS)', paper:'General Intelligence', qs:'25', marks:'25', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Phase I (AG II / MTS)', paper:'Total', qs:'100', marks:'100', duration:'60 min', neg:'—', notes:'', isTotal:true },
+      { stage:'Phase II (Manager)', paper:'Reasoning & Data Analysis', qs:'20', marks:'20', duration:'90 min (combined)', neg:'-0.25', notes:'Graduation/Degree level — higher difficulty' },
+      { stage:'Phase II (Manager)', paper:'English', qs:'20', marks:'20', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Phase II (Manager)', paper:'Quantitative Aptitude', qs:'20', marks:'20', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Phase II (Manager)', paper:'General Studies', qs:'20', marks:'20', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Phase II (Manager)', paper:'Professional Knowledge (post-specific)', qs:'20', marks:'20', duration:'—', neg:'-0.25', notes:'General/Accounts/Technical/Civil/Electrical/Depot' },
+      { stage:'Phase II (Manager)', paper:'Total', qs:'100', marks:'100', duration:'90 min', neg:'—', notes:'', isTotal:true },
+    ],
+    syllabus: [
+      { subject:'General Studies / Awareness', topics:['Current Affairs — National & International, last 6 months','Indian History, Geography, Polity','Indian Economy — Agriculture, Food Security, PDS, FCI Role','Science & Technology Developments','Sports, Awards, Books & Authors','Static GK'] },
+      { subject:'Professional Knowledge — General/Depot (Phase II)', topics:['Food Storage & Preservation Principles','Procurement, Storage, Movement & Distribution of Food Grains','Public Distribution System (PDS) — Functioning, Reforms, Challenges','National Food Security Act (NFSA) 2013','Minimum Support Price (MSP) — Concept, Determination','Buffer Stocking Norms, Open Market Sale Scheme','Warehouse Management — Pests, Fumigation, Moisture Control','Ration Card System, Targeted PDS (TPDS) Reforms'] },
+      { subject:'Professional Knowledge — Accounts (Phase II)', topics:['Financial Accounting — Journal, Ledger, Trial Balance, P&L','Cost Accounting — Job Costing, Standard Costing, Variance Analysis','Auditing — Internal, Statutory, Government Audit','Company Law Basics, Companies Act 2013','Income Tax, GST Basics for Accounts','MIS & ERP in Accounting Context'] },
+      { subject:'Quantitative Aptitude & Reasoning', topics:['Number System, Simplification, Percentage, Ratio & Average','SI & CI, Profit-Loss, Time & Work, Speed-Distance','Data Interpretation — Tables, Charts','Logical Reasoning — Puzzles, Blood Relations, Direction, Coding-Decoding','Series, Analogy, Classification'] },
+    ]
+  },
+  {
+    id: 'post-office',
+    name: 'Post Office GDS / Postman / PA/SA',
+    shortName: 'Post Office',
+    icon: '📬',
+    category: 'Central Govt',
+    body: 'India Post / Department of Posts',
+    level: 'National',
+    eligibility: 'Class 10 (GDS/Postman), Class 12 (PA/SA), Age 18–40 (GDS), 18–27 (PA/SA)',
+    stages: ['Merit-based (GDS)', 'CBT (PA/SA)', 'Aptitude Test (PA/SA)'],
+    overview: 'India Post recruits for multiple roles: GDS (Gramin Dak Sevak) — village level franchise-based delivery agents selected on Class 10 merit; Postman/Mail Guard — Class 10, CBT exam; Postal Assistant / Sorting Assistant (PA/SA) — Class 12, two-stage CBT. Lakhs of vacancies annually. GDS is one of the largest rural employment schemes.',
+    pattern: [
+      { stage:'GDS Selection', paper:'Merit-based on Class 10 Marks', qs:'—', marks:'Marks in 10th Board', duration:'—', neg:'—', notes:'No exam — pure merit on SSLC/Matric marks. Best 4 subjects considered. Higher marks = higher chance.' },
+      { stage:'Postman/MG Phase I', paper:'GK & Reasoning', qs:'25', marks:'25', duration:'2 hr (combined)', neg:'-0.25', notes:'Class 10 level' },
+      { stage:'Postman/MG Phase I', paper:'Mathematics', qs:'25', marks:'25', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Postman/MG Phase I', paper:'English', qs:'25', marks:'25', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Postman/MG Phase I', paper:'Regional Language', qs:'25', marks:'25', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Postman/MG Phase I', paper:'Total', qs:'100', marks:'100', duration:'2 hr', neg:'—', notes:'', isTotal:true },
+      { stage:'PA/SA CBT 1', paper:'GK, Math, English, Reasoning', qs:'100', marks:'100', duration:'2 hr', neg:'-0.25', notes:'Class 12 level; sectional cutoffs apply' },
+      { stage:'PA/SA CBT 2 (Aptitude)', paper:'Data Speed (typing/postal operations)', qs:'—', marks:'Qualifying', duration:'15 min', neg:'—', notes:'Typing test & data entry aptitude' },
+    ],
+    syllabus: [
+      { subject:'General Knowledge / Awareness', topics:['Current Affairs — National & International, last 3–6 months','Indian History — Major Events, Freedom Struggle','Indian Geography — States, Rivers, Capitals','Indian Polity — Constitution Basics, Parliament, Panchayati Raj','Science & Technology — Inventions, Space, Digital India','India Post — History, Postal Services, Products (Speed Post, PLI, NSC, PPF)','Sports, Awards, Books & Authors'] },
+      { subject:'Mathematics (Class 10)', topics:['Number System, BODMAS, Fraction & Decimals, LCM & HCF','Percentage, Average, Ratio & Proportion','Simple & Compound Interest, Profit & Loss, Discount','Time & Work, Time Speed Distance','Mensuration — Area, Perimeter, Volume of standard shapes','Basic Statistics — Mean, Median, Mode'] },
+      { subject:'English Language', topics:['Grammar — Tenses, Articles, Prepositions, Conjunctions, Voice & Narration','Vocabulary — Synonyms, Antonyms, Spelling, One Word Substitution','Reading Comprehension','Error Detection & Sentence Correction','Fill in the Blanks, Cloze Test'] },
+      { subject:'Reasoning', topics:['Series — Number, Letter, Mixed','Analogy, Classification, Coding-Decoding','Blood Relations, Direction & Distance','Syllogism, Statement-Assumption','Matrix, Figure-based Non-Verbal Reasoning'] },
+    ]
+  },
+  {
+    id: 'ib-acio',
+    name: 'IB ACIO (Intelligence Bureau)',
+    shortName: 'IB ACIO',
+    icon: '🔍',
+    category: 'Central Govt',
+    body: 'Intelligence Bureau / Ministry of Home Affairs',
+    level: 'National',
+    eligibility: 'Graduation, Age 18–27 (relaxations for SC/ST/OBC)',
+    stages: ['Tier I (Objective)', 'Tier II (Descriptive)', 'Interview'],
+    overview: 'Recruitment of Assistant Central Intelligence Officers (ACIO) Grade II in the Intelligence Bureau, India\'s internal intelligence agency. Tier I is an objective MCQ test. Tier II is a descriptive essay + English comprehension. Interview is final stage. Posts are permanent central government with Grade Pay 4200.',
+    pattern: [
+      { stage:'Tier I', paper:'General Awareness', qs:'25', marks:'25', duration:'1 hr (combined)', neg:'-0.25', notes:'Online CBT' },
+      { stage:'Tier I', paper:'Quantitative Aptitude', qs:'25', marks:'25', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Tier I', paper:'Logical/Analytical Ability', qs:'25', marks:'25', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Tier I', paper:'English Language', qs:'25', marks:'25', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Tier I', paper:'Total', qs:'100', marks:'100', duration:'1 hr', neg:'—', notes:'', isTotal:true },
+      { stage:'Tier II', paper:'Essay (on current topic)', qs:'—', marks:'30', duration:'1 hr (combined)', neg:'None', notes:'Descriptive — pen & paper' },
+      { stage:'Tier II', paper:'English Comprehension & Précis', qs:'—', marks:'20', duration:'—', neg:'None', notes:'' },
+      { stage:'Tier II', paper:'Total', qs:'—', marks:'50', duration:'1 hr', neg:'None', notes:'', isTotal:true },
+      { stage:'Interview', paper:'Personal Interview', qs:'—', marks:'100', duration:'~20 min', neg:'None', notes:'Final merit: Tier I + Tier II + Interview' },
+    ],
+    syllabus: [
+      { subject:'General Awareness', topics:['Current Affairs — National & International (last 12 months; IB-relevant: security, home affairs, terrorism, defence)','Indian History — Ancient, Medieval, Modern; Post-independence India','Indian Geography — Physical, Political, Strategic locations','Indian Polity — Constitution, Parliament, Internal Security Acts, Intelligence Agencies','Indian Economy — GDP, Budget, Key Economic Indicators','Science & Technology — Cyber Security, AI, Space, Defence Technology','International Affairs — India\'s Foreign Relations, UN, Regional Organisations'] },
+      { subject:'Quantitative Aptitude', topics:['Number System, LCM & HCF, Percentage, Average','Ratio & Proportion, Profit & Loss, SI & CI','Time & Work, Speed Distance, Pipe & Cistern','Data Interpretation — Bar, Pie, Line Charts','Quadratic Equations, Number Series'] },
+      { subject:'Logical & Analytical Ability', topics:['Verbal Reasoning — Analogies, Classification, Odd One Out','Statement & Conclusions, Statement & Assumptions','Cause & Effect, Logical Sequence','Coding-Decoding, Blood Relations, Direction Sense','Non-Verbal — Figures, Series, Mirror Image','Critical Thinking — Argument Analysis, Inference'] },
+      { subject:'English Language & Essay', topics:['Grammar — Tenses, Parts of Speech, Voice, Narration','Vocabulary — Synonyms, Antonyms, Idioms & Phrases','Reading Comprehension, Précis Writing','Error Detection & Sentence Improvement','Essay Writing — Security, Technology, Social Issues, Current Governance Topics'] },
+    ]
+  },
+  {
+    id: 'nabard-grade-a',
+    name: 'NABARD Grade A Officer',
+    shortName: 'NABARD Grade A',
+    icon: '🌱',
+    category: 'Central Govt',
+    body: 'National Bank for Agriculture and Rural Development',
+    level: 'National',
+    eligibility: 'Graduation 60% (or Post-Graduation 55%), Age 21–30',
+    stages: ['Phase I (Prelims)', 'Phase II (Mains)', 'Interview'],
+    overview: 'NABARD (National Bank for Agriculture and Rural Development) recruits Assistant Managers (Grade A) through a highly competitive exam. Deep knowledge of agriculture finance, rural development, and cooperative banking is essential. Mains includes a development economics and economic & social issues paper, plus an English descriptive paper.',
+    pattern: [
+      { stage:'Phase I (Prelims)', paper:'Test of Reasoning', qs:'20', marks:'20', duration:'20 min', neg:'-0.25', notes:'Sectional time limits' },
+      { stage:'Phase I (Prelims)', paper:'English Language', qs:'30', marks:'30', duration:'25 min', neg:'-0.25', notes:'' },
+      { stage:'Phase I (Prelims)', paper:'Computer Knowledge', qs:'20', marks:'20', duration:'15 min', neg:'-0.25', notes:'' },
+      { stage:'Phase I (Prelims)', paper:'General Awareness', qs:'20', marks:'20', duration:'15 min', neg:'-0.25', notes:'' },
+      { stage:'Phase I (Prelims)', paper:'Quantitative Aptitude', qs:'20', marks:'20', duration:'20 min', neg:'-0.25', notes:'' },
+      { stage:'Phase I (Prelims)', paper:'Total', qs:'110', marks:'110', duration:'95 min', neg:'—', notes:'', isTotal:true },
+      { stage:'Phase II (Mains)', paper:'Economic & Social Issues — Rural India (Objective)', qs:'40', marks:'40', duration:'30 min', neg:'-0.25', notes:'Agriculture & rural development focus' },
+      { stage:'Phase II (Mains)', paper:'Agriculture & Rural Development with Focus on Rural India (Objective)', qs:'40', marks:'40', duration:'30 min', neg:'-0.25', notes:'NABARD\'s specialist paper' },
+      { stage:'Phase II (Mains)', paper:'English (Descriptive)', qs:'—', marks:'30', duration:'25 min', neg:'None', notes:'Online descriptive — essay & comprehension' },
+      { stage:'Phase II (Mains)', paper:'Development Economics (Descriptive — Optional)', qs:'—', marks:'30', duration:'25 min', neg:'None', notes:'For those with Economics background' },
+      { stage:'Phase II (Mains)', paper:'Total', qs:'—', marks:'200', duration:'3 hr', neg:'—', notes:'', isTotal:true },
+      { stage:'Interview', paper:'Personal Interview', qs:'—', marks:'35', duration:'~20 min', neg:'None', notes:'Final merit: Phase II + Interview' },
+    ],
+    syllabus: [
+      { subject:'Agriculture & Rural Development (NABARD Core Paper)', topics:['Crop Science — Agronomy, Horticulture, Plant Protection, Seeds & Fertilizers','Agricultural Finance — Short Term (Crop Loans), Medium Term (Farm Equipment), Long Term (Land Development)','Cooperative Banking — PACS, District Co-op Banks, State Co-op Banks, NABARD Refinancing Role','NABARD — History (1982), Functions, Schemes (RIDF, FPO Financing, Kisan Credit Card, SHG-Bank Linkage)','Rural Development — MGNREGS, PMGSY, PMAY-G, PMFBY, PM-KISAN, e-NAM','Land Reforms — Tenancy Reforms, Land Ceiling, Farm Size Issues in India','Water Management — Irrigation, Watershed Development, Micro Irrigation','Microfinance & SHGs — Historical Development, SBLP, Impact Studies','Agricultural Marketing — APMC, MSP, e-NAM, FPO, Direct Marketing Channels','Agricultural Insurance — PMFBY, Unified Package Insurance','Climate & Agriculture — Impact of Climate Change, Adaptation Strategies'] },
+      { subject:'Economic & Social Issues (Rural India)', topics:['Indian Economy — Planning, NITI Aayog, Growth & Development Concepts','Poverty & Inequality — Measurement, Dimensions, Government Interventions','Financial Inclusion — Jan Dhan Yojana, Priority Sector Lending, PMJDY','Rural Credit — Institutional (NABARD, RRBs, Cooperative) & Non-Institutional Sources','Food Security — NFSA 2013, PDS, FCI, Buffer Stocks','Women Empowerment in Rural India — SHG, SEWA, Mahila Kisan Yojana','Social Development — Education (NEP 2020), Health (Ayushman Bharat), Sanitation (Swachh Bharat)','Banking Sector Reforms — RBI Policies, Priority Sector Lending Targets'] },
+    ]
+  },
+  /* ── Defence ── */
+  {
+    id: 'coast-guard',
+    name: 'Coast Guard Navik / Yantrik',
+    shortName: 'Coast Guard',
+    icon: '⚓',
+    category: 'Defence',
+    body: 'Indian Coast Guard / Ministry of Defence',
+    level: 'National',
+    eligibility: 'Class 10/12/Diploma (varies by post), Age 18–22',
+    stages: ['Written Exam (CBT)', 'Physical Fitness Test (PFT)', 'Medical Examination', 'Final Merit List'],
+    overview: 'Indian Coast Guard recruits Navik (General Duty) — Class 12 with Maths & Physics; Navik (Domestic Branch — DB) — Class 10; Yantrik — Diploma in Mechanical/Electrical/Electronics Engineering. Protects India\'s maritime borders, search & rescue, anti-piracy, marine pollution response. Physical fitness is stringent.',
+    pattern: [
+      { stage:'Written (Navik GD)', paper:'Mathematics (Class 12)', qs:'25', marks:'25', duration:'1 hr (combined)', neg:'-0.25', notes:'Science stream required' },
+      { stage:'Written (Navik GD)', paper:'Physics (Class 12)', qs:'25', marks:'25', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Written (Navik GD)', paper:'English', qs:'25', marks:'25', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Written (Navik GD)', paper:'Reasoning & Numerical Ability', qs:'25', marks:'25', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Written (Navik GD)', paper:'Total', qs:'100', marks:'100', duration:'1 hr', neg:'—', notes:'', isTotal:true },
+      { stage:'Written (Navik DB)', paper:'English, GK, Maths, Reasoning', qs:'50', marks:'50', duration:'1 hr', neg:'-0.25', notes:'Class 10 level — domestic branch' },
+      { stage:'Written (Yantrik)', paper:'Mathematics, Physics, Chemistry, Basic Engineering', qs:'100', marks:'100', duration:'1 hr', neg:'-0.25', notes:'Diploma engineering level' },
+      { stage:'PFT', paper:'Physical Fitness Test', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'1.6 km run in 7 min, 20 squats, 10 push-ups — all qualifying' },
+      { stage:'Medical', paper:'Medical Examination', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'Vision 6/6 (correctable), height ≥157cm' },
+    ],
+    syllabus: [
+      { subject:'Mathematics (Class 12 Level — Navik GD / Yantrik)', topics:['Relations & Functions, Inverse Trigonometric Functions','Matrices & Determinants, Continuity & Differentiability','Integration — Definite & Indefinite, Application of Derivatives','Differential Equations, Vector Algebra, 3D Geometry','Probability — Bayes Theorem, Binomial Distribution','Linear Programming Basics'] },
+      { subject:'Physics (Class 12 Level)', topics:['Electrostatics, Current Electricity, Magnetic Effects','Electromagnetic Induction & AC Circuits, Electromagnetic Waves','Optics — Ray & Wave Optics','Dual Nature of Matter & Radiation','Atoms & Nuclei, Semiconductor Devices','Communication Systems Basics'] },
+      { subject:'General Awareness & English', topics:['Current Affairs — Defence, Coast Guard News, National & International','Indian History, Geography, Polity','Science & Technology, Environment','Grammar — Tenses, Voice, Narration, Articles','Vocabulary — Synonyms, Antonyms, Idioms','Comprehension Passages'] },
+      { subject:'Basic Engineering (Yantrik)', topics:['Applied Mechanics — Force, Stress, Strain','Thermodynamics — Laws, IC Engines','Electrical Engineering — DC/AC Circuits, Machines, Transformers','Electronics — Rectifiers, Amplifiers, Digital Electronics','Fluid Mechanics Basics','Workshop Technology — Welding, Machining, Fitting'] },
+    ]
+  },
+  {
+    id: 'agniveer',
+    name: 'Agniveer (Short Service Military Recruitment)',
+    shortName: 'Agniveer',
+    icon: '🔥',
+    category: 'Defence',
+    body: 'Ministry of Defence (Army, Navy, Air Force)',
+    level: 'National',
+    eligibility: 'Class 10–12 (varies by service/branch), Age 17.5–23',
+    stages: ['Service-specific Written Exam', 'Physical Fitness Test', 'Medical Examination', 'Document Verification'],
+    overview: 'Agnipath scheme (launched 2022) recruits Agniveers for 4-year short service in the Army, Navy and Air Force. After 4 years, 25% are retained as regular soldiers; others receive a Seva Nidhi package (~₹11.7L) and certificates useful for civilian jobs/state police. Replaces the old soldier recruitment rally system for Army and is new for Navy/Air Force.',
+    pattern: [
+      { stage:'Army Agniveer (Written)', paper:'General Knowledge & GS', qs:'15', marks:'30', duration:'60 min (combined)', neg:'-1 per wrong', notes:'2 marks correct, -1 wrong; Class 10 level for GD' },
+      { stage:'Army Agniveer (Written)', paper:'General Science', qs:'15', marks:'30', duration:'—', neg:'-1', notes:'' },
+      { stage:'Army Agniveer (Written)', paper:'Mathematics', qs:'15', marks:'30', duration:'—', neg:'-1', notes:'' },
+      { stage:'Army Agniveer (Written)', paper:'Computer & IT', qs:'5', marks:'10', duration:'—', neg:'-1', notes:'' },
+      { stage:'Army Agniveer (Written)', paper:'Total (GD Category)', qs:'50', marks:'100', duration:'60 min', neg:'—', notes:'', isTotal:true },
+      { stage:'Navy Agniveer (MR)', paper:'Mathematics, Science, English', qs:'50', marks:'50', duration:'30 min', neg:'-0.25', notes:'Matric Recruit — Class 10 level; online CBT' },
+      { stage:'Navy Agniveer (SSR)', paper:'English, Science, Maths, GK', qs:'100', marks:'100', duration:'60 min', neg:'-0.25', notes:'Senior Secondary Recruit — Class 12 level; PCM required' },
+      { stage:'Air Force Agniveer Vayu', paper:'Phase 1 — Reasoning & GK', qs:'30', marks:'—', duration:'60 min', neg:'-1', notes:'Science & non-science branches have different papers' },
+      { stage:'Air Force Agniveer Vayu', paper:'Phase 2 — English, Physics, Maths (Science branch)', qs:'50', marks:'—', duration:'45 min', neg:'-1', notes:'Class 12 PCM for Science branch' },
+      { stage:'PFT', paper:'Physical Fitness Test (All Services)', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'Army: 1.6km run, pull-ups, beam, balance. Navy/AF: 1.6km run, push-ups, sit-ups, chin-ups' },
+    ],
+    syllabus: [
+      { subject:'General Knowledge (Army/Navy — Class 10 Level)', topics:['Indian History — Major Events, Freedom Struggle, Post-Independence Milestones','Indian Geography — States, Capitals, Rivers, Mountains, Strategic Locations','Indian Polity — Constitution Basics, Parliament, Fundamental Rights, President/PM roles','Science & Technology — Space (ISRO), Defence (DRDO, Brahmos, Agni Missiles), Digital India','Current Affairs — Defence News, National & International, last 6 months','Defence Knowledge — Indian Armed Forces Structure, Regiments, Wars, Awards (PVC, MVC)','Sports — Olympics, Commonwealth Games, Asian Games, Cricket (Indian team)'] },
+      { subject:'Science (Physics & Chemistry — Class 10)', topics:['Physics — Motion, Newton\'s Laws, Work & Energy, Light (Reflection, Refraction), Sound, Electricity, Magnetism','Chemistry — Atoms & Molecules, Periodic Table, Chemical Reactions, Acids/Bases/Salts, Metals & Non-metals','Biology (for NA/Nursing posts) — Human Body Systems, Diseases, Cell, Nutrition'] },
+      { subject:'Mathematics (Class 10)', topics:['Number System, LCM & HCF, BODMAS, Fractions','Percentage, Average, Ratio & Proportion, SI & CI','Profit & Loss, Time & Work, Time Speed Distance','Geometry — Area, Perimeter, Volume; Algebra — Equations, Identities','Trigonometry — Ratios, Heights & Distances Basics'] },
+      { subject:'English (Navy SSR / Air Force — Class 12)', topics:['Reading Comprehension, Grammar — Tenses, Parts of Speech, Voice, Narration','Vocabulary — Synonyms, Antonyms, Idioms, One-Word Substitution','Sentence Error Detection, Fill in the Blanks','Active/Passive Voice, Direct/Indirect Speech Conversion'] },
+      { subject:'Physics (Air Force Agniveer Vayu / Navy SSR — Class 12)', topics:['Physical World & Measurements, Kinematics, Laws of Motion, Work & Energy, Rotational Motion','Gravitation, Thermodynamics, Properties of Bulk Matter','Oscillations & Waves, Electrostatics, Current Electricity, Magnetic Effects','EMI, AC Circuits, EM Waves, Optics, Dual Nature, Atoms & Nuclei, Semiconductor Devices'] },
+    ]
+  },
+  /* ── State Police ── */
+  {
+    id: 'up-police',
+    name: 'UP Police Constable & SI (UPPBPB)',
+    shortName: 'UP Police',
+    icon: '🚨',
+    category: 'State Police',
+    body: 'Uttar Pradesh Police Recruitment & Promotion Board (UPPBPB)',
+    level: 'State',
+    eligibility: 'Class 12 (Constable), Graduation (SI), Age 18–22 (Constable), 21–28 (SI)',
+    stages: ['Written Exam', 'Physical Standard Test (PST)', 'Physical Efficiency Test (PET)', 'Medical Examination'],
+    overview: 'One of the largest police recruitment drives in India — UP Police recruits hundreds of thousands of Constables and Sub-Inspectors separately. Constable exam: Class 12 level; SI exam: Graduation level with Mental Ability & Law paper. No interview for Constable. SI has interview stage.',
+    pattern: [
+      { stage:'Constable Written', paper:'General Hindi', qs:'37', marks:'74', duration:'2 hr (combined)', neg:'-0.50', notes:'2 marks per Q, -0.5 neg' },
+      { stage:'Constable Written', paper:'General Knowledge', qs:'38', marks:'76', duration:'—', neg:'-0.50', notes:'' },
+      { stage:'Constable Written', paper:'Numerical & Mental Ability', qs:'38', marks:'76', duration:'—', neg:'-0.50', notes:'' },
+      { stage:'Constable Written', paper:'Mental Aptitude / Intelligence / Reasoning', qs:'37', marks:'74', duration:'—', neg:'-0.50', notes:'' },
+      { stage:'Constable Written', paper:'Total', qs:'150', marks:'300', duration:'2 hr', neg:'—', notes:'', isTotal:true },
+      { stage:'SI Written', paper:'General Hindi', qs:'40', marks:'40', duration:'2 hr (combined)', neg:'-0.25', notes:'1 mark per Q; higher difficulty' },
+      { stage:'SI Written', paper:'Law/Constitution/General Knowledge', qs:'40', marks:'40', duration:'—', neg:'-0.25', notes:'Indian Penal Code, CrPC, Evidence Act basics' },
+      { stage:'SI Written', paper:'Numerical & Mental Ability', qs:'40', marks:'40', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'SI Written', paper:'Mental Aptitude/IQ/Reasoning', qs:'40', marks:'40', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'SI Written', paper:'Total', qs:'160', marks:'400', duration:'2 hr', neg:'—', notes:'', isTotal:true },
+      { stage:'Physical Tests', paper:'PST + PET', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'Height, Weight, Run, Long Jump (varies by male/female/category)' },
+    ],
+    syllabus: [
+      { subject:'General Hindi', topics:['Hindi Grammar — Vyakaran (Sandhi, Samas, Karak, Ling, Vachan, Kaal)','Vocabulary — Paryayvachi, Vilom, Anekarthi, Muhavare, Lokoktiyan','Reading Comprehension in Hindi','Fill in the Blanks, Error Detection in Hindi','Hindi Literature Awareness — Major Authors, Works'] },
+      { subject:'General Knowledge (UP Focus)', topics:['UP History — Major Kingdoms, Freedom Movement, Formation of UP State','UP Geography — Districts, Rivers (Ganga, Yamuna, Gomti, Betwa), Agriculture, Festivals','UP Government Schemes — Kanya Sumangala Yojana, Mission Prerna, One District One Product (ODOP)','Indian History, Geography, Polity — Parliament, Constitution, Fundamental Rights','Current Affairs — UP & National, last 6 months','Science & Technology, Sports, Awards, Books & Authors','UP Police — History, Zones, Ranges, Departments'] },
+      { subject:'Law & Constitution (SI Level)', topics:['Indian Penal Code (IPC) 1860 — Major Sections (302, 307, 376, 420, 498A, 511 etc.)','Code of Criminal Procedure (CrPC) 1973 — Arrest, Bail, FIR, Charge Sheet, Trial','Indian Evidence Act 1872 — Types of Evidence, Admissibility','Fundamental Rights (Articles 12–35), Directive Principles','Women & Child Protection Laws — POCSO, Domestic Violence Act, Dowry Prohibition Act','Traffic Laws, Cyber Crime Laws, Arms Act'] },
+      { subject:'Numerical & Mental Ability + Reasoning', topics:['Number System, Percentage, Average, Ratio & Proportion','Profit & Loss, SI & CI, Time & Work, Speed & Distance','Mensuration — Area, Volume','Reasoning — Analogies, Series, Coding, Blood Relations, Direction, Syllogism, Venn Diagram','Mental Aptitude — IQ Tests, Spatial Reasoning, Decision Making in Police Context'] },
+    ]
+  },
+  {
+    id: 'mp-police',
+    name: 'MP Police Constable & SI',
+    shortName: 'MP Police',
+    icon: '🛡️',
+    category: 'State Police',
+    body: 'Madhya Pradesh Professional Examination Board (MPPEB / Vyapam)',
+    level: 'State',
+    eligibility: 'Class 12 (Constable), Graduation (SI), Age 18–33 (General)',
+    stages: ['Written Exam', 'Physical Test', 'Medical Examination'],
+    overview: 'MP Police recruitment conducted by MPPEB (formerly Vyapam). Constable (Aarakshi) — Class 12; Sub-Inspector — Graduation. MP-specific content (geography, history, government schemes) is important in both exams. Physical tests are qualifying.',
+    pattern: [
+      { stage:'Constable Written', paper:'General Knowledge & Reasoning', qs:'100', marks:'100', duration:'2 hr', neg:'-0.25', notes:'GK 40 + Reasoning 30 + Maths 20 + Hindi 10; 1 mark each' },
+      { stage:'Physical Tests', paper:'PST + PET', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'Male: 800m run, 3m long jump, 1.2m high jump | Female: different standards' },
+      { stage:'SI Written', paper:'General Studies & Reasoning', qs:'200', marks:'200', duration:'3 hr', neg:'-0.25', notes:'GS 100 + Hindi 50 + GI/Reasoning 50; Online CBT' },
+    ],
+    syllabus: [
+      { subject:'General Knowledge (MP Focus)', topics:['MP History — Dynasties, Rebellion of 1857 in MP, Key Freedom Fighters from MP','MP Geography — Vindhya Range, Satpura Range, Rivers (Narmada, Chambal, Tapti, Betwa, Son), Tiger Reserves','MP Government Schemes — Ladli Laxmi Yojana 2.0, Mukhyamantri Jan Seva Mitra Yojana, CM Rise Schools','Indian History, Polity, Economy, Environment, Science & Technology','Current Affairs — MP & National level, last 6 months'] },
+      { subject:'General Hindi', topics:['MP Board Hindi Grammar — Sandhi, Samas, Karak, Upsarg, Pratyay','Vocabulary — Paryayvachi, Vilom, Muhavare, Lokoktiyan','Error Detection, Fill in the Blanks','Comprehension Passage in Hindi'] },
+      { subject:'Mathematics & Reasoning', topics:['Number System, Percentage, Ratio, Average, SI & CI','Profit & Loss, Time-Work, Speed-Distance','Mensuration, Basic Algebra & Geometry','Analogies, Classification, Series, Coding-Decoding, Directions, Blood Relations, Syllogism'] },
+    ]
+  },
+  {
+    id: 'rajasthan-police',
+    name: 'Rajasthan Police Constable & SI',
+    shortName: 'Rajasthan Police',
+    icon: '🏇',
+    category: 'State Police',
+    body: 'Rajasthan Police Recruitment Board / Rajasthan Staff Selection Board',
+    level: 'State',
+    eligibility: 'Class 10/12 (Constable), Graduation (SI), Age 18–26 (Constable), 20–25 (SI)',
+    stages: ['Written Exam', 'Physical Test', 'Medical Examination'],
+    overview: 'Rajasthan Police Constable (male/female) — Class 12, 2-hour MCQ exam. Sub-Inspector — Graduation, 2-stage exam with higher marks. Rajasthan-specific content — history, culture, geography, and state police acts — is heavily tested. Physical tests are qualifying. One of Rajasthan\'s most popular recruitment drives.',
+    pattern: [
+      { stage:'Constable Written', paper:'General Hindi', qs:'30', marks:'30', duration:'2 hr (combined)', neg:'-0.25', notes:'1 mark per Q' },
+      { stage:'Constable Written', paper:'General Knowledge & Current Affairs', qs:'60', marks:'60', duration:'—', neg:'-0.25', notes:'Rajasthan focus included' },
+      { stage:'Constable Written', paper:'Rajasthan GK (Raj. History, Art, Culture, Geography)', qs:'45', marks:'45', duration:'—', neg:'-0.25', notes:'Rajasthan-specific — high weightage' },
+      { stage:'Constable Written', paper:'Mental Ability & Reasoning', qs:'15', marks:'15', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'Constable Written', paper:'Total', qs:'150', marks:'150', duration:'2 hr', neg:'—', notes:'', isTotal:true },
+      { stage:'Physical Tests', paper:'PST + PET', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'Male: 5 km run in 25 min, High Jump 4ft, Long Jump 12ft | Female: 2.5 km in 15 min' },
+      { stage:'SI Written Phase I', paper:'General Hindi, GK & Rajasthan GK, Reasoning', qs:'200', marks:'200', duration:'2 hr', neg:'-0.25', notes:'Graduation level' },
+    ],
+    syllabus: [
+      { subject:'Rajasthan GK (Highest Weightage)', topics:['Rajasthan History — Rajput Kingdoms, Battles (Haldighati, Panipat), Freedom Movement in Rajasthan','Rajasthan Culture — Folk Songs (Ghoomar, Kathputli), Instruments (Sarangi, Ravanhatha), Fairs (Pushkar, Gangaur, Teej)','Rajasthan Geography — Thar Desert, Aravalli Range, Rivers (Chambal, Banas, Luni, Ghaggar), Major Dams','Rajasthan Economy — Agriculture Crops (Bajra, Guar, Jowar), Minerals (Marble, Gypsum, Zinc), DMIC','Rajasthan Political System — Districts, Divisions, Panchayati Raj, Governor, Chief Minister','Famous Personalities of Rajasthan — Saints, Poets, Freedom Fighters, Sports Persons'] },
+      { subject:'General Knowledge & Current Affairs', topics:['National Current Affairs — last 6 months','Indian History, Geography, Polity, Economy','Science & Technology, Environment, Sports','Awards, Books & Authors, Important Days','Rajasthan Government Schemes — Chiranjeevi Yojana, Annapurna Food Security, Indira Gandhi Shahari Credit Card Yojana'] },
+      { subject:'General Hindi', topics:['Rajasthan Board Hindi Grammar — Sandhi, Samas, Karak, Ling, Vachan','Vocabulary — Paryayvachi, Vilom, Anekarthi, Muhavare','Error Detection, Comprehension Passage in Hindi','Letter Writing in Hindi'] },
+      { subject:'Reasoning & Mental Ability', topics:['Series — Number, Letter, Mixed','Analogy, Classification, Coding-Decoding','Blood Relations, Direction Sense, Seating Arrangement','Syllogism, Statement-Conclusion','Data Interpretation Basics, Mathematical Reasoning'] },
+    ]
+  },
+  /* ── Teaching ── */
+  {
+    id: 'ctet',
+    name: 'CTET (Central Teacher Eligibility Test)',
+    shortName: 'CTET',
+    icon: '📖',
+    category: 'Teaching',
+    body: 'Central Board of Secondary Education (CBSE)',
+    level: 'National',
+    eligibility: 'D.El.Ed / B.Ed (Paper I — Class I–V; Paper II — Class VI–VIII), Age no upper limit',
+    stages: ['Paper I (Primary — Class I–V)', 'Paper II (Upper Primary — Class VI–VIII)'],
+    overview: 'Mandatory eligibility certificate for teaching in KVS, NVS, Central Government Schools and most state governments. CTET is a lifetime validity certificate (changed from 7 years in 2021). Candidates can appear in both papers. Passing score: 60% (150/150 = 90 marks needed for general; 82 for SC/ST). Not a recruitment exam — it\'s an eligibility test.',
+    pattern: [
+      { stage:'Paper I (Class I–V)', paper:'Child Development & Pedagogy', qs:'30', marks:'30', duration:'2.5 hr (combined)', neg:'None', notes:'No negative marking in CTET' },
+      { stage:'Paper I (Class I–V)', paper:'Language I (compulsory)', qs:'30', marks:'30', duration:'—', neg:'None', notes:'Language of instruction medium — Hindi/English/any of 20 languages' },
+      { stage:'Paper I (Class I–V)', paper:'Language II (compulsory)', qs:'30', marks:'30', duration:'—', neg:'None', notes:'Any other language from the list' },
+      { stage:'Paper I (Class I–V)', paper:'Mathematics', qs:'30', marks:'30', duration:'—', neg:'None', notes:'' },
+      { stage:'Paper I (Class I–V)', paper:'Environmental Studies', qs:'30', marks:'30', duration:'—', neg:'None', notes:'' },
+      { stage:'Paper I (Class I–V)', paper:'Total', qs:'150', marks:'150', duration:'2.5 hr', neg:'None', notes:'', isTotal:true },
+      { stage:'Paper II (Class VI–VIII)', paper:'Child Development & Pedagogy', qs:'30', marks:'30', duration:'2.5 hr (combined)', neg:'None', notes:'Same as Paper I CDP — focus on upper primary level' },
+      { stage:'Paper II (Class VI–VIII)', paper:'Language I', qs:'30', marks:'30', duration:'—', neg:'None', notes:'' },
+      { stage:'Paper II (Class VI–VIII)', paper:'Language II', qs:'30', marks:'30', duration:'—', neg:'None', notes:'' },
+      { stage:'Paper II (Class VI–VIII)', paper:'Mathematics & Science OR Social Studies', qs:'60', marks:'60', duration:'—', neg:'None', notes:'Science/Maths teachers choose Maths & Science; Humanities teachers choose Social Studies' },
+      { stage:'Paper II (Class VI–VIII)', paper:'Total', qs:'150', marks:'150', duration:'2.5 hr', neg:'None', notes:'', isTotal:true },
+    ],
+    syllabus: [
+      { subject:'Child Development & Pedagogy (CDP)', topics:['Child Development — Piaget, Vygotsky, Kohlberg Theories; Stages of Cognitive, Moral & Language Development','Learning & Pedagogy — Behaviourism (Pavlov, Thorndike, Skinner), Constructivism, Social Learning (Bandura)','Individual Differences — Intelligence (Multiple Intelligences, IQ), Creativity, Aptitude, Learning Styles','Inclusive Education — Concept, Philosophy, Disabilities (Types, Provisions under RTE & RPWD Acts)','Assessment & Evaluation — Continuous & Comprehensive Evaluation (CCE), Formative vs Summative','Motivation — Intrinsic & Extrinsic, Maslow\'s Hierarchy, Role of Teacher','Language & Thought — Relationship, First Language Acquisition','Right to Education Act 2009 — Key Provisions, Duties of Schools'] },
+      { subject:'Mathematics (Paper I — Class I–V Level)', topics:['Number System — Natural, Whole, Integers, Fractions, Decimals','Basic Operations — Addition, Subtraction, Multiplication, Division','Measurement — Length, Weight, Time, Money, Capacity','Geometry — Shapes, Lines, Angles, Symmetry','Data Handling — Tally, Pictograph, Bar Graph','Patterns, Mental Maths Strategies','Pedagogical Issues — Common Misconceptions, Teaching Methods, Manipulative Use'] },
+      { subject:'Environmental Studies (Paper I)', topics:['Family & Friends — Relationships, Animals, Plants','Food, Shelter, Water','Travel & Transport','Things We Make & Do','Our Environment — Air, Water, Soil; Ecosystem Basics','Health & Hygiene','Pedagogical Issues — EVS as an integrated subject, Project-based learning, Field trips'] },
+      { subject:'Mathematics & Science (Paper II — Class VI–VIII Level)', topics:['Mathematics — Number System, Fractions, Decimals, Percentage, Ratio, Algebra, Linear Equations, Geometry, Data Handling, Introduction to Graphs, Mensuration','Science — Food, Materials, The World of Living, Moving Things, Natural Phenomena, Natural Resources, Pollution','Pedagogical Issues — Problem solving, Hands-on learning, Misconceptions correction, Scientific Temper'] },
+      { subject:'Social Studies (Paper II — History, Geography, Polity, Economics)', topics:['History — When, Where & How (Class VI–VIII NCERT level) — Ancient, Medieval, Modern India','Geography — The Earth, Land, Water, Air, Human Environment, Resources','Polity & Governance — Constitution, Democracy, Government Levels, Judiciary, Gender & Social Issues','Economics — Markets, Money, Economic Activities, Poverty','Pedagogical Issues — Primary Sources, Timelines, Map Work, Social Issues Discussion'] },
+    ]
+  },
+  {
+    id: 'kvs-nvs',
+    name: 'KVS / NVS TGT & PGT',
+    shortName: 'KVS / NVS',
+    icon: '🏫',
+    category: 'Teaching',
+    body: 'Kendriya Vidyalaya Sangathan / Navodaya Vidyalaya Samiti',
+    level: 'National',
+    eligibility: 'B.Ed + Graduation 50% (TGT); B.Ed + Post-Graduation 50% (PGT); CTET/TET qualified; Age varies (generally up to 35–40)',
+    stages: ['Written Exam (CBT)', 'Interview / Skill Test'],
+    overview: 'KVS (Kendriya Vidyalayas — 1,200+ schools) and NVS (Navodaya Vidyalayas — residential model schools) recruit Trained Graduate Teachers (TGT — Class VI–X) and Post Graduate Teachers (PGT — Class XI–XII) plus Primary Teachers (PRT). Highly coveted central government teaching jobs with excellent pay, holidays and career stability.',
+    pattern: [
+      { stage:'KVS PRT Written', paper:'General English', qs:'10', marks:'10', duration:'3 hr (combined)', neg:'-0.25', notes:'CBT — Online' },
+      { stage:'KVS PRT Written', paper:'General Hindi', qs:'10', marks:'10', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'KVS PRT Written', paper:'General Knowledge & Current Affairs', qs:'10', marks:'10', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'KVS PRT Written', paper:'Reasoning Ability', qs:'10', marks:'10', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'KVS PRT Written', paper:'Computer Literacy', qs:'10', marks:'10', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'KVS PRT Written', paper:'Perspectives on Education & Leadership', qs:'20', marks:'20', duration:'—', neg:'-0.25', notes:'Pedagogy, NEP 2020, school leadership' },
+      { stage:'KVS PRT Written', paper:'Subject Specific (Primary Teaching Methods)', qs:'30', marks:'30', duration:'—', neg:'-0.25', notes:'Language & Pedagogy OR Maths & EVS Pedagogy' },
+      { stage:'KVS PRT Written', paper:'Total', qs:'100', marks:'100', duration:'3 hr', neg:'—', notes:'', isTotal:true },
+      { stage:'KVS TGT Written', paper:'Part I (General GK, English, Hindi, Reasoning, Computer, Perspectives)', qs:'60', marks:'60', duration:'3 hr (combined)', neg:'-0.25', notes:'' },
+      { stage:'KVS TGT Written', paper:'Part II (Subject Specific — 10 subjects available)', qs:'100', marks:'100', duration:'—', neg:'-0.25', notes:'English/Hindi/Sanskrit/Maths/Science/Social Science/Computer/Art Education/PET/WE' },
+      { stage:'KVS TGT Written', paper:'Total', qs:'160', marks:'160', duration:'3 hr', neg:'—', notes:'', isTotal:true },
+      { stage:'KVS PGT Written', paper:'General + Subject Knowledge (PG Level)', qs:'200', marks:'200', duration:'3 hr', neg:'-0.25', notes:'Higher difficulty; 21 subjects available' },
+    ],
+    syllabus: [
+      { subject:'Perspectives on Education & Leadership (All KVS Posts)', topics:['National Education Policy (NEP) 2020 — Key Pillars, Reforms, Multidisciplinary Learning, FLN Mission','Right to Education Act 2009 — Free & Compulsory Education Provisions','Child Development — Theories (Piaget, Vygotsky), Developmental Stages, Individual Differences','Inclusive Education — Disability Types, Accommodations under RPWD Act 2016','Assessment for Learning — Portfolio, Observation, Project-based, CCE vs Board Exam','School Leadership & Management — Vision, Team Building, Community Engagement','Classroom Management, Motivation Strategies, Dealing with Learning Difficulties','School Health & Wellness, Life Skills Education'] },
+      { subject:'Subject Knowledge — Mathematics (TGT Level, Class VI–X)', topics:['Number System — Real Numbers, Rational & Irrational Numbers, Number Line','Algebra — Polynomials, Linear Equations, Quadratic Equations, Arithmetic Progressions','Geometry — Lines & Angles, Triangles (Congruence, Similarity), Circles, Coordinate Geometry','Mensuration — Areas, Surface Areas, Volumes of 2D & 3D shapes','Statistics & Probability — Mean, Median, Mode, Probability Basics','Trigonometry — Ratios, Identities, Heights & Distances','Teaching Maths — Misconceptions, Manipulative-based learning, Vedic Maths integration'] },
+      { subject:'Subject Knowledge — Science (TGT Level)', topics:['Physics (NCERT Class VI–X) — Force, Motion, Energy, Light, Sound, Electricity, Magnetism, Atom','Chemistry (NCERT Class VI–X) — Acids, Bases, Salts, Metals & Non-metals, Carbon Compounds, Chemical Reactions, Periodic Table','Biology (NCERT Class VI–X) — Cell, Tissues, Life Processes, Control & Coordination, Reproduction, Heredity, Evolution, Environment','Pedagogical Approaches — Inquiry-based learning, Lab activities, Real-life connections'] },
+      { subject:'Subject Knowledge — Social Science (TGT Level)', topics:['History (NCERT VI–X) — Ancient, Medieval, Modern India; World History, Colonialism, Nationalism','Geography (NCERT VI–X) — Globe, Maps, Earth\'s Interior, Atmosphere, Natural Resources, Agriculture, Industry, Human Resources','Polity (NCERT VI–X) — Constitution, Democracy, Parliament, Judiciary, Panchayati Raj, Rights & Duties','Economics (NCERT IX–X) — Development, Sectors of Economy, Money, Globalisation, Consumer Rights'] },
+    ]
+  },
+  {
+    id: 'upsssc-pet',
+    name: 'UPSSSC PET (Preliminary Eligibility Test)',
+    shortName: 'UPSSSC PET',
+    icon: '🗂️',
+    category: 'State PSC',
+    body: 'Uttar Pradesh Subordinate Services Selection Commission',
+    level: 'State',
+    eligibility: 'Graduation, Age 18–40 (varies by post)',
+    stages: ['PET (Qualifying cum Screening)', 'Main Exam (Post-specific)', 'Document Verification'],
+    overview: 'UPSSSC PET is a mandatory gateway exam for all Group C posts under UPSSSC — Lower Division Clerk, Lekhpal (Revenue Accountant), Junior Assistant, Statistical Assistant, Forest Guard, Village Development Officer, etc. PET score is used for shortlisting; each post has a separate Mains exam. PET is held twice a year. Valid for 1 year from issue.',
+    pattern: [
+      { stage:'PET', paper:'Indian History (Vedic, Medieval, Modern)', qs:'5', marks:'5', duration:'2 hr (combined)', neg:'-0.25 (1/4)', notes:'100 Qs, 100 marks, 100 min — no separate time per section' },
+      { stage:'PET', paper:'Indian National Movement', qs:'5', marks:'5', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'PET', paper:'Geography (India & World)', qs:'5', marks:'5', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'PET', paper:'Indian Economy', qs:'5', marks:'5', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'PET', paper:'Indian Constitution & Public Administration', qs:'5', marks:'5', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'PET', paper:'General Science', qs:'5', marks:'5', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'PET', paper:'Elementary Arithmetic', qs:'5', marks:'5', duration:'—', neg:'-0.25', notes:'Class 8 level' },
+      { stage:'PET', paper:'General Hindi', qs:'5', marks:'5', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'PET', paper:'General English', qs:'5', marks:'5', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'PET', paper:'Logic & Reasoning', qs:'5', marks:'5', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'PET', paper:'Current Affairs', qs:'10', marks:'10', duration:'—', neg:'-0.25', notes:'Last 6 months — National & International' },
+      { stage:'PET', paper:'General Awareness', qs:'10', marks:'10', duration:'—', neg:'-0.25', notes:'Specific questions on UP' },
+      { stage:'PET', paper:'Data Interpretation (Graphs, Tables, Charts)', qs:'10', marks:'10', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'PET', paper:'Two Passages (Hindi + English)', qs:'10', marks:'10', duration:'—', neg:'-0.25', notes:'5 questions each' },
+      { stage:'PET', paper:'Graph Interpretation', qs:'10', marks:'10', duration:'—', neg:'-0.25', notes:'' },
+      { stage:'PET', paper:'Total', qs:'100', marks:'100', duration:'2 hr', neg:'—', notes:'', isTotal:true },
+    ],
+    syllabus: [
+      { subject:'Indian History & National Movement', topics:['Indus Valley Civilisation, Vedic Period, Mahajanpadas, Mauryan & Gupta Empires','Medieval India — Sultanate, Mughal Period, Bhakti & Sufi Movement','British Colonialism — Arrival, Expansion, Resistance, Policies','Indian National Movement — 1857, Indian National Congress, Gandhi, Nehru, Bose, Partition','Post-independence India — Integration of Princely States, Constitution Making, Five Year Plans'] },
+      { subject:'Geography & Economy', topics:['India — Physical Features, Rivers, Mountains, Soil, Climate, Forest, Agriculture, Minerals, Industries','World Geography — Continents, Oceans, Major Countries & Capitals','Indian Economy — Planning, GDP, Inflation, Banking, MSP, Budget Highlights','UP Economy — Agriculture (Wheat, Sugarcane, Potato), Industries (Agra Leather, Varanasi Silk, Aligarh Locks)','UP Geography — Ganga Plain, Rivers, Districts, Divisions, Famous Pilgrimage Sites'] },
+      { subject:'Polity, Constitution & Public Admin', topics:['Indian Constitution — Preamble, Fundamental Rights (Part III), DPSP (Part IV), Duties','Parliament — Rajya Sabha, Lok Sabha, Legislative Process, Joint Session','Executive — President, PM, Council of Ministers, Cabinet','Judiciary — Supreme Court, High Courts, District Courts, PIL','Panchayati Raj & Urban Local Bodies — 73rd & 74th Amendment','UP State Government — Vidhan Sabha, CM, Governor, State Services'] },
+      { subject:'General Hindi & English', topics:['Hindi — Sandhi, Samas, Paryayvachi, Vilom, Muhavare, Reading Comprehension','English — Grammar Basics, Vocabulary, Fill in Blanks, Comprehension Passage (Class 10 level)'] },
+      { subject:'Reasoning & Data Interpretation', topics:['Logical Reasoning — Analogy, Classification, Series, Coding-Decoding, Syllogism','Data Interpretation — Bar Graph, Pie Chart, Line Graph, Table Reading','Arithmetic — LCM/HCF, Percentage, Average, Ratio, Profit/Loss (Class 8 level)'] },
+    ]
+  },
 ];
 
 /* ══════════════════════════════════════════════════════════
@@ -914,7 +1912,7 @@ let searchQuery = '';
    RENDER EXAM LIST
 ══════════════════════════════════════════════════════════ */
 function catClass(cat) {
-  const m = { 'UPSC':'badge-upsc','SSC':'badge-ssc','Banking':'badge-banking','Railway':'badge-railway','Bihar Specific':'badge-bihar','Defence':'badge-defence','State PSC':'badge-statepsc' };
+  const m = { 'UPSC':'badge-upsc','SSC':'badge-ssc','Banking':'badge-banking','Railway':'badge-railway','Bihar Specific':'badge-bihar','Defence':'badge-defence','State PSC':'badge-statepsc','Central Govt':'badge-central','Teaching':'badge-teaching','State Police':'badge-statepolice' };
   return m[cat] || 'badge-upsc';
 }
 
@@ -959,7 +1957,7 @@ function renderList(containerId, examData, isMobile) {
 }
 
 function iconBg(cat) {
-  const m = { 'UPSC':'rgba(37,99,235,.1)','SSC':'rgba(16,185,129,.1)','Banking':'rgba(245,158,11,.1)','Railway':'rgba(239,68,68,.1)','Bihar Specific':'rgba(124,58,237,.1)','Defence':'rgba(15,118,110,.1)','State PSC':'rgba(234,88,12,.1)' };
+  const m = { 'UPSC':'rgba(37,99,235,.1)','SSC':'rgba(16,185,129,.1)','Banking':'rgba(245,158,11,.1)','Railway':'rgba(239,68,68,.1)','Bihar Specific':'rgba(124,58,237,.1)','Defence':'rgba(15,118,110,.1)','State PSC':'rgba(234,88,12,.1)','Central Govt':'rgba(6,95,70,.1)','Teaching':'rgba(79,70,229,.1)','State Police':'rgba(220,38,38,.1)' };
   return m[cat] || 'rgba(37,99,235,.1)';
 }
 

@@ -222,13 +222,20 @@ kbd{display:inline-block;background:var(--surface2);border:1px solid var(--borde
 </header>
 <div id="sub-nav">
   <nav class="page-links">
-    <a href="index.html">Home</a>
-    <a href="Science.html">Science</a>
-    <a href="Computer.html">Computer</a>
-    <a href="Current_Affairs.html">Current Affairs</a>
-    <a href="english-grammar-mastery.html">English</a>
-    <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html">Maths</a>
-    <a href="Syllabus.html">Syllabus</a>
+    <a href="index.html">🏠 Home</a>
+    <a href="Science.html">🔬 Science</a>
+    <a href="Computer.html">💻 Computer</a>
+    <a href="Current_Affairs.html">📰 Current Affairs</a>
+    <a href="english-grammar-mastery.html">📝 English</a>
+    <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html">🧮 Maths</a>
+    <a href="Indian_Polity.html">⚖️ Polity</a>
+    <a href="Indian_History.html">🏛️ History</a>
+    <a href="Indian_Geography.html">🗺️ Geography</a>
+    <a href="Static_GK.html">🌍 Static GK</a>
+    <a href="Indian_Economy.html">💰 Economy</a>
+    <a href="Bihar_Special_GK.html">🌾 Bihar GK</a>
+    <a href="Reasoning_Guide.html">🧠 Reasoning</a>
+    <a href="Syllabus.html">📋 Syllabus</a>
   </nav>
 </div>
 
@@ -329,10 +336,52 @@ const SUBJECTS = [
     stats:[['100+','Formulas'],['50','Fast Tricks'],['130+','Practice Qs']]
   },
   {
+    title:'Indian Polity',href:'Indian_Polity.html',icon:'⚖️',
+    desc:'Constitution, Parliament, Judiciary, Panchayati Raj, Amendments, Emergency & Elections.',
+    color:'#2563eb',darkBg:'rgba(37,99,235,.18)',lightBg:'#eff6ff',
+    stats:[['448','Articles'],['12','Schedules'],['106','Amendments']]
+  },
+  {
+    title:'Indian History',href:'Indian_History.html',icon:'🏛️',
+    desc:'Ancient, Medieval, Modern India, Freedom Struggle, Governors-General & Viceroys.',
+    color:'#92400e',darkBg:'rgba(146,64,14,.18)',lightBg:'#fffbeb',
+    stats:[['5000+','Years'],['Ancient→Modern','Timeline'],['1947','Independence']]
+  },
+  {
+    title:'Indian Geography',href:'Indian_Geography.html',icon:'🗺️',
+    desc:'Physical India, States & Capitals, Rivers, Climate, Soils, National Parks & World Geography.',
+    color:'#059669',darkBg:'rgba(5,150,105,.18)',lightBg:'#ecfdf5',
+    stats:[['28','States'],['8','UTs'],['7th Largest','Country']]
+  },
+  {
+    title:'Static GK',href:'Static_GK.html',icon:'🌍',
+    desc:'Countries, Capitals, Currencies, Awards, Important Days, Books & Authors, Classical Dances.',
+    color:'#7c3aed',darkBg:'rgba(124,58,237,.18)',lightBg:'#f5f3ff',
+    stats:[['195+','Countries'],['National','Symbols'],['All','Awards']]
+  },
+  {
+    title:'Indian Economy',href:'Indian_Economy.html',icon:'💰',
+    desc:'GDP, Five-Year Plans, RBI & Monetary Policy, Banking, Union Budget, GST & Govt Schemes.',
+    color:'#d97706',darkBg:'rgba(217,119,6,.2)',lightBg:'#fffbeb',
+    stats:[['5th Largest','Economy'],['RBI','Policy'],['50+','Schemes']]
+  },
+  {
+    title:'Bihar Special GK',href:'Bihar_Special_GK.html',icon:'🌾',
+    desc:'Bihar history, geography, culture, Chhath Puja, Madhubani art, Nalanda & Govt schemes.',
+    color:'#16a34a',darkBg:'rgba(22,163,74,.18)',lightBg:'#f0fdf4',
+    stats:[['38','Districts'],['9','Divisions'],['All','Schemes']]
+  },
+  {
+    title:'Reasoning Guide',href:'Reasoning_Guide.html',icon:'🧠',
+    desc:'Verbal, Non-Verbal, Logical Reasoning — Coding-Decoding, Series, Seating, Puzzles & Shortcuts.',
+    color:'#0891b2',darkBg:'rgba(8,145,178,.18)',lightBg:'#ecfeff',
+    stats:[['20+','Topics'],['Fast','Tricks'],['100+','Practice']]
+  },
+  {
     title:'Syllabus Hub',href:'Syllabus.html',icon:'📋',
-    desc:'Complete syllabi for UPSC, SSC, BPSC, Bihar Daroga, Railway, Banking, Defence and 15+ more exams.',
+    desc:'Complete syllabi for UPSC, SSC, BPSC, Bihar Daroga, Railway, Banking, Defence and 50+ more exams.',
     color:'#dc2626',darkBg:'rgba(220,38,38,.18)',lightBg:'#fef2f2',
-    stats:[['19+','Exams'],['100+','Papers'],['All','Patterns']]
+    stats:[['53+','Exams'],['100+','Papers'],['All','Patterns']]
   }
 ];
 
@@ -410,6 +459,13 @@ const QS_ITEMS = [
   {icon:'📰', name:'Current Affairs', desc:'Daily national & international news · GK bank', href:'Current_Affairs.html'},
   {icon:'📚', name:'English Grammar', desc:'Tenses · Voice · Vocabulary · Idioms · Comprehension', href:'english-grammar-mastery.html'},
   {icon:'🧮', name:'Mathematics', desc:'Top 100 formulas · Fast tricks · Exam shortcuts', href:'Competitive_Exam_Mathematics_Cheat_Sheet.html'},
+  {icon:'⚖️', name:'Indian Polity', desc:'Constitution · Parliament · Judiciary · Panchayati Raj · Amendments', href:'Indian_Polity.html'},
+  {icon:'🏛️', name:'Indian History', desc:'Ancient · Medieval · Modern · Freedom Struggle · 1947', href:'Indian_History.html'},
+  {icon:'🗺️', name:'Indian Geography', desc:'Physical · Political · Rivers · Climate · National Parks', href:'Indian_Geography.html'},
+  {icon:'🌍', name:'Static GK', desc:'Countries · Awards · Important Days · Books · Classical Dances', href:'Static_GK.html'},
+  {icon:'💰', name:'Indian Economy', desc:'GDP · Budget · Banking · RBI · Government Schemes', href:'Indian_Economy.html'},
+  {icon:'🌾', name:'Bihar Special GK', desc:'History · Geography · Culture · Schemes · Personalities', href:'Bihar_Special_GK.html'},
+  {icon:'🧠', name:'Reasoning Guide', desc:'Verbal · Non-Verbal · Logical · Number Series · Shortcuts', href:'Reasoning_Guide.html'},
   {icon:'📋', name:'Syllabus Hub', desc:'UPSC · SSC · BPSC · Railway · Banking — all exam syllabi', href:'Syllabus.html'},
   {icon:'📝', name:'Mock Test Portal', desc:'100+ full-length mock tests with detailed solutions', href:'exam-portal.html'},
   {icon:'🏠', name:'Home Hub', desc:'All subjects at a glance', href:'index.html'},
