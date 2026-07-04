@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta name="description" content="Daily exam notifications, exam calendar, new government job openings and exam results for UPSC, SSC, Railway, Banking & State PCS — with direct official links.">
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exam Updates – Notifications, Calendar, Jobs & Results</title>
+<style>
+:root{--ground:#0C1624;--surface:#111D2E;--surface2:#162035;--border:#1E2F48;--text:#DCE6F0;--text2:#8BA3BF;--text3:#4A6480;--accent:#F59E0B;--accent2:#10B981;--accent3:#3B82F6;--danger:#EF4444;--radius:10px;--rsm:6px}
+.page-links{display:flex;flex-wrap:nowrap;gap:6px;align-items:center;max-width:none;overflow-x:auto;scrollbar-width:none;}
+.page-links::-webkit-scrollbar{display:none;}
+.page-links a{font-size:.7rem;color:var(--text);background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:4px 10px;text-decoration:none;transition:all .2s;font-weight:500;white-space:nowrap;}
+.page-links a:hover{background:var(--accent);color:#000;border-color:var(--accent);}
+.page-links a.current{background:var(--accent);color:#000 !important;border-color:var(--accent);font-weight:700;pointer-events:none;box-shadow:0 2px 8px rgba(245,158,11,.4);}
+#sub-nav{position:sticky;top:52px;z-index:199;background:var(--surface);border-bottom:1px solid var(--border);padding:8px 20px;display:flex;align-items:center;}
+[data-theme="light"]{--ground:#F0F4F8;--surface:#FFFFFF;--surface2:#EBF0F7;--border:#D1DCE8;--text:#0C1624;--text2:#3A5470;--text3:#7A94B0}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--ground);color:var(--text);font-size:14px;line-height:1.6;min-height:100vh}
+.topbar{position:sticky;top:0;z-index:200;background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px;padding:0 20px;height:52px;backdrop-filter:blur(10px);}
+.logo{display:flex;align-items:center;gap:8px;font-weight:800;font-size:15px;color:var(--text);white-space:nowrap;cursor:pointer}
+.logo-mark{width:30px;height:30px;background:linear-gradient(135deg,var(--accent),#d97706);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;color:#000;box-shadow:0 2px 8px rgba(245,158,11,.3)}
+.logo span{color:var(--accent)}
+.srch{flex:1;max-width:420px;position:relative}
+.srch input{width:100%;padding:7px 14px 7px 34px;background:var(--surface2);border:1px solid var(--border);border-radius:20px;color:var(--text);font-size:13px;outline:none;transition:.15s}
+.srch input:focus{border-color:var(--accent)}
+.srch::before{content:'🔍';position:absolute;left:10px;top:50%;transform:translateY(-50%);font-size:12px;pointer-events:none}
+.tbtn{background:var(--surface2);border:1px solid var(--border);border-radius:7px;padding:6px 10px;cursor:pointer;color:var(--text);font-size:14px;transition:.15s}
+.tbtn:hover{border-color:var(--accent);color:var(--accent)}
+.ml{margin-left:auto;display:flex;gap:8px;align-items:center}
+.sdrop{position:absolute;top:calc(100% + 4px);left:0;right:0;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:0 8px 24px rgba(0,0,0,.4);z-index:300;display:none;max-height:300px;overflow-y:auto}
+.sdrop.open{display:block}
+.sdi{padding:10px 14px;cursor:pointer;border-bottom:1px solid var(--border);transition:.1s}
+.sdi:last-child{border-bottom:none}
+.sdi:hover{background:var(--surface2)}
+.sdi-t{font-size:13px;font-weight:600;color:var(--text)}
+.sdi-c{font-size:11px;color:var(--text3);margin-top:1px}
+.ticker{background:linear-gradient(90deg,var(--accent),#d97706);overflow:hidden;padding:5px 0;display:flex;align-items:center}
+.tklbl{background:rgba(0,0,0,.3);color:#000;font-size:10px;font-weight:900;padding:0 10px;letter-spacing:1.5px;white-space:nowrap;flex-shrink:0}
+.tktrack{flex:1;overflow:hidden}
+.tktext{display:inline-block;white-space:nowrap;font-size:12px;font-weight:600;color:#000;animation:scroll 90s linear infinite}
+@keyframes scroll{0%{transform:translateX(100vw)}100%{transform:translateX(-100%)}}
+.catnav{background:var(--surface);border-bottom:1px solid var(--border);overflow-x:auto;scrollbar-width:none}
+.catnav::-webkit-scrollbar{display:none}
+.catinner{display:flex;padding:0 16px;max-width:1440px;margin:0 auto}
+.ctab{padding:9px 12px;font-size:11px;font-weight:600;color:var(--text2);cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;transition:.15s;text-transform:uppercase;letter-spacing:.5px}
+.ctab:hover{color:var(--text)}
+.ctab.active{color:var(--accent);border-color:var(--accent);font-weight:700}
+.layout{display:grid;grid-template-columns:1fr 270px;gap:20px;max-width:1440px;margin:0 auto;padding:20px}
+.main{min-width:0}
+.sbar{min-width:0}
+.cmdbar{background:linear-gradient(135deg,var(--surface),var(--surface2));border:1px solid var(--border);border-radius:var(--radius);padding:16px 20px;margin-bottom:20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;box-shadow:0 2px 12px rgba(245,158,11,.08);}
+.cclk{font-family:monospace;font-size:26px;font-weight:900;color:var(--accent);letter-spacing:-1px}
+.cdiv{width:1px;height:38px;background:var(--border);flex-shrink:0}
+.cstat{text-align:center}
+.cstat-n{font-size:19px;font-weight:800}
+.cstat-l{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px}
+.srow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}
+.sbox{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s;}
+.sbox:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.12);}
+.sbox::after{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.sbox.a::after{background:linear-gradient(90deg,var(--accent),var(--accent2))}.sbox.b::after{background:linear-gradient(90deg,var(--accent2),var(--accent3))}.sbox.c::after{background:linear-gradient(90deg,var(--accent3),var(--accent))}.sbox.d::after{background:linear-gradient(90deg,var(--danger),var(--accent))}
+.sn{font-size:26px;font-weight:900;font-variant-numeric:tabular-nums;background:linear-gradient(135deg,var(--text),var(--text2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.sl{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.6px;margin-top:4px;font-weight:600}
+.sh{display:flex;align-items:center;gap:10px;margin-bottom:16px;margin-top:4px;}
+.sh h2{font-size:16px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--text)}
+.shl{flex:1;height:2px;background:linear-gradient(90deg,var(--accent),transparent);margin-left:.3rem;border-radius:1px}
+.shb{background:var(--accent);color:#000;font-size:10px;font-weight:700;padding:3px 10px;border-radius:10px}
+.art{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px;margin-bottom:12px;cursor:default;transition:all .2s;border-left:3px solid transparent;}
+.art:hover{border-left-color:var(--accent);transform:translateX(3px);box-shadow:0 4px 20px rgba(245,158,11,.1);}
+.ameta{display:flex;gap:8px;align-items:center;margin-bottom:7px;flex-wrap:wrap}
+.tag{font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;text-transform:uppercase;letter-spacing:.5px}
+.tgn{background:rgba(59,130,246,.15);color:#60A5FA}
+.tgi{background:rgba(167,139,250,.15);color:#A78BFA}
+.tge{background:rgba(16,185,129,.15);color:#34D399}
+.tgs{background:rgba(245,158,11,.15);color:#FCD34D}
+.tgd{background:rgba(239,68,68,.15);color:#FCA5A5}
+.adate{font-size:11px;color:var(--text3)}
+.atitle{font-size:15px;font-weight:700;color:var(--text);margin-bottom:5px;line-height:1.4;font-family:Georgia,serif}
+.asum{font-size:13px;color:var(--text2);line-height:1.6}
+.enote{margin-top:8px;padding:6px 10px;background:rgba(59,130,246,.08);border-left:2px solid var(--accent3);border-radius:0 4px 4px 0;font-size:11px;color:#93C5FD}
+[data-theme="light"] .enote{color:#2563EB;background:rgba(59,130,246,.06)}
+.btn{padding:8px 18px;border-radius:var(--rsm);border:none;cursor:pointer;font-size:13px;font-weight:600;transition:.15s;font-family:inherit}
+.ba{background:var(--accent);color:#000}.ba:hover{background:#D97706}
+.bo{background:transparent;border:1.5px solid var(--border);color:var(--text)}.bo:hover{border-color:var(--accent);color:var(--accent)}
+.bg{background:var(--accent2);color:#fff}.bg:hover{background:#059669}
+.bsm{padding:5px 12px;font-size:12px}
+.widget{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:14px;overflow:hidden}
+.whead{background:linear-gradient(135deg,var(--surface2),var(--surface));padding:10px 14px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;color:var(--accent);border-bottom:1px solid var(--border)}
+.wbody{padding:12px 14px}
+.wlink{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);font-size:12px;cursor:pointer;transition:.15s;color:var(--text)}
+.wlink:last-child{border-bottom:none}
+.wlink:hover{color:var(--accent);padding-left:4px}
+.wcnt{font-size:11px;color:var(--text3)}
+.dc{display:flex;gap:10px;align-items:flex-start;padding:10px;background:var(--surface);border:1px solid var(--border);border-radius:var(--rsm);margin-bottom:7px}
+.dbox{background:var(--accent);color:#000;border-radius:6px;padding:5px 9px;text-align:center;min-width:44px;flex-shrink:0}
+.dn{font-size:17px;font-weight:900;line-height:1}
+.dm{font-size:9px;font-weight:700;text-transform:uppercase}
+.dname{font-size:13px;font-weight:700;color:var(--text)}
+.dtheme{font-size:11px;color:var(--text3);margin-top:2px}
+.exgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.excard{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;text-align:left;cursor:default;transition:.15s;display:flex;flex-direction:column;gap:6px}
+.excard:hover{border-color:var(--accent);transform:translateY(-2px)}
+.exicon{font-size:26px}
+.exname{font-size:14px;font-weight:800;color:var(--text)}
+.exdesc{font-size:11px;color:var(--text3)}
+.exfor{font-size:11px;color:var(--text2);margin-top:2px}
+.expill{display:inline-block;margin-top:4px;background:var(--accent);color:#000;font-size:10px;font-weight:700;padding:3px 10px;border-radius:10px;text-decoration:none;width:fit-content}
+.mhead{padding:20px;border-radius:var(--radius) var(--radius) 0 0;text-align:center}
+.scroll-top{position:fixed;bottom:20px;right:20px;width:38px;height:38px;background:var(--accent);border:none;border-radius:50%;cursor:pointer;font-size:16px;color:#000;display:none;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.4);z-index:100;transition:.2s}
+.scroll-top.show{display:flex}
+.scroll-top:hover{transform:translateY(-2px)}
+footer{background:var(--surface);border-top:1px solid var(--border);padding:28px 20px 14px;margin-top:36px}
+.fgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:1440px;margin:0 auto 20px}
+.fbrand{font-size:16px;font-weight:800;color:var(--text);margin-bottom:4px}
+.fbrand span{color:var(--accent)}
+.fbrand p{font-size:12px;color:var(--text3);font-weight:400;margin-top:3px}
+.fcol h4{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);margin-bottom:8px}
+.fcol a{display:block;font-size:12px;color:var(--text2);text-decoration:none;margin-bottom:5px;cursor:pointer;transition:.1s}
+.fcol a:hover{color:var(--accent)}
+.fbot{max-width:1440px;margin:0 auto;padding-top:14px;border-top:1px solid var(--border);display:flex;justify-content:space-between;font-size:11px;color:var(--text3);flex-wrap:wrap;gap:6px}
+@media(max-width:1100px){.layout{grid-template-columns:1fr}.sbar{display:none}}
+@media(max-width:768px){.srow{grid-template-columns:repeat(2,1fr)}.exgrid{grid-template-columns:repeat(2,1fr)}.fgrid{grid-template-columns:repeat(2,1fr)}.catnav{display:none}}
+@media(max-width:640px){.srch{max-width:130px}}
+@media(max-width:480px){.srow{grid-template-columns:1fr 1fr}.exgrid{grid-template-columns:1fr}.fgrid{grid-template-columns:1fr}.srch{display:none}.ml>.tbtn:first-child{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+/* Mobile Sidebar Drawer */
+#mob-sidebar{position:fixed;top:0;left:0;height:100vh;width:280px;background:#0f172a;border-right:1px solid rgba(255,255,255,.1);z-index:9999;transform:translateX(-100%);transition:transform .3s ease;overflow-y:auto;padding:0 0 40px;}
+#mob-sidebar.open{transform:translateX(0);}
+#mob-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:9998;}
+#mob-overlay.show{display:block;}
+.mob-sb-hd{display:flex;align-items:center;justify-content:space-between;padding:16px;border-bottom:1px solid rgba(255,255,255,.1);background:linear-gradient(135deg,#1e3a5f,#0f172a);}
+.mob-sb-title{font-size:.95rem;font-weight:700;color:#60a5fa;}
+.mob-sb-close{background:none;border:none;color:rgba(255,255,255,.6);font-size:1.2rem;cursor:pointer;padding:4px;}
+.mob-sb-grp{padding:8px 0;}
+.mob-sb-gh{padding:6px 16px 3px;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.35);}
+.mob-sb-item{display:flex;align-items:center;gap:10px;padding:10px 16px;font-size:.82rem;color:rgba(255,255,255,.8);cursor:pointer;text-decoration:none;transition:background .15s;}
+.mob-sb-item:hover,.mob-sb-item.active{background:rgba(96,165,250,.15);color:#93c5fd;}
+@media(max-width:768px){.eu-mob-ham{display:flex!important;}}
+.eu-mob-ham{display:none;align-items:center;justify-content:center;background:none;border:none;color:inherit;font-size:1.3rem;cursor:pointer;padding:6px;}
+/* Live feed */
+.live-header{display:flex;align-items:center;gap:8px;margin-bottom:12px;padding:9px 14px;background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.18);border-radius:10px}
+.live-dot{width:7px;height:7px;border-radius:50%;background:#ef4444;flex-shrink:0;animation:lpulse 1.4s ease-in-out infinite}
+@keyframes lpulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.85)}}
+.live-label{font-size:10px;font-weight:800;color:#ef4444;text-transform:uppercase;letter-spacing:.9px}
+.live-since{font-size:11px;color:var(--text3);margin-left:auto}
+.art-src{margin-top:6px;font-size:11px;color:var(--text3)}
+.art-src a{color:var(--accent);text-decoration:none;font-weight:600}
+.live-sep{margin:18px 0 16px;text-align:center;font-size:11px;color:var(--text3);display:flex;align-items:center;gap:8px}
+.live-sep::before,.live-sep::after{content:'';flex:1;height:1px;background:var(--border)}
+.empty-note{text-align:center;padding:28px;color:var(--text3);font-size:12px;background:var(--surface);border:1px dashed var(--border);border-radius:var(--radius);margin-bottom:16px}
+/* Calendar */
+.cal-month{font-size:11px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:1px;margin:20px 0 10px}
+.cal-item{display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--border);border-radius:var(--rsm);padding:12px 14px;margin-bottom:8px;flex-wrap:wrap}
+.cal-name{font-size:13px;font-weight:700;color:var(--text)}
+.cal-org{font-size:11px;color:var(--text3);margin-top:2px}
+.cal-date{font-size:12px;font-weight:700;color:var(--accent);white-space:nowrap}
+</style>
+<script>(function(){var t=localStorage.getItem('eps-theme');if(t)document.documentElement.setAttribute('data-theme',t);})()</script>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📢</text></svg>">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2563eb">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+</head>
+<body>
+<div id="mob-overlay" onclick="closeMobSidebar()"></div>
+<nav id="mob-sidebar">
+  <div class="mob-sb-hd">
+    <span class="mob-sb-title">📢 Exam Updates</span>
+    <button class="mob-sb-close" onclick="closeMobSidebar()">✕</button>
+  </div>
+  <div class="mob-sb-grp">
+    <div class="mob-sb-gh">Live Updates</div>
+    <div class="mob-sb-item" onclick="mobSection('notifications')">📢 Exam Notifications</div>
+    <div class="mob-sb-item" onclick="mobSection('calendar')">📅 Exam Calendar</div>
+    <div class="mob-sb-item" onclick="mobSection('jobs')">💼 Job Openings</div>
+    <div class="mob-sb-item" onclick="mobSection('results')">🏆 Exam Results</div>
+  </div>
+  <div class="mob-sb-grp">
+    <div class="mob-sb-gh">Site Links</div>
+    <a class="mob-sb-item" href="index.html">🏠 Home</a>
+    <a class="mob-sb-item" href="Current_Affairs.html">📰 Current Affairs</a>
+    <a class="mob-sb-item" href="exam-portal.html">📝 Mock Tests</a>
+    <a class="mob-sb-item" href="Syllabus.html">📋 Syllabus Hub</a>
+  </div>
+</nav>
+
+<header class="topbar">
+  <button class="eu-mob-ham" onclick="openMobSidebar()" aria-label="Menu">☰</button>
+  <div class="logo" onclick="showSection('home')"><div class="logo-mark">EU</div>Exam <span>Updates</span></div>
+  <div class="srch">
+    <input type="text" id="msearch" placeholder="Search notifications, jobs, results…" autocomplete="off">
+    <div class="sdrop" id="sdrop"></div>
+  </div>
+  <div class="ml">
+    <button class="tbtn" onclick="refreshNow()" title="Refresh live feed">🔄 Refresh</button>
+    <button class="tbtn" id="themeBtn" title="Toggle theme">◑</button>
+  </div>
+</header>
+<div id="sub-nav">
+  <div class="page-links">
+    <a href="index.html">🏠 Home</a>
+    <a href="Science.html">🔬 Science</a>
+    <a href="Computer.html">💻 Computer</a>
+    <a href="Current_Affairs.html">📰 Current Affairs</a>
+    <a href="Exam_Updates.html" class="current">📢 Exam Updates</a>
+    <a href="english-grammar-mastery.html">📝 English</a>
+    <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html">🧮 Maths</a>
+    <a href="Indian_Polity.html">⚖️ Polity</a>
+    <a href="Indian_History.html">🏛️ History</a>
+    <a href="Indian_Geography.html">🗺️ Geography</a>
+    <a href="Static_GK.html">🌍 Static GK</a>
+    <a href="Indian_Economy.html">💰 Economy</a>
+    <a href="Bihar_Special_GK.html">🌾 Bihar GK</a>
+    <a href="Reasoning_Guide.html">🧠 Reasoning</a>
+    <a href="Syllabus.html">📋 Syllabus</a>
+  </div>
+</div>
+
+<div class="ticker">
+  <div class="tklbl">ALERT</div>
+  <div class="tktrack"><span class="tktext" id="tktext"></span></div>
+</div>
+
+<nav class="catnav"><div class="catinner" id="catnav"></div></nav>
+
+<div class="layout">
+  <main class="main" id="main"></main>
+  <aside class="sbar" id="sidebar"></aside>
+</div>
+
+<footer>
+  <div class="fgrid">
+    <div><div class="fbrand">Exam <span>Updates</span><p>Notifications, calendar, jobs & results — updated daily with official links.</p></div></div>
+    <div class="fcol"><h4>Live Updates</h4><a onclick="showSection('notifications')">Notifications</a><a onclick="showSection('calendar')">Exam Calendar</a><a onclick="showSection('jobs')">Job Openings</a><a onclick="showSection('results')">Results</a></div>
+    <div class="fcol"><h4>Central Bodies</h4><a onclick="showSection('jobs')">UPSC</a><a onclick="showSection('jobs')">SSC</a><a onclick="showSection('jobs')">IBPS</a><a onclick="showSection('jobs')">Railway (RRB)</a></div>
+    <div class="fcol"><h4>Related</h4><a href="Current_Affairs.html">Current Affairs</a><a href="Syllabus.html">Syllabus Hub</a><a href="exam-portal.html">Mock Tests</a></div>
+  </div>
+  <div class="fbot"><span>© 2026 Exam Updates · Built by <strong>Vikash Pandey</strong></span><span>Always verify on the official website before applying</span></div>
+</footer>
+<button class="scroll-top" id="stbtn">↑</button>
+
+<script>
+// ── STATIC DATA ────────────────────────────────────────────────────────
+const CATS=[{id:'home',l:'🏠 Home'},{id:'notifications',l:'📢 Notifications'},{id:'calendar',l:'📅 Exam Calendar'},{id:'jobs',l:'💼 Job Openings'},{id:'results',l:'🏆 Results'}];
+const TK=['📢 Always cross-check dates on the official website before applying · ','🆕 New notifications, vacancies & results are checked daily from official RSS sources · ','📅 Exam Calendar shows expected/announced schedules — confirm on the exam body\'s site · ','💼 Job Openings list official recruitment portals for Central & State exams · ','🏆 Results section links directly to each board\'s official results page · '];
+
+// Curated, verified official government links — the ground truth for this page
+const OFFICIAL_CENTRAL=[
+{n:'UPSC',d:'Union Public Service Commission',url:'https://upsc.gov.in',use:'Civil Services, CDS, NDA, Engineering Services'},
+{n:'SSC',d:'Staff Selection Commission',url:'https://ssc.gov.in',use:'CGL, CHSL, MTS, GD Constable, Stenographer'},
+{n:'IBPS',d:'Institute of Banking Personnel Selection',url:'https://www.ibps.in',use:'PO, Clerk, SO, RRB — Banking Exams'},
+{n:'RRB',d:'Railway Recruitment Boards',url:'https://rrbapply.gov.in',use:'NTPC, Group D, ALP, JE — Railway Jobs'},
+{n:'RBI',d:'Reserve Bank of India Careers',url:'https://opportunities.rbi.org.in',use:'Grade B, Assistant, Office Attendant'},
+{n:'SBI',d:'State Bank of India Careers',url:'https://sbi.co.in/careers',use:'PO, Clerk, SO Recruitment'},
+{n:'NVS',d:'Navodaya Vidyalaya Samiti',url:'https://navodaya.gov.in',use:'TGT, PGT, Principal Recruitment'},
+{n:'CTET',d:'Central Teacher Eligibility Test (CBSE)',url:'https://ctet.nic.in',use:'Teacher Eligibility Certification'},
+{n:'DRDO',d:'Defence R&D Organisation',url:'https://www.drdo.gov.in',use:'Scientist, Apprentice, Technician'},
+{n:'ISRO',d:'Indian Space Research Organisation',url:'https://www.isro.gov.in/Careers.html',use:'Scientist/Engineer Recruitment'},
+{n:'AIIMS',d:'All India Institute of Medical Sciences',url:'https://www.aiimsexams.ac.in',use:'INI-CET, Nursing, Staff Recruitment'},
+{n:'NCS',d:'National Career Service',url:'https://ncs.gov.in',use:'All-India Govt & Private Job Portal'},
+{n:'Employment News',d:'Govt of India Weekly e-Paper',url:'https://employmentnews.gov.in',use:'Weekly Govt Vacancy Digest'},
+];
+const OFFICIAL_STATE=[
+{n:'BPSC',d:'Bihar Public Service Commission',url:'https://bpsc.bih.nic.in'},
+{n:'UPPSC',d:'Uttar Pradesh PSC',url:'https://uppsc.up.nic.in'},
+{n:'RPSC',d:'Rajasthan PSC',url:'https://rpsc.rajasthan.gov.in'},
+{n:'MPSC',d:'Maharashtra PSC',url:'https://mpsc.gov.in'},
+{n:'WBPSC',d:'West Bengal PSC',url:'https://wbpsc.gov.in'},
+];
+// Curated exam calendar — always verify exact dates on the official notification/link above
+const CALENDAR=[
+{month:'Jul 2026',items:[
+  {n:'SSC CGL 2026 — Tier II',org:'SSC',date:'Jul 15–18, 2026',url:'https://ssc.gov.in'},
+  {n:'RRB NTPC 2026 — CBT-1',org:'RRB',date:'Jul–Aug 2026',url:'https://rrbapply.gov.in'},
+]},
+{month:'Aug 2026',items:[
+  {n:'IBPS PO 2026 — Prelims',org:'IBPS',date:'Aug 2026',url:'https://www.ibps.in'},
+  {n:'BPSC 70th CCE — Mains',org:'BPSC',date:'Aug 2026',url:'https://bpsc.bih.nic.in'},
+  {n:'UPPSC PCS 2026 — Prelims',org:'UPPSC',date:'Aug 2026',url:'https://uppsc.up.nic.in'},
+]},
+{month:'Sep 2026',items:[
+  {n:'UPSC CSE 2026 — Mains',org:'UPSC',date:'Sep 2026',url:'https://upsc.gov.in'},
+  {n:'RRB NTPC 2026 — CBT-2',org:'RRB',date:'Sep–Oct 2026',url:'https://rrbapply.gov.in'},
+]},
+{month:'Oct 2026',items:[
+  {n:'SBI Clerk 2026 — Prelims',org:'SBI',date:'Oct 2026',url:'https://sbi.co.in/careers'},
+  {n:'IBPS Clerk 2026 — Prelims',org:'IBPS',date:'Oct 2026',url:'https://www.ibps.in'},
+]},
+];
+
+// ── STATE ──────────────────────────────────────────────────────────────
+let sec='home';
+let LIVE=[], LIVE_DATE='', LIVE_TIME='';
+function fetchLive(){
+  fetch('exam_updates_data.json?_='+Date.now())
+    .then(r=>r.ok?r.json():Promise.reject())
+    .then(d=>{
+      if(!d||!Array.isArray(d.articles)) return;
+      LIVE=d.articles;
+      LIVE_DATE=d.updated||'';
+      LIVE_TIME=d.updated_time||'';
+      render();
+    })
+    .catch(()=>{});
+}
+function refreshNow(){fetchLive();}
+
+// ── INIT ───────────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded',()=>{
+  document.getElementById('tktext').textContent=TK.join('  ·  ');
+  buildNav();
+  render();
+  fetchLive();
+  initSearch();
+  const _tb=document.getElementById('themeBtn');
+  const _savedT=localStorage.getItem('eps-theme');if(_savedT)document.documentElement.setAttribute('data-theme',_savedT);
+  _tb.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'◑':'☀';
+  _tb.onclick=()=>{
+    const t=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';
+    document.documentElement.setAttribute('data-theme',t);
+    _tb.textContent=t==='dark'?'◑':'☀';
+    localStorage.setItem('eps-theme',t);
+  };
+  window.onscroll=()=>{
+    document.getElementById('stbtn').classList.toggle('show',window.scrollY>300);
+  };
+  document.getElementById('stbtn').onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
+});
+
+function buildNav(){
+  document.getElementById('catnav').innerHTML=CATS.map(c=>`<div class="ctab${c.id===sec?' active':''}" onclick="go('${c.id}')">${c.l}</div>`).join('');
+}
+function go(id){sec=id;buildNav();render();window.scrollTo({top:0,behavior:'smooth'});}
+window.showSection=go;
+
+// ── MOBILE SIDEBAR ────────────────────────────────────────────────────
+function openMobSidebar(){document.getElementById('mob-sidebar').classList.add('open');document.getElementById('mob-overlay').classList.add('show');}
+function closeMobSidebar(){document.getElementById('mob-sidebar').classList.remove('open');document.getElementById('mob-overlay').classList.remove('show');}
+function mobSection(id){go(id);closeMobSidebar();}
+
+function render(){
+  const m=document.getElementById('main');
+  document.getElementById('sidebar').innerHTML=renderSidebar();
+  switch(sec){
+    case 'notifications':m.innerHTML=renderLiveSection('notif','📢 Exam Notifications','Admit cards, exam dates, application windows & schedule changes');break;
+    case 'calendar':m.innerHTML=renderCalendar();break;
+    case 'jobs':m.innerHTML=renderLiveSection('job','💼 New Job Openings','Latest government recruitment drives & vacancies');break;
+    case 'results':m.innerHTML=renderLiveSection('result','🏆 Exam Results','Declared results, merit lists & cut-offs');break;
+    default:m.innerHTML=renderHome();
+  }
+}
+
+function officialGrid(list){
+  return `<div class="exgrid">${list.map(o=>`
+    <div class="excard">
+      <div class="exicon">🏛️</div>
+      <div class="exname">${o.n}</div>
+      <div class="exdesc">${o.d}</div>
+      ${o.use?`<div class="exfor">${o.use}</div>`:''}
+      <a class="expill" href="${o.url}" target="_blank" rel="noopener noreferrer">Visit Official Site ↗</a>
+    </div>`).join('')}</div>`;
+}
+
+function renderHome(){
+  const notifCount=LIVE.filter(n=>n.cat==='notif').length;
+  const jobCount=LIVE.filter(n=>n.cat==='job').length;
+  const resultCount=LIVE.filter(n=>n.cat==='result').length;
+  return `
+<div style="background:linear-gradient(135deg,#1a0a00 0%,#3d1a00 40%,#0c1624 100%);border-radius:16px;padding:28px 24px;color:#fff;margin-bottom:18px;position:relative;overflow:hidden">
+  <div style="position:relative;z-index:1">
+    <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;color:rgba(245,158,11,.9);text-transform:uppercase;margin-bottom:8px">📢 Exam Updates Hub</div>
+    <h1 style="font-size:clamp(1.4rem,3vw,2rem);font-weight:900;margin:0 0 8px;line-height:1.2">Never Miss a Notification, Job or Result <span style="color:#F59E0B">.</span></h1>
+    <p style="font-size:.9rem;opacity:.8;margin:0 0 20px;max-width:560px">Daily-refreshed exam notifications, a curated exam calendar, new government job openings and results — with direct links to every official source.</p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <button class="btn ba" onclick="go('notifications')" style="background:#F59E0B;color:#000">📢 Notifications</button>
+      <button class="btn bo" onclick="go('jobs')" style="color:#fff;border-color:rgba(255,255,255,.3)">💼 Job Openings</button>
+      <button class="btn bo" onclick="go('results')" style="color:#fff;border-color:rgba(255,255,255,.3)">🏆 Results</button>
+    </div>
+  </div>
+</div>
+<div class="srow">
+  <div class="sbox a" style="cursor:pointer" onclick="go('notifications')"><div class="sn">${notifCount||'—'}</div><div class="sl">Live Notifications</div></div>
+  <div class="sbox b" style="cursor:pointer" onclick="go('jobs')"><div class="sn">${jobCount||'—'}</div><div class="sl">Live Job Openings</div></div>
+  <div class="sbox c" style="cursor:pointer" onclick="go('results')"><div class="sn">${resultCount||'—'}</div><div class="sl">Live Results</div></div>
+  <div class="sbox d" style="cursor:pointer" onclick="go('calendar')"><div class="sn">${CALENDAR.reduce((a,m)=>a+m.items.length,0)}</div><div class="sl">Exams in Calendar</div></div>
+</div>
+${LIVE.length?`<div class="sh"><h2>🔴 Latest Live Updates</h2><div class="shl"></div><span class="shb">${LIVE_DATE||'Today'}</span></div>
+<div class="live-header"><div class="live-dot"></div><span class="live-label">Live Feed</span>${LIVE_TIME?`<span class="live-since">${LIVE_TIME}</span>`:''}</div>
+${LIVE.slice(0,5).map(n=>artCard(n)).join('')}
+<div style="text-align:center;margin:16px 0"><button class="btn bo" onclick="go('notifications')">View All Updates →</button></div>`
+:`<div class="empty-note">No fresh notification/job/result headlines matched today's official RSS scan — browse the curated Notifications, Jobs & Results tabs for direct links to every exam body. This live feed auto-refreshes daily.</div>`}
+<div class="sh" style="margin-top:22px"><h2>🏛️ Official Exam Bodies</h2><div class="shl"></div></div>
+${officialGrid(OFFICIAL_CENTRAL.slice(0,6))}
+<div style="text-align:center;margin:14px 0"><button class="btn bo" onclick="go('jobs')">View All Official Links →</button></div>`;
+}
+
+function artCard(n){
+  const footer = n.link
+    ? `<div class="art-src">📡 ${n.source||'Live'} &nbsp;·&nbsp; <a href="${n.link}" target="_blank" rel="noopener noreferrer">Read original →</a></div>`
+    : (n.exam?`<div class="enote">🎯 ${n.exam}</div>`:'');
+  return `<div class="art"><div class="ameta"><span class="tag ${n.tc}">${n.badge}</span><span class="adate">📅 ${n.date}</span></div><div class="atitle">${n.title}</div><div class="asum">${n.sum}</div>${footer}</div>`;
+}
+
+function renderLiveSection(cat,title,sub){
+  const arr=LIVE.filter(n=>n.cat===cat);
+  const liveSection = arr.length ? `
+    <div class="live-header">
+      <div class="live-dot"></div>
+      <span class="live-label">Live Feed</span>
+      ${LIVE_DATE?`<span class="live-since">Updated ${LIVE_DATE}${LIVE_TIME?' · '+LIVE_TIME:''}</span>`:''}
+    </div>
+    ${arr.map(n=>artCard(n)).join('')}
+    <div class="live-sep">Official Sources</div>
+  ` : `<div class="empty-note">No matching headlines from today's automatic RSS scan yet — this feed re-checks daily. Meanwhile, go straight to the official portals below.</div>`;
+  const officialTitle = cat==='job' ? '🏛️ Official Recruitment Portals — Central' : cat==='result' ? '🏛️ Check Results on Official Sites' : '🏛️ Official Notification Sources';
+  const stateBlock = cat!=='notif' ? `
+<div class="sh" style="margin-top:24px"><h2>🏛️ State PSC Portals</h2><div class="shl"></div></div>
+${officialGrid(OFFICIAL_STATE)}` : '';
+  return `<div class="sh"><h2>${title}</h2><div class="shl"></div></div><p style="font-size:12px;color:var(--text3);margin-bottom:14px">${sub}</p>${liveSection}
+<div class="sh" style="margin-top:22px"><h2>${officialTitle}</h2><div class="shl"></div></div>
+${officialGrid(OFFICIAL_CENTRAL)}
+${stateBlock}
+<div class="enote" style="margin-top:16px">🎯 Always confirm exact dates, eligibility and application links on the exam body's own official website before applying.</div>`;
+}
+
+function renderCalendar(){
+  return `<div class="sh"><h2>📅 Exam Calendar</h2><div class="shl"></div></div>
+<p style="font-size:12px;color:var(--text3);margin-bottom:6px">Curated schedule of major upcoming exams — dates are indicative; always verify on the linked official site.</p>
+${CALENDAR.map(mo=>`
+  <div class="cal-month">${mo.month}</div>
+  ${mo.items.map(it=>`
+    <div class="cal-item">
+      <div><div class="cal-name">${it.n}</div><div class="cal-org">${it.org}</div></div>
+      <div style="display:flex;align-items:center;gap:10px">
+        <span class="cal-date">${it.date}</span>
+        <a class="btn bo bsm" href="${it.url}" target="_blank" rel="noopener noreferrer">Official Site ↗</a>
+      </div>
+    </div>
+  `).join('')}
+`).join('')}
+<div class="enote" style="margin-top:10px">🎯 Exam boards frequently revise dates — treat this calendar as a planning guide, not a final schedule.</div>`;
+}
+
+function renderSidebar(){
+  return `
+<div class="widget"><div class="whead">📊 Live Snapshot</div><div class="wbody">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:4px">
+    <div style="background:var(--surface2);border-radius:8px;padding:10px;text-align:center"><div style="font-size:18px;font-weight:900;color:var(--accent)">${LIVE.filter(n=>n.cat==='notif').length}</div><div style="font-size:10px;color:var(--text3);text-transform:uppercase">Notifications</div></div>
+    <div style="background:var(--surface2);border-radius:8px;padding:10px;text-align:center"><div style="font-size:18px;font-weight:900;color:var(--accent2)">${LIVE.filter(n=>n.cat==='job').length}</div><div style="font-size:10px;color:var(--text3);text-transform:uppercase">Job Openings</div></div>
+  </div>
+  <div style="font-size:10px;color:var(--text3);margin-top:6px">${LIVE_DATE?`Last synced ${LIVE_DATE}${LIVE_TIME?' · '+LIVE_TIME:''}`:'Syncing…'}</div>
+</div></div>
+<div class="widget"><div class="whead">📚 Quick Sections</div><div class="wbody">
+  ${[['Exam Notifications','notifications','📢'],['Exam Calendar','calendar','📅'],['Job Openings','jobs','💼'],['Exam Results','results','🏆']].map(l=>`<div class="wlink" onclick="go('${l[1]}')"><span>${l[2]} ${l[0]}</span><span>→</span></div>`).join('')}
+</div></div>
+<div class="widget"><div class="whead">🎯 Upcoming Exams</div><div class="wbody">
+  ${CALENDAR.flatMap(m=>m.items).slice(0,6).map(e=>`<div style="display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--border);font-size:12px"><span style="color:var(--text)">${e.n}</span><span style="color:var(--accent);font-weight:600">${e.date}</span></div>`).join('')}
+  <div style="text-align:center;margin-top:10px"><button class="btn bo bsm" onclick="go('calendar')">Full Calendar →</button></div>
+</div></div>
+<div class="widget"><div class="whead">🏛️ Top Official Links</div><div class="wbody">
+  ${OFFICIAL_CENTRAL.slice(0,6).map(o=>`<div class="wlink" onclick="window.open('${o.url}','_blank')"><span>${o.n}</span><span>↗</span></div>`).join('')}
+</div></div>`;
+}
+
+// ── SEARCH ─────────────────────────────────────────────────────────────
+function initSearch(){
+  const inp=document.getElementById('msearch'),drop=document.getElementById('sdrop');
+  function all(){
+    return [
+      ...LIVE.map(n=>({t:n.title,c:n.badge,s:n.cat==='notif'?'notifications':n.cat==='job'?'jobs':'results'})),
+      ...OFFICIAL_CENTRAL.map(o=>({t:o.n+' — '+o.d,c:'Official Link',s:'jobs',url:o.url})),
+      ...OFFICIAL_STATE.map(o=>({t:o.n+' — '+o.d,c:'State PSC',s:'jobs',url:o.url})),
+      ...CALENDAR.flatMap(m=>m.items).map(e=>({t:e.n,c:'Exam Calendar',s:'calendar'})),
+    ];
+  }
+  inp.addEventListener('input',()=>{
+    const v=inp.value.trim().toLowerCase();
+    if(!v){drop.classList.remove('open');return;}
+    const m=all().filter(i=>i.t.toLowerCase().includes(v)).slice(0,7);
+    if(!m.length){drop.classList.remove('open');return;}
+    drop.innerHTML=m.map((i,idx)=>`<div class="sdi" data-idx="${idx}"><div class="sdi-t">${i.t}</div><div class="sdi-c">${i.c}</div></div>`).join('');
+    drop.querySelectorAll('.sdi').forEach((el,idx)=>{
+      el.onclick=()=>{ if(m[idx].url) window.open(m[idx].url,'_blank'); go(m[idx].s); inp.value=''; drop.classList.remove('open'); };
+    });
+    drop.classList.add('open');
+  });
+  document.addEventListener('click',e=>{if(!e.target.closest('.srch'))drop.classList.remove('open');});
+}
+</script>
+</body>
+</html>
