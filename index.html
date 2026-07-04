@@ -134,29 +134,35 @@ a{text-decoration:none;color:inherit}
 .card-cta{display:flex;align-items:center;justify-content:space-between;padding:.65rem 1rem;border-radius:10px;font-size:.88rem;font-weight:700;transition:all .2s}
 .cta-arrow{transition:transform .2s;font-size:1rem}
 
-/* ─── EXAM PORTAL BANNER ─── */
-.banner-wrap{padding:0 1.5rem 4.5rem;max-width:1200px;margin:0 auto}
-.exam-banner{
-  background:linear-gradient(135deg,#1e1b4b 0%,#4338ca 55%,#7c3aed 100%);
-  border-radius:var(--r);padding:2.75rem 3rem;
-  display:flex;align-items:center;gap:2rem;flex-wrap:wrap;
-  position:relative;overflow:hidden;cursor:pointer;
-  transition:transform .25s,box-shadow .25s;
+/* Tools & Resources section */
+.tools-grid{display:flex;flex-direction:column;gap:1.25rem}
+.tool-card{
+  display:flex;align-items:flex-start;gap:1.25rem;
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--r);padding:1.5rem;
+  box-shadow:var(--sh);text-decoration:none;color:inherit;
+  transition:transform .25s,box-shadow .25s;position:relative;overflow:hidden;
 }
-.exam-banner:hover{transform:translateY(-3px);box-shadow:var(--sh-lg)}
-.exam-banner::after{content:'📝';position:absolute;right:2.5rem;top:50%;transform:translateY(-50%);font-size:7rem;opacity:.08;pointer-events:none}
-.eb-body{flex:1;min-width:200px}
-.eb-body h3{font-size:1.5rem;font-weight:900;color:#fff;margin-bottom:.35rem;letter-spacing:-.02em}
-.eb-body p{color:rgba(255,255,255,.74);font-size:.92rem;line-height:1.6;max-width:520px}
-.eb-stats{display:flex;gap:2rem;flex-wrap:wrap}
-.eb-stat{text-align:center;color:#fff}
-.eb-stat strong{display:block;font-size:1.65rem;font-weight:900;line-height:1}
-.eb-stat span{font-size:.74rem;opacity:.68;text-transform:uppercase;letter-spacing:.06em}
+.tool-card:hover{transform:translateY(-3px);box-shadow:var(--sh-lg)}
+.tool-primary{
+  background:linear-gradient(135deg,rgba(79,70,229,.06),rgba(124,58,237,.04));
+  border-color:rgba(79,70,229,.25);
+}
+[data-theme="dark"] .tool-primary{background:linear-gradient(135deg,rgba(79,70,229,.15),rgba(124,58,237,.1));border-color:rgba(79,70,229,.35)}
+.tool-icon-wrap{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.tool-icon{font-size:1.75rem}
+.tool-body{flex:1;min-width:0}
+.tool-label{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--brand);margin-bottom:.3rem}
+.tool-title{font-size:1.1rem;font-weight:800;margin-bottom:.4rem;letter-spacing:-.01em}
+.tool-desc{font-size:.85rem;color:var(--text2);line-height:1.55;margin-bottom:.75rem}
+.tool-stats{display:flex;flex-wrap:wrap;gap:.4rem}
+.tool-chip{font-size:.72rem;background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-weight:500;color:var(--text2)}
+.tool-cta{font-size:.88rem;font-weight:700;color:var(--brand);white-space:nowrap;align-self:center;padding:.5rem 1rem;background:var(--brand-light);border-radius:999px;flex-shrink:0}
+.tools-row2{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
 @media(max-width:640px){
-  .exam-banner{padding:2rem 1.5rem}
-  .exam-banner::after{display:none}
-  .eb-stats{gap:1.25rem}
-  .eb-stat strong{font-size:1.3rem}
+  .tools-row2{grid-template-columns:1fr}
+  .tool-card{flex-direction:column}
+  .tool-cta{align-self:flex-start}
 }
 
 /* ─── EXAM TAGS ─── */
@@ -245,13 +251,13 @@ kbd{display:inline-block;background:var(--surface2);border:1px solid var(--borde
   <div class="hero-inner">
     <div class="hero-badge">🎯 Complete Exam Preparation Portal</div>
     <h1>Master Every Exam <span class="hl">Subject</span></h1>
-    <p class="hero-sub">Polity · History · Geography · Economy · Reasoning · Bihar GK · Static GK<br>Science · Computer Science · Current Affairs · Exam Updates · English Grammar · Mathematics · Syllabus</p>
+    <p class="hero-sub">Polity · History · Geography · Economy · Reasoning · Bihar GK · Static GK<br>Science · Computer Science · Current Affairs · English Grammar · Mathematics</p>
     <div class="hero-btns">
       <a href="Science.html" class="btn btn-white">🚀 Start Learning</a>
       <a href="exam-portal.html" class="btn btn-ghost">📝 Take Mock Tests</a>
     </div>
     <div class="hero-stats">
-      <div class="hero-stat"><strong>14</strong><span>Subjects</span></div>
+      <div class="hero-stat"><strong>12</strong><span>Subjects</span></div>
       <div class="hero-stat"><strong>10,000+</strong><span>Questions</span></div>
       <div class="hero-stat"><strong>100+</strong><span>Mock Tests</span></div>
       <div class="hero-stat"><strong>1000+</strong><span>Topics</span></div>
@@ -282,20 +288,69 @@ kbd{display:inline-block;background:var(--surface2);border:1px solid var(--borde
   <div class="subjects-grid" id="subjects-grid"></div>
 </div>
 
-<!-- EXAM PORTAL BANNER -->
-<div class="banner-wrap">
-  <a href="exam-portal.html" class="exam-banner">
-    <div class="eb-body">
-      <h3>📝 Mock Test Portal</h3>
-      <p>100+ full-length mock tests · 80 questions each · Detailed solutions · Performance tracking · GK Bank · Formula Sheets · Shortcuts</p>
+<!-- TOOLS & RESOURCES SECTION -->
+<div class="section" style="padding-top:0">
+  <div class="section-head">
+    <span class="section-tag">🛠️ Exam Tools</span>
+    <h2>Essential Exam Resources</h2>
+    <p>Everything you need beyond study material — tests, notifications, and complete syllabi</p>
+  </div>
+  <div class="tools-grid">
+
+    <!-- Mock Test Portal — primary, full-width -->
+    <a href="exam-portal.html" class="tool-card tool-primary">
+      <div class="tool-icon-wrap" style="background:linear-gradient(135deg,#4f46e5,#7c3aed)">
+        <span class="tool-icon">📝</span>
+      </div>
+      <div class="tool-body">
+        <div class="tool-label">Featured</div>
+        <h3 class="tool-title">Mock Test Portal</h3>
+        <p class="tool-desc">100+ full-length mock tests with 80 questions each, detailed solutions, performance tracking, GK Bank, formula sheets &amp; shortcuts for SSC, Railway, Banking &amp; more.</p>
+        <div class="tool-stats">
+          <span class="tool-chip">📋 100+ Tests</span>
+          <span class="tool-chip">❓ 10,000+ Questions</span>
+          <span class="tool-chip">📊 Performance Tracking</span>
+          <span class="tool-chip">🏆 Score Analysis</span>
+        </div>
+      </div>
+      <div class="tool-cta">Open Portal →</div>
+    </a>
+
+    <!-- Exam Updates & Syllabus — side by side -->
+    <div class="tools-row2">
+      <a href="Exam_Updates.html" class="tool-card tool-secondary">
+        <div class="tool-icon-wrap" style="background:linear-gradient(135deg,#dc2626,#f59e0b)">
+          <span class="tool-icon">📢</span>
+        </div>
+        <div class="tool-body">
+          <div class="tool-label">Live Updates</div>
+          <h3 class="tool-title">Exam Updates</h3>
+          <p class="tool-desc">Daily exam notifications, new job openings, admit cards, results &amp; official links. Never miss a vacancy.</p>
+          <div class="tool-stats">
+            <span class="tool-chip">🔴 Daily Refresh</span>
+            <span class="tool-chip">🔗 Official Links</span>
+          </div>
+        </div>
+        <div class="tool-cta" style="color:#dc2626">View Updates →</div>
+      </a>
+
+      <a href="Syllabus.html" class="tool-card tool-secondary">
+        <div class="tool-icon-wrap" style="background:linear-gradient(135deg,#0891b2,#2563eb)">
+          <span class="tool-icon">📋</span>
+        </div>
+        <div class="tool-body">
+          <div class="tool-label">Complete Syllabus</div>
+          <h3 class="tool-title">Syllabus Hub</h3>
+          <p class="tool-desc">Complete syllabi for UPSC, SSC, BPSC, Bihar Daroga, Railway, Banking, Defence and 50+ more exams with paper patterns.</p>
+          <div class="tool-stats">
+            <span class="tool-chip">📚 53+ Exams</span>
+            <span class="tool-chip">📄 100+ Papers</span>
+          </div>
+        </div>
+        <div class="tool-cta" style="color:#0891b2">Browse Syllabi →</div>
+      </a>
     </div>
-    <div class="eb-stats">
-      <div class="eb-stat"><strong>100+</strong><span>Tests</span></div>
-      <div class="eb-stat"><strong>10,000+</strong><span>Questions</span></div>
-      <div class="eb-stat"><strong>1000+</strong><span>GK Topics</span></div>
-    </div>
-    <div class="btn btn-white" style="flex-shrink:0">Open Portal →</div>
-  </a>
+  </div>
 </div>
 
 <!-- FOOTER -->
@@ -328,12 +383,6 @@ const SUBJECTS = [
     desc:'Daily national & international news, government schemes, awards and appointments.',
     color:'#d97706',darkBg:'rgba(217,119,6,.2)',lightBg:'#fffbeb',
     stats:[['Daily','Updates'],['National','& Global'],['GK','Bank']]
-  },
-  {
-    title:'Exam Updates',href:'Exam_Updates.html',icon:'📢',
-    desc:'Daily exam notifications, exam calendar, new job openings & results with official links.',
-    color:'#dc2626',darkBg:'rgba(220,38,38,.18)',lightBg:'#fef2f2',
-    stats:[['Daily','Refresh'],['Official','Links'],['Live','Feed']]
   },
   {
     title:'English Grammar',href:'english-grammar-mastery.html',icon:'📚',
@@ -389,12 +438,6 @@ const SUBJECTS = [
     color:'#0891b2',darkBg:'rgba(8,145,178,.18)',lightBg:'#ecfeff',
     stats:[['22','Topics'],['200+','Tricks'],['85+','Practice Qs']]
   },
-  {
-    title:'Syllabus Hub',href:'Syllabus.html',icon:'📋',
-    desc:'Complete syllabi for UPSC, SSC, BPSC, Bihar Daroga, Railway, Banking, Defence and 50+ more exams.',
-    color:'#dc2626',darkBg:'rgba(220,38,38,.18)',lightBg:'#fef2f2',
-    stats:[['53+','Exams'],['100+','Papers'],['All','Patterns']]
-  }
 ];
 
 function renderCards(){

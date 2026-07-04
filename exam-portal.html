@@ -4,10 +4,11 @@
 <meta name="description" content="100+ full-length mock tests for SSC GD/CGL/CHSL, Railway NTPC/Group D, Banking, Police and Defence exams — with detailed solutions and performance tracking.">
 <meta charset="UTF-8">
 <script>(function(){
-  var d=localStorage.getItem('darkMode')==='true'||localStorage.getItem('eps-theme')==='dark';
-  if(d)document.documentElement.classList.add('dark');
+  var t=localStorage.getItem('eps-theme');
+  if(!t&&localStorage.getItem('darkMode')==='true')t='dark';
+  if(t)document.documentElement.setAttribute('data-theme',t);
 })()</script>
-<style>html.dark body{background:#1a202c;color:#e2e8f0}</style>
+<style>[data-theme="dark"] body{background:#0f1117;color:#e2e8f0}</style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Complete Exam Prep System | SSC • Railway • Police • Banking</title>
 <style>
@@ -18,7 +19,7 @@
   --shadow:0 2px 8px rgba(0,0,0,.08);--shadow2:0 4px 20px rgba(0,0,0,.12);
   --radius:12px;--sidebar:260px;
 }
-body.dark {
+[data-theme="dark"] body {
   --bg:#0f1117;--surface:#1a1d2e;--surface2:#242736;--border:#2d3149;
   --text:#e2e8f0;--muted:#94a3b8;--shadow:0 2px 8px rgba(0,0,0,.4);
 }
@@ -212,7 +213,7 @@ input,select{font-family:inherit}
 
 /* ── MATH CHEAT SHEET STYLES (scoped) ────────────────────────── */
 :root{--cs-arith:linear-gradient(135deg,#e0f2fe,#fef3c7);--cs-alg:linear-gradient(135deg,#dcfce7,#ecfeff);--cs-geo:linear-gradient(135deg,#fae8ff,#fee2e2);--cs-data:linear-gradient(135deg,#ede9fe,#e0f2fe);}
-body.dark{--cs-arith:linear-gradient(135deg,rgba(14,116,144,.3),rgba(180,83,9,.3));--cs-alg:linear-gradient(135deg,rgba(22,101,52,.3),rgba(8,145,178,.3));--cs-geo:linear-gradient(135deg,rgba(126,34,206,.2),rgba(220,38,38,.2));--cs-data:linear-gradient(135deg,rgba(67,56,202,.2),rgba(14,165,233,.2));}
+[data-theme="dark"] body{--cs-arith:linear-gradient(135deg,rgba(14,116,144,.3),rgba(180,83,9,.3));--cs-alg:linear-gradient(135deg,rgba(22,101,52,.3),rgba(8,145,178,.3));--cs-geo:linear-gradient(135deg,rgba(126,34,206,.2),rgba(220,38,38,.2));--cs-data:linear-gradient(135deg,rgba(67,56,202,.2),rgba(14,165,233,.2));}
 .topic-arithmetic{background:var(--cs-arith)}.topic-algebra{background:var(--cs-alg)}.topic-geometry{background:var(--cs-geo)}.topic-data{background:var(--cs-data)}
 .topic-panel{border:1px solid var(--border);border-radius:14px;margin-bottom:12px;overflow:hidden;transition:box-shadow .2s}
 .topic-panel:hover{box-shadow:var(--shadow2)}
@@ -273,20 +274,20 @@ body.dark{--cs-arith:linear-gradient(135deg,rgba(14,116,144,.3),rgba(180,83,9,.3
 .cs-table tr:nth-child(even) td{background:var(--bg)}
 
 /* ── DARK MODE overrides for cheat sheet panels ── */
-body.dark .topic-arithmetic{background:var(--cs-arith)}
-body.dark .topic-algebra{background:var(--cs-alg)}
-body.dark .topic-geometry{background:var(--cs-geo)}
-body.dark .topic-data{background:var(--cs-data)}
-body.dark .tip-card{background:rgba(22,163,74,.1);border-color:rgba(22,163,74,.25)}
-body.dark .warn-card{background:rgba(220,38,38,.1);border-color:rgba(220,38,38,.25)}
-body.dark .hinglish-note{background:rgba(245,158,11,.12);border-color:rgba(245,158,11,.25)}
-body.dark .exam-zone-card{background:linear-gradient(135deg,var(--surface),var(--surface2))}
-body.dark .revision-card{background:var(--surface)}
-body.dark #page-mathcheat input,
-body.dark #page-mathcheat select{background:var(--surface2);color:var(--text);border-color:var(--border)}
-body.dark .cs-panel{background:var(--surface)}
-body.dark .trick-item{background:var(--surface2)}
-body.dark .ultra-item{border-color:var(--border)}
+[data-theme="dark"] .topic-arithmetic{background:var(--cs-arith)}
+[data-theme="dark"] .topic-algebra{background:var(--cs-alg)}
+[data-theme="dark"] .topic-geometry{background:var(--cs-geo)}
+[data-theme="dark"] .topic-data{background:var(--cs-data)}
+[data-theme="dark"] .tip-card{background:rgba(22,163,74,.1);border-color:rgba(22,163,74,.25)}
+[data-theme="dark"] .warn-card{background:rgba(220,38,38,.1);border-color:rgba(220,38,38,.25)}
+[data-theme="dark"] .hinglish-note{background:rgba(245,158,11,.12);border-color:rgba(245,158,11,.25)}
+[data-theme="dark"] .exam-zone-card{background:linear-gradient(135deg,var(--surface),var(--surface2))}
+[data-theme="dark"] .revision-card{background:var(--surface)}
+[data-theme="dark"] #page-mathcheat input,
+[data-theme="dark"] #page-mathcheat select{background:var(--surface2);color:var(--text);border-color:var(--border)}
+[data-theme="dark"] .cs-panel{background:var(--surface)}
+[data-theme="dark"] .trick-item{background:var(--surface2)}
+[data-theme="dark"] .ultra-item{border-color:var(--border)}
 
 /* PRINT */
 @media print{
@@ -455,10 +456,10 @@ body.dark .ultra-item{border-color:var(--border)}
 .pyq-tag-year{background:#dcfce7;color:#166534}
 .pyq-tag-subj{background:#fef3c7;color:#92400e}
 .pyq-tag-diff{background:#fee2e2;color:#991b1b}
-body.dark .pyq-tag-exam{background:rgba(79,70,229,.2);color:#a5b4fc}
-body.dark .pyq-tag-year{background:rgba(22,163,74,.2);color:#86efac}
-body.dark .pyq-tag-subj{background:rgba(217,119,6,.2);color:#fcd34d}
-body.dark .pyq-tag-diff{background:rgba(220,38,38,.2);color:#fca5a5}
+[data-theme="dark"] .pyq-tag-exam{background:rgba(79,70,229,.2);color:#a5b4fc}
+[data-theme="dark"] .pyq-tag-year{background:rgba(22,163,74,.2);color:#86efac}
+[data-theme="dark"] .pyq-tag-subj{background:rgba(217,119,6,.2);color:#fcd34d}
+[data-theme="dark"] .pyq-tag-diff{background:rgba(220,38,38,.2);color:#fca5a5}
 .pyq-q-text{font-size:.9rem;font-weight:500;color:var(--text);line-height:1.5}
 .pyq-q-arrow{font-size:.9rem;color:var(--muted);flex-shrink:0;transition:transform .2s;margin-top:6px}
 .pyq-q-item.open .pyq-q-arrow{transform:rotate(90deg)}
@@ -605,6 +606,7 @@ body.dark .pyq-tag-diff{background:rgba(220,38,38,.2);color:#fca5a5}
     <h1 id="page-title">Dashboard</h1>
     <div class="page-links">
       <a href="index.html">🏠 Home</a>
+      <a href="exam-portal.html" class="current">🎯 Exam Portal</a>
       <a href="Science.html">🔬 Science</a>
       <a href="Computer.html">💻 Computer</a>
       <a href="Current_Affairs.html">📰 Current Affairs</a>
@@ -3400,8 +3402,9 @@ if(_savedCsLang){csLang=_savedCsLang;if(document.getElementById('cs-en-btn')){do
 // ── APPLICATION STATE ─────────────────────────────────────────────
 let currentTestNum=0,currentTest=[],userAnswers={},markedQs=new Set(),currentQ=0,timerInterval=null,timeLeft=5400,testStartTime=null,testSubmitted=false,currentSubjectFilter='all',currentPage='home',darkMode=false;
 const progress=JSON.parse(localStorage.getItem('examProgress')||'{}');
-const savedDark=localStorage.getItem('darkMode')||(localStorage.getItem('eps-theme')==='dark'?'true':null);
-if(savedDark==='true'){document.body.classList.add('dark');darkMode=true;document.getElementById('dark-label').textContent='Light Mode';}
+const savedTheme=localStorage.getItem('eps-theme')||(localStorage.getItem('darkMode')==='true'?'dark':null);
+darkMode=savedTheme==='dark';
+if(darkMode){document.documentElement.setAttribute('data-theme','dark');document.getElementById('dark-label').textContent='Light Mode';}
 
 // ── SEEDED RNG ────────────────────────────────────────────────────
 function seededRNG(seed){let s=seed;return()=>{s=(s*1664525+1013904223)&0xffffffff;return(s>>>0)/0xffffffff;};}
@@ -3459,7 +3462,7 @@ function showPage(page){
 }
 function toggleSidebar(){document.getElementById('sidebar').classList.toggle('open');}
 function closeSidebar(){if(window.innerWidth<=900)document.getElementById('sidebar').classList.remove('open');}
-function toggleDark(){darkMode=!darkMode;document.body.classList.toggle('dark',darkMode);localStorage.setItem('darkMode',darkMode);localStorage.setItem('eps-theme',darkMode?'dark':'light');document.getElementById('dark-label').textContent=darkMode?'Light Mode':'Dark Mode';}
+function toggleDark(){darkMode=!darkMode;document.documentElement.setAttribute('data-theme',darkMode?'dark':'light');localStorage.setItem('eps-theme',darkMode?'dark':'light');document.getElementById('dark-label').textContent=darkMode?'Light Mode':'Dark Mode';}
 
 // ── HOME DASHBOARD ────────────────────────────────────────────────
 function updateHomeDashboard(){
