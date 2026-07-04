@@ -3424,7 +3424,7 @@ function showPage(page){
   if(el){el.classList.add('active');}
   document.querySelectorAll('.nav-item[data-page]').forEach(b=>{if(b.dataset.page===page)b.classList.add('active');});
   currentPage=page;
-  const titles={home:'Dashboard',tests:'Mock Tests',progress:'My Progress',formulas:'Formula Sheet',shortcuts:'Top 200 Shortcuts',gk:'GK One-Liners',mathcheat:'Math Cheat Sheet — All 26 Topics',fasttricks:'⚡ 50 Fast Tricks',lastday:'📅 Last Day Revision',ultrafast:'🚀 Ultra Fast Revision',examzones:'🎯 Exam Formula Zones',memorytables:'📊 Memory Tables',pyq:'📂 Previous Year Questions'};
+  const titles={home:'Dashboard',tests:'Mock Tests',progress:'My Progress',formulas:'Formula Sheet',shortcuts:'Top 200 Shortcuts',gk:'GK One-Liners',mathcheat:'Math Cheat Sheet — All 26 Topics',fasttricks:'⚡ 50 Fast Tricks',lastday:'📅 Last Day Revision',ultrafast:'🚀 Ultra Fast Revision',examzones:'🎯 Exam Formula Zones',memorytables:'📊 Memory Tables',pyq:'📂 Previous Year Questions',mistakes:'📕 Mistake Book',weakareas:'⚠️ Weak Areas',timedrill:'⏱️ Timed Drill',bookmarks:'🔖 Bookmarks'};
   document.getElementById('page-title').textContent=titles[page]||page;
   // Show/hide language switcher for math cheat sheet pages
   const mathPages=['mathcheat','fasttricks','lastday','ultrafast','examzones','memorytables'];
@@ -3966,7 +3966,7 @@ function renderSolutionQuestion(){
       <button class="btn btn-secondary" onclick="prevSol()">← Prev</button>
       <button class="btn btn-primary" onclick="nextSol()">Next →</button>
       <button class="btn btn-secondary" onclick="closeResults()">📊 Progress</button>
-      <button class="bm-btn ${isBookmarked(q.id)?'saved':''}" onclick="toggleBookmark(${JSON.stringify(q)},this)" title="Bookmark this question">${isBookmarked(q.id)?'🔖':'🏷️'}</button>
+      <button class="bm-btn ${isBookmarked(q.id)?'saved':''}" onclick="toggleBookmarkCurrent(this)" data-qid="${q.id}" title="Bookmark this question">${isBookmarked(q.id)?'🔖':'🏷️'}</button>
     </div>`;
   renderQPGrid();
 }
@@ -6986,6 +6986,11 @@ function tdShowResult(){
 function getBookmarks(){return JSON.parse(localStorage.getItem('eps-bookmarks')||'[]');}
 function saveBookmarks(bm){localStorage.setItem('eps-bookmarks',JSON.stringify(bm));}
 function isBookmarked(id){return getBookmarks().some(b=>b.id===id);}
+function toggleBookmarkCurrent(btn){
+  const q=currentTest[currentQ];
+  if(!q)return;
+  toggleBookmark(q,btn);
+}
 function toggleBookmark(q,btn){
   let bm=getBookmarks();
   const idx=bm.findIndex(b=>b.id===q.id);
@@ -7031,6 +7036,7 @@ function clearAllBookmarks(){
 }
 
 // ── INIT ──────────────────────────────────────────────────────────
+recordStudyDay(); // count today as a study day just by opening the portal
 updateHomeDashboard();
 
 // Mark current page in cross-page navigation
