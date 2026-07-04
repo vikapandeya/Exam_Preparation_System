@@ -1053,6 +1053,7 @@ function showPage(id){document.querySelectorAll('.page').forEach(function(p){p.c
 function showPageById(id){document.querySelectorAll('.page').forEach(function(p){p.classList.remove('active');});document.querySelectorAll('.sb-item').forEach(function(i){i.classList.remove('active');});var pg=document.getElementById('pg-'+id);if(pg)pg.classList.add('active');var sb=document.querySelector('[onclick="showPage(\''+id+'\')"]');if(sb){sb.classList.add('active');}window.scrollTo({top:0,behavior:'smooth'});}
 (function(){var p=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.page-links a').forEach(function(a){if(a.getAttribute('href')===p)a.classList.add('current');});})();
 (function(){var b=document.getElementById('btt');window.addEventListener('scroll',function(){if(b)b.classList.toggle('show',window.scrollY>400);},false);})();
+(function(){if(window.innerWidth<=768){var sb=document.getElementById('sidebar');if(sb)sb.classList.add('closed');}})();
 </script>
 </body>
 </html>
