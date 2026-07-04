@@ -2245,11 +2245,11 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
 <script>
 // ---- THEME ----
 function toggleTheme(){
-  const b=document.body,ic=document.getElementById('themeIcon');
-  if(b.dataset.theme==='dark'){b.removeAttribute('data-theme');ic.className='fas fa-moon';localStorage.setItem('eps-theme','light')}
-  else{b.dataset.theme='dark';ic.className='fas fa-sun';localStorage.setItem('eps-theme','dark')}
+  const r=document.documentElement,ic=document.getElementById('themeIcon');
+  if(r.getAttribute('data-theme')==='dark'){r.removeAttribute('data-theme');if(ic)ic.className='fas fa-moon';localStorage.setItem('eps-theme','light')}
+  else{r.setAttribute('data-theme','dark');if(ic)ic.className='fas fa-sun';localStorage.setItem('eps-theme','dark')}
 }
-(function(){const t=localStorage.getItem('eps-theme');if(t==='dark'){document.body.dataset.theme='dark';const ic=document.getElementById('themeIcon');if(ic)ic.className='fas fa-sun'}})();
+(function(){const t=localStorage.getItem('eps-theme');if(t==='dark'){document.documentElement.setAttribute('data-theme','dark');const ic=document.getElementById('themeIcon');if(ic)ic.className='fas fa-sun'}})();
 
 // ---- MOBILE MENU ----
 function toggleMob(){document.getElementById('mobMenu').classList.toggle('open')}

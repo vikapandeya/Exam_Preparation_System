@@ -215,7 +215,7 @@ kbd{display:inline-block;background:var(--surface2);border:1px solid var(--borde
     <span class="brand-icon">🎯</span>
     <span class="brand-text">Exam Prep System</span>
   </div>
-  <span style="font-size:.72rem;color:rgba(255,255,255,.6);margin-left:.25rem">by <strong style="color:rgba(255,255,255,.9)">Vikash Pandey</strong></span>
+  <span style="font-size:.72rem;color:var(--muted);margin-left:.25rem">by <strong style="color:var(--text2)">Vikash Pandey</strong></span>
   <div class="topbar-right">
     <button id="themeBtn" aria-label="Toggle dark mode">🌙</button>
   </div>
@@ -430,13 +430,17 @@ function qsRender(items){
       <div><div class="qs-item-name">${it.name}</div><div class="qs-item-desc">${it.desc}</div></div>
     </a>`).join('');
 }
-document.getElementById('qs-input').addEventListener('input', e=>{
-  const q = e.target.value.toLowerCase();
-  qsActive=-1;
-  qsRender(q ? QS_ITEMS.filter(it=>(it.name+it.desc).toLowerCase().includes(q)) : QS_ITEMS);
-});
-document.getElementById('qs-overlay').addEventListener('click', e=>{
-  if(e.target===document.getElementById('qs-overlay')) qsClose();
+document.addEventListener('DOMContentLoaded',()=>{
+  document.getElementById('qs-input').addEventListener('input', e=>{
+    const q = e.target.value.toLowerCase();
+    qsActive=-1;
+    qsRender(q ? QS_ITEMS.filter(it=>(it.name+it.desc).toLowerCase().includes(q)) : QS_ITEMS);
+  });
+  document.getElementById('qs-overlay').addEventListener('click', e=>{
+    if(e.target===document.getElementById('qs-overlay')) qsClose();
+  });
+  var b=document.getElementById("btt");
+  window.addEventListener("scroll",function(){if(b)b.classList.toggle("show",window.scrollY>300);});
 });
 document.addEventListener('keydown', e=>{
   if((e.ctrlKey||e.metaKey)&&e.key==='k'){e.preventDefault();qsOpen();return;}
@@ -463,8 +467,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     tb.insertBefore(hint,tb.firstChild);
   }
 });
-
-(function(){var b=document.getElementById("btt");window.addEventListener("scroll",function(){if(b)b.classList.toggle("show",window.scrollY>300);});})()
 /* Active link */
 (function(){
   const p = location.pathname.split('/').pop()||'index.html';

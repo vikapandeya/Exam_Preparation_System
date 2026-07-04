@@ -1242,10 +1242,11 @@ renderAll();
 </footer>
 <button id="btt" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
-// Back to top
+<script>
 (function(){
   var b=document.getElementById('btt');
   window.addEventListener('scroll',function(){if(b)b.classList.toggle('show',window.scrollY>400);});
 })();
+</script>
 </body>
 </html>

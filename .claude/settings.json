@@ -7,7 +7,17 @@
       "Read(//usr/**)",
       "Read(//workspaces/**)",
       "Read(//tmp/css_audit2/**)",
-      "Read(//tmp/redesign/**)"
+      "Read(//tmp/redesign/**)",
+      "Read(//tmp/qa_run/**)",
+      "Bash(git add *)",
+      "Bash(python3)",
+      "Bash(git push *)",
+      "Bash(python3 scripts/update_ca.py)",
+      "Bash(sed -i \"s/channel = root.find\\('channel'\\) or root/channel = root.find\\('channel'\\); channel = channel if channel is not None else root/\" /workspaces/Exam_Preparation_System/scripts/update_ca.py *)",
+      "Bash(git commit *)"
+    ],
+    "additionalDirectories": [
+      "/workspaces/Exam_Preparation_System/scripts"
     ]
   }
 }
