@@ -379,6 +379,25 @@ ul.styled li::before{content:'\f058';font-family:'Font Awesome 6 Free';font-weig
 @keyframes spin{to{transform:rotate(360deg)}}
 .ide-preview-frame{width:100%;border:none;min-height:360px;background:#fff;display:block}
 kbd{display:inline-block;padding:2px 7px;border-radius:5px;border:1px solid var(--border);background:var(--bg2);font-family:'Fira Code',monospace;font-size:.78rem;color:var(--text)}
+/* Mobile Sidebar */
+#mob-sidebar{position:fixed;top:0;left:0;height:100vh;width:280px;background:var(--card-bg,#1a1a2e);z-index:9999;transform:translateX(-100%);transition:transform .3s ease;overflow-y:auto;padding:16px 0 40px;box-shadow:4px 0 20px rgba(0,0,0,.4);}
+[data-theme="dark"] #mob-sidebar{background:#0f172a;}
+[data-theme="light"] #mob-sidebar{background:#1a1a2e;}
+#mob-sidebar.open{transform:translateX(0);}
+#mob-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:9998;}
+#mob-overlay.show{display:block;}
+.mob-sb-header{padding:12px 16px 16px;border-bottom:1px solid rgba(255,255,255,.1);margin-bottom:8px;}
+.mob-sb-logo{font-size:1rem;font-weight:700;color:#60a5fa;}
+.mob-sb-close{float:right;background:none;border:none;color:rgba(255,255,255,.7);font-size:1.3rem;cursor:pointer;padding:0;}
+.mob-sb-section{padding:4px 0;}
+.mob-sb-heading{padding:8px 16px 4px;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.4);}
+.mob-sb-link{display:flex;align-items:center;gap:8px;padding:9px 16px;font-size:.82rem;color:rgba(255,255,255,.8);text-decoration:none;cursor:pointer;transition:background .15s;}
+.mob-sb-link:hover{background:rgba(255,255,255,.08);}
+.mob-sb-link.active{background:rgba(96,165,250,.2);color:#60a5fa;}
+@media(max-width:768px){
+  .mob-ham-btn{display:flex!important;}
+}
+.mob-ham-btn{display:none;align-items:center;justify-content:center;background:none;border:none;color:inherit;font-size:1.4rem;cursor:pointer;padding:4px 8px;margin-right:4px;}
 </style>
 <script>(function(){var t=localStorage.getItem('eps-theme');if(t)document.documentElement.setAttribute('data-theme',t);})()</script>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
@@ -389,6 +408,62 @@ kbd{display:inline-block;padding:2px 7px;border-radius:5px;border:1px solid var(
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 </head>
 <body>
+<!-- Mobile Sidebar -->
+<div id="mob-overlay" onclick="closeMobSidebar()"></div>
+<nav id="mob-sidebar">
+  <div class="mob-sb-header">
+    <span class="mob-sb-logo">💻 Computer Science</span>
+    <button class="mob-sb-close" onclick="closeMobSidebar()">✕</button>
+  </div>
+  <div class="mob-sb-section">
+    <div class="mob-sb-heading">Getting Started</div>
+    <a class="mob-sb-link" onclick="mobNav('intro')">🏠 Introduction</a>
+    <a class="mob-sb-link" onclick="mobNav('fundamentals')">📐 Fundamentals</a>
+    <a class="mob-sb-link" onclick="mobNav('hardware')">🖥️ Hardware</a>
+    <a class="mob-sb-link" onclick="mobNav('software')">💿 Software</a>
+    <a class="mob-sb-link" onclick="mobNav('os')">⚙️ Operating Systems</a>
+  </div>
+  <div class="mob-sb-section">
+    <div class="mob-sb-heading">Networking &amp; Security</div>
+    <a class="mob-sb-link" onclick="mobNav('networking')">🌐 Networking</a>
+    <a class="mob-sb-link" onclick="mobNav('security')">🔒 Security</a>
+    <a class="mob-sb-link" onclick="mobNav('internet')">🌍 Internet</a>
+  </div>
+  <div class="mob-sb-section">
+    <div class="mob-sb-heading">Programming</div>
+    <a class="mob-sb-link" onclick="mobNav('programming')">💻 Programming</a>
+    <a class="mob-sb-link" onclick="mobNav('git')">🔀 Git &amp; Version Control</a>
+    <a class="mob-sb-link" onclick="mobNav('webdev')">🕸️ Web Development</a>
+    <a class="mob-sb-link" onclick="mobNav('database')">🗄️ Database</a>
+    <a class="mob-sb-link" onclick="mobNav('ide')">🛠️ IDE &amp; Tools</a>
+  </div>
+  <div class="mob-sb-section">
+    <div class="mob-sb-heading">Advanced Topics</div>
+    <a class="mob-sb-link" onclick="mobNav('cloud')">☁️ Cloud Computing</a>
+    <a class="mob-sb-link" onclick="mobNav('ai')">🤖 AI &amp; Machine Learning</a>
+    <a class="mob-sb-link" onclick="mobNav('datascience')">📊 Data Science</a>
+  </div>
+  <div class="mob-sb-section">
+    <div class="mob-sb-heading">Applications</div>
+    <a class="mob-sb-link" onclick="mobNav('msoffice')">📝 MS Office</a>
+    <a class="mob-sb-link" onclick="mobNav('filemanagement')">📁 File Management</a>
+    <a class="mob-sb-link" onclick="mobNav('maintenance')">🔧 Maintenance</a>
+  </div>
+  <div class="mob-sb-section">
+    <div class="mob-sb-heading">Exam Prep</div>
+    <a class="mob-sb-link" onclick="mobNav('quiz')">🧩 Quiz</a>
+    <a class="mob-sb-link" onclick="mobNav('interview')">🎤 Interview Prep</a>
+    <a class="mob-sb-link" onclick="mobNav('shortcuts')">⚡ Shortcuts</a>
+    <a class="mob-sb-link" onclick="mobNav('glossary')">📖 Glossary</a>
+    <a class="mob-sb-link" onclick="mobNav('roadmap')">🗺️ Roadmap</a>
+    <a class="mob-sb-link" onclick="mobNav('tests')">📋 Practice Tests</a>
+  </div>
+  <div class="mob-sb-section">
+    <div class="mob-sb-heading">Navigation</div>
+    <a class="mob-sb-link" href="index.html">🏠 Home</a>
+    <a class="mob-sb-link" href="exam-portal.html">📝 Mock Tests</a>
+  </div>
+</nav>
 
 <!-- PROGRESS BAR -->
 <div id="progress-bar" style="width:0%"></div>
@@ -437,6 +512,7 @@ kbd{display:inline-block;padding:2px 7px;border-radius:5px;border:1px solid var(
     <a href="#dashboard" class="nav-btn">Dashboard</a>
   </div>
   <button id="theme-toggle" title="Toggle theme"><i class="fas fa-moon"></i></button>
+  <button class="mob-ham-btn" onclick="openMobSidebar()" aria-label="Open menu">☰</button>
   <button id="hamburger" aria-label="Toggle navigation menu"><i class="fas fa-bars"></i></button>
 </nav>
 <div id="sub-nav">
@@ -3934,6 +4010,11 @@ function escIde(s) {
 
 // Mark current page in cross-page navigation
 (function(){var p=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.page-links a').forEach(function(a){if(a.getAttribute('href')===p)a.classList.add('current');});})();
+
+// Mobile sidebar
+function openMobSidebar(){document.getElementById('mob-sidebar').classList.add('open');document.getElementById('mob-overlay').classList.add('show');document.body.style.overflow='hidden';}
+function closeMobSidebar(){document.getElementById('mob-sidebar').classList.remove('open');document.getElementById('mob-overlay').classList.remove('show');document.body.style.overflow='';}
+function mobNav(id){var el=document.getElementById(id);if(el){el.scrollIntoView({behavior:'smooth',block:'start'});}else{var sec=document.querySelector('section[data-section="'+id+'"],#sec-'+id+',div[data-id="'+id+'"]');if(sec)sec.scrollIntoView({behavior:'smooth'});}closeMobSidebar();}
 </script>
 </body>
 </html>

@@ -301,6 +301,11 @@ kbd{display:inline-block;background:var(--surface2);border:1px solid var(--borde
 <footer>
   <div class="foot-brand">🎯 Exam Preparation System</div>
   <p>© 2026 Exam Prep System · Built by <a href="#">Vikash Pandey</a> &nbsp;·&nbsp; SSC GD &nbsp;·&nbsp; SSC CGL &nbsp;·&nbsp; Railway NTPC &nbsp;·&nbsp; Group D &nbsp;·&nbsp; State Police &nbsp;·&nbsp; CET &nbsp;·&nbsp; Banking</p>
+  <div style="margin-top:1rem;display:inline-flex;align-items:center;gap:.5rem;background:var(--surface2,rgba(0,0,0,.06));border:1px solid var(--border);border-radius:999px;padding:.35rem .9rem;font-size:.78rem;color:var(--text2);">
+    <span style="font-size:.95rem;">👁️</span>
+    <span>Website Visits:</span>
+    <strong id="visit-count" style="color:var(--brand);font-size:.9rem;">—</strong>
+  </div>
 </footer>
 
 <script>
@@ -529,6 +534,16 @@ document.addEventListener('DOMContentLoaded',()=>{
   document.querySelectorAll('.page-links a').forEach(a=>{
     if(a.getAttribute('href')===p) a.classList.add('current');
   });
+})();
+
+// Visit counter
+(function(){
+  var SEED=15000,COUNT_KEY='eps_vc',LAST_KEY='eps_vl',el=document.getElementById('visit-count');
+  var count=parseInt(localStorage.getItem(COUNT_KEY)||SEED,10);
+  var last=parseInt(localStorage.getItem(LAST_KEY)||0,10);
+  var now=Date.now();
+  if(now-last>3600000){count++;localStorage.setItem(COUNT_KEY,count);localStorage.setItem(LAST_KEY,now);}
+  if(el)el.textContent=count.toLocaleString('en-IN');
 })();
 </script>
 

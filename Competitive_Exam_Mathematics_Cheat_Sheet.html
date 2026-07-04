@@ -856,6 +856,23 @@
         display: block !important;
       }
     }
+
+    /* ── Mobile sidebar drawer ── */
+    @media(max-width:768px){
+      .toc{position:fixed!important;top:0;left:0;height:100vh!important;width:280px;z-index:9999;transform:translateX(-100%);transition:transform .3s ease;overflow-y:auto;background:var(--surface,#fff);box-shadow:4px 0 20px rgba(0,0,0,.2);padding-bottom:40px;border-right:none;border-bottom:none;}
+      .toc.mob-open{transform:translateX(0)!important;}
+      .toc .page-links{display:flex!important;flex-direction:column;gap:0;}
+      .toc .page-links a{padding:10px 16px;border-radius:0;border-bottom:1px solid rgba(0,0,0,.06);font-size:.82rem;color:var(--text,#1e293b);text-decoration:none;white-space:normal;}
+      .toc .page-links a:hover{background:rgba(0,0,0,.04);}
+      #mob-topnav{display:none!important;}
+    }
+    #math-mob-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:9998;}
+    #math-mob-overlay.show{display:block;}
+    .math-ham-btn{display:none;align-items:center;justify-content:center;padding:6px 10px;background:none;border:none;font-size:1.4rem;cursor:pointer;color:inherit;line-height:1;}
+    @media(max-width:768px){.math-ham-btn{display:flex!important;}}
+    .toc-mob-hd{display:none;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:2px solid rgba(0,0,0,.1);background:linear-gradient(135deg,#1e40af,#3b82f6);color:#fff;flex-shrink:0;}
+    @media(max-width:768px){.toc-mob-hd{display:flex!important;}}
+    .toc-mob-close{background:none;border:none;color:#fff;font-size:1.2rem;cursor:pointer;line-height:1;}
   </style>
 <script>(function(){var t=localStorage.getItem("eps-theme");if(t==="dark"){document.documentElement.classList.add("dark");document.documentElement.setAttribute("data-theme","dark");}})()</script>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
@@ -866,7 +883,9 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 </head>
 <body>
+<div id="math-mob-overlay" onclick="closeMathSidebar()"></div>
 <header id="site-header">
+  <button class="math-ham-btn" onclick="openMathSidebar()" aria-label="Open topics">☰</button>
   <div class="sh-brand">🧮 Mathematics Mastery</div>
   <span class="sh-by">by <strong>Vikash Pandey</strong></span>
 </header>
@@ -888,6 +907,10 @@
   </div>
   <div class="app">
     <aside class="toc">
+      <div class="toc-mob-hd">
+        <span style="font-size:.9rem;font-weight:700;">📐 Math Topics</span>
+        <button class="toc-mob-close" onclick="closeMathSidebar()">✕</button>
+      </div>
       <div class="brand">
         <h1>Competitive Exam Mathematics Cheat Sheet</h1>
         <p>Single-file revision guide for SSC, Railway, Banking, CDS, NDA, State PCS, CET, Police, and aptitude exams.</p>
@@ -3654,6 +3677,11 @@
   var b=document.getElementById('btt');
   window.addEventListener('scroll',function(){if(b)b.classList.toggle('show',window.scrollY>400);});
 })();
+</script>
+<script>
+function openMathSidebar(){var t=document.querySelector('.toc');var o=document.getElementById('math-mob-overlay');if(t)t.classList.add('mob-open');if(o)o.classList.add('show');document.body.style.overflow='hidden';}
+function closeMathSidebar(){var t=document.querySelector('.toc');var o=document.getElementById('math-mob-overlay');if(t)t.classList.remove('mob-open');if(o)o.classList.remove('show');document.body.style.overflow='';}
+(function(){document.querySelectorAll('.toc a, .toc .page-links a').forEach(function(a){a.addEventListener('click',function(){if(window.innerWidth<=768)closeMathSidebar();});});})();
 </script>
 </body>
 </html>

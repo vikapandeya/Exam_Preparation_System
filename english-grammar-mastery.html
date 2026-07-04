@@ -224,6 +224,25 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
 .pron-word{font-size:1rem;font-weight:700;color:var(--primary)}
 .pron-ipa{color:var(--text2);font-style:italic;margin:.1rem 0}
 .pron-tip{color:var(--text);font-size:.8rem}
+/* Mobile Sidebar Drawer */
+#eng-mob-sb{position:fixed;top:0;left:0;height:100vh;width:280px;background:#fff;border-right:2px solid #e5e7eb;z-index:9999;transform:translateX(-100%);transition:transform .3s ease;overflow-y:auto;padding:0 0 40px;}
+[data-theme="dark"] #eng-mob-sb{background:#1e293b;border-color:#334155;}
+#eng-mob-sb.open{transform:translateX(0);}
+#eng-mob-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:9998;}
+#eng-mob-overlay.show{display:block;}
+.eng-sb-hd{display:flex;align-items:center;justify-content:space-between;padding:16px;border-bottom:2px solid #e5e7eb;background:linear-gradient(135deg,#7c3aed,#2563eb);color:#fff;}
+[data-theme="dark"] .eng-sb-hd{border-color:#334155;}
+.eng-sb-title{font-size:.95rem;font-weight:700;}
+.eng-sb-close{background:none;border:none;color:rgba(255,255,255,.8);font-size:1.2rem;cursor:pointer;}
+.eng-sb-grp{padding:6px 0;border-bottom:1px solid #f3f4f6;}
+[data-theme="dark"] .eng-sb-grp{border-color:#334155;}
+.eng-sb-gh{padding:8px 16px 3px;font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#7c3aed;}
+.eng-sb-lnk{display:block;padding:9px 16px 9px 24px;font-size:.82rem;color:#374151;text-decoration:none;border-left:3px solid transparent;transition:all .15s;}
+[data-theme="dark"] .eng-sb-lnk{color:#cbd5e1;}
+.eng-sb-lnk:hover{background:#eff6ff;color:#2563eb;border-left-color:#2563eb;}
+[data-theme="dark"] .eng-sb-lnk:hover{background:rgba(37,99,235,.15);}
+@media(max-width:768px){.eng-ham-btn{display:flex!important;}}
+.eng-ham-btn{display:none;align-items:center;justify-content:center;width:36px;height:36px;background:none;border:none;font-size:1.3rem;cursor:pointer;border-radius:8px;color:var(--text);}
 </style>
 <script>(function(){var t=localStorage.getItem('eps-theme');if(t==='dark')document.documentElement.setAttribute('data-theme','dark');})()</script>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
@@ -234,6 +253,59 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 </head>
 <body>
+<div id="eng-mob-overlay" onclick="closeEngSidebar()"></div>
+<nav id="eng-mob-sb" aria-label="Topics Navigation">
+  <div class="eng-sb-hd">
+    <span class="eng-sb-title">📘 English Grammar</span>
+    <button class="eng-sb-close" onclick="closeEngSidebar()">✕</button>
+  </div>
+  <div class="eng-sb-grp">
+    <div class="eng-sb-gh">Core Grammar</div>
+    <a class="eng-sb-lnk" href="#pos" onclick="closeEngSidebar()">🧩 Parts of Speech</a>
+    <a class="eng-sb-lnk" href="#tenses" onclick="closeEngSidebar()">⏱️ Tenses (All 12)</a>
+    <a class="eng-sb-lnk" href="#articles" onclick="closeEngSidebar()">📝 Articles (A/An/The)</a>
+    <a class="eng-sb-lnk" href="#sva" onclick="closeEngSidebar()">🔗 Subject-Verb Agreement</a>
+    <a class="eng-sb-lnk" href="#modals" onclick="closeEngSidebar()">🔑 Modals</a>
+    <a class="eng-sb-lnk" href="#conditionals" onclick="closeEngSidebar()">❓ Conditionals</a>
+    <a class="eng-sb-lnk" href="#clauses" onclick="closeEngSidebar()">📌 Clauses</a>
+    <a class="eng-sb-lnk" href="#punctuation" onclick="closeEngSidebar()">✏️ Punctuation</a>
+  </div>
+  <div class="eng-sb-grp">
+    <div class="eng-sb-gh">Transformation</div>
+    <a class="eng-sb-lnk" href="#voice" onclick="closeEngSidebar()">🔄 Active &amp; Passive Voice</a>
+    <a class="eng-sb-lnk" href="#speech" onclick="closeEngSidebar()">💬 Direct &amp; Indirect Speech</a>
+    <a class="eng-sb-lnk" href="#sentences" onclick="closeEngSidebar()">↔️ Sentence Types</a>
+    <a class="eng-sb-lnk" href="#narrations" onclick="closeEngSidebar()">📢 Narrations</a>
+  </div>
+  <div class="eng-sb-grp">
+    <div class="eng-sb-gh">Vocabulary</div>
+    <a class="eng-sb-lnk" href="#vocabulary" onclick="closeEngSidebar()">⚡ Word Power</a>
+    <a class="eng-sb-lnk" href="#synonyms" onclick="closeEngSidebar()">📖 Synonyms</a>
+    <a class="eng-sb-lnk" href="#antonyms" onclick="closeEngSidebar()">🔁 Antonyms</a>
+    <a class="eng-sb-lnk" href="#idioms" onclick="closeEngSidebar()">🎭 Idioms &amp; Phrases</a>
+    <a class="eng-sb-lnk" href="#phrasal" onclick="closeEngSidebar()">🔀 Phrasal Verbs</a>
+    <a class="eng-sb-lnk" href="#oneword" onclick="closeEngSidebar()">💡 One-Word Substitution</a>
+    <a class="eng-sb-lnk" href="#confused" onclick="closeEngSidebar()">🤔 Confused Words</a>
+    <a class="eng-sb-lnk" href="#spelling" onclick="closeEngSidebar()">✅ Spellings</a>
+    <a class="eng-sb-lnk" href="#dictionary" onclick="closeEngSidebar()">📚 Dictionary</a>
+  </div>
+  <div class="eng-sb-grp">
+    <div class="eng-sb-gh">Exam Practice</div>
+    <a class="eng-sb-lnk" href="#errors" onclick="closeEngSidebar()">🔍 Error Detection</a>
+    <a class="eng-sb-lnk" href="#comprehension" onclick="closeEngSidebar()">📄 Reading Comprehension</a>
+    <a class="eng-sb-lnk" href="#writing" onclick="closeEngSidebar()">✍️ Writing Skills</a>
+    <a class="eng-sb-lnk" href="#spoken" onclick="closeEngSidebar()">🗣️ Spoken English</a>
+    <a class="eng-sb-lnk" href="#tests" onclick="closeEngSidebar()">📋 Practice Tests</a>
+  </div>
+  <div class="eng-sb-grp">
+    <div class="eng-sb-gh">Quick Reference</div>
+    <a class="eng-sb-lnk" href="#quiz" onclick="closeEngSidebar()">🧪 Grammar Quiz</a>
+    <a class="eng-sb-lnk" href="#quickref" onclick="closeEngSidebar()">📑 Quick Ref</a>
+    <a class="eng-sb-lnk" href="#dashboard" onclick="closeEngSidebar()">📊 Dashboard</a>
+    <a class="eng-sb-lnk" href="index.html">🏠 Home</a>
+    <a class="eng-sb-lnk" href="exam-portal.html">📝 Mock Tests</a>
+  </div>
+</nav>
 <div id="read-progress"></div>
 <!-- ======== NAVBAR ======== -->
 <nav class="navbar">
@@ -272,6 +344,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
     </ul>
     <div class="nav-right">
       <button class="btn-theme" onclick="toggleTheme()"><i class="fas fa-moon" id="themeIcon"></i></button>
+      <button class="eng-ham-btn" onclick="openEngSidebar()" aria-label="Open navigation">☰</button>
       <button class="hamburger" onclick="toggleMob()" aria-label="Toggle navigation menu"><i class="fas fa-bars"></i></button>
     </div>
   </div>
@@ -3217,6 +3290,11 @@ document.addEventListener('DOMContentLoaded',function(){
 
 // Mark current page in cross-page navigation
 (function(){var p=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.page-links a').forEach(function(a){if(a.getAttribute('href')===p)a.classList.add('current');});})();
+
+// ============ MOBILE SIDEBAR DRAWER ============
+function openEngSidebar(){document.getElementById('eng-mob-sb').classList.add('open');document.getElementById('eng-mob-overlay').classList.add('show');document.body.style.overflow='hidden';}
+function closeEngSidebar(){document.getElementById('eng-mob-sb').classList.remove('open');document.getElementById('eng-mob-overlay').classList.remove('show');document.body.style.overflow='';}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeEngSidebar();});
 </script>
 </body>
 </html>
