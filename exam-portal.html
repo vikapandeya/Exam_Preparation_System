@@ -532,6 +532,7 @@ body.dark .pyq-tag-diff{background:rgba(220,38,38,.2);color:#fca5a5}
 <div id="main">
   <div id="topbar">
     <button id="ham" onclick="toggleSidebar()" aria-label="Toggle sidebar menu">☰</button>
+    <div style="font-size:.82rem;font-weight:800;color:var(--brand);white-space:nowrap">🎯 Exam Portal</div>
     <h1 id="page-title">Dashboard</h1>
     <div class="page-links">
       <a href="index.html">Home</a>
@@ -6457,5 +6458,18 @@ updateHomeDashboard();
 // Mark current page in cross-page navigation
 (function(){var p=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.page-links a').forEach(function(a){if(a.getAttribute('href')===p)a.classList.add('current');});})();
 </script>
+
+<footer style="background:var(--surface);border-top:1px solid var(--border);padding:1.25rem 1.5rem 1rem;text-align:center">
+  <div style="font-size:.95rem;font-weight:800;color:var(--brand);margin-bottom:.25rem">📝 Mock Test Portal</div>
+  <div style="font-size:.75rem;color:var(--muted);margin-bottom:.75rem">100+ full-length tests · SSC · Railway · Banking · Police · Defence</div>
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;font-size:.73rem;margin-bottom:.75rem">
+    <a href="index.html" style="color:var(--muted);text-decoration:none">🏠 Home</a> ·
+    <a href="Science.html" style="color:var(--muted);text-decoration:none">⚛️ Science</a> ·
+    <a href="Computer.html" style="color:var(--muted);text-decoration:none">💻 Computer</a> ·
+    <a href="Current_Affairs.html" style="color:var(--muted);text-decoration:none">📰 Current Affairs</a> ·
+    <a href="Syllabus.html" style="color:var(--muted);text-decoration:none">📋 Syllabus</a>
+  </div>
+  <div style="font-size:.72rem;color:var(--muted)">© 2026 Exam Prep System · Built by <strong style="color:var(--text)">Vikash Pandey</strong></div>
+</footer>
 </body>
 </html>

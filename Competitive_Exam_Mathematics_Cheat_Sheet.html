@@ -68,6 +68,20 @@
     #mob-topnav a.current{background:var(--brand);color:#fff!important;border-color:var(--brand);font-weight:700;pointer-events:none;box-shadow:0 2px 8px rgba(12,110,138,.35);}
     .toc .page-links{display:none;}
 
+
+    /* Site header */
+    #site-header{display:flex;align-items:center;justify-content:space-between;padding:0 1rem;height:48px;background:var(--surface);border-bottom:1px solid var(--line);gap:1rem;position:sticky;top:0;z-index:300;flex-shrink:0}
+    #site-header .sh-brand{font-size:.95rem;font-weight:800;color:var(--brand);display:flex;align-items:center;gap:.4rem;white-space:nowrap}
+    #site-header .sh-by{font-size:.72rem;color:var(--text-2);white-space:nowrap}
+    /* Site footer */
+    #site-footer-maths{background:var(--surface);border-top:1px solid var(--line);padding:1.25rem 1.5rem 1rem;margin-top:2rem}
+    .sfm-inner{max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem}
+    .sfm-brand{font-size:.95rem;font-weight:800;color:var(--brand)}
+    .sfm-sub{font-size:.73rem;color:var(--text-2);margin-top:.15rem}
+    .sfm-links{display:flex;flex-wrap:wrap;gap:.4rem;font-size:.73rem}
+    .sfm-links a{color:var(--text-2);text-decoration:none}
+    .sfm-copy{font-size:.72rem;color:var(--text-2);text-align:right}
+
     * {
       box-sizing: border-box;
     }
@@ -844,6 +858,10 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 </head>
 <body>
+<header id="site-header">
+  <div class="sh-brand">🧮 Mathematics Mastery</div>
+  <span class="sh-by">by <strong>Vikash Pandey</strong></span>
+</header>
   <div id="mob-topnav">
     <a href="index.html">Home</a>
     <a href="Science.html">Science</a>
@@ -3484,5 +3502,22 @@
     // Mark current page in cross-page navigation (TOC pills + mobile topnav)
     (function(){var p=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.page-links a, #mob-topnav a').forEach(function(a){if(a.getAttribute('href')===p)a.classList.add('current');});})();
   </script>
+<footer id="site-footer-maths">
+  <div class="sfm-inner">
+    <div>
+      <div class="sfm-brand">🧮 Mathematics Mastery</div>
+      <div class="sfm-sub">Top 100 formulas · 50 fast tricks · Exam-wise formula zones</div>
+    </div>
+    <div class="sfm-links">
+      <a href="index.html">🏠 Home</a> ·
+      <a href="Science.html">⚛️ Science</a> ·
+      <a href="Computer.html">💻 Computer</a> ·
+      <a href="Current_Affairs.html">📰 Current Affairs</a> ·
+      <a href="Syllabus.html">📋 Syllabus</a> ·
+      <a href="exam-portal.html">📝 Mock Tests</a>
+    </div>
+    <div class="sfm-copy">© 2026 Mathematics Mastery · Built by <strong>Vikash Pandey</strong></div>
+  </div>
+</footer>
 </body>
 </html>
