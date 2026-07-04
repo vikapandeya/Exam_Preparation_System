@@ -978,11 +978,40 @@
         <div class="section-header">
           <h3>Top 100 Most Important Formulas</h3>
           <p>These are auto-collected from the chapter formula boxes below. Revise these first if exam time is near.</p>
+          <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+            <button onclick="startFormulaQuiz()" style="background:linear-gradient(135deg,#f59e0b,#d97706);color:#000;border:none;border-radius:8px;padding:9px 20px;font-size:14px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:6px">🎯 Quiz Me on Formulas</button>
+            <span style="font-size:12px;color:var(--muted)">Test yourself: see the title, recall the formula, then flip to check</span>
+          </div>
         </div>
         <div class="panel">
           <div class="formula-grid" id="topFormulaGrid"></div>
         </div>
       </section>
+
+      <!-- Formula Quiz Overlay -->
+      <div id="fq-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:500;align-items:center;justify-content:center;padding:20px">
+        <div style="background:var(--card-bg,#fff);border-radius:14px;max-width:520px;width:100%;padding:28px;box-shadow:0 20px 60px rgba(0,0,0,.4);max-height:90vh;overflow-y:auto">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
+            <h2 style="font-size:18px;font-weight:800;margin:0">🎯 Formula Quiz</h2>
+            <button onclick="closeFQ()" style="background:none;border:1px solid #ccc;border-radius:8px;padding:5px 12px;cursor:pointer;font-size:13px">✕ Exit</button>
+          </div>
+          <div style="font-size:12px;color:#666;margin-bottom:16px">See the formula title → mentally recall the formula → click to reveal. Mark honestly!</div>
+          <div style="text-align:center;font-size:12px;color:#888;margin-bottom:12px" id="fq-progress"></div>
+          <div id="fq-card"></div>
+          <div style="display:flex;gap:8px;justify-content:center;margin:16px 0">
+            <button onclick="fqNav(-1)" style="padding:7px 18px;border-radius:8px;border:1px solid #ccc;background:none;cursor:pointer;font-size:13px">← Prev</button>
+            <button onclick="fqNav(1)" style="padding:7px 18px;border-radius:8px;background:#f59e0b;border:none;cursor:pointer;font-size:13px;font-weight:700;color:#000">Next →</button>
+          </div>
+          <div style="border-top:1px solid #eee;padding-top:14px;text-align:center">
+            <div style="font-size:12px;color:#888;margin-bottom:8px">Did you recall correctly?</div>
+            <div style="display:flex;gap:8px;justify-content:center">
+              <button onclick="fqMark('wrong')" style="padding:7px 18px;border-radius:8px;background:#dc2626;color:#fff;border:none;cursor:pointer;font-size:12px;font-weight:700">✗ Missed</button>
+              <button onclick="fqMark('correct')" style="padding:7px 18px;border-radius:8px;background:#16a34a;color:#fff;border:none;cursor:pointer;font-size:12px;font-weight:700">✓ Got It</button>
+            </div>
+          </div>
+          <div id="fq-results" style="display:none"></div>
+        </div>
+      </div>
 
       <section id="fast-tricks" class="section searchable" data-group="Revision">
         <div class="section-header">
@@ -3509,6 +3538,82 @@
 
     // Mark current page in cross-page navigation (TOC pills + mobile topnav)
     (function(){var p=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.page-links a, #mob-topnav a').forEach(function(a){if(a.getAttribute('href')===p)a.classList.add('current');});})();
+
+    // ── FORMULA QUIZ ──────────────────────────────────────────────────────
+    var fqState={deck:[],i:0,flipped:false,scores:{}};
+    function buildFQDeck(){
+      return topics.flatMap(function(topic){
+        return topic.formulas.map(function(f){
+          return {title:topic.title+': '+f.title,formula:f.formula,meaning:f.meaning,shortcut:f.shortcut,examTip:f.examTip};
+        });
+      }).slice(0,50).sort(function(){return Math.random()-.5;});
+    }
+    window.startFormulaQuiz=function(){
+      fqState.deck=buildFQDeck();fqState.i=0;fqState.flipped=false;fqState.scores={};
+      var ov=document.getElementById('fq-overlay');
+      ov.style.display='flex';
+      document.getElementById('fq-results').style.display='none';
+      fqRenderCard();
+    };
+    window.closeFQ=function(){document.getElementById('fq-overlay').style.display='none';};
+    function fqRenderCard(){
+      var d=fqState.deck,card=d[fqState.i];
+      if(!card)return;
+      var prog=document.getElementById('fq-progress');
+      if(prog)prog.textContent=(fqState.i+1)+' / '+d.length+' formulas';
+      var sc=fqState.scores[fqState.i];
+      var badgeHtml=sc?('<div style="display:inline-block;margin-top:8px;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:700;background:'+(sc==='correct'?'rgba(22,163,74,.15)':'rgba(220,38,38,.15)')+';color:'+(sc==='correct'?'#16a34a':'#dc2626')+'">'+(sc==='correct'?'✓ Got it':'✗ Missed')+'</div>'):'';
+      var isDark=document.documentElement.classList.contains('dark')||document.documentElement.getAttribute('data-theme')==='dark';
+      var bg=isDark?'#1a1d2e':'#f0f4f8';var borderColor=isDark?'#2d3149':'#e2e8f0';var textColor=isDark?'#e2e8f0':'#1a202c';var mutedColor=isDark?'#94a3b8':'#718096';
+      var cardEl=document.getElementById('fq-card');
+      if(!cardEl)return;
+      cardEl.innerHTML='<div style="background:'+bg+';border:2px solid '+borderColor+';border-radius:12px;padding:20px;text-align:center;margin-bottom:14px">'+
+        '<div style="font-size:11px;color:'+mutedColor+';text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px">What is the formula for?</div>'+
+        '<div style="font-size:18px;font-weight:800;color:'+textColor+';line-height:1.4">'+card.title+'</div>'+
+        badgeHtml+
+      '</div>'+
+      (fqState.flipped?
+        '<div style="background:rgba(22,163,74,.07);border:1.5px solid rgba(22,163,74,.25);border-radius:10px;padding:16px">'+
+          '<div style="font-size:10px;font-weight:700;color:#16a34a;text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px">Formula</div>'+
+          '<div style="font-size:20px;font-weight:800;font-family:monospace;color:'+textColor+';margin-bottom:10px;word-break:break-all">'+card.formula+'</div>'+
+          '<div style="font-size:12px;color:'+mutedColor+';margin-bottom:6px"><strong style="color:'+textColor+'">Meaning:</strong> '+card.meaning+'</div>'+
+          '<div style="font-size:12px;color:'+mutedColor+';margin-bottom:6px"><strong style="color:'+textColor+'">Shortcut:</strong> '+card.shortcut+'</div>'+
+          '<div style="font-size:11px;padding:7px 10px;background:rgba(59,130,246,.08);border-left:2px solid #3b82f6;border-radius:0 4px 4px 0;color:#3b82f6;margin-top:8px">📝 '+card.examTip+'</div>'+
+        '</div>':
+        '<button onclick="fqFlip()" style="width:100%;padding:14px;background:transparent;border:2px dashed '+borderColor+';border-radius:10px;cursor:pointer;color:'+mutedColor+';font-size:14px;font-weight:600;transition:.2s">👆 Click to reveal the formula</button>'
+      );
+    }
+    window.fqFlip=function(){fqState.flipped=true;fqRenderCard();};
+    window.fqNav=function(dir){fqState.i=(fqState.i+dir+fqState.deck.length)%fqState.deck.length;fqState.flipped=false;fqRenderCard();};
+    window.fqMark=function(status){
+      fqState.scores[fqState.i]=status;
+      var remaining=fqState.deck.length-Object.keys(fqState.scores).length;
+      fqRenderCard();
+      if(remaining===0){setTimeout(fqShowResults,400);}
+      else if(fqState.i<fqState.deck.length-1){setTimeout(function(){fqNav(1);},300);}
+    };
+    function fqShowResults(){
+      var total=Object.keys(fqState.scores).length;
+      var cor=Object.values(fqState.scores).filter(function(s){return s==='correct';}).length;
+      var wrong=total-cor;
+      var pct=Math.round(cor/total*100);
+      var res=document.getElementById('fq-results');
+      if(!res)return;
+      res.style.display='block';
+      var isDark=document.documentElement.classList.contains('dark');
+      var textColor=isDark?'#e2e8f0':'#1a202c';var mutedColor=isDark?'#94a3b8':'#718096';var bgColor=isDark?'#1a1d2e':'#f0f4f8';var borderColor=isDark?'#2d3149':'#e2e8f0';
+      res.innerHTML='<div style="border-top:1px solid '+borderColor+';padding-top:16px;margin-top:16px;text-align:center">'+
+        '<div style="font-size:11px;color:'+mutedColor+';text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px">Session Complete!</div>'+
+        '<div style="font-size:3rem;font-weight:900;color:#f59e0b;line-height:1">'+pct+'%</div>'+
+        '<div style="font-size:13px;color:'+mutedColor+';margin:6px 0 14px">Formula recall accuracy · '+cor+'/'+total+' correct</div>'+
+        '<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px">'+
+          '<div style="background:rgba(22,163,74,.1);border-radius:8px;padding:12px;text-align:center"><div style="font-size:1.4rem;font-weight:800;color:#16a34a">'+cor+'</div><div style="font-size:10px;color:'+mutedColor+';text-transform:uppercase">Recalled</div></div>'+
+          '<div style="background:rgba(220,38,38,.1);border-radius:8px;padding:12px;text-align:center"><div style="font-size:1.4rem;font-weight:800;color:#dc2626">'+wrong+'</div><div style="font-size:10px;color:'+mutedColor+';text-transform:uppercase">Missed</div></div>'+
+        '</div>'+
+        '<p style="font-size:12px;color:'+mutedColor+';margin-bottom:12px">'+(pct>=80?'🏆 Excellent formula recall! Ready for exam.':pct>=60?'📚 Good effort! Review missed formulas once more.':'💪 Keep revising daily — pattern recognition comes with repetition.')+'</p>'+
+        '<button onclick="startFormulaQuiz()" style="background:#f59e0b;color:#000;border:none;border-radius:8px;padding:9px 20px;font-size:13px;font-weight:700;cursor:pointer">🔄 Retry Quiz</button>'+
+      '</div>';
+    }
   </script>
 <footer id="site-footer-maths">
   <div class="sfm-inner">

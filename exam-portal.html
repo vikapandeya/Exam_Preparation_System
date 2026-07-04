@@ -480,6 +480,63 @@ body.dark .pyq-tag-diff{background:rgba(220,38,38,.2);color:#fca5a5}
   .pyq-exam-card .pe-icon{font-size:1.4rem}
   .pyq-practice-bar{flex-direction:column;align-items:flex-start}
 }
+
+/* ── MISTAKE BOOK ─────────────────────────────────────────────────────────── */
+.mb-empty{text-align:center;padding:48px 20px;color:var(--muted)}
+.mb-empty .me-icon{font-size:3.5rem;margin-bottom:12px}
+.mb-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;margin-bottom:10px;overflow:hidden;transition:border-color .2s}
+.mb-card:hover{border-color:var(--brand)}
+.mb-card.learned{border-color:var(--green);opacity:.78}
+.mb-header{padding:12px 16px;display:flex;align-items:flex-start;gap:10px}
+.mb-toggle{background:none;border:none;cursor:pointer;color:var(--muted);font-size:.85rem;transition:transform .2s;flex-shrink:0;padding:3px 8px;border-radius:4px}
+.mb-card.open .mb-toggle{transform:rotate(90deg)}
+.mb-q{flex:1;font-size:.9rem;font-weight:500;line-height:1.5;color:var(--text)}
+.mb-body{padding:0 16px 14px;border-top:1px solid var(--border);display:none}
+.mb-card.open .mb-body{display:block}
+/* ── WEAK AREAS ───────────────────────────────────────────────────────────── */
+.wa-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-bottom:20px}
+.wa-topic-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px}
+.wa-topic-name{font-weight:700;font-size:.88rem;margin-bottom:2px}
+.wa-bar-wrap{background:var(--border);border-radius:4px;height:10px;overflow:hidden;margin:8px 0 4px}
+.wa-bar-fill{height:100%;border-radius:4px;transition:width .8s ease}
+.wa-bar-fill.red{background:var(--red)}.wa-bar-fill.yellow{background:var(--yellow)}.wa-bar-fill.green{background:var(--green)}
+.wa-accuracy{font-size:.75rem;color:var(--muted);display:flex;justify-content:space-between}
+/* ── TIMED DRILL ──────────────────────────────────────────────────────────── */
+.td-section{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:16px}
+.td-section h3{font-size:.82rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:12px}
+.td-option-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(90px,1fr));gap:10px}
+.td-option{background:var(--bg);border:2px solid var(--border);border-radius:10px;padding:12px;cursor:pointer;text-align:center;transition:all .2s}
+.td-option:hover,.td-option.sel{border-color:var(--brand);background:rgba(79,70,229,.06)}
+.td-option .to-num{font-size:1.25rem;font-weight:800;color:var(--brand)}
+.td-option .to-lbl{font-size:.7rem;color:var(--muted);margin-top:2px}
+.td-topic-btn{padding:6px 13px;border-radius:20px;border:1.5px solid var(--border);background:var(--bg);color:var(--muted);font-size:.78rem;font-weight:700;cursor:pointer;transition:.2s}
+.td-topic-btn:hover,.td-topic-btn.sel{border-color:var(--brand);color:var(--brand);background:rgba(79,70,229,.06)}
+.td-timer-big{font-size:2.8rem;font-weight:900;font-family:monospace;color:var(--brand);text-align:center;margin:12px 0}
+.tdr-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.tdr-stat{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:14px;text-align:center}
+.tdr-stat .tsn{font-size:1.4rem;font-weight:800}
+.tdr-stat .tsl{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-top:3px}
+/* ── BOOKMARKS ────────────────────────────────────────────────────────────── */
+.bm-empty{text-align:center;padding:48px 20px;color:var(--muted)}
+.bm-item{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;display:flex;align-items:flex-start;gap:12px}
+.bm-q{flex:1;font-size:.88rem;line-height:1.5;color:var(--text)}
+.bm-del{background:none;border:none;cursor:pointer;color:var(--muted);font-size:1.1rem;padding:4px 8px;border-radius:4px;transition:.2s;flex-shrink:0}
+.bm-del:hover{color:var(--red);background:rgba(220,38,38,.1)}
+.bm-btn{background:none;border:none;cursor:pointer;color:var(--muted);font-size:1.1rem;padding:4px;border-radius:4px;transition:.2s;line-height:1;vertical-align:middle}
+.bm-btn:hover{color:var(--yellow)}.bm-btn.saved{color:var(--yellow)}
+/* ── DAILY STREAK WIDGET ──────────────────────────────────────────────────── */
+.streak-widget{background:linear-gradient(135deg,#f59e0b,#d97706);color:#fff;border-radius:var(--radius);padding:16px 20px;margin-bottom:16px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.streak-flame{font-size:2.6rem;line-height:1;flex-shrink:0}
+.streak-info h3{font-size:1.05rem;font-weight:800;margin-bottom:2px}
+.streak-info p{font-size:.8rem;opacity:.85;margin:0}
+.streak-days{display:flex;gap:5px;align-items:center;flex-wrap:wrap;margin-top:8px}
+.sd-box{width:24px;height:24px;border-radius:4px;background:rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;color:rgba(255,255,255,.7)}
+.sd-box.done{background:rgba(255,255,255,.88);color:#d97706}
+.sd-box.today{border:2px solid #fff;box-shadow:0 0 0 2px #d97706}
+.streak-goals{display:flex;gap:10px;margin-left:auto;flex-wrap:wrap}
+.sg-item{background:rgba(255,255,255,.2);border-radius:8px;padding:8px 12px;text-align:center;min-width:64px}
+.sg-n{font-size:1.1rem;font-weight:800}
+.sg-l{font-size:.65rem;opacity:.8;text-transform:uppercase;letter-spacing:.04em;margin-top:2px}
 </style>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>">
 <link rel="manifest" href="manifest.json">
@@ -518,6 +575,12 @@ body.dark .pyq-tag-diff{background:rgba(220,38,38,.2);color:#fca5a5}
 
     <div class="nav-section">Previous Year Qs</div>
     <button class="nav-item" data-page="pyq" onclick="showPage('pyq')"><span class="icon">🗂️</span>All PYQ Bank</button>
+
+    <div class="nav-section">My Learning</div>
+    <button class="nav-item" data-page="mistakes" onclick="showPage('mistakes')"><span class="icon">📕</span>Mistake Book</button>
+    <button class="nav-item" data-page="weakareas" onclick="showPage('weakareas')"><span class="icon">⚠️</span>Weak Areas</button>
+    <button class="nav-item" data-page="timedrill" onclick="showPage('timedrill')"><span class="icon">⏱️</span>Timed Drill</button>
+    <button class="nav-item" data-page="bookmarks" onclick="showPage('bookmarks')"><span class="icon">🔖</span>Bookmarks</button>
 
     <div class="nav-section">Settings</div>
     <button class="nav-item" onclick="toggleDark()"><span class="icon">🌙</span><span id="dark-label">Dark Mode</span></button>
@@ -580,6 +643,21 @@ body.dark .pyq-tag-diff{background:rgba(220,38,38,.2);color:#fca5a5}
         <div class="hero-icon">🎯</div>
       </div>
 
+      <!-- Daily Streak Widget -->
+      <div class="streak-widget" id="streak-widget">
+        <div class="streak-flame" id="streak-flame">🔥</div>
+        <div class="streak-info">
+          <h3><span id="streak-count">0</span> Day Streak</h3>
+          <p id="streak-msg">Study today to start your streak!</p>
+          <div class="streak-days" id="streak-days"></div>
+        </div>
+        <div class="streak-goals" id="streak-goals">
+          <div class="sg-item"><div class="sg-n" id="sg-tests">0</div><div class="sg-l">Tests Done</div></div>
+          <div class="sg-item"><div class="sg-n" id="sg-mistakes">0</div><div class="sg-l">To Revise</div></div>
+          <div class="sg-item"><div class="sg-n" id="sg-accuracy">--%</div><div class="sg-l">Accuracy</div></div>
+        </div>
+      </div>
+
       <div class="stat-row">
         <div class="stat-card"><div class="icon">📝</div><div class="info"><div class="val">100</div><div class="lbl">Mock Tests</div></div></div>
         <div class="stat-card"><div class="icon">❓</div><div class="info"><div class="val" id="stat-total-q">8000+</div><div class="lbl">Questions</div></div></div>
@@ -622,6 +700,16 @@ body.dark .pyq-tag-diff{background:rgba(220,38,38,.2);color:#fca5a5}
           <div class="qi">🗂️</div>
           <div class="qt">PYQ Bank</div>
           <div class="qs">200+ previous year Qs</div>
+        </div>
+        <div class="qa-card" onclick="showPage('mistakes')">
+          <div class="qi">📕</div>
+          <div class="qt">Mistake Book</div>
+          <div class="qs" id="qa-mistake-count">Review wrong answers</div>
+        </div>
+        <div class="qa-card" onclick="showPage('timedrill')">
+          <div class="qi">⏱️</div>
+          <div class="qt">Timed Drill</div>
+          <div class="qs">Speed training by topic</div>
         </div>
       </div>
 
@@ -857,6 +945,116 @@ body.dark .pyq-tag-diff{background:rgba(220,38,38,.2);color:#fca5a5}
         </div>
       </div>
       <div id="pyq-list"></div>
+    </div>
+
+    <!-- ── MISTAKE BOOK PAGE ─────────────────────────────────────────────── -->
+    <div id="page-mistakes" class="page">
+      <div class="section-title">📕 Mistake Book</div>
+      <div class="section-sub">Questions you got wrong — review, understand, and mark as learned</div>
+      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:16px">
+        <select id="mb-filter-subj" onchange="renderMistakeBook()" style="padding:7px 12px;border-radius:8px;border:1px solid var(--border);background:var(--surface);color:var(--text);font-size:.84rem">
+          <option value="">All Subjects</option>
+          <option value="math">Math</option>
+          <option value="reasoning">Reasoning</option>
+          <option value="gk">GK</option>
+          <option value="english">English</option>
+        </select>
+        <select id="mb-filter-status" onchange="renderMistakeBook()" style="padding:7px 12px;border-radius:8px;border:1px solid var(--border);background:var(--surface);color:var(--text);font-size:.84rem">
+          <option value="">All Status</option>
+          <option value="pending">To Revise</option>
+          <option value="learned">Learned</option>
+        </select>
+        <button class="btn btn-secondary btn-sm" onclick="clearLearnedMistakes()">🗑️ Clear Learned</button>
+        <span id="mb-count-label" style="font-size:.82rem;color:var(--muted);margin-left:auto"></span>
+      </div>
+      <div id="mb-list"></div>
+    </div>
+
+    <!-- ── WEAK AREAS PAGE ──────────────────────────────────────────────────── -->
+    <div id="page-weakareas" class="page">
+      <div class="section-title">⚠️ Weak Areas</div>
+      <div class="section-sub">Topics where your accuracy is below 70% — focus here to improve fast</div>
+      <div style="background:linear-gradient(135deg,#dc2626,#7c3aed);color:#fff;border-radius:var(--radius);padding:20px 24px;margin-bottom:20px">
+        <h2 style="font-size:1.1rem;font-weight:800;margin-bottom:4px">Your Topic Accuracy Heatmap</h2>
+        <p style="font-size:.85rem;opacity:.85;line-height:1.5">Based on all tests you've taken. 🔴 Below 50% needs urgent attention · 🟡 50–70% needs more practice · 🟢 Above 70% strong</p>
+      </div>
+      <div style="display:flex;gap:10px;align-items:center;margin-bottom:16px;flex-wrap:wrap">
+        <button class="btn btn-secondary btn-sm" onclick="renderWeakAreas('all')">All Topics</button>
+        <button class="btn btn-secondary btn-sm" onclick="renderWeakAreas('weak')">Weak Only (red)</button>
+        <button class="btn btn-secondary btn-sm" onclick="renderWeakAreas('medium')">Medium (yellow)</button>
+        <button class="btn btn-primary btn-sm" onclick="drillWeakTopic()">⏱️ Drill Weakest Topic</button>
+      </div>
+      <div class="wa-grid" id="wa-grid"></div>
+      <div id="wa-no-data" style="display:none;text-align:center;padding:48px;color:var(--muted)">
+        <div style="font-size:3rem;margin-bottom:12px">📊</div>
+        <p style="font-size:.9rem">Complete at least one test to see your topic accuracy.</p>
+        <button class="btn btn-primary" style="margin-top:16px" onclick="showPage('tests')">Start First Test →</button>
+      </div>
+    </div>
+
+    <!-- ── TIMED DRILL PAGE ──────────────────────────────────────────────────── -->
+    <div id="page-timedrill" class="page">
+      <div class="section-title">⏱️ Timed Drill</div>
+      <div class="section-sub">Practice specific topics under time pressure — like the real exam</div>
+      <div style="background:linear-gradient(135deg,#0f766e,#0891b2);color:#fff;border-radius:var(--radius);padding:20px 24px;margin-bottom:20px">
+        <h2 style="font-size:1.1rem;font-weight:800;margin-bottom:4px">Speed Training Mode</h2>
+        <p style="font-size:.85rem;opacity:.85;line-height:1.5">SSC CGL = 18 sec/question. Train your brain to answer fast with focused topic drills.</p>
+      </div>
+      <div id="td-config-panel">
+        <div class="td-section">
+          <h3>Select Topic</h3>
+          <div class="td-topic-grid" id="td-topic-grid"></div>
+        </div>
+        <div class="td-section">
+          <h3>Number of Questions</h3>
+          <div class="td-option-grid" id="td-q-grid">
+            <div class="td-option sel" onclick="tdSelectQ(5,this)"><div class="to-num">5</div><div class="to-lbl">Quick</div></div>
+            <div class="td-option" onclick="tdSelectQ(10,this)"><div class="to-num">10</div><div class="to-lbl">Standard</div></div>
+            <div class="td-option" onclick="tdSelectQ(20,this)"><div class="to-num">20</div><div class="to-lbl">Extended</div></div>
+            <div class="td-option" onclick="tdSelectQ(30,this)"><div class="to-num">30</div><div class="to-lbl">Full Drill</div></div>
+          </div>
+        </div>
+        <div class="td-section">
+          <h3>Time Limit</h3>
+          <div class="td-option-grid" id="td-time-grid">
+            <div class="td-option sel" onclick="tdSelectTime(60,this)"><div class="to-num">1</div><div class="to-lbl">min — Blitz</div></div>
+            <div class="td-option" onclick="tdSelectTime(180,this)"><div class="to-num">3</div><div class="to-lbl">min — Fast</div></div>
+            <div class="td-option" onclick="tdSelectTime(300,this)"><div class="to-num">5</div><div class="to-lbl">min — Normal</div></div>
+            <div class="td-option" onclick="tdSelectTime(600,this)"><div class="to-num">10</div><div class="to-lbl">min — Relaxed</div></div>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:8px">
+          <button class="btn btn-primary" style="padding:12px 36px;font-size:.95rem" onclick="startTimedDrill()">🚀 Start Drill</button>
+        </div>
+      </div>
+      <div id="td-drill-panel" style="display:none">
+        <div class="card" style="text-align:center;margin-bottom:16px">
+          <div style="font-size:.78rem;color:var(--muted);margin-bottom:4px" id="td-q-num">Q1 of 5</div>
+          <div class="td-timer-big" id="td-timer">1:00</div>
+          <div class="progress-bar-wrap" style="max-width:300px;margin:8px auto"><div class="progress-bar" id="td-time-bar" style="background:var(--green)"></div></div>
+          <div style="font-size:.78rem;color:var(--muted)" id="td-topic-label"></div>
+        </div>
+        <div id="td-question-area"></div>
+        <div id="td-result-area" style="display:none"></div>
+      </div>
+    </div>
+
+    <!-- ── BOOKMARKS PAGE ──────────────────────────────────────────────────── -->
+    <div id="page-bookmarks" class="page">
+      <div class="section-title">🔖 Bookmarks</div>
+      <div class="section-sub">Questions you've saved for later review</div>
+      <div style="display:flex;gap:10px;align-items:center;margin-bottom:16px;flex-wrap:wrap">
+        <select id="bm-filter" onchange="renderBookmarks()" style="padding:7px 12px;border-radius:8px;border:1px solid var(--border);background:var(--surface);color:var(--text);font-size:.84rem">
+          <option value="">All Subjects</option>
+          <option value="math">Math</option>
+          <option value="reasoning">Reasoning</option>
+          <option value="gk">GK</option>
+          <option value="english">English</option>
+        </select>
+        <button class="btn btn-danger btn-sm" onclick="clearAllBookmarks()">🗑️ Clear All</button>
+        <span id="bm-count-label" style="font-size:.82rem;color:var(--muted);margin-left:auto"></span>
+      </div>
+      <div id="bm-list"></div>
     </div>
 
   </div><!-- end #content -->
@@ -3245,6 +3443,10 @@ function showPage(page){
   if(page==='examzones')csRenderExamZones();
   if(page==='memorytables')csRenderMemoryTables();
   if(page==='pyq')renderPYQPage();
+  if(page==='mistakes')renderMistakeBook();
+  if(page==='weakareas')renderWeakAreas('all');
+  if(page==='timedrill')buildTimedDrill();
+  if(page==='bookmarks')renderBookmarks();
   closeSidebar();
 }
 function toggleSidebar(){document.getElementById('sidebar').classList.toggle('open');}
@@ -3253,11 +3455,26 @@ function toggleDark(){darkMode=!darkMode;document.body.classList.toggle('dark',d
 
 // ── HOME DASHBOARD ────────────────────────────────────────────────
 function updateHomeDashboard(){
-  const attempted=Object.keys(progress).length;
-  const scores=Object.values(progress).map(p=>p.score);
+  const attempted=Object.keys(progress).filter(k=>!isNaN(k)&&+k>0).length;
+  const scores=Object.keys(progress).filter(k=>!isNaN(k)&&+k>0).map(k=>progress[k].score);
   const best=scores.length?Math.max(...scores):'--';
   document.getElementById('stat-attempted').textContent=attempted;
   document.getElementById('stat-best').textContent=best!='--'?best+'/160':best;
+  renderStreakWidget();
+  const mb=JSON.parse(localStorage.getItem('eps-mistakes')||'[]');
+  const pending=mb.filter(m=>!m.learned).length;
+  const qa=document.getElementById('qa-mistake-count');
+  if(qa)qa.textContent=pending>0?pending+' to revise':'No mistakes yet!';
+  const sgTests=document.getElementById('sg-tests');
+  if(sgTests)sgTests.textContent=attempted;
+  const sgMistakes=document.getElementById('sg-mistakes');
+  if(sgMistakes)sgMistakes.textContent=pending;
+  const sgAcc=document.getElementById('sg-accuracy');
+  if(sgAcc){
+    const totalC=Object.keys(progress).filter(k=>!isNaN(k)&&+k>0).reduce((s,k)=>s+(progress[k].correct||0),0);
+    const totalQ=attempted*80;
+    sgAcc.textContent=totalQ?Math.round(totalC/totalQ*100)+'%':'--%';
+  }
 }
 
 // ── TEST GRID ─────────────────────────────────────────────────────
@@ -3631,11 +3848,31 @@ function finalSubmit(){
 function calculateResult(){
   let correct=0,wrong=0,score=0;
   const subjectScores={math:{c:0,w:0,t:0},reasoning:{c:0,w:0,t:0},gk:{c:0,w:0,t:0},english:{c:0,w:0,t:0}};
+  // Load existing data
+  let mistakes=JSON.parse(localStorage.getItem('eps-mistakes')||'[]');
+  let topicStats=JSON.parse(localStorage.getItem('eps-topic-stats')||'{}');
+
   currentTest.forEach((q,i)=>{
     const s=q.subj;subjectScores[s].t++;
-    if(userAnswers[i]===q.ans){correct++;score+=2;subjectScores[s].c++;}
-    else if(userAnswers[i]){wrong++;score-=0.5;subjectScores[s].w++;}
+    // Per-topic stats
+    const tk=q.topic||'Unknown';
+    if(!topicStats[tk])topicStats[tk]={c:0,t:0,subj:s};
+    topicStats[tk].t++;
+    if(userAnswers[i]===q.ans){
+      correct++;score+=2;subjectScores[s].c++;topicStats[tk].c++;
+    } else if(userAnswers[i]){
+      wrong++;score-=0.5;subjectScores[s].w++;
+      // Save to mistake book (avoid duplicates by id)
+      const qid=q.id||('q_'+i+'_'+currentTestNum);
+      if(!mistakes.find(m=>m.id===qid)){
+        mistakes.push({id:qid,subj:s,topic:tk,diff:q.diff,q:q.q,opts:q.opts,ans:q.ans,userAns:userAnswers[i],sol:q.sol,trick:q.trick||'',learned:false,addedOn:new Date().toLocaleDateString()});
+      }
+    }
   });
+  localStorage.setItem('eps-mistakes',JSON.stringify(mistakes));
+  localStorage.setItem('eps-topic-stats',JSON.stringify(topicStats));
+  // Record today's study streak
+  recordStudyDay();
   score=Math.round(score*10)/10;
   const unattempted=currentTest.length-correct-wrong;
   const pct=Math.round((score/160)*100);
@@ -3729,6 +3966,7 @@ function renderSolutionQuestion(){
       <button class="btn btn-secondary" onclick="prevSol()">← Prev</button>
       <button class="btn btn-primary" onclick="nextSol()">Next →</button>
       <button class="btn btn-secondary" onclick="closeResults()">📊 Progress</button>
+      <button class="bm-btn ${isBookmarked(q.id)?'saved':''}" onclick="toggleBookmark(${JSON.stringify(q)},this)" title="Bookmark this question">${isBookmarked(q.id)?'🔖':'🏷️'}</button>
     </div>`;
   renderQPGrid();
 }
@@ -6456,6 +6694,340 @@ function startPYQTest(){
   renderQuestion();
   renderQPGrid();
   buildSubjectTabs();
+}
+
+// ── DAILY STREAK ──────────────────────────────────────────────────
+function recordStudyDay(){
+  const today=new Date().toISOString().slice(0,10);
+  const hist=JSON.parse(localStorage.getItem('eps-study-hist')||'[]');
+  if(!hist.includes(today)){hist.push(today);localStorage.setItem('eps-study-hist',JSON.stringify(hist));}
+}
+function calcStreak(){
+  const hist=JSON.parse(localStorage.getItem('eps-study-hist')||'[]');
+  const today=new Date();
+  let streak=0,d=new Date(today);
+  while(true){
+    const ds=d.toISOString().slice(0,10);
+    if(hist.includes(ds)){streak++;d.setDate(d.getDate()-1);}
+    else break;
+  }
+  return streak;
+}
+function renderStreakWidget(){
+  const streak=calcStreak();
+  const hist=JSON.parse(localStorage.getItem('eps-study-hist')||'[]');
+  const today=new Date().toISOString().slice(0,10);
+  // Last 7 days
+  const days=[];
+  for(let i=6;i>=0;i--){
+    const d=new Date();d.setDate(d.getDate()-i);
+    const ds=d.toISOString().slice(0,10);
+    const dow=['S','M','T','W','T','F','S'][d.getDay()];
+    days.push({label:dow,done:hist.includes(ds),today:ds===today});
+  }
+  const sc=document.getElementById('streak-count');
+  const sf=document.getElementById('streak-flame');
+  const sm=document.getElementById('streak-msg');
+  const sd=document.getElementById('streak-days');
+  if(sc)sc.textContent=streak;
+  if(sf)sf.textContent=streak>=7?'🔥':streak>=3?'⚡':'📚';
+  if(sm)sm.textContent=streak===0?'Study today to start your streak!':streak===1?'Great start! Come back tomorrow.':'You\'re on a roll! Keep going!';
+  if(sd)sd.innerHTML=days.map(d=>`<div class="sd-box ${d.done?'done':''} ${d.today?'today':''}" title="${d.today?'Today':''}">${d.label}</div>`).join('');
+}
+
+// ── MISTAKE BOOK ──────────────────────────────────────────────────
+function renderMistakeBook(){
+  const subj=document.getElementById('mb-filter-subj').value;
+  const status=document.getElementById('mb-filter-status').value;
+  let mb=JSON.parse(localStorage.getItem('eps-mistakes')||'[]');
+  if(subj)mb=mb.filter(m=>m.subj===subj);
+  if(status==='pending')mb=mb.filter(m=>!m.learned);
+  if(status==='learned')mb=mb.filter(m=>m.learned);
+  const all=JSON.parse(localStorage.getItem('eps-mistakes')||'[]');
+  const cl=document.getElementById('mb-count-label');
+  if(cl)cl.textContent=`${all.filter(m=>!m.learned).length} to revise · ${all.filter(m=>m.learned).length} learned`;
+  const list=document.getElementById('mb-list');
+  if(!list)return;
+  if(!mb.length){
+    list.innerHTML=`<div class="mb-empty"><div class="me-icon">${all.length?'✅':'📕'}</div><p>${all.length?'All caught up! No mistakes match this filter.':'No mistakes recorded yet. Take a test to start tracking!'}</p>${!all.length?'<button class="btn btn-primary" style="margin-top:16px" onclick="showPage(\'tests\')">Start First Test →</button>':''}</div>`;
+    return;
+  }
+  const subjColors={math:'badge-math',reasoning:'badge-reasoning',gk:'badge-gk',english:'badge-english'};
+  const diffColors={easy:'badge-easy',medium:'badge-medium',hard:'badge-hard'};
+  list.innerHTML=mb.map((m,idx)=>`
+  <div class="mb-card ${m.learned?'learned':''}" id="mb-${idx}">
+    <div class="mb-header">
+      <button class="mb-toggle" onclick="toggleMBCard(${idx})">▶</button>
+      <div class="mb-q">${m.q.length>120?m.q.slice(0,120)+'…':m.q}</div>
+      <div style="display:flex;gap:6px;flex-shrink:0;align-items:center">
+        <span class="badge ${subjColors[m.subj]||'badge-easy'}">${m.subj}</span>
+        <button class="btn btn-xs ${m.learned?'btn-secondary':'btn-success'}" onclick="toggleLearned('${m.id}');renderMistakeBook()">${m.learned?'↩ Unlearn':'✓ Learned'}</button>
+      </div>
+    </div>
+    <div class="mb-body">
+      <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px">
+        <span class="badge ${diffColors[m.diff]||'badge-easy'}">${m.diff}</span>
+        <span style="font-size:.72rem;color:var(--brand);font-weight:700;align-self:center">${m.topic}</span>
+        <span style="font-size:.72rem;color:var(--muted);align-self:center">Added: ${m.addedOn}</span>
+      </div>
+      <div style="font-size:.9rem;font-weight:500;margin-bottom:10px;line-height:1.6">${m.q}</div>
+      <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:12px">
+        ${m.opts.map((o,i)=>{const k=['A','B','C','D'][i];const correct=k===m.ans;const wrong=k===m.userAns&&!correct;return `<div style="padding:8px 12px;border-radius:8px;border:1.5px solid ${correct?'var(--green)':wrong?'var(--red)':'var(--border)'};background:${correct?'rgba(22,163,74,.08)':wrong?'rgba(220,38,38,.08)':'var(--surface2)'};font-size:.88rem;display:flex;gap:8px;align-items:center"><span style="font-weight:700;color:${correct?'var(--green)':wrong?'var(--red)':'var(--muted)'}">${k}</span>${o.slice(3)} ${correct?'✓ Correct':''}${wrong?'✗ Your Answer':''}</div>`;}).join('')}
+      </div>
+      <div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:12px">
+        <div style="font-size:.75rem;font-weight:700;color:var(--brand);text-transform:uppercase;letter-spacing:.05em;margin-bottom:5px">📖 Explanation</div>
+        <div style="font-size:.88rem;line-height:1.6">${m.sol}</div>
+        ${m.trick?`<div style="font-size:.84rem;color:var(--yellow);font-weight:600;margin-top:8px;padding-top:8px;border-top:1px solid var(--border)">⚡ Trick: ${m.trick}</div>`:''}
+      </div>
+    </div>
+  </div>`).join('');
+}
+function toggleMBCard(idx){
+  const el=document.getElementById('mb-'+idx);
+  if(el)el.classList.toggle('open');
+}
+function toggleLearned(id){
+  let mb=JSON.parse(localStorage.getItem('eps-mistakes')||'[]');
+  const m=mb.find(x=>x.id===id);
+  if(m)m.learned=!m.learned;
+  localStorage.setItem('eps-mistakes',JSON.stringify(mb));
+}
+function clearLearnedMistakes(){
+  if(!confirm('Remove all "Learned" mistakes from the book?'))return;
+  let mb=JSON.parse(localStorage.getItem('eps-mistakes')||'[]');
+  mb=mb.filter(m=>!m.learned);
+  localStorage.setItem('eps-mistakes',JSON.stringify(mb));
+  renderMistakeBook();
+}
+
+// ── WEAK AREAS ────────────────────────────────────────────────────
+function renderWeakAreas(filter){
+  const ts=JSON.parse(localStorage.getItem('eps-topic-stats')||'{}');
+  const grid=document.getElementById('wa-grid');
+  const noData=document.getElementById('wa-no-data');
+  if(!grid)return;
+  const topics=Object.keys(ts).map(t=>({name:t,subj:ts[t].subj,c:ts[t].c,total:ts[t].t,acc:ts[t].t?Math.round(ts[t].c/ts[t].t*100):0}));
+  if(!topics.length){grid.style.display='none';noData.style.display='block';return;}
+  noData.style.display='none';grid.style.display='grid';
+  let show=topics;
+  if(filter==='weak')show=topics.filter(t=>t.acc<50);
+  if(filter==='medium')show=topics.filter(t=>t.acc>=50&&t.acc<70);
+  show.sort((a,b)=>a.acc-b.acc);
+  const subjColors={math:'badge-math',reasoning:'badge-reasoning',gk:'badge-gk',english:'badge-english'};
+  grid.innerHTML=show.length?show.map(t=>{
+    const cls=t.acc<50?'red':t.acc<70?'yellow':'green';
+    const emoji=t.acc<50?'🔴':t.acc<70?'🟡':'🟢';
+    return `<div class="wa-topic-card">
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px">
+        <span style="font-size:1rem">${emoji}</span>
+        <span class="wa-topic-name">${t.name}</span>
+        <span class="badge ${subjColors[t.subj]||'badge-easy'}" style="margin-left:auto;font-size:.65rem">${t.subj}</span>
+      </div>
+      <div class="wa-bar-wrap"><div class="wa-bar-fill ${cls}" style="width:${t.acc}%"></div></div>
+      <div class="wa-accuracy"><span>${t.c}/${t.total} correct</span><span style="font-weight:700;color:${t.acc<50?'var(--red)':t.acc<70?'var(--yellow)':'var(--green)'}">${t.acc}%</span></div>
+      <button class="btn btn-secondary btn-xs" style="margin-top:8px;width:100%" onclick="drillSpecificTopic('${t.name}','${t.subj}')">⏱️ Drill This Topic</button>
+    </div>`;
+  }).join(''):`<div style="grid-column:1/-1;text-align:center;padding:32px;color:var(--muted)">No topics in this category. ${filter==='weak'?'Great job, all your topics are above 50%!':''}</div>`;
+}
+function drillWeakTopic(){
+  const ts=JSON.parse(localStorage.getItem('eps-topic-stats')||'{}');
+  const topics=Object.keys(ts).map(t=>({name:t,subj:ts[t].subj,acc:ts[t].t?Math.round(ts[t].c/ts[t].t*100):0}));
+  topics.sort((a,b)=>a.acc-b.acc);
+  if(!topics.length){alert('Complete at least one test first!');return;}
+  const worst=topics[0];
+  showPage('timedrill');
+  setTimeout(()=>drillSpecificTopic(worst.name,worst.subj),200);
+}
+function drillSpecificTopic(topic,subj){
+  showPage('timedrill');
+  setTimeout(()=>{
+    tdSelectedTopic=topic;tdSelectedSubj=subj;
+    document.querySelectorAll('.td-topic-btn').forEach(b=>{b.classList.toggle('sel',b.dataset.topic===topic);});
+    startTimedDrill();
+  },300);
+}
+
+// ── TIMED DRILL ───────────────────────────────────────────────────
+let tdSelectedTopic='',tdSelectedSubj='',tdQCount=5,tdTimeSecs=60;
+let tdState={};
+function buildTimedDrill(){
+  const topicGrid=document.getElementById('td-topic-grid');
+  if(!topicGrid||topicGrid.dataset.built)return;
+  topicGrid.dataset.built='1';
+  const allTopics=[...new Set(questionBank.map(q=>q.topic))].sort();
+  topicGrid.innerHTML=allTopics.map(t=>`<button class="td-topic-btn" data-topic="${t}" onclick="tdSelectTopic('${t}',this)">${t}</button>`).join('');
+  tdSelectedTopic=allTopics[0]||'';
+  const firstBtn=topicGrid.querySelector('.td-topic-btn');
+  if(firstBtn)firstBtn.classList.add('sel');
+}
+function tdSelectTopic(t,btn){
+  tdSelectedTopic=t;
+  document.querySelectorAll('.td-topic-btn').forEach(b=>b.classList.remove('sel'));
+  btn.classList.add('sel');
+}
+function tdSelectQ(n,btn){
+  tdQCount=n;
+  document.querySelectorAll('#td-q-grid .td-option').forEach(b=>b.classList.remove('sel'));
+  btn.classList.add('sel');
+}
+function tdSelectTime(s,btn){
+  tdTimeSecs=s;
+  document.querySelectorAll('#td-time-grid .td-option').forEach(b=>b.classList.remove('sel'));
+  btn.classList.add('sel');
+}
+function startTimedDrill(){
+  if(!tdSelectedTopic){alert('Please select a topic first.');return;}
+  let pool=questionBank.filter(q=>q.topic===tdSelectedTopic||(tdSelectedSubj&&q.subj===tdSelectedSubj&&!q.topic));
+  if(!pool.length)pool=questionBank.filter(q=>q.subj===(tdSelectedSubj||'math'));
+  // Shuffle and pick
+  pool=[...pool].sort(()=>Math.random()-.5).slice(0,tdQCount);
+  if(!pool.length){alert('Not enough questions for this topic.');return;}
+  tdState={qs:pool,i:0,cor:0,wr:0,ans:{},timeLeft:tdTimeSecs,totalTime:tdTimeSecs,iv:null};
+  document.getElementById('td-config-panel').style.display='none';
+  document.getElementById('td-drill-panel').style.display='block';
+  document.getElementById('td-result-area').style.display='none';
+  document.getElementById('td-question-area').style.display='block';
+  document.getElementById('td-topic-label').textContent=tdSelectedTopic+' · '+pool.length+' questions';
+  tdStartTimer();
+  tdRenderQuestion();
+}
+function tdStartTimer(){
+  clearInterval(tdState.iv);
+  tdState.iv=setInterval(()=>{
+    tdState.timeLeft--;
+    const t=document.getElementById('td-timer');
+    const b=document.getElementById('td-time-bar');
+    if(!t){clearInterval(tdState.iv);return;}
+    const m=Math.floor(tdState.timeLeft/60),s=tdState.timeLeft%60;
+    t.textContent=`${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+    const pct=(tdState.timeLeft/tdState.totalTime*100);
+    if(b){b.style.width=pct+'%';b.style.background=pct>50?'var(--green)':pct>20?'var(--yellow)':'var(--red)';}
+    if(tdState.timeLeft<=0){clearInterval(tdState.iv);tdShowResult();}
+  },1000);
+}
+function tdRenderQuestion(){
+  const q=tdState.qs[tdState.i];
+  if(!q){clearInterval(tdState.iv);tdShowResult();return;}
+  document.getElementById('td-q-num').textContent=`Q${tdState.i+1} of ${tdState.qs.length}`;
+  const subj={math:'badge-math',reasoning:'badge-reasoning',gk:'badge-gk',english:'badge-english'};
+  document.getElementById('td-question-area').innerHTML=`
+    <div class="card" style="margin-bottom:0">
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px">
+        <span class="badge ${subj[q.subj]||'badge-easy'}">${q.subj}</span>
+        <span class="badge badge-${q.diff||'easy'}">${q.diff||'medium'}</span>
+        <span style="font-size:.78rem;color:var(--muted);align-self:center">${q.topic||''}</span>
+      </div>
+      <div style="font-size:1rem;font-weight:500;line-height:1.65;margin-bottom:18px">${q.q}</div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        ${q.opts.map((o,i)=>{const k=['A','B','C','D'][i];return `<button class="opt-btn" id="tdopt-${k}" onclick="tdAnswer('${k}')">${o}</button>`;}).join('')}
+      </div>
+      <div id="td-sol-box" class="solution-box" style="margin-top:12px"></div>
+      <button class="btn btn-primary" id="td-next-btn" style="margin-top:12px;display:none" onclick="tdNextQ()">Next →</button>
+    </div>`;
+}
+function tdAnswer(key){
+  const q=tdState.qs[tdState.i];
+  if(tdState.ans[tdState.i]!==undefined)return;
+  tdState.ans[tdState.i]=key;
+  const correct=key===q.ans;
+  if(correct)tdState.cor++;else tdState.wr++;
+  document.querySelectorAll('[id^=tdopt-]').forEach(b=>b.disabled=true);
+  q.opts.forEach((o,i)=>{const k=['A','B','C','D'][i];const el=document.getElementById('tdopt-'+k);if(el){if(k===q.ans)el.classList.add('correct');else if(k===key&&!correct)el.classList.add('wrong');}});
+  const sol=document.getElementById('td-sol-box');
+  if(sol){sol.classList.add('show');sol.innerHTML=`<div class="sol-title">${correct?'✅ Correct!':'❌ Wrong!'}</div><div class="sol-text">${q.sol}</div>${q.trick?`<div class="trick-text">⚡ ${q.trick}</div>`:''}`;}
+  const nb=document.getElementById('td-next-btn');if(nb)nb.style.display='block';
+}
+function tdNextQ(){
+  tdState.i++;
+  if(tdState.i>=tdState.qs.length){clearInterval(tdState.iv);tdShowResult();}
+  else tdRenderQuestion();
+}
+function tdShowResult(){
+  clearInterval(tdState.iv);
+  document.getElementById('td-question-area').style.display='none';
+  const res=document.getElementById('td-result-area');
+  res.style.display='block';
+  const total=tdState.qs.length;
+  const unattempted=total-tdState.cor-tdState.wr;
+  const acc=total>0?Math.round(tdState.cor/total*100):0;
+  const timeTaken=tdState.totalTime-tdState.timeLeft;
+  const avg=tdState.cor+tdState.wr>0?Math.round(timeTaken/(tdState.cor+tdState.wr)):0;
+  res.innerHTML=`
+    <div style="background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border-radius:var(--radius);padding:24px;text-align:center;margin-bottom:16px">
+      <div style="font-size:.82rem;opacity:.8;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px">${tdSelectedTopic} Drill Complete!</div>
+      <div style="font-size:3.2rem;font-weight:900;line-height:1">${acc}%</div>
+      <div style="font-size:.9rem;opacity:.8;margin-top:4px">${tdState.cor} correct of ${total}</div>
+    </div>
+    <div class="tdr-stats">
+      <div class="tdr-stat"><div class="tsn" style="color:var(--green)">${tdState.cor}</div><div class="tsl">Correct</div></div>
+      <div class="tdr-stat"><div class="tsn" style="color:var(--red)">${tdState.wr}</div><div class="tsl">Wrong</div></div>
+      <div class="tdr-stat"><div class="tsn" style="color:var(--yellow)">${avg}s</div><div class="tsl">Avg/Q</div></div>
+    </div>
+    <div style="display:flex;gap:10px;justify-content:center;margin-top:16px;flex-wrap:wrap">
+      <button class="btn btn-primary" onclick="startTimedDrill()">🔄 Retry</button>
+      <button class="btn btn-secondary" onclick="document.getElementById('td-config-panel').style.display='block';document.getElementById('td-drill-panel').style.display='none'">📋 Change Topic</button>
+      <button class="btn btn-secondary" onclick="showPage('mistakes')">📕 Review Mistakes</button>
+    </div>`;
+  // Save wrong answers from timed drill
+  let mistakes=JSON.parse(localStorage.getItem('eps-mistakes')||'[]');
+  tdState.qs.forEach((q,i)=>{
+    if(tdState.ans[i]&&tdState.ans[i]!==q.ans){
+      const qid=q.id||('td_'+tdSelectedTopic+'_'+i);
+      if(!mistakes.find(m=>m.id===qid)){
+        mistakes.push({id:qid,subj:q.subj,topic:q.topic,diff:q.diff||'medium',q:q.q,opts:q.opts,ans:q.ans,userAns:tdState.ans[i],sol:q.sol,trick:q.trick||'',learned:false,addedOn:new Date().toLocaleDateString()});
+      }
+    }
+  });
+  localStorage.setItem('eps-mistakes',JSON.stringify(mistakes));
+  recordStudyDay();
+}
+
+// ── BOOKMARKS ────────────────────────────────────────────────────
+function getBookmarks(){return JSON.parse(localStorage.getItem('eps-bookmarks')||'[]');}
+function saveBookmarks(bm){localStorage.setItem('eps-bookmarks',JSON.stringify(bm));}
+function isBookmarked(id){return getBookmarks().some(b=>b.id===id);}
+function toggleBookmark(q,btn){
+  let bm=getBookmarks();
+  const idx=bm.findIndex(b=>b.id===q.id);
+  if(idx>=0){bm.splice(idx,1);if(btn){btn.textContent='🏷️';btn.classList.remove('saved');}}
+  else{bm.push({id:q.id,subj:q.subj,topic:q.topic,diff:q.diff,q:q.q,opts:q.opts,ans:q.ans,sol:q.sol,trick:q.trick||'',savedOn:new Date().toLocaleDateString()});if(btn){btn.textContent='🔖';btn.classList.add('saved');}}
+  saveBookmarks(bm);
+}
+function renderBookmarks(){
+  const filt=document.getElementById('bm-filter').value;
+  let bm=getBookmarks();
+  if(filt)bm=bm.filter(b=>b.subj===filt);
+  const cl=document.getElementById('bm-count-label');
+  if(cl)cl.textContent=getBookmarks().length+' bookmarked';
+  const list=document.getElementById('bm-list');
+  if(!list)return;
+  if(!bm.length){
+    list.innerHTML=`<div class="bm-empty"><div style="font-size:3rem;margin-bottom:12px">🔖</div><p>No bookmarks yet. While reviewing test solutions, click 🏷️ to save questions here.</p></div>`;
+    return;
+  }
+  const subjColors={math:'badge-math',reasoning:'badge-reasoning',gk:'badge-gk',english:'badge-english'};
+  list.innerHTML=bm.map(b=>`
+    <div class="bm-item">
+      <div style="flex:1">
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px">
+          <span class="badge ${subjColors[b.subj]||'badge-easy'}">${b.subj}</span>
+          <span class="badge badge-${b.diff||'easy'}">${b.diff||'medium'}</span>
+          <span style="font-size:.7rem;color:var(--brand);font-weight:700;align-self:center">${b.topic||''}</span>
+          <span style="font-size:.68rem;color:var(--muted);align-self:center;margin-left:auto">Saved: ${b.savedOn}</span>
+        </div>
+        <div class="bm-q">${b.q.length>150?b.q.slice(0,150)+'…':b.q}</div>
+        <div style="font-size:.78rem;color:var(--green);margin-top:4px;font-weight:600">✓ Answer: ${b.ans} · ${b.sol.slice(0,80)}${b.sol.length>80?'…':''}</div>
+      </div>
+      <button class="bm-del" onclick="removeBookmark('${b.id}');renderBookmarks()" title="Remove bookmark">✕</button>
+    </div>`).join('');
+}
+function removeBookmark(id){
+  let bm=getBookmarks().filter(b=>b.id!==id);
+  saveBookmarks(bm);
+}
+function clearAllBookmarks(){
+  if(!confirm('Clear all bookmarks?'))return;
+  saveBookmarks([]);renderBookmarks();
 }
 
 // ── INIT ──────────────────────────────────────────────────────────

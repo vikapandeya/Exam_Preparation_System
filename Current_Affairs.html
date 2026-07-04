@@ -252,8 +252,38 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:28px
     <div class="sdrop" id="sdrop"></div>
   </div>
   <div class="ml">
+    <button class="tbtn" onclick="startActiveRecall()" title="Active Recall Quiz — Test yourself on today's headlines!" style="background:linear-gradient(135deg,#f59e0b,#d97706);color:#000;border-color:transparent;font-weight:700;font-size:12px">🧠 Quiz Me</button>
     <button class="tbtn" id="themeBtn" title="Toggle theme">◑</button>
   </div>
+
+<!-- Active Recall Quiz Overlay -->
+<div id="ar-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:500;align-items:center;justify-content:center">
+  <div style="background:var(--surface);border:1px solid var(--border);border-radius:14px;max-width:560px;width:94%;max-height:90vh;overflow-y:auto;padding:28px;box-shadow:0 20px 60px rgba(0,0,0,.5)">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
+      <div>
+        <div style="font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.7px;margin-bottom:3px">Active Recall Quiz</div>
+        <h2 style="font-size:18px;font-weight:800;color:var(--text);margin:0">🧠 Test Your Memory</h2>
+      </div>
+      <button onclick="closeActiveRecall()" style="background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:6px 12px;cursor:pointer;color:var(--text);font-size:13px">✕ Close</button>
+    </div>
+    <div style="font-size:12px;color:var(--text3);margin-bottom:16px">Read the headline → recall who/what/where — then flip to check. This is how toppers retain information.</div>
+    <div id="ar-card-area"></div>
+    <div style="display:flex;gap:10px;justify-content:center;margin:16px 0" id="ar-nav">
+      <button class="btn bo bsm" onclick="arNav(-1)">← Prev</button>
+      <span style="font-size:12px;color:var(--text3);display:flex;align-items:center" id="ar-count">1 / ?</span>
+      <button class="btn ba bsm" onclick="arNav(1)">Next →</button>
+    </div>
+    <div style="border-top:1px solid var(--border);padding-top:14px;text-align:center">
+      <div style="font-size:12px;color:var(--text3);margin-bottom:8px" id="ar-score-line">Score yourself honestly</div>
+      <div style="display:flex;gap:8px;justify-content:center">
+        <button class="btn" style="background:#dc2626;color:#fff;padding:6px 18px;font-size:12px" onclick="arMark('wrong')">✗ Didn't Know</button>
+        <button class="btn" style="background:#d97706;color:#fff;padding:6px 18px;font-size:12px" onclick="arMark('partial')">~ Partial</button>
+        <button class="btn" style="background:#16a34a;color:#fff;padding:6px 18px;font-size:12px" onclick="arMark('correct')">✓ Got It</button>
+      </div>
+    </div>
+    <div id="ar-results" style="display:none"></div>
+  </div>
+</div>
 </header>
 <div id="sub-nav">
   <div class="page-links">
@@ -1034,6 +1064,114 @@ function renderProg(){
 
 // Mark current page in cross-page navigation
 (function(){var p=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.page-links a').forEach(function(a){if(a.getAttribute('href')===p)a.classList.add('current');});})();
+
+// ── ACTIVE RECALL QUIZ ─────────────────────────────────────────────────
+let arState={deck:[],i:0,scores:{},flipped:false};
+function buildARDeck(){
+  const staticCards=NEWS.slice(0,12).map(n=>({
+    q:'What is this about? (Name the key person/body/country/number)',
+    headline:n.title,
+    answer:n.sum.slice(0,180)+(n.sum.length>180?'…':''),
+    facts:n.facts||[],
+    exam:n.exam||''
+  }));
+  const liveCards=(LIVE_NEWS||[]).slice(0,6).map(n=>({
+    q:'Recall key facts about this headline',
+    headline:n.title,
+    answer:n.sum.slice(0,180)+(n.sum.length>180?'…':''),
+    facts:[],
+    exam:n.exam||'Auto-updated current affairs'
+  }));
+  return [...liveCards,...staticCards];
+}
+function startActiveRecall(){
+  arState.deck=buildARDeck();
+  arState.i=0;arState.scores={};arState.flipped=false;
+  const overlay=document.getElementById('ar-overlay');
+  overlay.style.display='flex';
+  document.getElementById('ar-results').style.display='none';
+  document.getElementById('ar-nav').style.display='flex';
+  document.getElementById('ar-score-line').textContent='Score yourself honestly';
+  document.querySelector('#ar-overlay .btn').style.display='';
+  arRenderCard();
+}
+function closeActiveRecall(){
+  document.getElementById('ar-overlay').style.display='none';
+}
+function arRenderCard(){
+  const d=arState.deck;
+  if(!d.length)return;
+  const card=d[arState.i];
+  const sc=arState.scores[arState.i];
+  const countEl=document.getElementById('ar-count');
+  if(countEl)countEl.textContent=`${arState.i+1} / ${d.length}`;
+  const scored=sc?`<div style="margin-top:10px;padding:6px 12px;border-radius:6px;display:inline-block;font-size:12px;font-weight:700;background:${sc==='correct'?'rgba(22,163,74,.15)':sc==='partial'?'rgba(217,119,6,.15)':'rgba(220,38,38,.15)'};color:${sc==='correct'?'#16a34a':sc==='partial'?'#d97706':'#dc2626'}">${sc==='correct'?'✓ Got it':sc==='partial'?'~ Partial':'✗ Missed'}</div>`:'';
+  document.getElementById('ar-card-area').innerHTML=`
+    <div style="background:linear-gradient(135deg,#1E3A5F,#0C2340);border-radius:12px;padding:20px;margin-bottom:14px">
+      <div style="font-size:10px;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.7px;margin-bottom:8px">📰 Headline — Can you recall the key facts?</div>
+      <div style="font-size:16px;font-weight:700;color:#fff;line-height:1.5;font-family:Georgia,serif">${card.headline}</div>
+      ${scored}
+    </div>
+    <div id="ar-flip-area">
+      ${arState.flipped?`
+        <div style="background:rgba(16,185,129,.06);border:1.5px solid rgba(16,185,129,.25);border-radius:10px;padding:16px;margin-bottom:12px">
+          <div style="font-size:10px;font-weight:700;color:#10B981;text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px">Answer</div>
+          <div style="font-size:13px;color:var(--text);line-height:1.65">${card.answer}</div>
+          ${card.facts.length?`<ul style="margin-top:10px;padding-left:0;list-style:none">${card.facts.map(f=>`<li style="font-size:12px;color:var(--text2);padding:3px 0 3px 16px;position:relative"><span style="position:absolute;left:0;color:#f59e0b">›</span>${f}</li>`).join('')}</ul>`:''}
+          ${card.exam?`<div style="margin-top:10px;padding:6px 10px;background:rgba(59,130,246,.08);border-left:2px solid var(--accent3);border-radius:0 4px 4px 0;font-size:11px;color:#60A5FA">📝 Exam relevance: ${card.exam}</div>`:''}
+        </div>`:
+        `<button onclick="arFlip()" style="width:100%;padding:14px;background:var(--surface2);border:2px dashed var(--border);border-radius:10px;cursor:pointer;color:var(--text2);font-size:14px;font-weight:600;transition:.2s" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          👆 Click to reveal answer & key facts
+        </button>`}
+    </div>`;
+}
+function arFlip(){
+  arState.flipped=true;
+  arRenderCard();
+}
+function arNav(dir){
+  arState.i=(arState.i+dir+arState.deck.length)%arState.deck.length;
+  arState.flipped=false;
+  arRenderCard();
+  // Check if all cards scored → show results
+  if(Object.keys(arState.scores).length===arState.deck.length)arShowResults();
+}
+function arMark(status){
+  arState.scores[arState.i]=status;
+  const remaining=arState.deck.length-Object.keys(arState.scores).length;
+  const sl=document.getElementById('ar-score-line');
+  if(sl)sl.textContent=remaining>0?`${remaining} cards left to score`:'All cards scored!';
+  arRenderCard();
+  if(remaining===0)setTimeout(arShowResults,400);
+  else if(arState.i<arState.deck.length-1){setTimeout(()=>{arNav(1);},300);}
+}
+function arShowResults(){
+  const total=Object.keys(arState.scores).length;
+  const cor=Object.values(arState.scores).filter(s=>s==='correct').length;
+  const partial=Object.values(arState.scores).filter(s=>s==='partial').length;
+  const wrong=Object.values(arState.scores).filter(s=>s==='wrong').length;
+  const score=Math.round((cor+partial*0.5)/total*100);
+  document.getElementById('ar-results').style.display='block';
+  document.getElementById('ar-results').innerHTML=`
+    <div style="border-top:1px solid var(--border);padding-top:16px;margin-top:16px;text-align:center">
+      <div style="font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px">Quiz Complete!</div>
+      <div style="font-size:3rem;font-weight:900;font-family:monospace;color:var(--accent);line-height:1">${score}%</div>
+      <div style="font-size:13px;color:var(--text2);margin:6px 0 14px">Recall accuracy across ${total} headlines</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:16px">
+        <div style="background:rgba(22,163,74,.1);border-radius:8px;padding:10px;text-align:center"><div style="font-size:1.4rem;font-weight:800;color:#16a34a">${cor}</div><div style="font-size:10px;color:var(--text3);text-transform:uppercase">Got It</div></div>
+        <div style="background:rgba(217,119,6,.1);border-radius:8px;padding:10px;text-align:center"><div style="font-size:1.4rem;font-weight:800;color:#d97706">${partial}</div><div style="font-size:10px;color:var(--text3);text-transform:uppercase">Partial</div></div>
+        <div style="background:rgba(220,38,38,.1);border-radius:8px;padding:10px;text-align:center"><div style="font-size:1.4rem;font-weight:800;color:#dc2626">${wrong}</div><div style="font-size:10px;color:var(--text3);text-transform:uppercase">Missed</div></div>
+      </div>
+      <p style="font-size:12px;color:var(--text2);margin-bottom:12px">${score>=80?'🏆 Excellent recall! You are well-prepared.':score>=60?'📚 Good effort! Re-read the missed headlines.':'💪 Keep reviewing daily — consistency is key!'}</p>
+      <button class="btn ba" onclick="startActiveRecall()" style="font-size:12px">🔄 Redo Quiz</button>
+    </div>`;
+  prog.quiz++;saveProg();
+}
+window.startActiveRecall=startActiveRecall;
+window.closeActiveRecall=closeActiveRecall;
+window.arFlip=arFlip;
+window.arNav=arNav;
+window.arMark=arMark;
 </script>
 </body>
 </html>
