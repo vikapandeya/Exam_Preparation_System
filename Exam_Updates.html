@@ -407,15 +407,21 @@ function artCard(n){
   return `<div class="art"><div class="ameta"><span class="tag ${n.tc}">${n.badge}</span><span class="adate">📅 ${n.date}</span></div><div class="atitle">${n.title}</div><div class="asum">${n.sum}</div>${footer}</div>`;
 }
 
+const VISIBLE_STEP=15;
+let visibleCount={notif:VISIBLE_STEP,job:VISIBLE_STEP,result:VISIBLE_STEP};
+function loadMore(cat){visibleCount[cat]+=VISIBLE_STEP;render();}
+
 function renderLiveSection(cat,title,sub){
   const arr=LIVE.filter(n=>n.cat===cat);
+  const shown=arr.slice(0,visibleCount[cat]);
   const liveSection = arr.length ? `
     <div class="live-header">
       <div class="live-dot"></div>
-      <span class="live-label">Live Feed</span>
+      <span class="live-label">Live Feed — last 30 days</span>
       ${LIVE_DATE?`<span class="live-since">Updated ${LIVE_DATE}${LIVE_TIME?' · '+LIVE_TIME:''}</span>`:''}
     </div>
-    ${arr.map(n=>artCard(n)).join('')}
+    ${shown.map(n=>artCard(n)).join('')}
+    ${arr.length>shown.length?`<div style="text-align:center;margin:14px 0"><button class="btn bo" onclick="loadMore('${cat}')">Load More (${arr.length-shown.length} more) ↓</button></div>`:''}
     <div class="live-sep">Official Sources</div>
   ` : `<div class="empty-note">No matching headlines from today's automatic RSS scan yet — this feed re-checks daily. Meanwhile, go straight to the official portals below.</div>`;
   const officialTitle = cat==='job' ? '🏛️ Official Recruitment Portals — Central' : cat==='result' ? '🏛️ Check Results on Official Sites' : '🏛️ Official Notification Sources';
