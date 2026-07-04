@@ -38,7 +38,8 @@
 .page-links a{font-size:.7rem;color:var(--text);background:var(--bg2);border:1px solid var(--border);border-radius:999px;padding:4px 10px;text-decoration:none;transition:all .2s;font-weight:500;white-space:nowrap;}
 .page-links a:hover{background:var(--primary);color:#fff;border-color:var(--primary);}
 .page-links a.current{background:var(--primary);color:#fff !important;border-color:var(--primary);font-weight:700;pointer-events:none;box-shadow:0 2px 8px rgba(37,99,235,.35);}
-#sub-nav{position:sticky;top:var(--nav-h);z-index:998;background:var(--card);border-bottom:1px solid var(--border);padding:8px 24px;display:flex;align-items:center;}
+/* Sub-nav: thinner bar, slightly distinct bg — visually merges with navbar to reduce clutter */
+#sub-nav{position:sticky;top:var(--nav-h);z-index:998;background:var(--bg2);border-bottom:1px solid var(--border);padding:4px 24px;display:flex;align-items:center;}
 [data-theme="dark"] {
   --bg: #0f172a;
   --bg2: #1e293b;
@@ -281,6 +282,8 @@ ul.styled li::before{content:'\f058';font-family:'Font Awesome 6 Free';font-weig
   .nav-search{display:none}
   #mobile-menu{display:none}
   #mobile-menu.open{display:flex}
+  /* Hide sub-nav on mobile — mobile sidebar drawer replaces it */
+  #sub-nav{display:none}
   .hero-stats{gap:20px}
   section{padding:60px 16px}
   .tabs{gap:4px}
@@ -290,6 +293,12 @@ ul.styled li::before{content:'\f058';font-family:'Font Awesome 6 Free';font-weig
   .hero-btns{flex-direction:column;align-items:center}
   .btn{width:100%;justify-content:center}
 }
+
+/* UI polish — consistent transitions, card shadows, dark-mode readability */
+.card,.feature-card,.gen-card,.topic-card,.quiz-card{transition:all .2s ease}
+.card:hover,.feature-card:hover,.gen-card:hover,.topic-card:hover{box-shadow:0 2px 8px rgba(0,0,0,.08)}
+[data-theme="dark"] .card:hover,[data-theme="dark"] .feature-card:hover,[data-theme="dark"] .gen-card:hover,[data-theme="dark"] .topic-card:hover{box-shadow:0 2px 8px rgba(0,0,0,.3)}
+.nav-links a,.nav-dropdown-btn,#theme-toggle,.nav-btn{transition:all .2s ease}
 
 /* HIGHLIGHT */
 .highlight{background:linear-gradient(135deg,var(--primary) 0%,var(--secondary) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
@@ -524,7 +533,7 @@ kbd{display:inline-block;padding:2px 7px;border-radius:5px;border:1px solid var(
   <div class="page-links">
     <a href="index.html">🏠 Home</a>
     <a href="Science.html">🔬 Science</a>
-    <a href="Computer.html">💻 Computer</a>
+    <a href="Computer.html" class="current">💻 Computer</a>
     <a href="Current_Affairs.html">📰 Current Affairs</a>
     <a href="Exam_Updates.html">📢 Exam Updates</a>
     <a href="english-grammar-mastery.html">📝 English</a>

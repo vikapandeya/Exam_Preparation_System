@@ -66,7 +66,8 @@ tr:nth-child(even) td{background:var(--surface2);}
 #main.full~#site-footer,#site-footer.full{margin-left:0;}
 .footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;font-size:.8rem;color:var(--muted);}
 .footer-author{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;padding:.35rem .9rem;border-radius:99px;font-size:.82rem;font-weight:600;}
-@media(max-width:768px){#sidebar{transform:translateX(calc(-1 * var(--sidebar)));} #sidebar.open{transform:translateX(0);} #main,#site-footer{margin-left:0;}}
+@media(max-width:768px){#sidebar{transform:translateX(calc(-1 * var(--sidebar)));} #sidebar.open{transform:translateX(0);} #main,#site-footer{margin-left:0;} #sub-nav{display:none;}}
+.page table{display:block;overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch;}
 </style>
 </head>
 <body>

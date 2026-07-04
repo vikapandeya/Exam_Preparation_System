@@ -243,6 +243,29 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
 [data-theme="dark"] .eng-sb-lnk:hover{background:rgba(37,99,235,.15);}
 @media(max-width:768px){.eng-ham-btn{display:flex!important;}}
 .eng-ham-btn{display:none;align-items:center;justify-content:center;width:36px;height:36px;background:none;border:none;font-size:1.3rem;cursor:pointer;border-radius:8px;color:var(--text);}
+/* Desktop permanent left sidebar */
+@media(min-width:769px){
+  #desk-sidebar{position:fixed;top:0;left:0;width:240px;height:100vh;background:var(--bg2,#fff);border-right:1px solid var(--border,#e2e8f0);overflow-y:auto;z-index:1001;display:flex;flex-direction:column;box-shadow:2px 0 12px rgba(0,0,0,.06);}
+  [data-theme="dark"] #desk-sidebar{background:#1e293b;border-color:#334155;}
+  .ds-logo{padding:16px;border-bottom:1px solid var(--border,#e2e8f0);font-weight:800;font-size:.95rem;color:var(--primary,#2563eb);display:flex;align-items:center;gap:8px;}
+  [data-theme="dark"] .ds-logo{border-color:#334155;}
+  .ds-section{padding:6px 0;}
+  .ds-group-label{padding:8px 16px 3px;font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--text2,#64748b);}
+  .ds-link{display:flex;align-items:center;gap:8px;padding:8px 16px;font-size:.78rem;color:var(--text,#1e293b);text-decoration:none;border-left:3px solid transparent;transition:all .15s;cursor:pointer;}
+  [data-theme="dark"] .ds-link{color:#cbd5e1;}
+  .ds-link:hover{background:rgba(37,99,235,.08);color:var(--primary,#2563eb);border-left-color:var(--primary,#2563eb);}
+  .ds-link.active{background:rgba(37,99,235,.1);color:var(--primary,#2563eb);border-left-color:var(--primary,#2563eb);font-weight:600;}
+  /* Push main content right */
+  body.has-desk-sidebar .navbar{left:240px;}
+  body.has-desk-sidebar #sub-nav{left:240px;}
+  body.has-desk-sidebar main,body.has-desk-sidebar #footer,body.has-desk-sidebar footer{margin-left:240px;}
+  /* Hide grammar topic links from navbar on desktop (sidebar handles them) */
+  body.has-desk-sidebar .nav-links{display:none!important;}
+  body.has-desk-sidebar .hamburger{display:none!important;}
+}
+@media(max-width:768px){
+  #desk-sidebar{display:none!important;}
+}
 </style>
 <script>(function(){var t=localStorage.getItem('eps-theme');if(t==='dark')document.documentElement.setAttribute('data-theme','dark');})()</script>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
@@ -253,6 +276,58 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 </head>
 <body>
+<!-- Desktop permanent left sidebar -->
+<aside id="desk-sidebar">
+  <div class="ds-logo">📘 English Grammar</div>
+  <nav>
+    <div class="ds-section">
+      <div class="ds-group-label">Core Grammar</div>
+      <a class="ds-link" href="#pos">🧩 Parts of Speech</a>
+      <a class="ds-link" href="#tenses">⏱️ Tenses (All 12)</a>
+      <a class="ds-link" href="#voice">🔄 Active &amp; Passive Voice</a>
+      <a class="ds-link" href="#speech">💬 Direct &amp; Indirect Speech</a>
+      <a class="ds-link" href="#articles">📰 Articles (A/An/The)</a>
+      <a class="ds-link" href="#sva">🔗 Subject-Verb Agreement</a>
+      <a class="ds-link" href="#modals">🔧 Modal Verbs</a>
+    </div>
+    <div class="ds-section">
+      <div class="ds-group-label">Sentence Structure</div>
+      <a class="ds-link" href="#sentences">📐 Types of Sentences</a>
+      <a class="ds-link" href="#clauses">🔀 Clauses &amp; Phrases</a>
+      <a class="ds-link" href="#conditionals">❓ Conditionals</a>
+      <a class="ds-link" href="#punctuation">✏️ Punctuation</a>
+      <a class="ds-link" href="#narrations">📖 Narrations</a>
+    </div>
+    <div class="ds-section">
+      <div class="ds-group-label">Vocabulary</div>
+      <a class="ds-link" href="#vocabulary">📚 Vocabulary</a>
+      <a class="ds-link" href="#synonyms">↔️ Synonyms</a>
+      <a class="ds-link" href="#antonyms">🔁 Antonyms</a>
+      <a class="ds-link" href="#idioms">🎭 Idioms &amp; Phrases</a>
+      <a class="ds-link" href="#phrasal">🔣 Phrasal Verbs</a>
+      <a class="ds-link" href="#oneword">💡 One-Word Substitution</a>
+      <a class="ds-link" href="#confused">⚠️ Confused Words</a>
+      <a class="ds-link" href="#spelling">✅ Spelling Rules</a>
+    </div>
+    <div class="ds-section">
+      <div class="ds-group-label">Practice</div>
+      <a class="ds-link" href="#errors">🔍 Error Detection</a>
+      <a class="ds-link" href="#comprehension">📄 Comprehension</a>
+      <a class="ds-link" href="#writing">✍️ Writing Skills</a>
+      <a class="ds-link" href="#spoken">🗣️ Spoken English</a>
+      <a class="ds-link" href="#quiz">🧪 Grammar Quiz</a>
+      <a class="ds-link" href="#tests">📋 Practice Tests</a>
+      <a class="ds-link" href="#dictionary">📚 Dictionary</a>
+      <a class="ds-link" href="#quickref">⚡ Quick Reference</a>
+      <a class="ds-link" href="#dashboard">📊 Dashboard</a>
+    </div>
+    <div class="ds-section">
+      <div class="ds-group-label">Site Links</div>
+      <a class="ds-link" href="index.html">🏠 Home</a>
+      <a class="ds-link" href="exam-portal.html">📝 Mock Tests</a>
+    </div>
+  </nav>
+</aside>
 <div id="eng-mob-overlay" onclick="closeEngSidebar()"></div>
 <nav id="eng-mob-sb" aria-label="Topics Navigation">
   <div class="eng-sb-hd">
@@ -3296,6 +3371,26 @@ document.addEventListener('DOMContentLoaded',function(){
 function openEngSidebar(){document.getElementById('eng-mob-sb').classList.add('open');document.getElementById('eng-mob-overlay').classList.add('show');document.body.style.overflow='hidden';}
 function closeEngSidebar(){document.getElementById('eng-mob-sb').classList.remove('open');document.getElementById('eng-mob-overlay').classList.remove('show');document.body.style.overflow='';}
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeEngSidebar();});
+
+// ============ DESKTOP SIDEBAR ============
+(function(){
+  if(window.innerWidth>768){
+    document.body.classList.add('has-desk-sidebar');
+    var links=document.querySelectorAll('#desk-sidebar .ds-link[href^="#"]');
+    var obs=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          links.forEach(function(l){l.classList.remove('active');});
+          var lk=document.querySelector('#desk-sidebar .ds-link[href="#'+e.target.id+'"]');
+          if(lk)lk.classList.add('active');
+        }
+      });
+    },{rootMargin:'-20% 0px -60% 0px'});
+    document.querySelectorAll('[id]').forEach(function(s){
+      if(document.querySelector('#desk-sidebar .ds-link[href="#'+s.id+'"]'))obs.observe(s);
+    });
+  }
+})();
 </script>
 </body>
 </html>
