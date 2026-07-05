@@ -427,6 +427,14 @@ kbd{display:inline-block;padding:2px 7px;border-radius:5px;border:1px solid var(
   .mob-ham-btn{display:flex!important;}
 }
 .mob-ham-btn{display:none;align-items:center;justify-content:center;background:none;border:none;color:inherit;font-size:1.4rem;cursor:pointer;padding:4px 8px;margin-right:4px;}
+/* ── HEADER ENHANCEMENTS ── */
+#scroll-progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--primary,#2563eb),#7c3aed);z-index:2000;transition:width .1s linear;width:0%;}
+#creator-badge{display:flex;align-items:center;gap:.4rem;font-size:.75rem;font-weight:600;color:rgba(255,255,255,.75);white-space:nowrap;}
+#creator-badge .cb-dot{width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,#60a5fa,#a78bfa);animation:pulse-dot 2s ease-in-out infinite;}
+@keyframes pulse-dot{0%,100%{transform:scale(1);opacity:1;}50%{transform:scale(1.4);opacity:.7;}}
+#comp-progress-pill{background:linear-gradient(135deg,var(--primary,#2563eb),#7c3aed);color:#fff;border-radius:99px;padding:.3rem .85rem;font-size:.8rem;font-weight:600;cursor:pointer;white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center;gap:.3rem;}
+@media(max-width:640px){#creator-badge{display:none;}}
+@media(max-width:480px){#comp-progress-pill{display:none;}}
 </style>
 <script>(function(){var t=localStorage.getItem('eps-theme');if(t)document.documentElement.setAttribute('data-theme',t);})()</script>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
@@ -437,6 +445,7 @@ kbd{display:inline-block;padding:2px 7px;border-radius:5px;border:1px solid var(
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 </head>
 <body>
+<div id="scroll-progress"></div>
 <!-- Mobile Sidebar -->
 <div id="mob-overlay" onclick="closeMobSidebar()"></div>
 <nav id="mob-sidebar">
@@ -503,6 +512,7 @@ kbd{display:inline-block;padding:2px 7px;border-radius:5px;border:1px solid var(
 <!-- NAVBAR -->
 <nav id="navbar">
   <div class="nav-brand"><i class="fas fa-laptop-code"></i><span>Computer Mastery</span></div>
+  <div id="creator-badge"><span class="cb-dot"></span>by Vikash Pandey</div>
   <div class="nav-search">
     <i class="fas fa-search"></i>
     <input type="text" id="global-search" placeholder="Search topics..." autocomplete="off">
@@ -543,6 +553,7 @@ kbd{display:inline-block;padding:2px 7px;border-radius:5px;border:1px solid var(
     </div>
     <a href="#dashboard" class="nav-btn">Dashboard</a>
   </div>
+  <a href="study-dashboard.html" id="comp-progress-pill">📊 Progress</a>
   <button id="theme-toggle" title="Toggle theme"><i class="fas fa-moon"></i></button>
   <button class="mob-ham-btn" onclick="openMobSidebar()" aria-label="Open menu">☰</button>
   <button id="hamburger" aria-label="Toggle sidebar" onclick="toggleDeskSidebar()"><i class="fas fa-bars"></i></button>
@@ -4081,6 +4092,11 @@ function toggleDeskSidebar(){var sb=document.getElementById('desk-sidebar');sb.c
 // Highlight active desk-sidebar link on scroll
 (function(){var links=document.querySelectorAll('.ds-link[href^="#"]');var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){l.classList.remove('active');});var a=document.querySelector('.ds-link[href="#'+e.target.id+'"]');if(a)a.classList.add('active');}});},{threshold:0.3});document.querySelectorAll('section[id]').forEach(function(s){obs.observe(s);});})();
 function mobNav(id){var el=document.getElementById(id);if(el){el.scrollIntoView({behavior:'smooth',block:'start'});}else{var sec=document.querySelector('section[data-section="'+id+'"],#sec-'+id+',div[data-id="'+id+'"]');if(sec)sec.scrollIntoView({behavior:'smooth'});}closeMobSidebar();}
+</script>
+<script>
+(function(){
+  window.addEventListener('scroll',function(){var docH=document.documentElement.scrollHeight-window.innerHeight;var pct=docH>0?(window.scrollY/docH*100).toFixed(1):0;var sp=document.getElementById('scroll-progress');if(sp)sp.style.width=pct+'%';},{passive:true});
+})();
 </script>
 </body>
 </html>

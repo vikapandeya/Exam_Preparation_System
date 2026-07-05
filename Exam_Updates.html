@@ -128,6 +128,14 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:28px
 @media(max-width:640px){.srch{max-width:130px}}
 @media(max-width:480px){.srow{grid-template-columns:1fr 1fr}.exgrid{grid-template-columns:1fr}.fgrid{grid-template-columns:1fr}.srch{display:none}.ml>.tbtn:first-child{display:none}}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+/* ── HEADER ENHANCEMENTS ── */
+#scroll-progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--accent),#d97706);z-index:2000;transition:width .1s linear;width:0%;}
+#creator-badge{display:flex;align-items:center;gap:.4rem;font-size:.75rem;font-weight:600;color:var(--muted);white-space:nowrap;}
+#creator-badge .cb-dot{width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#d97706);animation:pulse-dot 2s ease-in-out infinite;}
+@keyframes pulse-dot{0%,100%{transform:scale(1);opacity:1;}50%{transform:scale(1.4);opacity:.7;}}
+#progress-pill{background:linear-gradient(135deg,var(--accent),#d97706);color:#fff;border-radius:99px;padding:.3rem .85rem;font-size:.8rem;font-weight:600;cursor:pointer;white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center;gap:.3rem;margin-left:.5rem;}
+@media(max-width:640px){#creator-badge{display:none;}}
+@media(max-width:480px){#progress-pill{display:none;}}
 /* Mobile Sidebar Drawer */
 #mob-sidebar{position:fixed;top:0;left:0;height:100vh;width:280px;background:#0f172a;border-right:1px solid rgba(255,255,255,.1);z-index:9999;transform:translateX(-100%);transition:transform .3s ease;overflow-y:auto;padding:0 0 40px;}
 #mob-sidebar.open{transform:translateX(0);}
@@ -191,9 +199,11 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:28px
   </div>
 </nav>
 
+<div id="scroll-progress"></div>
 <header class="topbar">
   <button class="eu-mob-ham" onclick="openMobSidebar()" aria-label="Menu">☰</button>
   <div class="logo" onclick="showSection('home')"><div class="logo-mark">EU</div>Exam <span>Updates</span></div>
+  <div id="creator-badge"><span class="cb-dot"></span>by Vikash Pandey</div>
   <div class="srch">
     <input type="text" id="msearch" placeholder="Search notifications, jobs, results…" autocomplete="off">
     <div class="sdrop" id="sdrop"></div>
@@ -202,6 +212,7 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:28px
     <button class="tbtn" onclick="refreshNow()" title="Refresh live feed">🔄 Refresh</button>
     <button class="tbtn" id="themeBtn" title="Toggle theme">◑</button>
   </div>
+  <a href="study-dashboard.html" id="progress-pill">📊 Progress</a>
 </header>
 <div id="sub-nav">
   <div class="page-links">
@@ -500,6 +511,11 @@ function initSearch(){
   });
   document.addEventListener('click',e=>{if(!e.target.closest('.srch'))drop.classList.remove('open');});
 }
+</script>
+<script>
+(function(){
+  window.addEventListener('scroll',function(){var docH=document.documentElement.scrollHeight-window.innerHeight;var pct=docH>0?(window.scrollY/docH*100).toFixed(1):0;var sp=document.getElementById('scroll-progress');if(sp)sp.style.width=pct+'%';},{passive:true});
+})();
 </script>
 </body>
 </html>

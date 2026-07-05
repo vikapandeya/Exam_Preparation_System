@@ -257,6 +257,14 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:28px
 .art-src a{color:var(--accent);text-decoration:none;font-weight:600}
 .live-sep{margin:18px 0 16px;text-align:center;font-size:11px;color:var(--text3);display:flex;align-items:center;gap:8px}
 .live-sep::before,.live-sep::after{content:'';flex:1;height:1px;background:var(--border)}
+/* ── HEADER ENHANCEMENTS ── */
+#scroll-progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--accent),#d97706);z-index:2000;transition:width .1s linear;width:0%;}
+#creator-badge{display:flex;align-items:center;gap:.4rem;font-size:.75rem;font-weight:600;color:var(--muted);white-space:nowrap;}
+#creator-badge .cb-dot{width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#d97706);animation:pulse-dot 2s ease-in-out infinite;}
+@keyframes pulse-dot{0%,100%{transform:scale(1);opacity:1;}50%{transform:scale(1.4);opacity:.7;}}
+#progress-pill{background:linear-gradient(135deg,var(--accent),#d97706);color:#fff;border-radius:99px;padding:.3rem .85rem;font-size:.8rem;font-weight:600;cursor:pointer;white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center;gap:.3rem;margin-left:.5rem;}
+@media(max-width:640px){#creator-badge{display:none;}}
+@media(max-width:480px){#progress-pill{display:none;}}
 </style>
 <script>(function(){var t=localStorage.getItem('eps-theme');if(t)document.documentElement.setAttribute('data-theme',t);})()</script>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📰</text></svg>">
@@ -301,10 +309,12 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:28px
   </div>
 </nav>
 
+<div id="scroll-progress"></div>
 <div id="ca-header-wrap">
 <header class="topbar">
   <button class="ca-mob-ham" onclick="openMobSidebar()" aria-label="Menu">☰</button>
   <div class="logo" onclick="showSection('home')"><div class="logo-mark">CA</div>Current Affairs <span>Mastery</span></div>
+  <div id="creator-badge"><span class="cb-dot"></span>by Vikash Pandey</div>
   <div class="srch">
     <input type="text" id="msearch" placeholder="Search news, topics, MCQs…" autocomplete="off">
     <div class="sdrop" id="sdrop"></div>
@@ -313,6 +323,7 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:28px
     <button class="tbtn" onclick="startActiveRecall()" title="Active Recall Quiz — Test yourself on today's headlines!" style="background:linear-gradient(135deg,#f59e0b,#d97706);color:#000;border-color:transparent;font-weight:700;font-size:12px">🧠 Quiz Me</button>
     <button class="tbtn" id="themeBtn" title="Toggle theme">◑</button>
   </div>
+  <a href="study-dashboard.html" id="progress-pill">📊 Progress</a>
 </header>
 <div id="sub-nav">
   <div class="page-links">
@@ -1245,6 +1256,11 @@ window.arMark=arMark;
 function openMobSidebar(){document.getElementById('mob-sidebar').classList.add('open');document.getElementById('mob-overlay').classList.add('show');document.body.style.overflow='hidden';}
 function closeMobSidebar(){document.getElementById('mob-sidebar').classList.remove('open');document.getElementById('mob-overlay').classList.remove('show');document.body.style.overflow='';}
 function mobSection(id){if(typeof showSection==='function')showSection(id);closeMobSidebar();window.scrollTo({top:0,behavior:'smooth'});}
+</script>
+<script>
+(function(){
+  window.addEventListener('scroll',function(){var docH=document.documentElement.scrollHeight-window.innerHeight;var pct=docH>0?(window.scrollY/docH*100).toFixed(1):0;var sp=document.getElementById('scroll-progress');if(sp)sp.style.width=pct+'%';},{passive:true});
+})();
 </script>
 </body>
 </html>

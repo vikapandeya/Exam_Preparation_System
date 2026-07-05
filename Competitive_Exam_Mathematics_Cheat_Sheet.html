@@ -874,6 +874,24 @@
     .toc-mob-hd{display:none;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:2px solid rgba(0,0,0,.1);background:linear-gradient(135deg,#1e40af,#3b82f6);color:#fff;flex-shrink:0;}
     @media(max-width:768px){.toc-mob-hd{display:flex!important;}}
     .toc-mob-close{background:none;border:none;color:#fff;font-size:1.2rem;cursor:pointer;line-height:1;}
+/* ── HEADER ENHANCEMENTS ── */
+#scroll-progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,#2563eb,#7c3aed);z-index:2000;transition:width .1s linear;width:0%;}
+#creator-badge{display:flex;align-items:center;gap:.4rem;font-size:.75rem;font-weight:600;color:rgba(255,255,255,.7);white-space:nowrap;}
+#creator-badge .cb-dot{width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,#60a5fa,#a78bfa);animation:pulse-dot 2s ease-in-out infinite;}
+@keyframes pulse-dot{0%,100%{transform:scale(1);opacity:1;}50%{transform:scale(1.4);opacity:.7;}}
+#search-bar{flex:1;max-width:360px;position:relative;}
+#search-bar input{width:100%;padding:.45rem 2.4rem .45rem 2.4rem;border:1.5px solid rgba(255,255,255,.3);border-radius:99px;background:rgba(255,255,255,.1);color:#fff;font-size:.88rem;outline:none;transition:.2s;}
+#search-bar input::placeholder{color:rgba(255,255,255,.6);}
+#search-bar .kbd-hint{position:absolute;right:.75rem;top:50%;transform:translateY(-50%);font-size:.68rem;background:rgba(255,255,255,.2);color:rgba(255,255,255,.8);padding:.1rem .4rem;border-radius:4px;pointer-events:none;}
+#search-bar input:focus{border-color:rgba(255,255,255,.7);box-shadow:0 0 0 3px rgba(255,255,255,.1);}
+#search-bar input:focus ~ .kbd-hint{display:none;}
+#search-bar .ico{position:absolute;left:.75rem;top:50%;transform:translateY(-50%);color:rgba(255,255,255,.7);}
+#search-results{position:absolute;top:calc(100% + 6px);left:0;right:0;background:#1e293b;border:1px solid #334155;border-radius:10px;box-shadow:0 4px 24px rgba(0,0,0,.4);max-height:300px;overflow-y:auto;z-index:2000;display:none;}
+#search-results .sr-item{padding:.65rem 1rem;cursor:pointer;font-size:.88rem;border-bottom:1px solid #334155;transition:.15s;color:#f1f5f9;}
+#search-results .sr-item:hover{background:#334155;}
+#hdr-progress-pill{background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;border-radius:99px;padding:.3rem .85rem;font-size:.8rem;font-weight:600;cursor:pointer;white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center;gap:.3rem;flex-shrink:0;}
+@media(max-width:640px){#creator-badge{display:none;}}
+@media(max-width:480px){#search-bar{display:none;} #hdr-progress-pill{display:none;}}
   </style>
 <script>(function(){var t=localStorage.getItem("eps-theme");if(t==="dark"){document.documentElement.classList.add("dark");document.documentElement.setAttribute("data-theme","dark");}window.addEventListener('DOMContentLoaded',function(){var b=document.getElementById('hdr-theme-btn');if(b)b.textContent=t==='dark'?'☀️ Light':'🌙 Dark';});})()</script>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
@@ -885,10 +903,14 @@
 </head>
 <body>
 <div id="math-mob-overlay" onclick="closeMathSidebar()"></div>
+<div id="scroll-progress"></div>
 <header id="site-header">
   <button class="math-ham-btn" onclick="openMathSidebar()" aria-label="Open topics">☰</button>
   <div class="sh-brand">🧮 Mathematics Mastery</div>
   <span class="sh-by">by <strong>Vikash Pandey</strong></span>
+<div id="creator-badge"><span class="cb-dot"></span>by Vikash Pandey</div>
+<div id="search-bar"><span class="ico">🔍</span><input type="text" id="search-input" placeholder="Search formulas…" autocomplete="off"><span class="kbd-hint">/</span><div id="search-results"></div></div>
+<a href="study-dashboard.html" id="hdr-progress-pill">📊 Progress</a>
   <button id="hdr-theme-btn" style="margin-left:auto;background:none;border:1px solid var(--line,#d0dde6);border-radius:8px;padding:4px 12px;cursor:pointer;font-size:.8rem;color:var(--text,#17324d);font-family:inherit;white-space:nowrap;flex-shrink:0;" onclick="document.getElementById('toggleTheme').click();this.textContent=document.body.classList.contains('dark')?'☀️ Light':'🌙 Dark'">🌙 Dark</button>
 </header>
   <div id="mob-topnav">
@@ -3689,6 +3711,18 @@
 function openMathSidebar(){var t=document.querySelector('.toc');var o=document.getElementById('math-mob-overlay');if(t)t.classList.add('mob-open');if(o)o.classList.add('show');document.body.style.overflow='hidden';}
 function closeMathSidebar(){var t=document.querySelector('.toc');var o=document.getElementById('math-mob-overlay');if(t)t.classList.remove('mob-open');if(o)o.classList.remove('show');document.body.style.overflow='';}
 (function(){document.querySelectorAll('.toc a, .toc .page-links a').forEach(function(a){a.addEventListener('click',function(){if(window.innerWidth<=768)closeMathSidebar();});});})();
+</script>
+<script>
+(function(){
+  window.addEventListener('scroll',function(){var docH=document.documentElement.scrollHeight-window.innerHeight;var pct=docH>0?(window.scrollY/docH*100).toFixed(1):0;var sp=document.getElementById('scroll-progress');if(sp)sp.style.width=pct+'%';},{passive:true});
+  var si=document.getElementById('search-input'),sr=document.getElementById('search-results');
+  if(!si||!sr)return;
+  var idx=[];
+  document.querySelectorAll('h2,h3,h4,.section-title').forEach(function(el){if(!el.closest('#site-header')&&!el.closest('#mob-topnav'))idx.push({text:el.textContent.trim(),el:el});});
+  si.addEventListener('input',function(){var q=this.value.toLowerCase().trim();if(!q){sr.style.display='none';return;}var hits=idx.filter(function(x){return x.text.toLowerCase().includes(q);}).slice(0,8);if(!hits.length){sr.style.display='none';return;}sr.innerHTML=hits.map(function(h){return '<div class="sr-item">'+h.text+'</div>';}).join('');sr.style.display='block';sr.querySelectorAll('.sr-item').forEach(function(item,i){item.onclick=function(){hits[i].el.scrollIntoView({behavior:'smooth',block:'center'});sr.style.display='none';si.value='';};});});
+  document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'){e.preventDefault();si.focus();}if(e.key==='Escape'){sr.style.display='none';si.value='';}});
+  document.addEventListener('click',function(e){if(!e.target.closest('#search-bar'))sr.style.display='none';});
+})();
 </script>
 </body>
 </html>

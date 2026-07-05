@@ -280,6 +280,24 @@ a{text-decoration:none;color:inherit}
   .overview-grid{grid-template-columns:1fr 1fr}
 }
 
+/* ── HEADER ENHANCEMENTS ── */
+#scroll-progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--primary,#2563eb),#7c3aed);z-index:2000;transition:width .1s linear;width:0%;}
+#creator-badge{display:flex;align-items:center;gap:.4rem;font-size:.75rem;font-weight:600;color:var(--muted,#64748b);white-space:nowrap;}
+#creator-badge .cb-dot{width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,var(--primary,#2563eb),#7c3aed);animation:pulse-dot 2s ease-in-out infinite;}
+@keyframes pulse-dot{0%,100%{transform:scale(1);opacity:1;}50%{transform:scale(1.4);opacity:.7;}}
+#hdr-search-bar{flex:1;max-width:360px;position:relative;}
+#hdr-search-bar input{width:100%;padding:.45rem 2.4rem .45rem 2.4rem;border:1.5px solid var(--border,#e2e8f0);border-radius:99px;background:var(--bg,#f8fafc);color:var(--text,#1e293b);font-size:.88rem;outline:none;transition:.2s;}
+#hdr-search-bar .kbd-hint{position:absolute;right:.75rem;top:50%;transform:translateY(-50%);font-size:.68rem;background:var(--border,#e2e8f0);color:var(--muted,#64748b);padding:.1rem .4rem;border-radius:4px;pointer-events:none;}
+#hdr-search-bar input:focus{border-color:var(--primary,#2563eb);box-shadow:0 0 0 3px rgba(37,99,235,.1);}
+#hdr-search-bar input:focus ~ .kbd-hint{display:none;}
+#hdr-search-bar .ico{position:absolute;left:.75rem;top:50%;transform:translateY(-50%);color:var(--muted,#64748b);}
+#hdr-search-results{position:absolute;top:calc(100% + 6px);left:0;right:0;background:var(--surface,#fff);border:1px solid var(--border,#e2e8f0);border-radius:10px;box-shadow:0 4px 24px rgba(0,0,0,.12);max-height:300px;overflow-y:auto;z-index:2000;display:none;}
+#hdr-search-results .sr-item{padding:.65rem 1rem;cursor:pointer;font-size:.88rem;border-bottom:1px solid var(--border,#e2e8f0);transition:.15s;}
+#hdr-search-results .sr-item:hover{background:var(--bg,#f8fafc);}
+#syl-progress-pill{background:linear-gradient(135deg,var(--primary,#2563eb),#7c3aed);color:#fff;border-radius:99px;padding:.3rem .85rem;font-size:.8rem;font-weight:600;cursor:pointer;white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center;gap:.3rem;}
+@media(max-width:640px){#creator-badge{display:none;}}
+@media(max-width:480px){#hdr-search-bar{display:none;} #syl-progress-pill{display:none;}}
+
 /* Print button */
 #print-btn{display:flex;align-items:center;gap:.4rem;background:none;border:1.5px solid var(--border);border-radius:var(--r);padding:.4rem .9rem;font-size:.8rem;color:var(--text);cursor:pointer;font-family:inherit;transition:.2s;margin-left:auto}
 #print-btn:hover{border-color:var(--primary);color:var(--primary)}
@@ -299,13 +317,17 @@ a{text-decoration:none;color:inherit}
 </head>
 <body>
 
+<div id="scroll-progress"></div>
+
 <!-- ── HEADER ── -->
 <header id="topbar">
   <div class="brand">
     <span class="brand-icon">📋</span>
     <span>Syllabus Hub</span>
   </div>
-  <span style="font-size:.75rem;color:var(--muted);margin-left:.5rem">by <strong style="color:var(--text)">Vikash Pandey</strong></span>
+  <div id="creator-badge"><span class="cb-dot"></span>by Vikash Pandey</div>
+  <div id="hdr-search-bar"><span class="ico">🔍</span><input type="text" id="hdr-search-input" placeholder="Search syllabus…" autocomplete="off"><span class="kbd-hint">/</span><div id="hdr-search-results"></div></div>
+  <a href="study-dashboard.html" id="syl-progress-pill">📊 Progress</a>
   <div class="topbar-right">
     <button id="theme-btn">🌙 Dark</button>
   </div>
@@ -2267,6 +2289,21 @@ renderAll();
 (function(){
   var b=document.getElementById('btt');
   window.addEventListener('scroll',function(){if(b)b.classList.toggle('show',window.scrollY>400);});
+})();
+</script>
+<script>
+(function(){
+  window.addEventListener('scroll',function(){var docH=document.documentElement.scrollHeight-window.innerHeight;var pct=docH>0?(window.scrollY/docH*100).toFixed(1):0;var sp=document.getElementById('scroll-progress');if(sp)sp.style.width=pct+'%';},{passive:true});
+  var t=localStorage.getItem('eps-theme')||'light',btn=document.getElementById('theme-btn');
+  if(btn)btn.textContent=t==='dark'?'☀️ Light':'🌙 Dark';
+  var _ot=window.toggleTheme;if(_ot)window.toggleTheme=function(){_ot();var cur=document.documentElement.getAttribute('data-theme');if(btn)btn.textContent=cur==='dark'?'☀️ Light':'🌙 Dark';};
+  var si=document.getElementById('hdr-search-input'),sr=document.getElementById('hdr-search-results');
+  if(!si||!sr)return;
+  var idx=[];
+  document.querySelectorAll('h2,h3,h4,.exam-name,.subject-tag').forEach(function(el){if(!el.closest('header')&&!el.closest('nav'))idx.push({text:el.textContent.trim(),el:el});});
+  si.addEventListener('input',function(){var q=this.value.toLowerCase().trim();if(!q){sr.style.display='none';return;}var hits=idx.filter(function(x){return x.text.toLowerCase().includes(q);}).slice(0,8);if(!hits.length){sr.style.display='none';return;}sr.innerHTML=hits.map(function(h){return '<div class="sr-item">'+h.text+'</div>';}).join('');sr.style.display='block';sr.querySelectorAll('.sr-item').forEach(function(item,i){item.onclick=function(){hits[i].el.scrollIntoView({behavior:'smooth',block:'center'});sr.style.display='none';si.value='';};});});
+  document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'){e.preventDefault();si.focus();}if(e.key==='Escape'){sr.style.display='none';si.value='';}});
+  document.addEventListener('click',function(e){if(!e.target.closest('#hdr-search-bar'))sr.style.display='none';});
 })();
 </script>
 </body>

@@ -190,6 +190,23 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
   #sub-nav{display:none!important;}
   main,#footer,footer{margin-left:0!important;margin-top:64px!important;padding-top:0!important;}
 }
+/* ── HEADER ENHANCEMENTS ── */
+#scroll-progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--primary,#dc2626),#f59e0b);z-index:2000;transition:width .1s linear;width:0%;}
+#creator-badge{display:flex;align-items:center;gap:.4rem;font-size:.75rem;font-weight:600;color:var(--muted,#64748b);white-space:nowrap;}
+#creator-badge .cb-dot{width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,var(--primary,#dc2626),#f59e0b);animation:pulse-dot 2s ease-in-out infinite;}
+@keyframes pulse-dot{0%,100%{transform:scale(1);opacity:1;}50%{transform:scale(1.4);opacity:.7;}}
+#search-bar{flex:1;max-width:380px;position:relative;}
+#search-bar input{width:100%;padding:.5rem 2.6rem .5rem 2.6rem;border:1.5px solid var(--border,#e2e8f0);border-radius:99px;background:var(--surface2,#f8fafc);color:var(--text,#1e293b);font-size:.9rem;outline:none;transition:.2s;}
+#search-bar .kbd-hint{position:absolute;right:.75rem;top:50%;transform:translateY(-50%);font-size:.7rem;background:var(--border,#e2e8f0);color:var(--muted,#64748b);padding:.1rem .4rem;border-radius:4px;pointer-events:none;}
+#search-bar input:focus{border-color:var(--primary,#dc2626);box-shadow:0 0 0 3px rgba(220,38,38,.1);}
+#search-bar input:focus ~ .kbd-hint{display:none;}
+#search-bar .ico{position:absolute;left:.8rem;top:50%;transform:translateY(-50%);color:var(--muted,#64748b);}
+#search-results{position:absolute;top:calc(100% + 6px);left:0;right:0;background:var(--surface,#fff);border:1px solid var(--border,#e2e8f0);border-radius:10px;box-shadow:0 4px 24px rgba(0,0,0,.12);max-height:300px;overflow-y:auto;z-index:2000;display:none;}
+#search-results .sr-item{padding:.65rem 1rem;cursor:pointer;font-size:.88rem;border-bottom:1px solid var(--border,#e2e8f0);transition:.15s;}
+#search-results .sr-item:hover{background:var(--surface2,#f8fafc);}
+#progress-pill{background:linear-gradient(135deg,var(--primary,#dc2626),#f59e0b);color:#fff;border-radius:99px;padding:.3rem .85rem;font-size:.8rem;font-weight:600;cursor:pointer;white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center;gap:.3rem;}
+@media(max-width:640px){#creator-badge{display:none;}}
+@media(max-width:480px){#search-bar{display:none;} #progress-pill{display:none;}}
 </style>
 <script>(function(){var t=localStorage.getItem('eps-theme');if(t==='dark')document.documentElement.setAttribute('data-theme','dark');})()</script>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇮🇳</text></svg>">
@@ -276,10 +293,14 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
     <a class="hin-sb-lnk" href="#quiz" onclick="closeHinSidebar()">🧪 क्विज़</a>
   </div>
 </nav>
+<div id="scroll-progress"></div>
 <header id="hin-header">
   <button id="hin-ham" onclick="window.innerWidth<=768?openHinSidebar():toggleHinDeskSidebar()" aria-label="Menu"><span></span><span></span><span></span></button>
   <a href="index.html" id="hin-logo">📖 हिंदी व्याकरण</a>
+  <div id="creator-badge"><span class="cb-dot"></span>by Vikash Pandey</div>
+  <div id="search-bar"><span class="ico">🔍</span><input type="text" id="search-input" placeholder="Search topics…" autocomplete="off"><span class="kbd-hint">/</span><div id="search-results"></div></div>
   <div id="hin-hdr-right">
+    <a href="study-dashboard.html" id="progress-pill">📊 Progress</a>
     <button id="hin-theme-btn" onclick="toggleTheme()">🌙 Theme</button>
   </div>
 </header>
@@ -1130,6 +1151,21 @@ function toggleHinDeskSidebar(){
 (function(){
   var tb=document.getElementById('hin-theme-btn');
   if(tb)tb.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'☀️ Light':'🌙 Dark';
+})();
+</script>
+<script>
+(function(){
+  window.addEventListener('scroll',function(){var docH=document.documentElement.scrollHeight-window.innerHeight;var pct=docH>0?(window.scrollY/docH*100).toFixed(1):0;var sp=document.getElementById('scroll-progress');if(sp)sp.style.width=pct+'%';},{passive:true});
+  var t=localStorage.getItem('eps-theme')||'light',btn=document.getElementById('hin-theme-btn');
+  if(btn)btn.textContent=t==='dark'?'☀️ Light':'🌙 Dark';
+  var _ot=window.toggleTheme;window.toggleTheme=function(){if(_ot)_ot();var cur=document.documentElement.getAttribute('data-theme');if(btn)btn.textContent=cur==='dark'?'☀️ Light':'🌙 Dark';};
+  var si=document.getElementById('search-input'),sr=document.getElementById('search-results');
+  if(!si||!sr)return;
+  var idx=[];
+  document.querySelectorAll('h2,h3,h4').forEach(function(el){if(!el.closest('header')&&!el.closest('nav'))idx.push({text:el.textContent.trim(),el:el});});
+  si.addEventListener('input',function(){var q=this.value.toLowerCase().trim();if(!q){sr.style.display='none';return;}var hits=idx.filter(function(x){return x.text.toLowerCase().includes(q);}).slice(0,8);if(!hits.length){sr.style.display='none';return;}sr.innerHTML=hits.map(function(h){return '<div class="sr-item">'+h.text+'</div>';}).join('');sr.style.display='block';sr.querySelectorAll('.sr-item').forEach(function(item,i){item.onclick=function(){hits[i].el.scrollIntoView({behavior:'smooth',block:'center'});sr.style.display='none';si.value='';};});});
+  document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'){e.preventDefault();si.focus();}if(e.key==='Escape'){sr.style.display='none';si.value='';}});
+  document.addEventListener('click',function(e){if(!e.target.closest('#search-bar'))sr.style.display='none';});
 })();
 </script>
 </body>

@@ -112,6 +112,24 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:14px
   .grid2{grid-template-columns:1fr;}
   #sub-nav{display:none;}
 }
+/* ── HEADER ENHANCEMENTS ── */
+#scroll-progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--primary),#7c3aed);z-index:2000;transition:width .1s linear;width:0%;}
+#creator-badge{display:flex;align-items:center;gap:.4rem;font-size:.75rem;font-weight:600;color:var(--muted);white-space:nowrap;}
+#creator-badge .cb-dot{width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,var(--primary),#7c3aed);animation:pulse-dot 2s ease-in-out infinite;}
+@keyframes pulse-dot{0%,100%{transform:scale(1);opacity:1;}50%{transform:scale(1.4);opacity:.7;}}
+#search-bar{flex:1;max-width:380px;position:relative;}
+#search-bar input{width:100%;padding:.5rem 2.6rem .5rem 2.6rem;border:1.5px solid var(--border);border-radius:99px;background:var(--bg);color:var(--text);font-size:.9rem;outline:none;transition:.2s;}
+#search-bar .kbd-hint{position:absolute;right:.75rem;top:50%;transform:translateY(-50%);font-size:.7rem;background:var(--border);color:var(--muted);padding:.1rem .4rem;border-radius:4px;pointer-events:none;}
+#search-bar input:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(37,99,235,.1);}
+#search-bar input:focus ~ .kbd-hint{display:none;}
+#search-bar .ico{position:absolute;left:.8rem;top:50%;transform:translateY(-50%);color:var(--muted);}
+#search-results{position:absolute;top:calc(100% + 6px);left:0;right:0;background:var(--surface,#fff);border:1px solid var(--border);border-radius:10px;box-shadow:0 4px 24px rgba(0,0,0,.12);max-height:300px;overflow-y:auto;z-index:2000;display:none;}
+#search-results .sr-item{padding:.65rem 1rem;cursor:pointer;font-size:.88rem;border-bottom:1px solid var(--border);transition:.15s;}
+#search-results .sr-item:hover{background:var(--surface2,#f8fafc);}
+#progress-pill{background:linear-gradient(135deg,var(--primary),#7c3aed);color:#fff;border-radius:99px;padding:.3rem .85rem;font-size:.8rem;font-weight:600;cursor:pointer;white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center;gap:.3rem;}
+header .right{display:flex;align-items:center;gap:.75rem;}
+@media(max-width:640px){#creator-badge{display:none;}}
+@media(max-width:500px){#search-bar{display:none;} #progress-pill{display:none;}}
 /* PRACTICE QUESTIONS */
 .practice-set{margin-top:12px;}
 .pq-item{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:14px;margin-bottom:10px;}
@@ -123,11 +141,20 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:14px
 </head>
 <body>
 
+<div id="scroll-progress"></div>
 <header>
-  <button id="ham-btn" onclick="toggleSidebar()" aria-label="Toggle sidebar">☰</button>
+  <button id="hamburger" onclick="toggleSidebar()" aria-label="Menu" style="background:none;border:none;cursor:pointer;display:flex;flex-direction:column;gap:4px;padding:4px;"><span style="display:block;width:22px;height:2px;background:var(--text);border-radius:2px;"></span><span style="display:block;width:22px;height:2px;background:var(--text);border-radius:2px;"></span><span style="display:block;width:22px;height:2px;background:var(--text);border-radius:2px;"></span></button>
   <div class="site-logo">EPS <span>/ Reasoning</span></div>
-  <div class="hdr-actions">
-    <button class="btn-icon" onclick="toggleTheme()" title="Toggle theme">🌙</button>
+  <div id="creator-badge"><span class="cb-dot"></span>by Vikash Pandey</div>
+  <div id="search-bar">
+    <span class="ico">🔍</span>
+    <input type="text" id="search-input" placeholder="Search topics…" autocomplete="off">
+    <span class="kbd-hint">/</span>
+    <div id="search-results"></div>
+  </div>
+  <div class="right">
+    <a href="study-dashboard.html" id="progress-pill">📊 Progress</a>
+    <button id="theme-btn" onclick="toggleTheme()">🌙 Dark</button>
   </div>
 </header>
 
@@ -1058,6 +1085,34 @@ function showPageById(id){document.querySelectorAll('.page').forEach(function(p)
 (function(){var p=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.page-links a').forEach(function(a){if(a.getAttribute('href')===p)a.classList.add('current');});})();
 (function(){var b=document.getElementById('btt');window.addEventListener('scroll',function(){if(b)b.classList.toggle('show',window.scrollY>400);},false);})();
 (function(){if(window.innerWidth<=768){var sb=document.getElementById('sidebar');if(sb)sb.classList.add('closed');}})();
+</script>
+<script>
+(function(){
+  var t=localStorage.getItem('eps-theme')||'light';
+  var btn=document.getElementById('theme-btn');
+  if(btn)btn.textContent=t==='dark'?'☀️ Light':'🌙 Dark';
+  var _ot=window.toggleTheme;
+  window.toggleTheme=function(){if(_ot)_ot();var cur=document.documentElement.getAttribute('data-theme');if(btn)btn.textContent=cur==='dark'?'☀️ Light':'🌙 Dark';};
+  window.addEventListener('scroll',function(){var sp=document.getElementById('scroll-progress');if(!sp)return;var el=document.getElementById('main')||document.documentElement;var docH=el.scrollHeight-window.innerHeight;var pct=docH>0?(window.scrollY/docH*100).toFixed(1):0;sp.style.width=pct+'%';},{passive:true});
+  var si=document.getElementById('search-input'),sr=document.getElementById('search-results');
+  if(!si||!sr)return;
+  var idx=[];
+  document.querySelectorAll('#sidebar .sb-item,#sidebar a').forEach(function(el){idx.push({text:el.textContent.trim(),el:el,type:'nav'});});
+  document.querySelectorAll('h2,h3').forEach(function(el){if(el.closest('header'))return;idx.push({text:el.textContent.trim(),el:el,type:'head'});});
+  si.addEventListener('input',function(){
+    var q=this.value.toLowerCase().trim();
+    if(!q){sr.style.display='none';return;}
+    var hits=idx.filter(function(x){return x.text.toLowerCase().includes(q);}).slice(0,8);
+    if(!hits.length){sr.style.display='none';return;}
+    sr.innerHTML=hits.map(function(h){return '<div class="sr-item">'+h.text+'</div>';}).join('');
+    sr.style.display='block';
+    sr.querySelectorAll('.sr-item').forEach(function(item,i){
+      item.onclick=function(){var h=hits[i];h.el.scrollIntoView({behavior:'smooth',block:'center'});sr.style.display='none';si.value='';};
+    });
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();si.focus();}if(e.key==='Escape'){sr.style.display='none';si.value='';}});
+  document.addEventListener('click',function(e){if(!e.target.closest('#search-bar'))sr.style.display='none';});
+})();
 </script>
 </body>
 </html>
