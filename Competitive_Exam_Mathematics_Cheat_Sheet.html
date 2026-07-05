@@ -874,7 +874,7 @@
     @media(max-width:768px){.toc-mob-hd{display:flex!important;}}
     .toc-mob-close{background:none;border:none;color:#fff;font-size:1.2rem;cursor:pointer;line-height:1;}
   </style>
-<script>(function(){var t=localStorage.getItem("eps-theme");if(t==="dark"){document.documentElement.classList.add("dark");document.documentElement.setAttribute("data-theme","dark");}})()</script>
+<script>(function(){var t=localStorage.getItem("eps-theme");if(t==="dark"){document.documentElement.classList.add("dark");document.documentElement.setAttribute("data-theme","dark");}window.addEventListener('DOMContentLoaded',function(){var b=document.getElementById('hdr-theme-btn');if(b)b.textContent=t==='dark'?'☀️ Light':'🌙 Dark';});})()</script>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#2563eb">
@@ -888,6 +888,7 @@
   <button class="math-ham-btn" onclick="openMathSidebar()" aria-label="Open topics">☰</button>
   <div class="sh-brand">🧮 Mathematics Mastery</div>
   <span class="sh-by">by <strong>Vikash Pandey</strong></span>
+  <button id="hdr-theme-btn" style="margin-left:auto;background:none;border:1px solid var(--line,#d0dde6);border-radius:8px;padding:4px 12px;cursor:pointer;font-size:.8rem;color:var(--text,#17324d);font-family:inherit;white-space:nowrap;flex-shrink:0;" onclick="document.getElementById('toggleTheme').click();this.textContent=document.body.classList.contains('dark')?'☀️ Light':'🌙 Dark'">🌙 Dark</button>
 </header>
   <div id="mob-topnav">
     <a href="index.html">🏠 Home</a>
