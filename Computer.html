@@ -88,6 +88,24 @@ img{max-width:100%}
 main{margin-top:calc(var(--nav-h) + 44px)}
 section{padding:80px 24px;max-width:1200px;margin:0 auto}
 
+/* DESK SIDEBAR */
+#desk-sidebar{position:fixed;top:calc(var(--nav-h) + 44px);left:0;width:220px;height:calc(100vh - var(--nav-h) - 44px);overflow-y:auto;background:var(--card);border-right:1px solid var(--border);z-index:990;padding:8px 0;scrollbar-width:thin;}
+#desk-sidebar::-webkit-scrollbar{width:4px;}
+#desk-sidebar::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px;}
+.ds-link{display:flex;align-items:center;gap:8px;padding:9px 16px;font-size:.82rem;color:var(--text2);text-decoration:none;transition:background .15s;cursor:pointer;}
+.ds-link:hover{background:var(--primary-light);color:var(--primary);}
+.ds-link.active{color:var(--primary);background:var(--primary-light);font-weight:600;}
+#desk-sidebar.ds-collapsed{transform:translateX(-220px);}
+@media(min-width:769px){
+  .nav-links{display:none!important;}
+  #hamburger{display:flex!important;background:none;border:none;cursor:pointer;color:var(--text);font-size:1.3rem;padding:4px 6px;}
+  body{padding-left:220px;transition:padding-left .3s;}
+  body.ds-collapsed{padding-left:0;}
+}
+@media(max-width:768px){
+  #desk-sidebar{display:none!important;}
+}
+
 /* HERO */
 #hero{min-height:92vh;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(135deg,#1e3a5f 0%,#2563eb 40%,#7c3aed 100%);padding:100px 24px 80px;max-width:100%;position:relative;overflow:hidden}
 #hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
@@ -527,7 +545,7 @@ kbd{display:inline-block;padding:2px 7px;border-radius:5px;border:1px solid var(
   </div>
   <button id="theme-toggle" title="Toggle theme"><i class="fas fa-moon"></i></button>
   <button class="mob-ham-btn" onclick="openMobSidebar()" aria-label="Open menu">☰</button>
-  <button id="hamburger" aria-label="Toggle navigation menu"><i class="fas fa-bars"></i></button>
+  <button id="hamburger" aria-label="Toggle sidebar" onclick="toggleDeskSidebar()"><i class="fas fa-bars"></i></button>
 </nav>
 <div id="sub-nav">
   <div class="page-links">
@@ -577,6 +595,35 @@ kbd{display:inline-block;padding:2px 7px;border-radius:5px;border:1px solid var(
   <a href="#ide"><i class="fas fa-terminal"></i> IDE</a>
   <a href="#dashboard">Dashboard</a>
 </div>
+
+<!-- DESK SIDEBAR (desktop only) -->
+<nav id="desk-sidebar">
+  <a class="ds-link" href="#intro">📖 Introduction</a>
+  <a class="ds-link" href="#fundamentals">⚙️ Fundamentals</a>
+  <a class="ds-link" href="#hardware">🖥️ Hardware</a>
+  <a class="ds-link" href="#software">💿 Software</a>
+  <a class="ds-link" href="#os">🖥️ Operating Systems</a>
+  <a class="ds-link" href="#filemanagement">📁 File Management</a>
+  <a class="ds-link" href="#msoffice">📄 MS Office</a>
+  <a class="ds-link" href="#internet">🌐 Internet</a>
+  <a class="ds-link" href="#networking">🔗 Networking</a>
+  <a class="ds-link" href="#security">🔒 Cybersecurity</a>
+  <a class="ds-link" href="#programming">💻 Programming</a>
+  <a class="ds-link" href="#webdev">🌍 Web Dev</a>
+  <a class="ds-link" href="#git">📦 Git & GitHub</a>
+  <a class="ds-link" href="#database">🗄️ Databases</a>
+  <a class="ds-link" href="#cloud">☁️ Cloud</a>
+  <a class="ds-link" href="#ai">🤖 AI & ML</a>
+  <a class="ds-link" href="#datascience">📊 Data Science</a>
+  <a class="ds-link" href="#maintenance">🔧 Maintenance</a>
+  <a class="ds-link" href="#interview">👔 Interview Prep</a>
+  <a class="ds-link" href="#shortcuts">⌨️ Shortcuts</a>
+  <a class="ds-link" href="#tests">📝 Practice Tests</a>
+  <a class="ds-link" href="#glossary">📚 Glossary</a>
+  <a class="ds-link" href="#downloads">⬇️ Downloads</a>
+  <a class="ds-link" href="#ide">💡 Online IDE</a>
+  <a class="ds-link" href="#dashboard">📊 Dashboard</a>
+</nav>
 
 <!-- HERO -->
 <div id="hero">
@@ -4030,6 +4077,9 @@ function escIde(s) {
 // Mobile sidebar
 function openMobSidebar(){document.getElementById('mob-sidebar').classList.add('open');document.getElementById('mob-overlay').classList.add('show');document.body.style.overflow='hidden';}
 function closeMobSidebar(){document.getElementById('mob-sidebar').classList.remove('open');document.getElementById('mob-overlay').classList.remove('show');document.body.style.overflow='';}
+function toggleDeskSidebar(){var sb=document.getElementById('desk-sidebar');sb.classList.toggle('ds-collapsed');document.body.classList.toggle('ds-collapsed');}
+// Highlight active desk-sidebar link on scroll
+(function(){var links=document.querySelectorAll('.ds-link[href^="#"]');var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){l.classList.remove('active');});var a=document.querySelector('.ds-link[href="#'+e.target.id+'"]');if(a)a.classList.add('active');}});},{threshold:0.3});document.querySelectorAll('section[id]').forEach(function(s){obs.observe(s);});})();
 function mobNav(id){var el=document.getElementById(id);if(el){el.scrollIntoView({behavior:'smooth',block:'start'});}else{var sec=document.querySelector('section[data-section="'+id+'"],#sec-'+id+',div[data-id="'+id+'"]');if(sec)sec.scrollIntoView({behavior:'smooth'});}closeMobSidebar();}
 </script>
 </body>

@@ -21,7 +21,7 @@ header{position:sticky;top:0;z-index:1000;height:var(--hdr);background:var(--sur
 #ham-btn:hover{background:var(--surface2);}
 .site-logo{font-size:1rem;font-weight:800;color:var(--primary);white-space:nowrap;}
 .site-logo span{opacity:.6;font-weight:400;}
-header h1{font-size:.9rem;font-weight:600;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.site-logo{font-size:1rem;font-weight:800;color:var(--primary);white-space:nowrap;flex:1;}
 .hdr-actions{display:flex;gap:8px;margin-left:auto;}
 .btn-icon{background:none;border:1px solid var(--border);cursor:pointer;font-size:.85rem;color:var(--text);padding:5px 10px;border-radius:8px;transition:all .2s;}
 .btn-icon:hover{background:var(--primary);color:#fff;border-color:var(--primary);}
@@ -126,7 +126,6 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:14px
 <header>
   <button id="ham-btn" onclick="toggleSidebar()" aria-label="Toggle sidebar">☰</button>
   <div class="site-logo">EPS <span>/ Reasoning</span></div>
-  <h1>Reasoning Guide</h1>
   <div class="hdr-actions">
     <button class="btn-icon" onclick="toggleTheme()" title="Toggle theme">🌙</button>
   </div>

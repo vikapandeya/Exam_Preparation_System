@@ -62,7 +62,7 @@
     .page-links a:hover{background:var(--brand);color:#fff;border-color:var(--brand);}
     .page-links a.current{background:var(--brand);color:#fff !important;border-color:var(--brand);font-weight:700;pointer-events:none;box-shadow:0 2px 8px rgba(12,110,138,.35);}
     @media(max-width:640px){.page-links{overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none;max-width:none;}.page-links::-webkit-scrollbar{display:none;}}
-    #mob-topnav{display:flex;position:sticky;top:0;z-index:200;background:var(--surface);border-bottom:1px solid var(--line);padding:8px 14px;gap:6px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;}
+    #mob-topnav{display:flex;position:sticky;top:64px;z-index:200;background:var(--surface);border-bottom:1px solid var(--line);padding:8px 14px;gap:6px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;margin-top:64px;}
     #mob-topnav::-webkit-scrollbar{display:none;}
     #mob-topnav a{font-size:.7rem;color:var(--text);background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:4px 10px;text-decoration:none;transition:all .2s;font-weight:500;white-space:nowrap;}
     #mob-topnav a:hover{background:var(--brand);color:#fff;border-color:var(--brand);}
@@ -71,7 +71,7 @@
 
 
     /* Site header */
-    #site-header{display:flex;align-items:center;justify-content:space-between;padding:0 1rem;height:48px;background:var(--surface);border-bottom:1px solid var(--line);gap:1rem;position:sticky;top:0;z-index:300;flex-shrink:0}
+    #site-header{display:flex;align-items:center;justify-content:space-between;padding:0 1rem;height:64px;background:var(--surface);border-bottom:1px solid var(--line);gap:1rem;position:fixed;top:0;left:0;right:0;z-index:300;flex-shrink:0}
     #site-header .sh-brand{font-size:.95rem;font-weight:800;color:var(--brand);display:flex;align-items:center;gap:.4rem;white-space:nowrap}
     #site-header .sh-by{font-size:.72rem;color:var(--text-2);white-space:nowrap}
     /* Site footer */
@@ -865,6 +865,7 @@
       .toc .page-links a{padding:10px 16px;border-radius:0;border-bottom:1px solid rgba(0,0,0,.06);font-size:.82rem;color:var(--text,#1e293b);text-decoration:none;white-space:normal;}
       .toc .page-links a:hover{background:rgba(0,0,0,.04);}
       #mob-topnav{display:none!important;}
+      main.content{margin-top:64px;}
     }
     #math-mob-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:9998;}
     #math-mob-overlay.show{display:block;}
