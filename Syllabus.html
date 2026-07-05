@@ -25,6 +25,27 @@
   --border:#334155;--text:#f1f5f9;--muted:#94a3b8;
   --sh:0 1px 3px rgba(0,0,0,.4);--sh-md:0 4px 20px rgba(0,0,0,.5);
 }
+/* ── DARK MODE CONTRAST FIXES ── */
+/* Badge text/bg overrides — light surface-300 tones for legibility on dark cards */
+[data-theme="dark"] .badge-upsc{background:rgba(147,197,253,.15);color:#93c5fd}
+[data-theme="dark"] .badge-ssc{background:rgba(110,231,183,.15);color:#6ee7b7}
+[data-theme="dark"] .badge-banking{background:rgba(253,211,77,.15);color:#fcd34d}
+[data-theme="dark"] .badge-railway{background:rgba(252,165,165,.15);color:#fca5a5}
+[data-theme="dark"] .badge-bihar{background:rgba(196,181,253,.15);color:#c4b5fd}
+[data-theme="dark"] .badge-defence{background:rgba(94,234,212,.15);color:#5eead4}
+[data-theme="dark"] .badge-statepsc{background:rgba(253,186,116,.15);color:#fdba74}
+[data-theme="dark"] .badge-central{background:rgba(110,231,183,.15);color:#6ee7b7}
+[data-theme="dark"] .badge-teaching{background:rgba(165,180,252,.15);color:#a5b4fc}
+[data-theme="dark"] .badge-statepolice{background:rgba(252,165,165,.15);color:#fca5a5}
+/* Primary-as-text elements: #2563eb reads only 2:1 on dark surface — switch to blue-300 */
+[data-theme="dark"] .cat-tab.active{color:#93c5fd;border-color:#93c5fd}
+[data-theme="dark"] .cat-tab:hover{color:#cbd5e1}
+[data-theme="dark"] .exam-item.active .exam-name{color:#93c5fd}
+[data-theme="dark"] .exam-item.active{border-left-color:#93c5fd}
+[data-theme="dark"] .overview-desc h3{color:#93c5fd}
+[data-theme="dark"] .total-row td{color:#93c5fd}
+[data-theme="dark"] .acc-tag:hover{border-color:#93c5fd;color:#93c5fd}
+[data-theme="dark"] .acc-tag.done{background:rgba(52,211,153,.12);border-color:#34d399;color:#6ee7b7}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh;transition:background .25s,color .25s}

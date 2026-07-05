@@ -188,7 +188,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 </head>
-<body class="has-desk-sidebar">
+<body>
 <aside id="desk-sidebar">
   <div class="ds-logo">📖 हिंदी व्याकरण</div>
   <nav>
@@ -1126,6 +1126,26 @@ function resetProgress(){
   }
 }
 updateDashboard();
+
+// ============ DESKTOP SIDEBAR ============
+(function(){
+  if(window.innerWidth>768){
+    document.body.classList.add('has-desk-sidebar');
+    var links=document.querySelectorAll('#desk-sidebar .ds-link[href^="#"]');
+    var obs=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          links.forEach(function(l){l.classList.remove('active');});
+          var lk=document.querySelector('#desk-sidebar .ds-link[href="#'+e.target.id+'"]');
+          if(lk)lk.classList.add('active');
+        }
+      });
+    },{rootMargin:'-20% 0px -60% 0px'});
+    document.querySelectorAll('[id]').forEach(function(s){
+      if(document.querySelector('#desk-sidebar .ds-link[href="#'+s.id+'"]'))obs.observe(s);
+    });
+  }
+})();
 </script>
 </body>
 </html>
