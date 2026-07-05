@@ -7,7 +7,7 @@ instead of general current affairs.
 """
 
 import json, re, urllib.request, urllib.error, urllib.parse
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from html import unescape
 import xml.etree.ElementTree as ET
 
@@ -248,9 +248,11 @@ def main():
     for i, a in enumerate(unique, start=2000):
         a['id'] = i
 
+    ist = timezone(timedelta(hours=5, minutes=30))
+    now_ist = datetime.now(ist)
     data = {
-        'updated':      datetime.now(timezone.utc).strftime('%Y-%m-%d'),
-        'updated_time': datetime.now(timezone.utc).strftime('%H:%M UTC'),
+        'updated':      now_ist.strftime('%Y-%m-%d'),
+        'updated_time': now_ist.strftime('%H:%M IST'),
         'count':        len(unique),
         'articles':     unique[:250],
     }
