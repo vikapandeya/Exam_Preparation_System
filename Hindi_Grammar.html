@@ -170,9 +170,10 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
   .ds-link{display:flex;align-items:center;gap:8px;padding:8px 16px;font-size:.78rem;color:var(--text,#1e293b);text-decoration:none;border-left:3px solid transparent;transition:all .15s;cursor:pointer;}
   [data-theme="dark"] .ds-link{color:#cbd5e1;}
   .ds-link:hover{background:rgba(220,38,38,.08);color:var(--primary,#dc2626);border-left-color:var(--primary,#dc2626);}
-  body.has-desk-sidebar .navbar{display:none!important;}
-  body.has-desk-sidebar #sub-nav{position:sticky;top:0!important;z-index:999;left:240px;}
-  body.has-desk-sidebar main,body.has-desk-sidebar #footer,body.has-desk-sidebar footer{margin-left:240px;margin-top:0;}
+  /* Desktop: sidebar always present — navbar redundant, hide it via CSS (no JS needed) */
+  .navbar{display:none!important;}
+  #sub-nav{top:0!important;z-index:999;left:240px;}
+  main,#footer,footer{margin-left:240px;margin-top:0;}
   #ds-theme-btn{margin-left:auto;background:none;border:1px solid var(--border,#e2e8f0);border-radius:8px;padding:4px 10px;cursor:pointer;font-size:.85rem;color:var(--text);font-family:inherit;transition:all .2s;white-space:nowrap;}
   #ds-theme-btn:hover{background:var(--primary,#dc2626);color:#fff;border-color:var(--primary,#dc2626);}
 }
