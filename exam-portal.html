@@ -24,7 +24,7 @@
   --text:#e2e8f0;--muted:#94a3b8;--shadow:0 2px 8px rgba(0,0,0,.4);
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);display:flex;min-height:100vh;transition:background .3s,color .3s}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);display:flex;flex-direction:column;min-height:100vh;transition:background .3s,color .3s}
 a{color:inherit;text-decoration:none}
 button{cursor:pointer;border:none;font-family:inherit}
 input,select{font-family:inherit}
@@ -47,7 +47,7 @@ input,select{font-family:inherit}
 #main{margin-left:var(--sidebar);flex:1;display:flex;flex-direction:column;min-height:100vh}
 #topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;gap:12px;position:sticky;top:0;z-index:50}
 #topbar h1{font-size:1rem;font-weight:700;flex:1}
-.page-links{display:flex;flex-wrap:wrap;gap:6px;align-items:center;max-width:440px}
+.page-links{display:flex;flex-wrap:nowrap;gap:6px;align-items:center;max-width:none;overflow-x:auto;scrollbar-width:none}
 .page-links a{font-size:.7rem;color:var(--text);background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:4px 10px;transition:all .2s;text-decoration:none;font-weight:500}
 .page-links a:hover{background:var(--brand);color:#fff;border-color:var(--brand)}
 .page-links a.current{background:var(--brand);color:#fff;border-color:var(--brand);font-weight:700;pointer-events:none;box-shadow:0 2px 8px rgba(79,70,229,.35)}
@@ -1115,7 +1115,7 @@ input,select{font-family:inherit}
 
 <!-- MOBILE NAV OVERLAY + FAB -->
 <div id="mob-nav-overlay" onclick="closeMobileNav()"></div>
-<button id="mob-nav-fab" onclick="toggleMobileNav()" title="Question Navigator">☰</button>
+<button id="mob-nav-fab" onclick="toggleMobileNav()" title="Question Navigator" aria-label="Question Navigator">⊟</button>
 
 <!-- CONFIRM EXIT MODAL -->
 <div class="overlay" id="exit-overlay">
