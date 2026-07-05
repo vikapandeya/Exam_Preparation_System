@@ -160,25 +160,35 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
 [data-theme="dark"] .hin-sb-lnk:hover{background:rgba(220,38,38,.15);}
 @media(max-width:768px){.hin-ham-btn{display:flex!important;}}
 .hin-ham-btn{display:none;align-items:center;justify-content:center;width:36px;height:36px;background:none;border:none;font-size:1.3rem;cursor:pointer;border-radius:8px;color:var(--text);}
+/* ---- HINDI GRAMMAR HEADER (matches Indian Polity pattern) ---- */
+#hin-header{position:fixed;top:0;left:0;right:0;height:64px;background:var(--navbg);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 1rem;gap:.75rem;z-index:1001;backdrop-filter:blur(10px);}
+#hin-ham{background:none;border:none;cursor:pointer;display:flex;flex-direction:column;gap:5px;padding:4px;flex-shrink:0;}
+#hin-ham span{display:block;width:22px;height:2px;background:var(--text);border-radius:2px;transition:.3s;}
+#hin-logo{display:flex;align-items:center;gap:.4rem;font-weight:800;font-size:1.05rem;text-decoration:none;color:var(--primary,#dc2626);white-space:nowrap;}
+#hin-hdr-right{margin-left:auto;display:flex;align-items:center;gap:.75rem;}
+#hin-theme-btn{background:none;border:1.5px solid var(--border);border-radius:99px;padding:.35rem .8rem;cursor:pointer;font-size:.85rem;color:var(--text);transition:.2s;font-family:inherit;}
+#hin-theme-btn:hover{border-color:var(--primary,#dc2626);background:var(--primary,#dc2626);color:#fff;}
 @media(min-width:769px){
-  #desk-sidebar{position:fixed;top:0;left:0;width:240px;height:100vh;background:var(--bg2,#fff);border-right:1px solid var(--border,#e2e8f0);overflow-y:auto;z-index:1001;display:flex;flex-direction:column;box-shadow:2px 0 12px rgba(0,0,0,.06);}
+  #desk-sidebar{position:fixed;top:calc(64px + 44px);left:0;width:240px;height:calc(100vh - 64px - 44px);background:var(--bg2,#fff);border-right:1px solid var(--border,#e2e8f0);overflow-y:auto;z-index:1001;display:flex;flex-direction:column;box-shadow:2px 0 12px rgba(0,0,0,.06);}
   [data-theme="dark"] #desk-sidebar{background:#1e293b;border-color:#334155;}
-  .ds-logo{padding:16px;border-bottom:1px solid var(--border,#e2e8f0);font-weight:800;font-size:.95rem;color:var(--primary,#dc2626);display:flex;align-items:center;gap:8px;}
+  .ds-logo{display:none!important;}
   [data-theme="dark"] .ds-logo{border-color:#334155;}
   .ds-section{padding:6px 0;}
   .ds-group-label{padding:8px 16px 3px;font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--text2,#64748b);}
   .ds-link{display:flex;align-items:center;gap:8px;padding:8px 16px;font-size:.78rem;color:var(--text,#1e293b);text-decoration:none;border-left:3px solid transparent;transition:all .15s;cursor:pointer;}
   [data-theme="dark"] .ds-link{color:#cbd5e1;}
   .ds-link:hover{background:rgba(220,38,38,.08);color:var(--primary,#dc2626);border-left-color:var(--primary,#dc2626);}
-  /* Desktop: sidebar always present — navbar redundant, hide it via CSS (no JS needed) */
+  /* Desktop: header always present — navbar redundant, hide it via CSS (no JS needed) */
   .navbar{display:none!important;}
-  #sub-nav{position:sticky;top:0!important;z-index:999;left:240px;}
-  main,#footer,footer{margin-left:240px!important;margin-top:0!important;padding-top:0!important;}
-  #ds-theme-btn{margin-left:auto;background:none;border:1px solid var(--border,#e2e8f0);border-radius:8px;padding:4px 10px;cursor:pointer;font-size:.85rem;color:var(--text);font-family:inherit;transition:all .2s;white-space:nowrap;}
-  #ds-theme-btn:hover{background:var(--primary,#dc2626);color:#fff;border-color:var(--primary,#dc2626);}
+  #sub-nav{position:fixed!important;top:64px;left:0!important;right:0!important;z-index:999;}
+  main,#footer,footer{margin-left:240px!important;margin-top:calc(64px + 44px)!important;padding-top:0!important;}
+  #desk-sidebar.hin-closed{transform:translateX(-240px);}
+  main.hin-full,#footer.hin-full,footer.hin-full{margin-left:0!important;}
 }
 @media(max-width:768px){
   #desk-sidebar{display:none!important;}
+  #sub-nav{display:none!important;}
+  main,#footer,footer{margin-left:0!important;margin-top:64px!important;padding-top:0!important;}
 }
 </style>
 <script>(function(){var t=localStorage.getItem('eps-theme');if(t==='dark')document.documentElement.setAttribute('data-theme','dark');})()</script>
@@ -191,7 +201,6 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
 </head>
 <body>
 <aside id="desk-sidebar">
-  <div class="ds-logo">📖 हिंदी व्याकरण</div>
   <nav>
     <div class="ds-section">
       <div class="ds-group-label">मूल व्याकरण</div>
@@ -267,36 +276,13 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
     <a class="hin-sb-lnk" href="#quiz" onclick="closeHinSidebar()">🧪 क्विज़</a>
   </div>
 </nav>
-<nav class="navbar">
-  <div class="nav-wrap">
-    <a href="#home" class="nav-brand"><i class="fas fa-om"></i> हिंदी व्याकरण</a>
-    <ul class="nav-links">
-      <li><a href="#varn">वर्ण विचार</a></li>
-      <li><a href="#sandhi">संधि</a></li>
-      <li><a href="#samas">समास</a></li>
-      <li><a href="#upsarg">उपसर्ग-प्रत्यय</a></li>
-      <li><a href="#shabdbhed">शब्द भेद</a></li>
-      <li><a href="#ling">लिंग-वचन</a></li>
-      <li><a href="#karak">कारक</a></li>
-      <li><a href="#kaal">काल</a></li>
-      <li><a href="#vachya">वाच्य</a></li>
-      <li><a href="#paryayvachi">पर्यायवाची</a></li>
-      <li><a href="#vilom">विलोम</a></li>
-      <li><a href="#anekshabd">एक शब्द</a></li>
-      <li><a href="#muhavare">मुहावरे</a></li>
-      <li><a href="#alankar">रस-छंद-अलंकार</a></li>
-      <li><a href="#vartani">वर्तनी</a></li>
-      <li><a href="#vakyashuddhi">वाक्य शुद्धि</a></li>
-      <li><a href="#quiz">क्विज़</a></li>
-      <li><a href="#dashboard">डैशबोर्ड</a></li>
-    </ul>
-    <div class="nav-right">
-      <button class="btn-theme" onclick="toggleTheme()"><i class="fas fa-moon" id="themeIcon"></i></button>
-      <button class="hin-ham-btn" onclick="openHinSidebar()" aria-label="Open navigation">☰</button>
-      <button class="hamburger" onclick="toggleMob()" aria-label="Toggle navigation menu"><i class="fas fa-bars"></i></button>
-    </div>
+<header id="hin-header">
+  <button id="hin-ham" onclick="window.innerWidth<=768?openHinSidebar():toggleHinDeskSidebar()" aria-label="Menu"><span></span><span></span><span></span></button>
+  <a href="index.html" id="hin-logo">📖 हिंदी व्याकरण</a>
+  <div id="hin-hdr-right">
+    <button id="hin-theme-btn" onclick="toggleTheme()">🌙 Theme</button>
   </div>
-</nav>
+</header>
 <div id="sub-nav">
   <div class="page-links">
     <a href="index.html">🏠 Home</a>
@@ -315,20 +301,6 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
     <a href="Bihar_Special_GK.html">🌾 Bihar GK</a>
     <a href="Reasoning_Guide.html">🧠 Reasoning</a>
     <a href="Syllabus.html">📋 Syllabus</a>
-  </div>
-  <button id="ds-theme-btn" onclick="toggleTheme();this.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'☀️ Light':'🌙 Dark';">🌙 Dark</button>
-</div>
-<div class="mob-menu" id="mobMenu">
-  <div class="mob-menu-grid">
-    <a href="#varn" onclick="closeMob()">वर्ण विचार</a><a href="#sandhi" onclick="closeMob()">संधि</a>
-    <a href="#samas" onclick="closeMob()">समास</a><a href="#upsarg" onclick="closeMob()">उपसर्ग-प्रत्यय</a>
-    <a href="#shabdbhed" onclick="closeMob()">शब्द भेद</a><a href="#ling" onclick="closeMob()">लिंग-वचन</a>
-    <a href="#karak" onclick="closeMob()">कारक</a><a href="#kaal" onclick="closeMob()">काल</a>
-    <a href="#vachya" onclick="closeMob()">वाच्य</a><a href="#paryayvachi" onclick="closeMob()">पर्यायवाची</a>
-    <a href="#vilom" onclick="closeMob()">विलोम</a><a href="#anekshabd" onclick="closeMob()">एक शब्द</a>
-    <a href="#muhavare" onclick="closeMob()">मुहावरे</a><a href="#alankar" onclick="closeMob()">रस-छंद-अलंकार</a>
-    <a href="#vartani" onclick="closeMob()">वर्तनी</a><a href="#vakyashuddhi" onclick="closeMob()">वाक्य शुद्धि</a>
-    <a href="#quiz" onclick="closeMob()">क्विज़</a><a href="#dashboard" onclick="closeMob()">डैशबोर्ड</a>
   </div>
 </div>
 
@@ -898,10 +870,6 @@ function toggleTheme(){
 }
 (function(){const t=localStorage.getItem('eps-theme');if(t==='dark'){document.documentElement.setAttribute('data-theme','dark');const ic=document.getElementById('themeIcon');if(ic)ic.className='fas fa-sun'}})();
 
-// ---- MOBILE MENU ----
-function toggleMob(){document.getElementById('mobMenu').classList.toggle('open')}
-function closeMob(){document.getElementById('mobMenu').classList.remove('open')}
-document.addEventListener('click',function(e){const m=document.getElementById('mobMenu');if(m&&m.classList.contains('open')&&!m.contains(e.target)&&!e.target.closest('.hamburger'))closeMob()});
 
 // ---- MOBILE SIDEBAR ----
 function openHinSidebar(){document.getElementById('hin-mob-sb').classList.add('open');document.getElementById('hin-mob-overlay').classList.add('show');document.body.style.overflow='hidden';}
@@ -1129,10 +1097,18 @@ function resetProgress(){
 }
 updateDashboard();
 
-// ============ DESKTOP SIDEBAR ============
+// ============ DESKTOP SIDEBAR TOGGLE ============
+function toggleHinDeskSidebar(){
+  var s=document.getElementById('desk-sidebar');
+  var m=document.querySelector('main');
+  var f=document.getElementById('footer')||document.querySelector('footer');
+  if(!s)return;
+  var closed=s.classList.toggle('hin-closed');
+  if(m)m.classList.toggle('hin-full',closed);
+  if(f)f.classList.toggle('hin-full',closed);
+}
+
 (function(){
-  var tb=document.getElementById('ds-theme-btn');
-  if(tb)tb.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'☀️ Light':'🌙 Dark';
   if(window.innerWidth>768){
     document.body.classList.add('has-desk-sidebar');
     var links=document.querySelectorAll('#desk-sidebar .ds-link[href^="#"]');
@@ -1149,6 +1125,11 @@ updateDashboard();
       if(document.querySelector('#desk-sidebar .ds-link[href="#'+s.id+'"]'))obs.observe(s);
     });
   }
+})();
+
+(function(){
+  var tb=document.getElementById('hin-theme-btn');
+  if(tb)tb.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'☀️ Light':'🌙 Dark';
 })();
 </script>
 </body>
