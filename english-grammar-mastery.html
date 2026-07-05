@@ -255,13 +255,13 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
   [data-theme="dark"] .ds-link{color:#cbd5e1;}
   .ds-link:hover{background:rgba(37,99,235,.08);color:var(--primary,#2563eb);border-left-color:var(--primary,#2563eb);}
   .ds-link.active{background:rgba(37,99,235,.1);color:var(--primary,#2563eb);border-left-color:var(--primary,#2563eb);font-weight:600;}
-  /* Push main content right */
-  body.has-desk-sidebar .navbar{left:240px;}
-  body.has-desk-sidebar #sub-nav{left:240px;}
-  body.has-desk-sidebar main,body.has-desk-sidebar #footer,body.has-desk-sidebar footer{margin-left:240px;}
-  /* Hide grammar topic links from navbar on desktop (sidebar handles them) */
-  body.has-desk-sidebar .nav-links{display:none!important;}
-  body.has-desk-sidebar .hamburger{display:none!important;}
+  /* Desktop: sidebar replaces navbar entirely */
+  body.has-desk-sidebar .navbar{display:none!important;}
+  body.has-desk-sidebar #sub-nav{position:sticky;top:0!important;z-index:999;left:240px;}
+  body.has-desk-sidebar main,body.has-desk-sidebar #footer,body.has-desk-sidebar footer{margin-left:240px;margin-top:0;}
+  /* Theme toggle inside sub-nav on desktop */
+  #ds-theme-btn{margin-left:auto;background:none;border:1px solid var(--border,#e2e8f0);border-radius:8px;padding:4px 10px;cursor:pointer;font-size:.85rem;color:var(--text);font-family:inherit;transition:all .2s;white-space:nowrap;}
+  #ds-theme-btn:hover{background:var(--primary,#2563eb);color:#fff;border-color:var(--primary,#2563eb);}
 }
 @media(max-width:768px){
   #desk-sidebar{display:none!important;}
@@ -443,6 +443,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
     <a href="Reasoning_Guide.html">🧠 Reasoning</a>
     <a href="Syllabus.html">📋 Syllabus</a>
   </div>
+  <button id="ds-theme-btn" onclick="toggleTheme();this.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'☀️ Light':'🌙 Dark';">🌙 Dark</button>
 </div>
 <!-- Mobile Menu -->
 <div class="mob-menu" id="mobMenu">
@@ -3375,6 +3376,9 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeEngSide
 
 // ============ DESKTOP SIDEBAR ============
 (function(){
+  // Set initial theme button label
+  var tb=document.getElementById('ds-theme-btn');
+  if(tb)tb.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'☀️ Light':'🌙 Dark';
   if(window.innerWidth>768){
     document.body.classList.add('has-desk-sidebar');
     var links=document.querySelectorAll('#desk-sidebar .ds-link[href^="#"]');
