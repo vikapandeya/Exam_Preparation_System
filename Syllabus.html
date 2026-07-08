@@ -389,6 +389,9 @@ a{text-decoration:none;color:inherit}
     <button class="cat-tab" data-cat="State Police">State Police</button>
     <button class="cat-tab" data-cat="Teaching">Teaching</button>
     <button class="cat-tab" data-cat="Central Govt">Central Govt</button>
+    <button class="cat-tab" data-cat="Higher Education">Higher Education</button>
+    <button class="cat-tab" data-cat="State Judicial">State Judicial</button>
+    <button class="cat-tab" data-cat="State Health">State Health</button>
   </div>
 </div>
 
@@ -2198,6 +2201,357 @@ const EXAMS = [
       { subject:'Mains GS II — Science, Geography & Economy', topics:['Physical Geography — Earth\'s Interior, Atmosphere, Oceanography, Geomorphology','Human Geography — Population, Migration, Urbanisation, Settlement','Indian Geography — Physiography, Rivers, Climate, Natural Vegetation, Natural Resources, Agriculture','West Bengal Geography — Physiography (Darjeeling Hills, Terai, North & South Bengal Plains, Sundarbans)','Indian Economy — Planning, Liberalisation, Budget, Banking, WTO, Agriculture, Industry','West Bengal Economy — Jute Industry, Tea (Darjeeling), Fisheries, Tourism, IT (Sector V Kolkata), Biswa Bangla'] },
       { subject:'Mains GS III — Indian Constitution & Polity', topics:['Constitution of India — Preamble, Fundamental Rights, DPSP, Fundamental Duties, Amendments','Parliament — Structure, Functioning, Parliamentary Procedures, Joint Session, Anti-Defection Law','Executive — President, Prime Minister, Council of Ministers, Constitutional Bodies','Judiciary — Supreme Court, Calcutta High Court, Judicial Review, PILs','West Bengal Government — Legislative Assembly, CM, Governor, West Bengal Administrative Service','Local Self-Government — Panchayati Raj (3-tier) in WB, Kolkata Municipal Corporation, Urban Local Bodies'] },
       { subject:'Optional Subjects — WBCS (45 subjects)', topics:['Bengali, Hindi, Sanskrit, Urdu, English Literature','History, Geography, Political Science, Sociology, Economics, Philosophy, Psychology','Commerce & Accountancy, Management, Public Administration','Mathematics, Statistics, Physics, Chemistry, Zoology, Botany, Agriculture, Forestry','Civil Engineering, Mechanical Engineering, Electrical Engineering, Computer Science','Law, Medical Science, Animal Husbandry, Home Science, Education'] },
+    ]
+  },
+
+  // ── HIGHER EDUCATION & RESEARCH ──────────────────────────────────────────
+  {
+    name: 'CSIR NET / JRF (Science Research)',
+    shortName: 'CSIR NET',
+    icon: '🔬',
+    category: 'Higher Education',
+    conducting: 'NTA (on behalf of CSIR)',
+    frequency: 'Twice a year (June & December)',
+    vacancies: 'JRF fellowships + Lectureship eligibility',
+    overview: 'National Eligibility Test for Junior Research Fellowship (JRF) and Lectureship/Assistant Professor in Science subjects. Conducted by NTA for CSIR. Covers 5 subjects: Chemical Sciences, Earth Sciences, Life Sciences, Mathematical Sciences, Physical Sciences. JRF holders get ₹37,000/month fellowship for PhD.',
+    exam: [
+      { stage:'Single Paper', paper:'Part A — General Aptitude', qs:'20 (attempt 15)', marks:'30', duration:'3 hr', neg:'-0.5', notes:'MCQ; Common for all subjects' },
+      { stage:'Single Paper', paper:'Part B — Subject (MCQ)', qs:'50 (attempt 35)', marks:'70', duration:'3 hr', neg:'-0.5', notes:'Core subject concepts' },
+      { stage:'Single Paper', paper:'Part C — Higher Order (MCQ)', qs:'75 (attempt 25)', marks:'75', duration:'3 hr', neg:'-0.75', notes:'Application/analysis level' },
+      { stage:'TOTAL', paper:'', qs:'—', marks:'200', duration:'3 hr', neg:'—', notes:'', isTotal:true },
+    ],
+    syllabus: [
+      { subject:'Part A — General Aptitude (All Subjects)', topics:['Logical Reasoning — Series, Analogies, Classification','Graphical Analysis — Bar Chart, Pie Chart, Line Graph','Numerical Ability — Ratio, Percentage, Average, SI/CI','Data Interpretation & Sufficiency','Basic Science concepts (Class 10–12 level)','Language & Comprehension'] },
+      { subject:'Life Sciences (Most popular)', topics:['Molecules & Their Interaction (Cell Biology, Biochemistry)','Cellular Organization — Membranes, Organelles, Signal Transduction','Fundamental Processes — DNA Replication, Transcription, Translation','Cell Communication & Cell Signaling','Developmental Biology — Stem Cells, Differentiation','System Physiology — Plant & Animal','Inheritance Biology — Mendelian Genetics, Linkage, Mutation','Diversity of Life Forms — Classification, Biodiversity','Ecological Principles — Population, Community, Ecosystem','Evolution & Behaviour — Natural Selection, Speciation','Applied Biology — Recombinant DNA, GMO, Bioethics','Methods in Biology — Microscopy, Chromatography, Electrophoresis, PCR'] },
+      { subject:'Chemical Sciences', topics:['Inorganic Chemistry — Periodic Table, Coordination Chemistry, Organometallics','Organic Chemistry — Stereochemistry, Reaction Mechanisms, Named Reactions','Physical Chemistry — Thermodynamics, Kinetics, Electrochemistry, Quantum Chemistry','Analytical Chemistry — Spectroscopy (UV-Vis, IR, NMR, Mass)','Interdisciplinary Topics — Materials, Environmental, Medicinal Chemistry'] },
+      { subject:'Mathematical Sciences', topics:['Analysis — Real Analysis, Complex Analysis, Functional Analysis','Algebra — Linear Algebra, Abstract Algebra, Number Theory','Topology — Metric Spaces, Continuity, Compactness','Differential Equations — ODEs, PDEs','Probability & Statistics — Distributions, Estimation, Testing of Hypotheses','Numerical Analysis & Linear Programming','Calculus of Variations, Mechanics'] },
+      { subject:'Physical Sciences', topics:['Mathematical Methods — Vector Calculus, Differential Equations, Complex Analysis','Classical Mechanics — Lagrangian, Hamiltonian, Central Force','Electromagnetic Theory — Maxwell\'s Equations, Wave Propagation','Quantum Mechanics — Schrödinger Equation, Perturbation Theory, Angular Momentum','Thermodynamics & Statistical Physics','Electronics & Experimental Physics','Atomic & Molecular Physics','Condensed Matter Physics','Nuclear & Particle Physics, Relativity'] },
+    ]
+  },
+  {
+    name: 'GATE (Graduate Aptitude Test in Engineering)',
+    shortName: 'GATE',
+    icon: '⚙️',
+    category: 'Higher Education',
+    conducting: 'IITs / IISc (rotational)',
+    frequency: 'Annual (February)',
+    vacancies: 'M.Tech/M.Sc/Ph.D admissions + PSU jobs',
+    overview: 'National-level exam for admission to M.Tech/ME/M.Sc/Ph.D programs at IITs, NITs, IISc and other reputed institutions. GATE score is also used by 50+ PSUs (ONGC, BHEL, GAIL, IOCL, HPCL, BPCL, Power Grid, NTPC, AAI, BARC, ISRO, SAIL, HAL, DRDO etc.) for direct recruitment. 29 subject papers; valid for 3 years.',
+    exam: [
+      { stage:'Single Paper', paper:'General Aptitude (GA)', qs:'10', marks:'15', duration:'3 hr', neg:'1/3 for 1M; 2/3 for 2M', notes:'Verbal + Numerical Ability' },
+      { stage:'Single Paper', paper:'Engineering Mathematics (for most papers)', qs:'included', marks:'13', duration:'3 hr', neg:'1/3 for 1M; 2/3 for 2M', notes:'Linear Algebra, Calculus, DE, Probability' },
+      { stage:'Single Paper', paper:'Subject-Specific Questions', qs:'45', marks:'72', duration:'3 hr', neg:'1/3 for 1M; 2/3 for 2M', notes:'MCQ + NAT (Numerical Answer Type — no negative)' },
+      { stage:'TOTAL', paper:'', qs:'65', marks:'100', duration:'3 hr', neg:'—', notes:'Score out of 100; normalized', isTotal:true },
+    ],
+    syllabus: [
+      { subject:'General Aptitude (All Papers)', topics:['Verbal Ability — English Grammar, Sentence Completion, Verbal Analogies, Critical Reasoning','Quantitative Aptitude — Number Systems, Algebra, Percentages, Averages, Permutations','Data Interpretation — Tables, Graphs, Charts','Analytical Ability — Logical Reasoning, Sequences, Puzzles'] },
+      { subject:'Computer Science (CS/IT) — Popular Paper', topics:['Programming & Data Structures — C/C++, Arrays, Linked List, Trees, Graphs, Sorting','Algorithms — Complexity, Divide & Conquer, Greedy, Dynamic Programming, Graph Algorithms','Theory of Computation — Automata, Regular Languages, CFG, Turing Machines','Compiler Design — Lexical Analysis, Parsing, Code Generation','Operating Systems — Processes, Threads, Memory Management, File Systems','DBMS — ER Model, SQL, Transactions, Normalization','Computer Networks — OSI, TCP/IP, Routing, Congestion Control','Computer Organization & Architecture — CPU Design, Memory, I/O, Pipelining','Digital Logic — Boolean Algebra, Combinational & Sequential Circuits','Engineering Mathematics — Discrete Mathematics, Linear Algebra, Probability, Calculus'] },
+      { subject:'Electronics & Communication (ECE)', topics:['Networks — Circuit Analysis, Thevenin, Norton, AC Circuits','Electronic Devices — Diodes, BJT, MOSFET, Op-Amp','Analog Circuits — Amplifiers, Oscillators, Filters','Digital Circuits — Boolean Algebra, Flip-Flops, ADC/DAC','Signals & Systems — Fourier, Laplace, Z-Transform','Control Systems — Transfer Function, Root Locus, Bode Plot, State Space','Communications — AM, FM, Digital Modulation, AWGN, Sampling','Electromagnetics — Maxwell\'s Equations, Transmission Lines, Antennas'] },
+      { subject:'Mechanical Engineering (ME)', topics:['Engineering Mathematics — Calculus, Differential Equations, Linear Algebra, Numerical Methods','Applied Mechanics & Design — Statics, Dynamics, Strength of Materials, Machine Design, Vibrations','Fluid Mechanics & Thermal Sciences — Fluid Properties, Bernoulli, Thermodynamics (Laws, Cycles), Heat Transfer','Manufacturing & Industrial Engineering — Casting, Forming, Machining, Metrology, Inventory, Queuing Theory'] },
+      { subject:'Civil Engineering (CE)', topics:['Engineering Mathematics','Structural Engineering — Strength of Materials, Structural Analysis, Steel & Concrete Design','Geotechnical Engineering — Soil Classification, Permeability, Consolidation, Shear Strength','Water Resources — Fluid Mechanics, Hydraulics, Hydrology, Irrigation','Transportation Engineering — Highway Design, Traffic, Railways','Environmental Engineering — Water & Wastewater Treatment, Air Pollution, Solid Waste','Surveying & Geomatics'] },
+      { subject:'PSU Recruitment via GATE', topics:['ONGC, HPCL, BPCL, GAIL — Chemical/Petroleum/Mechanical/EEE/Civil/Computer','BHEL, SAIL, HAL — Mechanical/Electrical/Civil','NTPC, Power Grid — EEE/Civil/CS','AAI — Electronics/IT/Civil','DRDO, BARC, ISRO — CS/ECE/ME/Aerospace/Physics','Indian Railways — Civil/Mechanical/Electrical/Signal & Telecom'] },
+    ]
+  },
+  {
+    name: 'CUET UG (Common University Entrance Test — Undergraduate)',
+    shortName: 'CUET UG',
+    icon: '🎓',
+    category: 'Higher Education',
+    conducting: 'NTA',
+    frequency: 'Annual (May–June)',
+    vacancies: 'UG admissions in 250+ Central, State & Deemed Universities',
+    overview: 'Mandatory entrance for undergraduate admissions to all Central Universities (DU, JNU, BHU, AMU, HCU etc.) and 250+ other universities. Replaced DU JAT and similar separate entrance tests. Scores accepted for BA, BSc, BCom, BBA, BCA and all UG programs.',
+    exam: [
+      { stage:'Section IA', paper:'Language (1 from 13 languages)', qs:'50 (attempt 40)', marks:'200', duration:'45 min per language', neg:'-1', notes:'Reading Comprehension, Grammar' },
+      { stage:'Section IB', paper:'Additional Language (optional)', qs:'50 (attempt 40)', marks:'200', duration:'45 min', neg:'-1', notes:'19 additional languages' },
+      { stage:'Section II', paper:'Domain Subjects (max 6 subjects)', qs:'50 (attempt 40) per subject', marks:'200 per subject', duration:'45 min per subject', neg:'-1', notes:'27 domain subjects matching Class 12 subjects' },
+      { stage:'Section III', paper:'General Test (optional, for UG programs requiring it)', qs:'75 (attempt 60)', marks:'300', duration:'60 min', neg:'-1', notes:'GK, CA, Reasoning, Quantitative, Numerical Ability' },
+    ],
+    syllabus: [
+      { subject:'Language (Section IA/IB)', topics:['Reading Comprehension — Factual, Literary, Narrative Passages','Verbal Ability — Vocabulary, Word Usage, Idioms','Grammar — Error Correction, Sentence Rearrangement','Creative Writing — Summary, Letter, Application, Essay topics'] },
+      { subject:'Domain Subjects (Section II) — Based on Class 12 NCERT', topics:['Accountancy/Book-Keeping','Biology/Biological Studies','Business Studies','Chemistry','Computer Science/Informatics Practices','Economics/Business Economics','Engineering Graphics','Entrepreneurship','Fine Arts','Geography','History','Home Science','Knowledge Tradition & Practices of India','Legal Studies','Mathematics','Physical Education','Physics','Political Science','Psychology','Sanskrit (Shastri)','Sociology'] },
+      { subject:'General Test (Section III)', topics:['General Knowledge & Current Affairs — National & International Events (last 6 months)','General Mental Ability — Coding-Decoding, Blood Relations, Directions, Syllogism','Numerical Ability — Percentage, Ratio, Profit/Loss, Time & Work, SI/CI','Quantitative Reasoning — Data Interpretation, Graphs, Tables','Logical & Analytical Reasoning — Pattern, Series, Analogy'] },
+    ]
+  },
+  {
+    name: 'CUET PG (Common University Entrance Test — Postgraduate)',
+    shortName: 'CUET PG',
+    icon: '📖',
+    category: 'Higher Education',
+    conducting: 'NTA',
+    frequency: 'Annual (March–April)',
+    vacancies: 'PG admissions in Central & participating universities',
+    overview: 'Common entrance for MA, MSc, MCom, MBA, MCA, LLM and other postgraduate programs across Central Universities. Each domain paper tests knowledge of the undergraduate subject. JNU, BHU, DU, AMU, HCU and many other universities use CUET PG scores.',
+    exam: [
+      { stage:'Single Paper per Domain', paper:'Part A — Language & Comprehension', qs:'25', marks:'100', duration:'1 hr 45 min total', neg:'-1', notes:'English Reading + Any 1 Indian Language' },
+      { stage:'Single Paper per Domain', paper:'Part B — Domain Knowledge', qs:'75', marks:'300', duration:'1 hr 45 min total', neg:'-1', notes:'Subject-specific questions based on UG syllabus' },
+      { stage:'TOTAL', paper:'', qs:'100', marks:'400', duration:'1 hr 45 min', neg:'—', notes:'Merit-based; no interview', isTotal:true },
+    ],
+    syllabus: [
+      { subject:'Part A — Language & Comprehension', topics:['English Comprehension — Prose, Poetry, Vocabulary in Context','Grammar — Error Identification, Fill in the Blanks','Reading Skills — Inference, Author\'s Tone, Main Idea','Hindi Comprehension (if chosen as 2nd language)'] },
+      { subject:'Domain Subjects — Humanities', topics:['History — Ancient, Medieval, Modern India + World History (as per UG syllabus)','Political Science — Indian Constitution, International Relations, Political Theory, Comparative Politics','Sociology — Basic Concepts, Indian Society, Social Change','Economics — Micro, Macro, Indian Economy, Statistics','English Literature — British, American, Indian Writing in English, Literary Theory','Geography — Physical, Human, Economic, Regional Geography'] },
+      { subject:'Domain Subjects — Science & Tech', topics:['Physics — Classical Mechanics, EM Theory, Quantum Mechanics, Statistical Physics','Chemistry — Physical, Organic, Inorganic, Analytical','Mathematics — Analysis, Algebra, Calculus, Probability','Life Sciences — Cell Biology, Genetics, Ecology, Physiology','Computer Science — Data Structures, Algorithms, DBMS, Networks, OS'] },
+      { subject:'Domain Subjects — Commerce & Management', topics:['Commerce — Financial Accounting, Cost Accounting, Business Law, Income Tax','MBA — Quantitative Aptitude, Data Interpretation, Verbal Ability, GK, Logical Reasoning','LLM — Constitutional Law, Contract, Torts, Criminal, International Law'] },
+    ]
+  },
+  {
+    name: 'SET / SLET (State Eligibility Test)',
+    shortName: 'SET / SLET',
+    icon: '🏫',
+    category: 'Higher Education',
+    conducting: 'State agencies (varies by state)',
+    frequency: 'Annual (state-wise)',
+    vacancies: 'Assistant Professor eligibility in state universities & colleges',
+    overview: 'State-level equivalent of UGC NET for Assistant Professor posts in state government colleges and universities. Each state conducts its own SET/SLET. Maharashtra SET (MHSET), Karnataka SET (KSET), Gujarat SET (GSET), Tamil Nadu SET (TNSET), Rajasthan SET (RSET), MP SET (MPSET) etc. Valid only within that state. Pattern similar to UGC NET — 2 papers.',
+    exam: [
+      { stage:'Paper I', paper:'Teaching & Research Aptitude', qs:'50 (attempt 50)', marks:'100', duration:'1 hr', neg:'None', notes:'Same as UGC NET Paper I' },
+      { stage:'Paper II', paper:'Subject-Specific', qs:'100 (attempt 100)', marks:'200', duration:'2 hr', neg:'None', notes:'Based on UG + PG syllabus of chosen subject' },
+      { stage:'TOTAL', paper:'', qs:'150', marks:'300', duration:'3 hr', neg:'—', notes:'State-specific cutoffs', isTotal:true },
+    ],
+    syllabus: [
+      { subject:'Paper I — Teaching & Research Aptitude (All States)', topics:['Teaching Aptitude — Nature, Characteristics, Teaching Methods, Levels of Teaching','Research Aptitude — Research Types, Methods, Steps, Thesis, Report Writing','Reading Comprehension — Passage-based questions','Communication — Effective Communication, Barriers, Mass Communication','Reasoning — Number Series, Letter Series, Codes, Relationships, Classification','Logical Reasoning — Syllogism, Venn Diagrams, Argument Analysis','Data Interpretation — Tables, Graphs, Charts','ICT — Internet, E-learning, Computer Basics','People & Environment — Pollution, Ecology, Development','Higher Education — UGC, NAAC, NBA, Knowledge Commissions, Institutions'] },
+      { subject:'Paper II — Subject Syllabus', topics:['Hindi Literature — Aadikal, Bhaktikal, Ritikal, Aadhunik Kal; Major Poets & Writers','English Literature — Old English, Renaissance, Romantic, Victorian, Modern; Literary Criticism','History — Ancient, Medieval, Modern India + World History','Geography — Physical, Economic, Human; Regional Geography of India','Political Science — Indian Constitution, International Relations, Political Theory','Economics — Microeconomics, Macroeconomics, Indian Economy, Statistics','Sociology — Sociological Thought, Indian Society, Social Stratification','Commerce — Accounting, Business Law, Management, Finance','Education — Philosophical, Sociological, Psychological Bases; Curriculum; Administration','Mathematics — Algebra, Analysis, Topology, Differential Equations, Statistics'] },
+    ]
+  },
+  {
+    name: 'ICMR JRF (Indian Council of Medical Research)',
+    shortName: 'ICMR JRF',
+    icon: '🧬',
+    category: 'Higher Education',
+    conducting: 'ICMR (NTA conducts exam)',
+    frequency: 'Annual',
+    vacancies: 'Research fellowships in medical/biological sciences',
+    overview: 'Entrance for Junior Research Fellowship in Life Sciences and Social Sciences at ICMR institutes across India. JRF leads to PhD in Biomedical Research. Fellowship: ₹37,000/month for first 2 years, then SRF ₹42,000/month. Covers Basic Medical Sciences, Behavioural Sciences, Health Sciences.',
+    exam: [
+      { stage:'Single Paper', paper:'Part A — General Aptitude', qs:'20', marks:'40', duration:'2.5 hr', neg:'-0.25', notes:'Logical, Mathematical, Verbal, Scientific Aptitude' },
+      { stage:'Single Paper', paper:'Part B — Life Sciences / Social Sciences', qs:'80', marks:'160', duration:'2.5 hr', neg:'-0.25', notes:'Choose Life Sciences OR Social Sciences stream' },
+      { stage:'TOTAL', paper:'', qs:'100', marks:'200', duration:'2.5 hr', neg:'—', notes:'', isTotal:true },
+    ],
+    syllabus: [
+      { subject:'General Aptitude (Part A)', topics:['Logical Reasoning — Sequences, Analogy, Odd one out','Mathematical Ability — Algebra, Probability, Statistics (mean, median, mode, SD)','Scientific Aptitude — Interpretation of data, Experimental design','Verbal Ability — Vocabulary, Comprehension'] },
+      { subject:'Life Sciences (Part B)', topics:['Molecular Biology — DNA, RNA, Replication, Transcription, Translation, Gene Regulation','Cell Biology — Cell Organelles, Cell Cycle, Apoptosis, Signal Transduction','Biochemistry — Enzymes, Metabolism, Protein Structure, Vitamins','Physiology — Cardiovascular, Respiratory, Renal, Endocrine, Nervous System','Microbiology — Bacteria, Viruses, Parasitology, Immunology','Genetics — Mendelian, Molecular Genetics, Mutations, Cancer Genetics','Pharmacology — Drug Action, Pharmacokinetics, Drug Targets','Biostatistics — Experimental Design, Clinical Trials, Bioethics','Public Health & Epidemiology — Study Designs, Measures of Disease Frequency, Disease Control'] },
+      { subject:'Social Sciences (Part B)', topics:['Sociology — Social Structure, Social Change, Family, Caste, Class','Public Health — Health Systems, Health Policy, Social Determinants','Psychology — Social Psychology, Health Behaviour, Mental Health','Demography — Population Theories, Fertility, Mortality, Migration','Research Methods — Quantitative & Qualitative Methods, Survey Design, Sampling','Biostatistics — Basic Statistics, Data Analysis, Study Designs'] },
+    ]
+  },
+
+  // ── UPSC ADDITIONAL EXAMS ─────────────────────────────────────────────────
+  {
+    name: 'UPSC IFS (Indian Forest Service)',
+    shortName: 'UPSC IFS',
+    icon: '🌲',
+    category: 'UPSC',
+    conducting: 'UPSC',
+    frequency: 'Annual (combined with UPSC CSE Prelims)',
+    vacancies: '100–200',
+    overview: 'Recruits for the Indian Forest Service — the premier forest management cadre of India. Shares Prelims (GS Paper I + CSAT) with UPSC CSE. Separate Mains with science/technical subjects. Successful candidates are posted as Range Forest Officers, DFOs and eventually Chief Conservators of Forests.',
+    exam: [
+      { stage:'Prelims (shared with CSE)', paper:'GS Paper I', qs:'100', marks:'200', duration:'2 hr', neg:'-0.67', notes:'Qualifying for IFS Mains' },
+      { stage:'Prelims', paper:'CSAT Paper II', qs:'80', marks:'200', duration:'2 hr', neg:'-0.83', notes:'Qualifying (33% min)' },
+      { stage:'Mains', paper:'General English (Paper 1)', qs:'—', marks:'300', duration:'3 hr', neg:'None', notes:'Qualifying (40% min); Essay + Comprehension' },
+      { stage:'Mains', paper:'General Knowledge (Paper 2)', qs:'—', marks:'300', duration:'3 hr', neg:'None', notes:'Qualifying (40% min); GS, Current Affairs' },
+      { stage:'Mains', paper:'Optional I — Paper 1 & 2', qs:'—', marks:'200+200', duration:'3 hr each', neg:'None', notes:'From approved science subjects list' },
+      { stage:'Mains', paper:'Optional II — Paper 1 & 2', qs:'—', marks:'200+200', duration:'3 hr each', neg:'None', notes:'From approved science subjects list' },
+      { stage:'Personality Test', paper:'Interview', qs:'—', marks:'300', duration:'—', neg:'None', notes:'Includes Physical & Medical test' },
+      { stage:'TOTAL (Mains + Interview)', paper:'', qs:'—', marks:'1400', duration:'—', neg:'—', notes:'', isTotal:true },
+    ],
+    syllabus: [
+      { subject:'Optional Subjects (Choose 2)', topics:['Agriculture (Agronomy, Genetics, Soil Science, Plant Pathology, Agricultural Engineering)','Agricultural Engineering','Animal Husbandry & Veterinary Science','Botany (Plant Morphology, Physiology, Ecology, Plant Pathology, Economic Botany)','Chemistry (Inorganic, Organic, Physical, Analytical)','Chemical Engineering','Civil Engineering','Forestry (Silviculture, Forest Management, Forest Economics, Wildlife Conservation, Forest Laws)','Geology','Mathematics','Mechanical Engineering','Physics','Statistics','Zoology (Cell Biology, Genetics, Evolution, Ecology, Economic Zoology)'] },
+      { subject:'Forestry (if chosen — Most Relevant)', topics:['Silviculture — Tree Growth, Regeneration, Plantation, Tending Operations','Forest Mensuration — Tree Measurements, Volume Estimation, Yield Tables','Forest Management — Working Plans, Forest Surveys, GIS in Forestry','Forest Economics — Valuation, Social Forestry, Agroforestry','Wildlife Biology — Habitat Management, Wildlife Laws, Protected Areas','Forest Ecology — Forest Types, Biodiversity, Conservation','Forest Laws — Indian Forest Act, Wildlife Protection Act, Forest Conservation Act, FRA 2006','Forest Products — Timber, Non-Timber Forest Products (NTFP), Forest-based Industries'] },
+    ]
+  },
+  {
+    name: 'UPSC ESE (Engineering Services Examination)',
+    shortName: 'UPSC ESE',
+    icon: '🏗️',
+    category: 'UPSC',
+    conducting: 'UPSC',
+    frequency: 'Annual',
+    vacancies: '300–500',
+    overview: 'Recruits Class I Technical Officers in Central Engineering Services — Civil, Mechanical, Electrical, Electronics & Telecom streams. Posts include Assistant Executive Engineers in PWD, Railways, CPWD, Border Roads, Telecom, MES etc. 3-stage exam: Prelims → Mains → Personality Test.',
+    exam: [
+      { stage:'Prelims', paper:'Paper I — GS & Engineering Aptitude', qs:'MCQ', marks:'200', duration:'2 hr', neg:'-0.33', notes:'GS + Engineering Aptitude (all 4 streams)' },
+      { stage:'Prelims', paper:'Paper II — Engineering Discipline', qs:'MCQ', marks:'300', duration:'3 hr', neg:'-0.33', notes:'Discipline-specific (Civil/Mech/EE/E&T)' },
+      { stage:'Mains', paper:'Paper I & II — Conventional (Technical)', qs:'Descriptive', marks:'300+300', duration:'3 hr each', neg:'None', notes:'Branch-specific technical papers' },
+      { stage:'Personality Test', paper:'Interview', qs:'—', marks:'200', duration:'—', neg:'None', notes:'Technical + Personality' },
+      { stage:'TOTAL', paper:'', qs:'—', marks:'1000', duration:'—', neg:'—', notes:'Mains (600) + Interview (200)', isTotal:true },
+    ],
+    syllabus: [
+      { subject:'GS & Engineering Aptitude (Prelims Paper I)', topics:['Current Issues of National & International Importance','Engineering Aptitude — Engineering Mathematics, Reasoning, Computers','Engineering & Technology Developments — Space, Defence, IT, Energy','Environment & Ecology','Ethics — Integrity, Aptitude for Public Service','Social Issues — Governance, Social Justice'] },
+      { subject:'Civil Engineering', topics:['Building Materials, Construction Technology & Management','Structural Analysis — Determinate & Indeterminate Structures, Matrix Methods','Design of Structures — RCC, Steel, Pre-stressed Concrete','Geotechnical Engineering — Soil Classification, Shear Strength, Foundation Design','Fluid Mechanics & Hydraulics — Bernoulli, Flow Through Pipes, Pumps','Hydrology & Water Resources Engineering — Hydrological Cycle, Dams, Irrigation','Environmental Engineering — Water Treatment, Wastewater, Air Pollution, Solid Waste','Transportation Engineering — Highway Design, Traffic Engineering, Railways, Airports','Surveying — Chain, Compass, Plane Table, Theodolite, GPS/GIS'] },
+      { subject:'Mechanical Engineering', topics:['Fluid Mechanics & Hydraulic Machines — Viscosity, Bernoulli, Turbines, Pumps','Heat & Mass Transfer — Conduction, Convection, Radiation, Heat Exchangers','Thermodynamics — Laws, Power Cycles (Rankine, Otto, Diesel), Refrigeration','Strength of Materials & Design — Stress, Strain, Beams, Columns, Fatigue','Theory of Machines — Kinematics, Dynamics, Governors, Gyroscope, Vibrations','Manufacturing Processes — Casting, Forming, Welding, Machining','Industrial Engineering — Operations Research, Production Planning, Quality Control, Ergonomics'] },
+      { subject:'Electrical Engineering', topics:['Electric Circuits — DC & AC, Network Theorems, Transient Analysis','Electromagnetic Fields — Maxwell\'s Equations, Induction, Transformers','Electrical Machines — DC Motors/Generators, Induction Motors, Synchronous Machines','Power Systems — Generation, Transmission, Distribution, Protection, Load Flow','Control Systems — Transfer Functions, Stability, Root Locus, Bode Plot','Power Electronics & Drives — Rectifiers, Inverters, Converters, Choppers, Drives','Electrical Measurements & Instrumentation'] },
+    ]
+  },
+  {
+    name: 'UPSC CMS (Combined Medical Services)',
+    shortName: 'UPSC CMS',
+    icon: '⚕️',
+    category: 'UPSC',
+    conducting: 'UPSC',
+    frequency: 'Annual',
+    vacancies: '300–500',
+    overview: 'Recruitment of Assistant Divisional Medical Officers in Railways, Junior Scale Posts in Central Health Service, Medical Officers in NDMC and Municipal Corporation of Delhi. Requires MBBS degree. 2 written papers + Personality Test.',
+    exam: [
+      { stage:'Paper I', paper:'General Medicine & Paediatrics', qs:'MCQ 120', marks:'250', duration:'2 hr', neg:'-0.33', notes:'Both topics combined' },
+      { stage:'Paper II', paper:'Surgery, Gynaecology & Obstetrics, Preventive & Social Medicine', qs:'MCQ 120', marks:'250', duration:'2 hr', neg:'-0.33', notes:'All 3 topics' },
+      { stage:'Personality Test', paper:'Interview', qs:'—', marks:'100', duration:'—', neg:'None', notes:'Personality & Medical background' },
+      { stage:'TOTAL', paper:'', qs:'—', marks:'600', duration:'—', neg:'—', notes:'', isTotal:true },
+    ],
+    syllabus: [
+      { subject:'General Medicine', topics:['Clinical Features, Diagnosis & Management of common diseases affecting all systems','Cardiology — IHD, Hypertension, Heart Failure, Arrhythmias','Pulmonology — Pneumonia, TB, COPD, Asthma','Gastroenterology — Liver diseases, Peptic Ulcer, IBD','Endocrinology — Diabetes, Thyroid, Adrenal disorders','Neurology — Stroke, Meningitis, Epilepsy, PD','Infectious Diseases — Malaria, Dengue, Typhoid, HIV, COVID-19','Haematology — Anaemia types, Leukaemia, Coagulation disorders','Rheumatology — Arthritis, SLE, Gout'] },
+      { subject:'Paediatrics', topics:['Growth & Development — Milestones, Nutrition (PEM, Vitamin deficiencies)','Neonatology — Low Birth Weight, Neonatal Jaundice, Birth Asphyxia, NICU care','Common Childhood Diseases — Measles, Chickenpox, Mumps, Pertussis, Diphtheria','Immunisation Schedule — UIP (Universal Immunisation Programme)','Paediatric Emergencies — Febrile Convulsions, Acute Diarrhoea, ARI'] },
+      { subject:'Surgery', topics:['General Surgery — Acute Abdomen, Appendicitis, Peritonitis, Hernias, Haemorrhoids','Trauma Surgery — Head Injury, Chest Trauma, Abdominal Trauma, Burns','Oncology — Breast Cancer, GI Cancers, Thyroid Tumors','Orthopaedics — Fractures, Dislocations, Bone Tumors','Urology — Renal stones, BPH, Bladder Cancer','Vascular Surgery — Varicose Veins, DVT, Arterial Occlusion'] },
+      { subject:'Gynaecology & Obstetrics', topics:['Antenatal Care — Normal Pregnancy, ANC Schedule, Complications (PIH, APH, Anaemia)','Labour & Delivery — Normal Labour, Operative Deliveries, Complications (PPH, Shoulder Dystocia)','Gynaecological Disorders — Menstrual disorders, PCOS, Endometriosis, Fibroid, Ovarian Cysts','Family Planning — Contraceptive methods, MTP Act','Gynaecological Cancers — Cervical, Uterine, Ovarian Cancer; Cancer screening'] },
+      { subject:'Preventive & Social Medicine (PSM)', topics:['Epidemiology — Study Designs, Measures of Disease Frequency (Incidence, Prevalence), Screening','Biostatistics — Types of Data, Mean/Median/Mode, SD, Tests of Significance, Chi-square','Nutrition — Nutritional Assessment, PEM, Micronutrient deficiencies, National Nutrition Programmes','Communicable Disease Control — Malaria, TB, HIV, Leprosy, Filaria; National Disease Control Programmes','Environmental Health — Water supply & sanitation, Housing, Occupational Health, Radiation','Health Administration — Health Planning, National Health Policy, NHM, Ayushman Bharat','Maternal & Child Health — MCH services, UIP, RMNCH+A programme','Non-Communicable Disease Control — Hypertension, Diabetes, Cancer, Mental Health; NPCDCS'] },
+    ]
+  },
+
+  // ── CENTRAL GOVT / PSU ────────────────────────────────────────────────────
+  {
+    name: 'SEBI Grade A Officer',
+    shortName: 'SEBI Grade A',
+    icon: '📈',
+    category: 'Central Govt',
+    conducting: 'SEBI (Securities & Exchange Board of India)',
+    frequency: 'Every 2–3 years',
+    vacancies: '50–120',
+    overview: 'Recruitment for Assistant Manager (Grade A) in the Securities regulator SEBI. Streams: General, Legal, Information Technology, Research, Official Language. One of the most prestigious regulatory jobs in India. 3-stage process: Phase I (MCQ) → Phase II (MCQ + Descriptive) → Interview.',
+    exam: [
+      { stage:'Phase I', paper:'Multiple Choice — Commerce/Economics/Finance/Management + English + General Awareness', qs:'100', marks:'100', duration:'1 hr', neg:'-0.25', notes:'Online; Screening round' },
+      { stage:'Phase II Paper 1', paper:'MCQ — Subject-specific (General/IT/Legal/Research/OL)', qs:'100', marks:'100', duration:'40 min', neg:'-0.25', notes:'Stream-specific' },
+      { stage:'Phase II Paper 2', paper:'Descriptive — English Writing + Finance/Management Essay', qs:'3 questions', marks:'100', duration:'1 hr', neg:'None', notes:'Essay, Comprehension, Letter/Report' },
+      { stage:'Phase III', paper:'Interview', qs:'—', marks:'50', duration:'—', neg:'None', notes:'Personal Interview' },
+      { stage:'TOTAL', paper:'', qs:'—', marks:'250', duration:'—', neg:'—', notes:'', isTotal:true },
+    ],
+    syllabus: [
+      { subject:'Phase I — Commerce, Economics, Finance & Management', topics:['Securities Markets — Primary Market (IPO, FPO), Secondary Market (BSE, NSE), Derivatives, Mutual Funds','SEBI Regulations — SEBI Act 1992, Listing Obligations (LODR), Insider Trading, Takeover Code, PIT Regulations','Financial Accounting — Financial Statements, Ratio Analysis, Cash Flow','Corporate Finance — Capital Structure, Dividend Policy, Valuation, Mergers & Acquisitions','Economics — Microeconomics (Demand-Supply, Market Structures), Macroeconomics (GDP, Inflation, Monetary Policy, Fiscal Policy)','Indian Economy — RBI, Banking System, Balance of Payments, Budget','Management — Planning, Organising, Motivation Theories, Leadership, Strategic Management'] },
+      { subject:'Phase I — English & General Awareness', topics:['English — Comprehension, Vocabulary, Grammar, Sentence Correction, Para Jumbles','Current Affairs — Capital Markets news, Economic Survey, Budget, RBI Policy, SEBI circulars','GK — History, Geography, Polity, Science, Awards, Sports (last 6 months)'] },
+      { subject:'Phase II — IT Stream (if applicable)', topics:['Data Structures, Algorithms, OOP Concepts, DBMS, SQL','Computer Networks — OSI model, TCP/IP, Cybersecurity','Software Development — SDLC, Testing, Project Management','IT regulations — IT Act 2000, Cyber Crimes, Digital India','Cloud Computing, AI/ML Basics, Blockchain in Finance','Fintech — Digital Payments, Robo-advisors, RegTech, E-KYC'] },
+    ]
+  },
+  {
+    name: 'PSU Recruitment (ONGC / HPCL / BPCL / BHEL / SAIL / GAIL)',
+    shortName: 'PSU Jobs',
+    icon: '🏭',
+    category: 'Central Govt',
+    conducting: 'Individual PSUs / GATE score based',
+    frequency: 'Annual (most use GATE scores)',
+    vacancies: '2,000–10,000+ across PSUs',
+    overview: 'Major Public Sector Undertakings recruit engineers, scientists and management trainees through GATE scores (technical roles) or direct written tests (non-technical). Key PSUs: ONGC, HPCL, BPCL, GAIL (Oil & Gas), BHEL, SAIL, HAL, NALCO, RINL (Manufacturing), NTPC, Power Grid, NHPC, POSOCO (Power), AAI, IRFC (Infrastructure), BARC, ISRO, DRDO (Research).',
+    exam: [
+      { stage:'GATE Score', paper:'Discipline-specific GATE paper', qs:'65', marks:'100', duration:'3 hr', neg:'Yes for MCQ', notes:'Valid for 3 years; Most PSUs shortlist from GATE merit list' },
+      { stage:'Group Discussion', paper:'Current Affairs / Technical Topic', qs:'—', marks:'—', duration:'15–20 min', neg:'None', notes:'Not all PSUs have GD' },
+      { stage:'Personal Interview', paper:'Technical + HR Interview', qs:'—', marks:'—', duration:'30–45 min', neg:'None', notes:'Weightage varies by PSU' },
+    ],
+    syllabus: [
+      { subject:'ONGC — Upstream Oil & Gas', topics:['Geology/Geophysics — Petroleum Geology, Seismic Methods, Well Logging','Drilling Engineering — Drilling Fluids, Well Control, Completion','Reservoir Engineering — Reservoir Types, Production Techniques, EOR','Chemical Engineering — Process Equipment, Heat Transfer, Mass Transfer, Refining','Mechanical — Rotating Equipment, Piping, Pressure Vessels','EEE — Power Systems, Motors, Instrumentation, SCADA','Environment — Environmental Impact Assessment, HSE Management, OISD Standards'] },
+      { subject:'HPCL / BPCL / GAIL — Petroleum Refining & Marketing', topics:['Refinery Processes — Distillation, Cracking, Reforming, Treating, Blending','Petrochemicals — Ethylene, Propylene, BTX, Polymers','Pipeline Operations — Hydraulics, Safety, SCADA, Cathodic Protection','Marketing & Distribution — LPG, Petrol/Diesel distribution, Depots, Retail outlets','Safety Standards — OISD, PESO, PNGRB regulations','LNG/CNG — Infrastructure, Specifications, Safety'] },
+      { subject:'BHEL / SAIL / HAL — Manufacturing', topics:['Mechanical — Machine Design, Manufacturing Processes, Metrology, Production Planning','Electrical — Power Systems, Transformers, Switchgear, Motor Drives','Metallurgy (SAIL) — Iron & Steel Making, Heat Treatment, Mechanical Properties','Aerospace (HAL) — Aerodynamics, Aircraft Systems, Avionics, MRO','Quality — ISO standards, SPC, Six Sigma, TQM'] },
+      { subject:'NTPC / Power Grid / NHPC — Power Sector', topics:['Thermal Power — Boiler, Turbine, Generator, Auxiliaries, O&M','Hydro Power — Dam, Penstock, Francis/Kaplan turbines, O&M','Electrical Power Systems — Load Flow, Fault Analysis, Protection (Relay), Substation Design','Transmission — EHV lines, HVDC, FACTS, Grid Management','Renewable Energy — Solar PV, Wind turbines, Grid integration'] },
+    ]
+  },
+  {
+    name: 'AAI (Airports Authority of India) ATC / Junior Executive',
+    shortName: 'AAI Recruitment',
+    icon: '✈️',
+    category: 'Central Govt',
+    conducting: 'Airports Authority of India',
+    frequency: 'Every 2–3 years',
+    vacancies: '200–1,000',
+    overview: 'Recruits Air Traffic Controllers (ATC), Junior Executive (Electronics, IT, Civil, Electrical, Finance, HR) and Junior Assistant posts. ATC is highly competitive — written test + DGCA medical + training. Junior Executive uses GATE score or direct written test.',
+    exam: [
+      { stage:'Written Test', paper:'General Knowledge, English, Reasoning, Quantitative Aptitude', qs:'120 MCQ', marks:'120', duration:'2 hr', neg:'-0.25', notes:'Common for all posts' },
+      { stage:'Written Test', paper:'Technical/Professional Knowledge (stream-specific)', qs:'60 MCQ', marks:'60', duration:'Included', neg:'-0.25', notes:'ECE/CS/Civil/Electrical' },
+      { stage:'Interview', paper:'Technical + HR', qs:'—', marks:'40', duration:'—', neg:'None', notes:'Final stage' },
+      { stage:'ATC — Medical', paper:'DGCA Class II Medical Exam', qs:'—', marks:'—', duration:'—', neg:'None', notes:'Mandatory for ATC; vision, hearing, colour blindness tests' },
+    ],
+    syllabus: [
+      { subject:'ATC — Air Traffic Control Technical Knowledge', topics:['ICAO Annexes — Annex 2 (Rules of Air), Annex 10 (Aeronautical Telecom), Annex 11 (ATS)','Airport Operations — Runways, Taxiways, Aprons, Airspace Classification','Navigation — VOR, DME, ILS, RNAV, GPS, PBN','Radar — Primary Radar, SSR, MLAT, ADS-B','Flight Rules — VFR vs IFR, Separation Standards, ICAO Procedures','Phraseology — RTF (Radio Telephony Phraseology), ATIS, METAR, TAF','Emergency Procedures — Distress, Urgency, Interception, Bomb Threat'] },
+      { subject:'Electronics (ECE) Stream', topics:['Communication Systems — AM, FM, Radar, Satellite Communication, Microwave','Navigation Systems — VOR, DME, ILS, RNAV, ADS-B','Signals & Systems, Control Systems, Networks','Digital Communication, Fiber Optics, Wireless Networks','Maintenance of CNS/ATM Equipment'] },
+      { subject:'General Knowledge & Aptitude', topics:['Aviation GK — ICAO, IATA, DGCA, AAI history, Major Airports of India','Current Affairs — National, International, Aviation news','Reasoning — Logical, Analytical, Spatial (for ATC especially)','English — Comprehension, Grammar, Vocabulary','Mathematics — Algebra, Trigonometry, Coordinate Geometry'] },
+    ]
+  },
+  {
+    name: 'DRDO Scientist B (CEPTAM / SET)',
+    shortName: 'DRDO Scientist B',
+    icon: '🚀',
+    category: 'Central Govt',
+    conducting: 'DRDO (Defence Research & Development Organisation)',
+    frequency: 'As per requirement',
+    vacancies: '100–1,000',
+    overview: 'DRDO recruits Scientist \'B\' through DRDO Entry Test (DET) for disciplines: CS, Electronics, Mechanical, Aeronautics, Material Science, Chemistry, Physics, Life Sciences, and more. Also recruits Technical Staff through CEPTAM. DRDO labs: DRDL, DMRL, CAIR, DLRL, ADE, GTRE, NAL, NRL, SSPL, DEBEL, DIBER, DIPAS etc.',
+    exam: [
+      { stage:'Written Test — Tier I', paper:'Online Objective — Subject Knowledge + General Aptitude', qs:'150 MCQ', marks:'150', duration:'2 hr', neg:'-0.5', notes:'Shortlisting for Tier II' },
+      { stage:'Written Test — Tier II', paper:'Descriptive Subject Paper', qs:'Descriptive', marks:'100', duration:'2 hr', neg:'None', notes:'Advanced technical depth' },
+      { stage:'Interview', paper:'Technical + Research Aptitude', qs:'—', marks:'50', duration:'—', neg:'None', notes:'Panel of DRDO scientists' },
+    ],
+    syllabus: [
+      { subject:'Electronics & Communication', topics:['Communication Systems, Signals & Systems, Control Systems, Networks, Radar','Electronic Warfare, Defence Communication Systems, Software Defined Radio','Embedded Systems, FPGA, DSP, Image Processing','Cryptography & Cyber Security, Steganography'] },
+      { subject:'Computer Science', topics:['Data Structures, Algorithms, OOP (C++, Java), OS, DBMS, Computer Networks','Artificial Intelligence, Machine Learning, Computer Vision','Cyber Security — Penetration Testing, Cryptography, Network Security','HPC (High Performance Computing), Parallel Programming, GPU Programming'] },
+      { subject:'Mechanical & Aerospace', topics:['Aerodynamics — Compressible & Incompressible, Boundary Layer, Lift & Drag','Propulsion — Jet Engines, Rocket Propulsion, Gas Dynamics','Structural Analysis — FEM, Composites, Fatigue, Fracture Mechanics','Fluid Mechanics, Thermodynamics, Heat Transfer','Missile Systems, UAV/Drone Technology, Combat Vehicle Design'] },
+      { subject:'Material Science & Metallurgy', topics:['Crystallography, Defects, Phase Diagrams','Mechanical Properties — Tensile, Fatigue, Creep, Hardness','Advanced Materials — Composites, Ceramics, Polymers, Nanomaterials','Corrosion & Surface Engineering','Defence Materials — Armour, Stealth Materials, Pyrotechnics, Explosives'] },
+    ]
+  },
+  {
+    name: 'AIIMS / ESIC / NHM Staff Nurse & Paramedical',
+    shortName: 'AIIMS / NHM',
+    icon: '🏥',
+    category: 'Central Govt',
+    conducting: 'AIIMS, ESIC, NHM, State Health Departments',
+    frequency: 'As per vacancy',
+    vacancies: '5,000–50,000+ (NHM across states)',
+    overview: 'Recruitment for Staff Nurse, Lab Technician, Radiographer, OT Technician, Pharmacist, Junior Resident, CHO (Community Health Officer) and other paramedical posts in AIIMS institutes, ESIC hospitals, and under NHM (National Health Mission) at state level. CHO posts require BSc Nursing or BAMS/BHMS degree.',
+    exam: [
+      { stage:'Written Test', paper:'Subject Knowledge (Nursing/Lab/Radiology/Pharmacy)', qs:'100–200 MCQ', marks:'100–200', duration:'1.5–2 hr', neg:'Varies', notes:'Varies by institution' },
+      { stage:'Skill Test', paper:'Practical/Clinical Skills (for nursing/lab)', qs:'—', marks:'—', duration:'—', neg:'None', notes:'AIIMS includes practical assessment' },
+      { stage:'Interview', paper:'HR + Clinical Knowledge (for senior posts)', qs:'—', marks:'—', duration:'—', neg:'None', notes:'Not all posts have interview' },
+    ],
+    syllabus: [
+      { subject:'Staff Nurse — Clinical Nursing', topics:['Fundamentals of Nursing — Basic Nursing Care, Vital Signs, Asepsis, Wound Care','Medical-Surgical Nursing — Cardiovascular, Respiratory, GI, Renal, Endocrine, Neurological, Orthopaedic, Integumentary disorders','Maternal & Child Health Nursing — Antenatal, Intranatal, Postnatal Care; Neonatology; Paediatric Nursing','Community Health Nursing — Epidemiology, National Health Programmes, PHC, CHC, ASHA, ANM roles','Mental Health Nursing — Psychiatric disorders, Therapeutic communication, Psychotropic drugs','Emergency & Critical Care — ICU Nursing, Ventilator care, CPR, Triage','Nutrition — Therapeutic diets, Nutritional assessment','Pharmacology — Drug classifications, Calculation of doses, IV fluids, Drug interactions'] },
+      { subject:'Lab Technician — Clinical Pathology', topics:['Haematology — CBC, Blood Grouping, Cross-matching, Coagulation tests','Clinical Biochemistry — Liver Function Tests, Renal Function Tests, Lipid Profile, HbA1c, Hormonal assays','Microbiology — Culture & Sensitivity, Gram Stain, Ziehl-Neelsen stain, Serology','Histopathology & Cytology — Tissue Processing, Staining, Frozen Section','Blood Bank — Donor selection, Component separation, Compatibility testing, Transfusion reactions','Quality Control & Biosafety — NABL standards, Laboratory Safety'] },
+      { subject:'Community Health Officer (CHO) — NHM', topics:['Community Health — Social Determinants, SDGs, Primary Health Care, CPHC Model','National Health Programmes — NHM, RMNCH+A, NTEP (TB), NVBDCP, NPCDCS, Ayushman Bharat-HWC','Maternal Health — ANC, PNC, Institutional Delivery, JSSK, JSY, LaQshya','Child Health — HBNC, SNCU, Immunisation (UIP), RBSK, SAM management','Family Planning — Contraceptive methods, Sterilisation, IUCD, Emergency Contraception','Communicable Diseases — Malaria, Dengue, Chikungunya, TB, HIV, Leprosy, Kala-azar','Non-communicable Disease Screening — Hypertension, Diabetes, Oral, Breast, Cervical Cancer','Basic Clinical Skills — BP measurement, Blood Glucose, Urine dipstick, Haemoglobin, Pregnancy test'] },
+      { subject:'Pharmacist', topics:['Pharmaceutics — Dosage Forms (tablets, capsules, injections, ointments), Manufacturing','Pharmaceutical Chemistry — Organic, Inorganic, Analytical; Drug Analysis','Pharmacology — Drug mechanisms, Pharmacokinetics, Adverse Drug Reactions, Drug Interactions','Clinical Pharmacy — Drug Therapy Monitoring, Rational Drug Use, Medication Errors','Pharmacognosy — Herbal drugs, Crude drugs, Phytochemistry','Hospital & Community Pharmacy — Drug dispensing, Storage, Labelling, Narcotic/Psychotropic regulations'] },
+    ]
+  },
+  {
+    name: 'High Court / District Court Recruitment (Clerk / Stenographer / Peon)',
+    shortName: 'Court Recruitment',
+    icon: '⚖️',
+    category: 'State Judicial',
+    conducting: 'Respective High Courts / District & Session Courts',
+    frequency: 'As per vacancy (state-wise)',
+    vacancies: '1,000–20,000 (varies by state)',
+    overview: 'High Courts and District Courts recruit Group C & D staff including Clerk/Junior Clerk, Stenographer, Reader, Process Server, Peon. Major recruiters: Allahabad HC (largest — UP), Bombay HC, Madras HC, Calcutta HC, Delhi HC, Rajasthan HC, Patna HC. Also Civil Judge (Junior Division) / Judicial Magistrate exams conducted by High Courts/State PSC.',
+    exam: [
+      { stage:'Written Test', paper:'General Knowledge, Hindi, English, Computer, Reasoning, Arithmetic', qs:'100–200 MCQ', marks:'100–200', duration:'2–3 hr', neg:'Varies', notes:'Varies by HC/court' },
+      { stage:'Skill Test', paper:'Typing Test (for Clerk) / Shorthand Test (for Steno)', qs:'—', marks:'—', duration:'—', neg:'None', notes:'Qualifying; English/Hindi typing speed required' },
+      { stage:'Interview', paper:'For some posts only', qs:'—', marks:'—', duration:'—', neg:'None', notes:'Some HCs have direct written+skill merit list' },
+    ],
+    syllabus: [
+      { subject:'General Knowledge & Current Affairs', topics:['History — Ancient, Medieval, Modern Indian History; Freedom Movement','Polity — Indian Constitution, Judiciary (Supreme Court, High Courts, District Courts), Articles','Geography — India & World Physical Geography, Major Rivers, Capitals','Economy — Basic Economic Concepts, Indian Economy, Budget, Banking Basics','Science & Technology — Physics, Chemistry, Biology (Class 10 level)','Current Affairs — National & State Events (last 6 months), Awards, Sports, Appointments'] },
+      { subject:'Hindi & English Language', topics:['Hindi — Grammar (Sandhi, Samas, Muhavare, Lokoktiyan), Comprehension, Essay, Letter writing','English — Grammar (Tenses, Voice, Narration), Vocabulary, Comprehension, Error Correction','Translation — Hindi to English and English to Hindi passages'] },
+      { subject:'Computer Knowledge', topics:['MS Office — Word, Excel, PowerPoint, basic operations','Internet & Email — Browsers, Email, Search Engines','Operating System Basics — Windows, File Management','Court-specific Computer Work — Data Entry, Court Management Software (eCourts)','Typing — Hindi (Mangal font — Remington/Inscript) & English (25–40 WPM target)'] },
+      { subject:'Judicial Service (Civil Judge Exam — through HC/State PSC)', topics:['Law of Evidence — Indian Evidence Act 1872','Code of Civil Procedure 1908 — Jurisdiction, Suits, Execution, Appeals','Code of Criminal Procedure 1973 — Cognizance, Trial, Bail, Sentence','Indian Penal Code 1860 — Offences, Punishments, Exceptions','Contract Act 1872, Transfer of Property Act 1882, Limitation Act 1963','Constitutional Law — Fundamental Rights, Art. 12–35, Judicial Review','Family Law — Hindu, Muslim, Christian Personal Laws; Special Marriage Act','Land Laws — State-specific Revenue Laws, Land Acquisition'] },
+    ]
+  },
+  {
+    name: 'NHM CHO (Community Health Officer) — Various States',
+    shortName: 'NHM CHO',
+    icon: '🏡',
+    category: 'State Health',
+    conducting: 'State NHM / Health Departments',
+    frequency: 'As per vacancy (state-wise)',
+    vacancies: '5,000–50,000 across states',
+    overview: 'Community Health Officers posted at Health & Wellness Centres (Sub-Health Centres converted under Ayushman Bharat) to provide Comprehensive Primary Health Care. Eligibility: BSc Nursing (for most states) or BAMS/BHMS + bridge course. Major recruiters: UP NHM, Bihar NHM, MP NHM, Rajasthan NHM. Fixed monthly stipend ₹25,000–40,000.',
+    exam: [
+      { stage:'Written Test', paper:'Community Health, Clinical Subjects, GK, Hindi/English', qs:'100–150 MCQ', marks:'100–150', duration:'1.5–2 hr', neg:'Varies', notes:'State-specific pattern; some states direct merit-based selection' },
+      { stage:'Merit List', paper:'Academic marks from qualifying degree', qs:'—', marks:'—', duration:'—', neg:'None', notes:'Some states do direct document verification after merit list' },
+      { stage:'Document Verification', paper:'Degree, Registration certificate, Domicile', qs:'—', marks:'—', duration:'—', neg:'None', notes:'NMC/INC/state nursing council registration required' },
+    ],
+    syllabus: [
+      { subject:'Community Health & National Health Programmes', topics:['National Health Mission (NHM) — NRHM + NUHM; Mission structure','RMNCH+A — Reproductive, Maternal, Newborn, Child and Adolescent Health','Ayushman Bharat — PM-JAY (insurance) + Health & Wellness Centres (HWC) — CHO\'s role','National Vector Borne Disease Control Programme — Malaria, Dengue, Chikungunya, Kala-azar, Filaria, JE','National TB Elimination Programme (NTEP) — DOTS, Nikshay portal, Nikshay Poshan Yojana','National Leprosy Eradication Programme (NLEP) — MDT, ASHA role','HIV/AIDS — NACP (National AIDS Control Programme), ICTC, ART, PMTCT','Routine Immunisation — Universal Immunisation Programme (UIP), Cold Chain Management, Adverse Events Following Immunisation (AEFI)','Non-Communicable Disease Prevention — Screen & Treat: Hypertension, Diabetes, Oral/Breast/Cervical Cancer, Mental Health'] },
+      { subject:'Clinical Skills at Primary Level', topics:['Comprehensive Primary Health Care — Expanded scope of CHO vs ANM','Diagnosis & Treatment — Fever protocols (Malaria, Dengue, Typhoid), RTI/STI, Diarrhoea management, ARI management','Maternal Care — ANC registration, High-risk pregnancy identification, Safe delivery basics, PNC','Child Care — IMNCI (Integrated Management of Neonatal & Childhood Illness), Growth monitoring, SAM/MAM management','Minor Surgical Procedures — Wound dressing, Suturing, Foreign body removal, Abscess drainage','Point-of-Care Diagnostics — Rapid Diagnostic Tests (Malaria RDT, HBsAg, HIV, Pregnancy test, Sputum smear reading)','Drug Distribution — Free Drug Initiative, AMRIT pharmacies, Rational Drug Use, AYUSH integration'] },
+      { subject:'Public Health Administration & Records', topics:['Health Records — Maintenance of registers (ANC, Immunisation, Death, Birth, Disease notification)','Health Reports — Weekly/Monthly reporting formats, HMIS (Health Management Information System) portal','Village Health Sanitation & Nutrition Committee (VHSNC) — CHO\'s facilitation role','Community Mobilisation — IEC/BCC, ASHA coordination, Village Health Nutrition Days (VHND)','Referral System — Referral cards, Ambulance (102, 108), JSSK (Janani Shishu Suraksha Karyakram)'] },
     ]
   },
 ];
