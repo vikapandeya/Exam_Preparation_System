@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="UP Special GK — Uttar Pradesh Geography, History, Economy, Culture, Government for UPPCS, UPRO/ARO, UP Police SI/Constable, UPSSSC PET exams. By Vikash Pandey.">
+<meta name="author" content="Vikash Pandey">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌺</text></svg>">
+<title>UP Special GK — Exam Preparation System</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>(function(){var t=localStorage.getItem('eps-theme');if(t)document.documentElement.setAttribute('data-theme',t);})()</script>
+<style>
+:root{--primary:#ea580c;--secondary:#16a34a;--bg:#fff7ed;--surface:#ffffff;--surface2:#ffedd5;--border:#fed7aa;--text:#1e293b;--muted:#64748b;--sidebar:260px;--hdr:64px;--radius:12px;--shadow:0 4px 24px rgba(234,88,12,.08);--sb-active-bg:rgba(234,88,12,.1);--hl-bg:rgba(234,88,12,.06);}
+[data-theme="dark"]{--bg:#1a0a00;--surface:#2d1200;--surface2:#3d1a00;--border:#7c2d12;--text:#f1f5f9;--muted:#94a3b8;--shadow:0 4px 24px rgba(0,0,0,.4);}
+*{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;transition:background .3s,color .3s;}
+::-webkit-scrollbar{width:6px;}::-webkit-scrollbar-thumb{background:var(--primary);border-radius:99px;}
+.page-links{display:flex;flex-wrap:nowrap;gap:6px;align-items:center;overflow-x:auto;scrollbar-width:none;-webkit-mask-image:linear-gradient(to right,#000 85%,transparent);mask-image:linear-gradient(to right,#000 85%,transparent);}
+.page-links::-webkit-scrollbar{display:none;}
+.page-links a{font-size:.7rem;color:var(--text);background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:4px 10px;text-decoration:none;transition:all .2s;font-weight:500;white-space:nowrap;}
+.page-links a:hover,.page-links a.current{background:var(--primary);color:#fff;border-color:var(--primary);}
+#sub-nav{position:fixed;top:var(--hdr);left:0;right:0;z-index:999;background:var(--surface);border-bottom:1px solid var(--border);padding:8px 1rem;}
+#header{position:fixed;top:0;left:0;right:0;height:var(--hdr);background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 1rem;gap:1rem;z-index:1000;}
+#hamburger{background:none;border:none;cursor:pointer;display:flex;flex-direction:column;gap:4px;padding:4px;}
+#hamburger span{display:block;width:22px;height:2px;background:var(--text);border-radius:2px;transition:transform .25s,opacity .25s;}
+#hamburger.open span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+#hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0);}
+#hamburger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+#logo{display:flex;align-items:center;gap:.5rem;font-weight:800;font-size:1.05rem;text-decoration:none;color:var(--text);}
+#logo .grd{background:linear-gradient(135deg,var(--primary),var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.header-right{margin-left:auto;display:flex;align-items:center;gap:.75rem;}
+#theme-btn{background:none;border:1.5px solid var(--border);border-radius:99px;padding:.35rem .8rem;cursor:pointer;font-size:.85rem;color:var(--text);transition:.2s;}
+#sidebar{position:fixed;top:calc(var(--hdr) + 44px);left:0;bottom:0;width:var(--sidebar);background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;transition:.3s;z-index:900;padding-bottom:2rem;}
+#sidebar.closed{transform:translateX(calc(-1 * var(--sidebar)));}
+.sb-section{padding:.5rem 0;}.sb-heading{padding:.5rem 1.2rem;font-size:.72rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;}
+.sb-item{display:flex;align-items:center;gap:.65rem;padding:.55rem 1.2rem;cursor:pointer;font-size:.85rem;transition:.15s;color:var(--text);border-left:3px solid transparent;}
+.sb-item:hover{background:var(--surface2);}
+.sb-item.active{background:var(--sb-active-bg);border-left-color:var(--primary);color:var(--primary);font-weight:600;}
+.sb-divider{height:1px;background:var(--border);margin:.3rem 0;}
+#main{margin-left:var(--sidebar);margin-top:calc(var(--hdr) + 44px);padding:2rem;transition:margin-left .3s;}
+#main.full{margin-left:0;}
+.page{display:none;animation:fadeIn .3s ease;}.page.active{display:block;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);}}
+.hero{border-radius:20px;padding:3rem 2.5rem;color:#fff;margin-bottom:2rem;background:linear-gradient(135deg,#7c2d12 0%,#9a3412 40%,#14532d 100%);}
+.hero h1{font-size:clamp(1.6rem,3.5vw,2.5rem);font-weight:800;margin-bottom:.8rem;}
+.hero h1 span{background:linear-gradient(90deg,#fdba74,#fb923c,#86efac);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.hero p{font-size:.95rem;opacity:.85;max-width:580px;}
+.hero-stats{display:flex;gap:2rem;flex-wrap:wrap;margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,.15);}
+.hero-stat .num{font-size:1.6rem;font-weight:800;background:linear-gradient(90deg,#fdba74,#fb923c);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.hero-stat .lbl{font-size:.78rem;opacity:.7;}
+.section-title{font-size:1.3rem;font-weight:700;margin-bottom:1.25rem;display:flex;align-items:center;gap:.5rem;}
+.section-title::after{content:'';flex:1;height:2px;background:linear-gradient(90deg,var(--primary),transparent);margin-left:.5rem;}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.25rem;}
+.card h2{font-size:1.1rem;font-weight:700;margin-bottom:.75rem;color:var(--primary);}
+.card h3{font-size:.95rem;font-weight:700;margin:.75rem 0 .4rem;}
+.card p,.card li{font-size:.88rem;line-height:1.7;margin-bottom:.4rem;}
+.card ul{padding-left:1.2rem;}
+table{width:100%;border-collapse:collapse;font-size:.84rem;margin:.5rem 0 1rem;}
+th{background:var(--primary);color:#fff;padding:.55rem .75rem;text-align:left;font-weight:600;}
+td{padding:.5rem .75rem;border-bottom:1px solid var(--border);}
+tr:nth-child(even) td{background:var(--surface2);}
+.highlight{background:var(--hl-bg);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1rem 1.25rem;margin:.75rem 0;font-size:.88rem;}
+.badge{display:inline-block;padding:.2rem .55rem;border-radius:99px;font-size:.72rem;font-weight:600;background:rgba(234,88,12,.12);color:var(--primary);}
+.mcq-box{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;margin-bottom:1rem;}
+.mcq-box p{font-size:.9rem;font-weight:600;margin-bottom:.75rem;}
+.mcq-opt{display:flex;align-items:center;gap:.6rem;padding:.45rem .6rem;border-radius:8px;cursor:pointer;font-size:.87rem;transition:.15s;}
+.mcq-opt:hover{background:var(--surface2);}
+.mcq-opt input{accent-color:var(--primary);}
+.mcq-ans{display:none;margin-top:.75rem;padding:.65rem 1rem;border-radius:8px;font-size:.85rem;font-weight:600;}
+.mcq-ans.correct{background:rgba(16,185,129,.12);color:#065f46;}
+.mcq-ans.wrong{background:rgba(239,68,68,.1);color:#991b1b;}
+#btt{position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;border-radius:50%;background:var(--primary);color:#fff;border:none;font-size:1.2rem;cursor:pointer;display:none;align-items:center;justify-content:center;z-index:800;}
+#btt.show{display:flex;}
+#site-footer{background:var(--surface);border-top:1px solid var(--border);margin-left:var(--sidebar);transition:margin-left .3s;padding:2rem;}
+#main.full~#site-footer,#site-footer.full{margin-left:0;}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;font-size:.8rem;color:var(--muted);}
+.footer-author{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;padding:.35rem .9rem;border-radius:99px;font-size:.82rem;font-weight:600;}
+#scroll-progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--primary),var(--secondary));z-index:2000;transition:width .1s linear;width:0%;}
+#creator-badge{display:flex;align-items:center;gap:.4rem;font-size:.75rem;font-weight:600;color:var(--muted);white-space:nowrap;}
+#creator-badge .cb-dot{width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--secondary));animation:pulse-dot 2s ease-in-out infinite;}
+@keyframes pulse-dot{0%,100%{transform:scale(1);opacity:1;}50%{transform:scale(1.4);opacity:.7;}}
+#search-bar{flex:1;max-width:400px;position:relative;}
+#search-bar input{width:100%;padding:.5rem 2.6rem .5rem 2.6rem;border:1.5px solid var(--border);border-radius:99px;background:var(--surface2);color:var(--text);font-size:.9rem;outline:none;transition:.2s;}
+#search-bar input:focus{border-color:var(--primary);}
+#search-bar .ico{position:absolute;left:.8rem;top:50%;transform:translateY(-50%);color:var(--muted);}
+#search-bar .kbd-hint{position:absolute;right:.75rem;top:50%;transform:translateY(-50%);font-size:.7rem;background:var(--border);color:var(--muted);padding:.1rem .4rem;border-radius:4px;pointer-events:none;}
+#search-results{position:absolute;top:calc(100% + 6px);left:0;right:0;background:var(--surface);border:1px solid var(--border);border-radius:10px;box-shadow:0 4px 24px rgba(0,0,0,.12);max-height:300px;overflow-y:auto;z-index:2000;display:none;}
+#search-results .sr-item{padding:.65rem 1rem;cursor:pointer;font-size:.88rem;border-bottom:1px solid var(--border);transition:.15s;}
+#search-results .sr-item:hover{background:var(--surface2);}
+#progress-pill{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;border-radius:99px;padding:.3rem .85rem;font-size:.8rem;font-weight:600;cursor:pointer;white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center;gap:.3rem;}
+.page table{display:block;overflow-x:auto;}
+@media(max-width:768px){#sidebar{transform:translateX(calc(-1 * var(--sidebar)));} #sidebar.open{transform:translateX(0);} #main,#site-footer{margin-left:0;} #sub-nav{display:none;}}
+@media(max-width:640px){#creator-badge{display:none;}}
+@media(max-width:480px){#search-bar{display:none;} #progress-pill{display:none;}}
+</style>
+</head>
+<body>
+<div id="scroll-progress"></div>
+<header id="header">
+  <button id="hamburger" onclick="toggleSidebar()" aria-label="Menu"><span></span><span></span><span></span></button>
+  <a href="index.html" id="logo">🌺 <span class="grd">UP Special GK</span></a>
+  <div id="creator-badge"><span class="cb-dot"></span>by Vikash Pandey</div>
+  <div id="search-bar"><span class="ico">🔍</span><input type="text" id="search-input" placeholder="Search topics…" autocomplete="off"><span class="kbd-hint">/</span><div id="search-results"></div></div>
+  <div class="header-right">
+    <a href="study-dashboard.html" id="progress-pill">📊 Progress</a>
+    <button id="theme-btn" onclick="toggleTheme()">🌙 Dark</button>
+  </div>
+</header>
+<div id="sub-nav"><div class="page-links">
+    <a href="index.html">🏠 Home</a>
+    <a href="Science.html">🔬 Science</a>
+    <a href="Computer.html">💻 Computer</a>
+    <a href="Current_Affairs.html">📰 Current Affairs</a>
+    <a href="Exam_Updates.html">📢 Exam Updates</a>
+    <a href="english-grammar-mastery.html">📝 English</a>
+    <a href="Hindi_Grammar.html">📖 हिंदी व्याकरण</a>
+    <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html">🧮 Maths</a>
+    <a href="Indian_Polity.html">⚖️ Polity</a>
+    <a href="Indian_History.html">🏛️ History</a>
+    <a href="Indian_Geography.html">🗺️ Geography</a>
+    <a href="Static_GK.html">🌍 Static GK</a>
+    <a href="Indian_Economy.html">💰 Economy</a>
+    <a href="Bihar_Special_GK.html">🌾 Bihar GK</a>
+    <a href="Reasoning_Guide.html">🧠 Reasoning</a>
+    <a href="Syllabus.html">📋 Syllabus</a>
+    <a href="Environment_Ecology.html">🌿 Environment</a>
+    <a href="Banking_Awareness.html">🏦 Banking</a>
+    <a href="Art_Culture.html">🎨 Art &amp; Culture</a>
+    <a href="UP_Special_GK.html">🌺 UP GK</a>
+    <a href="Rajasthan_GK.html">🏜️ Rajasthan GK</a>
+    <a href="MP_GK.html">🦁 MP GK</a>
+</div></div>
+<nav id="sidebar">
+  <div class="sb-section">
+    <div class="sb-heading">Overview</div>
+    <div class="sb-item active" onclick="showPage('home')">🌺 Quick Facts</div>
+  </div>
+  <div class="sb-divider"></div>
+  <div class="sb-section">
+    <div class="sb-heading">History &amp; Geography</div>
+    <div class="sb-item" onclick="showPage('history')">🏛️ UP History</div>
+    <div class="sb-item" onclick="showPage('geography')">🗺️ Geography</div>
+  </div>
+  <div class="sb-divider"></div>
+  <div class="sb-section">
+    <div class="sb-heading">Economy &amp; Culture</div>
+    <div class="sb-item" onclick="showPage('economy')">💼 Economy</div>
+    <div class="sb-item" onclick="showPage('culture')">🎭 Culture &amp; Festivals</div>
+  </div>
+  <div class="sb-divider"></div>
+  <div class="sb-section">
+    <div class="sb-heading">Governance</div>
+    <div class="sb-item" onclick="showPage('government')">⚖️ Government</div>
+    <div class="sb-item" onclick="showPage('personalities')">🌟 Famous Personalities</div>
+    <div class="sb-item" onclick="showPage('districts')">📍 Districts</div>
+    <div class="sb-item" onclick="showPage('schemes')">🎯 UP Govt Schemes</div>
+  </div>
+  <div class="sb-divider"></div>
+  <div class="sb-section">
+    <div class="sb-heading">Practice</div>
+    <div class="sb-item" onclick="showPage('mcq')">❓ MCQ Practice</div>
+  </div>
+</nav>
+<div id="main">
+
+<!-- HOME / QUICK FACTS -->
+<section class="page active" id="pg-home">
+  <div class="hero">
+    <h1>UP Special GK<br><span>UPPCS · UPRO/ARO · UP Police · UPSSSC PET</span></h1>
+    <p>Complete Uttar Pradesh GK guide covering history, geography, economy, culture, government and current affairs for all UP state exams.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="num">75</div><div class="lbl">Districts</div></div>
+      <div class="hero-stat"><div class="num">80</div><div class="lbl">Lok Sabha Seats</div></div>
+      <div class="hero-stat"><div class="num">24.1Cr</div><div class="lbl">Population</div></div>
+      <div class="hero-stat"><div class="num">403</div><div class="lbl">Vidhan Sabha Seats</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <h2>🎯 UP at a Glance — Key Facts</h2>
+    <table>
+      <tr><th>Topic</th><th>Detail</th></tr>
+      <tr><td>Capital</td><td>Lucknow (also called Nawabi Shahar / City of Nawabs)</td></tr>
+      <tr><td>Formation</td><td>26 January 1950 — renamed Uttar Pradesh from United Provinces</td></tr>
+      <tr><td>Chief Minister</td><td>Yogi Adityanath (BJP, since March 2017)</td></tr>
+      <tr><td>Governor</td><td>Anandiben Patel</td></tr>
+      <tr><td>State Animal</td><td>Barasingha (Swamp Deer)</td></tr>
+      <tr><td>State Bird</td><td>Sarus Crane — world's tallest flying bird</td></tr>
+      <tr><td>State Flower</td><td>Palash (Flame of the Forest); also Brahma Kamal in some lists</td></tr>
+      <tr><td>State Tree</td><td>Ashoka</td></tr>
+      <tr><td>State Fish</td><td>Mahseer (Tor putitora)</td></tr>
+      <tr><td>Official Language</td><td>Hindi; Urdu as additional official language</td></tr>
+      <tr><td>Vidhan Sabha</td><td>403 seats (most in any Indian state)</td></tr>
+      <tr><td>Vidhan Parishad</td><td>100 seats</td></tr>
+      <tr><td>Lok Sabha Seats</td><td>80 seats — highest of any state in India</td></tr>
+      <tr><td>Rajya Sabha Seats</td><td>31 seats</td></tr>
+      <tr><td>High Court</td><td>Allahabad High Court (largest in India/Asia) — principal seat Prayagraj, bench at Lucknow</td></tr>
+      <tr><td>Area</td><td>2,40,928 sq km — 4th largest state in India</td></tr>
+      <tr><td>Population</td><td>~24.1 crore (Census 2011) — most populous state in India</td></tr>
+      <tr><td>Divisions</td><td>18 Administrative Divisions</td></tr>
+      <tr><td>Districts</td><td>75</td></tr>
+    </table>
+    <div class="highlight"><strong>Remember:</strong> UP sends the maximum number of MPs to the Lok Sabha (80) and is the most populous state. Its Vidhan Sabha (403 seats) is also the largest in India.</div>
+  </div>
+</section>
+
+<!-- HISTORY -->
+<section class="page" id="pg-history">
+  <h2 class="section-title">🏛️ UP History</h2>
+  <div class="card">
+    <h2>Ancient Period</h2>
+    <ul>
+      <li><strong>Vedic Age:</strong> Much of the Rigveda and later Vedas composed in the Ganga-Yamuna doab region. Kuru and Panchala kingdoms flourished here.</li>
+      <li><strong>Mahajanapadas (600–300 BCE):</strong> Kashi (Varanasi), Kosala (Ayodhya/Sravasti), Vatsa (Kaushambi/Prayagraj), Panchala (Ahichhatra)</li>
+      <li><strong>Buddhism:</strong> Buddha gave his first sermon at Sarnath (Varanasi). Bodhi tree related pilgrimage circuit — Sarnath, Kushinagar (death/parinirvana) both in UP.</li>
+      <li><strong>Mauryan Empire:</strong> Ashoka's famous Lion Capital pillar erected at Sarnath — now India's national emblem. Pataliputra (Bihar) was capital but UP was central to the empire.</li>
+      <li><strong>Gupta Golden Age (4th–5th century CE):</strong> Prayagraj (Allahabad) was center of Gupta administration; Chandragupta II's era.</li>
+    </ul>
+    <h3>Medieval Period</h3>
+    <ul>
+      <li><strong>Kannauj (7th century):</strong> Harsha Vardhana made Kannauj his capital; Hieun Tsang visited.</li>
+      <li><strong>Rajput era:</strong> Gahadavalas of Varanasi, Chandelas of Bundelkhand (Khajuraho).</li>
+      <li><strong>Delhi Sultanate:</strong> Ibrahim Lodi vs Babur — First Battle of Panipat (1526) decided Mughal rule.</li>
+      <li><strong>Mughal Empire:</strong> Agra served as Mughal capital; Taj Mahal, Agra Fort, Fatehpur Sikri built. Akbar, Jahangir, Shah Jahan ruled from Agra/Lahore alternately.</li>
+      <li><strong>Nawabs of Awadh (18th–19th century):</strong> Lucknow became cultural capital under Nawabs — Asaf-ud-Daula built Bara Imambara (1784).</li>
+    </ul>
+    <h3>Freedom Struggle &amp; 1857</h3>
+    <table>
+      <tr><th>Event</th><th>Place in UP</th><th>Key Figure</th></tr>
+      <tr><td>First shot of 1857 Revolt</td><td>Meerut (10 May 1857)</td><td>Sepoys of 3rd Bengal Light Cavalry</td></tr>
+      <tr><td>Lucknow Residency Siege</td><td>Lucknow</td><td>Begum Hazrat Mahal</td></tr>
+      <tr><td>Battle of Jhansi</td><td>Jhansi</td><td>Rani Lakshmibai</td></tr>
+      <tr><td>Kanpur Massacre</td><td>Kanpur (Cawnpore)</td><td>Nana Sahib</td></tr>
+      <tr><td>Mangal Pandey</td><td>Ballia (UP) — sepoy from UP but martyred at Barrackpore</td><td>Mangal Pandey — first martyr of 1857</td></tr>
+      <tr><td>Chauri Chaura Incident</td><td>Gorakhpur (4 Feb 1922)</td><td>Led Gandhi to suspend Non-Cooperation Movement</td></tr>
+      <tr><td>Kakori Conspiracy</td><td>Kakori, near Lucknow (9 Aug 1925)</td><td>Ram Prasad Bismil, Ashfaqulla Khan, Chandrashekhar Azad</td></tr>
+    </table>
+    <h3>State Formation</h3>
+    <ul>
+      <li>1 April 1937: United Provinces of Agra &amp; Oudh formed under Government of India Act 1935.</li>
+      <li>24 January 1950: Renamed <strong>Uttar Pradesh</strong> (UP) at Republic of India's formation.</li>
+      <li>9 November 2000: Uttarakhand (initially Uttaranchal) carved out as separate state from UP's Himalayan districts.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- GEOGRAPHY -->
+<section class="page" id="pg-geography">
+  <h2 class="section-title">🗺️ Geography</h2>
+  <div class="card">
+    <h2>Location &amp; Borders</h2>
+    <p>UP lies in northern India between 23°52'N–30°24'N latitude and 77°3'E–84°39'E longitude.</p>
+    <h3>Bordering States/Countries</h3>
+    <table>
+      <tr><th>Direction</th><th>Border</th></tr>
+      <tr><td>North</td><td>Nepal (international border)</td></tr>
+      <tr><td>Northwest</td><td>Uttarakhand, Himachal Pradesh</td></tr>
+      <tr><td>West</td><td>Haryana, Delhi (NCT)</td></tr>
+      <tr><td>Southwest</td><td>Rajasthan</td></tr>
+      <tr><td>South</td><td>Madhya Pradesh</td></tr>
+      <tr><td>Southeast</td><td>Chhattisgarh</td></tr>
+      <tr><td>East</td><td>Jharkhand, Bihar</td></tr>
+    </table>
+    <h3>Physical Divisions</h3>
+    <ul>
+      <li><strong>1. Himalayan/Tarai Region (North):</strong> Narrow belt along Nepal border — dense forests, marshy land, rich wildlife (Dudhwa National Park). Districts: Pilibhit, Lakhimpur Kheri, Bahraich, Balrampur, Siddharthnagar, Maharajganj.</li>
+      <li><strong>2. Gangetic Plain (Centre):</strong> Vast fertile alluvial plain — the core of UP. Most populous zone. Covers ~70% of the state area.</li>
+      <li><strong>3. Bundelkhand/Vindhyan Plateau (South):</strong> Rocky, undulating terrain. Chambal ravines. Districts: Jhansi, Lalitpur, Mahoba, Banda, Chitrakoot, Hamirpur.</li>
+    </ul>
+    <h3>Rivers</h3>
+    <table>
+      <tr><th>River</th><th>Entry/Notable Points in UP</th><th>Tributaries/Notes</th></tr>
+      <tr><td>Ganga</td><td>Enters at Bijnor (from UK); exits at Ballia (into Bihar)</td><td>UP's most important river; Prayagraj Sangam</td></tr>
+      <tr><td>Yamuna</td><td>Western boundary with Haryana/Rajasthan; joins Ganga at Prayagraj</td><td>Mathura, Agra, Prayagraj on its banks</td></tr>
+      <tr><td>Gomti</td><td>Rises in Pilibhit; flows through Lucknow, Jaunpur; joins Ganga at Ghazipur</td><td>Lucknow is on Gomti</td></tr>
+      <tr><td>Ghaghra (Saryu)</td><td>Flows through Ayodhya, Faizabad region; enters Bihar at Chapra</td><td>Also called Saryu near Ayodhya</td></tr>
+      <tr><td>Rapti</td><td>Gorakhpur district; joins Ghaghra at Saran (Bihar)</td><td>Gorakhpur is on Rapti</td></tr>
+      <tr><td>Betwa</td><td>Enters UP from MP; joins Yamuna at Hamirpur</td><td>Jhansi, Orchha area</td></tr>
+      <tr><td>Ken</td><td>Flows through Banda; joins Yamuna at Chilla (Banda)</td><td>Ken-Betwa Link Project</td></tr>
+      <tr><td>Chambal</td><td>Border river between UP and MP in south</td><td>Known for ravines/dacoits historically</td></tr>
+      <tr><td>Son</td><td>Extreme SE corner touching Mirzapur/Sonbhadra</td><td>Joins Ganga at Patna (Bihar)</td></tr>
+    </table>
+    <h3>Soils &amp; Doab Regions</h3>
+    <p><strong>Alluvial soil</strong> covers 80%+ of UP — most fertile type. Two sub-types:</p>
+    <ul>
+      <li><strong>Bhangar:</strong> Older alluvium, slightly elevated, kankar (limestone) nodules, less fertile.</li>
+      <li><strong>Khadar:</strong> New alluvium, deposited by annual floods, highly fertile, low-lying.</li>
+    </ul>
+    <p><strong>Doab</strong> = land between two rivers. Key doabs in UP:</p>
+    <ul>
+      <li>Ganga-Yamuna Doab (most famous — between Ganga and Yamuna)</li>
+      <li>Ganga-Ghaghra Doab (Awadh region)</li>
+      <li>Ghaghra-Gandak Doab (eastern UP)</li>
+    </ul>
+    <h3>Climate</h3>
+    <p>Subtropical monsoon. Hot summers (April–June, 40–45°C in west), mild winters (Dec–Jan can drop to 3–5°C), monsoon (June–September). Western UP is hotter and drier; eastern UP gets more rainfall.</p>
+    <div class="highlight"><strong>Key Fact:</strong> Dudhwa National Park (Lakhimpur Kheri) is UP's only National Park — home to tigers, one-horned rhinos (reintroduced), and swamp deer (barasingha).</div>
+  </div>
+</section>
+
+<!-- ECONOMY -->
+<section class="page" id="pg-economy">
+  <h2 class="section-title">💼 Economy</h2>
+  <div class="card">
+    <h2>Agriculture — UP's Backbone</h2>
+    <table>
+      <tr><th>Crop/Product</th><th>UP's Position</th><th>Key Detail</th></tr>
+      <tr><td>Sugarcane</td><td>Largest producer in India (~48% national production)</td><td>Western UP — Muzaffarnagar, Meerut belt; most sugar mills</td></tr>
+      <tr><td>Wheat</td><td>2nd largest producer in India</td><td>Rabi crop; western UP (green revolution beneficiary)</td></tr>
+      <tr><td>Rice</td><td>Major producer</td><td>Eastern UP — Gorakhpur, Varanasi division</td></tr>
+      <tr><td>Potato</td><td>Largest producer in India</td><td>Agra, Farrukhabad, Kannauj major potato belts</td></tr>
+      <tr><td>Mentha/Peppermint</td><td>Largest in the world</td><td>UP produces ~80% of world's mentha oil — Barabanki, Lucknow, Hardoi belt</td></tr>
+      <tr><td>Mango</td><td>Largest producer in India</td><td>Dussehri (Malihabad), Langra (Varanasi), Chausa — famous varieties</td></tr>
+      <tr><td>Guava</td><td>Significant producer</td><td>Allahabad guava is famous nationally</td></tr>
+    </table>
+    <h3>Industrial Hubs — One District One Product (ODOP)</h3>
+    <table>
+      <tr><th>District</th><th>Famous Industry/Product</th></tr>
+      <tr><td>Kanpur</td><td>Leather goods &amp; footwear, IIT Kanpur, cotton textiles</td></tr>
+      <tr><td>Varanasi (Banaras)</td><td>Banarasi silk sarees, BHU, tourism</td></tr>
+      <tr><td>Agra</td><td>Leather footwear, Taj Mahal tourism, petha (sweet)</td></tr>
+      <tr><td>Firozabad</td><td>Glass bangles &amp; glassware — "Glass City of India"</td></tr>
+      <tr><td>Moradabad</td><td>Brass &amp; metal handicrafts — "Brass City of India"</td></tr>
+      <tr><td>Saharanpur</td><td>Woodwork &amp; furniture</td></tr>
+      <tr><td>Khurja</td><td>Pottery &amp; ceramics — "Ceramic City"</td></tr>
+      <tr><td>Rampur</td><td>Scissors, Rampuri chaku (knife)</td></tr>
+      <tr><td>Aligarh</td><td>Locks — "Lock City of India", AMU campus</td></tr>
+      <tr><td>Noida/Greater Noida</td><td>IT/ITeS hub, film industry (Filmy Nagar), electronics</td></tr>
+      <tr><td>Lucknow</td><td>Chikankari embroidery, Zardozi work, government hub</td></tr>
+    </table>
+    <h3>Key Expressways</h3>
+    <table>
+      <tr><th>Expressway</th><th>Length</th><th>Route</th></tr>
+      <tr><td>Agra-Lucknow Expressway</td><td>302 km</td><td>Agra to Lucknow — inaugurated 2016</td></tr>
+      <tr><td>Yamuna Expressway</td><td>165 km</td><td>Greater Noida to Agra</td></tr>
+      <tr><td>Purvanchal Expressway</td><td>341 km</td><td>Lucknow to Ghazipur (eastern UP)</td></tr>
+      <tr><td>Bundelkhand Expressway</td><td>296 km</td><td>Chitrakoot to Etawah</td></tr>
+      <tr><td>Gorakhpur Link Expressway</td><td>91 km</td><td>Gorakhpur to Purvanchal Expressway</td></tr>
+    </table>
+    <div class="highlight"><strong>UP ODOP (One District One Product)</strong> scheme — launched 2018 — promotes unique products of each of the 75 districts. UP's GSDP is 2nd largest among Indian states (after Maharashtra).</div>
+  </div>
+</section>
+
+<!-- CULTURE & FESTIVALS -->
+<section class="page" id="pg-culture">
+  <h2 class="section-title">🎭 Culture &amp; Festivals</h2>
+  <div class="card">
+    <h2>Lucknow — Nawabi Tehzeeb</h2>
+    <ul>
+      <li><strong>Tehzeeb:</strong> Awadh's culture of refinement, politeness ("pehle aap" culture).</li>
+      <li><strong>Chikankari:</strong> Delicate hand embroidery on white/pastel fabric — GI tagged, Lucknow.</li>
+      <li><strong>Kathak Dance:</strong> One of India's 8 classical dances — Lucknow Gharana (Birju Maharaj); Jaipur Gharana also prominent.</li>
+      <li><strong>Awadhi Cuisine:</strong> Dum Biryani, Galouti kebab, Kakori kebab, Shami kebab, Nihari.</li>
+      <li><strong>Heritage Sites:</strong> Bara Imambara (1784, Asaf-ud-Daula), Chhota Imambara, Bhool Bhulaiya (labyrinth), British Residency.</li>
+    </ul>
+    <h2>Varanasi (Kashi) — Eternal City</h2>
+    <ul>
+      <li>One of the world's oldest continuously inhabited cities (~3,000+ years).</li>
+      <li><strong>88 Ghats</strong> along the Ganga — Dashashwamedh Ghat (famous Ganga Aarti), Manikarnika (cremation), Assi Ghat.</li>
+      <li><strong>BHU:</strong> Banaras Hindu University — one of Asia's largest residential universities; founded by Madan Mohan Malaviya (1916).</li>
+      <li>Banarasi silk sarees — GI tagged; woven by Muslim weavers (bunkar) traditionally.</li>
+      <li>Sarnath (5 km away) — Buddha's first sermon; Dhamek Stupa, Ashoka Pillar.</li>
+    </ul>
+    <h2>Mathura-Vrindavan — Krishna Land</h2>
+    <ul>
+      <li>Mathura — birthplace of Lord Krishna; Janmashtami celebration.</li>
+      <li><strong>Lathmar Holi</strong> (Barsana-Nandgaon) — women beat men with sticks; <strong>Phoolon ki Holi</strong> (Vrindavan Banke Bihari Temple) — celebrated with flowers.</li>
+    </ul>
+    <h2>Ayodhya — Ram Janmabhoomi</h2>
+    <ul>
+      <li>Birthplace of Lord Ram; Ram Mandir inaugurated January 2024.</li>
+      <li><strong>Deepotsav:</strong> Diwali celebrated by lighting lakhs of diyas on Saryu ghats — world record events.</li>
+      <li>Ram Navami, Ramnavami mela — major pilgrimages.</li>
+    </ul>
+    <h2>Prayagraj — Sangam City</h2>
+    <ul>
+      <li><strong>Sangam:</strong> Confluence of Ganga, Yamuna, and mythical Saraswati.</li>
+      <li><strong>Kumbh Mela</strong> (every 12 years) — UNESCO Intangible Cultural Heritage; world's largest human gathering. Maha Kumbh 2025 attracted record pilgrims. Single day record: 4.5 crore+ (2019 Ardh Kumbh).</li>
+      <li>Ardh Kumbh every 6 years; Magh Mela annually.</li>
+    </ul>
+    <h3>Folk Traditions &amp; Arts</h3>
+    <table>
+      <tr><th>Tradition</th><th>Type</th><th>Region</th></tr>
+      <tr><td>Ramlila</td><td>Dramatic enactment (UNESCO ICH)</td><td>Varanasi, Ramnagar Ramlila (world-famous), Ayodhya</td></tr>
+      <tr><td>Nautanki</td><td>Folk theatre</td><td>Western UP (Mathura, Hathras)</td></tr>
+      <tr><td>Birha</td><td>Folk music (separation/longing)</td><td>Eastern UP (Bhojpuri belt)</td></tr>
+      <tr><td>Kajri</td><td>Seasonal folk song (monsoon)</td><td>Mirzapur, Varanasi</td></tr>
+      <tr><td>Chaiti</td><td>Spring folk songs</td><td>Eastern UP</td></tr>
+      <tr><td>Chikankari</td><td>Hand embroidery (GI tagged)</td><td>Lucknow</td></tr>
+      <tr><td>Zardozi</td><td>Metallic embroidery (GI tagged)</td><td>Lucknow, Varanasi</td></tr>
+    </table>
+    <h3>Famous Food Specialties</h3>
+    <ul>
+      <li><strong>Petha (Agra):</strong> Ash gourd candy — GI tagged; Agra ka Petha is iconic.</li>
+      <li><strong>Makkhan Malai/Malaiyo (Varanasi):</strong> Frothy winter sweet made from churned milk — only in winter months.</li>
+      <li><strong>Bedai-Jalebi:</strong> Popular breakfast in Varanasi and eastern UP.</li>
+      <li><strong>Lucknowi Chaat:</strong> Matar ki chaat, Basket chaat — uniquely rich and creamy.</li>
+      <li><strong>Dum Biryani (Lucknow/Awadhi):</strong> Slow-cooked (dum pukht) biryani with aromatic spices.</li>
+    </ul>
+    <div class="highlight"><strong>GI Tagged Products of UP (Key):</strong> Banarasi Silk, Lucknow Chikankari, Lucknow Zardozi, Agra Petha, Mathura Peda, Bhadohi Carpets, Moradabad Brass, Firozabad Glass, Allahabad Guava, Dussehri Mango.</div>
+  </div>
+</section>
+
+<!-- GOVERNMENT -->
+<section class="page" id="pg-government">
+  <h2 class="section-title">⚖️ Government &amp; Administration</h2>
+  <div class="card">
+    <h2>Constitutional &amp; Political Structure</h2>
+    <table>
+      <tr><th>Parameter</th><th>Detail</th></tr>
+      <tr><td>Chief Minister</td><td>Yogi Adityanath (BJP) — since 19 March 2017; re-elected 2022</td></tr>
+      <tr><td>Governor</td><td>Anandiben Patel</td></tr>
+      <tr><td>Vidhan Sabha</td><td>403 seats — largest state legislature in India</td></tr>
+      <tr><td>Vidhan Parishad</td><td>100 seats (upper house)</td></tr>
+      <tr><td>Lok Sabha Seats</td><td>80 — maximum in any Indian state</td></tr>
+      <tr><td>Rajya Sabha Seats</td><td>31</td></tr>
+      <tr><td>High Court</td><td>Allahabad High Court — largest High Court in India; principal seat at Prayagraj, bench at Lucknow</td></tr>
+      <tr><td>UP Police HQ</td><td>Lucknow; headed by DGP (Director General of Police)</td></tr>
+    </table>
+    <h3>Administrative Divisions</h3>
+    <p>UP has <strong>18 Divisions</strong> and <strong>75 Districts</strong>. Each division is headed by a Divisional Commissioner. Each district is headed by a <strong>District Magistrate (DM)</strong>.</p>
+    <p>Below DM: SDM (Sub-Divisional Magistrate) → Tehsildar → Naib Tehsildar (Revenue administration).</p>
+    <h3>Panchayati Raj — 3-Tier Structure</h3>
+    <table>
+      <tr><th>Level</th><th>Body</th><th>Number</th></tr>
+      <tr><td>Village Level</td><td>Gram Panchayat</td><td>58,000+ (approx.)</td></tr>
+      <tr><td>Block Level</td><td>Kshetra Panchayat (Panchayat Samiti)</td><td>822</td></tr>
+      <tr><td>District Level</td><td>Zila Panchayat</td><td>75</td></tr>
+    </table>
+    <h3>Urban Local Bodies</h3>
+    <p>UP has 17 Nagar Nigams (Municipal Corporations). Major ones: Lucknow, Kanpur, Agra, Varanasi, Prayagraj, Ghaziabad, Meerut, Aligarh, Bareilly, Gorakhpur.</p>
+    <h3>Special Forces &amp; Bodies</h3>
+    <ul>
+      <li><strong>PAC (Provincial Armed Constabulary):</strong> UP's state paramilitary force; over 80,000 personnel; used for riot control and internal security.</li>
+      <li><strong>UP STF (Special Task Force):</strong> Elite anti-crime unit.</li>
+      <li><strong>UP ATS (Anti-Terrorist Squad):</strong> Counter-terrorism operations.</li>
+      <li><strong>Revenue Courts:</strong> Administered by Lekhpal → Kanungo → SDM → DM → Board of Revenue.</li>
+    </ul>
+    <div class="highlight"><strong>Unique feature:</strong> UP has a bicameral legislature — both Vidhan Sabha and Vidhan Parishad — unlike many states that have only Vidhan Sabha. States with bicameral legislature in India: UP, Bihar, Maharashtra, Karnataka, Andhra Pradesh, Telangana (6 states).</div>
+  </div>
+</section>
+
+<!-- FAMOUS PERSONALITIES -->
+<section class="page" id="pg-personalities">
+  <h2 class="section-title">🌟 Famous Personalities</h2>
+  <div class="card">
+    <h2>Prime Ministers from UP</h2>
+    <table>
+      <tr><th>PM</th><th>Connection to UP</th><th>Term</th></tr>
+      <tr><td>Jawaharlal Nehru</td><td>Born Allahabad (Prayagraj); Anand Bhavan</td><td>1947–1964</td></tr>
+      <tr><td>Lal Bahadur Shastri</td><td>Born Mughalsarai (now Chandauli, UP)</td><td>1964–1966</td></tr>
+      <tr><td>Indira Gandhi</td><td>Born Allahabad; Swaraj Bhavan</td><td>1966–77, 1980–84</td></tr>
+      <tr><td>Chaudhary Charan Singh</td><td>Born Hapur (UP); farmer's PM</td><td>1979–1980</td></tr>
+      <tr><td>V.P. Singh</td><td>Born Allahabad; Mandal Commission implementation</td><td>1989–1990</td></tr>
+      <tr><td>Atal Bihari Vajpayee</td><td>Born Gwalior (MP) but lifelong MP from Lucknow</td><td>1998–2004</td></tr>
+    </table>
+    <h2>Freedom Fighters</h2>
+    <table>
+      <tr><th>Name</th><th>Connection to UP</th><th>Known For</th></tr>
+      <tr><td>Mangal Pandey</td><td>From Ballia, UP</td><td>First martyr of 1857 Revolt; fired at British officer at Barrackpore</td></tr>
+      <tr><td>Ram Prasad Bismil</td><td>Born Shahjahanpur, UP</td><td>Kakori Conspiracy; wrote "Sarfaroshi ki tamanna"</td></tr>
+      <tr><td>Ashfaqulla Khan</td><td>Born Shahjahanpur, UP</td><td>Kakori Conspiracy; worked with Bismil across communal lines</td></tr>
+      <tr><td>Chandrashekhar Azad</td><td>Studied in Varanasi; active in UP</td><td>"Azad" — vowed never to be captured; HSRA leader</td></tr>
+      <tr><td>Rani Lakshmibai</td><td>Queen of Jhansi (UP)</td><td>1857 Revolt; "Khub ladi mardani" — died fighting in Gwalior</td></tr>
+      <tr><td>Begum Hazrat Mahal</td><td>Nawab of Awadh's wife; Lucknow</td><td>Led 1857 resistance in Lucknow after husband's exile</td></tr>
+    </table>
+    <h2>Literature &amp; Arts</h2>
+    <table>
+      <tr><th>Name</th><th>Birth/Connection</th><th>Known For</th></tr>
+      <tr><td>Munshi Premchand</td><td>Born Lamahi village, Varanasi</td><td>Godaan, Nirmala, Kafan — father of Hindi/Urdu fiction</td></tr>
+      <tr><td>Mahadevi Verma</td><td>Born Farrukhabad, UP</td><td>Chhayavad poet; Jnanpith Award 1982; "Meerabai of modern Hindi poetry"</td></tr>
+      <tr><td>Sumitranandan Pant</td><td>Born Kausani (now Uttarakhand); studied in Varanasi</td><td>Chhayavad poet; Jnanpith 1968</td></tr>
+      <tr><td>Firaq Gorakhpuri</td><td>Born Gorakhpur, UP</td><td>Urdu poet; Sahitya Akademi Award, Jnanpith Award 1969</td></tr>
+      <tr><td>Birju Maharaj</td><td>Born Lucknow, UP</td><td>Kathak maestro — Lucknow Gharana; Padma Vibhushan</td></tr>
+      <tr><td>Bismillah Khan</td><td>Born in Bihar but associated with Varanasi (lived &amp; died there)</td><td>Shehnai maestro; Bharat Ratna 2001</td></tr>
+    </table>
+    <h2>Sports</h2>
+    <ul>
+      <li><strong>Suresh Raina:</strong> Cricketer from Muradnagar, Ghaziabad (UP).</li>
+      <li><strong>Mohammad Kaif:</strong> Cricketer from Allahabad (Prayagraj), UP — famous for 2002 NatWest Trophy knock.</li>
+      <li><strong>Deepa Malik:</strong> Para-athlete (shot put); from UP — first Indian woman Paralympic medallist (Rio 2016).</li>
+      <li><strong>Ravi Shankar:</strong> Sitar maestro — born Varanasi, UP; Bharat Ratna 1999.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- DISTRICTS -->
+<section class="page" id="pg-districts">
+  <h2 class="section-title">📍 Districts &amp; Divisions</h2>
+  <div class="card">
+    <h2>All 18 Divisions of UP with Key Districts</h2>
+    <table>
+      <tr><th>Division</th><th>Headquarters</th><th>Key Districts</th></tr>
+      <tr><td>Lucknow</td><td>Lucknow</td><td>Lucknow, Unnao, Hardoi, Raebareli, Sitapur, Lakhimpur Kheri</td></tr>
+      <tr><td>Kanpur</td><td>Kanpur Nagar</td><td>Kanpur Nagar, Kanpur Dehat, Farrukhabad, Kannauj, Etawah, Auraiya</td></tr>
+      <tr><td>Agra</td><td>Agra</td><td>Agra, Mathura, Firozabad, Mainpuri, Etah, Kasganj</td></tr>
+      <tr><td>Prayagraj (Allahabad)</td><td>Prayagraj</td><td>Prayagraj, Kaushambi, Pratapgarh, Fatehpur, Chitrakoot</td></tr>
+      <tr><td>Varanasi</td><td>Varanasi</td><td>Varanasi, Jaunpur, Ghazipur, Chandauli</td></tr>
+      <tr><td>Meerut</td><td>Meerut</td><td>Meerut, Ghaziabad, Hapur, Bulandshahr, Baghpat</td></tr>
+      <tr><td>Moradabad</td><td>Moradabad</td><td>Moradabad, Rampur, Amroha, Sambhal, Bijnor</td></tr>
+      <tr><td>Saharanpur</td><td>Saharanpur</td><td>Saharanpur, Muzaffarnagar, Shamli</td></tr>
+      <tr><td>Bareilly</td><td>Bareilly</td><td>Bareilly, Badaun, Pilibhit, Shahjahanpur</td></tr>
+      <tr><td>Aligarh</td><td>Aligarh</td><td>Aligarh, Hathras, Mathura (part), Etah</td></tr>
+      <tr><td>Jhansi (Bundelkhand)</td><td>Jhansi</td><td>Jhansi, Lalitpur, Jalaun</td></tr>
+      <tr><td>Gorakhpur</td><td>Gorakhpur</td><td>Gorakhpur, Maharajganj, Kushinagar, Deoria</td></tr>
+      <tr><td>Basti</td><td>Basti</td><td>Basti, Siddharthnagar, Sant Kabir Nagar</td></tr>
+      <tr><td>Devipatan</td><td>Gonda</td><td>Gonda, Bahraich, Balrampur, Shravasti</td></tr>
+      <tr><td>Faizabad (Ayodhya)</td><td>Ayodhya</td><td>Ayodhya, Ambedkar Nagar, Amethi, Sultanpur, Barabanki</td></tr>
+      <tr><td>Azamgarh</td><td>Azamgarh</td><td>Azamgarh, Mau, Ballia</td></tr>
+      <tr><td>Mirzapur</td><td>Mirzapur</td><td>Mirzapur, Sonbhadra, Sant Ravidas Nagar (Bhadohi)</td></tr>
+      <tr><td>Gautam Buddha Nagar (NCR)</td><td>Noida</td><td>Gautam Buddha Nagar (Noida), Bulandshahr (part)</td></tr>
+    </table>
+    <h3>Important Districts — Quick Facts</h3>
+    <table>
+      <tr><th>District</th><th>Key Fact</th></tr>
+      <tr><td>Lucknow</td><td>State capital; Bara Imambara, Chikankari, Kathak</td></tr>
+      <tr><td>Agra</td><td>Taj Mahal (UNESCO WHS), Agra Fort (UNESCO WHS), footwear industry</td></tr>
+      <tr><td>Varanasi</td><td>Oldest living city; BHU; Banarasi silk; 88 ghats; Sarnath nearby</td></tr>
+      <tr><td>Prayagraj</td><td>Sangam (Ganga-Yamuna-Saraswati); Kumbh Mela; Allahabad HC; High Court</td></tr>
+      <tr><td>Mathura</td><td>Krishna birthplace; Vrindavan; Lathmar Holi</td></tr>
+      <tr><td>Ayodhya</td><td>Ram birthplace; Ram Mandir 2024; Saryu river; Deepotsav</td></tr>
+      <tr><td>Gautam Buddha Nagar (Noida)</td><td>IT/ITeS hub; Delhi NCR; electronics manufacturing</td></tr>
+      <tr><td>Meerut</td><td>1857 Revolt spark; sports goods industry (Cricket bats, boxing)</td></tr>
+      <tr><td>Gorakhpur</td><td>CM Yogi's home city; Gorakhnath temple; AIIMS Gorakhpur; Rapti river</td></tr>
+      <tr><td>Jhansi</td><td>Rani Lakshmibai; Bundelkhand gateway; Orchha heritage</td></tr>
+      <tr><td>Aligarh</td><td>Lock industry (Lock City of India); AMU (Aligarh Muslim University)</td></tr>
+      <tr><td>Firozabad</td><td>Glass bangles (Glass City); Yamuna bank</td></tr>
+      <tr><td>Moradabad</td><td>Brass/metal handicrafts (Brass City of India)</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- UP GOVERNMENT SCHEMES -->
+<section class="page" id="pg-schemes">
+  <h2 class="section-title">🎯 UP Government Schemes</h2>
+  <div class="card">
+    <h2>Key Welfare Schemes</h2>
+    <table>
+      <tr><th>Scheme</th><th>Target</th><th>Key Feature</th></tr>
+      <tr><td>Kanya Sumangala Yojana</td><td>Girl child welfare</td><td>₹15,000 in 6 installments — from birth to graduation; promotes girl education</td></tr>
+      <tr><td>Mukhyamantri Abhyudaya Yojana</td><td>UPSC/PCS aspirants</td><td>Free coaching for IAS, IPS, PCS, NDA, CDS, NEET — in government buildings</td></tr>
+      <tr><td>UP Scholarship Scheme</td><td>OBC, SC, ST, Minority students</td><td>Pre-matric and post-matric scholarships for marginalized communities</td></tr>
+      <tr><td>Mission Shakti</td><td>Women empowerment</td><td>Two sub-components: Operation Shakti (legal action against crime) + Shakti Vans (patrolling vans)</td></tr>
+      <tr><td>Operation Nirbheek</td><td>Women safety</td><td>24x7 women helpline; active police response teams</td></tr>
+      <tr><td>Mukhyamantri Swarozgar Yojana</td><td>Self-employment</td><td>Subsidized loans for starting small businesses; MSME promotion</td></tr>
+      <tr><td>UP Awas Vikas Scheme</td><td>Urban housing</td><td>Affordable housing for EWS/LIG in urban areas</td></tr>
+      <tr><td>UP ODOP (One District One Product)</td><td>Local artisans &amp; industry</td><td>Each of 75 districts gets a promoted product for GI/export boost; launched 2018</td></tr>
+      <tr><td>Gomti Riverfront Project</td><td>Urban development</td><td>Lucknow riverfront beautification along Gomti; parks, walkways</td></tr>
+      <tr><td>Kashi Vishwanath Corridor</td><td>Religious tourism</td><td>Major redevelopment of Kashi Vishwanath temple area, Varanasi; inaugurated Dec 2021</td></tr>
+      <tr><td>Ayodhya Development Plan</td><td>Religious tourism &amp; infrastructure</td><td>Airport (Maharishi Valmiki International), Ram Mandir, road widening, hotels</td></tr>
+      <tr><td>UP Startup Policy 2020</td><td>Entrepreneurship</td><td>₹5 lakh seed funding for startups; incubation centers in major cities</td></tr>
+    </table>
+    <div class="highlight"><strong>Kanya Sumangala Yojana — 6 Installments:</strong> (1) ₹2,000 at birth, (2) ₹1,000 after immunization at 1 year, (3) ₹2,000 on Class 1 admission, (4) ₹2,000 on Class 6 admission, (5) ₹3,000 on Class 9 admission, (6) ₹5,000 on graduation/diploma admission. Total = ₹15,000.</div>
+    <h3>Central Schemes with Major UP Impact</h3>
+    <ul>
+      <li><strong>PM Awas Yojana (Gramin &amp; Urban):</strong> UP is largest beneficiary state — maximum houses sanctioned.</li>
+      <li><strong>PMGSY (Pradhan Mantri Gram Sadak Yojana):</strong> Rural road connectivity — UP has largest rural road network target.</li>
+      <li><strong>Swachh Bharat Mission:</strong> UP achieved ODF (Open Defecation Free) status 2018.</li>
+      <li><strong>Jal Jeevan Mission:</strong> Piped water to all rural households — UP one of the major states.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- MCQ PRACTICE -->
+<section class="page" id="pg-mcq">
+  <h2 class="section-title">❓ MCQ Practice</h2>
+
+  <div class="mcq-box">
+    <p>Q1. Which river passes through Lucknow, the capital of Uttar Pradesh?</p>
+    <label class="mcq-opt"><input type="radio" name="q1" value="A"> A) Ganga</label>
+    <label class="mcq-opt"><input type="radio" name="q1" value="B"> B) Yamuna</label>
+    <label class="mcq-opt"><input type="radio" name="q1" value="C"> C) Gomti</label>
+    <label class="mcq-opt"><input type="radio" name="q1" value="D"> D) Ghaghra</label>
+    <button onclick="checkMCQ(this,'C')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q2. Uttar Pradesh is the largest producer of which crop in India?</p>
+    <label class="mcq-opt"><input type="radio" name="q2" value="A"> A) Rice</label>
+    <label class="mcq-opt"><input type="radio" name="q2" value="B"> B) Wheat</label>
+    <label class="mcq-opt"><input type="radio" name="q2" value="C"> C) Sugarcane</label>
+    <label class="mcq-opt"><input type="radio" name="q2" value="D"> D) Maize</label>
+    <button onclick="checkMCQ(this,'C')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q3. The 1857 Revolt first broke out in which city of Uttar Pradesh?</p>
+    <label class="mcq-opt"><input type="radio" name="q3" value="A"> A) Lucknow</label>
+    <label class="mcq-opt"><input type="radio" name="q3" value="B"> B) Kanpur</label>
+    <label class="mcq-opt"><input type="radio" name="q3" value="C"> C) Meerut</label>
+    <label class="mcq-opt"><input type="radio" name="q3" value="D"> D) Varanasi</label>
+    <button onclick="checkMCQ(this,'C')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q4. Which city of UP is known as the "Lock City of India"?</p>
+    <label class="mcq-opt"><input type="radio" name="q4" value="A"> A) Moradabad</label>
+    <label class="mcq-opt"><input type="radio" name="q4" value="B"> B) Firozabad</label>
+    <label class="mcq-opt"><input type="radio" name="q4" value="C"> C) Aligarh</label>
+    <label class="mcq-opt"><input type="radio" name="q4" value="D"> D) Saharanpur</label>
+    <button onclick="checkMCQ(this,'C')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q5. The state animal of Uttar Pradesh is:</p>
+    <label class="mcq-opt"><input type="radio" name="q5" value="A"> A) Indian Elephant</label>
+    <label class="mcq-opt"><input type="radio" name="q5" value="B"> B) Barasingha (Swamp Deer)</label>
+    <label class="mcq-opt"><input type="radio" name="q5" value="C"> C) Chinkara</label>
+    <label class="mcq-opt"><input type="radio" name="q5" value="D"> D) Nilgai</label>
+    <button onclick="checkMCQ(this,'B')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q6. Kumbh Mela held at Prayagraj has been inscribed on UNESCO's list as:</p>
+    <label class="mcq-opt"><input type="radio" name="q6" value="A"> A) World Heritage Site</label>
+    <label class="mcq-opt"><input type="radio" name="q6" value="B"> B) Intangible Cultural Heritage of Humanity</label>
+    <label class="mcq-opt"><input type="radio" name="q6" value="C"> C) Memory of the World</label>
+    <label class="mcq-opt"><input type="radio" name="q6" value="D"> D) Global Geopark</label>
+    <button onclick="checkMCQ(this,'B')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q7. How many Lok Sabha seats does Uttar Pradesh have?</p>
+    <label class="mcq-opt"><input type="radio" name="q7" value="A"> A) 48</label>
+    <label class="mcq-opt"><input type="radio" name="q7" value="B"> B) 72</label>
+    <label class="mcq-opt"><input type="radio" name="q7" value="C"> C) 80</label>
+    <label class="mcq-opt"><input type="radio" name="q7" value="D"> D) 65</label>
+    <button onclick="checkMCQ(this,'C')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q8. The Chauri Chaura incident (1922) which led Mahatma Gandhi to suspend the Non-Cooperation Movement took place in which district of UP?</p>
+    <label class="mcq-opt"><input type="radio" name="q8" value="A"> A) Lucknow</label>
+    <label class="mcq-opt"><input type="radio" name="q8" value="B"> B) Gorakhpur</label>
+    <label class="mcq-opt"><input type="radio" name="q8" value="C"> C) Allahabad</label>
+    <label class="mcq-opt"><input type="radio" name="q8" value="D"> D) Kanpur</label>
+    <button onclick="checkMCQ(this,'B')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q9. Which scheme of the UP government provides free IAS/PCS coaching to students?</p>
+    <label class="mcq-opt"><input type="radio" name="q9" value="A"> A) Kanya Sumangala Yojana</label>
+    <label class="mcq-opt"><input type="radio" name="q9" value="B"> B) Mission Shakti</label>
+    <label class="mcq-opt"><input type="radio" name="q9" value="C"> C) Mukhyamantri Abhyudaya Yojana</label>
+    <label class="mcq-opt"><input type="radio" name="q9" value="D"> D) Mukhyamantri Swarozgar Yojana</label>
+    <button onclick="checkMCQ(this,'C')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q10. Uttarakhand was carved out from Uttar Pradesh in which year?</p>
+    <label class="mcq-opt"><input type="radio" name="q10" value="A"> A) 1995</label>
+    <label class="mcq-opt"><input type="radio" name="q10" value="B"> B) 2000</label>
+    <label class="mcq-opt"><input type="radio" name="q10" value="C"> C) 2004</label>
+    <label class="mcq-opt"><input type="radio" name="q10" value="D"> D) 2007</label>
+    <button onclick="checkMCQ(this,'B')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+</section>
+
+</div><!-- #main -->
+<footer id="site-footer">
+  <div class="footer-bottom">
+    <span>© 2025 Exam Preparation System</span>
+    <span class="footer-author">by Vikash Pandey</span>
+  </div>
+</footer>
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+function toggleTheme(){var r=document.documentElement;var next=r.getAttribute('data-theme')==='dark'?'light':'dark';if(next==='light')r.removeAttribute('data-theme');else r.setAttribute('data-theme',next);localStorage.setItem('eps-theme',next);}
+function toggleSidebar(){var sb=document.getElementById('sidebar'),m=document.getElementById('main'),f=document.getElementById('site-footer');sb.classList.toggle('closed');sb.classList.toggle('open');if(sb.classList.contains('closed')){m.classList.add('full');if(f)f.classList.add('full');}else{m.classList.remove('full');if(f)f.classList.remove('full');}}
+function showPage(id){document.querySelectorAll('.page').forEach(function(p){p.classList.remove('active');});document.querySelectorAll('.sb-item').forEach(function(i){i.classList.remove('active');});var pg=document.getElementById('pg-'+id);if(pg)pg.classList.add('active');if(event&&event.currentTarget)event.currentTarget.classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}
+function checkMCQ(btn,correct){var box=btn.closest('.mcq-box');var sel=box.querySelector('input:checked');if(!sel){alert('Please select an answer!');return;}var ans=box.querySelector('.mcq-ans');ans.style.display='block';if(sel.value===correct){ans.className='mcq-ans correct';ans.textContent='✅ Correct! '+correct;}else{ans.className='mcq-ans wrong';ans.textContent='❌ Wrong. Correct answer: '+correct;}}
+</script>
+<script>
+(function(){
+  var t=localStorage.getItem('eps-theme')||'light';
+  var btn=document.getElementById('theme-btn');
+  if(btn)btn.textContent=t==='dark'?'☀️ Light':'🌙 Dark';
+  var _ot=window.toggleTheme;
+  window.toggleTheme=function(){if(_ot)_ot();var cur=document.documentElement.getAttribute('data-theme');if(btn)btn.textContent=cur==='dark'?'☀️ Light':'🌙 Dark';};
+  var _os=window.toggleSidebar;
+  window.toggleSidebar=function(){if(_os)_os();var sb=document.getElementById('sidebar'),hbg=document.getElementById('hamburger');if(hbg&&sb)hbg.classList.toggle('open',!sb.classList.contains('closed'));};
+  window.addEventListener('scroll',function(){var docH=document.documentElement.scrollHeight-window.innerHeight;var pct=docH>0?(window.scrollY/docH*100).toFixed(1):0;var sp=document.getElementById('scroll-progress');if(sp)sp.style.width=pct+'%';},{passive:true});
+  window.addEventListener('scroll',function(){var btn2=document.getElementById('btt');if(btn2)btn2.classList.toggle('show',window.scrollY>300);},{passive:true});
+  var si=document.getElementById('search-input'),sr=document.getElementById('search-results');
+  if(!si||!sr)return;
+  var idx=[];
+  document.querySelectorAll('#sidebar .sb-item').forEach(function(el){idx.push({text:el.textContent.trim(),el:el,type:'nav'});});
+  document.querySelectorAll('#main h2,#main h3').forEach(function(el){idx.push({text:el.textContent.trim(),el:el,type:'head'});});
+  si.addEventListener('input',function(){
+    var q=this.value.toLowerCase().trim();
+    if(!q){sr.style.display='none';return;}
+    var hits=idx.filter(function(x){return x.text.toLowerCase().includes(q);}).slice(0,8);
+    if(!hits.length){sr.style.display='none';return;}
+    sr.innerHTML=hits.map(function(h){return '<div class="sr-item">'+h.text+'</div>';}).join('');
+    sr.style.display='block';
+    sr.querySelectorAll('.sr-item').forEach(function(item,i){
+      item.onclick=function(){
+        var h=hits[i];
+        if(h.type==='nav'){h.el.click();}
+        else{var sec=h.el.closest('.page');if(sec){var id=sec.id.replace('pg-','');var sb2=Array.from(document.querySelectorAll('.sb-item')).find(function(el){return el.getAttribute('onclick')&&el.getAttribute('onclick').includes("'"+id+"'");});if(sb2)sb2.click();}setTimeout(function(){h.el.scrollIntoView({behavior:'smooth',block:'center'});},200);}
+        sr.style.display='none';si.value='';
+      };
+    });
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();si.focus();}if(e.key==='Escape'){sr.style.display='none';si.value='';}});
+  document.addEventListener('click',function(e){if(!e.target.closest('#search-bar'))sr.style.display='none';});
+  (function(){var p=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.page-links a').forEach(function(a){if(a.getAttribute('href')===p)a.classList.add('current');});})();
+})();
+</script>
+</body>
+</html>

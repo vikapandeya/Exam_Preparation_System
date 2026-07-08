@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Indian Art & Culture — Classical Dance, Music, Painting Schools, Architecture, UNESCO Heritage Sites for UPSC GS Paper I, State PSC, SSC CGL. By Vikash Pandey.">
+<meta name="author" content="Vikash Pandey">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
+<title>Indian Art & Culture — Exam Preparation System</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>(function(){var t=localStorage.getItem('eps-theme');if(t)document.documentElement.setAttribute('data-theme',t);})()</script>
+<style>
+:root{--primary:#7c3aed;--secondary:#d97706;--bg:#faf5ff;--surface:#ffffff;--surface2:#f3e8ff;--border:#e9d5ff;--text:#1e293b;--muted:#64748b;--sidebar:260px;--hdr:64px;--radius:12px;--shadow:0 4px 24px rgba(124,58,237,.08);--sb-active-bg:rgba(124,58,237,.1);--hl-bg:rgba(124,58,237,.06);}
+[data-theme="dark"]{--bg:#0d0a1a;--surface:#14102a;--surface2:#1e1838;--border:#2d2558;--text:#f1f5f9;--muted:#94a3b8;--shadow:0 4px 24px rgba(0,0,0,.4);}
+*{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;transition:background .3s,color .3s;}
+::-webkit-scrollbar{width:6px;}::-webkit-scrollbar-thumb{background:var(--primary);border-radius:99px;}
+.page-links{display:flex;flex-wrap:nowrap;gap:6px;align-items:center;overflow-x:auto;scrollbar-width:none;-webkit-mask-image:linear-gradient(to right,#000 85%,transparent);mask-image:linear-gradient(to right,#000 85%,transparent);}
+.page-links::-webkit-scrollbar{display:none;}
+.page-links a{font-size:.7rem;color:var(--text);background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:4px 10px;text-decoration:none;transition:all .2s;font-weight:500;white-space:nowrap;}
+.page-links a:hover,.page-links a.current{background:var(--primary);color:#fff;border-color:var(--primary);}
+#sub-nav{position:fixed;top:var(--hdr);left:0;right:0;z-index:999;background:var(--surface);border-bottom:1px solid var(--border);padding:8px 1rem;}
+#header{position:fixed;top:0;left:0;right:0;height:var(--hdr);background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 1rem;gap:1rem;z-index:1000;}
+#hamburger{background:none;border:none;cursor:pointer;display:flex;flex-direction:column;gap:4px;padding:4px;}
+#hamburger span{display:block;width:22px;height:2px;background:var(--text);border-radius:2px;transition:transform .25s,opacity .25s;}
+#hamburger.open span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+#hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0);}
+#hamburger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+#logo{display:flex;align-items:center;gap:.5rem;font-weight:800;font-size:1.05rem;text-decoration:none;color:var(--text);}
+#logo .grd{background:linear-gradient(135deg,var(--primary),var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.header-right{margin-left:auto;display:flex;align-items:center;gap:.75rem;}
+#theme-btn{background:none;border:1.5px solid var(--border);border-radius:99px;padding:.35rem .8rem;cursor:pointer;font-size:.85rem;color:var(--text);transition:.2s;}
+#sidebar{position:fixed;top:calc(var(--hdr) + 44px);left:0;bottom:0;width:var(--sidebar);background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;transition:.3s;z-index:900;padding-bottom:2rem;}
+#sidebar.closed{transform:translateX(calc(-1 * var(--sidebar)));}
+.sb-section{padding:.5rem 0;}.sb-heading{padding:.5rem 1.2rem;font-size:.72rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;}
+.sb-item{display:flex;align-items:center;gap:.65rem;padding:.55rem 1.2rem;cursor:pointer;font-size:.85rem;transition:.15s;color:var(--text);border-left:3px solid transparent;}
+.sb-item:hover{background:var(--surface2);}
+.sb-item.active{background:var(--sb-active-bg);border-left-color:var(--primary);color:var(--primary);font-weight:600;}
+.sb-divider{height:1px;background:var(--border);margin:.3rem 0;}
+#main{margin-left:var(--sidebar);margin-top:calc(var(--hdr) + 44px);padding:2rem;transition:margin-left .3s;}
+#main.full{margin-left:0;}
+.page{display:none;animation:fadeIn .3s ease;}.page.active{display:block;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);}}
+.hero{border-radius:20px;padding:3rem 2.5rem;color:#fff;margin-bottom:2rem;background:linear-gradient(135deg,#4c1d95 0%,#5b21b6 35%,#78350f 100%);}
+.hero h1{font-size:clamp(1.6rem,3.5vw,2.5rem);font-weight:800;margin-bottom:.8rem;}
+.hero h1 span{background:linear-gradient(90deg,#c4b5fd,#f9a8d4,#fcd34d);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.hero p{font-size:.95rem;opacity:.85;max-width:580px;}
+.hero-stats{display:flex;gap:2rem;flex-wrap:wrap;margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,.15);}
+.hero-stat .num{font-size:1.6rem;font-weight:800;background:linear-gradient(90deg,#c4b5fd,#f9a8d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.hero-stat .lbl{font-size:.78rem;opacity:.7;}
+.section-title{font-size:1.3rem;font-weight:700;margin-bottom:1.25rem;display:flex;align-items:center;gap:.5rem;}
+.section-title::after{content:'';flex:1;height:2px;background:linear-gradient(90deg,var(--primary),transparent);margin-left:.5rem;}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.25rem;}
+.card h2{font-size:1.1rem;font-weight:700;margin-bottom:.75rem;color:var(--primary);}
+.card h3{font-size:.95rem;font-weight:700;margin:.75rem 0 .4rem;}
+.card p,.card li{font-size:.88rem;line-height:1.7;margin-bottom:.4rem;}
+.card ul{padding-left:1.2rem;}
+table{width:100%;border-collapse:collapse;font-size:.84rem;margin:.5rem 0 1rem;}
+th{background:var(--primary);color:#fff;padding:.55rem .75rem;text-align:left;font-weight:600;}
+td{padding:.5rem .75rem;border-bottom:1px solid var(--border);}
+tr:nth-child(even) td{background:var(--surface2);}
+.highlight{background:var(--hl-bg);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1rem 1.25rem;margin:.75rem 0;font-size:.88rem;}
+.badge{display:inline-block;padding:.2rem .55rem;border-radius:99px;font-size:.72rem;font-weight:600;background:rgba(124,58,237,.12);color:var(--primary);}
+.mcq-box{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;margin-bottom:1rem;}
+.mcq-box p{font-size:.9rem;font-weight:600;margin-bottom:.75rem;}
+.mcq-opt{display:flex;align-items:center;gap:.6rem;padding:.45rem .6rem;border-radius:8px;cursor:pointer;font-size:.87rem;transition:.15s;}
+.mcq-opt:hover{background:var(--surface2);}
+.mcq-opt input{accent-color:var(--primary);}
+.mcq-ans{display:none;margin-top:.75rem;padding:.65rem 1rem;border-radius:8px;font-size:.85rem;font-weight:600;}
+.mcq-ans.correct{background:rgba(16,185,129,.12);color:#065f46;}
+.mcq-ans.wrong{background:rgba(239,68,68,.1);color:#991b1b;}
+#btt{position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;border-radius:50%;background:var(--primary);color:#fff;border:none;font-size:1.2rem;cursor:pointer;display:none;align-items:center;justify-content:center;z-index:800;}
+#btt.show{display:flex;}
+#site-footer{background:var(--surface);border-top:1px solid var(--border);margin-left:var(--sidebar);transition:margin-left .3s;padding:2rem;}
+#main.full~#site-footer,#site-footer.full{margin-left:0;}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;font-size:.8rem;color:var(--muted);}
+.footer-author{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;padding:.35rem .9rem;border-radius:99px;font-size:.82rem;font-weight:600;}
+#scroll-progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--primary),var(--secondary));z-index:2000;transition:width .1s linear;width:0%;}
+#creator-badge{display:flex;align-items:center;gap:.4rem;font-size:.75rem;font-weight:600;color:var(--muted);white-space:nowrap;}
+#creator-badge .cb-dot{width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--secondary));animation:pulse-dot 2s ease-in-out infinite;}
+@keyframes pulse-dot{0%,100%{transform:scale(1);opacity:1;}50%{transform:scale(1.4);opacity:.7;}}
+#search-bar{flex:1;max-width:400px;position:relative;}
+#search-bar input{width:100%;padding:.5rem 2.6rem .5rem 2.6rem;border:1.5px solid var(--border);border-radius:99px;background:var(--surface2);color:var(--text);font-size:.9rem;outline:none;transition:.2s;}
+#search-bar input:focus{border-color:var(--primary);}
+#search-bar .ico{position:absolute;left:.8rem;top:50%;transform:translateY(-50%);color:var(--muted);}
+#search-bar .kbd-hint{position:absolute;right:.75rem;top:50%;transform:translateY(-50%);font-size:.7rem;background:var(--border);color:var(--muted);padding:.1rem .4rem;border-radius:4px;pointer-events:none;}
+#search-results{position:absolute;top:calc(100% + 6px);left:0;right:0;background:var(--surface);border:1px solid var(--border);border-radius:10px;box-shadow:0 4px 24px rgba(0,0,0,.12);max-height:300px;overflow-y:auto;z-index:2000;display:none;}
+#search-results .sr-item{padding:.65rem 1rem;cursor:pointer;font-size:.88rem;border-bottom:1px solid var(--border);transition:.15s;}
+#search-results .sr-item:hover{background:var(--surface2);}
+#progress-pill{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;border-radius:99px;padding:.3rem .85rem;font-size:.8rem;font-weight:600;cursor:pointer;white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center;gap:.3rem;}
+.page table{display:block;overflow-x:auto;}
+@media(max-width:768px){#sidebar{transform:translateX(calc(-1 * var(--sidebar)));} #sidebar.open{transform:translateX(0);} #main,#site-footer{margin-left:0;} #sub-nav{display:none;}}
+@media(max-width:640px){#creator-badge{display:none;}}
+@media(max-width:480px){#search-bar{display:none;} #progress-pill{display:none;}}
+</style>
+</head>
+<body>
+<div id="scroll-progress"></div>
+<header id="header">
+  <button id="hamburger" onclick="toggleSidebar()" aria-label="Menu"><span></span><span></span><span></span></button>
+  <a href="index.html" id="logo">🎨 <span class="grd">Art &amp; Culture</span></a>
+  <div id="creator-badge"><span class="cb-dot"></span>by Vikash Pandey</div>
+  <div id="search-bar"><span class="ico">🔍</span><input type="text" id="search-input" placeholder="Search topics…" autocomplete="off"><span class="kbd-hint">/</span><div id="search-results"></div></div>
+  <div class="header-right">
+    <a href="study-dashboard.html" id="progress-pill">📊 Progress</a>
+    <button id="theme-btn" onclick="toggleTheme()">🌙 Dark</button>
+  </div>
+</header>
+<div id="sub-nav"><div class="page-links">
+    <a href="index.html">🏠 Home</a>
+    <a href="Science.html">🔬 Science</a>
+    <a href="Computer.html">💻 Computer</a>
+    <a href="Current_Affairs.html">📰 Current Affairs</a>
+    <a href="Exam_Updates.html">📢 Exam Updates</a>
+    <a href="english-grammar-mastery.html">📝 English</a>
+    <a href="Hindi_Grammar.html">📖 हिंदी व्याकरण</a>
+    <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html">🧮 Maths</a>
+    <a href="Indian_Polity.html">⚖️ Polity</a>
+    <a href="Indian_History.html">🏛️ History</a>
+    <a href="Indian_Geography.html">🗺️ Geography</a>
+    <a href="Static_GK.html">🌍 Static GK</a>
+    <a href="Indian_Economy.html">💰 Economy</a>
+    <a href="Bihar_Special_GK.html">🌾 Bihar GK</a>
+    <a href="Reasoning_Guide.html">🧠 Reasoning</a>
+    <a href="Syllabus.html">📋 Syllabus</a>
+    <a href="Environment_Ecology.html">🌿 Environment</a>
+    <a href="Banking_Awareness.html">🏦 Banking</a>
+    <a href="Art_Culture.html">🎨 Art &amp; Culture</a>
+    <a href="UP_Special_GK.html">🌺 UP GK</a>
+    <a href="Rajasthan_GK.html">🏜️ Rajasthan GK</a>
+    <a href="MP_GK.html">🦁 MP GK</a>
+</div></div>
+<nav id="sidebar">
+  <div class="sb-section">
+    <div class="sb-heading">Overview</div>
+    <div class="sb-item active" onclick="showPage('home')">🎭 Overview</div>
+  </div>
+  <div class="sb-divider"></div>
+  <div class="sb-section">
+    <div class="sb-heading">Performing Arts</div>
+    <div class="sb-item" onclick="showPage('dance')">💃 Classical Dance</div>
+    <div class="sb-item" onclick="showPage('music')">🎵 Classical Music</div>
+  </div>
+  <div class="sb-divider"></div>
+  <div class="sb-section">
+    <div class="sb-heading">Visual Arts</div>
+    <div class="sb-item" onclick="showPage('painting')">🖼️ Painting Schools</div>
+    <div class="sb-item" onclick="showPage('architecture')">🏛️ Architecture</div>
+    <div class="sb-item" onclick="showPage('crafts')">🧵 Folk Art &amp; Crafts</div>
+  </div>
+  <div class="sb-divider"></div>
+  <div class="sb-section">
+    <div class="sb-heading">Culture &amp; Society</div>
+    <div class="sb-item" onclick="showPage('festivals')">🎉 Festivals</div>
+    <div class="sb-item" onclick="showPage('literature')">📚 Literature</div>
+    <div class="sb-item" onclick="showPage('religion')">🕌 Religion &amp; Philosophy</div>
+  </div>
+  <div class="sb-divider"></div>
+  <div class="sb-section">
+    <div class="sb-heading">Heritage &amp; Practice</div>
+    <div class="sb-item" onclick="showPage('unesco')">🏆 UNESCO Sites</div>
+    <div class="sb-item" onclick="showPage('mcq')">❓ MCQ Practice</div>
+  </div>
+</nav>
+<div id="main">
+
+<!-- HOME -->
+<section class="page active" id="pg-home">
+  <div class="hero">
+    <h1>Indian Art &amp; Culture<br><span>Dance · Music · Architecture · Heritage</span></h1>
+    <p>Complete Art &amp; Culture guide for UPSC GS Paper I, State PSC, SSC CGL and all competitive exams.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="num">8</div><div class="lbl">Classical Dance Forms</div></div>
+      <div class="hero-stat"><div class="num">42</div><div class="lbl">UNESCO World Heritage Sites</div></div>
+      <div class="hero-stat"><div class="num">22</div><div class="lbl">Scheduled Languages</div></div>
+      <div class="hero-stat"><div class="num">2</div><div class="lbl">Classical Music Traditions</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🎯 Quick Revision — Top Facts</h2>
+    <table>
+      <tr><th>Topic</th><th>Key Fact</th></tr>
+      <tr><td>Classical Dance Forms (8)</td><td>Bharatanatyam, Kathak, Odissi, Kathakali, Kuchipudi, Manipuri, Mohiniyattam, Sattriya</td></tr>
+      <tr><td>Classical Music Traditions</td><td>Hindustani (North India) and Carnatic (South India)</td></tr>
+      <tr><td>Sangeet Natak Akademi</td><td>Established 1952 — promotes performing arts</td></tr>
+      <tr><td>Lalit Kala Akademi</td><td>Established 1954 — promotes visual/fine arts</td></tr>
+      <tr><td>Sahitya Akademi</td><td>Established 1954 — promotes literature in 24 languages</td></tr>
+      <tr><td>National School of Drama</td><td>New Delhi; established 1959; autonomous body under MoC</td></tr>
+      <tr><td>Jnanpith Award</td><td>Highest literary award; first awarded 1965 to G. Sankara Kurup (Malayalam)</td></tr>
+      <tr><td>GI Tag — Chanderi Saree</td><td>Madhya Pradesh; handwoven silk-cotton fabric</td></tr>
+      <tr><td>GI Tag — Kanchipuram Silk</td><td>Tamil Nadu; temple-border silk saree</td></tr>
+      <tr><td>GI Tag — Pashmina</td><td>Jammu &amp; Kashmir; fine cashmere wool</td></tr>
+      <tr><td>GI Tag — Phulkari</td><td>Punjab; silk thread embroidery on cotton base</td></tr>
+      <tr><td>GI Tag — Madhubani Painting</td><td>Bihar/Mithila; natural pigments on cloth/paper</td></tr>
+      <tr><td>Bharat Ratna in Arts</td><td>MS Subbulakshmi (1998), Lata Mangeshkar (2001), Bismillah Khan (2001), Ravi Shankar (1999), Pandit Bhimsen Joshi (2008)</td></tr>
+      <tr><td>Akademi Award (Sangeet Natak)</td><td>Ratna Sadsya (Fellowship) — highest honour</td></tr>
+      <tr><td>UNESCO ICH (India)</td><td>Kumbh Mela, Yoga, Ramlila, Vedic Chanting, Chhau, Sankirtana-Manipur, Nawrouz</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>📋 Key Cultural Institutions</h2>
+    <table>
+      <tr><th>Institution</th><th>Year</th><th>Focus</th><th>HQ</th></tr>
+      <tr><td>Sangeet Natak Akademi</td><td>1952</td><td>Music, Dance, Drama</td><td>New Delhi</td></tr>
+      <tr><td>Lalit Kala Akademi</td><td>1954</td><td>Painting, Sculpture, Graphic Arts</td><td>New Delhi</td></tr>
+      <tr><td>Sahitya Akademi</td><td>1954</td><td>Literature (24 languages)</td><td>New Delhi</td></tr>
+      <tr><td>National School of Drama</td><td>1959</td><td>Theatre training</td><td>New Delhi</td></tr>
+      <tr><td>Archaeological Survey of India (ASI)</td><td>1861</td><td>Monument conservation, excavation</td><td>New Delhi</td></tr>
+      <tr><td>Indira Gandhi National Centre for Arts</td><td>1987</td><td>Arts documentation &amp; research</td><td>New Delhi</td></tr>
+      <tr><td>National Museum</td><td>1949</td><td>National cultural repository</td><td>New Delhi</td></tr>
+      <tr><td>Victoria Memorial</td><td>1921</td><td>Colonial art &amp; history museum</td><td>Kolkata</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- CLASSICAL DANCE -->
+<section class="page" id="pg-dance">
+  <h2 class="section-title">💃 Classical Dance Forms</h2>
+  <div class="card">
+    <h2>8 Classical Dance Forms (Recognised by Sangeet Natak Akademi)</h2>
+    <table>
+      <tr><th>Dance Form</th><th>State/Origin</th><th>Key Features</th><th>Notable Exponents</th></tr>
+      <tr><td><strong>Bharatanatyam</strong></td><td>Tamil Nadu</td><td>Oldest classical form; temple origin; Natya Shastra basis; Nritta (pure dance), Nritya (expressive), Natya (drama)</td><td>Rukmini Devi Arundale, Balasaraswati, Yamini Krishnamurthy</td></tr>
+      <tr><td><strong>Kathak</strong></td><td>Uttar Pradesh / Rajasthan</td><td>Mughal court influence; Persian elements; fast footwork (tatkar); pirouettes (chakkar); storytelling via abhinaya</td><td>Birju Maharaj, Lachhu Maharaj, Shambhu Maharaj, Shovana Narayan</td></tr>
+      <tr><td><strong>Odissi</strong></td><td>Odisha</td><td>Temple traditions of Bhubaneswar; Tribhangi posture (three-bend body); Maharis (temple dancers)</td><td>Sanjukta Panigrahi, Kelucharan Mohapatra, Sonal Mansingh</td></tr>
+      <tr><td><strong>Kathakali</strong></td><td>Kerala</td><td>Elaborate costumes, make-up &amp; masks; Nava Rasa depiction; based on Mahabharata &amp; Ramayana; Kalamandalam academy</td><td>Kalamandalam Gopi, Kalamandalam Ramankutty Nair</td></tr>
+      <tr><td><strong>Kuchipudi</strong></td><td>Andhra Pradesh</td><td>Created by Siddhendra Yogi (17th c); village dance-drama; distinctive tarangam (dancing on brass plate)</td><td>Yamini Krishnamurthy, Vempati Chinna Satyam, Raja Radha Reddy</td></tr>
+      <tr><td><strong>Manipuri</strong></td><td>Manipur</td><td>Ras Lila theme (Krishna-Radha); gentle lyrical movements; Lai Haraoba folk base; costumes — barrel skirt (kumil)</td><td>Guru Bipin Singh, Darshana Jhaveri, Nirmala Mehta</td></tr>
+      <tr><td><strong>Mohiniyattam</strong></td><td>Kerala</td><td>Feminine &amp; lyrical style; lasya (grace); costume — white &amp; gold kasavu saree; theme — love &amp; devotion to Vishnu</td><td>Balasaraswati, Kalyani Kutty Amma, Bharati Shivaji</td></tr>
+      <tr><td><strong>Sattriya</strong></td><td>Assam</td><td>Monastery (Satra) origin; created by Vaishnava saint Sankardeva (15th–16th c); both male and female; Nat (drama) + dance</td><td>Sankardeva, Indira P.P. Bora, Anita Sharma</td></tr>
+    </table>
+
+    <div class="highlight"><strong>Memory Tip:</strong> <strong>B</strong>ig <strong>K</strong>ings <strong>O</strong ften <strong>K</strong>iss <strong>K</strong>ings, <strong>M</strong>any <strong>M</strong>ust <strong>S</strong>ing — Bharatanatyam, Kathak, Odissi, Kathakali, Kuchipudi, Manipuri, Mohiniyattam, Sattriya.</div>
+
+    <h3>Folk Dances of India</h3>
+    <table>
+      <tr><th>Dance</th><th>State</th><th>Key Feature</th></tr>
+      <tr><td>Giddha</td><td>Punjab</td><td>Performed by women; boliyan (couplets); vibrant colours</td></tr>
+      <tr><td>Bhangra</td><td>Punjab</td><td>Harvest festival dance by men; energetic; dhol beat</td></tr>
+      <tr><td>Garba</td><td>Gujarat</td><td>Navratri festival; circular formation; clapping</td></tr>
+      <tr><td>Dandiya Raas</td><td>Gujarat</td><td>Navratri; performed with decorated sticks</td></tr>
+      <tr><td>Bihu</td><td>Assam</td><td>Rongali/Bohag Bihu (spring harvest); men &amp; women together</td></tr>
+      <tr><td>Lavani</td><td>Maharashtra</td><td>Women performers; quick rhythm; accompanied by dholki</td></tr>
+      <tr><td>Chhau</td><td>Jharkhand / West Bengal / Odisha</td><td>Mask dance; three styles: Seraikella, Purulia, Mayurbhanj; UNESCO ICH (2010)</td></tr>
+      <tr><td>Yakshagana</td><td>Karnataka</td><td>Night-long performance; elaborate headgear; mythology-based</td></tr>
+      <tr><td>Kalbelia</td><td>Rajasthan</td><td>Snake-charmer community; serpentine movements; UNESCO ICH</td></tr>
+      <tr><td>Theyyam</td><td>Kerala</td><td>Ritual art; deities embodied by performers; north Kerala</td></tr>
+      <tr><td>Dollu Kunitha</td><td>Karnataka</td><td>Drum dance of Kuruba shepherds</td></tr>
+      <tr><td>Cheraw</td><td>Mizoram</td><td>Bamboo dance; most spectacular folk dance of NE India</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- CLASSICAL MUSIC -->
+<section class="page" id="pg-music">
+  <h2 class="section-title">🎵 Classical Music</h2>
+  <div class="card">
+    <h2>Two Systems of Indian Classical Music</h2>
+    <table>
+      <tr><th>Feature</th><th>Hindustani (North India)</th><th>Carnatic (South India)</th></tr>
+      <tr><td>Region</td><td>North, Central &amp; West India</td><td>South India (TN, Kerala, Karnataka, AP)</td></tr>
+      <tr><td>Influence</td><td>Persian, Mughal, Islamic</td><td>Primarily devotional, Hindu</td></tr>
+      <tr><td>Structure</td><td>Raga-based; Alap-Jor-Jhala-Gat</td><td>Compositions — Kritis, Varnams, Tillana</td></tr>
+      <tr><td>Time Theory</td><td>Ragas assigned to specific times/seasons</td><td>Less rigid time assignment</td></tr>
+      <tr><td>Improvisation</td><td>Extensive improvisation (alap)</td><td>Relatively structured; manodharma</td></tr>
+      <tr><td>Key Concept</td><td>Gharana system (hereditary musical schools)</td><td>Trinity: Tyagaraja, Muthuswami Dikshitar, Syama Sastri</td></tr>
+    </table>
+
+    <h3>Hindustani Music — Major Gharanas</h3>
+    <table>
+      <tr><th>Gharana</th><th>Key Features</th><th>Famous Artists</th></tr>
+      <tr><td>Gwalior (oldest)</td><td>Clear pronunciation; older dhrupad style; mother of all gharanas</td><td>Ustad Faiyaz Khan, Bal Gandharva</td></tr>
+      <tr><td>Agra</td><td>Dhrupad influence; powerful voice; stress on taan</td><td>Ustad Faiyaz Khan (Agra), Vijay Kichlu</td></tr>
+      <tr><td>Jaipur-Atrauli</td><td>Complex compositions; difficult ragas; Alladiya Khan founded</td><td>Kesarbai Kerkar, Kishori Amonkar, Ashwini Bhide Deshpande</td></tr>
+      <tr><td>Kirana</td><td>Slow, meditative; sur-based; Abdul Karim Khan founded</td><td>Abdul Karim Khan, Gangubai Hangal, Prabha Atre</td></tr>
+      <tr><td>Patiala</td><td>Persian influence; thumri &amp; tappa mastery; ornate style</td><td>Bade Ghulam Ali Khan, Ajoy Chakrabarty</td></tr>
+    </table>
+
+    <h3>Carnatic Music — Trinity</h3>
+    <table>
+      <tr><th>Composer</th><th>Period</th><th>Key Contribution</th></tr>
+      <tr><td>Tyagaraja</td><td>1767–1847</td><td>Over 700 kritis; Pancharatna kritis (5 gems); composed in Telugu &amp; Sanskrit</td></tr>
+      <tr><td>Muthuswami Dikshitar</td><td>1775–1835</td><td>Navagraha kritis; Kamalamba Navavarana; Sanskrit compositions</td></tr>
+      <tr><td>Syama Sastri</td><td>1762–1827</td><td>Swarajati compositions; Telugu &amp; Sanskrit; devotee of Meenakshi</td></tr>
+    </table>
+
+    <h3>Musical Instruments</h3>
+    <table>
+      <tr><th>Category</th><th>Instrument</th><th>Famous Exponent</th></tr>
+      <tr><td rowspan="5">String (Tata)</td><td>Sitar</td><td>Ravi Shankar, Vilayat Khan, Nikhil Banerjee</td></tr>
+      <tr><td>Sarod</td><td>Amjad Ali Khan, Ali Akbar Khan</td></tr>
+      <tr><td>Veena</td><td>MS Subbulakshmi (vocals), Doraiswamy Iyengar (veena)</td></tr>
+      <tr><td>Santoor</td><td>Shiv Kumar Sharma</td></tr>
+      <tr><td>Violin (Carnatic)</td><td>L. Subramaniam, T.N. Krishnan</td></tr>
+      <tr><td rowspan="2">Wind (Sushira)</td><td>Bansuri (flute)</td><td>Hariprasad Chaurasia, Pannalal Ghosh</td></tr>
+      <tr><td>Shehnai</td><td>Bismillah Khan (Bharat Ratna 2001)</td></tr>
+      <tr><td rowspan="3">Percussion (Avanaddha)</td><td>Tabla</td><td>Zakir Hussain, Alla Rakha</td></tr>
+      <tr><td>Mridangam</td><td>Palghat Mani Iyer, T.V. Gopalakrishnan</td></tr>
+      <tr><td>Pakhawaj</td><td>Gopal Das; used in Dhrupad</td></tr>
+    </table>
+
+    <h3>Notable Vocalists</h3>
+    <ul>
+      <li><strong>M.S. Subbulakshmi</strong> — Carnatic vocalist; first musician to receive Bharat Ratna (1998); performed at UN General Assembly (1966)</li>
+      <li><strong>Pandit Bhimsen Joshi</strong> — Kirana Gharana; Bharat Ratna (2008); known for khayal &amp; bhajan</li>
+      <li><strong>Lata Mangeshkar</strong> — Bharat Ratna (2001); playback singer; record number of recordings</li>
+      <li><strong>Kishori Amonkar</strong> — Jaipur-Atrauli Gharana; Queen of Raag Bhimpalasi</li>
+      <li><strong>Tansen</strong> — Court musician (Navaratna) of Akbar; legendary musician; invented ragas Mian ki Todi, Mian ki Malhar, Darbari Kanada</li>
+    </ul>
+
+    <div class="highlight"><strong>Tansen:</strong> Born in Gwalior; disciple of Swami Haridas; joined Akbar's court 1562. Said to have the power to make rain fall (Mian ki Malhar raga) and light lamps (Deepak raga). Buried in Gwalior — Tansen Samaroha music festival held annually at his tomb.</div>
+  </div>
+</section>
+
+<!-- PAINTING SCHOOLS -->
+<section class="page" id="pg-painting">
+  <h2 class="section-title">🖼️ Painting Schools</h2>
+  <div class="card">
+    <h2>Ancient &amp; Cave Paintings</h2>
+    <table>
+      <tr><th>Site</th><th>Period</th><th>State</th><th>Key Features</th></tr>
+      <tr><td>Ajanta Caves</td><td>2nd BC – 6th AD</td><td>Maharashtra</td><td>29 rock-cut caves; Jataka tales; tempera technique; UNESCO WHS (1983)</td></tr>
+      <tr><td>Ellora Caves</td><td>7th–11th AD</td><td>Maharashtra</td><td>34 caves; Buddhist, Hindu, Jain; Kailasa temple; UNESCO WHS (1983)</td></tr>
+      <tr><td>Bagh Caves</td><td>4th–7th AD</td><td>Madhya Pradesh</td><td>9 Buddhist caves; secular themes; similar to Ajanta</td></tr>
+      <tr><td>Bhimbetka Rock Shelters</td><td>30,000 BC onwards</td><td>Madhya Pradesh</td><td>Prehistoric cave paintings; UNESCO WHS (2003); Stone Age art</td></tr>
+    </table>
+
+    <h3>Medieval Miniature Painting Schools</h3>
+    <table>
+      <tr><th>School</th><th>Period</th><th>Key Features</th><th>Notable Artists</th></tr>
+      <tr><td>Mughal School</td><td>16th–18th c</td><td>Persian + Hindu elements; naturalistic; Akbar's court patronage; detailed portraiture; animals</td><td>Mir Sayyid Ali, Abd al-Samad, Basawan, Farrukh Beg, Abul Hasan</td></tr>
+      <tr><td>Rajput — Mewar</td><td>17th–18th c</td><td>Vibrant flat colours; bold outlines; Ramayana/Mahabharata themes</td><td>Sahibdin (illustrated Ramayana)</td></tr>
+      <tr><td>Rajput — Kishangarh</td><td>18th c</td><td>Elongated eyes (lotus-petal); Bani Thani portrait ("Indian Mona Lisa")</td><td>Nihal Chand; patron Raja Savant Singh</td></tr>
+      <tr><td>Rajput — Bundi</td><td>17th–18th c</td><td>Hunting scenes; dense forests; women in nature</td><td>—</td></tr>
+      <tr><td>Rajput — Marwar</td><td>18th c</td><td>Bold colours; Jodhpur origin; local Rajput heroes</td><td>—</td></tr>
+      <tr><td>Pahari — Basohli</td><td>17th c</td><td>Himachal Pradesh; bold colour; beetle-wing for jewels; Geeta Govinda themes</td><td>—</td></tr>
+      <tr><td>Pahari — Kangra</td><td>18th–19th c</td><td>Soft delicate colours; lyrical; romanticism; Bhagavata Purana themes</td><td>Nainsukh, Manaku</td></tr>
+      <tr><td>Deccan School</td><td>16th–17th c</td><td>Bijapur, Golconda courts; Persian &amp; local fusion; elongated figures</td><td>—</td></tr>
+      <tr><td>Company School</td><td>18th–19th c</td><td>Colonial period; Indian artists painting for British patrons; natural history subjects</td><td>Shaikh Zain ud-Din</td></tr>
+    </table>
+
+    <h3>Bengal School &amp; Modern Indian Painting</h3>
+    <ul>
+      <li><strong>Abanindranath Tagore</strong> — Founded Bengal School; swadeshi art revival; used wash technique; "Bharat Mata" painting</li>
+      <li><strong>Raja Ravi Varma</strong> — First to use realism &amp; oil on canvas; depicted Hindu mythology; printing press for art popularization</li>
+      <li><strong>Progressive Artists Group (1947)</strong> — F.N. Souza, M.F. Husain, S.H. Raza, K.H. Ara, S.K. Bakre, H.A. Gade; founded in Mumbai</li>
+      <li><strong>M.F. Husain</strong> — "Picasso of India"; known for horses; Padma Shri (1966), Padma Bhushan (1973)</li>
+      <li><strong>S.H. Raza</strong> — Abstract; "Bindu" (point) concept; Padma Vibhushan (2013)</li>
+    </ul>
+
+    <h3>Folk Paintings</h3>
+    <table>
+      <tr><th>Painting</th><th>State</th><th>Key Features</th></tr>
+      <tr><td>Madhubani / Mithila</td><td>Bihar</td><td>Natural pigments (turmeric, soot, cow dung); rice paste for paper; geometric patterns; mythology themes; GI tag</td></tr>
+      <tr><td>Warli</td><td>Maharashtra</td><td>Tribal; white pigment on mud walls; geometric — circles, triangles; daily life themes</td></tr>
+      <tr><td>Pattachitra</td><td>Odisha</td><td>Palm leaf &amp; cloth; Lord Jagannath theme; fine brushwork; natural colours</td></tr>
+      <tr><td>Kalamkari</td><td>Andhra Pradesh</td><td>Hand-painted or block-printed; pen (kalam) drawing; mythological/floral; GI tag (Srikalahasti, Machilipatnam)</td></tr>
+      <tr><td>Gond</td><td>Madhya Pradesh</td><td>Tribal; dot-and-dash patterns; nature worship; Jangarh Singh Shyam — pioneer</td></tr>
+      <tr><td>Phad</td><td>Rajasthan</td><td>Scroll painting; depicts folk deities Pabuji &amp; Devnarayan; performed by Bhopa priests</td></tr>
+      <tr><td>Pichwai</td><td>Rajasthan (Nathdwara)</td><td>Large cloth paintings behind Srinathji idol; Krishna's life; intricate detail</td></tr>
+      <tr><td>Thangka</td><td>Sikkim / Ladakh</td><td>Buddhist scroll painting; meditation deities; bright natural pigments</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ARCHITECTURE -->
+<section class="page" id="pg-architecture">
+  <h2 class="section-title">🏛️ Architecture</h2>
+  <div class="card">
+    <h2>Evolution of Indian Architecture</h2>
+
+    <h3>Indus Valley Civilisation (3300–1300 BC)</h3>
+    <ul>
+      <li>Grid-pattern town planning; baked brick structures; drainage systems</li>
+      <li><strong>Great Bath</strong> — Mohenjo-daro; earliest public water tank</li>
+      <li><strong>Granary</strong> — Harappa and Mohenjo-daro</li>
+      <li><strong>Dholavira</strong> — UNESCO WHS (2021); sophisticated water harvesting; stadium-like space</li>
+    </ul>
+
+    <h3>Mauryan Period (322–185 BC)</h3>
+    <ul>
+      <li>Rock-cut caves (Barabar caves — first in India); polished sandstone</li>
+      <li><strong>Ashokan Pillars</strong> — monolithic; polished sandstone; lion capital of Sarnath = National Emblem of India; Brahmi script edicts</li>
+      <li><strong>Sanchi Stupa</strong> — Buddhist monument; UNESCO WHS; great torana (gateway) carvings; no image of Buddha in early phase (symbols used)</li>
+    </ul>
+
+    <h3>Post-Mauryan Schools of Art (2nd BC–3rd AD)</h3>
+    <table>
+      <tr><th>School</th><th>Region</th><th>Key Feature</th></tr>
+      <tr><td>Gandhara</td><td>NW India (modern Pakistan/Afghanistan)</td><td>Greco-Buddhist; first images of Buddha in human form; Hellenistic features</td></tr>
+      <tr><td>Mathura</td><td>Uttar Pradesh</td><td>Indigenous; red sandstone; earthy; Buddha + Jain images</td></tr>
+      <tr><td>Amaravati</td><td>Andhra Pradesh</td><td>White limestone; decorative medallions; narrative friezes; movement &amp; grace</td></tr>
+    </table>
+
+    <h3>Gupta Period (4th–6th AD) — "Golden Age"</h3>
+    <ul>
+      <li>Temple architecture begins; Nagara (north) style emerges</li>
+      <li><strong>Deogarh Temple</strong> — Dasavatara temple; early Nagara style</li>
+      <li><strong>Ajanta paintings</strong> — peak artistic achievement</li>
+      <li>Nalanda University — Buddhist learning centre</li>
+    </ul>
+
+    <h3>South Indian Temple Architecture</h3>
+    <table>
+      <tr><th>Style/Dynasty</th><th>Period</th><th>Features</th><th>Key Examples</th></tr>
+      <tr><td>Pallava — Mahabalipuram</td><td>7th–9th c</td><td>Shore temples; monolithic rathas (5 Pandava rathas); rock-cut mandapas</td><td>Shore Temple, Mahabalipuram (UNESCO)</td></tr>
+      <tr><td>Chalukya (Badami)</td><td>6th–8th c</td><td>Early experiments; Deccan style; rock-cut</td><td>Aihole (first experimental temples), Pattadakal (UNESCO)</td></tr>
+      <tr><td>Rashtrakuta</td><td>8th–10th c</td><td>Kailasa temple — monolithic; carved from single rock top-down</td><td>Ellora Cave 16 (Kailasa)</td></tr>
+      <tr><td>Chola</td><td>9th–13th c</td><td>Dravida style; tall gopuram (tower); bronze casting (lost-wax Nataraja)</td><td>Brihadeeswarar, Thanjavur (UNESCO); Gangaikonda Cholapuram</td></tr>
+      <tr><td>Hoysala</td><td>12th–14th c</td><td>Star-shaped platform; intricate soapstone carvings; low relief sculpture</td><td>Belur (Channakeshava), Halebid (Hoysaleswara) — UNESCO 2023</td></tr>
+      <tr><td>Vijayanagara</td><td>14th–16th c</td><td>Elaborate gopuram; mandapa pillars; amalgam of styles</td><td>Hampi (UNESCO 1986)</td></tr>
+    </table>
+
+    <h3>North Indian Temple Architecture (Nagara Style)</h3>
+    <ul>
+      <li><strong>Shikhara</strong> (curvilinear tower) is the defining feature</li>
+      <li>Three sub-styles: Rekha-Prasad (main shikhara), Pida (porch), Khakara (roof)</li>
+      <li><strong>Konark Sun Temple</strong> — Odisha; chariot wheel design; UNESCO WHS (1984)</li>
+      <li><strong>Khajuraho Temples</strong> — Madhya Pradesh; erotic sculptures; Chandela dynasty; UNESCO WHS (1986)</li>
+    </ul>
+
+    <h3>Delhi Sultanate &amp; Mughal Architecture</h3>
+    <table>
+      <tr><th>Monument</th><th>Built By</th><th>Period</th><th>Significance</th></tr>
+      <tr><td>Qutb Minar</td><td>Qutb-ud-din Aibak / Iltutmish</td><td>1193–1220</td><td>Tallest brick minaret (72.5m); UNESCO WHS; Alai Darwaza — first true arch</td></tr>
+      <tr><td>Humayun's Tomb</td><td>Haji Begum (Akbar's order)</td><td>1570</td><td>First great Mughal garden tomb; UNESCO WHS; prototype for Taj Mahal</td></tr>
+      <tr><td>Fatehpur Sikri</td><td>Akbar</td><td>1569–1585</td><td>Red sandstone; Ibadat Khana; Buland Darwaza (55m); UNESCO WHS</td></tr>
+      <tr><td>Agra Fort</td><td>Akbar (red sandstone); Shah Jahan (marble)</td><td>1565</td><td>UNESCO WHS; Diwan-i-Aam, Diwan-i-Khas</td></tr>
+      <tr><td>Taj Mahal</td><td>Shah Jahan (for Mumtaz)</td><td>1631–1653</td><td>White marble; charbagh garden; Yamuna bank; UNESCO WHS (1983); 7 wonders</td></tr>
+      <tr><td>Jama Masjid, Delhi</td><td>Shah Jahan</td><td>1656</td><td>Largest mosque in India; red sandstone + marble; 3 domes</td></tr>
+      <tr><td>Red Fort, Delhi</td><td>Shah Jahan</td><td>1639–1648</td><td>Octagonal towers; UNESCO WHS (2007); PM's Independence Day address</td></tr>
+    </table>
+
+    <h3>Colonial Architecture</h3>
+    <ul>
+      <li><strong>Victoria Memorial</strong> — Kolkata; 1921; white Makrana marble; Indo-Saracenic style; William Emerson</li>
+      <li><strong>Gateway of India</strong> — Mumbai; 1924; Indo-Saracenic; basalt; built for George V's visit</li>
+      <li><strong>Chhatrapati Shivaji Terminus</strong> (CST/VT) — Mumbai; 1887; Victorian Gothic; UNESCO WHS (2004)</li>
+      <li><strong>Rashtrapati Bhavan</strong> — New Delhi; 1929; Edwin Lutyens; Classical + Mughal</li>
+      <li><strong>Chandigarh</strong> — Le Corbusier design; UNESCO WHS (2016)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- FOLK ART & CRAFTS -->
+<section class="page" id="pg-crafts">
+  <h2 class="section-title">🧵 Folk Art &amp; Crafts</h2>
+  <div class="card">
+    <h2>GI Tagged Crafts by State</h2>
+    <table>
+      <tr><th>State</th><th>GI Tagged Products</th></tr>
+      <tr><td><strong>Jammu &amp; Kashmir</strong></td><td>Pashmina shawl, Kani shawl (woven on special loom), Kashmir sozni embroidery, Kashmir papier mâché, Walnut wood carving, Kashmir crewel embroidery, Khatamband (geometric ceiling work)</td></tr>
+      <tr><td><strong>Punjab</strong></td><td>Phulkari (silk thread embroidery on cotton), Ludhiana woollen hosiery, Patiala salwar, Punjab Basmati rice</td></tr>
+      <tr><td><strong>Uttar Pradesh</strong></td><td>Chikankari (Lucknow — hand embroidery), Varanasi Banarasi silk saree (GI), Agra leather goods, Moradabad brassware, Firozabad glass, Aligarh lock, Mirzapur/Bhadohi carpets</td></tr>
+      <tr><td><strong>Rajasthan</strong></td><td>Blue Pottery (Jaipur — Persian origin; quartz/glass; non-clay), Meenakari (enamel jewellery), Kathputli (puppet craft), Bandhani (tie-dye), Kota Doria saree, Sanganeri hand block print, Bagru hand block print, Thewa (glass-gold jewellery)</td></tr>
+      <tr><td><strong>Gujarat</strong></td><td>Patola silk saree (Patan — double ikat weave), Kutch embroidery (mirror work), Bandhani (tie-dye), Ahmedabad Mashru fabric, Tangaliya shawl</td></tr>
+      <tr><td><strong>Odisha</strong></td><td>Sambalpuri saree (ikat weave), Pattachitra painting, Dhokra metal craft, Odisha Ikat, Berhampur silk, Kotpad handloom</td></tr>
+      <tr><td><strong>West Bengal</strong></td><td>Baluchari saree (Bishnupur — mythology on border), Dhokra metal craft, Terracotta craft (Bishnupur), Darjeeling tea, Murshidabad silk, Santipore saree</td></tr>
+      <tr><td><strong>Karnataka</strong></td><td>Mysore silk (pure mulberry silk; GI), Channapatna wooden toys (lacquered), Bidri work (zinc-copper alloy inlaid with silver), Sandal wood carving (Mysore), Ilkal saree</td></tr>
+      <tr><td><strong>Tamil Nadu</strong></td><td>Kanchipuram silk saree (mulberry silk; gold zari), Bronze casting (Chola tradition), Salem fabric, Pondicherry leather goods</td></tr>
+      <tr><td><strong>Maharashtra</strong></td><td>Paithani saree (Nashik — peacock motif, oblique weave), Warli folk art, Kolhapuri chappals (leather), Nashik grapes, Solapur chaddar</td></tr>
+      <tr><td><strong>Bihar</strong></td><td>Madhubani/Mithila painting (GI), Sikki grass craft (Mithila region), Bhagalpur silk (tussar silk — "Silk City")</td></tr>
+      <tr><td><strong>Madhya Pradesh</strong></td><td>Chanderi saree (silk-cotton; GI), Maheshwari saree (Maheshwar; cotton-silk), Gond tribal art, Bagh block print, Batik print</td></tr>
+      <tr><td><strong>Andhra Pradesh</strong></td><td>Kalamkari (block-print fabric; Machilipatnam, Srikalahasti), Kondapalli wooden toys, Uppada silk, Venkatagiri saree</td></tr>
+      <tr><td><strong>Assam</strong></td><td>Muga silk (golden silk — unique to Assam), Assam silk, Assam bamboo &amp; cane craft</td></tr>
+      <tr><td><strong>Manipur</strong></td><td>Moirangphee handloom, Kauna grass products</td></tr>
+    </table>
+
+    <div class="highlight"><strong>Exam Note:</strong> Blue Pottery of Jaipur is NOT clay-based — it uses quartz, glass, Multani mitti, and borax. It does not contain clay or lead. Persian origin; introduced to Rajasthan by Mughals.</div>
+
+    <h3>Famous Craft Clusters &amp; ODOP</h3>
+    <p>Under PM's <strong>One District One Product (ODOP)</strong> scheme, each district promotes its unique craft/product. Also under <strong>Geographical Indications (GI) Act 1999</strong> — India has 400+ GI tags for handicrafts, agricultural products, and food items.</p>
+  </div>
+</section>
+
+<!-- FESTIVALS -->
+<section class="page" id="pg-festivals">
+  <h2 class="section-title">🎉 Festivals</h2>
+  <div class="card">
+    <h2>Harvest Festivals</h2>
+    <table>
+      <tr><th>Festival</th><th>State</th><th>Month/Time</th><th>Key Feature</th></tr>
+      <tr><td><strong>Pongal</strong></td><td>Tamil Nadu</td><td>January (Thai month)</td><td>4-day harvest; boiling of new rice (pongal); Surya &amp; cattle worshipped; Mattu Pongal (cattle), Kaanum Pongal</td></tr>
+      <tr><td><strong>Bihu (Rongali/Bohag)</strong></td><td>Assam</td><td>April (spring)</td><td>New Year + harvest; Bihu dance; 3 types: Rongali (spring), Kongali (autumn-sad), Bhogali (winter-harvest)</td></tr>
+      <tr><td><strong>Baisakhi</strong></td><td>Punjab</td><td>April 13/14</td><td>Harvest + Sikh New Year; Khalsa Panth founding (1699); Bhangra-Giddha dances</td></tr>
+      <tr><td><strong>Onam</strong></td><td>Kerala</td><td>Aug–Sep (Chingam)</td><td>10-day festival; return of King Mahabali; pookalam (flower carpet); Vallam Kali (snake boat race)</td></tr>
+      <tr><td><strong>Ugadi</strong></td><td>Andhra Pradesh / Karnataka</td><td>March–April</td><td>Telugu/Kannada New Year; Panchanga (almanac) reading; Ugadi pachadi (6-taste dish)</td></tr>
+      <tr><td><strong>Vishu</strong></td><td>Kerala</td><td>April 14</td><td>Malayalam New Year; Vishukkani (auspicious first sight of new year)</td></tr>
+      <tr><td><strong>Gudi Padwa</strong></td><td>Maharashtra</td><td>March–April</td><td>Marathi New Year; Gudi (flag) erected outside homes</td></tr>
+      <tr><td><strong>Nuakhai</strong></td><td>Odisha</td><td>After Ganesh Chaturthi</td><td>New rice eating festival; major in western Odisha</td></tr>
+      <tr><td><strong>Losar</strong></td><td>Ladakh / Sikkim / Arunachal</td><td>February–March</td><td>Tibetan/Buddhist New Year; masked dance; monastery prayers</td></tr>
+    </table>
+
+    <h3>Major Religious Festivals</h3>
+    <table>
+      <tr><th>Festival</th><th>Religion</th><th>Key Feature</th></tr>
+      <tr><td>Diwali</td><td>Hindu / Sikh / Jain</td><td>Festival of lights; Lakshmi worship; return of Ram to Ayodhya; Sikh — Bandi Chhor Divas</td></tr>
+      <tr><td>Holi</td><td>Hindu</td><td>Festival of colours; spring; Holika Dahan; Braj Holi (Mathura-Vrindavan) most celebrated</td></tr>
+      <tr><td>Navratri / Durga Puja</td><td>Hindu</td><td>9 nights; 9 forms of Devi; Vijayadashami on 10th day; biggest in West Bengal (Durga Puja)</td></tr>
+      <tr><td>Eid-ul-Fitr / Eid-ul-Adha</td><td>Islam</td><td>End of Ramadan / sacrifice festival; Id prayers, feast</td></tr>
+      <tr><td>Christmas</td><td>Christian</td><td>Birth of Jesus; biggest celebration in Goa, Kerala, Meghalaya, Mizoram</td></tr>
+      <tr><td>Guru Nanak Jayanti (Gurpurab)</td><td>Sikh</td><td>Birth anniversary of Guru Nanak Dev; Nagar Kirtan procession</td></tr>
+      <tr><td>Mahavir Jayanti</td><td>Jain</td><td>Birth of Mahavira; 24th Tirthankara; major Jain festival</td></tr>
+      <tr><td>Buddha Purnima</td><td>Buddhist</td><td>Birth, enlightenment and Parinirvana of Buddha; same day</td></tr>
+    </table>
+
+    <h3>Famous Fairs</h3>
+    <table>
+      <tr><th>Fair</th><th>State</th><th>Key Fact</th></tr>
+      <tr><td>Pushkar Camel Fair</td><td>Rajasthan</td><td>Largest camel fair in world; Kartik Purnima; also cattle &amp; horse trading; cultural performances</td></tr>
+      <tr><td>Sonepur Mela</td><td>Bihar</td><td>Asia's largest cattle fair; Kartik Purnima; on confluence of Ganga &amp; Gandak; animals traded including elephants</td></tr>
+      <tr><td>Surajkund Crafts Mela</td><td>Haryana (Faridabad)</td><td>Annual crafts fair (February); artisans from across India; partner country invited</td></tr>
+      <tr><td>Hemis Festival</td><td>Ladakh</td><td>Largest monastery festival in Ladakh; two-day masked dance (Cham); dedicated to Padmasambhava</td></tr>
+      <tr><td>Thrissur Pooram</td><td>Kerala</td><td>Temple festival; procession of decorated elephants; fireworks display</td></tr>
+    </table>
+
+    <h3>UNESCO Intangible Cultural Heritage of India</h3>
+    <table>
+      <tr><th>Element</th><th>Year Inscribed</th></tr>
+      <tr><td>Ramlila — traditional performance of Ramayana</td><td>2008</td></tr>
+      <tr><td>Vedic Chanting (Tradition of Vedic Chanting)</td><td>2008</td></tr>
+      <tr><td>Chhau Dance (mask dance)</td><td>2010</td></tr>
+      <tr><td>Sankirtana — Ritual Singing, Drumming &amp; Dancing of Manipur</td><td>2013</td></tr>
+      <tr><td>Yoga</td><td>2016</td></tr>
+      <tr><td>Nawrouz (shared with other countries)</td><td>2016</td></tr>
+      <tr><td>Kumbh Mela</td><td>2017</td></tr>
+      <tr><td>Kolkata's Durga Puja</td><td>2021</td></tr>
+      <tr><td>Garba of Gujarat</td><td>2023</td></tr>
+    </table>
+
+    <h3>Kumbh Mela</h3>
+    <p><strong>4 Locations:</strong> Prayagraj (Triveni Sangam — Ganga+Yamuna+Saraswati), Haridwar (Ganga), Ujjain (Kshipra), Nashik (Godavari)</p>
+    <p><strong>Types:</strong> Maha Kumbh (12 years — Prayagraj), Purna Kumbh (12 years — each location), Ardha Kumbh (6 years), Kumbh (3 years at each location)</p>
+    <p>UNESCO ICH status: 2017. World's largest peaceful gathering of people.</p>
+  </div>
+</section>
+
+<!-- LITERATURE -->
+<section class="page" id="pg-literature">
+  <h2 class="section-title">📚 Literature</h2>
+  <div class="card">
+    <h2>Vedic Literature</h2>
+    <table>
+      <tr><th>Text</th><th>Type</th><th>Content</th></tr>
+      <tr><td><strong>Rigveda</strong></td><td>Veda (oldest)</td><td>1,028 hymns (Suktas); praise of deities; Gayatri Mantra (10:63:3); Purusha Sukta</td></tr>
+      <tr><td><strong>Samaveda</strong></td><td>Veda</td><td>Melodies (saman); basis of Carnatic music; 1,875 verses (mostly from Rigveda)</td></tr>
+      <tr><td><strong>Yajurveda</strong></td><td>Veda</td><td>Sacrificial rituals and prose; two versions: Krishna (black) &amp; Shukla (white)</td></tr>
+      <tr><td><strong>Atharvaveda</strong></td><td>Veda</td><td>Spells, charms, magic; everyday life; medicine; Prithvi Sukta (Earth hymn)</td></tr>
+      <tr><td><strong>Upanishads (108)</strong></td><td>Vedanta / Philosophy</td><td>"Sitting near teacher"; principal 13 Upanishads; Chandogya, Brihadaranyaka, Kena, Isha</td></tr>
+      <tr><td><strong>Aranyakas</strong></td><td>Forest texts</td><td>Philosophical texts for hermits; bridge between Brahmanas and Upanishads</td></tr>
+      <tr><td><strong>Brahmanas</strong></td><td>Prose explanations</td><td>Ritual explanations; Shatapatha Brahmana (longest)</td></tr>
+    </table>
+
+    <h3>Epics</h3>
+    <table>
+      <tr><th>Epic</th><th>Author</th><th>Size</th><th>Key Facts</th></tr>
+      <tr><td>Ramayana</td><td>Valmiki ("Adi Kavi" — first poet)</td><td>24,000 shlokas, 7 Kandas (books)</td><td>Story of Ram; Bala, Ayodhya, Aranya, Kishkindha, Sundara, Yuddha, Uttara Kandas</td></tr>
+      <tr><td>Mahabharata</td><td>Vyasa (compiled)</td><td>1,00,000 shlokas — world's longest epic; 18 Parvas + Harivamsa</td><td>Pandavas vs Kauravas; includes Bhagavad Gita (ch. 6, Bhishma Parva)</td></tr>
+    </table>
+
+    <h3>Sanskrit Classics</h3>
+    <ul>
+      <li><strong>Kalidasa</strong> (Gupta period, "Shakespeare of India") — Shakuntala (drama), Meghaduta (poem), Raghuvamsa (epic poem), Kumarasambhava, Vikramorvasiyam, Malavikagnimitram</li>
+      <li><strong>Chanakya / Kautilya</strong> — Arthashastra (political economy, statecraft)</li>
+      <li><strong>Patanjali</strong> — Yoga Sutras; Mahabhashya (Sanskrit grammar commentary)</li>
+      <li><strong>Panini</strong> — Ashtadhyayi (Sanskrit grammar; 3,000+ rules)</li>
+    </ul>
+
+    <h3>Tamil Sangam Literature (300 BC–300 AD)</h3>
+    <ul>
+      <li>Three Sangams (academies) of Tamil poets at Madurai; patronised by Pandya kings</li>
+      <li><strong>Ettuthokai</strong> (8 anthologies) and <strong>Pattupattu</strong> (10 idylls)</li>
+      <li><strong>Five Tinais</strong> (landscapes): Kurinji (mountains), Mullai (forests), Marutham (plains), Neythal (coastal), Palai (desert)</li>
+      <li><strong>Thirukkural</strong> — Thiruvalluvar; 1,330 couplets; ethics, polity, love; "Tamil Veda"</li>
+      <li><strong>Silappatikaram</strong> &amp; <strong>Manimegalai</strong> — major Sangam epics</li>
+    </ul>
+
+    <h3>Bhakti Movement Literature</h3>
+    <table>
+      <tr><th>Saint/Poet</th><th>Period</th><th>State/Language</th><th>Key Work</th></tr>
+      <tr><td>Ramananda</td><td>14th c</td><td>North India</td><td>Brought Bhakti to North; teacher of Kabir &amp; others</td></tr>
+      <tr><td>Kabir</td><td>15th–16th c</td><td>UP (Hindi/Doha)</td><td>Dohas (couplets); nirguna bhakti; rejected caste &amp; idol worship</td></tr>
+      <tr><td>Mirabai</td><td>16th c</td><td>Rajasthan (Hindi/Braj)</td><td>Devoted to Krishna; Bhajans; defied social conventions</td></tr>
+      <tr><td>Tulsidas</td><td>16th c</td><td>UP (Awadhi)</td><td>Ramcharitmanas (Avadhi Hindi Ramayana); Hanuman Chalisa</td></tr>
+      <tr><td>Surdas</td><td>16th c</td><td>UP (Braj Bhasha)</td><td>Sur Sagar; blind poet; devoted to Krishna; Saptasagara</td></tr>
+      <tr><td>Tukaram</td><td>17th c</td><td>Maharashtra (Marathi)</td><td>Abhangas (devotional poems); Varkari sect; Vitthal worship</td></tr>
+      <tr><td>Chaitanya Mahaprabhu</td><td>15th–16th c</td><td>Bengal (Bengali/Sanskrit)</td><td>Gaudiya Vaishnavism; Krishna bhakti movement in Bengal</td></tr>
+      <tr><td>Lalleshwari (Lal Ded)</td><td>14th c</td><td>Kashmir (Kashmiri)</td><td>Vakhs (mystical poems); Shaivism &amp; Sufi blend</td></tr>
+    </table>
+
+    <h3>Sufi Literature</h3>
+    <ul>
+      <li><strong>Amir Khusrau</strong> (1253–1325) — "Parrot of India"; Persian &amp; Hindi poetry; invented tabla &amp; sitar (attributed); Doha, Ghazal; court poet of Delhi Sultans; disciple of Nizamuddin Auliya</li>
+    </ul>
+
+    <h3>Modern Literature &amp; Awards</h3>
+    <table>
+      <tr><th>Author/Award</th><th>Details</th></tr>
+      <tr><td>Rabindranath Tagore</td><td>Nobel Prize in Literature 1913 (first Asian); Gitanjali; wrote national anthems of India &amp; Bangladesh; Rabindra Sangeet; founded Visva-Bharati (1921)</td></tr>
+      <tr><td>Munshi Premchand</td><td>"Upanyas Samrat" (Emperor of novels); Hindi &amp; Urdu; Godaan, Gaban, Nirmala, Kafan</td></tr>
+      <tr><td>Jnanpith Award</td><td>Highest literary award; given by Bharatiya Jnanpith trust; first: G. Sankara Kurup (Malayalam, 1965)</td></tr>
+      <tr><td>Geetanjali Shree (2022)</td><td>First Hindi author to win International Booker Prize for "Ret Samadhi" (Tomb of Sand); also won Jnanpith 2022</td></tr>
+      <tr><td>Sahitya Akademi Award</td><td>Given to 24 languages recognised by Academy; Fellowship = highest honour of Akademi</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- RELIGION & PHILOSOPHY -->
+<section class="page" id="pg-religion">
+  <h2 class="section-title">🕌 Religion &amp; Philosophy</h2>
+  <div class="card">
+    <h2>Hinduism — Schools of Philosophy</h2>
+    <p>Six Shad Darshanas (orthodox schools accepting Vedic authority):</p>
+    <table>
+      <tr><th>School</th><th>Founder</th><th>Key Teaching</th></tr>
+      <tr><td>Nyaya</td><td>Gautama</td><td>Logic and epistemology; 4 sources of valid knowledge</td></tr>
+      <tr><td>Vaisheshika</td><td>Kanada</td><td>Atomic theory; 7 categories (Padarthas)</td></tr>
+      <tr><td>Samkhya</td><td>Kapila</td><td>Dualism: Purusha (consciousness) + Prakriti (matter); 25 principles</td></tr>
+      <tr><td>Yoga</td><td>Patanjali</td><td>8-limbed path (Ashtanga Yoga); mind-body discipline; Yoga Sutras</td></tr>
+      <tr><td>Purva Mimamsa</td><td>Jaimini</td><td>Vedic ritual performance; dharma through karma-kanda</td></tr>
+      <tr><td>Uttara Mimamsa (Vedanta)</td><td>Badarayana / Vyasa</td><td>Brahma Sutras; culmination of Vedas; basis of Advaita, Vishishtadvaita, Dvaita</td></tr>
+    </table>
+
+    <h3>Three Main Schools of Vedanta</h3>
+    <table>
+      <tr><th>School</th><th>Philosopher</th><th>Period</th><th>Teaching</th><th>Key Work</th></tr>
+      <tr><td>Advaita (Non-dualism)</td><td>Adi Shankaracharya</td><td>8th c AD</td><td>Brahman = Atman; world is Maya (illusion); established 4 Mathas (Sringeri, Dwarka, Puri, Badrinath)</td><td>Vivekachudamani, commentaries on Brahma Sutras &amp; Upanishads</td></tr>
+      <tr><td>Vishishtadvaita (Qualified non-dualism)</td><td>Ramanujacharya</td><td>11th–12th c</td><td>Brahman + individual souls + matter are related; Bhakti path</td><td>Sri Bhashya</td></tr>
+      <tr><td>Dvaita (Dualism)</td><td>Madhvacharya</td><td>13th c</td><td>Brahman (Vishnu) and souls are eternally distinct; Bhakti to Vishnu</td><td>Anuvyakhyana</td></tr>
+    </table>
+
+    <h3>Buddhism</h3>
+    <p><strong>Gautama Buddha</strong> (563–483 BC): Born Lumbini (Nepal); Enlightenment at Bodh Gaya; First sermon at Sarnath (Dhammachakkapavattana Sutta); Parinirvana at Kushinagar</p>
+    <table>
+      <tr><th>Concept</th><th>Details</th></tr>
+      <tr><td>4 Noble Truths (Arya Satyas)</td><td>1. Life is suffering (Dukkha) 2. Desire is cause (Samudaya) 3. Cessation possible (Nirodha) 4. 8-fold Path is the way (Magga)</td></tr>
+      <tr><td>8-fold Path (Ashtangika Marga)</td><td>Right View, Right Intention, Right Speech, Right Action, Right Livelihood, Right Effort, Right Mindfulness, Right Concentration</td></tr>
+      <tr><td>Three Jewels (Triratna)</td><td>Buddha (teacher), Dhamma (teaching), Sangha (community)</td></tr>
+      <tr><td>Three Pitakas</td><td>Vinaya Pitaka (monastic rules), Sutta Pitaka (discourses), Abhidhamma Pitaka (philosophy)</td></tr>
+    </table>
+
+    <h3>Buddhist Sects</h3>
+    <table>
+      <tr><th>Sect</th><th>Also Known As</th><th>Region Today</th><th>Key Feature</th></tr>
+      <tr><td>Theravada</td><td>Hinayana ("small vehicle")</td><td>Sri Lanka, SE Asia</td><td>Pali canon; individual salvation; strict monastic; oldest surviving school</td></tr>
+      <tr><td>Mahayana</td><td>"Great vehicle"</td><td>China, Japan, Korea, Tibet</td><td>Bodhisattva ideal; Sanskrit; compassion for all beings; Nagarjuna's Shunyavada</td></tr>
+      <tr><td>Vajrayana</td><td>Tantrayana / Tibetan Buddhism</td><td>Tibet, Bhutan, Ladakh, Sikkim</td><td>Tantric rituals; Lamas; Dalai Lama; mantra &amp; mandala</td></tr>
+    </table>
+
+    <h3>Four Buddhist Councils</h3>
+    <table>
+      <tr><th>Council</th><th>Place</th><th>Patron</th><th>Key Outcome</th></tr>
+      <tr><td>1st (483 BC)</td><td>Rajagriha (Saptaparni Cave)</td><td>Ajatashatru (Magadha)</td><td>Compilation of Dhamma &amp; Vinaya Pitakas; headed by Mahakassapa</td></tr>
+      <tr><td>2nd (383 BC)</td><td>Vaishali</td><td>Kalasoka</td><td>Dispute over 10 monastic practices; split into Sthaviravada &amp; Mahasanghika</td></tr>
+      <tr><td>3rd (250 BC)</td><td>Pataliputra</td><td>Emperor Ashoka</td><td>Settled disputes; Moggaliputta Tissa chaired; Abhidhamma Pitaka compiled; missionaries sent abroad</td></tr>
+      <tr><td>4th (1st c AD)</td><td>Kashmir (Kundalvana)</td><td>Kanishka (Kushana)</td><td>Compilation of Mahavibhasha; Hinayana-Mahayana split formalised; Vasumitra chaired</td></tr>
+    </table>
+
+    <h3>Jainism</h3>
+    <p><strong>24 Tirthankaras</strong> (Ford-makers); last and most important: <strong>Mahavira</strong> (Vardhamana, 599–527 BC)</p>
+    <ul>
+      <li>Born: Kundagrama (Vaishali district, Bihar); attained Nirvana at Pavapuri, Bihar</li>
+      <li><strong>5 Vows (Pancha Mahavrata):</strong> Ahimsa (non-violence), Satya (truth), Asteya (non-stealing), Brahmacharya (celibacy), Aparigraha (non-possession)</li>
+      <li><strong>3 Ratnas (Triratna):</strong> Right faith, Right knowledge, Right conduct</li>
+      <li><strong>Digambara</strong> (sky-clad — no clothes) vs <strong>Shvetambara</strong> (white-clad)</li>
+      <li>First Tirthankara: <strong>Rishabhadeva (Adinatha)</strong></li>
+    </ul>
+
+    <h3>Sikhism</h3>
+    <ul>
+      <li><strong>Guru Nanak Dev</strong> (1469–1539) — founder; born Nankana Sahib (now Pakistan)</li>
+      <li><strong>10 Gurus:</strong> Nanak → Angad → Amar Das → Ram Das → Arjan Dev → Hargobind → Har Rai → Har Krishan → Tegh Bahadur → <strong>Gobind Singh</strong> (10th &amp; last human Guru)</li>
+      <li><strong>Guru Granth Sahib</strong> — eternal Guru; compiled by Guru Arjan Dev (5th Guru, 1604); final form by Guru Gobind Singh</li>
+      <li><strong>Khalsa Panth</strong> — founded 1699 (Baisakhi) by Guru Gobind Singh at Anandpur Sahib; 5 Ks (Panj Kakars)</li>
+      <li><strong>Golden Temple (Harmandir Sahib)</strong> — Amritsar; built by Guru Arjan Dev; open on 4 sides (all are welcome)</li>
+    </ul>
+
+    <h3>Islam in India</h3>
+    <ul>
+      <li><strong>Arab traders</strong> — Islam reaches Kerala coast (7th c); Cheraman Juma Mosque (629 AD) — first mosque in India</li>
+      <li><strong>Delhi Sultanate</strong> — Qutb-ud-din Aibak (1206); political establishment of Islam in North India</li>
+      <li><strong>Mughal Empire</strong> (1526–1857) — peak of Islamic architecture and culture in India</li>
+      <li><strong>Sufi Saints:</strong> Khwaja Moinuddin Chishti (Ajmer — Dargah Sharif); Nizamuddin Auliya (Delhi); Qutbuddin Bakhtiyar Kaki; Fariduddin Ganj-i-Shakar (Baba Farid)</li>
+      <li><strong>Chishti order</strong> — most popular Sufi order in India; emphasised love, music (qawwali), and social equality</li>
+    </ul>
+
+    <h3>Christianity in India</h3>
+    <ul>
+      <li><strong>St. Thomas</strong> (52 AD) — tradition holds he arrived in Kerala; established one of world's earliest Christian communities</li>
+      <li><strong>Portuguese missionaries</strong> (16th c) — Francis Xavier in Goa (Basilica of Bom Jesus — his relics preserved; UNESCO WHS)</li>
+      <li><strong>Syrian Christians</strong> — ancient Christians of Kerala (Thomas Christians / Nasranis)</li>
+      <li><strong>Se Cathedral, Goa</strong> — largest church in Asia; built by Portuguese in 1619</li>
+    </ul>
+  </div>
+</section>
+
+<!-- UNESCO SITES -->
+<section class="page" id="pg-unesco">
+  <h2 class="section-title">🏆 UNESCO World Heritage Sites in India</h2>
+  <div class="card">
+    <h2>42 World Heritage Sites (as of 2023)</h2>
+    <div class="highlight">India ranks 6th globally in number of UNESCO WHS. Of the 42 sites, <strong>34 are Cultural, 7 are Natural, 1 is Mixed</strong> (Khangchendzonga NP).</div>
+    <table>
+      <tr><th>S.No.</th><th>Site</th><th>State</th><th>Year</th><th>Type</th></tr>
+      <tr><td>1</td><td>Ajanta Caves</td><td>Maharashtra</td><td>1983</td><td>Cultural</td></tr>
+      <tr><td>2</td><td>Ellora Caves</td><td>Maharashtra</td><td>1983</td><td>Cultural</td></tr>
+      <tr><td>3</td><td>Agra Fort</td><td>Uttar Pradesh</td><td>1983</td><td>Cultural</td></tr>
+      <tr><td>4</td><td>Taj Mahal</td><td>Uttar Pradesh</td><td>1983</td><td>Cultural</td></tr>
+      <tr><td>5</td><td>Sun Temple, Konark</td><td>Odisha</td><td>1984</td><td>Cultural</td></tr>
+      <tr><td>6</td><td>Mahabalipuram Group of Monuments</td><td>Tamil Nadu</td><td>1984</td><td>Cultural</td></tr>
+      <tr><td>7</td><td>Kaziranga National Park</td><td>Assam</td><td>1985</td><td>Natural</td></tr>
+      <tr><td>8</td><td>Keoladeo National Park</td><td>Rajasthan</td><td>1985</td><td>Natural</td></tr>
+      <tr><td>9</td><td>Manas Wildlife Sanctuary</td><td>Assam</td><td>1985</td><td>Natural</td></tr>
+      <tr><td>10</td><td>Churches &amp; Convents of Goa</td><td>Goa</td><td>1986</td><td>Cultural</td></tr>
+      <tr><td>11</td><td>Hampi Group of Monuments (Vijayanagara)</td><td>Karnataka</td><td>1986</td><td>Cultural</td></tr>
+      <tr><td>12</td><td>Fatehpur Sikri</td><td>Uttar Pradesh</td><td>1986</td><td>Cultural</td></tr>
+      <tr><td>13</td><td>Group of Monuments at Pattadakal</td><td>Karnataka</td><td>1987</td><td>Cultural</td></tr>
+      <tr><td>14</td><td>Elephanta Caves</td><td>Maharashtra</td><td>1987</td><td>Cultural</td></tr>
+      <tr><td>15</td><td>Great Living Chola Temples</td><td>Tamil Nadu</td><td>1987/2004</td><td>Cultural</td></tr>
+      <tr><td>16</td><td>Sundarbans National Park</td><td>West Bengal</td><td>1987</td><td>Natural</td></tr>
+      <tr><td>17</td><td>Nanda Devi &amp; Valley of Flowers NP</td><td>Uttarakhand</td><td>1988/2005</td><td>Natural</td></tr>
+      <tr><td>18</td><td>Buddhist Monuments at Sanchi</td><td>Madhya Pradesh</td><td>1989</td><td>Cultural</td></tr>
+      <tr><td>19</td><td>Humayun's Tomb</td><td>Delhi</td><td>1993</td><td>Cultural</td></tr>
+      <tr><td>20</td><td>Qutb Minar &amp; its Monuments</td><td>Delhi</td><td>1993</td><td>Cultural</td></tr>
+      <tr><td>21</td><td>Mountain Railways of India</td><td>WB / TN / HP</td><td>1999/2005/2008</td><td>Cultural</td></tr>
+      <tr><td>22</td><td>Mahabodhi Temple Complex, Bodh Gaya</td><td>Bihar</td><td>2002</td><td>Cultural</td></tr>
+      <tr><td>23</td><td>Rock Shelters of Bhimbetka</td><td>Madhya Pradesh</td><td>2003</td><td>Cultural</td></tr>
+      <tr><td>24</td><td>Champaner-Pavagadh Archaeological Park</td><td>Gujarat</td><td>2004</td><td>Cultural</td></tr>
+      <tr><td>25</td><td>Chhatrapati Shivaji Terminus (VT)</td><td>Maharashtra</td><td>2004</td><td>Cultural</td></tr>
+      <tr><td>26</td><td>Red Fort Complex</td><td>Delhi</td><td>2007</td><td>Cultural</td></tr>
+      <tr><td>27</td><td>Jantar Mantar, Jaipur</td><td>Rajasthan</td><td>2010</td><td>Cultural</td></tr>
+      <tr><td>28</td><td>Western Ghats</td><td>Multi-state</td><td>2012</td><td>Natural</td></tr>
+      <tr><td>29</td><td>Hill Forts of Rajasthan</td><td>Rajasthan</td><td>2013</td><td>Cultural</td></tr>
+      <tr><td>30</td><td>Great Himalayan National Park</td><td>Himachal Pradesh</td><td>2014</td><td>Natural</td></tr>
+      <tr><td>31</td><td>Rani-ki-Vav, Patan</td><td>Gujarat</td><td>2014</td><td>Cultural</td></tr>
+      <tr><td>32</td><td>Archaeological Site of Nalanda Mahavihara</td><td>Bihar</td><td>2016</td><td>Cultural</td></tr>
+      <tr><td>33</td><td>Khangchendzonga National Park</td><td>Sikkim</td><td>2016</td><td>Mixed</td></tr>
+      <tr><td>34</td><td>The Architectural Work of Le Corbusier (Chandigarh Capitol Complex)</td><td>Chandigarh</td><td>2016</td><td>Cultural</td></tr>
+      <tr><td>35</td><td>Historic City of Ahmadabad</td><td>Gujarat</td><td>2017</td><td>Cultural</td></tr>
+      <tr><td>36</td><td>Victorian Gothic &amp; Art Deco Ensembles of Mumbai</td><td>Maharashtra</td><td>2018</td><td>Cultural</td></tr>
+      <tr><td>37</td><td>Jaipur City (Pink City)</td><td>Rajasthan</td><td>2019</td><td>Cultural</td></tr>
+      <tr><td>38</td><td>Ramappa Temple (Rudresvara Temple), Palampet</td><td>Telangana</td><td>2021</td><td>Cultural</td></tr>
+      <tr><td>39</td><td>Dholavira: A Harappan City</td><td>Gujarat</td><td>2021</td><td>Cultural</td></tr>
+      <tr><td>40</td><td>Hoysala Sacred Ensembles (Belur, Halebid, Somnathapura)</td><td>Karnataka</td><td>2023</td><td>Cultural</td></tr>
+      <tr><td>41</td><td>Sacred Ensembles of the Hoysalas</td><td>Karnataka</td><td>2023</td><td>Cultural</td></tr>
+      <tr><td>42</td><td>Santiniketan (Visva-Bharati)</td><td>West Bengal</td><td>2023</td><td>Cultural</td></tr>
+    </table>
+
+    <div class="highlight"><strong>Key Notes:</strong> India's first UNESCO WHS was <strong>Ajanta, Ellora, Agra Fort, and Taj Mahal</strong> — all inscribed in 1983. Khangchendzonga NP is India's only <strong>Mixed</strong> site. Western Ghats is India's only natural site spanning 4 states (Gujarat, Maharashtra, Goa, Kerala, Karnataka, Tamil Nadu). Mountain Railways comprises Darjeeling, Nilgiri, and Kalka-Shimla railways.</div>
+  </div>
+</section>
+
+<!-- MCQ PRACTICE -->
+<section class="page" id="pg-mcq">
+  <h2 class="section-title">❓ MCQ Practice</h2>
+
+  <div class="mcq-box">
+    <p>Q1. Which classical dance form was created by the Vaishnava saint Sankardeva in the 15th–16th century and originates from monasteries (Satras) of Assam?</p>
+    <label class="mcq-opt"><input type="radio" name="q1" value="A"> A) Manipuri</label>
+    <label class="mcq-opt"><input type="radio" name="q1" value="B"> B) Odissi</label>
+    <label class="mcq-opt"><input type="radio" name="q1" value="C"> C) Sattriya</label>
+    <label class="mcq-opt"><input type="radio" name="q1" value="D"> D) Mohiniyattam</label>
+    <button onclick="checkMCQ(this,'C')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q2. The "Bani Thani" portrait, often called the "Indian Mona Lisa," belongs to which Rajput painting school?</p>
+    <label class="mcq-opt"><input type="radio" name="q2" value="A"> A) Mewar School</label>
+    <label class="mcq-opt"><input type="radio" name="q2" value="B"> B) Kishangarh School</label>
+    <label class="mcq-opt"><input type="radio" name="q2" value="C"> C) Kangra School</label>
+    <label class="mcq-opt"><input type="radio" name="q2" value="D"> D) Bundi School</label>
+    <button onclick="checkMCQ(this,'B')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q3. Which of the following UNESCO World Heritage Sites in India is classified as a MIXED site (both natural and cultural)?</p>
+    <label class="mcq-opt"><input type="radio" name="q3" value="A"> A) Western Ghats</label>
+    <label class="mcq-opt"><input type="radio" name="q3" value="B"> B) Sundarbans National Park</label>
+    <label class="mcq-opt"><input type="radio" name="q3" value="C"> C) Khangchendzonga National Park</label>
+    <label class="mcq-opt"><input type="radio" name="q3" value="D"> D) Nanda Devi National Park</label>
+    <button onclick="checkMCQ(this,'C')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q4. The Brihadeeswarar Temple at Thanjavur, a UNESCO World Heritage Site, was built by which dynasty?</p>
+    <label class="mcq-opt"><input type="radio" name="q4" value="A"> A) Pallava</label>
+    <label class="mcq-opt"><input type="radio" name="q4" value="B"> B) Chola</label>
+    <label class="mcq-opt"><input type="radio" name="q4" value="C"> C) Hoysala</label>
+    <label class="mcq-opt"><input type="radio" name="q4" value="D"> D) Rashtrakuta</label>
+    <button onclick="checkMCQ(this,'B')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q5. Kuchipudi classical dance form was created by:</p>
+    <label class="mcq-opt"><input type="radio" name="q5" value="A"> A) Rukmini Devi Arundale</label>
+    <label class="mcq-opt"><input type="radio" name="q5" value="B"> B) Siddhendra Yogi</label>
+    <label class="mcq-opt"><input type="radio" name="q5" value="C"> C) Guru Bipin Singh</label>
+    <label class="mcq-opt"><input type="radio" name="q5" value="D"> D) Vempati Chinna Satyam</label>
+    <button onclick="checkMCQ(this,'B')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q6. Which folk painting tradition from Bihar uses natural pigments including turmeric, soot, and cow dung on cloth or paper, and has a GI tag?</p>
+    <label class="mcq-opt"><input type="radio" name="q6" value="A"> A) Warli Art</label>
+    <label class="mcq-opt"><input type="radio" name="q6" value="B"> B) Pattachitra</label>
+    <label class="mcq-opt"><input type="radio" name="q6" value="C"> C) Madhubani / Mithila Painting</label>
+    <label class="mcq-opt"><input type="radio" name="q6" value="D"> D) Kalamkari</label>
+    <button onclick="checkMCQ(this,'C')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q7. The Kumbh Mela received UNESCO Intangible Cultural Heritage status in which year?</p>
+    <label class="mcq-opt"><input type="radio" name="q7" value="A"> A) 2010</label>
+    <label class="mcq-opt"><input type="radio" name="q7" value="B"> B) 2016</label>
+    <label class="mcq-opt"><input type="radio" name="q7" value="C"> C) 2017</label>
+    <label class="mcq-opt"><input type="radio" name="q7" value="D"> D) 2021</label>
+    <button onclick="checkMCQ(this,'C')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q8. Who was the first recipient of the Jnanpith Award (1965)?</p>
+    <label class="mcq-opt"><input type="radio" name="q8" value="A"> A) Rabindranath Tagore</label>
+    <label class="mcq-opt"><input type="radio" name="q8" value="B"> B) G. Sankara Kurup (Malayalam)</label>
+    <label class="mcq-opt"><input type="radio" name="q8" value="C"> C) Geetanjali Shree (Hindi)</label>
+    <label class="mcq-opt"><input type="radio" name="q8" value="D"> D) Munshi Premchand (Hindi)</label>
+    <button onclick="checkMCQ(this,'B')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q9. The Ajanta caves (declared UNESCO World Heritage in 1983) are famous for paintings primarily depicting:</p>
+    <label class="mcq-opt"><input type="radio" name="q9" value="A"> A) Hindu mythological scenes from Ramayana and Mahabharata</label>
+    <label class="mcq-opt"><input type="radio" name="q9" value="B"> B) Jataka tales (stories of the Buddha's previous lives) using tempera technique</label>
+    <label class="mcq-opt"><input type="radio" name="q9" value="C"> C) Prehistoric cave art from Stone Age</label>
+    <label class="mcq-opt"><input type="radio" name="q9" value="D"> D) Mughal-era court scenes</label>
+    <button onclick="checkMCQ(this,'B')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q10. Adi Shankaracharya's philosophy of Advaita Vedanta holds that:</p>
+    <label class="mcq-opt"><input type="radio" name="q10" value="A"> A) Brahman and the individual soul are eternally distinct (Dvaita)</label>
+    <label class="mcq-opt"><input type="radio" name="q10" value="B"> B) Individual souls are related to but part of Brahman (Vishishtadvaita)</label>
+    <label class="mcq-opt"><input type="radio" name="q10" value="C"> C) Brahman = Atman; the world is Maya (illusion)</label>
+    <label class="mcq-opt"><input type="radio" name="q10" value="D"> D) Salvation comes only through ritual sacrifice (Purva Mimamsa)</label>
+    <button onclick="checkMCQ(this,'C')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+</section>
+
+</div><!-- #main -->
+<footer id="site-footer">
+  <div class="footer-bottom">
+    <span>© 2025 Exam Preparation System</span>
+    <span class="footer-author">by Vikash Pandey</span>
+  </div>
+</footer>
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+function toggleTheme(){var r=document.documentElement;var next=r.getAttribute('data-theme')==='dark'?'light':'dark';if(next==='light')r.removeAttribute('data-theme');else r.setAttribute('data-theme',next);localStorage.setItem('eps-theme',next);}
+function toggleSidebar(){var sb=document.getElementById('sidebar'),m=document.getElementById('main'),f=document.getElementById('site-footer');sb.classList.toggle('closed');sb.classList.toggle('open');if(sb.classList.contains('closed')){m.classList.add('full');if(f)f.classList.add('full');}else{m.classList.remove('full');if(f)f.classList.remove('full');}}
+function showPage(id){document.querySelectorAll('.page').forEach(function(p){p.classList.remove('active');});document.querySelectorAll('.sb-item').forEach(function(i){i.classList.remove('active');});var pg=document.getElementById('pg-'+id);if(pg)pg.classList.add('active');if(event&&event.currentTarget)event.currentTarget.classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}
+function checkMCQ(btn,correct){var box=btn.closest('.mcq-box');var sel=box.querySelector('input:checked');if(!sel){alert('Please select an answer!');return;}var ans=box.querySelector('.mcq-ans');ans.style.display='block';if(sel.value===correct){ans.className='mcq-ans correct';ans.textContent='✅ Correct! '+correct;}else{ans.className='mcq-ans wrong';ans.textContent='❌ Wrong. Correct answer: '+correct;}}
+</script>
+<script>
+(function(){
+  var t=localStorage.getItem('eps-theme')||'light';
+  var btn=document.getElementById('theme-btn');
+  if(btn)btn.textContent=t==='dark'?'☀️ Light':'🌙 Dark';
+  var _ot=window.toggleTheme;
+  window.toggleTheme=function(){if(_ot)_ot();var cur=document.documentElement.getAttribute('data-theme');if(btn)btn.textContent=cur==='dark'?'☀️ Light':'🌙 Dark';};
+  var _os=window.toggleSidebar;
+  window.toggleSidebar=function(){if(_os)_os();var sb=document.getElementById('sidebar'),hbg=document.getElementById('hamburger');if(hbg&&sb)hbg.classList.toggle('open',!sb.classList.contains('closed'));};
+  window.addEventListener('scroll',function(){var docH=document.documentElement.scrollHeight-window.innerHeight;var pct=docH>0?(window.scrollY/docH*100).toFixed(1):0;var sp=document.getElementById('scroll-progress');if(sp)sp.style.width=pct+'%';},{passive:true});
+  window.addEventListener('scroll',function(){var btn2=document.getElementById('btt');if(btn2)btn2.classList.toggle('show',window.scrollY>300);},{passive:true});
+  var si=document.getElementById('search-input'),sr=document.getElementById('search-results');
+  if(!si||!sr)return;
+  var idx=[];
+  document.querySelectorAll('#sidebar .sb-item').forEach(function(el){idx.push({text:el.textContent.trim(),el:el,type:'nav'});});
+  document.querySelectorAll('#main h2,#main h3').forEach(function(el){idx.push({text:el.textContent.trim(),el:el,type:'head'});});
+  si.addEventListener('input',function(){
+    var q=this.value.toLowerCase().trim();
+    if(!q){sr.style.display='none';return;}
+    var hits=idx.filter(function(x){return x.text.toLowerCase().includes(q);}).slice(0,8);
+    if(!hits.length){sr.style.display='none';return;}
+    sr.innerHTML=hits.map(function(h){return '<div class="sr-item">'+h.text+'</div>';}).join('');
+    sr.style.display='block';
+    sr.querySelectorAll('.sr-item').forEach(function(item,i){
+      item.onclick=function(){
+        var h=hits[i];
+        if(h.type==='nav'){h.el.click();}
+        else{var sec=h.el.closest('.page');if(sec){var id=sec.id.replace('pg-','');var sb2=Array.from(document.querySelectorAll('.sb-item')).find(function(el){return el.getAttribute('onclick')&&el.getAttribute('onclick').includes("'"+id+"'");});if(sb2)sb2.click();}setTimeout(function(){h.el.scrollIntoView({behavior:'smooth',block:'center'});},200);}
+        sr.style.display='none';si.value='';
+      };
+    });
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();si.focus();}if(e.key==='Escape'){sr.style.display='none';si.value='';}});
+  document.addEventListener('click',function(e){if(!e.target.closest('#search-bar'))sr.style.display='none';});
+  (function(){var p=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.page-links a').forEach(function(a){if(a.getAttribute('href')===p)a.classList.add('current');});})();
+})();
+</script>
+</body>
+</html>

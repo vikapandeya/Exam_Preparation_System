@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Environment & Ecology — Biodiversity, Climate Change, Pollution, Environmental Laws, National Parks for UPSC, SSC, State PSC. By Vikash Pandey.">
+<meta name="author" content="Vikash Pandey">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+<title>Environment & Ecology — Exam Preparation System</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>(function(){var t=localStorage.getItem('eps-theme');if(t)document.documentElement.setAttribute('data-theme',t);})()</script>
+<style>
+:root{--primary:#059669;--secondary:#0d9488;--bg:#f0fdf4;--surface:#ffffff;--surface2:#dcfce7;--border:#a7f3d0;--text:#1e293b;--muted:#64748b;--sidebar:260px;--hdr:64px;--radius:12px;--shadow:0 4px 24px rgba(5,150,105,.08);--sb-active-bg:rgba(5,150,105,.1);--hl-bg:rgba(5,150,105,.06);}
+[data-theme="dark"]{--bg:#0a1a14;--surface:#111e17;--surface2:#162b20;--border:#1a3327;--text:#f1f5f9;--muted:#94a3b8;--shadow:0 4px 24px rgba(0,0,0,.4);}
+*{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;transition:background .3s,color .3s;}
+::-webkit-scrollbar{width:6px;}::-webkit-scrollbar-thumb{background:var(--primary);border-radius:99px;}
+.page-links{display:flex;flex-wrap:nowrap;gap:6px;align-items:center;overflow-x:auto;scrollbar-width:none;-webkit-mask-image:linear-gradient(to right,#000 85%,transparent);mask-image:linear-gradient(to right,#000 85%,transparent);}
+.page-links::-webkit-scrollbar{display:none;}
+.page-links a{font-size:.7rem;color:var(--text);background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:4px 10px;text-decoration:none;transition:all .2s;font-weight:500;white-space:nowrap;}
+.page-links a:hover,.page-links a.current{background:var(--primary);color:#fff;border-color:var(--primary);}
+#sub-nav{position:fixed;top:var(--hdr);left:0;right:0;z-index:999;background:var(--surface);border-bottom:1px solid var(--border);padding:8px 1rem;}
+#header{position:fixed;top:0;left:0;right:0;height:var(--hdr);background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 1rem;gap:1rem;z-index:1000;}
+#hamburger{background:none;border:none;cursor:pointer;display:flex;flex-direction:column;gap:4px;padding:4px;}
+#hamburger span{display:block;width:22px;height:2px;background:var(--text);border-radius:2px;transition:transform .25s,opacity .25s;}
+#hamburger.open span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+#hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0);}
+#hamburger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+#logo{display:flex;align-items:center;gap:.5rem;font-weight:800;font-size:1.05rem;text-decoration:none;color:var(--text);}
+#logo .grd{background:linear-gradient(135deg,var(--primary),var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.header-right{margin-left:auto;display:flex;align-items:center;gap:.75rem;}
+#theme-btn{background:none;border:1.5px solid var(--border);border-radius:99px;padding:.35rem .8rem;cursor:pointer;font-size:.85rem;color:var(--text);transition:.2s;}
+#sidebar{position:fixed;top:calc(var(--hdr) + 44px);left:0;bottom:0;width:var(--sidebar);background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;transition:.3s;z-index:900;padding-bottom:2rem;}
+#sidebar.closed{transform:translateX(calc(-1 * var(--sidebar)));}
+.sb-section{padding:.5rem 0;}.sb-heading{padding:.5rem 1.2rem;font-size:.72rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;}
+.sb-item{display:flex;align-items:center;gap:.65rem;padding:.55rem 1.2rem;cursor:pointer;font-size:.85rem;transition:.15s;color:var(--text);border-left:3px solid transparent;}
+.sb-item:hover{background:var(--surface2);}
+.sb-item.active{background:var(--sb-active-bg);border-left-color:var(--primary);color:var(--primary);font-weight:600;}
+.sb-divider{height:1px;background:var(--border);margin:.3rem 0;}
+#main{margin-left:var(--sidebar);margin-top:calc(var(--hdr) + 44px);padding:2rem;transition:margin-left .3s;}
+#main.full{margin-left:0;}
+.page{display:none;animation:fadeIn .3s ease;}.page.active{display:block;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);}}
+.hero{border-radius:20px;padding:3rem 2.5rem;color:#fff;margin-bottom:2rem;background:linear-gradient(135deg,#064e3b 0%,#065f46 40%,#0f172a 100%);}
+.hero h1{font-size:clamp(1.6rem,3.5vw,2.5rem);font-weight:800;margin-bottom:.8rem;}
+.hero h1 span{background:linear-gradient(90deg,#6ee7b7,#34d399,#a7f3d0);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.hero p{font-size:.95rem;opacity:.85;max-width:580px;}
+.hero-stats{display:flex;gap:2rem;flex-wrap:wrap;margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,.15);}
+.hero-stat .num{font-size:1.6rem;font-weight:800;background:linear-gradient(90deg,#6ee7b7,#34d399);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.hero-stat .lbl{font-size:.78rem;opacity:.7;}
+.section-title{font-size:1.3rem;font-weight:700;margin-bottom:1.25rem;display:flex;align-items:center;gap:.5rem;}
+.section-title::after{content:'';flex:1;height:2px;background:linear-gradient(90deg,var(--primary),transparent);margin-left:.5rem;}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.25rem;}
+.card h2{font-size:1.1rem;font-weight:700;margin-bottom:.75rem;color:var(--primary);}
+.card h3{font-size:.95rem;font-weight:700;margin:.75rem 0 .4rem;}
+.card p,.card li{font-size:.88rem;line-height:1.7;margin-bottom:.4rem;}
+.card ul{padding-left:1.2rem;}
+table{width:100%;border-collapse:collapse;font-size:.84rem;margin:.5rem 0 1rem;}
+th{background:var(--primary);color:#fff;padding:.55rem .75rem;text-align:left;font-weight:600;}
+td{padding:.5rem .75rem;border-bottom:1px solid var(--border);}
+tr:nth-child(even) td{background:var(--surface2);}
+.highlight{background:var(--hl-bg);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1rem 1.25rem;margin:.75rem 0;font-size:.88rem;}
+.badge{display:inline-block;padding:.2rem .55rem;border-radius:99px;font-size:.72rem;font-weight:600;background:rgba(5,150,105,.12);color:var(--primary);}
+.mcq-box{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;margin-bottom:1rem;}
+.mcq-box p{font-size:.9rem;font-weight:600;margin-bottom:.75rem;}
+.mcq-opt{display:flex;align-items:center;gap:.6rem;padding:.45rem .6rem;border-radius:8px;cursor:pointer;font-size:.87rem;transition:.15s;}
+.mcq-opt:hover{background:var(--surface2);}
+.mcq-opt input{accent-color:var(--primary);}
+.mcq-ans{display:none;margin-top:.75rem;padding:.65rem 1rem;border-radius:8px;font-size:.85rem;font-weight:600;}
+.mcq-ans.correct{background:rgba(16,185,129,.12);color:#065f46;}
+.mcq-ans.wrong{background:rgba(239,68,68,.1);color:#991b1b;}
+#btt{position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;border-radius:50%;background:var(--primary);color:#fff;border:none;font-size:1.2rem;cursor:pointer;display:none;align-items:center;justify-content:center;z-index:800;}
+#btt.show{display:flex;}
+#site-footer{background:var(--surface);border-top:1px solid var(--border);margin-left:var(--sidebar);transition:margin-left .3s;padding:2rem;}
+#main.full~#site-footer,#site-footer.full{margin-left:0;}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;font-size:.8rem;color:var(--muted);}
+.footer-author{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;padding:.35rem .9rem;border-radius:99px;font-size:.82rem;font-weight:600;}
+/* Header enhancements */
+#scroll-progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--primary),var(--secondary));z-index:2000;transition:width .1s linear;width:0%;}
+#creator-badge{display:flex;align-items:center;gap:.4rem;font-size:.75rem;font-weight:600;color:var(--muted);white-space:nowrap;}
+#creator-badge .cb-dot{width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--secondary));animation:pulse-dot 2s ease-in-out infinite;}
+@keyframes pulse-dot{0%,100%{transform:scale(1);opacity:1;}50%{transform:scale(1.4);opacity:.7;}}
+#search-bar{flex:1;max-width:400px;position:relative;}
+#search-bar input{width:100%;padding:.5rem 2.6rem .5rem 2.6rem;border:1.5px solid var(--border);border-radius:99px;background:var(--surface2);color:var(--text);font-size:.9rem;outline:none;transition:.2s;}
+#search-bar input:focus{border-color:var(--primary);}
+#search-bar .ico{position:absolute;left:.8rem;top:50%;transform:translateY(-50%);color:var(--muted);}
+#search-bar .kbd-hint{position:absolute;right:.75rem;top:50%;transform:translateY(-50%);font-size:.7rem;background:var(--border);color:var(--muted);padding:.1rem .4rem;border-radius:4px;pointer-events:none;}
+#search-results{position:absolute;top:calc(100% + 6px);left:0;right:0;background:var(--surface);border:1px solid var(--border);border-radius:10px;box-shadow:0 4px 24px rgba(0,0,0,.12);max-height:300px;overflow-y:auto;z-index:2000;display:none;}
+#search-results .sr-item{padding:.65rem 1rem;cursor:pointer;font-size:.88rem;border-bottom:1px solid var(--border);transition:.15s;}
+#search-results .sr-item:hover{background:var(--surface2);}
+#progress-pill{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;border-radius:99px;padding:.3rem .85rem;font-size:.8rem;font-weight:600;cursor:pointer;white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center;gap:.3rem;}
+.page table{display:block;overflow-x:auto;}
+@media(max-width:768px){#sidebar{transform:translateX(calc(-1 * var(--sidebar)));} #sidebar.open{transform:translateX(0);} #main,#site-footer{margin-left:0;} #sub-nav{display:none;}}
+@media(max-width:640px){#creator-badge{display:none;}}
+@media(max-width:480px){#search-bar{display:none;} #progress-pill{display:none;}}
+</style>
+</head>
+<body>
+<div id="scroll-progress"></div>
+<header id="header">
+  <button id="hamburger" onclick="toggleSidebar()" aria-label="Menu"><span></span><span></span><span></span></button>
+  <a href="index.html" id="logo">🌿 <span class="grd">Environment & Ecology</span></a>
+  <div id="creator-badge"><span class="cb-dot"></span>by Vikash Pandey</div>
+  <div id="search-bar"><span class="ico">🔍</span><input type="text" id="search-input" placeholder="Search topics…" autocomplete="off"><span class="kbd-hint">/</span><div id="search-results"></div></div>
+  <div class="header-right">
+    <a href="study-dashboard.html" id="progress-pill">📊 Progress</a>
+    <button id="theme-btn" onclick="toggleTheme()">🌙 Dark</button>
+  </div>
+</header>
+<div id="sub-nav"><div class="page-links">
+    <a href="index.html">🏠 Home</a>
+    <a href="Science.html">🔬 Science</a>
+    <a href="Computer.html">💻 Computer</a>
+    <a href="Current_Affairs.html">📰 Current Affairs</a>
+    <a href="Exam_Updates.html">📢 Exam Updates</a>
+    <a href="english-grammar-mastery.html">📝 English</a>
+    <a href="Hindi_Grammar.html">📖 हिंदी व्याकरण</a>
+    <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html">🧮 Maths</a>
+    <a href="Indian_Polity.html">⚖️ Polity</a>
+    <a href="Indian_History.html">🏛️ History</a>
+    <a href="Indian_Geography.html">🗺️ Geography</a>
+    <a href="Static_GK.html">🌍 Static GK</a>
+    <a href="Indian_Economy.html">💰 Economy</a>
+    <a href="Bihar_Special_GK.html">🌾 Bihar GK</a>
+    <a href="Reasoning_Guide.html">🧠 Reasoning</a>
+    <a href="Syllabus.html">📋 Syllabus</a>
+    <a href="Environment_Ecology.html">🌿 Environment</a>
+    <a href="Banking_Awareness.html">🏦 Banking</a>
+    <a href="Art_Culture.html">🎨 Art & Culture</a>
+    <a href="UP_Special_GK.html">🌺 UP GK</a>
+    <a href="Rajasthan_GK.html">🏜️ Rajasthan GK</a>
+    <a href="MP_GK.html">🦁 MP GK</a>
+</div></div>
+<nav id="sidebar">
+  <div class="sb-section">
+    <div class="sb-heading">Fundamentals</div>
+    <div class="sb-item active" onclick="showPage('home')">🌍 Overview</div>
+    <div class="sb-item" onclick="showPage('ecology')">🌿 Ecology Basics</div>
+    <div class="sb-item" onclick="showPage('biodiversity')">🦋 Biodiversity</div>
+    <div class="sb-item" onclick="showPage('climate')">🌡️ Climate Change</div>
+  </div>
+  <div class="sb-divider"></div>
+  <div class="sb-section">
+    <div class="sb-heading">Environment</div>
+    <div class="sb-item" onclick="showPage('pollution')">💨 Pollution</div>
+    <div class="sb-item" onclick="showPage('forests')">🌲 Forests & Wildlife</div>
+    <div class="sb-item" onclick="showPage('parks')">🏞️ National Parks</div>
+  </div>
+  <div class="sb-divider"></div>
+  <div class="sb-section">
+    <div class="sb-heading">Policy & Law</div>
+    <div class="sb-item" onclick="showPage('laws')">⚖️ Environmental Laws</div>
+    <div class="sb-item" onclick="showPage('international')">🌐 International Agreements</div>
+  </div>
+  <div class="sb-divider"></div>
+  <div class="sb-section">
+    <div class="sb-heading">Practice</div>
+    <div class="sb-item" onclick="showPage('mcq')">❓ MCQ Practice</div>
+  </div>
+</nav>
+<div id="main">
+
+<!-- HOME -->
+<section class="page active" id="pg-home">
+  <div class="hero">
+    <h1>Environment & Ecology<br><span>Biodiversity · Climate · Conservation</span></h1>
+    <p>Complete environment guide for UPSC GS Paper III, SSC CGL, State PSC and all competitive exams.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="num">4</div><div class="lbl">Biodiversity Hotspots in India</div></div>
+      <div class="hero-stat"><div class="num">106</div><div class="lbl">National Parks in India</div></div>
+      <div class="hero-stat"><div class="num">75+</div><div class="lbl">Ramsar Wetland Sites</div></div>
+      <div class="hero-stat"><div class="num">53</div><div class="lbl">Tiger Reserves</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <h2>🎯 Quick Revision — Top Facts</h2>
+    <table>
+      <tr><th>Topic</th><th>Key Fact</th></tr>
+      <tr><td>Biodiversity Hotspots (India)</td><td>Eastern Himalayas, Western Ghats, Indo-Burma, Sundaland</td></tr>
+      <tr><td>India's Forest Cover</td><td>21.71% of geographical area (FSI 2021)</td></tr>
+      <tr><td>Largest NP (India)</td><td>Hemis NP, Ladakh</td></tr>
+      <tr><td>Most Tiger Reserves</td><td>Madhya Pradesh (7)</td></tr>
+      <tr><td>Stockholm Conference</td><td>1972 — World Environment Day (June 5)</td></tr>
+      <tr><td>Paris Agreement</td><td>2015 — limit warming to 1.5°C above pre-industrial</td></tr>
+      <tr><td>Montreal Protocol</td><td>1987 — phase out ozone-depleting substances</td></tr>
+      <tr><td>Ramsar Convention</td><td>1971 — wetlands of international importance</td></tr>
+      <tr><td>CITES</td><td>1973 — trade in endangered species</td></tr>
+      <tr><td>CBD</td><td>1992 Rio — biological diversity conservation</td></tr>
+      <tr><td>EPA India</td><td>Environment Protection Act, 1986</td></tr>
+      <tr><td>Wildlife Protection Act</td><td>1972 — schedules I–VI</td></tr>
+      <tr><td>IUCN HQ</td><td>Gland, Switzerland</td></tr>
+      <tr><td>UNEP HQ</td><td>Nairobi, Kenya</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ECOLOGY BASICS -->
+<section class="page" id="pg-ecology">
+  <h2 class="section-title">🌿 Ecology Basics</h2>
+  <div class="card">
+    <h2>Ecosystem Components</h2>
+    <p><strong>Biotic:</strong> Producers (autotrophs), Consumers (herbivore/carnivore/omnivore), Decomposers (fungi, bacteria)</p>
+    <p><strong>Abiotic:</strong> Temperature, water, sunlight, soil, wind, minerals</p>
+    <h3>Food Chain & Food Web</h3>
+    <p>Food chain = linear transfer of energy. Food web = interconnected food chains (more stable).</p>
+    <p><strong>Trophic Levels:</strong> Producers (T1) → Primary consumers (T2) → Secondary (T3) → Tertiary (T4)</p>
+    <p><strong>10% Law (Lindemann):</strong> Only 10% energy transferred to next trophic level.</p>
+    <h3>Ecological Pyramids</h3>
+    <table>
+      <tr><th>Pyramid</th><th>Always Upright?</th><th>Exception</th></tr>
+      <tr><td>Numbers</td><td>No</td><td>Inverted in tree ecosystem (parasites)</td></tr>
+      <tr><td>Biomass</td><td>No</td><td>Inverted in aquatic (phytoplankton)</td></tr>
+      <tr><td>Energy</td><td>Always upright</td><td>No exception</td></tr>
+    </table>
+    <h3>Biogeochemical Cycles</h3>
+    <ul>
+      <li><strong>Carbon cycle:</strong> Photosynthesis (sink), Respiration/Combustion (source), Oceans as carbon sink</li>
+      <li><strong>Nitrogen cycle:</strong> N₂ fixation → Nitrification → Assimilation → Ammonification → Denitrification</li>
+      <li><strong>Water cycle:</strong> Evaporation → Condensation → Precipitation → Run-off</li>
+      <li><strong>Phosphorus cycle:</strong> Sedimentary cycle — no atmospheric phase</li>
+    </ul>
+    <h3>Ecological Succession</h3>
+    <p><strong>Primary:</strong> Bare rock/new area (pioneer = lichens). <strong>Secondary:</strong> Disturbed area with soil. Culminates in <em>climax community</em> (stable).</p>
+    <h3>Biomes</h3>
+    <table>
+      <tr><th>Biome</th><th>Characteristics</th><th>Example</th></tr>
+      <tr><td>Tropical Rainforest</td><td>High rainfall, biodiversity-rich</td><td>Amazon, Congo, NE India</td></tr>
+      <tr><td>Savanna</td><td>Seasonal rainfall, grassland + trees</td><td>Africa</td></tr>
+      <tr><td>Desert</td><td>&lt;250mm rain/year</td><td>Thar, Sahara</td></tr>
+      <tr><td>Temperate Forest</td><td>Deciduous trees, 4 seasons</td><td>Europe, Eastern USA</td></tr>
+      <tr><td>Taiga (Boreal)</td><td>Coniferous trees, long winters</td><td>Canada, Russia</td></tr>
+      <tr><td>Tundra</td><td>Permafrost, treeless</td><td>Arctic, Himalayas (alpine)</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- BIODIVERSITY -->
+<section class="page" id="pg-biodiversity">
+  <h2 class="section-title">🦋 Biodiversity</h2>
+  <div class="card">
+    <h2>Types of Biodiversity</h2>
+    <ul>
+      <li><strong>Genetic diversity:</strong> Variation within a species (e.g., rice varieties)</li>
+      <li><strong>Species diversity:</strong> Variety of species in a region</li>
+      <li><strong>Ecosystem diversity:</strong> Variety of habitats and ecosystems</li>
+    </ul>
+    <h3>India's Biodiversity</h3>
+    <p>India = megadiverse country (one of 17). Covers 2.4% land area but has 7–8% of world's species.</p>
+    <ul>
+      <li>~45,000 plant species, ~91,000 animal species recorded</li>
+      <li>Endemism: ~33% plants, many reptiles and amphibians</li>
+    </ul>
+    <h3>Biodiversity Hotspots in India (4)</h3>
+    <table>
+      <tr><th>Hotspot</th><th>Area</th><th>Key Features</th></tr>
+      <tr><td>Eastern Himalayas</td><td>NE India, Bhutan, Nepal, S China</td><td>Snow leopard, red panda, orchids</td></tr>
+      <tr><td>Western Ghats</td><td>Kerala to Gujarat coast</td><td>Lion-tailed macaque, Nilgiri tahr, high endemism</td></tr>
+      <tr><td>Indo-Burma</td><td>NE India, Myanmar, SE Asia</td><td>Irrawaddy dolphin, Siamese crocodile</td></tr>
+      <tr><td>Sundaland</td><td>Andaman & Nicobar (Indian part)</td><td>Saltwater crocodile, unique coral reefs</td></tr>
+    </table>
+    <h3>IUCN Red List Categories</h3>
+    <table>
+      <tr><th>Category</th><th>Abbreviation</th><th>Example</th></tr>
+      <tr><td>Extinct</td><td>EX</td><td>Dodo, Passenger Pigeon</td></tr>
+      <tr><td>Extinct in Wild</td><td>EW</td><td>Scimitar-horned Oryx</td></tr>
+      <tr><td>Critically Endangered</td><td>CR</td><td>Great Indian Bustard, Asiatic Cheetah</td></tr>
+      <tr><td>Endangered</td><td>EN</td><td>Tiger, Asiatic Lion, Snow Leopard</td></tr>
+      <tr><td>Vulnerable</td><td>VU</td><td>Polar Bear, Nilgiri Tahr</td></tr>
+      <tr><td>Near Threatened</td><td>NT</td><td>Dhole (Indian Wild Dog)</td></tr>
+      <tr><td>Least Concern</td><td>LC</td><td>Common Crow</td></tr>
+    </table>
+    <h3>Threats to Biodiversity</h3>
+    <p>Remember: <strong>HIPPO</strong> — Habitat loss, Invasive species, Pollution, Population (human), Overexploitation</p>
+    <div class="highlight">India's National Biodiversity Authority (NBA) under Biological Diversity Act 2002 regulates access to biological resources.</div>
+  </div>
+</section>
+
+<!-- CLIMATE CHANGE -->
+<section class="page" id="pg-climate">
+  <h2 class="section-title">🌡️ Climate Change</h2>
+  <div class="card">
+    <h2>Greenhouse Effect</h2>
+    <p>Solar radiation passes through atmosphere → Earth absorbs and re-emits infrared → GHGs trap heat → Natural warming (necessary). <strong>Enhanced GHE = Global Warming.</strong></p>
+    <h3>Key Greenhouse Gases (GWP — 100-year)</h3>
+    <table>
+      <tr><th>Gas</th><th>GWP</th><th>Main Source</th><th>Lifetime</th></tr>
+      <tr><td>CO₂</td><td>1 (baseline)</td><td>Fossil fuels, deforestation</td><td>100s of years</td></tr>
+      <tr><td>CH₄ (Methane)</td><td>21–25</td><td>Livestock, rice paddies, landfills</td><td>~12 years</td></tr>
+      <tr><td>N₂O</td><td>298</td><td>Fertilizers, combustion</td><td>~114 years</td></tr>
+      <tr><td>HFCs</td><td>12,000+</td><td>AC, refrigerants</td><td>15 years</td></tr>
+      <tr><td>SF₆</td><td>22,800</td><td>Electrical equipment</td><td>3,200 years</td></tr>
+    </table>
+    <h3>IPCC (Intergovernmental Panel on Climate Change)</h3>
+    <p>Founded 1988 by WMO + UNEP. HQ: Geneva. Publishes Assessment Reports every 6–7 years. AR6 (2021–22): warming is "unequivocal" human influence.</p>
+    <h3>Paris Agreement (2015)</h3>
+    <ul>
+      <li>Limit global warming to <strong>well below 2°C</strong>, preferably <strong>1.5°C</strong> above pre-industrial levels</li>
+      <li>Countries submit NDCs (Nationally Determined Contributions)</li>
+      <li>India's NDC: 45% reduction in emission intensity by 2030, 50% electricity from non-fossil by 2030, net zero by 2070</li>
+    </ul>
+    <h3>El Niño & La Niña</h3>
+    <p><strong>El Niño:</strong> Warming of central/eastern Pacific → drought in Australia, India; floods in Peru/Ecuador. Weakens Indian monsoon.</p>
+    <p><strong>La Niña:</strong> Cooling of Pacific → stronger Indian monsoon, floods in Australia.</p>
+    <div class="highlight">India declared State of Climate Emergency — Mission LiFE (Lifestyle for Environment) launched by PM Modi at COP26 (Glasgow 2021).</div>
+  </div>
+</section>
+
+<!-- POLLUTION -->
+<section class="page" id="pg-pollution">
+  <h2 class="section-title">💨 Pollution</h2>
+  <div class="card">
+    <h2>Air Pollution</h2>
+    <p><strong>AQI (Air Quality Index)</strong> — India uses 8 pollutants: PM10, PM2.5, NO₂, SO₂, CO, O₃, NH₃, Pb</p>
+    <table>
+      <tr><th>AQI Range</th><th>Category</th><th>Health Impact</th></tr>
+      <tr><td>0–50</td><td>Good</td><td>Minimal</td></tr>
+      <tr><td>51–100</td><td>Satisfactory</td><td>Minor breathing discomfort for sensitive people</td></tr>
+      <tr><td>101–200</td><td>Moderate</td><td>Breathing discomfort for asthma, lungs, heart patients</td></tr>
+      <tr><td>201–300</td><td>Poor</td><td>Breathing discomfort for most people</td></tr>
+      <tr><td>301–400</td><td>Very Poor</td><td>Respiratory illness on prolonged exposure</td></tr>
+      <tr><td>401–500</td><td>Severe</td><td>Healthy people affected; serious impact on vulnerable</td></tr>
+    </table>
+    <h3>Water Pollution</h3>
+    <ul>
+      <li><strong>BOD (Biochemical Oxygen Demand):</strong> O₂ needed to decompose organic matter. Higher BOD = more polluted.</li>
+      <li><strong>Eutrophication:</strong> Excess nutrients (N, P) → algal bloom → O₂ depletion → dead zone</li>
+      <li><strong>Biomagnification:</strong> Toxin concentration increases up food chain (DDT, mercury)</li>
+    </ul>
+    <h3>Soil Pollution</h3>
+    <p>Causes: Pesticides (DDT, BHC), heavy metals (Cd, Pb, Hg), industrial waste, plastic. Remediation: bioremediation (microbes), phytoremediation (plants like Vetiver grass).</p>
+    <h3>Major Incidents</h3>
+    <table>
+      <tr><th>Incident</th><th>Year</th><th>Cause</th></tr>
+      <tr><td>Bhopal Gas Tragedy</td><td>1984</td><td>Methyl isocyanate (MIC) leak from Union Carbide — worst industrial disaster</td></tr>
+      <tr><td>Chernobyl</td><td>1986</td><td>Nuclear reactor meltdown (Ukraine)</td></tr>
+      <tr><td>Fukushima</td><td>2011</td><td>Nuclear disaster after tsunami (Japan)</td></tr>
+      <tr><td>Minamata Disease</td><td>1956</td><td>Mercury poisoning (Japan)</td></tr>
+      <tr><td>Itai-Itai</td><td>1912</td><td>Cadmium poisoning from mining (Japan)</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- FORESTS & WILDLIFE -->
+<section class="page" id="pg-forests">
+  <h2 class="section-title">🌲 Forests & Wildlife</h2>
+  <div class="card">
+    <h2>Types of Forests in India</h2>
+    <table>
+      <tr><th>Type</th><th>Rainfall</th><th>Region</th><th>Example</th></tr>
+      <tr><td>Tropical Wet Evergreen</td><td>&gt;200 cm</td><td>NE India, W Ghats, A&N</td><td>Ebony, rosewood, mahogany</td></tr>
+      <tr><td>Tropical Semi-Evergreen</td><td>150–200 cm</td><td>W Ghats, Orissa, Andaman</td><td>White cedar, hollock</td></tr>
+      <tr><td>Tropical Moist Deciduous</td><td>100–200 cm</td><td>NE, E Ghats, Jharkhand</td><td>Teak, sal, bamboo</td></tr>
+      <tr><td>Tropical Dry Deciduous</td><td>70–100 cm</td><td>UP, MP, Rajasthan, Karnataka</td><td>Teak, tendu, axlewood</td></tr>
+      <tr><td>Thorny/Desert</td><td>&lt;70 cm</td><td>Rajasthan, Gujarat, Punjab</td><td>Khejri, cactus, babool</td></tr>
+      <tr><td>Mangrove</td><td>Tidal/coastal</td><td>Sundarbans, Gulf of Kutch</td><td>Sundari, rhizophora</td></tr>
+      <tr><td>Montane/Temperate</td><td>High altitude</td><td>Himalayas, Nilgiris</td><td>Oak, chestnut, rhododendron</td></tr>
+      <tr><td>Alpine</td><td>Very high altitude</td><td>Above 3600m</td><td>Mosses, lichens, junipers</td></tr>
+    </table>
+    <div class="highlight">India's total forest cover: <strong>7,13,789 sq km (21.71%)</strong> of geographical area — FSI State of Forest Report 2021.</div>
+    <h3>Key Wildlife Projects</h3>
+    <table>
+      <tr><th>Project</th><th>Launched</th><th>Target Species</th><th>Current Status</th></tr>
+      <tr><td>Project Tiger</td><td>1973</td><td>Bengal Tiger</td><td>53 Tiger Reserves; ~3,682 tigers (2022)</td></tr>
+      <tr><td>Project Elephant</td><td>1992</td><td>Asian Elephant</td><td>33 Elephant Reserves</td></tr>
+      <tr><td>Project Crocodile</td><td>1975</td><td>3 species of crocodile</td><td>Mugger, Gharial, Saltwater croc</td></tr>
+      <tr><td>Project Cheetah</td><td>2022</td><td>Cheetah (reintroduction)</td><td>Kuno NP (MP) — from Namibia & S Africa</td></tr>
+      <tr><td>Project Snow Leopard</td><td>2009</td><td>Snow Leopard</td><td>5 states (J&K, HP, UK, Sikkim, Arunachal)</td></tr>
+      <tr><td>Project Gangetic Dolphin</td><td>2010</td><td>Gangetic Dolphin (National Aquatic Animal)</td><td>Vikramshila Gangetic Dolphin Sanctuary</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- NATIONAL PARKS -->
+<section class="page" id="pg-parks">
+  <h2 class="section-title">🏞️ National Parks & Protected Areas</h2>
+  <div class="card">
+    <h2>Major National Parks</h2>
+    <table>
+      <tr><th>National Park</th><th>State</th><th>Famous For</th></tr>
+      <tr><td>Jim Corbett (1936 — India's first NP)</td><td>Uttarakhand</td><td>Bengal Tiger, first Project Tiger reserve</td></tr>
+      <tr><td>Kaziranga</td><td>Assam</td><td>One-horned Rhinoceros (UNESCO WHS)</td></tr>
+      <tr><td>Sundarbans</td><td>West Bengal</td><td>Royal Bengal Tiger, mangroves (UNESCO WHS)</td></tr>
+      <tr><td>Kanha</td><td>Madhya Pradesh</td><td>Tiger, Barasingha (Swamp Deer)</td></tr>
+      <tr><td>Bandhavgarh</td><td>Madhya Pradesh</td><td>Highest tiger density; White Tiger</td></tr>
+      <tr><td>Ranthambore</td><td>Rajasthan</td><td>Tiger</td></tr>
+      <tr><td>Gir</td><td>Gujarat</td><td>Asiatic Lion (only wild population)</td></tr>
+      <tr><td>Keoladeo Ghana (Bharatpur)</td><td>Rajasthan</td><td>Migratory birds (UNESCO WHS)</td></tr>
+      <tr><td>Periyar</td><td>Kerala</td><td>Indian Elephant, Tiger</td></tr>
+      <tr><td>Silent Valley</td><td>Kerala</td><td>Lion-tailed Macaque, tropical rainforest</td></tr>
+      <tr><td>Valley of Flowers</td><td>Uttarakhand</td><td>Alpine flowers (UNESCO WHS)</td></tr>
+      <tr><td>Nanda Devi</td><td>Uttarakhand</td><td>Biodiversity (UNESCO WHS)</td></tr>
+      <tr><td>Hemis</td><td>Ladakh</td><td>Snow Leopard (largest NP in India)</td></tr>
+      <tr><td>Namdapha</td><td>Arunachal Pradesh</td><td>4 big cats (tiger, leopard, snow leopard, clouded leopard)</td></tr>
+      <tr><td>Manas</td><td>Assam</td><td>Golden Langur, Red Panda (UNESCO WHS)</td></tr>
+    </table>
+    <h3>Ramsar Wetland Sites in India</h3>
+    <p>India has <strong>75+ Ramsar sites</strong> (as of 2023) — most in any country. Key ones:</p>
+    <ul>
+      <li>Chilika Lake (Odisha) — largest coastal lagoon in India; first Ramsar site (1981)</li>
+      <li>Keoladeo Ghana (Bharatpur) — migratory bird paradise</li>
+      <li>Wular Lake (J&K) — largest freshwater lake in India</li>
+      <li>Loktak Lake (Manipur) — floating islands (phumdis)</li>
+      <li>Harike (Punjab) — India's largest constructed wetland</li>
+    </ul>
+    <div class="highlight"><strong>Protected Area Network:</strong> National Parks (strict — human activities prohibited), Wildlife Sanctuaries (some activities allowed), Conservation Reserves, Community Reserves, Biosphere Reserves (core + buffer + transition zones).</div>
+  </div>
+</section>
+
+<!-- ENVIRONMENTAL LAWS -->
+<section class="page" id="pg-laws">
+  <h2 class="section-title">⚖️ Environmental Laws & Acts</h2>
+  <div class="card">
+    <h2>Key Indian Environmental Laws</h2>
+    <table>
+      <tr><th>Act/Law</th><th>Year</th><th>Key Provisions</th></tr>
+      <tr><td>Wildlife Protection Act</td><td>1972</td><td>6 Schedules — I (highest protection) to VI; CITES implementation in India</td></tr>
+      <tr><td>Water (Prevention & Control of Pollution) Act</td><td>1974</td><td>Established CPCB and SPCBs; controls water pollution</td></tr>
+      <tr><td>Forest Conservation Act</td><td>1980</td><td>Restricts diversion of forest land for non-forest use without Centre's approval</td></tr>
+      <tr><td>Air (Prevention & Control of Pollution) Act</td><td>1981</td><td>Controls air pollution; standards for industries and vehicles</td></tr>
+      <tr><td>Environment (Protection) Act</td><td>1986</td><td>Umbrella legislation after Bhopal; MoEFCC given sweeping powers</td></tr>
+      <tr><td>Biological Diversity Act</td><td>2002</td><td>Regulates access to biological resources; NBA, SBBs, BMCs</td></tr>
+      <tr><td>National Green Tribunal Act</td><td>2010</td><td>NGT — specialized court for environmental disputes; 5 benches in India</td></tr>
+      <tr><td>EIA Notification</td><td>1994/2006</td><td>Environmental Impact Assessment mandatory for 29 categories of projects</td></tr>
+      <tr><td>Coastal Regulation Zone</td><td>CRZ 2011/2019</td><td>Regulates activities within 500m of coast; 4 CRZ categories</td></tr>
+    </table>
+    <h3>Key Bodies</h3>
+    <ul>
+      <li><strong>MoEFCC:</strong> Ministry of Environment, Forest and Climate Change</li>
+      <li><strong>CPCB:</strong> Central Pollution Control Board (under Water Act 1974)</li>
+      <li><strong>FSI:</strong> Forest Survey of India — biennial State of Forest Report</li>
+      <li><strong>WII:</strong> Wildlife Institute of India (Dehradun)</li>
+      <li><strong>NBA:</strong> National Biodiversity Authority (Chennai)</li>
+      <li><strong>NGT:</strong> National Green Tribunal — Principal bench at New Delhi</li>
+    </ul>
+  </div>
+</section>
+
+<!-- INTERNATIONAL AGREEMENTS -->
+<section class="page" id="pg-international">
+  <h2 class="section-title">🌐 International Agreements</h2>
+  <div class="card">
+    <table>
+      <tr><th>Agreement</th><th>Year/Place</th><th>About</th></tr>
+      <tr><td>Stockholm Conference</td><td>1972, Sweden</td><td>First UN Conference on Human Environment; World Environment Day (June 5); UNEP created</td></tr>
+      <tr><td>Ramsar Convention</td><td>1971, Iran</td><td>Conservation of wetlands of international importance</td></tr>
+      <tr><td>CITES</td><td>1973, USA</td><td>Convention on International Trade in Endangered Species; 3 appendices</td></tr>
+      <tr><td>Vienna Convention</td><td>1985</td><td>Framework for ozone layer protection</td></tr>
+      <tr><td>Montreal Protocol</td><td>1987, Canada</td><td>Phase-out of ozone-depleting substances (CFCs, HCFCs); Kigali Amendment 2016 added HFCs</td></tr>
+      <tr><td>Rio Earth Summit (UNCED)</td><td>1992, Brazil</td><td>CBD + UNFCCC + UNCCD; Agenda 21; Forest Principles</td></tr>
+      <tr><td>Kyoto Protocol</td><td>1997, Japan</td><td>Binding GHG reduction targets for developed nations; CDM, JI, IET mechanisms</td></tr>
+      <tr><td>Cartagena Protocol</td><td>2000</td><td>Safe transfer/handling/use of GMOs (Living Modified Organisms)</td></tr>
+      <tr><td>Nagoya Protocol</td><td>2010, Japan</td><td>Access and benefit sharing of genetic resources (under CBD)</td></tr>
+      <tr><td>Paris Agreement</td><td>2015, COP21</td><td>Limit warming to 1.5°C; NDCs; loss and damage; climate finance</td></tr>
+      <tr><td>Kunming-Montreal GBF</td><td>2022, COP15</td><td>30x30 target — 30% of land & ocean protected by 2030</td></tr>
+    </table>
+    <div class="highlight"><strong>UNFCCC terminology:</strong> Annex I (developed + economies in transition), Annex II (must provide finance to developing), Non-Annex I (developing countries like India). Common But Differentiated Responsibilities (CBDR) principle.</div>
+  </div>
+</section>
+
+<!-- MCQ -->
+<section class="page" id="pg-mcq">
+  <h2 class="section-title">❓ MCQ Practice</h2>
+
+  <div class="mcq-box">
+    <p>Q1. Which of the following is NOT a biodiversity hotspot in India?</p>
+    <label class="mcq-opt"><input type="radio" name="q1" value="A"> A) Eastern Himalayas</label>
+    <label class="mcq-opt"><input type="radio" name="q1" value="B"> B) Western Ghats</label>
+    <label class="mcq-opt"><input type="radio" name="q1" value="C"> C) Thar Desert</label>
+    <label class="mcq-opt"><input type="radio" name="q1" value="D"> D) Indo-Burma</label>
+    <button onclick="checkMCQ(this,'C')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q2. The 10% law in ecology was proposed by:</p>
+    <label class="mcq-opt"><input type="radio" name="q2" value="A"> A) Darwin</label>
+    <label class="mcq-opt"><input type="radio" name="q2" value="B"> B) Lindemann</label>
+    <label class="mcq-opt"><input type="radio" name="q2" value="C"> C) Odum</label>
+    <label class="mcq-opt"><input type="radio" name="q2" value="D"> D) Tansley</label>
+    <button onclick="checkMCQ(this,'B')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q3. Chilika Lake is significant as:</p>
+    <label class="mcq-opt"><input type="radio" name="q3" value="A"> A) India's largest freshwater lake</label>
+    <label class="mcq-opt"><input type="radio" name="q3" value="B"> B) India's first Ramsar site</label>
+    <label class="mcq-opt"><input type="radio" name="q3" value="C"> C) Deepest lake in India</label>
+    <label class="mcq-opt"><input type="radio" name="q3" value="D"> D) Highest altitude lake in India</label>
+    <button onclick="checkMCQ(this,'B')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q4. The Montreal Protocol deals with:</p>
+    <label class="mcq-opt"><input type="radio" name="q4" value="A"> A) Climate change and carbon emissions</label>
+    <label class="mcq-opt"><input type="radio" name="q4" value="B"> B) Hazardous waste trade</label>
+    <label class="mcq-opt"><input type="radio" name="q4" value="C"> C) Ozone-depleting substances</label>
+    <label class="mcq-opt"><input type="radio" name="q4" value="D"> D) Biodiversity conservation</label>
+    <button onclick="checkMCQ(this,'C')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q5. Which is India's first National Park?</p>
+    <label class="mcq-opt"><input type="radio" name="q5" value="A"> A) Kanha National Park</label>
+    <label class="mcq-opt"><input type="radio" name="q5" value="B"> B) Kaziranga National Park</label>
+    <label class="mcq-opt"><input type="radio" name="q5" value="C"> C) Jim Corbett National Park</label>
+    <label class="mcq-opt"><input type="radio" name="q5" value="D"> D) Gir National Park</label>
+    <button onclick="checkMCQ(this,'C')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q6. Pyramid of energy is:</p>
+    <label class="mcq-opt"><input type="radio" name="q6" value="A"> A) Always inverted</label>
+    <label class="mcq-opt"><input type="radio" name="q6" value="B"> B) Always upright</label>
+    <label class="mcq-opt"><input type="radio" name="q6" value="C"> C) Can be both</label>
+    <label class="mcq-opt"><input type="radio" name="q6" value="D"> D) Spindle shaped</label>
+    <button onclick="checkMCQ(this,'B')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q7. The Asiatic Lion is found only in:</p>
+    <label class="mcq-opt"><input type="radio" name="q7" value="A"> A) Ranthambore NP, Rajasthan</label>
+    <label class="mcq-opt"><input type="radio" name="q7" value="B"> B) Gir Forest, Gujarat</label>
+    <label class="mcq-opt"><input type="radio" name="q7" value="C"> C) Namdapha NP, Arunachal Pradesh</label>
+    <label class="mcq-opt"><input type="radio" name="q7" value="D"> D) Keoladeo NP, Rajasthan</label>
+    <button onclick="checkMCQ(this,'B')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q8. CITES regulates:</p>
+    <label class="mcq-opt"><input type="radio" name="q8" value="A"> A) Climate finance between nations</label>
+    <label class="mcq-opt"><input type="radio" name="q8" value="B"> B) International trade in endangered species</label>
+    <label class="mcq-opt"><input type="radio" name="q8" value="C"> C) Wetland conservation worldwide</label>
+    <label class="mcq-opt"><input type="radio" name="q8" value="D"> D) Marine pollution from ships</label>
+    <button onclick="checkMCQ(this,'B')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q9. Project Cheetah involves reintroduction of cheetahs in which National Park?</p>
+    <label class="mcq-opt"><input type="radio" name="q9" value="A"> A) Kanha NP, MP</label>
+    <label class="mcq-opt"><input type="radio" name="q9" value="B"> B) Kuno NP, MP</label>
+    <label class="mcq-opt"><input type="radio" name="q9" value="C"> C) Panna NP, MP</label>
+    <label class="mcq-opt"><input type="radio" name="q9" value="D"> D) Pench NP, MP</label>
+    <button onclick="checkMCQ(this,'B')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q10. Eutrophication in water bodies is primarily caused by excess:</p>
+    <label class="mcq-opt"><input type="radio" name="q10" value="A"> A) Carbon dioxide</label>
+    <label class="mcq-opt"><input type="radio" name="q10" value="B"> B) Nitrogen and Phosphorus</label>
+    <label class="mcq-opt"><input type="radio" name="q10" value="C"> C) Mercury</label>
+    <label class="mcq-opt"><input type="radio" name="q10" value="D"> D) Lead</label>
+    <button onclick="checkMCQ(this,'B')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+</section>
+
+</div><!-- #main -->
+<footer id="site-footer">
+  <div class="footer-bottom">
+    <span>© 2025 Exam Preparation System</span>
+    <span class="footer-author">by Vikash Pandey</span>
+  </div>
+</footer>
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+function toggleTheme(){var r=document.documentElement;var next=r.getAttribute('data-theme')==='dark'?'light':'dark';if(next==='light')r.removeAttribute('data-theme');else r.setAttribute('data-theme',next);localStorage.setItem('eps-theme',next);}
+function toggleSidebar(){var sb=document.getElementById('sidebar'),m=document.getElementById('main'),f=document.getElementById('site-footer');sb.classList.toggle('closed');sb.classList.toggle('open');if(sb.classList.contains('closed')){m.classList.add('full');if(f)f.classList.add('full');}else{m.classList.remove('full');if(f)f.classList.remove('full');}}
+function showPage(id){document.querySelectorAll('.page').forEach(function(p){p.classList.remove('active');});document.querySelectorAll('.sb-item').forEach(function(i){i.classList.remove('active');});var pg=document.getElementById('pg-'+id);if(pg)pg.classList.add('active');if(event&&event.currentTarget)event.currentTarget.classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}
+function checkMCQ(btn,correct){var box=btn.closest('.mcq-box');var sel=box.querySelector('input:checked');if(!sel){alert('Please select an answer!');return;}var ans=box.querySelector('.mcq-ans');ans.style.display='block';if(sel.value===correct){ans.className='mcq-ans correct';ans.textContent='✅ Correct! '+correct;}else{ans.className='mcq-ans wrong';ans.textContent='❌ Wrong. Correct answer: '+correct;}}
+</script>
+<script>
+(function(){
+  var t=localStorage.getItem('eps-theme')||'light';
+  var btn=document.getElementById('theme-btn');
+  if(btn)btn.textContent=t==='dark'?'☀️ Light':'🌙 Dark';
+  var _ot=window.toggleTheme;
+  window.toggleTheme=function(){if(_ot)_ot();var cur=document.documentElement.getAttribute('data-theme');if(btn)btn.textContent=cur==='dark'?'☀️ Light':'🌙 Dark';};
+  var _os=window.toggleSidebar;
+  window.toggleSidebar=function(){if(_os)_os();var sb=document.getElementById('sidebar'),hbg=document.getElementById('hamburger');if(hbg&&sb)hbg.classList.toggle('open',!sb.classList.contains('closed'));};
+  window.addEventListener('scroll',function(){var docH=document.documentElement.scrollHeight-window.innerHeight;var pct=docH>0?(window.scrollY/docH*100).toFixed(1):0;var sp=document.getElementById('scroll-progress');if(sp)sp.style.width=pct+'%';},{passive:true});
+  window.addEventListener('scroll',function(){var btn2=document.getElementById('btt');if(btn2)btn2.classList.toggle('show',window.scrollY>300);},{passive:true});
+  var si=document.getElementById('search-input'),sr=document.getElementById('search-results');
+  if(!si||!sr)return;
+  var idx=[];
+  document.querySelectorAll('#sidebar .sb-item').forEach(function(el){idx.push({text:el.textContent.trim(),el:el,type:'nav'});});
+  document.querySelectorAll('#main h2,#main h3').forEach(function(el){idx.push({text:el.textContent.trim(),el:el,type:'head'});});
+  si.addEventListener('input',function(){
+    var q=this.value.toLowerCase().trim();
+    if(!q){sr.style.display='none';return;}
+    var hits=idx.filter(function(x){return x.text.toLowerCase().includes(q);}).slice(0,8);
+    if(!hits.length){sr.style.display='none';return;}
+    sr.innerHTML=hits.map(function(h){return '<div class="sr-item">'+h.text+'</div>';}).join('');
+    sr.style.display='block';
+    sr.querySelectorAll('.sr-item').forEach(function(item,i){
+      item.onclick=function(){
+        var h=hits[i];
+        if(h.type==='nav'){h.el.click();}
+        else{var sec=h.el.closest('.page');if(sec){var id=sec.id.replace('pg-','');var sb2=Array.from(document.querySelectorAll('.sb-item')).find(function(el){return el.getAttribute('onclick')&&el.getAttribute('onclick').includes("'"+id+"'");});if(sb2)sb2.click();}setTimeout(function(){h.el.scrollIntoView({behavior:'smooth',block:'center'});},200);}
+        sr.style.display='none';si.value='';
+      };
+    });
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();si.focus();}if(e.key==='Escape'){sr.style.display='none';si.value='';}});
+  document.addEventListener('click',function(e){if(!e.target.closest('#search-bar'))sr.style.display='none';});
+  (function(){var p=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.page-links a').forEach(function(a){if(a.getAttribute('href')===p)a.classList.add('current');});})();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Banking & Financial Awareness — RBI, Monetary Policy, Banking Terms, Capital Markets, Govt Schemes for IBPS PO/Clerk, SBI PO, RBI Grade B. By Vikash Pandey.">
+<meta name="author" content="Vikash Pandey">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏦</text></svg>">
+<title>Banking & Financial Awareness — Exam Preparation System</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>(function(){var t=localStorage.getItem('eps-theme');if(t)document.documentElement.setAttribute('data-theme',t);})()</script>
+<style>
+:root{--primary:#1e40af;--secondary:#1d4ed8;--bg:#eff6ff;--surface:#ffffff;--surface2:#dbeafe;--border:#bfdbfe;--text:#1e293b;--muted:#64748b;--sidebar:260px;--hdr:64px;--radius:12px;--shadow:0 4px 24px rgba(30,64,175,.08);--sb-active-bg:rgba(30,64,175,.1);--hl-bg:rgba(30,64,175,.06);}
+[data-theme="dark"]{--bg:#0c1629;--surface:#111827;--surface2:#1e3a5f;--border:#1e3a5f;--text:#f1f5f9;--muted:#94a3b8;--shadow:0 4px 24px rgba(0,0,0,.4);}
+*{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;transition:background .3s,color .3s;}
+::-webkit-scrollbar{width:6px;}::-webkit-scrollbar-thumb{background:var(--primary);border-radius:99px;}
+.page-links{display:flex;flex-wrap:nowrap;gap:6px;align-items:center;overflow-x:auto;scrollbar-width:none;-webkit-mask-image:linear-gradient(to right,#000 85%,transparent);mask-image:linear-gradient(to right,#000 85%,transparent);}
+.page-links::-webkit-scrollbar{display:none;}
+.page-links a{font-size:.7rem;color:var(--text);background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:4px 10px;text-decoration:none;transition:all .2s;font-weight:500;white-space:nowrap;}
+.page-links a:hover,.page-links a.current{background:var(--primary);color:#fff;border-color:var(--primary);}
+#sub-nav{position:fixed;top:var(--hdr);left:0;right:0;z-index:999;background:var(--surface);border-bottom:1px solid var(--border);padding:8px 1rem;}
+#header{position:fixed;top:0;left:0;right:0;height:var(--hdr);background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 1rem;gap:1rem;z-index:1000;}
+#hamburger{background:none;border:none;cursor:pointer;display:flex;flex-direction:column;gap:4px;padding:4px;}
+#hamburger span{display:block;width:22px;height:2px;background:var(--text);border-radius:2px;transition:transform .25s,opacity .25s;}
+#hamburger.open span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+#hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0);}
+#hamburger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+#logo{display:flex;align-items:center;gap:.5rem;font-weight:800;font-size:1.05rem;text-decoration:none;color:var(--text);}
+#logo .grd{background:linear-gradient(135deg,var(--primary),var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.header-right{margin-left:auto;display:flex;align-items:center;gap:.75rem;}
+#theme-btn{background:none;border:1.5px solid var(--border);border-radius:99px;padding:.35rem .8rem;cursor:pointer;font-size:.85rem;color:var(--text);transition:.2s;}
+#sidebar{position:fixed;top:calc(var(--hdr) + 44px);left:0;bottom:0;width:var(--sidebar);background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;transition:.3s;z-index:900;padding-bottom:2rem;}
+#sidebar.closed{transform:translateX(calc(-1 * var(--sidebar)));}
+.sb-section{padding:.5rem 0;}.sb-heading{padding:.5rem 1.2rem;font-size:.72rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;}
+.sb-item{display:flex;align-items:center;gap:.65rem;padding:.55rem 1.2rem;cursor:pointer;font-size:.85rem;transition:.15s;color:var(--text);border-left:3px solid transparent;}
+.sb-item:hover{background:var(--surface2);}
+.sb-item.active{background:var(--sb-active-bg);border-left-color:var(--primary);color:var(--primary);font-weight:600;}
+.sb-divider{height:1px;background:var(--border);margin:.3rem 0;}
+#main{margin-left:var(--sidebar);margin-top:calc(var(--hdr) + 44px);padding:2rem;transition:margin-left .3s;}
+#main.full{margin-left:0;}
+.page{display:none;animation:fadeIn .3s ease;}.page.active{display:block;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);}}
+.hero{border-radius:20px;padding:3rem 2.5rem;color:#fff;margin-bottom:2rem;background:linear-gradient(135deg,#1e3a8a 0%,#1e40af 40%,#0f172a 100%);}
+.hero h1{font-size:clamp(1.6rem,3.5vw,2.5rem);font-weight:800;margin-bottom:.8rem;}
+.hero h1 span{background:linear-gradient(90deg,#93c5fd,#60a5fa,#bfdbfe);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.hero p{font-size:.95rem;opacity:.85;max-width:580px;}
+.hero-stats{display:flex;gap:2rem;flex-wrap:wrap;margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,.15);}
+.hero-stat .num{font-size:1.6rem;font-weight:800;background:linear-gradient(90deg,#93c5fd,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.hero-stat .lbl{font-size:.78rem;opacity:.7;}
+.section-title{font-size:1.3rem;font-weight:700;margin-bottom:1.25rem;display:flex;align-items:center;gap:.5rem;}
+.section-title::after{content:'';flex:1;height:2px;background:linear-gradient(90deg,var(--primary),transparent);margin-left:.5rem;}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.25rem;}
+.card h2{font-size:1.1rem;font-weight:700;margin-bottom:.75rem;color:var(--primary);}
+.card h3{font-size:.95rem;font-weight:700;margin:.75rem 0 .4rem;}
+.card p,.card li{font-size:.88rem;line-height:1.7;margin-bottom:.4rem;}
+.card ul{padding-left:1.2rem;}
+table{width:100%;border-collapse:collapse;font-size:.84rem;margin:.5rem 0 1rem;}
+th{background:var(--primary);color:#fff;padding:.55rem .75rem;text-align:left;font-weight:600;}
+td{padding:.5rem .75rem;border-bottom:1px solid var(--border);}
+tr:nth-child(even) td{background:var(--surface2);}
+.highlight{background:var(--hl-bg);border-left:4px solid var(--primary);border-radius:0 var(--radius) var(--radius) 0;padding:1rem 1.25rem;margin:.75rem 0;font-size:.88rem;}
+.badge{display:inline-block;padding:.2rem .55rem;border-radius:99px;font-size:.72rem;font-weight:600;background:rgba(30,64,175,.12);color:var(--primary);}
+.mcq-box{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;margin-bottom:1rem;}
+.mcq-box p{font-size:.9rem;font-weight:600;margin-bottom:.75rem;}
+.mcq-opt{display:flex;align-items:center;gap:.6rem;padding:.45rem .6rem;border-radius:8px;cursor:pointer;font-size:.87rem;transition:.15s;}
+.mcq-opt:hover{background:var(--surface2);}
+.mcq-opt input{accent-color:var(--primary);}
+.mcq-ans{display:none;margin-top:.75rem;padding:.65rem 1rem;border-radius:8px;font-size:.85rem;font-weight:600;}
+.mcq-ans.correct{background:rgba(16,185,129,.12);color:#065f46;}
+.mcq-ans.wrong{background:rgba(239,68,68,.1);color:#991b1b;}
+#btt{position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;border-radius:50%;background:var(--primary);color:#fff;border:none;font-size:1.2rem;cursor:pointer;display:none;align-items:center;justify-content:center;z-index:800;}
+#btt.show{display:flex;}
+#site-footer{background:var(--surface);border-top:1px solid var(--border);margin-left:var(--sidebar);transition:margin-left .3s;padding:2rem;}
+#main.full~#site-footer,#site-footer.full{margin-left:0;}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;font-size:.8rem;color:var(--muted);}
+.footer-author{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;padding:.35rem .9rem;border-radius:99px;font-size:.82rem;font-weight:600;}
+#scroll-progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--primary),var(--secondary));z-index:2000;transition:width .1s linear;width:0%;}
+#creator-badge{display:flex;align-items:center;gap:.4rem;font-size:.75rem;font-weight:600;color:var(--muted);white-space:nowrap;}
+#creator-badge .cb-dot{width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--secondary));animation:pulse-dot 2s ease-in-out infinite;}
+@keyframes pulse-dot{0%,100%{transform:scale(1);opacity:1;}50%{transform:scale(1.4);opacity:.7;}}
+#search-bar{flex:1;max-width:400px;position:relative;}
+#search-bar input{width:100%;padding:.5rem 2.6rem .5rem 2.6rem;border:1.5px solid var(--border);border-radius:99px;background:var(--surface2);color:var(--text);font-size:.9rem;outline:none;transition:.2s;}
+#search-bar input:focus{border-color:var(--primary);}
+#search-bar .ico{position:absolute;left:.8rem;top:50%;transform:translateY(-50%);color:var(--muted);}
+#search-bar .kbd-hint{position:absolute;right:.75rem;top:50%;transform:translateY(-50%);font-size:.7rem;background:var(--border);color:var(--muted);padding:.1rem .4rem;border-radius:4px;pointer-events:none;}
+#search-results{position:absolute;top:calc(100% + 6px);left:0;right:0;background:var(--surface);border:1px solid var(--border);border-radius:10px;box-shadow:0 4px 24px rgba(0,0,0,.12);max-height:300px;overflow-y:auto;z-index:2000;display:none;}
+#search-results .sr-item{padding:.65rem 1rem;cursor:pointer;font-size:.88rem;border-bottom:1px solid var(--border);transition:.15s;}
+#search-results .sr-item:hover{background:var(--surface2);}
+#progress-pill{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;border-radius:99px;padding:.3rem .85rem;font-size:.8rem;font-weight:600;cursor:pointer;white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center;gap:.3rem;}
+.page table{display:block;overflow-x:auto;}
+@media(max-width:768px){#sidebar{transform:translateX(calc(-1 * var(--sidebar)));} #sidebar.open{transform:translateX(0);} #main,#site-footer{margin-left:0;} #sub-nav{display:none;}}
+@media(max-width:640px){#creator-badge{display:none;}}
+@media(max-width:480px){#search-bar{display:none;} #progress-pill{display:none;}}
+</style>
+</head>
+<body>
+<div id="scroll-progress"></div>
+<header id="header">
+  <button id="hamburger" onclick="toggleSidebar()" aria-label="Menu"><span></span><span></span><span></span></button>
+  <a href="index.html" id="logo">🏦 <span class="grd">Banking Awareness</span></a>
+  <div id="creator-badge"><span class="cb-dot"></span>by Vikash Pandey</div>
+  <div id="search-bar"><span class="ico">🔍</span><input type="text" id="search-input" placeholder="Search topics…" autocomplete="off"><span class="kbd-hint">/</span><div id="search-results"></div></div>
+  <div class="header-right">
+    <a href="study-dashboard.html" id="progress-pill">📊 Progress</a>
+    <button id="theme-btn" onclick="toggleTheme()">🌙 Dark</button>
+  </div>
+</header>
+<div id="sub-nav"><div class="page-links">
+    <a href="index.html">🏠 Home</a>
+    <a href="Science.html">🔬 Science</a>
+    <a href="Computer.html">💻 Computer</a>
+    <a href="Current_Affairs.html">📰 Current Affairs</a>
+    <a href="Exam_Updates.html">📢 Exam Updates</a>
+    <a href="english-grammar-mastery.html">📝 English</a>
+    <a href="Hindi_Grammar.html">📖 हिंदी व्याकरण</a>
+    <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html">🧮 Maths</a>
+    <a href="Indian_Polity.html">⚖️ Polity</a>
+    <a href="Indian_History.html">🏛️ History</a>
+    <a href="Indian_Geography.html">🗺️ Geography</a>
+    <a href="Static_GK.html">🌍 Static GK</a>
+    <a href="Indian_Economy.html">💰 Economy</a>
+    <a href="Bihar_Special_GK.html">🌾 Bihar GK</a>
+    <a href="Reasoning_Guide.html">🧠 Reasoning</a>
+    <a href="Syllabus.html">📋 Syllabus</a>
+    <a href="Environment_Ecology.html">🌿 Environment</a>
+    <a href="Banking_Awareness.html">🏦 Banking</a>
+    <a href="Art_Culture.html">🎨 Art &amp; Culture</a>
+    <a href="UP_Special_GK.html">🌺 UP GK</a>
+    <a href="Rajasthan_GK.html">🏜️ Rajasthan GK</a>
+    <a href="MP_GK.html">🦁 MP GK</a>
+</div></div>
+<nav id="sidebar">
+  <div class="sb-section">
+    <div class="sb-heading">Fundamentals</div>
+    <div class="sb-item active" onclick="showPage('home')">🏦 Overview</div>
+    <div class="sb-item" onclick="showPage('rbi')">🏛️ RBI &amp; Monetary Policy</div>
+    <div class="sb-item" onclick="showPage('banks')">🏢 Types of Banks</div>
+    <div class="sb-item" onclick="showPage('terms')">📖 Banking Terms A–Z</div>
+  </div>
+  <div class="sb-divider"></div>
+  <div class="sb-section">
+    <div class="sb-heading">Markets &amp; Economy</div>
+    <div class="sb-item" onclick="showPage('markets')">📈 Capital &amp; Money Markets</div>
+    <div class="sb-item" onclick="showPage('budget')">📊 Budget &amp; Economy</div>
+    <div class="sb-item" onclick="showPage('indicators')">📉 Economic Indicators</div>
+  </div>
+  <div class="sb-divider"></div>
+  <div class="sb-section">
+    <div class="sb-heading">Digital &amp; Global</div>
+    <div class="sb-item" onclick="showPage('digital')">💳 Digital Banking &amp; UPI</div>
+    <div class="sb-item" onclick="showPage('institutions')">🌐 Financial Institutions</div>
+    <div class="sb-item" onclick="showPage('schemes')">📜 Govt Banking Schemes</div>
+  </div>
+  <div class="sb-divider"></div>
+  <div class="sb-section">
+    <div class="sb-heading">Practice</div>
+    <div class="sb-item" onclick="showPage('mcq')">❓ MCQ Practice</div>
+  </div>
+</nav>
+<div id="main">
+
+<!-- HOME -->
+<section class="page active" id="pg-home">
+  <div class="hero">
+    <h1>Banking &amp; Financial Awareness<br><span>RBI · Markets · Schemes · Digital Banking</span></h1>
+    <p>Complete banking &amp; finance guide for IBPS PO/Clerk, SBI PO, RBI Grade B and all competitive exams.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="num">12</div><div class="lbl">Public Sector Banks</div></div>
+      <div class="hero-stat"><div class="num">4</div><div class="lbl">RBI Policy Rates</div></div>
+      <div class="hero-stat"><div class="num">₹5L</div><div class="lbl">DICGC Cover</div></div>
+      <div class="hero-stat"><div class="num">50+</div><div class="lbl">Govt Schemes</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>⚡ Key RBI Rates — Quick Reference</h2>
+    <table>
+      <tr><th>Rate</th><th>Current Value</th><th>Purpose</th></tr>
+      <tr><td>Repo Rate</td><td><strong>6.50%</strong></td><td>Rate at which RBI lends to commercial banks (short-term)</td></tr>
+      <tr><td>Reverse Repo Rate</td><td><strong>3.35%</strong></td><td>Rate at which RBI borrows from commercial banks</td></tr>
+      <tr><td>Bank Rate</td><td><strong>6.75%</strong></td><td>Rate for long-term lending; penal rate for shortfall</td></tr>
+      <tr><td>MSF Rate (Marginal Standing Facility)</td><td><strong>6.75%</strong></td><td>Emergency overnight borrowing above SLR by banks from RBI</td></tr>
+      <tr><td>CRR (Cash Reserve Ratio)</td><td><strong>4.00%</strong></td><td>% of NDTL banks must keep as cash with RBI (no interest)</td></tr>
+      <tr><td>SLR (Statutory Liquidity Ratio)</td><td><strong>18.00%</strong></td><td>% of NDTL banks must maintain in gold/govt securities</td></tr>
+      <tr><td>RBI Governor</td><td><strong>Sanjay Malhotra</strong></td><td>25th Governor of RBI</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>🎯 Top 20 Banking Awareness Facts — Quick Revision</h2>
+    <table>
+      <tr><th>#</th><th>Fact</th><th>Detail</th></tr>
+      <tr><td>1</td><td>RBI Established</td><td>1 April 1935 (Hilton Young Commission); Nationalised 1949; HQ Mumbai</td></tr>
+      <tr><td>2</td><td>First Bank of India</td><td>Bank of Hindustan (1770, Calcutta) — first; Bank of Bengal (1806) — oldest PSB</td></tr>
+      <tr><td>3</td><td>Bank Nationalisation</td><td>1969 — 14 banks (PM Indira Gandhi); 1980 — 6 more banks</td></tr>
+      <tr><td>4</td><td>SBI Formation</td><td>State Bank of India formed 1955 (from Imperial Bank of India, est. 1921)</td></tr>
+      <tr><td>5</td><td>DICGC Insurance</td><td>Deposit Insurance and Credit Guarantee Corporation — ₹5 lakh per depositor per bank</td></tr>
+      <tr><td>6</td><td>Priority Sector Lending</td><td>40% of Adjusted Net Bank Credit (ANBC) for domestic banks; 18% for agriculture</td></tr>
+      <tr><td>7</td><td>SARFAESI Act</td><td>2002 — banks can recover bad loans without court intervention</td></tr>
+      <tr><td>8</td><td>Basel III Norms</td><td>Minimum Capital Adequacy Ratio (CRAR) = 9% for Indian banks (RBI stipulation)</td></tr>
+      <tr><td>9</td><td>NPCI</td><td>National Payments Corporation of India — set up 2008; umbrella for retail payments</td></tr>
+      <tr><td>10</td><td>UPI Launch</td><td>Unified Payments Interface launched April 2016 by NPCI; BHIM app launched Dec 2016</td></tr>
+      <tr><td>11</td><td>Jan Dhan Yojana</td><td>Launched 28 Aug 2014; zero-balance accounts; RuPay debit card; ₹5000 overdraft</td></tr>
+      <tr><td>12</td><td>MUDRA Bank</td><td>Micro Units Development &amp; Refinance Agency — set up 2015; Shishu/Kishore/Tarun loans</td></tr>
+      <tr><td>13</td><td>Payment Banks</td><td>Max deposit ₹2 lakh; cannot give loans; 6 active payment banks</td></tr>
+      <tr><td>14</td><td>Small Finance Banks</td><td>Must lend 75% to PSL segments; minimum capital ₹200 crore</td></tr>
+      <tr><td>15</td><td>NPA Definition</td><td>Non-Performing Asset — loan overdue for more than 90 days</td></tr>
+      <tr><td>16</td><td>Cheque Bounce</td><td>Section 138 of Negotiable Instruments Act, 1881 — criminal offence</td></tr>
+      <tr><td>17</td><td>CIBIL Score</td><td>Credit score range 300–900; 750+ considered good; bureau est. 2000</td></tr>
+      <tr><td>18</td><td>GST Launch</td><td>Goods &amp; Services Tax — 1 July 2017; 4 slabs: 5%, 12%, 18%, 28%</td></tr>
+      <tr><td>19</td><td>e-Rupee (CBDC)</td><td>Digital Rupee pilot launched Dec 2022 by RBI; wholesale + retail versions</td></tr>
+      <tr><td>20</td><td>SEBI</td><td>Securities and Exchange Board of India — est. 1988; statutory body 1992; HQ Mumbai</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>🏛️ 12 Public Sector Banks (PSBs) in India</h2>
+    <table>
+      <tr><th>#</th><th>Bank</th><th>HQ</th><th>Tagline / Note</th></tr>
+      <tr><td>1</td><td>State Bank of India (SBI)</td><td>Mumbai</td><td>Largest bank in India; "The Banker to Every Indian"</td></tr>
+      <tr><td>2</td><td>Punjab National Bank (PNB)</td><td>New Delhi</td><td>2nd largest PSB; merged OBC &amp; United Bank 2020</td></tr>
+      <tr><td>3</td><td>Bank of Baroda (BOB)</td><td>Vadodara</td><td>Merged Vijaya Bank &amp; Dena Bank 2019</td></tr>
+      <tr><td>4</td><td>Canara Bank</td><td>Bengaluru</td><td>Merged Syndicate Bank 2020</td></tr>
+      <tr><td>5</td><td>Union Bank of India</td><td>Mumbai</td><td>Merged Andhra Bank &amp; Corporation Bank 2020</td></tr>
+      <tr><td>6</td><td>Bank of India (BOI)</td><td>Mumbai</td><td>"Relationship Beyond Banking"</td></tr>
+      <tr><td>7</td><td>Central Bank of India</td><td>Mumbai</td><td>Oldest nationalised bank (1911)</td></tr>
+      <tr><td>8</td><td>Indian Bank</td><td>Chennai</td><td>Merged Allahabad Bank 2020</td></tr>
+      <tr><td>9</td><td>UCO Bank</td><td>Kolkata</td><td>Formerly United Commercial Bank</td></tr>
+      <tr><td>10</td><td>Bank of Maharashtra</td><td>Pune</td><td>Fastest growing PSB by branch network</td></tr>
+      <tr><td>11</td><td>Punjab &amp; Sind Bank</td><td>New Delhi</td><td>Established 1908</td></tr>
+      <tr><td>12</td><td>Indian Overseas Bank</td><td>Chennai</td><td>Strong presence in South India &amp; abroad</td></tr>
+    </table>
+    <div class="highlight">India had 27 PSBs in 2017. After mergers (2019–2020), only <strong>12 Public Sector Banks</strong> remain. IDBI Bank is categorised separately (LIC holds majority stake).</div>
+  </div>
+</section>
+
+<!-- RBI & MONETARY POLICY -->
+<section class="page" id="pg-rbi">
+  <h2 class="section-title">🏛️ RBI &amp; Monetary Policy</h2>
+  <div class="card">
+    <h2>Reserve Bank of India — Profile</h2>
+    <table>
+      <tr><th>Parameter</th><th>Detail</th></tr>
+      <tr><td>Established</td><td>1 April 1935 (recommended by Hilton Young Commission, 1926)</td></tr>
+      <tr><td>Nationalised</td><td>1 January 1949</td></tr>
+      <tr><td>Headquarters</td><td>Mumbai, Maharashtra</td></tr>
+      <tr><td>Governor (Current)</td><td>Sanjay Malhotra (25th Governor, took charge Dec 2024)</td></tr>
+      <tr><td>Deputy Governors</td><td>4 Deputy Governors (including one from commercial banking)</td></tr>
+      <tr><td>RBI Act</td><td>Reserve Bank of India Act, 1934</td></tr>
+      <tr><td>Motto</td><td>"सर्वे भवन्तु सुखिनः" (May all be Happy)</td></tr>
+    </table>
+
+    <h3>Functions of RBI</h3>
+    <ul>
+      <li><strong>Issue of Currency Notes:</strong> Sole authority to issue currency notes (except ₹1 coin and ₹1 note — issued by Ministry of Finance/Govt of India)</li>
+      <li><strong>Banker's Bank:</strong> Holds CRR deposits of banks, acts as clearing house</li>
+      <li><strong>Banker to Govt:</strong> Manages govt's accounts, issues Govt securities</li>
+      <li><strong>Lender of Last Resort:</strong> Provides emergency liquidity to banks facing a crisis</li>
+      <li><strong>Monetary Policy:</strong> Controls money supply and inflation through policy rates</li>
+      <li><strong>Foreign Exchange Management:</strong> Manages FOREX reserves; implements FEMA 1999</li>
+      <li><strong>Regulation &amp; Supervision:</strong> Licenses, regulates and supervises banks, NBFCs</li>
+      <li><strong>Credit Control:</strong> Quantitative (CRR, SLR, Repo) and Qualitative (margin requirements) tools</li>
+      <li><strong>Developmental Role:</strong> Promotes financial inclusion, priority sector lending norms</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Monetary Policy Committee (MPC)</h2>
+    <ul>
+      <li>Constituted under Section 45ZB of RBI Act (amended 2016)</li>
+      <li><strong>6 Members:</strong> 3 from RBI (Governor + 2 Deputy Governors/officials) + 3 external members appointed by Govt of India</li>
+      <li>Meets every <strong>2 months</strong> (bi-monthly); decisions by majority vote; Governor has casting vote</li>
+      <li>Objective: Maintain inflation at <strong>4% ± 2%</strong> (i.e., 2%–6%) based on CPI</li>
+    </ul>
+
+    <h3>Key Policy Rates (Current)</h3>
+    <table>
+      <tr><th>Rate</th><th>Value</th><th>Description</th></tr>
+      <tr><td>Repo Rate</td><td>6.50%</td><td>Short-term borrowing rate of banks from RBI against G-Secs (repurchase agreements)</td></tr>
+      <tr><td>Reverse Repo Rate</td><td>3.35%</td><td>Rate at which RBI absorbs liquidity by borrowing from banks</td></tr>
+      <tr><td>Marginal Standing Facility (MSF)</td><td>6.75%</td><td>Banks can borrow overnight funds from RBI above their SLR limit; 1% above Repo</td></tr>
+      <tr><td>Bank Rate</td><td>6.75%</td><td>Rate for long-term loans; penal rate for CRR/SLR shortfall</td></tr>
+      <tr><td>Cash Reserve Ratio (CRR)</td><td>4.00%</td><td>% of Net Demand and Time Liabilities (NDTL) kept as cash with RBI; earns no interest</td></tr>
+      <tr><td>Statutory Liquidity Ratio (SLR)</td><td>18.00%</td><td>% of NDTL maintained in approved liquid assets (gold, G-Secs, SDL)</td></tr>
+      <tr><td>Standing Deposit Facility (SDF)</td><td>6.25%</td><td>Introduced April 2022; floor of LAF corridor; banks park excess funds without collateral</td></tr>
+    </table>
+
+    <h3>Key RBI Tools &amp; Mechanisms</h3>
+    <ul>
+      <li><strong>Open Market Operations (OMO):</strong> RBI buys/sells G-Secs to inject/absorb liquidity in the system</li>
+      <li><strong>Liquidity Adjustment Facility (LAF):</strong> Daily repo &amp; reverse repo operations to manage short-term liquidity; corridor between SDF (floor) and MSF (ceiling)</li>
+      <li><strong>Standing Deposit Facility (SDF):</strong> Introduced April 2022 as new floor of LAF corridor (replaced fixed reverse repo); no collateral required</li>
+      <li><strong>Market Stabilisation Scheme (MSS):</strong> Sterilisation of excess foreign exchange inflows through issuance of G-Secs/T-Bills</li>
+      <li><strong>MCLR (Marginal Cost of Funds based Lending Rate):</strong> Introduced April 2016; benchmark for bank loan pricing; replaced Base Rate system</li>
+    </ul>
+
+    <div class="highlight"><strong>Inflation Targeting:</strong> RBI is mandated to keep CPI inflation at <strong>4% ± 2%</strong> band. If inflation stays outside band for 3 consecutive quarters, RBI must explain to Govt in writing.</div>
+  </div>
+</section>
+
+<!-- TYPES OF BANKS -->
+<section class="page" id="pg-banks">
+  <h2 class="section-title">🏢 Types of Banks</h2>
+  <div class="card">
+    <h2>Classification of Banks in India</h2>
+    <table>
+      <tr><th>Type</th><th>Count</th><th>Key Features</th></tr>
+      <tr><td>Public Sector Banks (PSBs)</td><td>12</td><td>Govt holds &gt;51% stake; SBI largest; IDBI categorised separately</td></tr>
+      <tr><td>Private Sector Banks (Old)</td><td>~12</td><td>HDFC, ICICI, Axis, Kotak Mahindra, Yes, IndusInd, Federal, Karnataka etc.</td></tr>
+      <tr><td>Private Sector Banks (New)</td><td>~10</td><td>Licensed post-1991 reforms; includes new entrants like Bandhan Bank, IDFC First</td></tr>
+      <tr><td>Foreign Banks</td><td>46 (branches)</td><td>Operate through branches in India; Citibank, Standard Chartered, HSBC, DBS etc.</td></tr>
+      <tr><td>Regional Rural Banks (RRBs)</td><td>43</td><td>Set up 1975 (RRB Act); sponsored by PSBs + State Govt + Central Govt (50:15:35); serve rural credit needs</td></tr>
+      <tr><td>Small Finance Banks (SFBs)</td><td>11</td><td>Min capital ₹200 cr; 75% lending to PSL; AU Small Finance, Equitas, Ujjivan etc.</td></tr>
+      <tr><td>Payment Banks</td><td>6</td><td>Max deposit ₹2 lakh; cannot lend; Airtel, India Post, Jio, NSDL, Fino, IPPB</td></tr>
+      <tr><td>Co-operative Banks</td><td>Thousands</td><td>Urban Co-operative Banks (UCBs) + Rural (State/District/Primary Agri Credit Societies)</td></tr>
+    </table>
+
+    <h3>Payment Banks (Active — 6)</h3>
+    <ul>
+      <li>Airtel Payments Bank</li>
+      <li>India Post Payments Bank (IPPB)</li>
+      <li>Jio Payments Bank</li>
+      <li>NSDL Payments Bank</li>
+      <li>Fino Payments Bank</li>
+      <li>Paytm Payments Bank (RBI cancelled licence Feb 2024)</li>
+    </ul>
+    <div class="highlight">Payment Banks cannot issue credit cards or give loans. They can issue debit cards (RuPay), open savings accounts (max ₹2 lakh), and offer internet banking and mobile banking.</div>
+  </div>
+
+  <div class="card">
+    <h2>Development Finance Institutions (DFIs)</h2>
+    <table>
+      <tr><th>Institution</th><th>Established</th><th>Focus Area</th></tr>
+      <tr><td>NABARD (National Bank for Agriculture &amp; Rural Development)</td><td>1982</td><td>Agricultural credit, rural development, refinancing RRBs &amp; co-operative banks</td></tr>
+      <tr><td>SIDBI (Small Industries Development Bank of India)</td><td>1990</td><td>Financing, promoting and developing MSMEs; refinance operations</td></tr>
+      <tr><td>EXIM Bank (Export-Import Bank of India)</td><td>1982</td><td>Financing India's international trade and foreign investment</td></tr>
+      <tr><td>NHB (National Housing Bank)</td><td>1988</td><td>Regulates housing finance companies (HFCs); promotes housing credit</td></tr>
+      <tr><td>MUDRA (Micro Units Development &amp; Refinance Agency)</td><td>2015</td><td>Refinance for micro-enterprises through banks/MFIs; Shishu/Kishore/Tarun</td></tr>
+      <tr><td>NaBFID (National Bank for Financing Infra &amp; Dev)</td><td>2021</td><td>Long-term infrastructure financing; new DFI</td></tr>
+    </table>
+
+    <h3>Priority Sector Lending (PSL) — Key Norms</h3>
+    <table>
+      <tr><th>Category</th><th>Domestic Banks / Foreign Banks (&gt;20 branches)</th></tr>
+      <tr><td>Total PSL Target</td><td>40% of Adjusted Net Bank Credit (ANBC)</td></tr>
+      <tr><td>Agriculture</td><td>18% of ANBC (8% to small/marginal farmers)</td></tr>
+      <tr><td>Micro Enterprises</td><td>7.5% of ANBC</td></tr>
+      <tr><td>Weaker Sections</td><td>10% of ANBC</td></tr>
+      <tr><td>Shortfall Contribution</td><td>RIDF (Rural Infrastructure Development Fund) with NABARD</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- BANKING TERMS A-Z -->
+<section class="page" id="pg-terms">
+  <h2 class="section-title">📖 Banking Terms A–Z</h2>
+  <div class="card">
+    <h2>Essential Banking Terminology</h2>
+    <table>
+      <tr><th>Term</th><th>Full Form / Meaning</th></tr>
+      <tr><td>NPA</td><td>Non-Performing Asset — loan/advance where interest/principal overdue &gt;90 days</td></tr>
+      <tr><td>Gross NPA</td><td>Total NPAs before deducting provisions made by bank</td></tr>
+      <tr><td>Net NPA</td><td>Gross NPA minus provisions (Net NPA = Gross NPA − Provisions)</td></tr>
+      <tr><td>Substandard Asset</td><td>NPA for &lt;12 months; provisioning 15% (secured), 25% (unsecured)</td></tr>
+      <tr><td>Doubtful Asset</td><td>NPA for &gt;12 months; 25%–100% provisioning depending on age</td></tr>
+      <tr><td>Loss Asset</td><td>Fully uncollectable NPA; 100% provisioning required</td></tr>
+      <tr><td>SARFAESI Act</td><td>Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest Act, 2002 — banks recover bad loans without court</td></tr>
+      <tr><td>DRT</td><td>Debt Recovery Tribunal — quasi-judicial body for recovery of debts due to banks &gt;₹20 lakh</td></tr>
+      <tr><td>Lok Adalat</td><td>Alternative dispute resolution; settles bank NPA cases up to ₹20 lakh</td></tr>
+      <tr><td>Willful Defaulter</td><td>Borrower who has capacity to repay but intentionally defaults; blacklisted from further credit</td></tr>
+      <tr><td>ARC</td><td>Asset Reconstruction Company — buys NPAs from banks at discount; NARCL (National ARC) set up 2022</td></tr>
+      <tr><td>Basel Norms</td><td>International capital adequacy standards; Basel I (1988), Basel II (2004), Basel III (2010)</td></tr>
+      <tr><td>CRAR</td><td>Capital to Risk-weighted Assets Ratio — min 9% for Indian banks; measures financial health</td></tr>
+      <tr><td>Tier 1 Capital</td><td>Core capital — paid-up capital, statutory reserves, retained earnings (loss-absorbing)</td></tr>
+      <tr><td>Tier 2 Capital</td><td>Supplementary capital — subordinated debt, general provisions, revaluation reserves</td></tr>
+      <tr><td>NBFC</td><td>Non-Banking Financial Company — offers financial services but cannot accept demand deposits; regulated by RBI</td></tr>
+      <tr><td>MFI</td><td>Micro Finance Institution — provides small loans to low-income groups; regulated by RBI/NABARD</td></tr>
+      <tr><td>KYC</td><td>Know Your Customer — mandatory identification &amp; verification before opening accounts</td></tr>
+      <tr><td>AML</td><td>Anti-Money Laundering — PMLA 2002 prevents money laundering; FIU-IND monitors suspicious transactions</td></tr>
+      <tr><td>SWIFT</td><td>Society for Worldwide Interbank Financial Telecommunication — global messaging network for interbank transfers</td></tr>
+      <tr><td>RTGS</td><td>Real Time Gross Settlement — transfers ≥₹2 lakh; 24×7 since Dec 2020; settlement in real time</td></tr>
+      <tr><td>NEFT</td><td>National Electronic Funds Transfer — batch-based; no minimum amount; 24×7 since Dec 2019; 48 half-hourly batches</td></tr>
+      <tr><td>IMPS</td><td>Immediate Payment Service — instant 24×7 transfer up to ₹5 lakh; ₹5 charge above ₹1000</td></tr>
+      <tr><td>NACH</td><td>National Automated Clearing House — bulk recurring payments (ECS replacement); salary, EMI, dividends</td></tr>
+      <tr><td>BBPS</td><td>Bharat Bill Payment System — integrated platform for bill payments (electricity, water, insurance premiums)</td></tr>
+      <tr><td>MCLR</td><td>Marginal Cost of Funds based Lending Rate — benchmark for loan pricing since April 2016; replaced Base Rate</td></tr>
+      <tr><td>Base Rate</td><td>Minimum lending rate below which banks cannot lend (introduced 2010; replaced by MCLR)</td></tr>
+      <tr><td>PLR</td><td>Prime Lending Rate — benchmark rate used before Base Rate system; still used by some NBFCs</td></tr>
+      <tr><td>CIBIL</td><td>Credit Information Bureau (India) Limited — credit bureau; credit score range 300–900</td></tr>
+      <tr><td>Repo</td><td>Repurchase Agreement — RBI lends money to banks against G-Secs; bank repurchases later</td></tr>
+      <tr><td>OMO</td><td>Open Market Operations — RBI buys (injects liquidity) or sells (absorbs liquidity) G-Secs</td></tr>
+      <tr><td>LAF</td><td>Liquidity Adjustment Facility — daily liquidity management corridor; SDF floor, MSF ceiling</td></tr>
+      <tr><td>SDF</td><td>Standing Deposit Facility — banks park excess funds with RBI without collateral (introduced 2022)</td></tr>
+      <tr><td>Section 138 NI Act</td><td>Cheque bounce — criminal offence under Negotiable Instruments Act, 1881; penalty up to 2 years jail or 2x cheque amount</td></tr>
+      <tr><td>FEMA</td><td>Foreign Exchange Management Act, 1999 — replaced FERA; regulates foreign exchange transactions</td></tr>
+      <tr><td>PMLA</td><td>Prevention of Money Laundering Act, 2002 — mandates reporting of suspicious transactions to FIU-IND</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- CAPITAL & MONEY MARKETS -->
+<section class="page" id="pg-markets">
+  <h2 class="section-title">📈 Capital &amp; Money Markets</h2>
+  <div class="card">
+    <h2>Money Market vs Capital Market</h2>
+    <table>
+      <tr><th>Parameter</th><th>Money Market</th><th>Capital Market</th></tr>
+      <tr><td>Tenor</td><td>Short-term (≤1 year)</td><td>Long-term (&gt;1 year)</td></tr>
+      <tr><td>Purpose</td><td>Short-term liquidity management</td><td>Long-term capital formation</td></tr>
+      <tr><td>Instruments</td><td>T-Bills, CP, CD, Call Money, CMBs</td><td>Equity, bonds, debentures, mutual funds</td></tr>
+      <tr><td>Risk</td><td>Low</td><td>Higher</td></tr>
+      <tr><td>Regulator</td><td>RBI</td><td>SEBI</td></tr>
+      <tr><td>Market</td><td>OTC (Over the Counter)</td><td>Stock Exchanges (BSE, NSE) + OTC</td></tr>
+    </table>
+
+    <h3>Money Market Instruments</h3>
+    <table>
+      <tr><th>Instrument</th><th>Details</th></tr>
+      <tr><td>Treasury Bills (T-Bills)</td><td>Issued by Govt of India via RBI; 91-day, 182-day, 364-day; zero coupon; minimum ₹25,000</td></tr>
+      <tr><td>Commercial Paper (CP)</td><td>Issued by corporates/FIs/PDs; tenor 7 days to 1 year; minimum ₹5 lakh denomination</td></tr>
+      <tr><td>Certificate of Deposit (CD)</td><td>Issued by banks/FIs; tenor 7 days to 1 year (banks) / 1–3 years (FIs); negotiable instrument</td></tr>
+      <tr><td>Call Money / Notice Money</td><td>Overnight (call) or 2–14 days (notice); used by banks to manage CRR; unsecured</td></tr>
+      <tr><td>Cash Management Bills (CMBs)</td><td>Issued by Govt; tenor less than 91 days; to meet temporary cash mismatches</td></tr>
+      <tr><td>Repo / Reverse Repo</td><td>Short-term collateralised borrowing/lending; backbone of LAF</td></tr>
+    </table>
+
+    <h3>Capital Market</h3>
+    <table>
+      <tr><th>Segment</th><th>Details</th></tr>
+      <tr><td>Primary Market</td><td>Fresh issue of securities; IPO (Initial Public Offering), FPO (Follow-on Public Offer), Rights Issue, Private Placement</td></tr>
+      <tr><td>Secondary Market</td><td>Trading of existing securities; BSE, NSE; provides liquidity to investors</td></tr>
+      <tr><td>BSE (Bombay Stock Exchange)</td><td>Est. 1875 — oldest stock exchange in Asia; Sensex = 30 blue-chip stocks; HQ Mumbai</td></tr>
+      <tr><td>NSE (National Stock Exchange)</td><td>Est. 1992; Nifty 50 index = top 50 companies; first fully automated electronic exchange in India</td></tr>
+      <tr><td>SEBI</td><td>Securities and Exchange Board of India — est. 1988; statutory body by SEBI Act 1992; regulates capital markets, protects investors</td></tr>
+      <tr><td>AMFI</td><td>Association of Mutual Funds in India — self-regulatory body for mutual fund industry</td></tr>
+      <tr><td>Derivatives</td><td>Futures (buy/sell at future date at agreed price) and Options (right but not obligation to buy/sell)</td></tr>
+    </table>
+
+    <h3>Government Securities</h3>
+    <ul>
+      <li><strong>G-Secs (Government Securities):</strong> Bonds issued by Central Govt; tenor 1–40 years; sovereign guarantee; traded on NDS-OM platform</li>
+      <li><strong>T-Bills:</strong> Short-term zero-coupon G-Secs (91/182/364 days)</li>
+      <li><strong>SDL (State Development Loans):</strong> Bonds issued by State Governments; slightly higher yield than G-Secs</li>
+      <li><strong>STRIPS:</strong> Separate Trading of Registered Interest and Principal of Securities — zero-coupon bonds</li>
+    </ul>
+    <div class="highlight"><strong>SEBI's Triple Role:</strong> Regulator (of markets &amp; intermediaries), Developmental (promotes investor awareness), Protective (protects investor interests from unfair practices like insider trading).</div>
+  </div>
+</section>
+
+<!-- BUDGET & ECONOMY -->
+<section class="page" id="pg-budget">
+  <h2 class="section-title">📊 Budget &amp; Economy</h2>
+  <div class="card">
+    <h2>Union Budget — Key Concepts</h2>
+    <ul>
+      <li>Presented by the Finance Minister on <strong>1st February</strong> (changed from last working day of Feb in 2017)</li>
+      <li>Railway Budget merged with Union Budget from 2017</li>
+      <li>Constitutional provision: Article 112 (Annual Financial Statement)</li>
+      <li>Appropriation Bill must be passed for withdrawal from Consolidated Fund of India</li>
+    </ul>
+    <h3>Budget Accounts</h3>
+    <table>
+      <tr><th>Account</th><th>Items</th></tr>
+      <tr><td>Revenue Account (Receipts)</td><td>Tax revenue (Direct + Indirect) + Non-tax revenue (dividends, interest, fees)</td></tr>
+      <tr><td>Revenue Account (Expenditure)</td><td>Salaries, pensions, interest payments, subsidies, maintenance</td></tr>
+      <tr><td>Capital Account (Receipts)</td><td>Borrowings (market loans, external), disinvestment, small savings</td></tr>
+      <tr><td>Capital Account (Expenditure)</td><td>Capital formation, loans to states, repayment of borrowings</td></tr>
+    </table>
+
+    <h3>Deficit Types — Explained</h3>
+    <table>
+      <tr><th>Deficit</th><th>Formula</th><th>Significance</th></tr>
+      <tr><td>Revenue Deficit</td><td>Revenue Expenditure − Revenue Receipts</td><td>Indicates government is borrowing for current consumption (bad sign)</td></tr>
+      <tr><td>Fiscal Deficit</td><td>Total Expenditure − Total Receipts (excluding borrowings)</td><td>Total borrowing requirement; printed in budget; most discussed deficit</td></tr>
+      <tr><td>Primary Deficit</td><td>Fiscal Deficit − Interest Payments</td><td>Fiscal deficit exclusive of past debt burden; measure of current fiscal management</td></tr>
+      <tr><td>Effective Revenue Deficit</td><td>Revenue Deficit − Grants for Capital Formation</td><td>Introduced in India's budget from 2011-12</td></tr>
+    </table>
+
+    <h3>FRBM Act 2003</h3>
+    <ul>
+      <li>Fiscal Responsibility and Budget Management Act, 2003</li>
+      <li>Aims to eliminate Revenue Deficit and bring Fiscal Deficit to 3% of GDP</li>
+      <li>Escape clause allows 0.5% deviation in exceptional circumstances</li>
+    </ul>
+
+    <h3>GST — Goods &amp; Services Tax</h3>
+    <table>
+      <tr><th>Parameter</th><th>Detail</th></tr>
+      <tr><td>Launch Date</td><td>1 July 2017 (midnight session of Parliament)</td></tr>
+      <tr><td>Constitutional Amendment</td><td>101st Constitutional Amendment Act, 2016</td></tr>
+      <tr><td>GST Slabs</td><td>0%, 5%, 12%, 18%, 28% (+ cess on sin goods)</td></tr>
+      <tr><td>GST Council</td><td>Chaired by Union Finance Minister; Art. 279A; 2/3 weightage to states</td></tr>
+      <tr><td>Types</td><td>CGST (Central), SGST (State), IGST (Inter-state), UTGST (Union Territories)</td></tr>
+    </table>
+
+    <h3>Direct vs Indirect Tax</h3>
+    <table>
+      <tr><th>Direct Tax</th><th>Indirect Tax</th></tr>
+      <tr><td>Income Tax, Corporate Tax, Capital Gains Tax, STT</td><td>GST, Customs Duty, Excise (now mostly GST)</td></tr>
+      <tr><td>Levied on income/wealth; impact and incidence on same person</td><td>Levied on goods/services; impact on seller, incidence on buyer</td></tr>
+      <tr><td>Administered by CBDT</td><td>Administered by CBIC</td></tr>
+    </table>
+
+    <h3>Finance Commission (Art. 280)</h3>
+    <ul>
+      <li>Quasi-judicial body; constituted every 5 years</li>
+      <li>Recommends vertical devolution (Centre to States) and horizontal distribution (among states)</li>
+      <li><strong>15th Finance Commission (2020-25):</strong> Chaired by N.K. Singh; recommended 41% share for states (was 42% in 14th FC, 1% for J&amp;K)</li>
+      <li><strong>16th Finance Commission:</strong> Constituted 2023, chaired by Arvind Panagariya; covers 2026-31</li>
+    </ul>
+    <div class="highlight"><strong>NITI Aayog</strong> replaced Planning Commission on 1 January 2015. Chaired by PM; no power to allocate funds; acts as think tank. No Five Year Plans — instead 15-year Vision, 7-year Strategy, 3-year Action Plan.</div>
+  </div>
+</section>
+
+<!-- ECONOMIC INDICATORS -->
+<section class="page" id="pg-indicators">
+  <h2 class="section-title">📉 Economic Indicators</h2>
+  <div class="card">
+    <h2>National Income Concepts</h2>
+    <table>
+      <tr><th>Concept</th><th>Formula / Detail</th></tr>
+      <tr><td>GDP (Gross Domestic Product)</td><td>Total value of goods &amp; services produced within country's borders in a year; at market prices</td></tr>
+      <tr><td>GNP (Gross National Product)</td><td>GDP + Net Factor Income from Abroad (NFIA)</td></tr>
+      <tr><td>NNP (Net National Product)</td><td>GNP − Depreciation (Capital Consumption Allowance)</td></tr>
+      <tr><td>NNP at Factor Cost</td><td>NNP at Market Price − Net Indirect Taxes = National Income</td></tr>
+      <tr><td>GVA (Gross Value Added)</td><td>GVA + Taxes on Products − Subsidies on Products = GDP</td></tr>
+      <tr><td>Nominal GDP</td><td>GDP at current prices (not adjusted for inflation)</td></tr>
+      <tr><td>Real GDP</td><td>GDP adjusted for inflation (at constant prices) — better measure of actual growth</td></tr>
+    </table>
+
+    <h3>Inflation Indices</h3>
+    <table>
+      <tr><th>Index</th><th>Detail</th></tr>
+      <tr><td>CPI (Consumer Price Index)</td><td>Measures retail inflation; RBI's primary inflation target: 4% ±2%; released by MoSPI; base year 2012</td></tr>
+      <tr><td>WPI (Wholesale Price Index)</td><td>Measures wholesale-level inflation; managed by DPIIT; base year 2011-12; covers 697 commodities</td></tr>
+      <tr><td>Core Inflation</td><td>CPI excluding food and fuel — reflects demand-side inflation; more persistent</td></tr>
+      <tr><td>IIP (Index of Industrial Production)</td><td>Measures industrial output; base year 2011-12; covers Mining, Manufacturing, Electricity; released monthly by MoSPI</td></tr>
+    </table>
+
+    <h3>Balance of Payments (BoP)</h3>
+    <ul>
+      <li><strong>Current Account:</strong> Trade in goods (visible) + Trade in services (invisible) + Transfer payments (remittances). CAD = Current Account Deficit</li>
+      <li><strong>Capital Account:</strong> FDI, FII/FPI, External Borrowings, ECBs, NRI deposits</li>
+      <li><strong>Financial Account:</strong> Reserve assets, monetary gold, SDRs</li>
+      <li><strong>BOP Identity:</strong> Current Account + Capital Account + Financial Account = 0 (always balances)</li>
+    </ul>
+
+    <h3>Key Global Indicators</h3>
+    <table>
+      <tr><th>Indicator</th><th>India's Data / Rank</th></tr>
+      <tr><td>GDP (nominal)</td><td>5th largest economy globally (~$3.7 trillion, 2023-24)</td></tr>
+      <tr><td>GDP Growth Rate</td><td>~8.2% (2023-24); fastest growing major economy</td></tr>
+      <tr><td>HDI (Human Development Index)</td><td>UNDP; India rank 134/193 (HDI Report 2023-24)</td></tr>
+      <tr><td>FOREX Reserves</td><td>~$650 billion (2024-25, fluctuates); 4th largest globally</td></tr>
+      <tr><td>Inflation Target</td><td>4% ±2% band (2%–6%) based on CPI</td></tr>
+      <tr><td>CAD</td><td>India is a Current Account Deficit country; financed by FDI/FPI/remittances</td></tr>
+    </table>
+
+    <h3>IMF &amp; SDR</h3>
+    <ul>
+      <li><strong>SDR (Special Drawing Right):</strong> International reserve asset created by IMF; value based on basket of 5 currencies — USD, Euro, GBP, Yen, RMB (Chinese Yuan added 2016)</li>
+      <li>IMF provides BoP support to member countries through lending facilities</li>
+      <li>India is one of top 10 quota holders in IMF</li>
+    </ul>
+  </div>
+</section>
+
+<!-- DIGITAL BANKING & UPI -->
+<section class="page" id="pg-digital">
+  <h2 class="section-title">💳 Digital Banking &amp; UPI</h2>
+  <div class="card">
+    <h2>NPCI — National Payments Corporation of India</h2>
+    <ul>
+      <li>Set up in 2008 under RBI guidance; an umbrella organisation for all retail payment systems in India</li>
+      <li>Not-for-profit entity owned by consortium of banks; HQ Mumbai</li>
+      <li>Operates: UPI, RuPay, IMPS, NACH, BBPS, NETC (FASTag), AEPS, BHIM, CTS</li>
+    </ul>
+
+    <h3>UPI — Unified Payments Interface</h3>
+    <table>
+      <tr><th>Parameter</th><th>Detail</th></tr>
+      <tr><td>Launched</td><td>April 2016 by NPCI; BHIM (Bharat Interface for Money) app launched Dec 2016</td></tr>
+      <tr><td>Mechanism</td><td>Uses Virtual Payment Address (VPA / UPI ID) — no bank account details shared</td></tr>
+      <tr><td>Availability</td><td>24×7, 365 days including holidays</td></tr>
+      <tr><td>Limit</td><td>₹1 lakh per transaction (₹2 lakh for capital markets, IPO, medical emergencies)</td></tr>
+      <tr><td>UPI 2.0 Features</td><td>Overdraft facility, invoice in inbox, one-time mandates, signed intent/QR code</td></tr>
+      <tr><td>UPI123Pay</td><td>UPI for feature phones (non-smartphone users); IVR-based</td></tr>
+      <tr><td>UPI Lite</td><td>Offline small-value payments up to ₹500 per transaction without internet</td></tr>
+    </table>
+
+    <h3>Comparison of Payment Systems</h3>
+    <table>
+      <tr><th>System</th><th>Full Form</th><th>Availability</th><th>Limit</th><th>Settlement</th></tr>
+      <tr><td>RTGS</td><td>Real Time Gross Settlement</td><td>24×7 (since Dec 2020)</td><td>Min ₹2 lakh; no max limit</td><td>Real-time, gross (one-to-one)</td></tr>
+      <tr><td>NEFT</td><td>National Electronic Funds Transfer</td><td>24×7 (since Dec 2019)</td><td>No minimum; no maximum</td><td>Batch-based (48 half-hourly batches)</td></tr>
+      <tr><td>IMPS</td><td>Immediate Payment Service</td><td>24×7, all days</td><td>Up to ₹5 lakh</td><td>Real-time, works via MMID/VPA</td></tr>
+      <tr><td>UPI</td><td>Unified Payments Interface</td><td>24×7, all days</td><td>₹1 lakh (general)</td><td>Real-time via VPA</td></tr>
+    </table>
+
+    <h3>Other Digital Payment Instruments</h3>
+    <ul>
+      <li><strong>NACH (National Automated Clearing House):</strong> Bulk recurring payments — salary credits, EMI debits, dividend, pension, subsidy DBT</li>
+      <li><strong>BBPS (Bharat Bill Payment System):</strong> Interoperable platform for bill payments across electricity, water, gas, telecom, insurance</li>
+      <li><strong>FASTag:</strong> RFID-based electronic toll collection; mandatory for all vehicles since Feb 2021; linked to prepaid wallet/bank</li>
+      <li><strong>RuPay Card:</strong> Domestic payment network by NPCI; alternative to Visa/Mastercard; zero/low transaction cost; used in Jan Dhan accounts</li>
+      <li><strong>AEPS (Aadhaar Enabled Payment System):</strong> Allows banking transactions using Aadhaar authentication at business correspondents</li>
+      <li><strong>CBDC / e-Rupee:</strong> Central Bank Digital Currency launched by RBI Dec 2022; e₹-W (wholesale pilot) and e₹-R (retail pilot); legal tender</li>
+      <li><strong>Account Aggregator (AA):</strong> RBI-regulated framework allowing sharing of financial data across institutions with user consent</li>
+      <li><strong>Payment Aggregators:</strong> Entities facilitating online payment collections (Razorpay, PayU, CCAvenue) — regulated by RBI since 2021</li>
+    </ul>
+    <div class="highlight"><strong>Digital India targets:</strong> India is 2nd largest digital payments market globally. UPI crossed 10 billion transactions/month in 2023. RBI's vision: less-cash society through increased digital penetration.</div>
+  </div>
+</section>
+
+<!-- FINANCIAL INSTITUTIONS -->
+<section class="page" id="pg-institutions">
+  <h2 class="section-title">🌐 Financial Institutions</h2>
+  <div class="card">
+    <h2>International Financial Institutions</h2>
+    <table>
+      <tr><th>Institution</th><th>HQ</th><th>Purpose / Key Role</th></tr>
+      <tr><td>IMF (International Monetary Fund)</td><td>Washington D.C., USA</td><td>BoP support, exchange rate stability, SDR, global monetary cooperation; 190 members</td></tr>
+      <tr><td>World Bank (IBRD)</td><td>Washington D.C., USA</td><td>Long-term loans for development projects; IBRD (middle-income), IDA (poorest countries)</td></tr>
+      <tr><td>World Bank Group</td><td>Washington D.C.</td><td>IBRD + IDA + IFC (private sector) + MIGA (investment guarantees) + ICSID (disputes)</td></tr>
+      <tr><td>ADB (Asian Development Bank)</td><td>Manila, Philippines</td><td>Reduce poverty in Asia-Pacific; India is 2nd largest shareholder; est. 1966</td></tr>
+      <tr><td>NDB (New Development Bank)</td><td>Shanghai, China</td><td>BRICS bank — Brazil, Russia, India, China, SA; infrastructure &amp; sustainable development</td></tr>
+      <tr><td>AIIB (Asian Infrastructure Investment Bank)</td><td>Beijing, China</td><td>Infrastructure financing in Asia; est. 2016; India is 2nd largest shareholder</td></tr>
+      <tr><td>BIS (Bank for International Settlements)</td><td>Basel, Switzerland</td><td>Central bank of central banks; sets Basel Norms for capital adequacy; est. 1930</td></tr>
+      <tr><td>FATF (Financial Action Task Force)</td><td>Paris, France</td><td>Sets global AML/CFT standards; maintains grey list and blacklist of non-compliant countries</td></tr>
+      <tr><td>FSB (Financial Stability Board)</td><td>Basel, Switzerland</td><td>Monitors and recommends about global financial system; successor of FSF</td></tr>
+      <tr><td>WTO (World Trade Organization)</td><td>Geneva, Switzerland</td><td>Regulates international trade; dispute resolution; 164 members; est. 1995</td></tr>
+    </table>
+
+    <h3>Indian Financial Regulators</h3>
+    <table>
+      <tr><th>Regulator</th><th>Full Form</th><th>Sector Regulated</th></tr>
+      <tr><td>RBI</td><td>Reserve Bank of India</td><td>Banks, NBFCs, payment systems, currency, foreign exchange</td></tr>
+      <tr><td>SEBI</td><td>Securities and Exchange Board of India</td><td>Capital markets, stock exchanges, mutual funds, FPIs, brokers</td></tr>
+      <tr><td>IRDAI</td><td>Insurance Regulatory and Development Authority of India</td><td>Life and non-life insurance companies; HQ Hyderabad</td></tr>
+      <tr><td>PFRDA</td><td>Pension Fund Regulatory and Development Authority</td><td>Pension sector; NPS (National Pension System); HQ New Delhi</td></tr>
+      <tr><td>FSDC</td><td>Financial Stability and Development Council</td><td>Inter-regulatory coordination; financial stability; chaired by Finance Minister</td></tr>
+      <tr><td>IBBI</td><td>Insolvency and Bankruptcy Board of India</td><td>Insolvency resolution under IBC 2016; HQ New Delhi</td></tr>
+    </table>
+    <div class="highlight"><strong>FSDC (Financial Stability &amp; Development Council)</strong> — set up 2010; chaired by Finance Minister; members include heads of RBI, SEBI, IRDAI, PFRDA, Finance Secretary, DEA Secretary. Monitors systemic risks and ensures financial stability.</div>
+  </div>
+</section>
+
+<!-- GOVT BANKING SCHEMES -->
+<section class="page" id="pg-schemes">
+  <h2 class="section-title">📜 Govt Banking Schemes</h2>
+  <div class="card">
+    <h2>Key Government Banking &amp; Financial Schemes</h2>
+    <table>
+      <tr><th>Scheme</th><th>Launched</th><th>Key Features</th></tr>
+      <tr><td>Pradhan Mantri Jan Dhan Yojana (PMJDY)</td><td>28 Aug 2014</td><td>Zero-balance savings accounts; RuPay debit card; ₹1 lakh accident cover; ₹5000 overdraft facility; 50+ crore accounts opened</td></tr>
+      <tr><td>MUDRA Yojana (PMMY)</td><td>8 Apr 2015</td><td>Shishu (≤₹50,000), Kishore (₹50k–₹5L), Tarun (₹5L–₹10L); refinance through banks/NBFCs/MFIs for micro-enterprises</td></tr>
+      <tr><td>Stand-Up India</td><td>5 Apr 2016</td><td>Loans ₹10 lakh–₹1 crore to SC/ST borrowers and at least one woman borrower per bank branch for greenfield enterprises</td></tr>
+      <tr><td>PM SVAnidhi (PM Street Vendor's AtmaNirbhar Nidhi)</td><td>Jun 2020</td><td>Collateral-free loans for street vendors: ₹10,000 (1st), ₹20,000 (2nd), ₹50,000 (3rd); digital transaction incentive</td></tr>
+      <tr><td>Atal Pension Yojana (APY)</td><td>9 May 2015</td><td>Pension ₹1,000–₹5,000/month at age 60; for unorganised sector workers aged 18–40; guaranteed by Govt</td></tr>
+      <tr><td>PM Jeevan Jyoti Bima Yojana (PMJJBY)</td><td>9 May 2015</td><td>Life insurance ₹2 lakh; annual premium ₹436; age 18–50; death due to any cause; auto-debit from bank account</td></tr>
+      <tr><td>PM Suraksha Bima Yojana (PMSBY)</td><td>9 May 2015</td><td>Accident insurance ₹2 lakh (death/permanent disability), ₹1 lakh (partial disability); premium ₹20/year; age 18–70</td></tr>
+      <tr><td>Kisan Credit Card (KCC)</td><td>1998</td><td>Short-term credit for farmers for crop cultivation, allied activities, consumption; interest subvention for timely repayment</td></tr>
+      <tr><td>CGTMSE</td><td>2000</td><td>Credit Guarantee Fund Trust for Micro and Small Enterprises; credit guarantee for MSE loans up to ₹2 crore without collateral</td></tr>
+      <tr><td>PM Vaya Vandana Yojana (PMVVY)</td><td>2017</td><td>Senior citizens (60+) pension scheme by LIC; guaranteed 7.4% return; max investment ₹15 lakh</td></tr>
+      <tr><td>Sukanya Samriddhi Yojana (SSY)</td><td>22 Jan 2015</td><td>Savings scheme for girl child (below 10 years); tax-free; 8.2% interest; min ₹250, max ₹1.5L/year; 21-year maturity</td></tr>
+      <tr><td>National Pension System (NPS)</td><td>2004 (Govt); 2009 (all)</td><td>Defined contribution pension; managed by PFRDA; 2 tiers; equity+debt mix; tax benefits under 80CCD</td></tr>
+      <tr><td>SARFAESI Act 2002</td><td>2002</td><td>Banks can take possession of secured assets, auction them to recover NPAs without going to court; applies to loans ≥₹1 lakh</td></tr>
+      <tr><td>PM CARES Fund</td><td>Mar 2020</td><td>Public Charitable Trust for emergencies including COVID-19; not part of Consolidated Fund of India</td></tr>
+    </table>
+    <div class="highlight"><strong>PM Jan Dhan Yojana (PMJDY)</strong> is Guinness World Record holder for most bank accounts opened in a week (18.096 million accounts in week of 23-27 Aug 2014). The scheme is the foundation for JAM Trinity — Jan Dhan, Aadhaar, Mobile — enabling Direct Benefit Transfer (DBT).</div>
+  </div>
+</section>
+
+<!-- MCQ PRACTICE -->
+<section class="page" id="pg-mcq">
+  <h2 class="section-title">❓ MCQ Practice</h2>
+
+  <div class="mcq-box">
+    <p>Q1. What is the current Repo Rate set by RBI?</p>
+    <label class="mcq-opt"><input type="radio" name="q1" value="A"> A) 6.00%</label>
+    <label class="mcq-opt"><input type="radio" name="q1" value="B"> B) 6.25%</label>
+    <label class="mcq-opt"><input type="radio" name="q1" value="C"> C) 6.50%</label>
+    <label class="mcq-opt"><input type="radio" name="q1" value="D"> D) 6.75%</label>
+    <button onclick="checkMCQ(this,'C')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q2. Which of the following is NOT a function of RBI?</p>
+    <label class="mcq-opt"><input type="radio" name="q2" value="A"> A) Issue of currency notes</label>
+    <label class="mcq-opt"><input type="radio" name="q2" value="B"> B) Banker's bank</label>
+    <label class="mcq-opt"><input type="radio" name="q2" value="C"> C) Issue of ₹1 coin</label>
+    <label class="mcq-opt"><input type="radio" name="q2" value="D"> D) Lender of last resort</label>
+    <button onclick="checkMCQ(this,'C')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q3. Under PMJDY, what is the maximum overdraft facility provided to account holders?</p>
+    <label class="mcq-opt"><input type="radio" name="q3" value="A"> A) ₹2,000</label>
+    <label class="mcq-opt"><input type="radio" name="q3" value="B"> B) ₹3,000</label>
+    <label class="mcq-opt"><input type="radio" name="q3" value="C"> C) ₹5,000</label>
+    <label class="mcq-opt"><input type="radio" name="q3" value="D"> D) ₹10,000</label>
+    <button onclick="checkMCQ(this,'C')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q4. MUDRA Yojana's 'Tarun' category provides loans in the range of:</p>
+    <label class="mcq-opt"><input type="radio" name="q4" value="A"> A) Up to ₹50,000</label>
+    <label class="mcq-opt"><input type="radio" name="q4" value="B"> B) ₹50,000 to ₹5 lakh</label>
+    <label class="mcq-opt"><input type="radio" name="q4" value="C"> C) ₹5 lakh to ₹10 lakh</label>
+    <label class="mcq-opt"><input type="radio" name="q4" value="D"> D) ₹10 lakh to ₹50 lakh</label>
+    <button onclick="checkMCQ(this,'C')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q5. The Monetary Policy Committee (MPC) of RBI has how many members?</p>
+    <label class="mcq-opt"><input type="radio" name="q5" value="A"> A) 3</label>
+    <label class="mcq-opt"><input type="radio" name="q5" value="B"> B) 4</label>
+    <label class="mcq-opt"><input type="radio" name="q5" value="C"> C) 5</label>
+    <label class="mcq-opt"><input type="radio" name="q5" value="D"> D) 6</label>
+    <button onclick="checkMCQ(this,'D')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q6. Which payment system requires a minimum transaction of ₹2 lakh?</p>
+    <label class="mcq-opt"><input type="radio" name="q6" value="A"> A) NEFT</label>
+    <label class="mcq-opt"><input type="radio" name="q6" value="B"> B) IMPS</label>
+    <label class="mcq-opt"><input type="radio" name="q6" value="C"> C) RTGS</label>
+    <label class="mcq-opt"><input type="radio" name="q6" value="D"> D) UPI</label>
+    <button onclick="checkMCQ(this,'C')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q7. Basel III norms deal with which of the following for banks?</p>
+    <label class="mcq-opt"><input type="radio" name="q7" value="A"> A) Interest rate determination</label>
+    <label class="mcq-opt"><input type="radio" name="q7" value="B"> B) Capital adequacy and liquidity standards</label>
+    <label class="mcq-opt"><input type="radio" name="q7" value="C"> C) Priority sector lending targets</label>
+    <label class="mcq-opt"><input type="radio" name="q7" value="D"> D) Foreign exchange reserves management</label>
+    <button onclick="checkMCQ(this,'B')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q8. SEBI was established as a statutory body in which year?</p>
+    <label class="mcq-opt"><input type="radio" name="q8" value="A"> A) 1988</label>
+    <label class="mcq-opt"><input type="radio" name="q8" value="B"> B) 1990</label>
+    <label class="mcq-opt"><input type="radio" name="q8" value="C"> C) 1991</label>
+    <label class="mcq-opt"><input type="radio" name="q8" value="D"> D) 1992</label>
+    <button onclick="checkMCQ(this,'D')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q9. The DICGC insures bank deposits up to what amount per depositor per bank?</p>
+    <label class="mcq-opt"><input type="radio" name="q9" value="A"> A) ₹1 lakh</label>
+    <label class="mcq-opt"><input type="radio" name="q9" value="B"> B) ₹2 lakh</label>
+    <label class="mcq-opt"><input type="radio" name="q9" value="C"> C) ₹5 lakh</label>
+    <label class="mcq-opt"><input type="radio" name="q9" value="D"> D) ₹10 lakh</label>
+    <button onclick="checkMCQ(this,'C')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+
+  <div class="mcq-box">
+    <p>Q10. The New Development Bank (NDB) is associated with which grouping of countries?</p>
+    <label class="mcq-opt"><input type="radio" name="q10" value="A"> A) G7</label>
+    <label class="mcq-opt"><input type="radio" name="q10" value="B"> B) G20</label>
+    <label class="mcq-opt"><input type="radio" name="q10" value="C"> C) BRICS</label>
+    <label class="mcq-opt"><input type="radio" name="q10" value="D"> D) SCO</label>
+    <button onclick="checkMCQ(this,'C')" style="margin-top:.75rem;background:var(--primary);color:#fff;border:none;padding:.5rem 1.2rem;border-radius:8px;cursor:pointer;font-size:.85rem;">Check Answer</button>
+    <div class="mcq-ans"></div>
+  </div>
+</section>
+
+</div><!-- #main -->
+<footer id="site-footer">
+  <div class="footer-bottom">
+    <span>© 2025 Exam Preparation System</span>
+    <span class="footer-author">by Vikash Pandey</span>
+  </div>
+</footer>
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+function toggleTheme(){var r=document.documentElement;var next=r.getAttribute('data-theme')==='dark'?'light':'dark';if(next==='light')r.removeAttribute('data-theme');else r.setAttribute('data-theme',next);localStorage.setItem('eps-theme',next);}
+function toggleSidebar(){var sb=document.getElementById('sidebar'),m=document.getElementById('main'),f=document.getElementById('site-footer');sb.classList.toggle('closed');sb.classList.toggle('open');if(sb.classList.contains('closed')){m.classList.add('full');if(f)f.classList.add('full');}else{m.classList.remove('full');if(f)f.classList.remove('full');}}
+function showPage(id){document.querySelectorAll('.page').forEach(function(p){p.classList.remove('active');});document.querySelectorAll('.sb-item').forEach(function(i){i.classList.remove('active');});var pg=document.getElementById('pg-'+id);if(pg)pg.classList.add('active');if(event&&event.currentTarget)event.currentTarget.classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}
+function checkMCQ(btn,correct){var box=btn.closest('.mcq-box');var sel=box.querySelector('input:checked');if(!sel){alert('Please select an answer!');return;}var ans=box.querySelector('.mcq-ans');ans.style.display='block';if(sel.value===correct){ans.className='mcq-ans correct';ans.textContent='✅ Correct! '+correct;}else{ans.className='mcq-ans wrong';ans.textContent='❌ Wrong. Correct answer: '+correct;}}
+</script>
+<script>
+(function(){
+  var t=localStorage.getItem('eps-theme')||'light';
+  var btn=document.getElementById('theme-btn');
+  if(btn)btn.textContent=t==='dark'?'☀️ Light':'🌙 Dark';
+  var _ot=window.toggleTheme;
+  window.toggleTheme=function(){if(_ot)_ot();var cur=document.documentElement.getAttribute('data-theme');if(btn)btn.textContent=cur==='dark'?'☀️ Light':'🌙 Dark';};
+  var _os=window.toggleSidebar;
+  window.toggleSidebar=function(){if(_os)_os();var sb=document.getElementById('sidebar'),hbg=document.getElementById('hamburger');if(hbg&&sb)hbg.classList.toggle('open',!sb.classList.contains('closed'));};
+  window.addEventListener('scroll',function(){var docH=document.documentElement.scrollHeight-window.innerHeight;var pct=docH>0?(window.scrollY/docH*100).toFixed(1):0;var sp=document.getElementById('scroll-progress');if(sp)sp.style.width=pct+'%';},{passive:true});
+  window.addEventListener('scroll',function(){var btn2=document.getElementById('btt');if(btn2)btn2.classList.toggle('show',window.scrollY>300);},{passive:true});
+  var si=document.getElementById('search-input'),sr=document.getElementById('search-results');
+  if(!si||!sr)return;
+  var idx=[];
+  document.querySelectorAll('#sidebar .sb-item').forEach(function(el){idx.push({text:el.textContent.trim(),el:el,type:'nav'});});
+  document.querySelectorAll('#main h2,#main h3').forEach(function(el){idx.push({text:el.textContent.trim(),el:el,type:'head'});});
+  si.addEventListener('input',function(){
+    var q=this.value.toLowerCase().trim();
+    if(!q){sr.style.display='none';return;}
+    var hits=idx.filter(function(x){return x.text.toLowerCase().includes(q);}).slice(0,8);
+    if(!hits.length){sr.style.display='none';return;}
+    sr.innerHTML=hits.map(function(h){return '<div class="sr-item">'+h.text+'</div>';}).join('');
+    sr.style.display='block';
+    sr.querySelectorAll('.sr-item').forEach(function(item,i){
+      item.onclick=function(){
+        var h=hits[i];
+        if(h.type==='nav'){h.el.click();}
+        else{var sec=h.el.closest('.page');if(sec){var id=sec.id.replace('pg-','');var sb2=Array.from(document.querySelectorAll('.sb-item')).find(function(el){return el.getAttribute('onclick')&&el.getAttribute('onclick').includes("'"+id+"'");});if(sb2)sb2.click();}setTimeout(function(){h.el.scrollIntoView({behavior:'smooth',block:'center'});},200);}
+        sr.style.display='none';si.value='';
+      };
+    });
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='/'&&document.activeElement.tagName!=='INPUT'&&document.activeElement.tagName!=='TEXTAREA'){e.preventDefault();si.focus();}if(e.key==='Escape'){sr.style.display='none';si.value='';}});
+  document.addEventListener('click',function(e){if(!e.target.closest('#search-bar'))sr.style.display='none';});
+  (function(){var p=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.page-links a').forEach(function(a){if(a.getAttribute('href')===p)a.classList.add('current');});})();
+})();
+</script>
+</body>
+</html>
