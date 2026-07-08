@@ -2554,6 +2554,86 @@ const EXAMS = [
       { subject:'Public Health Administration & Records', topics:['Health Records — Maintenance of registers (ANC, Immunisation, Death, Birth, Disease notification)','Health Reports — Weekly/Monthly reporting formats, HMIS (Health Management Information System) portal','Village Health Sanitation & Nutrition Committee (VHSNC) — CHO\'s facilitation role','Community Mobilisation — IEC/BCC, ASHA coordination, Village Health Nutrition Days (VHND)','Referral System — Referral cards, Ambulance (102, 108), JSSK (Janani Shishu Suraksha Karyakram)'] },
     ]
   },
+  {
+    name: 'Bihar STET (State Teacher Eligibility Test)',
+    shortName: 'Bihar STET',
+    icon: '✏️',
+    category: 'Teaching',
+    conducting: 'BSEB (Bihar School Examination Board)',
+    frequency: 'As per requirement (irregular)',
+    vacancies: '10,000–1,00,000+ (varies by cycle)',
+    overview: 'Bihar State Teacher Eligibility Test for teaching posts in government schools of Bihar. Paper 1: Class 1–5 (Primary), Paper 2: Class 6–8 (Upper Primary). BSTET is mandatory for appointment as teacher in Bihar government schools. Papers are bilingual (Hindi + English). No negative marking.',
+    exam: [
+      { stage:'Paper 1 (Primary — Class 1–5)', paper:'Child Development & Pedagogy', qs:'30', marks:'30', duration:'2.5 hr total', neg:'None', notes:'CDP compulsory' },
+      { stage:'Paper 1', paper:'Language I (Hindi)', qs:'30', marks:'30', duration:'2.5 hr total', neg:'None', notes:'Compulsory' },
+      { stage:'Paper 1', paper:'Language II (English/Urdu/Bangla/Maithili)', qs:'30', marks:'30', duration:'2.5 hr total', neg:'None', notes:'Compulsory' },
+      { stage:'Paper 1', paper:'Mathematics', qs:'30', marks:'30', duration:'2.5 hr total', neg:'None', notes:'Compulsory' },
+      { stage:'Paper 1', paper:'Environmental Studies', qs:'30', marks:'30', duration:'2.5 hr total', neg:'None', notes:'Compulsory' },
+      { stage:'Paper 1 TOTAL', paper:'', qs:'150', marks:'150', duration:'2.5 hr', neg:'—', notes:'Qualifying: 60% General, 55% OBC, 50% SC/ST/Divyang', isTotal:true },
+      { stage:'Paper 2 (Upper Primary — Class 6–8)', paper:'Child Development & Pedagogy', qs:'30', marks:'30', duration:'2.5 hr total', neg:'None', notes:'CDP compulsory' },
+      { stage:'Paper 2', paper:'Language I (Hindi)', qs:'30', marks:'30', duration:'2.5 hr total', neg:'None', notes:'Compulsory' },
+      { stage:'Paper 2', paper:'Language II (English/Urdu/Bangla/Maithili)', qs:'30', marks:'30', duration:'2.5 hr total', neg:'None', notes:'Compulsory' },
+      { stage:'Paper 2', paper:'Subject Area (Mathematics-Science OR Social Studies)', qs:'60', marks:'60', duration:'2.5 hr total', neg:'None', notes:'Choose one subject group' },
+      { stage:'Paper 2 TOTAL', paper:'', qs:'150', marks:'150', duration:'2.5 hr', neg:'—', notes:'Qualifying: 60% General, 55% OBC, 50% SC/ST/Divyang', isTotal:true },
+    ],
+    syllabus: [
+      { subject:'Child Development & Pedagogy (Both Papers)', topics:['Child Development — Piaget, Vygotsky, Kohlberg theories; Stages of development (0–11 years for Paper 1, 11–14 years for Paper 2)','Concept of Inclusive Education — Addressing needs of differently-abled children, Learning Disabilities (Dyslexia, ADHD, Autism)','Learning & Pedagogy — How children think and learn; Constructivist approach; Motivation; Assessment','Language Development — Bilingualism, Role of language in cognition','Right to Education Act 2009 (RTE) — Free & Compulsory Education, No Detention Policy, Child-friendly schools','Gender issues in education; Children from disadvantaged sections — SC, ST, OBC, Minority'] },
+      { subject:'Language I — Hindi (Both Papers)', topics:['Hindi Grammar — Sandhi, Samas, Karak, Ling, Vachan, Kaal, Muhavare, Lokoktiyan, Paryayvachi, Vilom','Hindi Literature — Major poets and writers (Tulsidas, Kabir, Surdas, Premchand, Mahadevi Verma, Dinkar)','Reading Comprehension — Unseen passages','Pedagogy of Language Teaching — Teaching methods, Teaching aids, Evaluation in language teaching','Bihar-specific Hindi literature — Ramdhari Singh Dinkar (Patna), Phaniswarnath Renu (Araria), Nagarjuna (Darbhanga)'] },
+      { subject:'Language II — English (Paper 1 & 2)', topics:['English Grammar — Tenses, Modals, Active-Passive Voice, Direct-Indirect Speech, Articles, Prepositions, Conjunctions','Reading Comprehension — Unseen passage, Poem interpretation','Vocabulary — Synonyms, Antonyms, Idioms, Phrasal Verbs, Word formation','Pedagogy of English Teaching — Communicative Language Teaching, Task-based learning, Teaching methods','Writing Skills — Essay, Letter, Summary'] },
+      { subject:'Mathematics (Paper 1 — Primary Level)', topics:['Number System — Natural numbers, Whole numbers, Integers, Fractions, Decimals, HCF, LCM','Basic Operations — Addition, Subtraction, Multiplication, Division','Geometry — Lines, Angles, Triangles, Quadrilaterals, Circles','Measurement — Length, Weight, Volume, Time, Money','Data Handling — Tally marks, Pictograph, Bar Graph','Pedagogy of Mathematics — Math anxiety, Problem-solving approach, Concept mapping'] },
+      { subject:'Environmental Studies (Paper 1 — Primary)', topics:['Family & Friends — Relationships, Animals, Plants','Food — Sources, Components, Cleaning, Cooking, Preservation','Shelter — Types of houses, Building materials','Water — Sources, Conservation, Water Cycle','Travel — Transport, Maps, Directions','Things We Make & Do — Industries, Crafts, Professions','Pedagogy of EVS — Integration with other subjects, Activities, Field visits'] },
+      { subject:'Mathematics & Science (Paper 2 — Upper Primary)', topics:['Mathematics — Number System, Algebra (Linear Equations), Geometry (Congruence, Similarity, Pythagoras), Mensuration (Areas & Volumes), Statistics, Ratio & Proportion, Percentage, Profit & Loss, Simple & Compound Interest','Science — Food (Nutrition, Digestion), Materials (Acids, Bases, Metals & Non-metals, Fibres), Living World (Cells, Microorganisms, Reproduction, Adaptation), Moving Things (Force, Motion, Work, Energy, Sound, Light)','Pedagogy — Problem solving, Activity-based, Laboratory work, Assessment in Science & Maths'] },
+      { subject:'Social Studies (Paper 2 — Upper Primary)', topics:['History — Ancient, Medieval, Modern Indian History; Bihar History (Mauryan, Gupta, Pala dynasties; 1857 in Bihar; Freedom Movement contribution)','Geography — Earth, Globe, Maps; India Physical & Political; Bihar Geography (Location, Rivers, Agriculture, Minerals)','Political Science — Indian Constitution, Democracy, Government, Panchayati Raj, Rights & Duties','Economics — Agriculture, Resources, Development, Poverty, Government Budget Basics','Pedagogy — Project method, Community survey, Discussion, ICT in Social Studies'] },
+    ]
+  },
+  {
+    name: 'Bihar B.Ed CET (Common Entrance Test)',
+    shortName: 'Bihar B.Ed CET',
+    icon: '🎓',
+    category: 'Teaching',
+    conducting: 'LNMU (Lalit Narayan Mithila University) on behalf of Bihar govt',
+    frequency: 'Annual',
+    vacancies: '25,000–50,000 seats across Bihar B.Ed colleges',
+    overview: 'Common Entrance Test for admission to 2-year B.Ed (Bachelor of Education) programme in government and private colleges of Bihar. Conducted by LNMU Darbhanga. Eligibility: Graduation with 50% marks (45% for reserved). Bihar B.Ed is mandatory for teaching in secondary schools. Also includes integrated 4-year B.A.B.Ed/B.Sc.B.Ed at BIETs.',
+    exam: [
+      { stage:'Written Test', paper:'General English Comprehension', qs:'15', marks:'15', duration:'2 hr total', neg:'None', notes:'Qualifying nature' },
+      { stage:'Written Test', paper:'General Hindi Comprehension', qs:'15', marks:'15', duration:'2 hr total', neg:'None', notes:'Qualifying nature' },
+      { stage:'Written Test', paper:'Logical & Analytical Reasoning', qs:'25', marks:'25', duration:'2 hr total', neg:'None', notes:'Important scoring section' },
+      { stage:'Written Test', paper:'General Awareness (Teaching & Social Issues)', qs:'40', marks:'40', duration:'2 hr total', neg:'None', notes:'Education policy, current affairs' },
+      { stage:'Written Test', paper:'General Science / Maths / Social Science / Humanities', qs:'25', marks:'25', duration:'2 hr total', neg:'None', notes:'Based on graduation subject' },
+      { stage:'TOTAL', paper:'', qs:'120', marks:'120', duration:'2 hr', neg:'—', notes:'Merit-based admission; No interview', isTotal:true },
+    ],
+    syllabus: [
+      { subject:'General Awareness & Teaching Aptitude', topics:['Indian Education System — Ancient (Gurukul, Nalanda), Medieval, Colonial, Post-Independence (Kothari Commission, NPE 1986/1992, NEP 2020)','Right to Education Act 2009 — Provisions, Achievements, Challenges','Bihar Education System — BSEB, BPSC TRE, BTET/BSTET, Government School structure, SCERT Bihar','National Curriculum Framework (NCF 2005 & 2023) — Key recommendations','Child Rights — UNCRC, POCSO Act 2012, Protection of Children','Teaching Methods — Lecture, Discussion, Project, Problem-solving, Activity-based','Current Affairs (Bihar + National) — Govt schemes for education: PM POSHAN, Samagra Shiksha, DIKSHA portal','Social Issues — Gender equality in education, Dropout rates, Inclusive education'] },
+      { subject:'Reasoning & Mental Ability', topics:['Verbal Reasoning — Analogies, Classification, Series Completion, Coding-Decoding, Blood Relations, Directions','Non-Verbal Reasoning — Pattern Completion, Mirror Images, Paper Folding, Figure Series','Critical Thinking — Statement-Conclusion, Statement-Assumption, Argument Analysis, Syllogism','Mathematical Reasoning — Profit & Loss, Percentage, Ratio, Time-Distance, Probability'] },
+      { subject:'General Science (for Science stream aspirants)', topics:['Physics — Motion, Force, Work-Energy-Power, Light, Sound, Electricity, Magnetism (Class 10–12 level)','Chemistry — Matter, Atoms, Periodic Table, Chemical Reactions, Acids-Bases-Salts, Carbon compounds','Biology — Cell, Tissues, Life Processes, Reproduction, Genetics, Evolution, Ecology','Environmental Science — Pollution, Climate Change, Biodiversity, Conservation'] },
+      { subject:'Social Science (for Arts/Commerce stream aspirants)', topics:['History — Ancient India, Medieval India, Modern India (British period), Freedom Struggle, Post-Independence','Geography — India Physical features, Climate, Vegetation, Natural Resources, Population; Bihar Geography','Civics — Indian Constitution, Fundamental Rights, Parliament, Judiciary, Local Government, Bihar legislature','Economics — Basic concepts, Poverty, Development, Agriculture, Industries, Bihar Economy, Budget basics'] },
+    ]
+  },
+  {
+    name: 'Bihar Police Sub-Inspector (BPSSC) & Bihar Home Guard',
+    shortName: 'Bihar Police SI',
+    icon: '🚔',
+    category: 'Bihar Specific',
+    conducting: 'BPSSC (Bihar Police Subordinate Services Commission) / Home Department',
+    frequency: 'As per vacancy',
+    vacancies: '1,000–5,000 (SI); Large numbers for Home Guard',
+    overview: 'Bihar Police Sub-Inspector (Executive) recruited by BPSSC through written exam + Physical Efficiency Test (PET) + medical. Bihar Home Guard is auxiliary police recruited by District Commandants. Daroga (SI) is a popular Bihar Police post also covered by BPSSC. Note: Bihar Daroga SI and BPSSC SI are the same post.',
+    exam: [
+      { stage:'Prelims', paper:'General Studies, GK, Science, Maths, Reasoning, Hindi/English', qs:'100 MCQ', marks:'100', duration:'2 hr', neg:'-0.2', notes:'Screening; Bihar-specific questions included' },
+      { stage:'Mains', paper:'General Hindi (Descriptive)', qs:'—', marks:'100', duration:'3 hr', neg:'None', notes:'Essay + Letter + Grammar' },
+      { stage:'Mains', paper:'General Studies & GK (Objective)', qs:'100', marks:'200', duration:'2 hr', neg:'-0.2', notes:'BPSC pattern level' },
+      { stage:'Physical Efficiency Test', paper:'Running, Long Jump, High Jump', qs:'—', marks:'Qualifying', duration:'—', neg:'None', notes:'Male: 1600m run; Female: 1 km run' },
+      { stage:'Medical Examination', paper:'Physical standards check', qs:'—', marks:'Qualifying', duration:'—', neg:'None', notes:'Height, chest, eyesight standards' },
+      { stage:'TOTAL (Written)', paper:'', qs:'—', marks:'300', duration:'—', neg:'—', notes:'', isTotal:true },
+    ],
+    syllabus: [
+      { subject:'General Studies & Current Affairs', topics:['Bihar History — Ancient (Pataliputra capital, Mauryan, Gupta, Pala, Chero), Medieval (Sultanate, Mughal), Modern (Champaran, Chota Nagpur), Contemporary Bihar','Bihar Geography — Location, Districts (38), Rivers (Ganga, Sone, Kosi, Gandak, Bagmati), Agriculture (paddy, wheat, maize, litchi — largest producer), Minerals, Climate','Bihar Economy — Major sectors, Industries, BIDA (Bihar Industrial Development Authority), Per capita income, Bihar Govt schemes','Bihar Polity — Governor, CM, Bihar Vidhan Sabha (243 seats), Bihar Vidhan Parishad (75 seats), Bihar Legislature, High Court (Patna)','National & Current Affairs — Major events, govt schemes, sports, awards (last 6 months)','India GK — History, Geography, Polity, Economy at BPSC level'] },
+      { subject:'General Science', topics:['Physics — Motion, Force, Energy, Light, Sound, Electricity, Heat','Chemistry — Matter, Atoms, Chemical reactions, Periodic table, Acids-Bases, Carbon','Biology — Cell, Microbes, Nutrition, Respiration, Reproduction, Human physiology, Diseases','Science in daily life — Medicines, Materials, Computers, Space technology'] },
+      { subject:'General Hindi', topics:['Sandhi-Viched, Samas, Ling-Vachan, Karak, Kaal','Muhavare, Lokoktiyan, Paryayvachi, Vilom, Anekarthi Shabd','Essay writing — Social issues, current affairs, Bihar-related topics (500 words)','Letter writing — Official letters, applications','Comprehension — Unseen Hindi passage','Translation — English to Hindi passage'] },
+      { subject:'Maths & Reasoning', topics:['Number System, HCF-LCM, Fractions, Decimals','Percentage, Profit-Loss, Simple-Compound Interest, Ratio-Proportion, Average','Time-Work, Time-Distance, Boats-Streams, Pipes-Cisterns','Basic Geometry — Triangles, Circles, Mensuration (Area, Volume)','Logical Reasoning — Blood Relations, Direction sense, Coding-Decoding, Analogy, Series, Ranking','Data Interpretation — Table, Bar Graph, Pie Chart (BPSSC includes these)'] },
+    ]
+  },
 ];
 
 /* ══════════════════════════════════════════════════════════
@@ -2620,14 +2700,47 @@ function iconBg(cat) {
 /* ══════════════════════════════════════════════════════════
    RENDER EXAM DETAIL
 ══════════════════════════════════════════════════════════ */
+/* ── Study links auto-map by category + exam-specific overrides ── */
+const STUDY_MAP = {
+  'UPSC':           [{l:'Indian Polity',href:'Indian_Polity.html',i:'⚖️'},{l:'Indian History',href:'Indian_History.html',i:'🏛️'},{l:'Indian Geography',href:'Indian_Geography.html',i:'🗺️'},{l:'Indian Economy',href:'Indian_Economy.html',i:'💰'},{l:'Environment & Ecology',href:'Environment_Ecology.html',i:'🌿'},{l:'Art & Culture',href:'Art_Culture.html',i:'🎨'},{l:'Science',href:'Science.html',i:'🔬'},{l:'Static GK',href:'Static_GK.html',i:'🌍'},{l:'Current Affairs',href:'Current_Affairs.html',i:'📰'},{l:'Maths',href:'Competitive_Exam_Mathematics_Cheat_Sheet.html',i:'🧮'},{l:'Reasoning',href:'Reasoning_Guide.html',i:'🧠'}],
+  'SSC':            [{l:'Indian Polity',href:'Indian_Polity.html',i:'⚖️'},{l:'Indian History',href:'Indian_History.html',i:'🏛️'},{l:'Indian Geography',href:'Indian_Geography.html',i:'🗺️'},{l:'Science',href:'Science.html',i:'🔬'},{l:'Static GK',href:'Static_GK.html',i:'🌍'},{l:'English Grammar',href:'english-grammar-mastery.html',i:'📝'},{l:'Maths',href:'Competitive_Exam_Mathematics_Cheat_Sheet.html',i:'🧮'},{l:'Reasoning',href:'Reasoning_Guide.html',i:'🧠'},{l:'Computer',href:'Computer.html',i:'💻'},{l:'Current Affairs',href:'Current_Affairs.html',i:'📰'}],
+  'Banking':        [{l:'Banking Awareness',href:'Banking_Awareness.html',i:'🏦'},{l:'Indian Economy',href:'Indian_Economy.html',i:'💰'},{l:'English Grammar',href:'english-grammar-mastery.html',i:'📝'},{l:'Maths',href:'Competitive_Exam_Mathematics_Cheat_Sheet.html',i:'🧮'},{l:'Reasoning',href:'Reasoning_Guide.html',i:'🧠'},{l:'Computer',href:'Computer.html',i:'💻'},{l:'Static GK',href:'Static_GK.html',i:'🌍'},{l:'Current Affairs',href:'Current_Affairs.html',i:'📰'}],
+  'Railway':        [{l:'Science',href:'Science.html',i:'🔬'},{l:'Maths',href:'Competitive_Exam_Mathematics_Cheat_Sheet.html',i:'🧮'},{l:'Reasoning',href:'Reasoning_Guide.html',i:'🧠'},{l:'Static GK',href:'Static_GK.html',i:'🌍'},{l:'Indian History',href:'Indian_History.html',i:'🏛️'},{l:'Indian Geography',href:'Indian_Geography.html',i:'🗺️'},{l:'Current Affairs',href:'Current_Affairs.html',i:'📰'},{l:'Computer',href:'Computer.html',i:'💻'}],
+  'Bihar Specific': [{l:'Bihar Special GK',href:'Bihar_Special_GK.html',i:'🌾'},{l:'Indian Polity',href:'Indian_Polity.html',i:'⚖️'},{l:'Indian History',href:'Indian_History.html',i:'🏛️'},{l:'Indian Geography',href:'Indian_Geography.html',i:'🗺️'},{l:'Indian Economy',href:'Indian_Economy.html',i:'💰'},{l:'Science',href:'Science.html',i:'🔬'},{l:'Maths',href:'Competitive_Exam_Mathematics_Cheat_Sheet.html',i:'🧮'},{l:'Reasoning',href:'Reasoning_Guide.html',i:'🧠'},{l:'Static GK',href:'Static_GK.html',i:'🌍'},{l:'Hindi Grammar',href:'Hindi_Grammar.html',i:'📖'},{l:'Current Affairs',href:'Current_Affairs.html',i:'📰'}],
+  'Defence':        [{l:'Indian Polity',href:'Indian_Polity.html',i:'⚖️'},{l:'Indian History',href:'Indian_History.html',i:'🏛️'},{l:'Indian Geography',href:'Indian_Geography.html',i:'🗺️'},{l:'Science',href:'Science.html',i:'🔬'},{l:'Maths',href:'Competitive_Exam_Mathematics_Cheat_Sheet.html',i:'🧮'},{l:'Reasoning',href:'Reasoning_Guide.html',i:'🧠'},{l:'English Grammar',href:'english-grammar-mastery.html',i:'📝'},{l:'Static GK',href:'Static_GK.html',i:'🌍'},{l:'Current Affairs',href:'Current_Affairs.html',i:'📰'}],
+  'State PSC':      [{l:'Indian Polity',href:'Indian_Polity.html',i:'⚖️'},{l:'Indian History',href:'Indian_History.html',i:'🏛️'},{l:'Indian Geography',href:'Indian_Geography.html',i:'🗺️'},{l:'Indian Economy',href:'Indian_Economy.html',i:'💰'},{l:'Science',href:'Science.html',i:'🔬'},{l:'Static GK',href:'Static_GK.html',i:'🌍'},{l:'Current Affairs',href:'Current_Affairs.html',i:'📰'},{l:'Maths',href:'Competitive_Exam_Mathematics_Cheat_Sheet.html',i:'🧮'},{l:'Reasoning',href:'Reasoning_Guide.html',i:'🧠'},{l:'Environment & Ecology',href:'Environment_Ecology.html',i:'🌿'},{l:'Art & Culture',href:'Art_Culture.html',i:'🎨'}],
+  'State Police':   [{l:'Indian Polity',href:'Indian_Polity.html',i:'⚖️'},{l:'Indian History',href:'Indian_History.html',i:'🏛️'},{l:'Indian Geography',href:'Indian_Geography.html',i:'🗺️'},{l:'Science',href:'Science.html',i:'🔬'},{l:'Maths',href:'Competitive_Exam_Mathematics_Cheat_Sheet.html',i:'🧮'},{l:'Reasoning',href:'Reasoning_Guide.html',i:'🧠'},{l:'Static GK',href:'Static_GK.html',i:'🌍'},{l:'Current Affairs',href:'Current_Affairs.html',i:'📰'}],
+  'Teaching':       [{l:'Indian Polity',href:'Indian_Polity.html',i:'⚖️'},{l:'Indian History',href:'Indian_History.html',i:'🏛️'},{l:'Science',href:'Science.html',i:'🔬'},{l:'Maths',href:'Competitive_Exam_Mathematics_Cheat_Sheet.html',i:'🧮'},{l:'Hindi Grammar',href:'Hindi_Grammar.html',i:'📖'},{l:'English Grammar',href:'english-grammar-mastery.html',i:'📝'},{l:'Reasoning',href:'Reasoning_Guide.html',i:'🧠'},{l:'Static GK',href:'Static_GK.html',i:'🌍'},{l:'Computer',href:'Computer.html',i:'💻'},{l:'Bihar Special GK',href:'Bihar_Special_GK.html',i:'🌾'}],
+  'Central Govt':   [{l:'Indian Polity',href:'Indian_Polity.html',i:'⚖️'},{l:'Indian Economy',href:'Indian_Economy.html',i:'💰'},{l:'Banking Awareness',href:'Banking_Awareness.html',i:'🏦'},{l:'Static GK',href:'Static_GK.html',i:'🌍'},{l:'Current Affairs',href:'Current_Affairs.html',i:'📰'},{l:'English Grammar',href:'english-grammar-mastery.html',i:'📝'},{l:'Maths',href:'Competitive_Exam_Mathematics_Cheat_Sheet.html',i:'🧮'},{l:'Reasoning',href:'Reasoning_Guide.html',i:'🧠'},{l:'Computer',href:'Computer.html',i:'💻'}],
+  'Higher Education':[{l:'Science',href:'Science.html',i:'🔬'},{l:'Indian Economy',href:'Indian_Economy.html',i:'💰'},{l:'Indian Polity',href:'Indian_Polity.html',i:'⚖️'},{l:'Reasoning',href:'Reasoning_Guide.html',i:'🧠'},{l:'Maths',href:'Competitive_Exam_Mathematics_Cheat_Sheet.html',i:'🧮'},{l:'English Grammar',href:'english-grammar-mastery.html',i:'📝'},{l:'Environment & Ecology',href:'Environment_Ecology.html',i:'🌿'}],
+  'State Judicial': [{l:'Indian Polity',href:'Indian_Polity.html',i:'⚖️'},{l:'Indian History',href:'Indian_History.html',i:'🏛️'},{l:'Reasoning',href:'Reasoning_Guide.html',i:'🧠'},{l:'English Grammar',href:'english-grammar-mastery.html',i:'📝'},{l:'Hindi Grammar',href:'Hindi_Grammar.html',i:'📖'},{l:'Computer',href:'Computer.html',i:'💻'},{l:'Maths',href:'Competitive_Exam_Mathematics_Cheat_Sheet.html',i:'🧮'}],
+  'State Health':   [{l:'Science',href:'Science.html',i:'🔬'},{l:'Static GK',href:'Static_GK.html',i:'🌍'},{l:'Current Affairs',href:'Current_Affairs.html',i:'📰'},{l:'Reasoning',href:'Reasoning_Guide.html',i:'🧠'},{l:'English Grammar',href:'english-grammar-mastery.html',i:'📝'}],
+};
+const EXAM_EXTRA = [
+  {match:/UPPCS|UP PCS|UPSSSC/i,  links:[{l:'UP Special GK',href:'UP_Special_GK.html',i:'🌺'}]},
+  {match:/UP Police/i,             links:[{l:'UP Special GK',href:'UP_Special_GK.html',i:'🌺'}]},
+  {match:/RPSC|Rajasthan/i,        links:[{l:'Rajasthan GK',href:'Rajasthan_GK.html',i:'🏜️'}]},
+  {match:/MPPSC|MP Police|Madhya Pradesh/i, links:[{l:'MP Special GK',href:'MP_GK.html',i:'🦁'}]},
+  {match:/BPSC|BSSC|Bihar/i,       links:[{l:'Bihar Special GK',href:'Bihar_Special_GK.html',i:'🌾'}]},
+  {match:/IBPS|SBI|RBI|LIC|SEBI|Banking/i, links:[{l:'Banking Awareness',href:'Banking_Awareness.html',i:'🏦'}]},
+  {match:/UPSC CSE|UPSC IFS|NDA|CDS|ESE/i, links:[{l:'Art & Culture',href:'Art_Culture.html',i:'🎨'},{l:'Environment & Ecology',href:'Environment_Ecology.html',i:'🌿'}]},
+  {match:/GATE|DRDO|ISRO|AAI|PSU/i, links:[{l:'Science',href:'Science.html',i:'🔬'},{l:'Computer',href:'Computer.html',i:'💻'}]},
+];
+function getStudyLinks(exam) {
+  const base = STUDY_MAP[exam.category] || [];
+  const extras = [];
+  EXAM_EXTRA.forEach(rule => { if (rule.match.test(exam.name)) rule.links.forEach(lk => { if (!base.find(b=>b.href===lk.href) && !extras.find(b=>b.href===lk.href)) extras.push(lk); }); });
+  return [...base, ...extras];
+}
+
 function renderDetail() {
   const e = currentExam;
   // Update URL hash for deep linking
   history.replaceState(null, '', '#' + e.id);
   const stagesHtml = e.stages.map((s, i) => `<span class="stage-chip">${s}</span>${i < e.stages.length - 1 ? '<span class="stage-arrow">→</span>' : ''}`).join('');
 
-  const tabs = ['overview','pattern','syllabus'];
-  const tabLabels = { overview:'Overview', pattern:'Paper Pattern', syllabus:'Syllabus' };
+  const tabs = ['overview','pattern','syllabus','study'];
+  const tabLabels = { overview:'Overview', pattern:'Paper Pattern', syllabus:'Syllabus', study:'📚 Study Material' };
 
   let tabContent = '';
   if (currentTab === 'overview') {
@@ -2682,6 +2795,24 @@ function renderDetail() {
       </div>
     `).join('');
     tabContent = `<div class="accordion">${items}</div>`;
+  } else if (currentTab === 'study') {
+    const slinks = getStudyLinks(e);
+    tabContent = `
+      <div style="padding:.5rem 0">
+        <p style="font-size:.85rem;color:var(--muted);margin-bottom:1.25rem">Recommended study pages for <strong>${e.name}</strong>. Click any card to open that subject.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:.85rem">
+          ${slinks.map(lk=>`
+            <a href="${lk.href}" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:.65rem;background:var(--surface);border:1.5px solid var(--border);border-radius:12px;padding:.85rem 1rem;text-decoration:none;color:var(--text);transition:all .2s;font-size:.88rem;font-weight:600" onmouseover="this.style.borderColor='var(--primary)';this.style.background='var(--surface2)'" onmouseout="this.style.borderColor='var(--border)';this.style.background='var(--surface)'">
+              <span style="font-size:1.3rem">${lk.i}</span>
+              <span>${lk.l}</span>
+            </a>
+          `).join('')}
+        </div>
+        <div style="margin-top:1.5rem;padding:1rem;background:var(--surface2);border-radius:12px;font-size:.83rem;color:var(--muted)">
+          💡 <strong>Tip:</strong> Use the search bar (/) on each subject page to find specific topics quickly.
+        </div>
+      </div>
+    `;
   }
 
   const tabBtns = tabs.map(t => `<button class="tab-btn${currentTab === t ? ' active' : ''}" data-tab="${t}">${tabLabels[t]}</button>`).join('');
