@@ -138,6 +138,18 @@ header .right{display:flex;align-items:center;gap:.75rem;}
 .pq-opt{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:4px 10px;font-size:.8rem;}
 .pq-ans{font-size:.8rem;color:var(--primary);border-top:1px solid var(--border);padding-top:8px;margin-top:4px;}
 </style>
+<script><!-- eps-visit-tracker -->
+(function(){
+  try{
+    var d=JSON.parse(localStorage.getItem('eps-progress')||'{}');
+    d['Reasoning_Guide.html']={ts:Date.now(),title:'Reasoning',icon:'🧠'};
+    localStorage.setItem('eps-progress',JSON.stringify(d));
+    var a=JSON.parse(localStorage.getItem('eps-activity')||'[]');
+    a.unshift({href:'Reasoning_Guide.html',title:'Reasoning',icon:'🧠',ts:Date.now()});
+    localStorage.setItem('eps-activity',JSON.stringify(a.slice(0,30)));
+  }catch(e){}
+})();
+</script>
 </head>
 <body>
 

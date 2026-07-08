@@ -212,6 +212,18 @@ kbd{display:inline-block;background:var(--surface2);border:1px solid var(--borde
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
+<script><!-- eps-visit-tracker -->
+(function(){
+  try{
+    var d=JSON.parse(localStorage.getItem('eps-progress')||'{}');
+    d['index.html']={ts:Date.now(),title:'Home Portal',icon:'🏠'};
+    localStorage.setItem('eps-progress',JSON.stringify(d));
+    var a=JSON.parse(localStorage.getItem('eps-activity')||'[]');
+    a.unshift({href:'index.html',title:'Home Portal',icon:'🏠',ts:Date.now()});
+    localStorage.setItem('eps-activity',JSON.stringify(a.slice(0,30)));
+  }catch(e){}
+})();
+</script>
 </head>
 <body>
 

@@ -900,6 +900,18 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
+<script><!-- eps-visit-tracker -->
+(function(){
+  try{
+    var d=JSON.parse(localStorage.getItem('eps-progress')||'{}');
+    d['Competitive_Exam_Mathematics_Cheat_Sheet.html']={ts:Date.now(),title:'Mathematics',icon:'🧮'};
+    localStorage.setItem('eps-progress',JSON.stringify(d));
+    var a=JSON.parse(localStorage.getItem('eps-activity')||'[]');
+    a.unshift({href:'Competitive_Exam_Mathematics_Cheat_Sheet.html',title:'Mathematics',icon:'🧮',ts:Date.now()});
+    localStorage.setItem('eps-activity',JSON.stringify(a.slice(0,30)));
+  }catch(e){}
+})();
+</script>
 </head>
 <body>
 <div id="math-mob-overlay" onclick="closeMathSidebar()"></div>

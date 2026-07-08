@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Study Progress Dashboard — Track your exam preparation across all subjects. By Vikash Pandey.">
+<meta name="author" content="Vikash Pandey">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+<title>Study Progress Dashboard — Exam Preparation System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>(function(){var t=localStorage.getItem('eps-theme');if(t)document.documentElement.setAttribute('data-theme',t);})()</script>
+<style>
+:root{
+  --primary:#6366f1;--secondary:#8b5cf6;
+  --bg:#f5f3ff;--surface:#ffffff;--surface2:#ede9fe;
+  --border:#ddd6fe;--text:#1e293b;--muted:#64748b;
+  --green:#16a34a;--amber:#d97706;--red:#dc2626;--blue:#2563eb;
+  --sidebar:260px;--hdr:64px;--radius:12px;
+}
+[data-theme="dark"]{--bg:#0f0e17;--surface:#1a1828;--surface2:#221f35;--border:#2d2a45;--text:#f1f5f9;--muted:#94a3b8;}
+*{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;}
+::-webkit-scrollbar{width:6px;}::-webkit-scrollbar-thumb{background:var(--primary);border-radius:99px;}
+
+/* ── NAV PILLS ── */
+.page-links{display:flex;flex-wrap:nowrap;gap:6px;align-items:center;overflow-x:auto;scrollbar-width:none;}
+.page-links::-webkit-scrollbar{display:none;}
+.page-links a{font-size:.7rem;color:var(--text);background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:4px 10px;text-decoration:none;font-weight:500;white-space:nowrap;transition:all .2s;}
+.page-links a:hover,.page-links a.current{background:var(--primary);color:#fff;border-color:var(--primary);}
+
+/* ── HEADER ── */
+#scroll-progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--primary),var(--secondary));z-index:2000;width:0;transition:width .1s;}
+#header{position:fixed;top:0;left:0;right:0;height:var(--hdr);background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 1rem;gap:1rem;z-index:1000;}
+#hamburger{background:none;border:none;cursor:pointer;display:flex;flex-direction:column;gap:4px;padding:4px;}
+#hamburger span{display:block;width:22px;height:2px;background:var(--text);border-radius:2px;transition:transform .25s,opacity .25s;}
+#hamburger.open span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+#hamburger.open span:nth-child(2){opacity:0;}
+#hamburger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+#logo{display:flex;align-items:center;gap:.5rem;font-weight:800;font-size:1.05rem;text-decoration:none;color:var(--text);}
+#logo .grd{background:linear-gradient(135deg,var(--primary),var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+#creator-badge{display:flex;align-items:center;gap:.4rem;font-size:.75rem;font-weight:600;color:var(--muted);white-space:nowrap;}
+#creator-badge .cb-dot{width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--secondary));animation:pulse-dot 2s ease-in-out infinite;}
+@keyframes pulse-dot{0%,100%{transform:scale(1);}50%{transform:scale(1.4);opacity:.7;}}
+.header-right{margin-left:auto;display:flex;align-items:center;gap:.75rem;}
+#theme-btn{background:none;border:1.5px solid var(--border);border-radius:99px;padding:.35rem .8rem;cursor:pointer;font-size:.85rem;color:var(--text);display:flex;align-items:center;gap:.3rem;}
+#theme-btn:hover{border-color:var(--primary);}
+
+/* ── SUB-NAV ── */
+#sub-nav{position:fixed;top:var(--hdr);left:0;right:0;z-index:999;background:var(--surface);border-bottom:1px solid var(--border);padding:8px 1rem;}
+
+/* ── LAYOUT ── */
+#main{margin-top:calc(var(--hdr) + 44px);padding:2rem;max-width:1200px;margin-left:auto;margin-right:auto;}
+@media(max-width:768px){#sub-nav{display:none;}#main{padding:1rem;}}
+
+/* ── HERO ── */
+.hero{background:linear-gradient(135deg,#312e81 0%,#4c1d95 50%,#1e1b4b 100%);border-radius:20px;padding:2.5rem 2rem;color:#fff;margin-bottom:2rem;position:relative;overflow:hidden;}
+.hero::after{content:'📊';position:absolute;right:2rem;top:50%;transform:translateY(-50%);font-size:6rem;opacity:.08;}
+.hero h1{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:800;margin-bottom:.5rem;}
+.hero h1 span{background:linear-gradient(90deg,#a5b4fc,#c4b5fd,#818cf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.hero p{font-size:.9rem;opacity:.8;max-width:500px;margin-bottom:1.2rem;}
+.hero-stats{display:flex;gap:2rem;flex-wrap:wrap;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,.15);}
+.hero-stat .num{font-size:1.8rem;font-weight:800;background:linear-gradient(90deg,#a5b4fc,#c4b5fd);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.hero-stat .lbl{font-size:.75rem;opacity:.65;}
+.hero-actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1rem;}
+.hero-btn{padding:.5rem 1.2rem;border-radius:99px;font-size:.85rem;font-weight:600;border:none;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:.4rem;}
+.hero-btn.primary{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;}
+.hero-btn.outline{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.3);}
+.hero-btn:hover{opacity:.9;transform:translateY(-1px);}
+
+/* ── OVERALL PROGRESS BAR ── */
+.overall-bar-wrap{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin-bottom:2rem;}
+.overall-bar-wrap h2{font-size:1rem;font-weight:700;margin-bottom:1rem;}
+.progress-bar-outer{height:20px;background:var(--surface2);border-radius:99px;overflow:hidden;margin-bottom:.5rem;}
+.progress-bar-inner{height:100%;background:linear-gradient(90deg,var(--primary),var(--secondary));border-radius:99px;transition:width .8s ease;}
+.bar-label{font-size:.8rem;color:var(--muted);}
+
+/* ── SUBJECT GRID ── */
+.section-title{font-size:1.2rem;font-weight:700;margin:2rem 0 1.25rem;display:flex;align-items:center;gap:.5rem;}
+.section-title::after{content:'';flex:1;height:2px;background:linear-gradient(90deg,var(--primary),transparent);margin-left:.5rem;}
+.subject-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem;margin-bottom:2rem;}
+.subject-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;text-decoration:none;color:var(--text);display:flex;flex-direction:column;gap:.6rem;transition:all .2s;position:relative;overflow:hidden;}
+.subject-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.1);border-color:var(--primary);}
+.subject-card .sc-header{display:flex;align-items:center;gap:.6rem;}
+.subject-card .sc-icon{font-size:1.6rem;}
+.subject-card .sc-title{font-weight:700;font-size:.95rem;}
+.subject-card .sc-desc{font-size:.78rem;color:var(--muted);line-height:1.5;}
+.subject-card .sc-bar-outer{height:6px;background:var(--surface2);border-radius:99px;overflow:hidden;}
+.subject-card .sc-bar-inner{height:100%;border-radius:99px;transition:width .6s ease;}
+.subject-card .sc-meta{display:flex;justify-content:space-between;align-items:center;font-size:.75rem;color:var(--muted);}
+.subject-card .sc-badge{padding:2px 8px;border-radius:99px;font-size:.68rem;font-weight:600;}
+.badge-visited{background:rgba(22,163,74,.12);color:#16a34a;}
+.badge-new{background:rgba(99,102,241,.12);color:#6366f1;}
+.subject-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;}
+
+/* ── STREAK / STATS ROW ── */
+.stats-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:1rem;margin-bottom:2rem;}
+.stat-tile{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;text-align:center;}
+.stat-tile .st-num{font-size:2rem;font-weight:800;background:linear-gradient(135deg,var(--primary),var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.stat-tile .st-label{font-size:.78rem;color:var(--muted);margin-top:.25rem;}
+
+/* ── RECENT ACTIVITY ── */
+.recent-list{display:flex;flex-direction:column;gap:.6rem;margin-bottom:2rem;}
+.recent-item{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.85rem 1.1rem;display:flex;align-items:center;gap:.9rem;text-decoration:none;color:var(--text);transition:.15s;}
+.recent-item:hover{background:var(--surface2);}
+.recent-item .ri-icon{font-size:1.3rem;}
+.recent-item .ri-text{font-size:.88rem;font-weight:600;}
+.recent-item .ri-time{font-size:.75rem;color:var(--muted);margin-left:auto;}
+
+/* ── TIPS ── */
+.tips-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem;margin-bottom:2rem;}
+.tip-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;}
+.tip-card .tc-icon{font-size:1.8rem;margin-bottom:.5rem;}
+.tip-card h3{font-size:.9rem;font-weight:700;margin-bottom:.4rem;}
+.tip-card p{font-size:.8rem;color:var(--muted);line-height:1.6;}
+
+/* ── RESET BTN ── */
+.reset-btn{background:none;border:1.5px solid var(--border);color:var(--muted);border-radius:99px;padding:.4rem 1rem;font-size:.8rem;cursor:pointer;transition:.2s;}
+.reset-btn:hover{border-color:var(--red);color:var(--red);}
+
+/* ── BACK TO TOP ── */
+#btt{position:fixed;bottom:2rem;right:2rem;width:44px;height:44px;border-radius:50%;background:var(--primary);color:#fff;border:none;font-size:1.2rem;cursor:pointer;display:none;align-items:center;justify-content:center;z-index:800;}
+#btt.show{display:flex;}
+
+/* ── FOOTER ── */
+#site-footer{background:var(--surface);border-top:1px solid var(--border);padding:1.5rem 2rem;margin-top:2rem;}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;font-size:.8rem;color:var(--muted);}
+.footer-author{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;padding:.35rem .9rem;border-radius:99px;font-size:.82rem;font-weight:600;}
+</style>
+</head>
+<body>
+
+<div id="scroll-progress"></div>
+
+<header id="header">
+  <button id="hamburger" onclick="this.classList.toggle('open')"><span></span><span></span><span></span></button>
+  <a href="index.html" id="logo">📊 <span class="grd">Progress Dashboard</span></a>
+  <div id="creator-badge"><span class="cb-dot"></span>by Vikash Pandey</div>
+  <div class="header-right">
+    <button id="theme-btn" onclick="toggleTheme()">🌙 Theme</button>
+  </div>
+</header>
+
+<div id="sub-nav">
+  <div class="page-links">
+    <a href="index.html">🏠 Home</a>
+    <a href="Science.html">🔬 Science</a>
+    <a href="Computer.html">💻 Computer</a>
+    <a href="Current_Affairs.html">📰 Current Affairs</a>
+    <a href="Exam_Updates.html">📢 Exam Updates</a>
+    <a href="english-grammar-mastery.html">📝 English</a>
+    <a href="Hindi_Grammar.html">📖 हिंदी व्याकरण</a>
+    <a href="Competitive_Exam_Mathematics_Cheat_Sheet.html">🧮 Maths</a>
+    <a href="Indian_Polity.html">⚖️ Polity</a>
+    <a href="Indian_History.html">🏛️ History</a>
+    <a href="Indian_Geography.html">🗺️ Geography</a>
+    <a href="Static_GK.html">🌍 Static GK</a>
+    <a href="Indian_Economy.html">💰 Economy</a>
+    <a href="Bihar_Special_GK.html">🌾 Bihar GK</a>
+    <a href="Reasoning_Guide.html">🧠 Reasoning</a>
+    <a href="Syllabus.html">📋 Syllabus</a>
+    <a href="Environment_Ecology.html">🌿 Environment</a>
+    <a href="Banking_Awareness.html">🏦 Banking</a>
+    <a href="Art_Culture.html">🎨 Art & Culture</a>
+    <a href="UP_Special_GK.html">🌺 UP GK</a>
+    <a href="Rajasthan_GK.html">🏜️ Rajasthan GK</a>
+    <a href="MP_GK.html">🦁 MP GK</a>
+    <a href="study-dashboard.html" class="current">📊 Progress</a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Your Study <span>Progress Dashboard</span></h1>
+    <p>Track which subjects you've visited and how far you've come in your exam preparation journey.</p>
+    <div class="hero-actions">
+      <a href="Syllabus.html" class="hero-btn primary">📋 View Syllabus</a>
+      <a href="index.html" class="hero-btn outline">🏠 All Subjects</a>
+    </div>
+    <div class="hero-stats" id="hero-stats">
+      <div class="hero-stat"><div class="num" id="stat-visited">0</div><div class="lbl">Pages Visited</div></div>
+      <div class="hero-stat"><div class="num" id="stat-total">22</div><div class="lbl">Total Subjects</div></div>
+      <div class="hero-stat"><div class="num" id="stat-pct">0%</div><div class="lbl">Completion</div></div>
+      <div class="hero-stat"><div class="num" id="stat-streak">0</div><div class="lbl">Day Streak</div></div>
+    </div>
+  </div>
+
+  <!-- OVERALL PROGRESS -->
+  <div class="overall-bar-wrap">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+      <h2>📈 Overall Progress</h2>
+      <button class="reset-btn" onclick="resetProgress()">🔄 Reset Progress</button>
+    </div>
+    <div class="progress-bar-outer">
+      <div class="progress-bar-inner" id="overall-bar" style="width:0%"></div>
+    </div>
+    <div class="bar-label" id="bar-label">0 of 22 subjects visited</div>
+  </div>
+
+  <!-- STATS ROW -->
+  <div class="stats-row" id="stats-row">
+    <div class="stat-tile"><div class="st-num" id="s-visited">0</div><div class="st-label">Subjects Visited</div></div>
+    <div class="stat-tile"><div class="st-num" id="s-sessions">0</div><div class="st-label">Study Sessions</div></div>
+    <div class="stat-tile"><div class="st-num" id="s-streak">0</div><div class="st-label">Day Streak 🔥</div></div>
+    <div class="stat-tile"><div class="st-num" id="s-days">0</div><div class="st-label">Days Active</div></div>
+  </div>
+
+  <!-- SUBJECT GRID -->
+  <div class="section-title">📚 All Study Subjects</div>
+  <div class="subject-grid" id="subject-grid"></div>
+
+  <!-- RECENT ACTIVITY -->
+  <div class="section-title">🕐 Recent Activity</div>
+  <div class="recent-list" id="recent-list">
+    <div style="color:var(--muted);font-size:.88rem;padding:.75rem 0;">No activity yet — start studying to see your history here!</div>
+  </div>
+
+  <!-- STUDY TIPS -->
+  <div class="section-title">💡 Study Tips</div>
+  <div class="tips-grid">
+    <div class="tip-card">
+      <div class="tc-icon">🎯</div>
+      <h3>Set Daily Targets</h3>
+      <p>Aim to cover at least 2–3 subjects per day. Consistency beats cramming every time for competitive exams.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tc-icon">🔁</div>
+      <h3>Spaced Repetition</h3>
+      <p>Revisit subjects after 1 day, 3 days, then 7 days. This technique dramatically improves long-term retention.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tc-icon">📝</div>
+      <h3>Active Recall</h3>
+      <p>After reading each section, close the page and write down what you remember. Tests understanding, not reading.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tc-icon">⏱️</div>
+      <h3>Pomodoro Method</h3>
+      <p>Study for 25 minutes, take a 5-minute break. After 4 cycles, take a 20-minute break. Proven to reduce fatigue.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tc-icon">🗺️</div>
+      <h3>Start With Weaknesses</h3>
+      <p>Open your least-visited subjects first when your energy is highest. Leave comfortable topics for later sessions.</p>
+    </div>
+    <div class="tip-card">
+      <div class="tc-icon">📊</div>
+      <h3>Check Your Syllabus</h3>
+      <p>Use the <a href="Syllabus.html" style="color:var(--primary)">Syllabus Hub</a> to match study subjects to your specific exam's paper pattern.</p>
+    </div>
+  </div>
+
+</main>
+
+<footer id="site-footer">
+  <div class="footer-bottom">
+    <span>© 2025 Exam Preparation System</span>
+    <span class="footer-author">✨ by Vikash Pandey</span>
+  </div>
+</footer>
+
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+// ── ALL SUBJECTS ──────────────────────────────────────────
+const SUBJECTS = [
+  { icon:'🔬', title:'Science',            href:'Science.html',            desc:'Physics · Chemistry · Biology · Environment',   color:'#059669' },
+  { icon:'💻', title:'Computer',           href:'Computer.html',           desc:'Hardware · Software · Networking · MS Office',  color:'#2563eb' },
+  { icon:'📰', title:'Current Affairs',    href:'Current_Affairs.html',    desc:'National · International · Economy · Sports',   color:'#dc2626' },
+  { icon:'📝', title:'English Grammar',    href:'english-grammar-mastery.html', desc:'Grammar · Vocabulary · Comprehension · Writing', color:'#7c3aed' },
+  { icon:'📖', title:'Hindi Grammar',      href:'Hindi_Grammar.html',      desc:'व्याकरण · संधि · समास · मुहावरे',              color:'#ea580c' },
+  { icon:'🧮', title:'Mathematics',        href:'Competitive_Exam_Mathematics_Cheat_Sheet.html', desc:'Arithmetic · Algebra · Geometry · DI', color:'#0891b2' },
+  { icon:'⚖️', title:'Indian Polity',      href:'Indian_Polity.html',      desc:'Constitution · Parliament · Judiciary · Rights', color:'#4f46e5' },
+  { icon:'🏛️', title:'Indian History',     href:'Indian_History.html',     desc:'Ancient · Medieval · Modern · Freedom Struggle', color:'#b45309' },
+  { icon:'🗺️', title:'Indian Geography',   href:'Indian_Geography.html',   desc:'Physical · Political · Climate · Resources',    color:'#16a34a' },
+  { icon:'🌍', title:'Static GK',          href:'Static_GK.html',          desc:'Countries · Capitals · Awards · World Records',  color:'#0369a1' },
+  { icon:'💰', title:'Indian Economy',     href:'Indian_Economy.html',     desc:'GDP · Budget · Banking · Schemes · Trade',      color:'#15803d' },
+  { icon:'🌾', title:'Bihar Special GK',   href:'Bihar_Special_GK.html',   desc:'History · Geography · Government · Schemes',    color:'#16a34a' },
+  { icon:'🧠', title:'Reasoning',          href:'Reasoning_Guide.html',    desc:'Verbal · Non-Verbal · Analytical · Puzzles',    color:'#7c3aed' },
+  { icon:'🌿', title:'Environment & Ecology', href:'Environment_Ecology.html', desc:'Ecology · Biodiversity · Climate · Pollution', color:'#059669' },
+  { icon:'🏦', title:'Banking Awareness',  href:'Banking_Awareness.html',  desc:'RBI · Banking Concepts · Finance · Markets',    color:'#1d4ed8' },
+  { icon:'🎨', title:'Art & Culture',      href:'Art_Culture.html',        desc:'Classical Arts · Literature · Architecture · Festivals', color:'#7c3aed' },
+  { icon:'🌺', title:'UP Special GK',      href:'UP_Special_GK.html',      desc:'History · Geography · Government · Culture',    color:'#ea580c' },
+  { icon:'🏜️', title:'Rajasthan GK',       href:'Rajasthan_GK.html',       desc:'History · Geography · Culture · Economy',       color:'#d97706' },
+  { icon:'🦁', title:'MP Special GK',      href:'MP_GK.html',              desc:'History · Geography · Culture · Economy',       color:'#4f46e5' },
+  { icon:'📢', title:'Exam Updates',       href:'Exam_Updates.html',       desc:'Notifications · Calendar · Results · News',     color:'#0891b2' },
+  { icon:'📋', title:'Exam Syllabus',      href:'Syllabus.html',           desc:'80+ Exams · Paper Pattern · Study Material',    color:'#6366f1' },
+  { icon:'🏠', title:'Home Portal',        href:'index.html',              desc:'Dashboard · All Subjects · Quick Access',       color:'#475569' },
+];
+
+const STORAGE_KEY = 'eps-progress';
+const SESSION_KEY = 'eps-sessions';
+const STREAK_KEY  = 'eps-streak';
+const ACTIVITY_KEY = 'eps-activity';
+
+// ── LOAD / SAVE ──────────────────────────────────────────
+function loadData() {
+  try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); } catch { return {}; }
+}
+function saveData(d) { localStorage.setItem(STORAGE_KEY, JSON.stringify(d)); }
+
+function loadActivity() {
+  try { return JSON.parse(localStorage.getItem(ACTIVITY_KEY) || '[]'); } catch { return []; }
+}
+function saveActivity(a) { localStorage.setItem(ACTIVITY_KEY, JSON.stringify(a.slice(0, 30))); }
+
+function getStreak() {
+  try { return JSON.parse(localStorage.getItem(STREAK_KEY) || '{"days":0,"last":""}'); } catch { return {days:0,last:''}; }
+}
+function updateStreak() {
+  const today = new Date().toDateString();
+  const s = getStreak();
+  if (s.last === today) return s.days;
+  const yesterday = new Date(Date.now() - 86400000).toDateString();
+  const days = s.last === yesterday ? s.days + 1 : 1;
+  localStorage.setItem(STREAK_KEY, JSON.stringify({days, last: today}));
+  return days;
+}
+
+function getSessions() {
+  try { return parseInt(localStorage.getItem(SESSION_KEY) || '0'); } catch { return 0; }
+}
+function incSessions() {
+  const s = getSessions() + 1;
+  localStorage.setItem(SESSION_KEY, s);
+  return s;
+}
+
+// ── MARK CURRENT PAGE AS VISITED (called from other pages) ──
+function markVisited(href, title, icon) {
+  const data = loadData();
+  const now  = Date.now();
+  data[href] = { ts: now, title, icon };
+  saveData(data);
+  const act  = loadActivity();
+  act.unshift({ href, title, icon, ts: now });
+  saveActivity(act);
+}
+
+// ── RENDER ────────────────────────────────────────────────
+function render() {
+  const data     = loadData();
+  const visited  = Object.keys(data).length;
+  const total    = SUBJECTS.length;
+  const pct      = Math.round((visited / total) * 100);
+  const streak   = updateStreak();
+  const sessions = getSessions();
+
+  // hero stats
+  document.getElementById('stat-visited').textContent = visited;
+  document.getElementById('stat-pct').textContent     = pct + '%';
+  document.getElementById('stat-streak').textContent  = streak;
+
+  // progress bar
+  document.getElementById('overall-bar').style.width  = pct + '%';
+  document.getElementById('bar-label').textContent    = `${visited} of ${total} subjects visited`;
+
+  // stat tiles
+  document.getElementById('s-visited').textContent  = visited;
+  document.getElementById('s-sessions').textContent = sessions;
+  document.getElementById('s-streak').textContent   = streak + (streak >= 3 ? ' 🔥' : '');
+  const days = Object.values(data).map(v => new Date(v.ts).toDateString());
+  document.getElementById('s-days').textContent     = new Set(days).size;
+
+  // subject grid
+  const grid = document.getElementById('subject-grid');
+  grid.innerHTML = SUBJECTS.map(s => {
+    const v = data[s.href];
+    const isVisited = !!v;
+    const timeAgo   = v ? fmtTime(v.ts) : '';
+    return `
+    <a href="${s.href}" class="subject-card" onclick="markVisited('${s.href}','${s.title}','${s.icon}')">
+      <div style="position:absolute;top:0;left:0;right:0;height:3px;background:${s.color};opacity:${isVisited?1:.25}"></div>
+      <div class="sc-header">
+        <span class="sc-icon">${s.icon}</span>
+        <span class="sc-title">${s.title}</span>
+        <span class="sc-badge ${isVisited?'badge-visited':'badge-new'}" style="margin-left:auto">
+          ${isVisited ? '✓ Visited' : 'New'}
+        </span>
+      </div>
+      <div class="sc-desc">${s.desc}</div>
+      <div class="sc-bar-outer">
+        <div class="sc-bar-inner" style="width:${isVisited?100:0}%;background:${s.color}"></div>
+      </div>
+      <div class="sc-meta">
+        <span>${isVisited ? '📅 ' + timeAgo : 'Not started'}</span>
+        <span style="color:${s.color};font-weight:600">→</span>
+      </div>
+    </a>`;
+  }).join('');
+
+  // recent activity
+  const act     = loadActivity();
+  const recEl   = document.getElementById('recent-list');
+  if (act.length === 0) {
+    recEl.innerHTML = '<div style="color:var(--muted);font-size:.88rem;padding:.75rem 0;">No activity yet — start studying to see your history here!</div>';
+  } else {
+    recEl.innerHTML = act.slice(0, 8).map(a => `
+    <a href="${a.href}" class="recent-item" onclick="markVisited('${a.href}','${a.title}','${a.icon}')">
+      <span class="ri-icon">${a.icon}</span>
+      <span class="ri-text">${a.title}</span>
+      <span class="ri-time">${fmtTime(a.ts)}</span>
+    </a>`).join('');
+  }
+}
+
+function fmtTime(ts) {
+  const diff = Date.now() - ts;
+  if (diff < 60000)  return 'Just now';
+  if (diff < 3600000) return Math.floor(diff/60000) + 'm ago';
+  if (diff < 86400000) return Math.floor(diff/3600000) + 'h ago';
+  return Math.floor(diff/86400000) + 'd ago';
+}
+
+function resetProgress() {
+  if (!confirm('Reset all progress data? This cannot be undone.')) return;
+  localStorage.removeItem(STORAGE_KEY);
+  localStorage.removeItem(ACTIVITY_KEY);
+  localStorage.removeItem(STREAK_KEY);
+  localStorage.removeItem(SESSION_KEY);
+  render();
+}
+
+// ── THEME ─────────────────────────────────────────────────
+function toggleTheme() {
+  const cur = document.documentElement.getAttribute('data-theme');
+  const next = cur === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  localStorage.setItem('eps-theme', next);
+  document.getElementById('theme-btn').textContent = next === 'dark' ? '☀️ Light' : '🌙 Dark';
+}
+(function(){
+  const t = localStorage.getItem('eps-theme') || 'light';
+  document.getElementById('theme-btn').textContent = t === 'dark' ? '☀️ Light' : '🌙 Dark';
+})();
+
+// ── SCROLL ────────────────────────────────────────────────
+window.addEventListener('scroll', () => {
+  const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+  document.getElementById('scroll-progress').style.width = pct + '%';
+  document.getElementById('btt').classList.toggle('show', window.scrollY > 300);
+});
+
+// ── INIT ──────────────────────────────────────────────────
+incSessions();
+render();
+</script>
+</body>
+</html>

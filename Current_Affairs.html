@@ -273,6 +273,18 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:28px
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
+<script><!-- eps-visit-tracker -->
+(function(){
+  try{
+    var d=JSON.parse(localStorage.getItem('eps-progress')||'{}');
+    d['Current_Affairs.html']={ts:Date.now(),title:'Current Affairs',icon:'📰'};
+    localStorage.setItem('eps-progress',JSON.stringify(d));
+    var a=JSON.parse(localStorage.getItem('eps-activity')||'[]');
+    a.unshift({href:'Current_Affairs.html',title:'Current Affairs',icon:'📰',ts:Date.now()});
+    localStorage.setItem('eps-activity',JSON.stringify(a.slice(0,30)));
+  }catch(e){}
+})();
+</script>
 </head>
 <body>
 <div id="mob-overlay" onclick="closeMobSidebar()"></div>

@@ -93,6 +93,18 @@ tr:nth-child(even) td{background:var(--surface2);}
 @media(max-width:640px){#creator-badge{display:none;}}
 @media(max-width:480px){#search-bar{display:none;} #progress-pill{display:none;}}
 </style>
+<script><!-- eps-visit-tracker -->
+(function(){
+  try{
+    var d=JSON.parse(localStorage.getItem('eps-progress')||'{}');
+    d['UP_Special_GK.html']={ts:Date.now(),title:'UP Special GK',icon:'🌺'};
+    localStorage.setItem('eps-progress',JSON.stringify(d));
+    var a=JSON.parse(localStorage.getItem('eps-activity')||'[]');
+    a.unshift({href:'UP_Special_GK.html',title:'UP Special GK',icon:'🌺',ts:Date.now()});
+    localStorage.setItem('eps-activity',JSON.stringify(a.slice(0,30)));
+  }catch(e){}
+})();
+</script>
 </head>
 <body>
 <div id="scroll-progress"></div>

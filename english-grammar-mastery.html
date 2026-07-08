@@ -299,6 +299,18 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:3rem 1re
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
+<script><!-- eps-visit-tracker -->
+(function(){
+  try{
+    var d=JSON.parse(localStorage.getItem('eps-progress')||'{}');
+    d['english-grammar-mastery.html']={ts:Date.now(),title:'English Grammar',icon:'📝'};
+    localStorage.setItem('eps-progress',JSON.stringify(d));
+    var a=JSON.parse(localStorage.getItem('eps-activity')||'[]');
+    a.unshift({href:'english-grammar-mastery.html',title:'English Grammar',icon:'📝',ts:Date.now()});
+    localStorage.setItem('eps-activity',JSON.stringify(a.slice(0,30)));
+  }catch(e){}
+})();
+</script>
 </head>
 <body>
 <!-- Desktop permanent left sidebar -->

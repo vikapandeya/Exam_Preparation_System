@@ -94,6 +94,18 @@ tr:nth-child(even) td{background:var(--surface2);}
 @media(max-width:600px){#search-bar{max-width:140px;} #search-bar input{font-size:.78rem;}}
 @media(max-width:480px){#search-bar{display:none;} #progress-pill{display:none;}}
 </style>
+<script><!-- eps-visit-tracker -->
+(function(){
+  try{
+    var d=JSON.parse(localStorage.getItem('eps-progress')||'{}');
+    d['Static_GK.html']={ts:Date.now(),title:'Static GK',icon:'🌍'};
+    localStorage.setItem('eps-progress',JSON.stringify(d));
+    var a=JSON.parse(localStorage.getItem('eps-activity')||'[]');
+    a.unshift({href:'Static_GK.html',title:'Static GK',icon:'🌍',ts:Date.now()});
+    localStorage.setItem('eps-activity',JSON.stringify(a.slice(0,30)));
+  }catch(e){}
+})();
+</script>
 </head>
 <body>
 <div id="scroll-progress"></div>
