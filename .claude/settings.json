@@ -14,10 +14,24 @@
       "Bash(git push *)",
       "Bash(python3 scripts/update_ca.py)",
       "Bash(sed -i \"s/channel = root.find\\('channel'\\) or root/channel = root.find\\('channel'\\); channel = channel if channel is not None else root/\" /workspaces/Exam_Preparation_System/scripts/update_ca.py *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(xargs -I{} basename {})",
+      "Bash(awk -F: '$1 >= 375 && $1 <= 1060')",
+      "Bash(python3 -c ' *)",
+      "Bash(git commit -m ' *)",
+      "Bash(python3 -m playwright install chromium)",
+      "Bash(python3 /tmp/qa_laptop.py)",
+      "Bash(timeout 8 python3 -c \"import urllib.request; print\\(urllib.request.urlopen\\('https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3', timeout=6\\).status\\)\")",
+      "Bash(python3 scripts/update_exam_updates.py)",
+      "Bash(git fetch *)",
+      "Skill(artifact-design)",
+      "Skill(artifact-design:*)",
+      "Bash(python3 -c \"from playwright.sync_api import sync_playwright; print\\('Playwright available'\\)\")",
+      "Read(//tmp/qa_shots/**)"
     ],
     "additionalDirectories": [
-      "/workspaces/Exam_Preparation_System/scripts"
+      "/workspaces/Exam_Preparation_System/scripts",
+      "/tmp"
     ]
   }
 }
