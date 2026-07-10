@@ -494,6 +494,7 @@ const EXAMS = [
       { stage:'Written', paper:'General Knowledge', qs:'120', marks:'100', duration:'2 hr', neg:'-0.33', notes:'All academies' },
       { stage:'Written', paper:'Elementary Mathematics', qs:'100', marks:'100', duration:'2 hr', neg:'-0.33', notes:'IMA & AFA only' },
       { stage:'Interview', paper:'SSB Interview', qs:'—', marks:'300', duration:'5 days', neg:'None', notes:'Psychological & Group Tasks' },
+      { stage:'TOTAL', paper:'Written + SSB', qs:'—', marks:'900', duration:'—', neg:'—', notes:'Written 600 + SSB 300; merit based on combined score', isTotal:true },
     ],
     syllabus: [
       { subject:'English', topics:['Reading Comprehension','Grammar — Parts of Speech, Tenses, Narration, Voice','Vocabulary — Synonyms, Antonyms, Spellings','Sentence Completion & Ordering','Idioms & Phrases','Error Detection & Correction'] },
@@ -628,6 +629,7 @@ const EXAMS = [
       { stage:'Session I', paper:'Reasoning & Problem Solving', qs:'20', marks:'60', duration:'—', neg:'None', notes:'' },
       { stage:'Session II', paper:'General Awareness', qs:'25', marks:'75', duration:'45 min', neg:'None', notes:'Havaldar posts only' },
       { stage:'Session II', paper:'English Language & Comprehension', qs:'25', marks:'75', duration:'—', neg:'None', notes:'Havaldar posts only' },
+      { stage:'TOTAL', paper:'MTS: Session I | Havaldar: Session I+II', qs:'90', marks:'MTS: 150 | Havaldar: 225', duration:'—', neg:'—', notes:'', isTotal:true },
     ],
     syllabus: [
       { subject:'Numerical & Mathematical Ability', topics:['Number System, Integers, Fractions','LCM & HCF, Decimals','Simple Equations, Percentages','Profit & Loss, Discount','Ratio & Proportion','Basic Mensuration','Elementary Statistics'] },
@@ -1459,6 +1461,7 @@ const EXAMS = [
       { stage:'Physical', paper:'Physical Standards Test', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'Height, weight, chest expansion — gender & category specific standards' },
       { stage:'Medical', paper:'Medical Examination', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'Vision, hearing, physical fitness tests' },
       { stage:'Interview', paper:'Personality Test', qs:'—', marks:'150', duration:'~30 min', neg:'None', notes:'Merit: Paper I 25% + Paper II 25% + Interview 50%' },
+      { stage:'TOTAL', paper:'Paper I + Paper II + Interview', qs:'125', marks:'600', duration:'—', neg:'—', notes:'Final merit = PI 25% + PII 25% + Interview 50%', isTotal:true },
     ],
     syllabus: [
       { subject:'General Ability & Intelligence (Paper I)', topics:['General Science — Physics, Chemistry, Biology Applications & Discoveries','Current Events — National & International, Science & Technology Developments','History of India — Ancient, Medieval, Modern','Indian Geography, Polity & Constitution, Indian Economy','Elementary Mathematics (Class 10) — Arithmetic, Mensuration, Algebra Basics','General Mental Ability — Analogies, Spatial Orientation, Number Series, Reasoning','English Comprehension & Language Skills','Hindi Comprehension & Language Skills'] },
@@ -1841,6 +1844,7 @@ const EXAMS = [
       { stage:'SI Written (Online CBT)', paper:'General Intelligence & Reasoning', qs:'50', marks:'50', duration:'—', neg:'-0.25', notes:'Total SI Written: 200 marks' },
       { stage:'Physical Tests (PST + PET)', paper:'Physical Standard & Efficiency Test', qs:'—', marks:'Qualifying', duration:'—', neg:'—', notes:'Male: 800m in 2m45s, 3m long jump, 1.2m high jump | Female: 1km in 4min, 2.5m long jump' },
       { stage:'Medical Examination', paper:'Physical & Medical Standards', qs:'—', marks:'Qualifying', duration:'—', neg:'None', notes:'Male height: 168cm (Gen/OBC), 162cm (SC/ST); Female: 158cm; No colour blindness' },
+      { stage:'TOTAL', paper:'Constable Written / SI Written', qs:'100 / 200', marks:'100 / 200', duration:'—', neg:'—', notes:'Physical & Medical are qualifying; written marks determine final merit', isTotal:true },
     ],
     syllabus: [
       { subject:'General Knowledge (MP Focus)', topics:['MP History — Dynasties, Rebellion of 1857 in MP, Key Freedom Fighters from MP','MP Geography — Vindhya Range, Satpura Range, Rivers (Narmada, Chambal, Tapti, Betwa, Son), Tiger Reserves','MP Government Schemes — Ladli Laxmi Yojana 2.0, Mukhyamantri Jan Seva Mitra Yojana, CM Rise Schools','Indian History, Polity, Economy, Environment, Science & Technology','Current Affairs — MP & National level, last 6 months'] },
@@ -2123,6 +2127,7 @@ const EXAMS = [
       { stage:'Group I Interview', paper:'Oral Test', qs:'—', marks:'120', duration:'~30 min', neg:'None', notes:'Personality Assessment' },
       { stage:'Group II Written', paper:'GS + Aptitude + Tamil / English', qs:'200', marks:'300', duration:'3 hr', neg:'None', notes:'MCQ; No interview — direct merit list' },
       { stage:'Group IV Written', paper:'GS + Aptitude + Tamil / English', qs:'200', marks:'300', duration:'3 hr', neg:'None', notes:'MCQ; No interview' },
+      { stage:'TOTAL', paper:'Varies by Group', qs:'—', marks:'Group I: 1750 | Group II: 600 | Group IIA: 600 | Group IV: 300', duration:'—', neg:'—', notes:'Interview adds 60–100 marks for Group I & II only', isTotal:true },
     ],
     syllabus: [
       { subject:'General Studies — History (India & Tamil Nadu)', topics:['Ancient India — Indus Valley, Vedic Period, Sangam Age, Kingdoms of South India','Medieval India — Chola, Pandya, Vijayanagara Empires; Delhi Sultanate, Mughals','Tamil Nadu History — Pallavas, Cholas, Nayaks, Maratha Period in Tamil Nadu','British Rule & Freedom Struggle — Regional Leaders (V.O. Chidambaram, Subramania Bharati, Periyar, Kamarajar, Rajaji)','Post-Independence India — Integration, Five Year Plans, Social & Economic Changes in Tamil Nadu'] },
@@ -2184,6 +2189,7 @@ const EXAMS = [
       { stage:'Group I Mains', paper:'Paper IV — Ethics, Data Interpretation, English Essay', qs:'—', marks:'150', duration:'3 hr', neg:'None', notes:'Descriptive' },
       { stage:'Group I Interview', paper:'Oral Test', qs:'—', marks:'100', duration:'~30 min', neg:'None', notes:'APPSC/TSPSC board interview' },
       { stage:'Group II Written', paper:'GS + Regional History + Economy (MCQ)', qs:'150', marks:'150', duration:'2.5 hr', neg:'None', notes:'No interview; Merit list basis' },
+      { stage:'TOTAL', paper:'Varies by Group', qs:'—', marks:'Group I Mains: 1800 | Group II: 450 | Group III: 150', duration:'—', neg:'—', notes:'Interview 75 marks for Group I only', isTotal:true },
     ],
     syllabus: [
       { subject:'General Studies — History (India & AP/Telangana)', topics:['Ancient India — Indus Valley, Vedic Period, Mauryan & Gupta Empires; Satavahanas, Ikshvakus (Andhra Region)','Medieval India — Kakatiya Kingdom, Reddy Kingdoms, Vijayanagara Empire, Qutb Shahi Sultans, Nizams of Hyderabad','Freedom Struggle — Telangana Armed Struggle, Andhra Mahasabha, AP Formation (1956), Telangana Movement & Formation (2014)','Modern History — Social Reform Movements; Brahmo Samaj, Arya Samaj; AP/TS Reform Leaders','Post-Independence — Potti Sreeramulu Agitation, State Reorganisation, Fazl Ali Commission'] },
@@ -2303,6 +2309,7 @@ const EXAMS = [
       { stage:'Section IB', paper:'Additional Language (optional)', qs:'50 (attempt 40)', marks:'200', duration:'45 min', neg:'-1', notes:'19 additional languages' },
       { stage:'Section II', paper:'Domain Subjects (max 6 subjects)', qs:'50 (attempt 40) per subject', marks:'200 per subject', duration:'45 min per subject', neg:'-1', notes:'27 domain subjects matching Class 12 subjects' },
       { stage:'Section III', paper:'General Test (optional, for UG programs requiring it)', qs:'75 (attempt 60)', marks:'300', duration:'60 min', neg:'-1', notes:'GK, CA, Reasoning, Quantitative, Numerical Ability' },
+      { stage:'TOTAL', paper:'Language + Domain + General Test (as required)', qs:'—', marks:'Up to 900+ (varies by program)', duration:'—', neg:'—', notes:'Universities specify which sections are required for admission', isTotal:true },
     ],
     syllabus: [
       { subject:'Language (Section IA/IB)', topics:['Reading Comprehension — Factual, Literary, Narrative Passages','Verbal Ability — Vocabulary, Word Usage, Idioms','Grammar — Error Correction, Sentence Rearrangement','Creative Writing — Summary, Letter, Application, Essay topics'] },
@@ -2514,6 +2521,7 @@ const EXAMS = [
       { stage:'GATE Score', paper:'Discipline-specific GATE paper', qs:'65', marks:'100', duration:'3 hr', neg:'Yes for MCQ', notes:'Valid for 3 years; Most PSUs shortlist from GATE merit list' },
       { stage:'Group Discussion', paper:'Current Affairs / Technical Topic', qs:'—', marks:'—', duration:'15–20 min', neg:'None', notes:'Not all PSUs have GD' },
       { stage:'Personal Interview', paper:'Technical + HR Interview', qs:'—', marks:'—', duration:'30–45 min', neg:'None', notes:'Weightage varies by PSU' },
+      { stage:'TOTAL', paper:'Written + GD + Interview', qs:'65', marks:'Varies by PSU', duration:'—', neg:'—', notes:'Most PSUs use GATE score + Interview; others conduct own exam', isTotal:true },
     ],
     syllabus: [
       { subject:'ONGC — Upstream Oil & Gas', topics:['Geology/Geophysics — Petroleum Geology, Seismic Methods, Well Logging','Drilling Engineering — Drilling Fluids, Well Control, Completion','Reservoir Engineering — Reservoir Types, Production Techniques, EOR','Chemical Engineering — Process Equipment, Heat Transfer, Mass Transfer, Refining','Mechanical — Rotating Equipment, Piping, Pressure Vessels','EEE — Power Systems, Motors, Instrumentation, SCADA','Environment — Environmental Impact Assessment, HSE Management, OISD Standards'] },
@@ -2540,6 +2548,7 @@ const EXAMS = [
       { stage:'Written Test', paper:'Technical/Professional Knowledge (stream-specific)', qs:'60 MCQ', marks:'60', duration:'Included', neg:'-0.25', notes:'ECE/CS/Civil/Electrical' },
       { stage:'Interview', paper:'Technical + HR', qs:'—', marks:'40', duration:'—', neg:'None', notes:'Final stage' },
       { stage:'ATC — Medical', paper:'DGCA Class II Medical Exam', qs:'—', marks:'—', duration:'—', neg:'None', notes:'Mandatory for ATC; vision, hearing, colour blindness tests' },
+      { stage:'TOTAL', paper:'Written + Interview (Medical qualifying)', qs:'180', marks:'ATC: 300 | JE: 120', duration:'—', neg:'—', notes:'Medical is qualifying only; final merit = written + interview', isTotal:true },
     ],
     syllabus: [
       { subject:'ATC — Air Traffic Control Technical Knowledge', topics:['ICAO Annexes — Annex 2 (Rules of Air), Annex 10 (Aeronautical Telecom), Annex 11 (ATS)','Airport Operations — Runways, Taxiways, Aprons, Airspace Classification','Navigation — VOR, DME, ILS, RNAV, GPS, PBN','Radar — Primary Radar, SSR, MLAT, ADS-B','Flight Rules — VFR vs IFR, Separation Standards, ICAO Procedures','Phraseology — RTF (Radio Telephony Phraseology), ATIS, METAR, TAF','Emergency Procedures — Distress, Urgency, Interception, Bomb Threat'] },
@@ -2564,6 +2573,7 @@ const EXAMS = [
       { stage:'Written Test — Tier I', paper:'Online Objective — Subject Knowledge + General Aptitude', qs:'150 MCQ', marks:'150', duration:'2 hr', neg:'-0.5', notes:'Shortlisting for Tier II' },
       { stage:'Written Test — Tier II', paper:'Descriptive Subject Paper', qs:'Descriptive', marks:'100', duration:'2 hr', neg:'None', notes:'Advanced technical depth' },
       { stage:'Interview', paper:'Technical + Research Aptitude', qs:'—', marks:'50', duration:'—', neg:'None', notes:'Panel of DRDO scientists' },
+      { stage:'TOTAL', paper:'Written + Interview', qs:'150', marks:'300', duration:'—', neg:'—', notes:'Written 250 + Interview 50', isTotal:true },
     ],
     syllabus: [
       { subject:'Electronics & Communication', topics:['Communication Systems, Signals & Systems, Control Systems, Networks, Radar','Electronic Warfare, Defence Communication Systems, Software Defined Radio','Embedded Systems, FPGA, DSP, Image Processing','Cryptography & Cyber Security, Steganography'] },
@@ -2589,6 +2599,7 @@ const EXAMS = [
       { stage:'Written Test', paper:'Subject Knowledge (Nursing/Lab/Radiology/Pharmacy)', qs:'100–200 MCQ', marks:'100–200', duration:'1.5–2 hr', neg:'Varies', notes:'Varies by institution' },
       { stage:'Skill Test', paper:'Practical/Clinical Skills (for nursing/lab)', qs:'—', marks:'—', duration:'—', neg:'None', notes:'AIIMS includes practical assessment' },
       { stage:'Interview', paper:'HR + Clinical Knowledge (for senior posts)', qs:'—', marks:'—', duration:'—', neg:'None', notes:'Not all posts have interview' },
+      { stage:'TOTAL', paper:'Written (+ Interview for senior posts)', qs:'100', marks:'100+', duration:'—', neg:'—', notes:'Separate merit lists per post category; check specific notification', isTotal:true },
     ],
     syllabus: [
       { subject:'Staff Nurse — Clinical Nursing', topics:['Fundamentals of Nursing — Basic Nursing Care, Vital Signs, Asepsis, Wound Care','Medical-Surgical Nursing — Cardiovascular, Respiratory, GI, Renal, Endocrine, Neurological, Orthopaedic, Integumentary disorders','Maternal & Child Health Nursing — Antenatal, Intranatal, Postnatal Care; Neonatology; Paediatric Nursing','Community Health Nursing — Epidemiology, National Health Programmes, PHC, CHC, ASHA, ANM roles','Mental Health Nursing — Psychiatric disorders, Therapeutic communication, Psychotropic drugs','Emergency & Critical Care — ICU Nursing, Ventilator care, CPR, Triage','Nutrition — Therapeutic diets, Nutritional assessment','Pharmacology — Drug classifications, Calculation of doses, IV fluids, Drug interactions'] },
@@ -2614,6 +2625,7 @@ const EXAMS = [
       { stage:'Written Test', paper:'General Knowledge, Hindi, English, Computer, Reasoning, Arithmetic', qs:'100–200 MCQ', marks:'100–200', duration:'2–3 hr', neg:'Varies', notes:'Varies by HC/court' },
       { stage:'Skill Test', paper:'Typing Test (for Clerk) / Shorthand Test (for Steno)', qs:'—', marks:'—', duration:'—', neg:'None', notes:'Qualifying; English/Hindi typing speed required' },
       { stage:'Interview', paper:'For some posts only', qs:'—', marks:'—', duration:'—', neg:'None', notes:'Some HCs have direct written+skill merit list' },
+      { stage:'TOTAL', paper:'Written + Skill Test (+ Interview where applicable)', qs:'100', marks:'100–200', duration:'—', neg:'—', notes:'Pattern varies by High Court — check specific HC notification', isTotal:true },
     ],
     syllabus: [
       { subject:'General Knowledge & Current Affairs', topics:['History — Ancient, Medieval, Modern Indian History; Freedom Movement','Polity — Indian Constitution, Judiciary (Supreme Court, High Courts, District Courts), Articles','Geography — India & World Physical Geography, Major Rivers, Capitals','Economy — Basic Economic Concepts, Indian Economy, Budget, Banking Basics','Science & Technology — Physics, Chemistry, Biology (Class 10 level)','Current Affairs — National & State Events (last 6 months), Awards, Sports, Appointments'] },
@@ -2639,6 +2651,7 @@ const EXAMS = [
       { stage:'Written Test', paper:'Community Health, Clinical Subjects, GK, Hindi/English', qs:'100–150 MCQ', marks:'100–150', duration:'1.5–2 hr', neg:'Varies', notes:'State-specific pattern; some states direct merit-based selection' },
       { stage:'Merit List', paper:'Academic marks from qualifying degree', qs:'—', marks:'—', duration:'—', neg:'None', notes:'Some states do direct document verification after merit list' },
       { stage:'Document Verification', paper:'Degree, Registration certificate, Domicile', qs:'—', marks:'—', duration:'—', neg:'None', notes:'NMC/INC/state nursing council registration required' },
+      { stage:'TOTAL', paper:'Written + DV', qs:'100', marks:'100', duration:'—', neg:'—', notes:'DV and computer test are qualifying; written marks = final merit', isTotal:true },
     ],
     syllabus: [
       { subject:'Community Health & National Health Programmes', topics:['National Health Mission (NHM) — NRHM + NUHM; Mission structure','RMNCH+A — Reproductive, Maternal, Newborn, Child and Adolescent Health','Ayushman Bharat — PM-JAY (insurance) + Health & Wellness Centres (HWC) — CHO\'s role','National Vector Borne Disease Control Programme — Malaria, Dengue, Chikungunya, Kala-azar, Filaria, JE','National TB Elimination Programme (NTEP) — DOTS, Nikshay portal, Nikshay Poshan Yojana','National Leprosy Eradication Programme (NLEP) — MDT, ASHA role','HIV/AIDS — NACP (National AIDS Control Programme), ICTC, ART, PMTCT','Routine Immunisation — Universal Immunisation Programme (UIP), Cold Chain Management, Adverse Events Following Immunisation (AEFI)','Non-Communicable Disease Prevention — Screen & Treat: Hypertension, Diabetes, Oral/Breast/Cervical Cancer, Mental Health'] },
