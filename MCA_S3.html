@@ -70,8 +70,8 @@ body{background:var(--bg);color:var(--tx);font-family:Georgia,serif;font-size:15
   .hdr-sub{color:#444 !important;font-size:9pt}
   .chips{gap:4px;margin-top:6pt}
   .chip{background:#eee !important;color:#000 !important;font-size:7.5pt;border:0.5pt solid #ccc;padding:2px 6px}
-  /* Show all subjects and panels */
-  .subj-panel,.subj-panel.print-force{display:block !important;page-break-before:always}
+  /* Show only subjects/panels marked for print */
+  .subj-panel.print-force{display:block !important;page-break-before:always}
   .type-panel,.type-panel.print-force{display:block !important}
   .subj-panel:first-child{page-break-before:auto}
   .type-panel{display:block !important}
@@ -6024,6 +6024,8 @@ function restoreAfterPrint(){
     }
   });
   document.querySelectorAll('.type-section-label').forEach(l=>l.style.display='none');
+  document.querySelectorAll('.subj-panel.print-force').forEach(p=>p.classList.remove('print-force'));
+  document.querySelectorAll('.type-panel.print-force').forEach(p=>p.classList.remove('print-force'));
 }
 
 window.addEventListener('beforeprint', openAllForPrint);
@@ -6038,7 +6040,8 @@ function printAll(){
 }
 
 function printCurrent(){
-  openAllForPrint();
+  const activePanel = document.querySelector('.subj-panel.active');
+  if(activePanel) activePanel.classList.add('print-force');
   window.print();
 }
 </script>
