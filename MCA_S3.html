@@ -224,7 +224,7 @@ public class EmailNotifier {
         service.OrderPlaced += OnOrderPlaced;  // subscribe
     }
     private void OnOrderPlaced(object sender, OrderEventArgs e) {
-        Console.WriteLine($"Email sent: Order {e.OrderId} for ${e.Amount}");
+        Console.WriteLine($"Email sent: Order {e.OrderId} for \${e.Amount}");
     }
 }
 
@@ -1706,17 +1706,17 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t myapp:${{ github.sha }} .
-        docker tag myapp:${{ github.sha }} myrepo/myapp:latest
+        docker build -t myapp:\${{ github.sha }} .
+        docker tag myapp:\${{ github.sha }} myrepo/myapp:latest
 
     - name: Push to ECR (if main branch)
       if: github.ref == 'refs/heads/main'
       run: |
         aws ecr get-login-password | docker login --username AWS --password-stdin $ECR_REGISTRY
-        docker push $ECR_REGISTRY/myapp:${{ github.sha }}
+        docker push $ECR_REGISTRY/myapp:\${{ github.sha }}
       env:
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_ACCESS_KEY_ID: \${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: \${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
   deploy-staging:
     needs: build-and-test
@@ -1726,7 +1726,7 @@ jobs:
     steps:
     - name: Deploy to EKS staging
       run: |
-        kubectl set image deployment/web-app web-app=$ECR_REGISTRY/myapp:${{ github.sha }} \
+        kubectl set image deployment/web-app web-app=$ECR_REGISTRY/myapp:\${{ github.sha }} \
           -n staging
         kubectl rollout status deployment/web-app -n staging --timeout=5m
 
@@ -1740,7 +1740,7 @@ jobs:
     steps:
     - name: Deploy to EKS production (blue-green)
       run: |
-        kubectl set image deployment/web-app web-app=$ECR_REGISTRY/myapp:${{ github.sha }} \
+        kubectl set image deployment/web-app web-app=$ECR_REGISTRY/myapp:\${{ github.sha }} \
           -n production
         kubectl rollout status deployment/web-app -n production --timeout=10m
         # If rollout fails, Kubernetes auto-rolls back</div><p><strong>Infrastructure as Code (IaC):</strong> Define infrastructure in code (Terraform, AWS CloudFormation, Pulumi) — checked into version control, reviewed, tested, and applied automatically. Same pipeline discipline for infrastructure as for application code. Enables reproducible, auditable, and drift-free environments. Terraform manages resources across AWS, GCP, Azure, Kubernetes, and 3000+ providers with a single tool.</p>`},
@@ -1803,7 +1803,7 @@ resource "aws_vpc" "main" {
 resource "aws_subnet" "public" {
   count             = 2
   vpc_id            = aws_vpc.main.id
-  cidr_block        = "10.0.${count.index}.0/24"
+  cidr_block        = "10.0.\${count.index}.0/24"
   availability_zone = data.aws_availability_zones.available.names[count.index]
   map_public_ip_on_launch = true
 }
@@ -1873,7 +1873,7 @@ Resources:
       DBInstanceClass: db.t3.medium
       Engine: mysql
       MasterUsername: admin
-      MasterUserPassword: !Sub '{{resolve:secretsmanager:${DBSecret}:SecretString:password}}'
+      MasterUserPassword: !Sub '{{resolve:secretsmanager:\${DBSecret}:SecretString:password}}'
       MultiAZ: true
       StorageEncrypted: true
 
