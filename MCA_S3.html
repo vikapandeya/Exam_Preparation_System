@@ -1,0 +1,1034 @@
+<title>MCA Question Bank — All 6 Subjects</title>
+<style>
+:root{--bg:#edf2f8;--sf:#fff;--sf2:#f0f5fc;--ac:#1155a0;--acl:#e6eef9;--qn:#c05a00;--qnb:#fff3e6;--tx:#0c1a2e;--mu:#4e6a88;--bd:#c5d5e8;--dv:#dce8f4;--ab:#f5f9ff;--abr:#b0ccee;--tg:#e3edf9;--tt:#2a5fa0}
+@media(prefers-color-scheme:dark){:root{--bg:#0b1624;--sf:#112035;--sf2:#162945;--ac:#2b9fff;--acl:#0f2a48;--qn:#f0a030;--qnb:#2a1a00;--tx:#d8e8f8;--mu:#7a96b8;--bd:#1e3555;--dv:#1a3050;--ab:#0d1e35;--abr:#1e4070;--tg:#0f2a45;--tt:#70b8ff}}
+:root[data-theme=light]{--bg:#edf2f8;--sf:#fff;--sf2:#f0f5fc;--ac:#1155a0;--acl:#e6eef9;--qn:#c05a00;--qnb:#fff3e6;--tx:#0c1a2e;--mu:#4e6a88;--bd:#c5d5e8;--dv:#dce8f4;--ab:#f5f9ff;--abr:#b0ccee;--tg:#e3edf9;--tt:#2a5fa0}
+:root[data-theme=dark]{--bg:#0b1624;--sf:#112035;--sf2:#162945;--ac:#2b9fff;--acl:#0f2a48;--qn:#f0a030;--qnb:#2a1a00;--tx:#d8e8f8;--mu:#7a96b8;--bd:#1e3555;--dv:#1a3050;--ab:#0d1e35;--abr:#1e4070;--tg:#0f2a45;--tt:#70b8ff}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font-family:Georgia,serif;font-size:15px;line-height:1.65}
+.page{max-width:900px;margin:0 auto;padding:0 16px 60px}
+.hdr{padding:36px 0 24px;border-bottom:1px solid var(--bd);margin-bottom:24px}
+.hdr-ey{font-family:ui-monospace,monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mu);margin-bottom:8px}
+.hdr h1{font-family:system-ui,sans-serif;font-size:clamp(22px,4vw,34px);font-weight:700;letter-spacing:-.02em;color:var(--tx);line-height:1.15}
+.hdr h1 span{color:var(--ac)}
+.hdr-sub{margin-top:8px;font-size:14px;color:var(--mu);font-family:system-ui,sans-serif}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{background:var(--tg);color:var(--tt);font-family:ui-monospace,monospace;font-size:11px;font-weight:600;padding:3px 9px;border-radius:4px}
+/* Subject Tabs */
+.subj-tabs{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:20px}
+.subj-btn{font-family:system-ui,sans-serif;font-size:12.5px;font-weight:600;padding:7px 14px;border:1px solid var(--bd);border-radius:6px;cursor:pointer;background:var(--sf);color:var(--mu);transition:all .15s}
+.subj-btn.active{background:var(--ac);color:#fff;border-color:var(--ac)}
+/* Type Tabs */
+.type-tabs{display:flex;gap:2px;background:var(--sf);border:1px solid var(--bd);border-radius:7px;padding:3px;width:fit-content;margin-bottom:20px}
+.type-btn{font-family:system-ui,sans-serif;font-size:13px;font-weight:600;padding:7px 20px;border:none;border-radius:5px;cursor:pointer;background:transparent;color:var(--mu);transition:all .15s}
+.type-btn.active{background:var(--ac);color:#fff}
+.intro{font-family:system-ui,sans-serif;font-size:13px;color:var(--mu);margin-bottom:16px;padding:9px 13px;background:var(--sf);border-left:3px solid var(--ac);border-radius:0 4px 4px 0}
+/* Q items */
+.subj-panel{display:none}.subj-panel.active{display:block}
+.type-panel{display:none}.type-panel.active{display:block}
+.qi{background:var(--sf);border:1px solid var(--bd);border-radius:7px;margin-bottom:10px;overflow:hidden;transition:border-color .15s}
+.qi:hover{border-color:var(--ac)}
+.qq{display:grid;grid-template-columns:42px 1fr 26px;align-items:start;cursor:pointer;background:none;border:none;width:100%;text-align:left;color:var(--tx)}
+.qn{display:flex;align-items:center;justify-content:center;align-self:stretch;background:var(--qnb);font-family:ui-monospace,monospace;font-size:11px;font-weight:700;color:var(--qn);min-height:48px;border-right:1px solid var(--bd)}
+.qt{padding:12px 12px 12px 14px;font-family:system-ui,sans-serif;font-size:14px;font-weight:600;line-height:1.4}
+.qtg{align-self:center;padding-right:12px;font-size:17px;color:var(--mu);transition:transform .2s;user-select:none}
+.qi.open .qtg{transform:rotate(45deg);color:var(--ac)}
+.qi.open .qq{border-bottom:1px solid var(--dv)}
+.qa{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.qai{padding:16px 18px 18px;background:var(--ab);font-size:14.5px;line-height:1.7}
+.qai p{margin-bottom:9px}.qai p:last-child{margin-bottom:0}
+.qai strong{font-family:system-ui,sans-serif;font-size:13px;color:var(--ac);font-weight:700}
+.qai ul,.qai ol{margin:6px 0 9px 18px}.qai li{margin-bottom:3px}
+.utag{display:inline-block;background:var(--tg);color:var(--tt);font-family:ui-monospace,monospace;font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:2px 7px;border-radius:3px;margin-bottom:9px}
+.note{background:var(--sf2);border-left:3px solid var(--ac);padding:7px 11px;margin:8px 0;font-size:13px;color:var(--mu);border-radius:0 4px 4px 0;font-family:system-ui,sans-serif}
+.code{background:var(--sf2);border:1px solid var(--bd);border-radius:5px;padding:10px 14px;font-family:ui-monospace,monospace;font-size:12.5px;margin:8px 0;overflow-x:auto;white-space:pre;line-height:1.5;color:var(--tx)}
+@media(max-width:540px){.qt{font-size:13px;padding:10px 10px 10px 12px}.qn{font-size:10px;min-width:36px}.subj-btn{font-size:11.5px;padding:6px 10px}}
+@media(prefers-reduced-motion:reduce){.qa,.qtg,.qi{transition:none}}
+</style>
+<div class="page">
+<header class="hdr">
+  <p class="hdr-ey">MCA · Spring 2026 · SMU Manipal</p>
+  <h1>Complete <span>Question Bank</span></h1>
+  <p class="hdr-sub">Long & Short answer questions with model answers for all 6 subjects</p>
+  <div class="chips">
+    <span class="chip">.Net Framework</span><span class="chip">Computer Network</span>
+    <span class="chip">IT Laws</span><span class="chip">Cloud Computing</span>
+    <span class="chip">.Net Lab</span><span class="chip">CN Lab</span>
+    <span class="chip">6 Subjects · 150+ Questions</span>
+  </div>
+</header>
+
+<div class="subj-tabs" id="sbjTabs"></div>
+<div id="panels"></div>
+</div>
+
+<script>
+const SUBJECTS = [
+  {id:'dotnet', label:'.Net Framework', code:'O02CA601'},
+  {id:'cn',     label:'Computer Network', code:'O02CA602'},
+  {id:'itlaw',  label:'IT Laws & Practices', code:'O02CA603'},
+  {id:'cloud',  label:'Cloud Computing', code:'O02EA602'},
+  {id:'dnlab',  label:'.Net Framework Lab', code:'O02LA601'},
+  {id:'cnlab',  label:'Computer Network Lab', code:'O02LA602'},
+];
+
+const DATA = {
+dotnet:{
+ long:[
+  {q:"Explain the .NET Framework architecture. Describe the roles of CLR, CTS, CLS, and BCL.",u:"Unit 01",
+   a:`<span class="utag">Unit 01</span><p>The .NET Framework is Microsoft's software development platform providing a managed execution environment for building and running applications. Its architecture has four core components.</p><p><strong>CLR (Common Language Runtime)</strong> is the execution engine — the heart of .NET. It compiles Intermediate Language (IL/MSIL) to native machine code at runtime via JIT (Just-In-Time) compilation. Key services: garbage collection (automatic memory management), security enforcement, exception handling, type checking, and thread management. All .NET languages compile to IL, which CLR executes.</p><p><strong>CTS (Common Type System)</strong> defines how types are declared and managed in the runtime, ensuring cross-language interoperability. Two categories: Value types (stored on stack — int, bool, struct, enum) and Reference types (stored on heap — class, interface, array, delegate).</p><p><strong>CLS (Common Language Specification)</strong> is a subset of CTS features that all .NET languages must support. It guarantees that a class library written in C# can be consumed by VB.NET code, enabling true language interoperability.</p><p><strong>BCL (Base Class Library)</strong> is the massive collection of pre-built classes: System.IO, System.Collections, System.Net, System.Security, System.Threading, System.Xml. It provides the building blocks for all .NET applications.</p><p><strong>Execution model:</strong> Source code → Language Compiler → MSIL → JIT Compiler → Native Code → CLR execution. .NET 5/6/8 is the modern unified cross-platform successor to both .NET Framework and .NET Core.</p>`},
+  {q:"Explain ADO.NET architecture. Differentiate between connected and disconnected data access models.",u:"Unit 05",
+   a:`<span class="utag">Unit 05</span><p>ADO.NET is Microsoft's data access technology for the .NET Framework, providing a bridge between front-end applications and back-end databases.</p><p><strong>ADO.NET Architecture — Two Main Components:</strong></p><p><strong>1. .NET Data Provider</strong> (for connecting to databases): Connection (SqlConnection — establishes DB connection), Command (SqlCommand — executes SQL statements), DataReader (SqlDataReader — forward-only, read-only, fast cursor), DataAdapter (SqlDataAdapter — bridge between DataSet and DB).</p><p><strong>2. DataSet</strong> — in-memory, disconnected data store containing DataTable(s), DataRelation(s), and DataView(s). Works entirely in memory independent of the data source.</p><p><strong>Connected Data Access:</strong> Application keeps an open database connection while reading data using DataReader. Fast and memory-efficient for sequential read operations. Pattern: Open → Execute → Read with DataReader → Close. Best for: large result sets read once.</p><p><strong>Disconnected Data Access:</strong> DataAdapter fetches data into DataSet, connection is closed, data is manipulated in memory, then DataAdapter pushes changes back. Best for: offline editing, passing data across tiers, data binding to UI controls.</p><p><strong>Entity Framework (EF)</strong> is an ORM (Object-Relational Mapper) built on ADO.NET. Maps database tables to C# classes — developers work with objects, not SQL. Approaches: Database First, Model First, Code First. <strong>Dapper</strong> is a lightweight micro-ORM — faster than EF for simple queries. <strong>LINQ to SQL</strong> maps SQL Server tables to C# classes using LINQ queries.</p>`},
+  {q:"Explain ASP.NET MVC architecture and how routing works. How does it differ from Web Forms?",u:"Unit 06",
+   a:`<span class="utag">Unit 06</span><p>ASP.NET MVC implements the Model-View-Controller design pattern, separating an application into three distinct components.</p><p><strong>Model:</strong> Plain C# classes representing data and business logic. Connected to database via Entity Framework or ADO.NET. Contains validation attributes ([Required], [MaxLength]).</p><p><strong>View:</strong> Razor syntax .cshtml files — HTML mixed with C# code. Receives data from controller via ViewBag, ViewData, or strongly-typed Model. Never contains business logic.</p><p><strong>Controller:</strong> Handles HTTP requests, processes business logic using Models, returns ActionResult (View, JsonResult, RedirectResult, PartialView). Each public method is an Action.</p><p><strong>Request Flow:</strong> URL → RouteEngine → Controller Action → Model (data) → View (render) → HTTP Response.</p><p><strong>Routing:</strong> Default route {controller}/{action}/{id} maps /Products/Details/5 to ProductsController.Details(5). Attribute routing: [Route("api/products/{id:int}")] on action methods.</p><p><strong>MVC vs Web Forms:</strong> Web Forms uses PostBack event-driven model (like WinForms), has ViewState hidden field (increases page size), abstracts HTML behind server controls, hard to unit test. MVC is stateless (no ViewState), gives full HTML control, controllers are testable plain classes, better for large maintainable applications. Web Forms: faster for simple forms; MVC: better for enterprise-scale apps.</p>`},
+  {q:"Explain State Management in ASP.NET. Compare all client-side and server-side techniques.",u:"Unit 07",
+   a:`<span class="utag">Unit 07</span><p>HTTP is stateless — each request is independent. ASP.NET provides multiple mechanisms to maintain state between requests.</p><p><strong>Client-Side (stored in browser):</strong></p><p><strong>ViewState:</strong> Hidden encrypted form field storing page/control values. Survives postback. Increases page size. Not suitable for sensitive data. Doesn't survive navigation to different pages.</p><p><strong>Cookies:</strong> Small files (max 4KB) on client disk. Session cookie (deleted when browser closes) vs Persistent cookie (has expiry date). Uses: remember login, store preferences. Users can disable cookies.</p><p><strong>Query String:</strong> Data appended to URL (?key=value). Visible in URL, user can tamper, limited length (~2000 chars). Good for simple page-to-page values.</p><p><strong>Hidden Fields:</strong> HTML input type="hidden". Value sent on form submit. Visible in page source — not secure.</p><p><strong>Server-Side (stored on server):</strong></p><p><strong>Session:</strong> Server-side dictionary per user. Identified by Session ID cookie. Default timeout: 20 min. Modes: InProc (fast, lost on restart), StateServer (survives restart), SQLServer (most reliable). Use for: shopping carts, user authentication data.</p><p><strong>Application State:</strong> Global shared store for all users. Persists entire app lifetime. Use with Application.Lock()/UnLock() for thread safety. Use for: global counters, shared configuration.</p><p><strong>Cache:</strong> Server-side with expiry policies, file/key dependencies. Output cache (entire page) vs Data cache (objects). Best for: database query results, computed values.</p>`},
+  {q:"Explain multithreading in .NET. How do Thread class, ThreadPool, TPL, and async/await differ?",u:"Units 11–12",
+   a:`<span class="utag">Units 11–12</span><p>Multithreading allows concurrent execution on multi-core processors, improving application responsiveness and performance.</p><p><strong>Thread class:</strong> Direct control over a thread. <code>Thread t = new Thread(()=>DoWork()); t.Start();</code> Thread priority (Highest/Normal/Lowest), states (Unstarted/Running/Stopped). Expensive to create — each thread uses ~1MB stack.</p><p><strong>Thread Synchronization:</strong> Prevents race conditions when threads share data. <code>lock(obj){}</code> — only one thread enters the block (uses Monitor internally). Mutex works across processes. Semaphore limits concurrent thread count. Interlocked for atomic integer operations.</p><p><strong>ThreadPool:</strong> Pool of pre-created worker threads managed by .NET runtime. More efficient than creating new threads. <code>ThreadPool.QueueUserWorkItem(DoWork);</code> Best for: many short-lived tasks.</p><p><strong>TPL (Task Parallel Library):</strong> High-level async API. Task represents a unit of work. <code>Task.Run(()=>DoWork());</code> Parallel.For/ForEach runs loop iterations on multiple threads. PLINQ parallelizes LINQ queries. Returns Task/Task&lt;T&gt; for composability.</p><p><strong>async/await:</strong> Simplifies async I/O without blocking threads. async marks a method; await suspends it until the Task completes, releasing the thread to do other work. Best for I/O-bound operations (file, HTTP, database). Thread/ThreadPool/TPL best for CPU-bound computation. Async methods return Task, Task&lt;T&gt;, or void (event handlers only).</p>`},
+  {q:"Explain exception handling in C#. What are user-defined exceptions, exception filters, and best practices?",u:"Units 09–10",
+   a:`<span class="utag">Units 09–10</span><p>An exception is an unexpected runtime event disrupting normal program flow. C# uses try-catch-finally for structured exception handling.</p><p><strong>Structure:</strong> try block wraps risky code. catch(SpecificException ex) handles specific exceptions — always catch specific before general. finally block always executes (for cleanup — closing connections, releasing resources).</p><p><strong>Key built-in exceptions:</strong> NullReferenceException, IndexOutOfRangeException, DivideByZeroException, FileNotFoundException, InvalidCastException, SqlException.</p><p><strong>throw vs throw ex:</strong> throw; (bare) re-throws preserving original stack trace — preferred. throw ex; resets the stack trace — avoid. throw new Exception("msg", ex); wraps original as inner exception.</p><p><strong>User-Defined Exceptions:</strong> Inherit from Exception or ApplicationException. Constructor calls base(message). Example: <code>class InvalidAgeException : Exception { public InvalidAgeException(string msg):base(msg){} }</code> Throw with: throw new InvalidAgeException("Age cannot be negative");</p><p><strong>Exception Filters (C# 6.0+):</strong> <code>catch(Exception ex) when(ex.Message.Contains("timeout"))</code> — catch only fires if condition is true. The exception is NOT caught (stack unwinds) if filter returns false. Useful for logging without swallowing exceptions.</p><p><strong>Best practices:</strong> Never catch Exception silently (always log). Use using statement for IDisposable cleanup. Don't use exceptions for control flow. Place most specific catch first.</p>`},
+  {q:"Explain delegates and events in C#. How do they enable the Observer design pattern?",u:"Unit 04",
+   a:`<span class="utag">Unit 04</span><p><strong>Delegate:</strong> A type-safe function pointer in C#. Holds a reference to one or more methods with a specific signature. Declared as: <code>delegate void Notify(string msg);</code> Can reference any method with matching signature. Multicast delegates can hold multiple method references (using += operator) and invoke them all.</p><p><strong>Anonymous methods and lambdas:</strong> Notify n = delegate(string m){Console.Write(m);}; or shorthand: Notify n = m => Console.Write(m);</p><p><strong>Built-in generic delegates:</strong> Action&lt;T&gt; (void return), Func&lt;T, TResult&gt; (with return value), Predicate&lt;T&gt; (returns bool). Eliminate need to declare custom delegate types.</p><p><strong>Events:</strong> Built on delegates. event keyword restricts a delegate so only the declaring class can invoke it; external classes can only subscribe (+= ) or unsubscribe (-=). Pattern: declare delegate type, declare event of that type, invoke in publisher, subscribe in subscriber.</p><p><strong>Observer pattern via events:</strong> Publisher class declares event. Subscriber classes register handler methods with +=. When publisher raises the event (invokes delegate), all subscribed handlers are called automatically. Example: Button.Click event in Windows Forms — multiple handlers can subscribe. This is loose coupling: publisher doesn't know about subscribers.</p><p><strong>EventHandler&lt;T&gt;:</strong> Built-in event delegate pattern: EventHandler&lt;MyEventArgs&gt; where MyEventArgs : EventArgs carries event data.</p>`},
+  {q:"Explain LINQ. How do LINQ to Objects, LINQ to SQL, and Entity Framework LINQ differ?",u:"Unit 05",
+   a:`<span class="utag">Unit 05</span><p>LINQ (Language Integrated Query) adds query capabilities directly into C# syntax, allowing querying of in-memory collections, databases, XML, and more using a unified syntax.</p><p><strong>LINQ syntax forms:</strong> Query syntax (SQL-like): <code>var r = from x in list where x > 5 select x;</code> Method syntax (fluent): <code>var r = list.Where(x=>x>5).Select(x=>x);</code> Both compile to identical IL. Method syntax is more flexible; query syntax is more readable for complex joins.</p><p><strong>Key LINQ operators:</strong> Where (filter), Select (project), OrderBy/ThenBy, GroupBy, Join, First/FirstOrDefault, Count, Sum, Max, Min, Average, Any, All, Skip, Take, Distinct.</p><p><strong>LINQ to Objects:</strong> Queries in-memory IEnumerable&lt;T&gt; collections (arrays, List&lt;T&gt;, etc.). Executes entirely in memory. Deferred execution — query runs only when iterated (foreach or .ToList()). Immediate execution: .Count(), .ToList(), .ToArray().</p><p><strong>LINQ to SQL:</strong> Maps SQL Server tables to C# classes using DataContext. Translates LINQ queries to SQL automatically. SQL Server only. Simpler but less feature-rich than EF.</p><p><strong>Entity Framework LINQ:</strong> Uses IQueryable&lt;T&gt; — translates LINQ to SQL via database provider. Supports multiple databases. More powerful: complex joins, lazy/eager loading, change tracking. Include() for eager loading related entities. AsNoTracking() for read-only performance.</p><p><strong>Key difference:</strong> LINQ to Objects works in memory (IEnumerable). EF/LINQ to SQL translate to database queries (IQueryable). AsEnumerable() forces client-side evaluation in EF.</p>`},
+  {q:"Explain ASP.NET Web API and Web Services. Compare REST and SOAP.",u:"Unit 06",
+   a:`<span class="utag">Unit 06</span><p>Web services allow applications to communicate over the internet using standard protocols, enabling system integration regardless of platform or language.</p><p><strong>SOAP Web Services (.asmx / WCF):</strong> XML-based protocol. Service described by WSDL (Web Services Description Language). Supports WS-Security, WS-ReliableMessaging, ACID transactions. Platform-independent but heavyweight and verbose. Best for: enterprise B2B integrations requiring strict contracts and security.</p><p><strong>ASP.NET Web API (REST):</strong> Framework for building HTTP services returning JSON or XML. Based on REST (Representational State Transfer). Uses HTTP verbs: GET (read), POST (create), PUT/PATCH (update), DELETE (delete). Resources identified by URIs: GET /api/products, POST /api/products, DELETE /api/products/5.</p><p><strong>ASP.NET Core Web API:</strong> Cross-platform, lightweight, built-in DI. [ApiController] and [Route("api/[controller]")] attributes. Content negotiation via Accept header. Swagger/OpenAPI for documentation. Returns IActionResult or ActionResult&lt;T&gt;.</p><p><strong>REST vs SOAP comparison:</strong> REST uses all HTTP verbs; SOAP uses only POST. REST supports JSON (lightweight); SOAP is XML-only. REST is stateless and simple; SOAP has complex standards (WS-*). REST has no formal contract; SOAP has WSDL. REST: better for public APIs, mobile apps, microservices. SOAP: better for enterprise transactions requiring security and reliability guarantees.</p><p><strong>Routing:</strong> Attribute routing with [HttpGet("{id}")], [HttpPost], [HttpDelete("{id}")] on action methods.</p>`},
+  {q:"Explain VB.NET OOP concepts: classes, inheritance, interfaces, Windows Forms, and data binding.",u:"Unit 02",
+   a:`<span class="utag">Unit 02</span><p>VB.NET is a fully object-oriented language on the .NET platform. It shares the CLR with C# and supports all OOP features.</p><p><strong>Classes and objects:</strong> Defined with Class keyword. Constructor: Sub New(). Properties use Get/Set. Shared members are static. Everything inherits from Object.</p><p><strong>Inheritance (Inherits):</strong> Class Dog Inherits Animal. Overridable marks methods as virtual; Overrides in subclass. MyBase.MethodName() calls parent method. NotInheritable = sealed class. MustInherit = abstract class.</p><p><strong>Interfaces (Implements):</strong> Define a contract without implementation. Class Dog Implements IAnimal. Must implement all interface members. Supports multiple interface implementation (unlike single class inheritance).</p><p><strong>Access modifiers:</strong> Public, Private, Protected, Friend (internal), Protected Friend.</p><p><strong>Windows Forms:</strong> GUI application framework. Each Form is a class inheriting System.Windows.Forms.Form. Controls (Button, TextBox, DataGridView) added visually in designer or code. Event handlers wired via AddHandler or in designer. Form lifecycle: Load → Shown → FormClosing → FormClosed.</p><p><strong>Data Binding in Windows Forms:</strong> Controls bound to data sources at design or runtime. Simple binding: TextBox.DataBindings.Add("Text", obj, "PropertyName"). Complex binding: DataGridView.DataSource = dataTable. BindingSource component manages navigation and change notifications between controls and data.</p>`}
+ ],
+ short:[
+  {q:"What is CLR? What are its main responsibilities?",u:"Unit 01",a:"CLR (Common Language Runtime) is .NET's execution engine. It compiles Intermediate Language to native code via JIT, manages memory through garbage collection, enforces security, handles exceptions, and provides type safety."},
+  {q:"What is the difference between value types and reference types in C#?",u:"Unit 03",a:"Value types (int, bool, struct, enum) store data directly on the stack. Reference types (class, interface, array, delegate) store a reference on the stack pointing to data on the heap. Assigning a value type copies the data; assigning a reference type copies the reference."},
+  {q:"What is NuGet? Why is it used in .NET projects?",u:"Unit 01",a:"NuGet is the package manager for .NET. It allows developers to easily add, update, and remove third-party libraries (packages) in their projects. Packages are hosted on nuget.org and installed via Visual Studio Package Manager or dotnet CLI."},
+  {q:"What is a delegate in C#? Give a simple example.",u:"Unit 04",a:"A delegate is a type-safe function pointer holding references to methods with a matching signature. Example: delegate int MathOp(int x, int y); MathOp add = (a,b) => a+b; int result = add(3,4); // returns 7. Multicast delegates can reference multiple methods."},
+  {q:"What are lambda expressions? When are they used?",u:"Unit 03",a:"Lambda expressions (=>) are anonymous functions written inline. Syntax: parameters => expression. Example: x => x * 2 or (x,y) => x+y. Used with delegates, LINQ (.Where(x=>x>5)), event handlers, and functional programming patterns."},
+  {q:"What is LINQ? Name 5 common LINQ operators.",u:"Unit 05",a:"LINQ (Language Integrated Query) adds query capabilities to C#. Works on in-memory collections, databases, XML. Common operators: Where (filter), Select (transform), OrderBy (sort), GroupBy (group), First/FirstOrDefault (single item), Count, Sum, Join, Skip, Take."},
+  {q:"What is ADO.NET? Name its four core objects.",u:"Unit 05",a:"ADO.NET is .NET's data access technology for connecting to databases. Four core objects: Connection (opens DB connection), Command (executes SQL), DataReader (fast forward-only reader), DataAdapter (bridges DataSet and database)."},
+  {q:"What is Entity Framework? What is Code First approach?",u:"Unit 05",a:"Entity Framework (EF) is an ORM that maps C# classes to database tables. Code First: developer defines C# entity classes first; EF generates the database schema via migrations. Allows database-agnostic development. EF Core is the modern cross-platform version."},
+  {q:"Difference between Cookies and Session state in ASP.NET?",u:"Unit 07",a:"Cookies are stored on the client browser (max 4KB), persist across browser sessions (if persistent), and are sent with every request. Session state is stored on the server, tied to a session ID, more secure for sensitive data, expires after inactivity (default 20 min)."},
+  {q:"What is ViewState in ASP.NET Web Forms?",u:"Unit 07",a:"ViewState is a hidden encrypted form field that stores the state of page controls between postbacks. It allows a TextBox to retain its value after form submission. Downside: increases page size. Can be disabled per control with EnableViewState='false'."},
+  {q:"What is ASP.NET MVC? What are Models, Views, Controllers?",u:"Unit 06",a:"ASP.NET MVC separates apps into Model (data/business logic), View (Razor HTML templates), and Controller (handles HTTP requests, selects view). URL routes to a controller action; action processes request using model and returns a view. Better testability than Web Forms."},
+  {q:"What is inheritance in C#? How does method overriding work?",u:"Unit 04",a:"Inheritance lets a class derive from another, inheriting its members. Syntax: class Dog : Animal. Override: mark base method as virtual, subclass uses override. Calling base class method: base.MethodName(). Sealed prevents further inheritance. Abstract forces subclass to implement."},
+  {q:"What is the difference between interface and abstract class in C#?",u:"Unit 04",a:"Interface: defines a contract with no implementation (C# 8+ allows default implementations). A class can implement multiple interfaces. Abstract class: can have both abstract (no implementation) and concrete members. Supports only single inheritance. Use interface for unrelated types sharing behavior; abstract class for related types sharing implementation."},
+  {q:"What is async/await in C#? When do you use it?",u:"Unit 12",a:"async marks a method as asynchronous; await suspends it until the awaited Task completes without blocking the thread. Use for I/O-bound operations (file reads, HTTP calls, DB queries). The method returns Task or Task<T>. Makes async code readable as synchronous-looking code."},
+  {q:"What is the Task Parallel Library (TPL)?",u:"Unit 12",a:"TPL is a high-level .NET API for parallel and async programming. Task.Run() runs work on ThreadPool. Parallel.For/ForEach parallelizes loops across CPU cores. Task.WhenAll() awaits multiple tasks concurrently. PLINQ parallelizes LINQ queries. Simplifies multithreaded programming."},
+  {q:"What is thread synchronization? What is a lock?",u:"Unit 11",a:"Thread synchronization prevents race conditions when multiple threads access shared data. The lock statement (lock(obj){}) ensures only one thread executes the block at a time (using Monitor.Enter/Exit internally). Other options: Mutex (cross-process), Semaphore (limit count), Interlocked (atomic operations)."},
+  {q:"What is exception filtering in C# 6.0+?",u:"Unit 10",a:"Exception filters add a when condition to catch: catch(Exception ex) when(ex.Message.Contains(\"timeout\")). The catch only fires if type AND condition match. If filter returns false, exception is not caught (no stack unwind side effect). Useful for conditional logging without swallowing exceptions."},
+  {q:"What is Dapper? How does it differ from Entity Framework?",u:"Unit 05",a:"Dapper is a lightweight micro-ORM that extends IDbConnection with Execute() and Query<T>() methods. Faster than EF for simple queries, full SQL control, low overhead. EF provides full ORM features: change tracking, migrations, lazy loading, relationship management, but has more overhead."},
+  {q:"What is file handling in ASP.NET? Name key File I/O classes.",u:"Unit 08",a:"File handling uses System.IO namespace. Key classes: File (static methods: ReadAllText, WriteAllText, Exists, Delete), FileInfo (instance methods on a specific file), Directory/DirectoryInfo (folder operations), StreamReader/StreamWriter (text streams), FileStream (byte-level access), Path (path manipulation utilities)."},
+  {q:"What is a using statement in C#? Why is it important?",u:"Unit 08",a:"The using statement ensures IDisposable objects are properly disposed even if an exception occurs. Example: using(var conn = new SqlConnection(cs)){ conn.Open(); ... } — connection is closed and disposed automatically. Prevents resource leaks for file handles, database connections, and streams."},
+ ]
+},
+
+cn:{
+ long:[
+  {q:"Explain the OSI reference model. What are the functions of each of the 7 layers?",u:"Unit 01",
+   a:`<span class="utag">Unit 01</span><p>The OSI (Open Systems Interconnection) model is a conceptual framework defining how data communication occurs between systems. It has 7 layers, each with specific responsibilities.</p><p><strong>Layer 7 — Application:</strong> Interface between network and user applications. Protocols: HTTP, FTP, SMTP, DNS, SNMP. Provides services like email, file transfer, web browsing.</p><p><strong>Layer 6 — Presentation:</strong> Data translation, encryption, compression. Converts data formats (JPEG, ASCII, EBCDIC). Handles SSL/TLS encryption. Ensures data is in usable format for application layer.</p><p><strong>Layer 5 — Session:</strong> Establishes, manages, and terminates communication sessions. Handles synchronization (checkpoints for resuming interrupted transfers). Protocols: NetBIOS, RPC.</p><p><strong>Layer 4 — Transport:</strong> End-to-end communication, error recovery, flow control. Segments data for transmission. TCP (reliable, connection-oriented) and UDP (unreliable, connectionless). Port numbers identify processes.</p><p><strong>Layer 3 — Network:</strong> Logical addressing (IP addresses) and routing. Determines best path through internetwork. Protocols: IP, ICMP, OSPF, BGP. Routers operate here.</p><p><strong>Layer 2 — Data Link:</strong> Node-to-node data transfer, error detection (CRC), MAC addressing. Divided into LLC (Logical Link Control) and MAC sub-layers. Protocols: Ethernet, Wi-Fi, PPP. Switches/bridges operate here.</p><p><strong>Layer 1 — Physical:</strong> Transmits raw bits over physical medium. Defines electrical signals, cables, connectors, data rates. Hubs, repeaters operate here.</p><p><strong>Mnemonic:</strong> All People Seem To Need Data Processing (top to bottom).</p>`},
+  {q:"Compare TCP and UDP. Explain TCP's three-way handshake and reliability mechanisms.",u:"Units 09–10",
+   a:`<span class="utag">Units 09–10</span><p>TCP and UDP are the two main Transport layer protocols, each suited to different use cases.</p><p><strong>TCP (Transmission Control Protocol):</strong> Connection-oriented — establishes connection before data transfer. Reliable: guarantees delivery, ordering, and error checking. Flow control (sliding window) and congestion control. Slower due to overhead. Uses: HTTP/HTTPS, FTP, SMTP, SSH.</p><p><strong>UDP (User Datagram Protocol):</strong> Connectionless — no handshake. Unreliable: no guaranteed delivery, no ordering. No congestion control. Fast and low-overhead. Uses: DNS, streaming media, VoIP, online gaming, DHCP.</p><p><strong>TCP Three-Way Handshake (Connection Establishment):</strong></p><p>1. SYN: Client sends segment with SYN flag, sequence number x → "I want to connect."</p><p>2. SYN-ACK: Server responds with SYN+ACK, sequence y, acknowledgment x+1 → "OK, I'm ready."</p><p>3. ACK: Client sends ACK, acknowledgment y+1 → "Connection established."</p><p><strong>TCP Connection Termination:</strong> Four-way — FIN from initiator, ACK from receiver, FIN from receiver, ACK from initiator.</p><p><strong>TCP Reliability Mechanisms:</strong> Sequence numbers track byte order. Acknowledgments confirm receipt. Retransmission on timeout if no ACK received. Flow control: Sliding Window — receiver advertises window size limiting how much sender can send before ACK. Congestion control: Slow start, Congestion Avoidance, Fast Retransmit to avoid network overload.</p>`},
+  {q:"Explain IP addressing (IPv4 and IPv6), subnetting, and CIDR notation.",u:"Units 05,07,08",
+   a:`<span class="utag">Units 05, 07, 08</span><p><strong>IPv4 Addressing:</strong> 32-bit address written as 4 octets (e.g., 192.168.1.100). ~4.3 billion unique addresses. Classes: Class A (0.0.0.0–127.255.255.255, /8 default mask), Class B (128.0.0.0–191.255.255.255, /16), Class C (192.0.0.0–223.255.255.255, /24). Private ranges: 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16 (not routable on internet).</p><p><strong>Subnetting:</strong> Dividing a network into smaller sub-networks. A subnet mask identifies network vs host portion. Example: IP 192.168.1.100 with mask 255.255.255.0 (/24) means network = 192.168.1.0, host = .100, broadcast = .255, usable hosts = 254.</p><p><strong>CIDR (Classless Inter-Domain Routing):</strong> Replaces class-based addressing. /24 means 24 bits for network. /25 creates 2 subnets with 126 hosts each. Formula: Number of subnets = 2^(borrowed bits); Hosts per subnet = 2^(host bits) - 2.</p><p><strong>IPv6 Addressing:</strong> 128-bit address written as 8 groups of 4 hex digits (e.g., 2001:0db8:85a3::8a2e:0370:7334). ~3.4×10^38 addresses — solves IPv4 exhaustion. No NAT needed. Built-in IPsec. Simplified header. Auto-configuration (SLAAC). :: shorthand compresses consecutive zero groups.</p><p><strong>ARP (Address Resolution Protocol):</strong> Resolves IP to MAC address within local network. Broadcasts "Who has IP x?" — owner replies with its MAC. Stored in ARP cache for efficiency.</p>`},
+  {q:"Explain routing algorithms: Distance Vector and Link State routing. Compare their approaches.",u:"Unit 06",
+   a:`<span class="utag">Unit 06</span><p>Routing algorithms determine the best path for packets through a network. Two major approaches are Distance Vector and Link State routing.</p><p><strong>Distance Vector Routing (Bellman-Ford):</strong> Each router maintains a routing table with {destination, distance, next-hop}. Periodically shares its entire routing table with directly connected neighbors. Routers update their tables based on neighbors' information: if neighbor's distance + link cost is less than current best, update. Example protocol: RIP (Routing Information Protocol) — uses hop count as metric, max 15 hops.</p><p><strong>Problems with Distance Vector:</strong> Slow convergence (routing loops can form). Count-to-infinity problem: when a link fails, routers slowly count up to infinity trying to find the route. Fixed by split horizon (don't advertise route back to where you heard it) and poison reverse.</p><p><strong>Link State Routing (Dijkstra's Algorithm):</strong> Each router learns the complete network topology by flooding Link State Advertisements (LSAs) to all routers. Each router independently runs Dijkstra's shortest path algorithm to build its own routing table. Example protocol: OSPF (Open Shortest Path First) — uses bandwidth as cost metric.</p><p><strong>Comparison:</strong> Distance Vector: simpler, lower CPU/memory, but slow convergence and routing loops. Link State: faster convergence, no loops, but requires more CPU/memory and bandwidth for LSA flooding. Modern networks prefer OSPF (link state) for its reliability.</p><p><strong>BGP (Border Gateway Protocol):</strong> Path vector protocol used between autonomous systems (inter-domain routing) on the internet. Not strictly DV or LS — uses policy-based routing.</p>`},
+  {q:"Explain MAC protocols: ALOHA, CSMA/CD, and CSMA/CA. How do they handle collisions?",u:"Unit 04",
+   a:`<span class="utag">Unit 04</span><p>MAC (Medium Access Control) protocols determine how multiple devices share a single communication channel. Collisions occur when two devices transmit simultaneously.</p><p><strong>Pure ALOHA:</strong> Simplest protocol. Transmit whenever you have data. If collision (no ACK received), wait random time and retransmit. Efficiency: ~18.4% (very low). Used in early satellite networks.</p><p><strong>Slotted ALOHA:</strong> Time divided into slots. Transmit only at start of a slot. Efficiency: ~36.8% (doubles Pure ALOHA). Still widely used in cellular networks for initial access.</p><p><strong>CSMA (Carrier Sense Multiple Access):</strong> Listen before transmitting. If channel busy, wait. 1-persistent: transmit immediately when idle (highest collision risk). p-persistent: transmit with probability p when idle. Non-persistent: wait random time if busy then re-sense.</p><p><strong>CSMA/CD (Collision Detection):</strong> Used in wired Ethernet (IEEE 802.3). Detect collision while transmitting. Stop immediately, send jam signal, wait random backoff time (binary exponential backoff: wait 0 to 2^n-1 slots, doubling range each collision), retry. Requires minimum frame size to ensure collision detection before transmission ends. Not usable in wireless (can't detect own collision).</p><p><strong>CSMA/CA (Collision Avoidance):</strong> Used in Wi-Fi (IEEE 802.11). Cannot detect collisions, so tries to avoid them. Sender checks channel, waits random backoff time (Inter-Frame Space + contention window), sends RTS (Request To Send), waits for CTS (Clear To Send) from AP, then transmits. ACK required for each frame. More overhead than CSMA/CD but works wirelessly.</p>`},
+  {q:"Explain error detection and correction at the Data Link Layer.",u:"Unit 03",
+   a:`<span class="utag">Unit 03</span><p>Transmission errors (bit flips) occur due to noise, interference, and attenuation. The Data Link Layer detects and sometimes corrects these errors.</p><p><strong>Parity Check:</strong> Single bit added to make total 1s even (even parity) or odd (odd parity). Detects single-bit errors. Cannot detect 2-bit errors. Not used in modern networks.</p><p><strong>Checksum:</strong> Sender divides data into words, adds them, sends sum. Receiver recalculates; mismatch = error. Used in TCP/IP headers. Better than parity but not as strong as CRC.</p><p><strong>CRC (Cyclic Redundancy Check):</strong> Most powerful error detection. Sender treats data as polynomial, divides by generator polynomial G(x), appends remainder as CRC bits. Receiver divides received data+CRC by same G(x); non-zero remainder = error. Detects all burst errors shorter than CRC length. Used in Ethernet, Wi-Fi, storage.</p><p><strong>Hamming Code (Error Correction):</strong> Adds redundant parity bits at positions 2^i (1,2,4,8...). Each parity bit covers specific data bits. Receiver rechecks parity — the syndrome (error pattern) identifies the exact error bit position for correction. Can correct single-bit errors and detect double-bit errors. Used in ECC RAM.</p><p><strong>Automatic Repeat Request (ARQ) protocols:</strong> Stop-and-Wait ARQ: send one frame, wait for ACK, then send next. Simple but slow. Go-Back-N ARQ: send N frames in a window; on error, retransmit from error frame forward. Selective Repeat ARQ: retransmit only the errored frame. Most efficient but requires larger buffers.</p>`},
+  {q:"Explain DNS, HTTP, SMTP, and FTP as Application Layer protocols.",u:"Units 11–12",
+   a:`<span class="utag">Units 11–12</span><p><strong>DNS (Domain Name System):</strong> Translates human-readable domain names (www.google.com) to IP addresses. Hierarchical distributed database. Resolution process: Client checks local cache → checks /etc/hosts → queries local DNS resolver → resolver queries root nameserver → TLD nameserver → authoritative nameserver → returns IP. Records: A (IPv4), AAAA (IPv6), MX (mail), CNAME (alias), NS (nameserver). Uses UDP port 53 (TCP for large responses).</p><p><strong>HTTP (HyperText Transfer Protocol):</strong> Foundation of web communication. Request-response model. Methods: GET, POST, PUT, DELETE, HEAD, OPTIONS. Stateless — no memory between requests (cookies/sessions add state). HTTP/1.1 persistent connections, HTTP/2 multiplexing. HTTPS = HTTP + TLS encryption. Port 80 (HTTP), 443 (HTTPS). Status codes: 200 OK, 301 Redirect, 404 Not Found, 500 Server Error.</p><p><strong>SMTP (Simple Mail Transfer Protocol):</strong> Sends email from client to server and between mail servers. Port 25 (server-to-server), 587 (client submission), 465 (SSL). Text-based protocol. POP3 (Post Office Protocol, port 110) downloads and deletes mail from server. IMAP (port 143) syncs mail across devices, keeps mail on server.</p><p><strong>FTP (File Transfer Protocol):</strong> Transfer files between client and server. Two connections: Control (port 21, commands) and Data (port 20, file transfer). Active mode: server connects back to client. Passive mode: client initiates both connections (needed for firewalls). SFTP (SSH FTP) and FTPS (FTP+TLS) add security. TELNET: remote terminal access on port 23, unencrypted (replaced by SSH port 22).</p>`},
+  {q:"Explain Network Address Translation (NAT). What problem does it solve and what are its types?",u:"Unit 06",
+   a:`<span class="utag">Unit 06</span><p>NAT (Network Address Translation) is a technique that modifies IP address information in packet headers as they pass through a router. It was developed as a short-term solution to IPv4 address exhaustion.</p><p><strong>Problem it solves:</strong> IPv4 only has ~4.3 billion addresses — not enough for every device on earth. NAT allows an entire private network to share a single public IP address. All devices in a home or office use private addresses (192.168.x.x, 10.x.x.x) and the router NATs them to its one public IP when accessing the internet.</p><p><strong>How NAT works:</strong> Outgoing packet: router replaces private source IP+port with its public IP + new port number, stores mapping in NAT table. Incoming reply: router looks up port in NAT table, translates destination back to private IP+port, forwards to internal device. The external server only sees the public IP.</p><p><strong>Types of NAT:</strong></p><p><strong>Static NAT:</strong> One-to-one permanent mapping — one private IP permanently mapped to one public IP. Used for servers that must be reachable from internet.</p><p><strong>Dynamic NAT:</strong> Maps private IPs to a pool of public IPs dynamically. Limited by pool size.</p><p><strong>PAT/NAT Overload (most common):</strong> Port Address Translation — many private IPs share one public IP, differentiated by unique port numbers. This is what home routers do. Supports thousands of simultaneous connections.</p><p><strong>Limitations:</strong> Breaks end-to-end connectivity (P2P difficult), requires ALG for some protocols (FTP, SIP), adds latency. IPv6 eliminates need for NAT by providing enough addresses for every device.</p>`},
+  {q:"Explain subnetting and VLANs. Why are they used in enterprise networks?",u:"Unit 07",
+   a:`<span class="utag">Unit 07</span><p><strong>Subnetting</strong> divides a single IP network into multiple smaller networks (subnets). Each subnet is a separate broadcast domain.</p><p><strong>Why subnet:</strong> Reduces broadcast traffic (smaller broadcast domains = better performance), improves security (isolate departments), efficient IP address utilization, simplifies routing.</p><p><strong>Subnet calculation:</strong> A /26 subnet (255.255.255.192) borrows 2 bits from host portion: 2^2=4 subnets, each with 2^6-2=62 usable hosts. Network address: host bits all 0. Broadcast: host bits all 1. Example: 192.168.1.0/26 → subnets: .0/26, .64/26, .128/26, .192/26.</p><p><strong>VLSM (Variable Length Subnet Masking):</strong> Uses different prefix lengths for different subnets — assigns exactly the right size for each subnet, minimizing waste. Example: /30 for point-to-point links (2 usable hosts), /24 for large LAN.</p><p><strong>VLANs (Virtual Local Area Networks):</strong> Logical network segments on a physical switch. IEEE 802.1Q standard adds a VLAN tag (4-byte header with 12-bit VLAN ID, 1-4094) to Ethernet frames. A single switch can have multiple VLANs, each as a separate broadcast domain.</p><p><strong>VLAN uses:</strong> Department isolation (HR, Finance, Engineering on same switch but separated), security (guest WiFi separate from corporate), QoS (prioritize voice traffic), reduced broadcasts. Access ports carry traffic for one VLAN. Trunk ports carry traffic for multiple VLANs between switches.</p><p><strong>Inter-VLAN routing:</strong> Router-on-a-stick (one router port with sub-interfaces per VLAN) or Layer 3 switch (routes between VLANs internally at wire speed).</p>`},
+  {q:"Explain the Physical Layer: transmission media, signal encoding, and transmission impairments.",u:"Unit 02",
+   a:`<span class="utag">Unit 02</span><p>The Physical Layer (Layer 1) is responsible for transmitting raw bits over a physical medium.</p><p><strong>Transmission Media — Guided:</strong> Twisted Pair (UTP/STP): pairs of copper wires twisted to reduce interference. Cat5e (1Gbps), Cat6 (10Gbps). Coaxial Cable: central copper core with shielding. Used in cable TV and older Ethernet. Fiber Optic: transmits light pulses. Single-mode (long distance, expensive), Multi-mode (short distance, cheaper). Immune to electromagnetic interference, very high bandwidth.</p><p><strong>Unguided Media:</strong> Radio waves (WiFi 2.4/5GHz), Microwave (point-to-point, satellite), Infrared (TV remotes, short range).</p><p><strong>Signal Encoding Techniques:</strong> NRZ (Non-Return to Zero): 1=high voltage, 0=low voltage. Simple but has DC component and sync problems. Manchester encoding: bit transition in middle of each bit period (0→1 for 0, 1→0 for 1). Self-clocking. Used in Ethernet 10BASE-T. 4B/5B: maps 4 data bits to 5-bit codes ensuring transitions for clock recovery. Used with NRZI. QAM (Quadrature Amplitude Modulation): modulates both amplitude and phase, used in cable modems and DSL.</p><p><strong>Transmission Impairments:</strong> Attenuation: signal weakens over distance — fixed by repeaters/amplifiers. Distortion: different frequency components arrive at different speeds (dispersion). Noise: thermal noise (random electron motion), crosstalk (from adjacent wires), impulse noise (lightning spikes). Shannon's Theorem: Maximum data rate = B × log2(1+S/N) where B=bandwidth, S/N=signal-to-noise ratio.</p>`}
+ ],
+ short:[
+  {q:"What are the four main network topologies? Give one advantage each.",u:"Unit 01",a:"Bus: simple, low cost — single cable failure affects all. Star: central hub, easy troubleshooting — hub failure kills network. Ring: equal access, predictable performance — single point of failure. Mesh: highly reliable, multiple paths — expensive, complex."},
+  {q:"What is the difference between circuit switching and packet switching?",u:"Unit 01",a:"Circuit switching: dedicated path reserved for entire call duration (telephone network) — guaranteed bandwidth, wasted if idle. Packet switching: data split into packets routed independently — efficient bandwidth use, variable delay. Internet uses packet switching."},
+  {q:"What is the Physical Layer? Name two guided transmission media.",u:"Unit 02",a:"The Physical Layer (OSI Layer 1) transmits raw bits over physical media, defining voltage levels, data rates, and connector types. Two guided media: Twisted Pair (UTP/STP for LANs) and Fiber Optic (light pulses for high-speed long-distance links)."},
+  {q:"What is signal encoding? Explain NRZ and Manchester encoding.",u:"Unit 02",a:"Signal encoding converts digital data to electrical/optical signals. NRZ: 1=high voltage, 0=low. Simple but lacks self-clocking. Manchester: voltage transition in middle of each bit (low-to-high=1, high-to-low=0). Self-clocking, used in 10BASE-T Ethernet."},
+  {q:"What is a MAC address? How does it differ from an IP address?",u:"Unit 04",a:"MAC (Media Access Control) address is a 48-bit hardware address burned into a NIC (e.g., 00:1A:2B:3C:4D:5E). It's permanent and Layer 2. IP address is a logical 32-bit (IPv4) or 128-bit (IPv6) address assigned by network administrator, Layer 3, and can change."},
+  {q:"What is CSMA/CA? How does it differ from CSMA/CD?",u:"Unit 04",a:"CSMA/CA (Collision Avoidance) is used in Wi-Fi — cannot detect collisions while transmitting wirelessly, so tries to avoid them using RTS/CTS handshake and random backoff. CSMA/CD (Collision Detection) is used in wired Ethernet — detects collisions while transmitting and uses binary exponential backoff."},
+  {q:"What is Bluetooth? What OSI layer does it primarily operate at?",u:"Unit 04",a:"Bluetooth (IEEE 802.15.1) is a short-range wireless technology (10-100m) using 2.4GHz ISM band. It operates at the Physical and Data Link layers. Uses frequency hopping spread spectrum (1600 hops/sec) to avoid interference. Used for headsets, keyboards, IoT devices."},
+  {q:"What is ARP? How does it work?",u:"Unit 08",a:"ARP (Address Resolution Protocol) maps an IP address to a MAC address within a local network. Process: device broadcasts 'Who has IP x.x.x.x?' — the device with that IP replies with its MAC. Result cached in ARP table. RARP does the reverse (MAC → IP, now replaced by DHCP)."},
+  {q:"What is DHCP? What problem does it solve?",u:"Unit 08",a:"DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses, subnet masks, default gateways, and DNS servers to devices joining a network. Eliminates manual IP configuration. Process: DORA — Discover (broadcast), Offer (server proposes IP), Request (client accepts), Acknowledge (server confirms)."},
+  {q:"What is the difference between IPv4 and IPv6?",u:"Unit 05",a:"IPv4: 32-bit address (~4.3B addresses), dotted decimal notation, requires NAT for address extension, optional IPsec. IPv6: 128-bit address (~3.4×10^38), hex colon notation, no NAT needed, built-in IPsec, simplified header, auto-configuration (SLAAC), no broadcast (uses multicast)."},
+  {q:"What is subnetting? Why is it used?",u:"Unit 07",a:"Subnetting divides a network into smaller sub-networks. Used to: reduce broadcast traffic (each subnet = separate broadcast domain), improve security (isolate departments), efficiently use IP addresses, simplify routing tables. A /26 prefix gives 4 subnets with 62 usable hosts each from a /24."},
+  {q:"What is a subnet mask? Give an example.",u:"Unit 07",a:"A subnet mask identifies which part of an IP address is the network vs host portion. 255.255.255.0 (/24): first 3 octets = network, last = host. Example: IP 192.168.10.50/24 → network = 192.168.10.0, usable hosts = .1–.254, broadcast = .255."},
+  {q:"What is NAT? How does it extend IPv4 lifetime?",u:"Unit 06",a:"NAT (Network Address Translation) allows an entire private network to share one public IP address. The router translates private IP:port to public IP:new_port and keeps a NAT table for reverse mapping. PAT/NAT Overload supports thousands of simultaneous connections from one public IP, significantly delaying IPv4 exhaustion."},
+  {q:"What is the Transport Layer? Name its two main protocols.",u:"Unit 09",a:"The Transport Layer (OSI Layer 4) provides end-to-end communication between processes. Two protocols: TCP (Transmission Control Protocol) — reliable, ordered, connection-oriented; UDP (User Datagram Protocol) — fast, connectionless, unreliable. Port numbers identify specific applications (HTTP=80, FTP=21, DNS=53)."},
+  {q:"What is TCP? Explain sliding window flow control.",u:"Unit 10",a:"TCP is a reliable, connection-oriented transport protocol providing ordered delivery and error recovery. Sliding window flow control: receiver advertises its receive buffer size (window size). Sender can transmit that many bytes without waiting for ACK. Window shrinks as data is sent and grows as ACKs arrive. Prevents sender from overwhelming receiver."},
+  {q:"What is UDP? When would you use UDP over TCP?",u:"Unit 10",a:"UDP is a connectionless, unreliable transport protocol with minimal overhead (8-byte header vs TCP's 20+ bytes). Use UDP when: speed matters more than reliability (video streaming, VoIP), application handles its own error recovery (DNS), or multicast/broadcast is needed (DHCP). TCP is too slow for real-time applications like gaming."},
+  {q:"What is DNS? How does domain name resolution work?",u:"Unit 11",a:"DNS translates domain names to IP addresses. Resolution: browser cache → OS cache → local resolver → root nameserver (knows TLD servers) → .com TLD nameserver → authoritative nameserver for domain → returns IP. Result cached per TTL. Iterative (resolver does all queries) vs Recursive (each server queries next)."},
+  {q:"What is HTTP? Difference between HTTP and HTTPS?",u:"Unit 12",a:"HTTP (HyperText Transfer Protocol) is the stateless request-response protocol for web communication. GET retrieves, POST submits data, PUT updates, DELETE removes. HTTPS = HTTP + TLS (Transport Layer Security) encryption — encrypts all data between browser and server, prevents eavesdropping and tampering. Uses port 443 vs HTTP's 80."},
+  {q:"What is FTP? How does it differ from HTTP?",u:"Unit 12",a:"FTP (File Transfer Protocol) uses two connections: control (port 21, commands) and data (port 20, file transfer). Designed specifically for bulk file transfers with directory navigation. HTTP is stateless and request-response; FTP maintains a session. SFTP/FTPS add security. HTTP handles individual file downloads without a persistent session."},
+  {q:"What is a P2P network? Give an example.",u:"Unit 12",a:"P2P (Peer-to-Peer) network: every node acts as both client and server, communicating directly without central server. Advantages: scalable, resilient (no single point of failure), cost-effective. Examples: BitTorrent (file sharing), Bitcoin (blockchain), Skype (originally P2P calls). Contrast: client-server where all clients connect to central server."},
+ ]
+},
+itlaw:{
+ long:[
+  {q:"Explain the IT Act 2000 (India). What are its major provisions, offences, and penalties?",u:"Unit 02",
+   a:`<span class="utag">Unit 02</span><p>The Information Technology Act 2000 is India's primary law governing electronic commerce and cybercrime. It was amended significantly in 2008 to address emerging threats.</p><p><strong>Key provisions:</strong> Legal recognition of electronic records and digital signatures (Section 5, 10A). Electronic governance — government can accept and issue documents electronically. Certifying Authorities licensed to issue digital certificates.</p><p><strong>Cyber Offences and Penalties:</strong></p><p>Section 43: Unauthorised access to computer resources — civil liability, compensation up to ₹1 crore. Section 66: Computer-related offences (hacking, data theft) — imprisonment up to 3 years and/or fine up to ₹5 lakh. Section 66A (struck down by SC): Sending offensive messages. Section 66B: Receiving stolen computer resource — up to 3 years. Section 66C: Identity theft — up to 3 years and ₹1 lakh fine. Section 66D: Cheating by impersonation using computer — up to 3 years. Section 66E: Privacy violation (capturing/publishing private images) — up to 3 years. Section 67: Publishing obscene material electronically — up to 5 years. Section 69: Government interception powers. Section 72: Breach of confidentiality by certifying authority — up to 2 years.</p><p><strong>2008 Amendment:</strong> Added Section 66A–66F, expanded cybercrime coverage, introduced Data Protection provisions, defined intermediary liability.</p><p><strong>CERT-In (Indian Computer Emergency Response Team):</strong> National nodal agency for cybersecurity incidents under the IT Act.</p>`},
+  {q:"Explain the CIA triad of Information Security. Describe the NSTISSC security model.",u:"Unit 01",
+   a:`<span class="utag">Unit 01</span><p>Information security aims to protect information assets from threats while enabling authorized use.</p><p><strong>CIA Triad — Three core properties:</strong></p><p><strong>Confidentiality:</strong> Ensures information is accessible only to authorized individuals. Threats: unauthorized access, eavesdropping, data theft. Controls: encryption, access control lists, need-to-know principle, data classification.</p><p><strong>Integrity:</strong> Ensures information is accurate and unmodified by unauthorized parties. Threats: data tampering, man-in-the-middle attacks, malware modification. Controls: digital signatures, hash functions (SHA-256), version control, audit trails.</p><p><strong>Availability:</strong> Ensures authorized users have reliable, timely access to information. Threats: DoS attacks, ransomware, hardware failure, natural disasters. Controls: redundancy, RAID, backups, disaster recovery, load balancing.</p><p><strong>Extended properties:</strong> Authenticity (verifying identity), Non-repudiation (sender cannot deny sending a message — achieved via digital signatures), Accountability (actions traceable to individuals).</p><p><strong>NSTISSC Security Model (McCumber Cube):</strong> 3D model with three axes: Information States (Storage, Processing, Transmission), Security Services (Confidentiality, Integrity, Availability), Security Countermeasures (Policy, Education, Technology). Creates 27 cells representing all possible security considerations. Each cell = intersection of one state × one service × one countermeasure. Used to identify gaps in an organisation's security program.</p>`},
+  {q:"Explain Risk Analysis and Assessment in information security. What are risk control strategies?",u:"Unit 04",
+   a:`<span class="utag">Unit 04</span><p>Risk management is the process of identifying, assessing, and reducing risks to information assets to an acceptable level.</p><p><strong>Key terms:</strong> Asset: valuable resource to protect (data, hardware, software, people). Threat: potential event that could cause harm. Vulnerability: weakness that a threat can exploit. Risk = Likelihood × Impact. Exposure: potential loss if threat exploits vulnerability.</p><p><strong>Risk Identification:</strong> Create asset inventory. Identify threats to each asset. Identify vulnerabilities each threat could exploit. Document exposure (financial, reputational, operational impact).</p><p><strong>Risk Analysis methods:</strong> Qualitative: describe risks as High/Medium/Low — faster, subjective, no precise numbers. Quantitative: calculate financial impact. SLE (Single Loss Expectancy) = Asset Value × Exposure Factor. ARO (Annual Rate of Occurrence) = expected frequency per year. ALE (Annual Loss Expectancy) = SLE × ARO. CBA (Cost-Benefit Analysis): implement control only if cost < ALE saved.</p><p><strong>Risk Control Strategies (4 Ts):</strong></p><p><strong>Terminate/Avoid:</strong> Stop the activity causing the risk. Example: stop offering an unprotected online service.</p><p><strong>Transfer:</strong> Shift risk to third party. Example: purchase cyber insurance, outsource to managed security provider.</p><p><strong>Treat/Mitigate:</strong> Implement controls to reduce probability or impact. Most common approach.</p><p><strong>Tolerate/Accept:</strong> Accept the residual risk when cost of control exceeds expected loss. Must be documented and approved by management. Risk register documents all risks, their assessment, and treatment decisions.</p>`},
+  {q:"Explain the types and impacts of cyber crimes. What are India's cyber crime laws?",u:"Unit 12",
+   a:`<span class="utag">Unit 12</span><p>Cybercrime is any criminal activity involving a computer, network, or digital device, either as the target or tool of the crime.</p><p><strong>Types of Cyber Crimes:</strong></p><p><strong>Against individuals:</strong> Identity theft, cyberstalking, online harassment, cyber defamation, phishing (fraudulent emails to steal credentials).</p><p><strong>Against organisations:</strong> Hacking (unauthorised access), data breaches, ransomware (encrypt data, demand payment), corporate espionage, DoS/DDoS attacks (overwhelm servers).</p><p><strong>Against property:</strong> Intellectual property theft, software piracy, domain squatting.</p><p><strong>Against government:</strong> Cyberterrorism, cyber warfare, critical infrastructure attacks.</p><p><strong>Financial crimes:</strong> Online banking fraud, credit card fraud, cryptocurrency scams, business email compromise (BEC).</p><p><strong>Impact:</strong> Financial losses (global cybercrime cost: trillions annually), reputational damage, loss of customer trust, operational disruption, national security threats, personal psychological harm to victims.</p><p><strong>India's Cyber Crime Laws:</strong> IT Act 2000 (amended 2008) is the primary law. Key sections: 66 (hacking — 3 years), 66C (identity theft — 3 years), 66D (impersonation — 3 years), 66E (privacy violation), 67 (obscenity — 5 years), 70 (critical infrastructure protection). Indian Penal Code (IPC) sections also apply: 419 (cheating by impersonation), 420 (fraud), 468 (forgery). CERT-In handles incident reporting and response. National Cyber Crime Reporting Portal (cybercrime.gov.in) for public complaints.</p>`},
+  {q:"Explain Intellectual Property Rights in the context of IT. What are copyrights, patents, trademarks, and trade secrets?",u:"Unit 02",
+   a:`<span class="utag">Unit 02</span><p>Intellectual Property (IP) refers to creations of the mind protected by law. In the IT sector, IP protection is critical for software, algorithms, branding, and business data.</p><p><strong>Copyright:</strong> Automatically protects original creative works from moment of creation. In IT: source code, software documentation, website content, databases, graphics, music. Owner has exclusive rights to copy, distribute, modify, and publicly display the work. Duration: Life of author + 60 years (India). Infringement: using without permission or license.</p><p><strong>Patent:</strong> Protects novel, useful, non-obvious inventions. Software patents protect algorithms, methods, and systems (controversial — many countries restrict pure software patents). Requires registration. Duration: 20 years from filing date. Gives exclusive right to make, use, sell the invention. Infringement: using patented invention without license.</p><p><strong>Trademark:</strong> Protects brand identifiers — names, logos, slogans that distinguish a business's goods/services. Examples: Apple logo, Microsoft Windows name. Registration gives exclusive use rights. Duration: Renewable indefinitely (10 years in India). Protects consumer trust and brand reputation.</p><p><strong>Trade Secret:</strong> Confidential business information providing competitive advantage. Examples: Google's search algorithm, Coca-Cola formula, proprietary customer lists. Not registered — protected by keeping it secret and using NDAs (Non-Disclosure Agreements). No expiry — lasts as long as kept secret. IT relevance: source code, business processes, customer databases.</p><p><strong>Licensing:</strong> IP owner grants permission to others. Open Source licenses (MIT, GPL, Apache) allow free use with conditions. Proprietary licenses restrict use to paid customers.</p>`},
+  {q:"Explain security technologies: firewalls, VPNs, and Intrusion Detection/Prevention Systems (IDPS).",u:"Unit 09",
+   a:`<span class="utag">Unit 09</span><p>Security technologies form a layered defence protecting networks from unauthorised access and attacks.</p><p><strong>Firewalls:</strong> Control network traffic based on rules. Types: Packet filtering (Layer 3/4 — checks IP/port, stateless, fast, limited). Stateful inspection (tracks connection state — remembers TCP handshake, more accurate). Application-layer firewall/proxy (inspects payload — can block specific application content). Next-Generation Firewall (NGFW — deep packet inspection, application awareness, user identity, IPS integration). Deployed at network perimeter and between internal segments.</p><p><strong>VPN (Virtual Private Network):</strong> Creates encrypted tunnel over untrusted network (internet). Types: Site-to-site VPN connects office networks to cloud/HQ — uses IPsec protocol suite (AH for integrity, ESP for encryption). Remote access VPN connects individual users to corporate network — SSL/TLS VPN (Cisco AnyConnect, OpenVPN). Split tunneling: only corporate traffic goes through VPN; personal traffic goes direct. Benefits: encrypted data in transit, hides private IP addresses, bypasses geographic restrictions.</p><p><strong>IDPS (Intrusion Detection and Prevention System):</strong> IDS detects attacks and alerts; IPS detects AND blocks in real time. Types: Network-based (NIDS/NIPS — monitors network traffic), Host-based (HIDS — monitors single host activity, logs, processes). Detection methods: Signature-based (matches known attack patterns — fast but misses zero-day attacks), Anomaly-based (baseline normal behaviour, alert on deviations — catches new attacks but higher false positives), Stateful protocol analysis. Deployment: NIDS in promiscuous mode passively monitors; NIPS sits inline and can drop malicious packets.</p>`},
+  {q:"Explain network vulnerability assessment. What methodologies and tools are used?",u:"Unit 10",
+   a:`<span class="utag">Unit 10</span><p>Network vulnerability assessment is the systematic process of identifying security weaknesses in network infrastructure before attackers do.</p><p><strong>Business value:</strong> Proactively find vulnerabilities, prioritise remediation, demonstrate due diligence for compliance, reduce risk of breach, provide baseline for security improvement.</p><p><strong>Types of assessments:</strong> Black-box (tester has no prior knowledge — simulates external attacker). White-box (full network documentation provided — most thorough). Grey-box (partial knowledge — realistic insider threat scenario). Internal assessment (from within network). External assessment (from internet perspective).</p><p><strong>Methodology (Cyclic Assessment Approach):</strong> 1. Reconnaissance: gather information (IP ranges, domain names, employee info) via OSINT (Shodan, Google dorking, WHOIS). 2. Scanning: discover live hosts and open ports (Nmap). Vulnerability scanning (identify known vulnerabilities). 3. Enumeration: identify services, versions, OS details. 4. Exploitation: attempt to confirm vulnerabilities (penetration testing). 5. Reporting: document findings with severity (CVSS score), affected systems, and remediation recommendations. 6. Remediation and Re-assessment: fix issues, verify fixes.</p><p><strong>Tools:</strong> Nmap — network discovery and port scanning. Nessus/OpenVAS — vulnerability scanner (checks against CVE database). Metasploit — exploitation framework. Wireshark — packet analyser. Nikto — web server scanner. Burp Suite — web application security. OWASP Top 10 — standard list of critical web application risks.</p><p><strong>Internet-based attacker classification:</strong> Script kiddies (low skill), crackers (break systems), hackers (skilled), nation-state actors (sophisticated, resourced).</p>`},
+  {q:"Explain data protection and privacy laws globally. How does GDPR impact organisations?",u:"Unit 11",
+   a:`<span class="utag">Unit 11</span><p>Data protection laws regulate how personal information is collected, stored, processed, and shared, protecting individuals' privacy rights.</p><p><strong>GDPR (General Data Protection Regulation):</strong> EU law effective May 2018. Applies to any organisation processing EU citizens' data regardless of where it operates. Key principles: Lawfulness, fairness, transparency; Purpose limitation (data used only for stated purpose); Data minimisation; Accuracy; Storage limitation; Integrity and confidentiality; Accountability.</p><p><strong>GDPR Rights:</strong> Right of access (see your data), Right to rectification (correct errors), Right to erasure/"right to be forgotten" (delete data), Right to data portability (receive data in machine-readable format), Right to object to processing.</p><p><strong>GDPR Requirements:</strong> Privacy by design (build privacy into systems). Data Protection Officer (DPO) for large-scale processing. Privacy Impact Assessments. Breach notification within 72 hours. Data Processing Agreements (DPA) with third parties.</p><p><strong>GDPR Penalties:</strong> Up to €20 million or 4% of global annual turnover (whichever higher). Tier 2: up to €10M or 2%.</p><p><strong>Other laws:</strong> CCPA (California Consumer Privacy Act) — similar to GDPR for California residents. HIPAA (US) — healthcare data. India's Digital Personal Data Protection Act 2023 — similar GDPR-like framework. PDPA (Singapore). All share common themes: consent, data minimisation, breach notification, individual rights.</p><p><strong>Compliance impact:</strong> Organisations must appoint DPO, update privacy policies, map data flows, implement technical controls (encryption, access controls), review vendor contracts.</p>`},
+  {q:"Explain cyber forensics. What are the stages of a cyber forensic investigation?",u:"Unit 12",
+   a:`<span class="utag">Unit 12</span><p>Cyber (digital) forensics is the application of scientific methods to collect, preserve, analyse, and present digital evidence for legal proceedings.</p><p><strong>Principles:</strong> Preserve evidence integrity (never alter original evidence). Chain of custody (documented record of who handled evidence when). Repeatability (analysis must be reproducible). Admissibility (evidence must follow legal standards).</p><p><strong>Stages of Cyber Forensic Investigation:</strong></p><p><strong>1. Identification:</strong> Recognise potential digital evidence sources — computers, phones, cloud accounts, network logs, USB drives, surveillance footage.</p><p><strong>2. Preservation:</strong> Secure crime scene. Create forensic image (bit-for-bit copy using write blocker to prevent modification). Verify with hash (MD5/SHA-256) — any change to copy would change hash. Original evidence stored in evidence bag.</p><p><strong>3. Collection:</strong> Gather volatile data first (RAM, running processes, network connections — disappear when device is powered off). Then non-volatile (storage devices). Use Faraday bag for phones to prevent remote wipe.</p><p><strong>4. Analysis:</strong> Examine forensic copy. Recover deleted files (data often remains until overwritten). Analyse file metadata, timestamps, browser history, email headers, log files. Timeline analysis. Keyword searches.</p><p><strong>5. Documentation:</strong> Maintain detailed notes of every action taken. Screenshot evidence with timestamps. Build timeline of events.</p><p><strong>6. Presentation:</strong> Expert witness testimony. Write forensic report in plain language. Present findings to court or management.</p><p><strong>Tools:</strong> Autopsy/The Sleuth Kit (disk analysis), FTK (Forensic Toolkit), EnCase (industry standard), Volatility (memory analysis), Wireshark (network forensics).</p>`},
+  {q:"Explain the Security Systems Development Life Cycle (SSDLC) and Information Security Planning.",u:"Units 06–07",
+   a:`<span class="utag">Units 06–07</span><p>SSDLC integrates security activities into every phase of the software/system development process rather than adding security as an afterthought.</p><p><strong>SSDLC Phases:</strong></p><p><strong>1. Investigation:</strong> Define project scope, identify security requirements, establish feasibility. Security must be a stated requirement from the start.</p><p><strong>2. Analysis:</strong> Analyse existing systems, identify threats using threat modelling (STRIDE), document security requirements alongside functional requirements.</p><p><strong>3. Logical Design:</strong> Design security architecture — access controls, encryption methods, authentication mechanisms. Create security policy framework.</p><p><strong>4. Physical Design:</strong> Select specific security technologies, configure firewalls and IDS, plan network segmentation.</p><p><strong>5. Implementation:</strong> Secure coding practices (input validation, parameterised queries, error handling). Code review for security vulnerabilities. OWASP guidelines.</p><p><strong>6. Maintenance and Change:</strong> Ongoing vulnerability assessment, patch management, security monitoring, incident response.</p><p><strong>Information Security Policy:</strong> Document defining organisation's approach to protecting information assets. Components: scope, responsibilities, acceptable use, data classification (Public/Internal/Confidential/Restricted), incident response procedures.</p><p><strong>Security Blueprint (ISO 27001 framework):</strong> Comprehensive security architecture covering 14 control domains including access control, cryptography, physical security, incident management. ISMS (Information Security Management System) — documented system of policies, procedures, and controls.</p><p><strong>Security awareness training:</strong> Most attacks exploit human error — phishing, social engineering. Regular training, simulated phishing, clear reporting procedures.</p>`}
+ ],
+ short:[
+  {q:"What is information security? Define the CIA triad.",u:"Unit 01",a:"Information security protects information assets from unauthorised access, modification, and unavailability. CIA Triad: Confidentiality (only authorised access), Integrity (data unmodified unless authorised), Availability (reliable access for authorised users). All three must be balanced — over-restricting access hurts availability."},
+  {q:"What is the IT Act 2000? Name three key provisions.",u:"Unit 02",a:"India's IT Act 2000 is the primary law governing electronic commerce and cybercrime. Key provisions: (1) Legal recognition of electronic records/signatures, (2) Section 66 — punishment for hacking (3 years/₹5 lakh fine), (3) Section 66C — identity theft (3 years), (4) Section 67 — obscene online content (5 years)."},
+  {q:"What is a cybercrime? Give three examples.",u:"Unit 12",a:"Cybercrime is criminal activity involving computers or networks as tools or targets. Examples: Phishing (fraudulent emails stealing credentials), Ransomware (encrypting victim's files for payment), Identity theft (stealing personal info to impersonate), DDoS attacks (overwhelming servers), Online banking fraud."},
+  {q:"What is intellectual property? Name its four types.",u:"Unit 02",a:"Intellectual property (IP) protects creations of the mind. Four types: Copyright (creative works — code, books, music — automatic), Patent (inventions — registered, 20 years), Trademark (brand identifiers — logo, name — renewable), Trade Secret (confidential business info — algorithms, formulas — no registration, indefinite)."},
+  {q:"What is a copyright? How long does it last in India?",u:"Unit 02",a:"Copyright automatically protects original creative works (software source code, documentation, websites, music, books) from the moment of creation. No registration required. In India, duration: Life of author + 60 years. Gives exclusive rights to copy, distribute, adapt, and publicly display the work."},
+  {q:"What is a patent? How does it differ from copyright?",u:"Unit 02",a:"Patent protects novel, useful, non-obvious inventions. Requires registration. Lasts 20 years. Gives exclusive right to make/use/sell the invention. Copyright protects original expression (code, books) automatically, lasts life+60 years, but doesn't protect the underlying idea/method — only the specific expression."},
+  {q:"What is a threat vs a vulnerability in information security?",u:"Unit 03",a:"Threat: a potential event or actor that could cause harm to an asset (e.g., hackers, malware, flood, fire). Vulnerability: a weakness in a system that a threat can exploit (e.g., unpatched software, weak password, open port). Risk = the probability that a threat will exploit a vulnerability and the resulting impact."},
+  {q:"What is risk management in information security?",u:"Unit 04",a:"Risk management identifies, analyses, and mitigates risks to information assets. Process: identify assets → identify threats/vulnerabilities → calculate risk (Likelihood × Impact) → choose control strategy (Avoid, Transfer, Mitigate, Accept) → implement controls → monitor residual risk. ALE = SLE × ARO measures annual financial exposure."},
+  {q:"What is a firewall? Name two types.",u:"Unit 09",a:"A firewall controls network traffic based on rules, allowing or blocking packets. Types: Packet filtering (checks IP/port, stateless, fast). Stateful inspection (tracks connection state, more accurate). Application proxy (inspects content). NGFW (deep inspection, application awareness, IPS). Deployed at perimeter and between internal segments."},
+  {q:"What is a VPN? How does it protect communication?",u:"Unit 09",a:"VPN (Virtual Private Network) creates an encrypted tunnel over the internet. Protects by: encrypting all data in transit (IPsec/TLS), hiding private IP addresses from external networks, authenticating both endpoints. Types: Site-to-site (connect networks using IPsec), Remote access (user-to-network using SSL/TLS). Prevents eavesdropping on public networks."},
+  {q:"What is an IDS? How does it differ from IPS?",u:"Unit 09",a:"IDS (Intrusion Detection System) monitors network/host activity and alerts on suspicious events — passive, detects only. IPS (Intrusion Prevention System) detects AND actively blocks malicious traffic in real time — sits inline in network path. Detection methods: signature-based (known attacks) and anomaly-based (deviations from normal behaviour)."},
+  {q:"What is social engineering? Give an example.",u:"Unit 05",a:"Social engineering manipulates people into divulging confidential information or performing actions that compromise security — exploiting human psychology rather than technical vulnerabilities. Examples: Phishing (fake email from 'bank'), Pretexting (posing as IT support to get password), Baiting (leaving infected USB), Vishing (voice call fraud), Tailgating (following someone through secure door)."},
+  {q:"What is phishing? How can it be prevented?",u:"Unit 05",a:"Phishing: fraudulent emails/messages impersonating trusted entities (banks, Microsoft) to steal credentials or install malware. User clicks link → fake login page steals password. Prevention: email filtering (SPF, DKIM, DMARC), security awareness training, MFA (stolen password alone not enough), URL inspection, reporting suspicious emails."},
+  {q:"What is a DoS/DDoS attack?",u:"Unit 05",a:"DoS (Denial of Service): attacker overwhelms a target server with traffic/requests, making it unavailable to legitimate users. DDoS (Distributed DoS): attack comes from thousands of compromised devices (botnet) simultaneously — much harder to block. Mitigations: rate limiting, traffic scrubbing services (Cloudflare), ACLs, CDN, bandwidth over-provisioning."},
+  {q:"What is data sovereignty? Why does it matter?",u:"Unit 11",a:"Data sovereignty: digital data is subject to the laws of the country where it is stored. Matters because: EU data must comply with GDPR even if stored abroad, Russia requires local storage of Russian citizens' data, China requires data about Chinese nationals to stay in China. Cloud providers must offer data residency options to comply."},
+  {q:"What is a digital signature? How is it created?",u:"Unit 02",a:"A digital signature mathematically binds a document to the signer's identity. Creation: (1) Hash the document (SHA-256). (2) Encrypt hash with signer's private key → digital signature. Verification: decrypt signature with signer's public key → compare hash with freshly computed hash. If match → authentic and unmodified. Provides non-repudiation."},
+  {q:"What is net neutrality?",u:"Unit 11",a:"Net neutrality is the principle that internet service providers (ISPs) must treat all internet traffic equally — no blocking, throttling, or paid prioritisation based on content, website, platform, or user. Without it, ISPs could slow Netflix unless they pay, or block competitor services. India's TRAI enforces net neutrality regulations."},
+  {q:"What is e-commerce law? Name one key regulation.",u:"Unit 11",a:"E-commerce law regulates online business transactions — contracts, consumer protection, payment security, and data privacy. Key regulation: IT Act 2000 in India grants legal validity to electronic contracts and signatures (Section 10A). Consumer Protection (E-Commerce) Rules 2020 require clear pricing, return policies, and no fake reviews from Indian e-commerce platforms."},
+  {q:"What is cyber forensics? What is its goal?",u:"Unit 12",a:"Cyber (digital) forensics applies scientific investigation methods to collect, preserve, analyse, and present digital evidence from computers, phones, and networks. Goal: uncover evidence of cybercrimes (who did what, when, how) in a legally admissible manner. Maintains chain of custody; uses write blockers and cryptographic hashing to prove evidence integrity."},
+  {q:"What is the NSTISSC (McCumber Cube) security model?",u:"Unit 01",a:"The NSTISSC/McCumber Cube is a 3D security model with three axes: Information States (Storage, Processing, Transmission), Security Goals (Confidentiality, Integrity, Availability), and Countermeasures (Policy, Education/Training, Technology). Creates 27 cells representing all combinations. Used to identify security coverage gaps across all states, goals, and countermeasure types."},
+ ]
+},
+
+cloud:{
+ long:[
+  {q:"Trace the evolution and history of cloud computing. What major milestones made modern cloud possible?",u:"Units 01–02",
+   a:`<span class="utag">Units 01–02</span><p>Cloud computing evolved over decades through a series of technological advances. In the 1960s, J.C.R. Licklider envisioned the 'Intergalactic Computer Network'; John McCarthy proposed computing as a public utility. The 1970s–80s brought time-sharing mainframes and the client-server model.</p><p>The 1990s internet commercialization was transformative — Salesforce launched the first true SaaS in 1999. Amazon launched AWS in 2002, followed by S3 and EC2 in 2006 (birth of IaaS). Google launched Google Apps in 2006. Microsoft Azure launched in 2010. NIST formally defined cloud computing in 2011.</p><p>Key enabling technologies: Virtualisation (efficient resource sharing), Broadband internet (practical remote computing), SOA (modular services), Containerisation (Docker 2013), Kubernetes (2014), Serverless/FaaS (AWS Lambda 2014).</p>`},
+  {q:"Compare IaaS, PaaS, and SaaS. Give examples and use cases for each cloud service model.",u:"Units 02–03",
+   a:`<span class="utag">Units 02–03</span><p><strong>IaaS (Infrastructure as a Service):</strong> Provides virtualised compute, storage, networking. User manages OS upward. Examples: AWS EC2, Azure VMs, Google Compute Engine. Use case: Lift-and-shift migrations, custom server environments.</p><p><strong>PaaS (Platform as a Service):</strong> Provider manages everything up to runtime. User manages only code and data. Examples: Google App Engine, Heroku, Azure App Service. Use case: Developers wanting to focus on code without managing infrastructure.</p><p><strong>SaaS (Software as a Service):</strong> Fully managed application accessed via browser. Examples: Gmail, Salesforce, Microsoft 365, Zoom. Use case: Businesses needing software functionality without IT management.</p><p>Control decreases IaaS→PaaS→SaaS. Ease of use increases IaaS→PaaS→SaaS. All three can be used simultaneously in an enterprise.</p>`},
+  {q:"Discuss the four cloud deployment models. What factors influence the choice?",u:"Unit 03",
+   a:`<span class="utag">Unit 03</span><p><strong>Public Cloud:</strong> Shared infrastructure from third-party provider over internet. Low cost, high scale, no maintenance. Examples: AWS, Azure, GCP. Best for: variable workloads, startups.</p><p><strong>Private Cloud:</strong> Dedicated to one organisation. Full control, better security, regulatory compliance. Higher cost. Best for: banks, healthcare, government.</p><p><strong>Hybrid Cloud:</strong> Mix of public and private, interconnected. Flexibility — keep sensitive data private, burst to public cloud for peak demand. Complex management. Best for: regulated industries needing scalability.</p><p><strong>Community Cloud:</strong> Shared among organisations with common concerns (government agencies). Cost sharing with privacy. Governance challenges.</p><p>Choice factors: security/compliance requirements, budget, scalability needs, existing infrastructure, data sovereignty laws.</p>`},
+  {q:"Explain cloud computing architecture in detail. What is the role of SLAs?",u:"Unit 04",
+   a:`<span class="utag">Unit 04</span><p>Cloud architecture: Frontend (client browsers/apps) ↔ Network (internet) ↔ Backend (servers, storage, VMs). Middleware enables application-to-infrastructure communication.</p><p>Key architectural concepts: SOA — services as independent modules via APIs. Cloud Abstraction — physical complexity hidden behind simple interfaces. Cloud Federation — integrating multiple cloud providers. Cloud Mashup — combining services from multiple sources. Cloud Lifecycle — provision → deploy → monitor → optimise → deprovision.</p><p><strong>SLA (Service Level Agreement):</strong> Contract defining guaranteed service level. Elements: Uptime % (99.9% = 8.76h downtime/year), performance metrics, security commitments, support response times, remedies for violations (service credits). Critical for accountability and customer confidence.</p>`},
+  {q:"Explain virtualisation in cloud computing. Describe implementation levels and hypervisor architecture.",u:"Unit 05",
+   a:`<span class="utag">Unit 05</span><p>Virtualisation creates software-based versions of physical resources, enabling multiple VMs on one server. It is the core technology enabling cloud multi-tenancy.</p><p>Implementation levels: Hardware/Full (VMware ESXi, Hyper-V — complete hardware emulation), OS-level Containers (Docker — share host kernel), Application (JVM), Desktop VDI (Citrix), Network (SDN, VLANs).</p><p>Hypervisor (VMM): Type 1 bare-metal (runs on hardware — ESXi, Xen, Hyper-V — better performance). Type 2 hosted (runs on OS — VirtualBox, VMware Workstation — easier setup). CPU virtualisation: intercept privileged instructions (binary translation or hypercalls). Memory virtualisation: ballooning, page sharing. Virtual clustering: group VMs as single system for HA/load balancing.</p>`},
+  {q:"Explain cloud security: IAM, encryption, VPNs, and cloud firewalls.",u:"Unit 09",
+   a:`<span class="utag">Unit 09</span><p><strong>IAM:</strong> Controls who accesses what. Authentication (MFA, SSO, certificates), Authorization (RBAC, least privilege), Auditing (access logs). AWS IAM, Azure AD.</p><p><strong>Encryption:</strong> At rest: AES-256 (S3 SSE, Azure Storage Encryption). In transit: TLS 1.3. Key Management Services (KMS) manage encryption keys. Customer-managed keys give full control even from provider.</p><p><strong>VPN:</strong> Encrypted tunnel from on-premises to cloud. Site-to-site (permanent, IPsec) for office-to-cloud. Client-to-site for remote users. AWS VPN, Azure VPN Gateway.</p><p><strong>Cloud Firewalls:</strong> Network ACLs (stateless, subnet level), Security Groups (stateful, instance level), WAF (application layer — blocks SQLi, XSS). Software-defined, auto-scaling. Defence-in-depth: each layer compensates for others' weaknesses.</p>`},
+  {q:"Explain cloud native architecture: microservices, containers, Kubernetes, service mesh, serverless.",u:"Unit 11",
+   a:`<span class="utag">Unit 11</span><p><strong>Microservices:</strong> Application as small independent services, each with single responsibility, communicating via APIs. Independent deployment/scaling. Netflix: 500+ microservices.</p><p><strong>Containerisation:</strong> Package app + dependencies in Docker image. Lighter than VMs (shared kernel), starts in seconds. Docker Hub stores images. Solves "works on my machine" problem.</p><p><strong>Kubernetes (K8s):</strong> Orchestrates containers at scale. Auto-scheduling, self-healing, horizontal auto-scaling, rolling updates, service discovery. Managed: EKS, AKS, GKE.</p><p><strong>Service Mesh:</strong> Manages service-to-service communication. mTLS encryption, traffic management, circuit breaking, distributed tracing. Examples: Istio, Linkerd.</p><p><strong>Serverless (FaaS):</strong> AWS Lambda, Azure Functions. Event-triggered, no server management, scales to zero, billed per execution. Best for event-driven workloads.</p>`},
+  {q:"Explain cloud compliance: data sovereignty, privacy laws, auditing, and compliance automation.",u:"Unit 10",
+   a:`<span class="utag">Unit 10</span><p><strong>Cloud Compliance:</strong> Meeting legal/regulatory requirements. Key certifications: ISO 27001, SOC 2, GDPR, HIPAA, PCI DSS.</p><p><strong>Data Sovereignty:</strong> Data subject to laws of country where stored. GDPR: EU data stays in EU. Russia/China have data localisation laws. Providers offer regional data residency guarantees.</p><p><strong>Data Privacy:</strong> GDPR principles: purpose limitation, data minimisation, consent, right to erasure. Privacy by design. DPAs between customers and cloud providers.</p><p><strong>Auditing:</strong> AWS CloudTrail, Azure Activity Log record all API calls. SIEM systems aggregate and alert on suspicious patterns. Third-party audits verify controls.</p><p><strong>Compliance Automation:</strong> AWS Config, Azure Policy continuously check resources against rules. IaC templates include compliance policies. Real-time dashboards show compliance status.</p>`},
+  {q:"Explain strategic cloud adoption and business transformation. How is Cloud ROI calculated?",u:"Unit 12",
+   a:`<span class="utag">Unit 12</span><p>Strategic cloud adoption means deliberately planning cloud use to achieve business goals, not just 'lifting and shifting' workloads.</p><p>Migration strategies (6 Rs): Rehost (lift-and-shift), Replatform (minor optimisations), Refactor/Re-architect (cloud-native redesign), Repurchase (switch to SaaS), Retire (decommission), Retain (keep on-premises).</p><p><strong>Business transformation benefits:</strong> Faster time to market, elastic scaling, global reach, AI/ML service access, reduced operational burden, pay-per-use model.</p><p><strong>Cloud ROI = (Benefits - Costs) / Costs × 100%</strong></p><p>Benefits: hardware capex savings, reduced power/cooling costs, lower IT staff, faster innovation. Costs: migration, monthly service fees, training, data egress charges. AWS TCO Calculator and Azure Pricing Calculator help estimate before migration.</p>`},
+  {q:"Explain cloud development lifecycle. How do AWS, Google App Engine, and IBM Blue Cloud differ?",u:"Units 07–08",
+   a:`<span class="utag">Units 07–08</span><p>Cloud development lifecycle: Plan (requirements, provider choice, cost estimate) → Design (architecture, APIs, scalability) → Develop (cloud SDKs, cloud-native patterns) → Test (load testing, chaos engineering, security testing) → Deploy (CI/CD, blue-green, canary) → Monitor (metrics, cost, auto-scale).</p><p><strong>AWS (Amazon EC2):</strong> IaaS — full control over virtual machines. Developer provisions EC2 instances, configures OS, installs software. Uses S3, RDS, ELB, Lambda. Maximum flexibility but more operational responsibility.</p><p><strong>Google App Engine:</strong> PaaS — developer uploads code, Google manages everything. Auto-scales including to zero. Supports Python, Java, Node.js, Go. Faster development, less control.</p><p><strong>IBM Blue Cloud:</strong> Enterprise-focused platform with Watson AI integration, strong compliance certifications, and hybrid cloud support via IBM Cloud Pak. Targets large enterprises with existing IBM infrastructure.</p>`}
+ ],
+ short:[
+  {q:"What is cloud computing? What are the 5 NIST characteristics?",u:"Unit 01",a:"Cloud computing: on-demand delivery of computing services over the internet. Five NIST characteristics: (1) On-demand self-service, (2) Broad network access, (3) Resource pooling (multi-tenancy), (4) Rapid elasticity (scales up/down instantly), (5) Measured service (metered, pay-per-use)."},
+  {q:"What is IaaS? Give two examples.",u:"Unit 02",a:"IaaS provides virtualised infrastructure (VMs, storage, networking) over the internet. User manages OS and above. Provider manages hardware and hypervisor. Examples: AWS EC2 (virtual servers), Azure Blob Storage (object storage), Google Compute Engine (VMs)."},
+  {q:"What is PaaS? When would you choose it?",u:"Unit 03",a:"PaaS provides a managed development/deployment platform. Provider manages OS, middleware, and runtime. User manages only code and data. Choose PaaS when: you want to focus purely on application development, don't want infrastructure management overhead. Examples: Google App Engine, Heroku, Azure App Service."},
+  {q:"What is SaaS? Give two examples.",u:"Unit 02",a:"SaaS delivers complete managed software applications over the internet. Provider manages everything. Examples: Gmail (email), Salesforce (CRM), Microsoft 365 (productivity), Zoom (video calls), Dropbox (storage). User just logs in — no installation, no server management, subscription pricing."},
+  {q:"What is Public vs Private cloud?",u:"Unit 03",a:"Public cloud: shared infrastructure from third-party provider (AWS, Azure, GCP) — low cost, high scale, no maintenance. Private cloud: dedicated to one organisation — full control, better security, higher cost, harder to scale. Used by banks, hospitals, governments with strict compliance needs."},
+  {q:"What is a hybrid cloud? Give a use case.",u:"Unit 03",a:"Hybrid cloud combines private and public clouds, allowing data and apps to move between them. Use case: A bank keeps customer financial records on private cloud for regulatory compliance while using public cloud AWS for their customer-facing website and peak-season traffic bursting."},
+  {q:"What is an SLA in cloud computing?",u:"Unit 04",a:"SLA (Service Level Agreement) is a contract specifying guaranteed service levels. Key elements: uptime % (99.9% = 8.76 hours downtime/year), performance metrics, security commitments, support response times, remedies (service credits) for violations. Critical for business continuity planning."},
+  {q:"What is virtualisation? What is a hypervisor?",u:"Unit 05",a:"Virtualisation creates software-based (virtual) versions of hardware, enabling multiple VMs on one physical server. A hypervisor (VMM) manages VMs and allocates hardware resources. Type 1: runs on bare metal (VMware ESXi, Hyper-V — production). Type 2: runs on host OS (VirtualBox — development/testing)."},
+  {q:"What is IAM in cloud computing?",u:"Unit 09",a:"IAM (Identity and Access Management) controls who can access cloud resources. Components: Authentication (MFA, SSO — verify identity), Authorization (RBAC, least privilege — define permissions), Auditing (log all access events). AWS IAM lets you create granular policies defining exactly what each user/service can do."},
+  {q:"What is data sovereignty in cloud?",u:"Unit 10",a:"Data sovereignty means data is subject to laws of the country where it's stored. GDPR requires EU citizen data stay within EU. Russia requires local storage of Russian citizens' data. Cloud providers offer data residency options — choosing specific regions (e.g., AWS eu-central-1 Frankfurt) to keep data within jurisdiction."},
+  {q:"What is containerisation? How does Docker work?",u:"Unit 11",a:"Containerisation packages an app and all its dependencies into a portable container image that runs consistently anywhere. Docker: write Dockerfile → build image → push to registry (Docker Hub) → run as container. Containers share host OS kernel (no guest OS), start in seconds, use less memory than VMs."},
+  {q:"What is Kubernetes (K8s)?",u:"Unit 11",a:"Kubernetes is an open-source container orchestration platform automating deployment, scaling, and management of containers. Features: auto-scheduling, self-healing (restarts failed containers), horizontal scaling, rolling updates (zero downtime), service discovery. Managed options: AWS EKS, Azure AKS, Google GKE."},
+  {q:"What is serverless computing?",u:"Unit 11",a:"Serverless (FaaS) runs code in response to events without managing servers. AWS Lambda, Azure Functions, Google Cloud Functions. Billed per execution (pay only when code runs). Auto-scales from zero to thousands. Limitations: max execution time (~15 min), cold start latency. Best for: APIs, event processing, scheduled tasks."},
+  {q:"What is cloud compliance? Name 3 standards.",u:"Unit 10",a:"Cloud compliance ensures cloud services meet legal and regulatory requirements. Standards: ISO 27001 (information security management), SOC 2 Type II (security, availability, confidentiality), GDPR (EU data protection), HIPAA (US healthcare data), PCI DSS (payment card data). Cloud providers maintain certifications and share audit reports."},
+  {q:"What is a microservices architecture?",u:"Unit 11",a:"Microservices breaks an application into small, independent services each handling one business function, communicating via APIs. Benefits: independent deployment, independent scaling, fault isolation, technology flexibility. Challenges: distributed system complexity, inter-service communication, data consistency. Netflix, Amazon, Uber use microservices."},
+  {q:"What is cloud federation?",u:"Unit 04",a:"Cloud federation integrates services from multiple cloud providers, enabling cross-provider resource sharing. Benefits: avoids vendor lock-in, enables best-of-breed service selection (AWS for ML, GCP for analytics), improves disaster recovery (fail over to different provider). Standards like OpenStack and tools like Terraform support federation."},
+  {q:"What is a service mesh?",u:"Unit 11",a:"A service mesh manages service-to-service communication in microservices. Implements sidecar proxies alongside each service. Provides: mTLS encryption, load balancing, circuit breaking, distributed tracing, traffic management. Examples: Istio, Linkerd. Removes communication cross-cutting concerns from application code."},
+  {q:"What is cloud ROI?",u:"Unit 12",a:"Cloud ROI = (Benefits - Costs) / Costs × 100%. Benefits: hardware savings, reduced power/cooling/staff, faster deployment, scalability. Costs: migration, monthly service fees, training, egress charges. AWS TCO Calculator, Azure Pricing Calculator estimate savings before migration."},
+  {q:"What is Cloud Mashup?",u:"Unit 04",a:"Cloud mashup combines data or services from multiple cloud sources to create a new application. Example: combining Google Maps API + weather API + a custom database to create a location-aware weather app. Enabled by RESTful APIs that make cloud services composable. Core to modern app development."},
+  {q:"What is VM live migration?",u:"Unit 06",a:"Live migration moves a running VM from one physical host to another with near-zero downtime. Process: copy memory pages to destination while VM runs → brief pause → copy remaining pages → VM resumes on new host. Used for zero-downtime maintenance, load balancing, disaster recovery. VMware vMotion is the industry standard."},
+ ]
+},
+
+dnlab:{
+ long:[
+  {q:"Write a C# program demonstrating OOP concepts: class, constructor, inheritance, method overriding, and interface.",u:".Net Lab",
+   a:`<span class="utag">.Net Lab — Exercise</span><div class="code">// Interface
+interface IAnimal {
+    void MakeSound();
+}
+
+// Base class
+class Animal : IAnimal {
+    public string Name { get; set; }
+    public Animal(string name) { Name = name; }
+
+    public virtual void MakeSound() {
+        Console.WriteLine($"{Name} makes a sound.");
+    }
+    public virtual void Display() {
+        Console.WriteLine($"Animal: {Name}");
+    }
+}
+
+// Derived class — inherits Animal, overrides methods
+class Dog : Animal {
+    public string Breed { get; set; }
+
+    public Dog(string name, string breed) : base(name) {
+        Breed = breed;
+    }
+
+    public override void MakeSound() {  // Method Overriding
+        Console.WriteLine($"{Name} says: Woof!");
+    }
+
+    public override void Display() {
+        base.Display();  // calling parent method
+        Console.WriteLine($"Breed: {Breed}");
+    }
+}
+
+class Program {
+    static void Main() {
+        Animal a = new Animal("Generic Animal");
+        a.MakeSound();   // Animal makes a sound.
+
+        Dog d = new Dog("Buddy", "Labrador");
+        d.MakeSound();   // Buddy says: Woof!
+        d.Display();     // Animal: Buddy, Breed: Labrador
+
+        // Polymorphism
+        IAnimal animal = new Dog("Rex", "German Shepherd");
+        animal.MakeSound();  // Rex says: Woof!
+
+        // Array of base class type
+        Animal[] animals = { new Animal("Cat"), new Dog("Max","Poodle") };
+        foreach(var ani in animals) ani.MakeSound();
+    }
+}</div>`},
+  {q:"Write a C# program using ADO.NET to connect to SQL Server and perform CRUD operations.",u:".Net Lab",
+   a:`<span class="utag">.Net Lab — Exercise</span><div class="code">using System.Data.SqlClient;
+
+class AdoNetCRUD {
+    static string cs = "Server=localhost;Database=TestDB;Integrated Security=True;";
+
+    // CREATE
+    static void Insert(string name, int age) {
+        using (var conn = new SqlConnection(cs)) {
+            conn.Open();
+            var cmd = new SqlCommand(
+                "INSERT INTO Students(Name,Age) VALUES(@n,@a)", conn);
+            cmd.Parameters.AddWithValue("@n", name);
+            cmd.Parameters.AddWithValue("@a", age);
+            int rows = cmd.ExecuteNonQuery();
+            Console.WriteLine($"{rows} row(s) inserted.");
+        }
+    }
+
+    // READ
+    static void ReadAll() {
+        using (var conn = new SqlConnection(cs)) {
+            conn.Open();
+            var cmd = new SqlCommand("SELECT * FROM Students", conn);
+            var reader = cmd.ExecuteReader();
+            while (reader.Read())
+                Console.WriteLine($"{reader["Id"]}: {reader["Name"]}, Age {reader["Age"]}");
+        }
+    }
+
+    // UPDATE
+    static void Update(int id, string newName) {
+        using (var conn = new SqlConnection(cs)) {
+            conn.Open();
+            var cmd = new SqlCommand(
+                "UPDATE Students SET Name=@n WHERE Id=@id", conn);
+            cmd.Parameters.AddWithValue("@n", newName);
+            cmd.Parameters.AddWithValue("@id", id);
+            cmd.ExecuteNonQuery();
+        }
+    }
+
+    // DELETE
+    static void Delete(int id) {
+        using (var conn = new SqlConnection(cs)) {
+            conn.Open();
+            var cmd = new SqlCommand("DELETE FROM Students WHERE Id=@id", conn);
+            cmd.Parameters.AddWithValue("@id", id);
+            cmd.ExecuteNonQuery();
+        }
+    }
+
+    static void Main() {
+        Insert("Alice", 21);
+        Insert("Bob", 22);
+        ReadAll();
+        Update(1, "Alice Smith");
+        Delete(2);
+        ReadAll();
+    }
+}</div>`},
+  {q:"Write a C# program demonstrating exception handling: try-catch-finally, user-defined exception, and exception filter.",u:".Net Lab",
+   a:`<span class="utag">.Net Lab — Exercise</span><div class="code">// User-Defined Exception
+class InvalidAgeException : Exception {
+    public int Age { get; }
+    public InvalidAgeException(int age)
+        : base($"Invalid age: {age}. Age must be 0-150.") {
+        Age = age;
+    }
+}
+
+class ExceptionDemo {
+    static void ValidateAge(int age) {
+        if (age < 0 || age > 150)
+            throw new InvalidAgeException(age);
+        Console.WriteLine($"Valid age: {age}");
+    }
+
+    static void DivideNumbers(int a, int b) {
+        if (b == 0) throw new DivideByZeroException("Cannot divide by zero!");
+        Console.WriteLine($"{a} / {b} = {a / b}");
+    }
+
+    static void Main() {
+        // Basic try-catch-finally
+        try {
+            DivideNumbers(10, 2);   // OK
+            DivideNumbers(10, 0);   // throws
+        }
+        catch (DivideByZeroException ex) {
+            Console.WriteLine($"Math Error: {ex.Message}");
+        }
+        finally {
+            Console.WriteLine("finally block always runs.");
+        }
+
+        // User-defined exception
+        try {
+            ValidateAge(25);   // OK
+            ValidateAge(-5);   // throws InvalidAgeException
+        }
+        catch (InvalidAgeException ex) {
+            Console.WriteLine($"Age Error: {ex.Message}, Got: {ex.Age}");
+        }
+
+        // Exception filter (C# 6.0+)
+        try {
+            throw new Exception("Connection timeout occurred");
+        }
+        catch (Exception ex) when (ex.Message.Contains("timeout")) {
+            Console.WriteLine($"Timeout caught: {ex.Message}");
+        }
+        catch (Exception ex) {
+            Console.WriteLine($"Other error: {ex.Message}");
+        }
+    }
+}</div>`},
+  {q:"Write a C# program demonstrating multithreading: Thread class, lock synchronization, and async/await.",u:".Net Lab",
+   a:`<span class="utag">.Net Lab — Exercise</span><div class="code">using System;
+using System.Threading;
+using System.Threading.Tasks;
+
+class ThreadDemo {
+    static int counter = 0;
+    static readonly object lockObj = new object();
+
+    // Thread method
+    static void CountUp(string threadName) {
+        for (int i = 0; i < 5; i++) {
+            lock (lockObj) {  // Thread synchronization
+                counter++;
+                Console.WriteLine($"{threadName}: counter = {counter}");
+            }
+            Thread.Sleep(100);
+        }
+    }
+
+    // Async method
+    static async Task&lt;string&gt; FetchDataAsync(string url) {
+        Console.WriteLine($"Fetching {url}...");
+        await Task.Delay(1000);  // Simulates async I/O
+        return $"Data from {url}";
+    }
+
+    static async Task Main() {
+        // Thread class usage
+        Thread t1 = new Thread(() => CountUp("Thread-1"));
+        Thread t2 = new Thread(() => CountUp("Thread-2"));
+        t1.Start();
+        t2.Start();
+        t1.Join();
+        t2.Join();
+        Console.WriteLine($"Final counter: {counter}");
+
+        // Task Parallel Library
+        await Task.Run(() => Console.WriteLine("TPL Task running"));
+
+        // Async/Await
+        string result = await FetchDataAsync("https://api.example.com");
+        Console.WriteLine(result);
+
+        // Multiple concurrent tasks
+        var tasks = new[] {
+            FetchDataAsync("site1.com"),
+            FetchDataAsync("site2.com"),
+            FetchDataAsync("site3.com")
+        };
+        string[] results = await Task.WhenAll(tasks);
+        foreach (var r in results) Console.WriteLine(r);
+    }
+}</div>`},
+  {q:"Write a C# program to demonstrate file operations and sending email via SMTP.",u:".Net Lab",
+   a:`<span class="utag">.Net Lab — Exercise</span><div class="code">using System.IO;
+using System.Net;
+using System.Net.Mail;
+
+class FileAndEmail {
+    // File Operations
+    static void FileOps() {
+        string path = "students.txt";
+
+        // Write to file
+        File.WriteAllText(path, "Alice,21\nBob,22\nCharlie,20");
+        Console.WriteLine("File written.");
+
+        // Read all text
+        string content = File.ReadAllText(path);
+        Console.WriteLine("Content:\n" + content);
+
+        // Read line by line
+        string[] lines = File.ReadAllLines(path);
+        foreach (string line in lines) {
+            string[] parts = line.Split(',');
+            Console.WriteLine($"Name: {parts[0]}, Age: {parts[1]}");
+        }
+
+        // Append to file
+        File.AppendAllText(path, "\nDiana,23");
+
+        // Check existence and delete
+        if (File.Exists(path)) {
+            Console.WriteLine($"File size: {new FileInfo(path).Length} bytes");
+            // File.Delete(path);  // uncomment to delete
+        }
+
+        // StreamReader/Writer
+        using (var writer = new StreamWriter("log.txt", append: true)) {
+            writer.WriteLine($"[{DateTime.Now}] App started");
+        }
+        using (var reader = new StreamReader("log.txt")) {
+            Console.WriteLine(reader.ReadToEnd());
+        }
+    }
+
+    // Send Email
+    static void SendEmail() {
+        using (var client = new SmtpClient("smtp.gmail.com", 587)) {
+            client.Credentials = new NetworkCredential(
+                "sender@gmail.com", "app_password");
+            client.EnableSsl = true;
+
+            var msg = new MailMessage(
+                "sender@gmail.com",
+                "recipient@example.com",
+                "Subject: Test Email",
+                "Hello from C# application!"
+            );
+            // msg.Attachments.Add(new Attachment("students.txt"));
+            client.Send(msg);
+            Console.WriteLine("Email sent!");
+        }
+    }
+
+    static void Main() {
+        FileOps();
+        // SendEmail();  // uncomment with valid credentials
+    }
+}</div>`},
+ ],
+ short:[
+  {q:"Write a C# program to read and write a text file.",u:".Net Lab",a:`<div class="code">// Write
+File.WriteAllText("data.txt", "Hello, World!");
+
+// Read all
+string content = File.ReadAllText("data.txt");
+Console.WriteLine(content);
+
+// Read lines
+foreach(string line in File.ReadAllLines("data.txt"))
+    Console.WriteLine(line);
+
+// Append
+File.AppendAllText("data.txt", "\nNew line added");</div>`},
+  {q:"Write a C# lambda expression to filter a list of numbers greater than 10.",u:".Net Lab",a:`<div class="code">var numbers = new List&lt;int&gt; { 3, 12, 5, 18, 7, 25, 9 };
+
+// Lambda with LINQ
+var filtered = numbers.Where(n => n > 10).ToList();
+// filtered = [12, 18, 25]
+
+// Lambda with multiple conditions
+var result = numbers.Where(n => n > 5 && n % 2 == 0).ToList();
+// result = [12, 18]
+
+Console.WriteLine(string.Join(", ", filtered));</div>`},
+  {q:"What is the difference between List&lt;T&gt; and ArrayList in C#?",u:".Net Lab",a:"List<T> is generic (type-safe, no boxing/unboxing, faster) — List<int> only stores ints. ArrayList is non-generic (stores objects, requires casting, boxing overhead, slower). Use List<T> always in modern C# — ArrayList is legacy from .NET 1.x. Example: List<string> names = new List<string>();"},
+  {q:"Write a LINQ query to find all even numbers in an array.",u:".Net Lab",a:`<div class="code">int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+// Method syntax
+var evens = arr.Where(n => n % 2 == 0).ToList();
+
+// Query syntax
+var evens2 = (from n in arr where n % 2 == 0 select n).ToList();
+
+// With transformation
+var squaredEvens = arr.Where(n => n%2==0).Select(n => n*n);
+// [4, 16, 36, 64, 100]</div>`},
+  {q:"Write a simple async method in C# using async/await.",u:".Net Lab",a:`<div class="code">static async Task&lt;string&gt; GetDataAsync() {
+    await Task.Delay(2000);  // Simulates async I/O
+    return "Data fetched!";
+}
+
+static async Task Main() {
+    Console.WriteLine("Starting...");
+    string result = await GetDataAsync();  // non-blocking
+    Console.WriteLine(result);
+
+    // Run multiple tasks concurrently
+    var t1 = GetDataAsync();
+    var t2 = GetDataAsync();
+    string[] results = await Task.WhenAll(t1, t2);
+}</div>`},
+  {q:"What is the difference between throw and throw ex in C#?",u:".Net Lab",a:`<div class="code">try { SomeMethod(); }
+catch (Exception ex) {
+    // WRONG: throw ex; resets stack trace — hides where error originated
+
+    // CORRECT: throw; preserves original stack trace
+    throw;
+
+    // CORRECT: wrap as inner exception
+    throw new ApplicationException("Context info", ex);
+}</div>`},
+  {q:"Write a C# program to demonstrate string manipulation.",u:".Net Lab",a:`<div class="code">string s = "Hello, World!";
+Console.WriteLine(s.ToUpper());      // HELLO, WORLD!
+Console.WriteLine(s.ToLower());      // hello, world!
+Console.WriteLine(s.Length);         // 13
+Console.WriteLine(s.Substring(7,5)); // World
+Console.WriteLine(s.Replace("World","C#")); // Hello, C#!
+Console.WriteLine(s.Contains("World")); // True
+Console.WriteLine(s.Split(',')[0]);  // Hello
+Console.WriteLine(s.Trim());         // trims whitespace
+string[] parts = "a,b,c".Split(',');
+string joined = string.Join("-", parts); // a-b-c</div>`},
+  {q:"How do you prevent SQL injection in C# ADO.NET?",u:".Net Lab",a:`<div class="code">// WRONG — vulnerable to SQL injection:
+// cmd.CommandText = "SELECT * FROM Users WHERE Name='" + name + "'";
+
+// CORRECT — parameterized queries:
+var cmd = new SqlCommand(
+    "SELECT * FROM Users WHERE Name=@name AND Password=@pwd", conn);
+cmd.Parameters.AddWithValue("@name", userName);
+cmd.Parameters.AddWithValue("@pwd", password);
+// Parameterized queries treat input as data, not code
+// Attacker input "'; DROP TABLE Users--" becomes literal string</div>`},
+  {q:"Write a C# program using Entity Framework Code First.",u:".Net Lab",a:`<div class="code">// 1. Model class
+public class Student {
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public int Age { get; set; }
+}
+
+// 2. DbContext
+public class AppDbContext : DbContext {
+    public DbSet&lt;Student&gt; Students { get; set; }
+    protected override void OnConfiguring(DbContextOptionsBuilder o) =>
+        o.UseSqlServer("Server=.;Database=MyDB;Trusted_Connection=True;");
+}
+
+// 3. Usage
+using (var ctx = new AppDbContext()) {
+    ctx.Students.Add(new Student { Name="Alice", Age=21 });
+    ctx.SaveChanges();
+    var all = ctx.Students.Where(s => s.Age > 20).ToList();
+}</div>`},
+  {q:"What is the using statement and why is it important?",u:".Net Lab",a:`<div class="code">// using ensures Dispose() is called even if exception occurs
+using (var conn = new SqlConnection(connStr)) {
+    conn.Open();
+    // use connection
+}  // conn.Dispose() automatically called here
+
+// Equivalent to:
+var conn = new SqlConnection(connStr);
+try { conn.Open(); }
+finally { conn.Dispose(); }
+
+// C# 8.0+ simplified using:
+using var conn2 = new SqlConnection(connStr);
+conn2.Open();
+// disposed at end of scope</div>`},
+ ]
+},
+
+cnlab:{
+ long:[
+  {q:"Write a Python program implementing a TCP client-server chat application.",u:"CN Lab — Set II",
+   a:`<span class="utag">CN Lab — Set II</span><p>TCP provides reliable, ordered, connection-oriented communication.</p><p><strong>Server (server.py):</strong></p><div class="code">import socket
+import threading
+
+def handle_client(conn, addr):
+    print(f"Connected: {addr}")
+    while True:
+        data = conn.recv(1024)
+        if not data or data.decode() == 'quit':
+            print(f"Client {addr} disconnected.")
+            break
+        print(f"[{addr}] {data.decode()}")
+        reply = input("Server reply: ")
+        conn.send(reply.encode())
+    conn.close()
+
+server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+server.bind(('localhost', 9999))
+server.listen(5)
+print("Server listening on port 9999...")
+
+while True:
+    conn, addr = server.accept()
+    thread = threading.Thread(target=handle_client, args=(conn, addr))
+    thread.start()</div><p><strong>Client (client.py):</strong></p><div class="code">import socket
+
+client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+client.connect(('localhost', 9999))
+print("Connected to server. Type 'quit' to exit.")
+
+while True:
+    msg = input("You: ")
+    client.send(msg.encode())
+    if msg == 'quit':
+        break
+    reply = client.recv(1024)
+    print(f"Server: {reply.decode()}")
+
+client.close()</div>`},
+  {q:"Write a Python program implementing UDP client-server communication.",u:"CN Lab — Set III",
+   a:`<span class="utag">CN Lab — Set III</span><p>UDP is connectionless — no handshake, faster but unreliable. Uses sendto()/recvfrom().</p><p><strong>Server (udp_server.py):</strong></p><div class="code">import socket
+
+server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+server.bind(('localhost', 9998))
+print("UDP Server listening on port 9998...")
+
+while True:
+    data, addr = server.recvfrom(1024)
+    print(f"Received from {addr}: {data.decode()}")
+
+    response = f"Echo: {data.decode().upper()}"
+    server.sendto(response.encode(), addr)
+
+    if data.decode() == 'quit':
+        print("Server shutting down.")
+        break
+
+server.close()</div><p><strong>Client (udp_client.py):</strong></p><div class="code">import socket
+
+client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+server_addr = ('localhost', 9998)
+client.settimeout(5)  # 5 second timeout
+
+print("UDP Client ready. Type 'quit' to exit.")
+while True:
+    msg = input("Message: ")
+    client.sendto(msg.encode(), server_addr)
+
+    try:
+        data, _ = client.recvfrom(1024)
+        print(f"Server: {data.decode()}")
+    except socket.timeout:
+        print("No response (timeout).")
+
+    if msg == 'quit':
+        break
+
+client.close()</div>`},
+  {q:"Write a Python socket program to create a directory and text file on the server from the client.",u:"CN Lab — Set I",
+   a:`<span class="utag">CN Lab — Set I</span><p>This program sends a command from client to server; server creates a directory and file, then moves the file to another location.</p><p><strong>Server (file_server.py):</strong></p><div class="code">import socket, os, shutil
+
+def handle_command(cmd):
+    parts = cmd.split('|')
+    action = parts[0]
+
+    if action == 'MKDIR':
+        dir_name = parts[1]
+        os.makedirs(dir_name, exist_ok=True)
+        return f"Directory '{dir_name}' created."
+
+    elif action == 'CREATEFILE':
+        dir_name, file_name, content = parts[1], parts[2], parts[3]
+        file_path = os.path.join(dir_name, file_name)
+        with open(file_path, 'w') as f:
+            f.write(content)
+        return f"File '{file_path}' created."
+
+    elif action == 'MOVEFILE':
+        src, dst_dir = parts[1], parts[2]
+        os.makedirs(dst_dir, exist_ok=True)
+        dst = os.path.join(dst_dir, os.path.basename(src))
+        shutil.move(src, dst)
+        return f"File moved to '{dst}'."
+
+    return "Unknown command."
+
+server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+server.bind(('localhost', 8888))
+server.listen(1)
+print("File server on port 8888...")
+
+conn, addr = server.accept()
+print(f"Client connected: {addr}")
+
+while True:
+    data = conn.recv(4096)
+    if not data: break
+    result = handle_command(data.decode())
+    conn.send(result.encode())
+    print(f"Executed: {result}")
+
+conn.close()
+server.close()</div><p><strong>Client (file_client.py):</strong></p><div class="code">import socket
+
+client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+client.connect(('localhost', 8888))
+
+def send_cmd(cmd):
+    client.send(cmd.encode())
+    return client.recv(4096).decode()
+
+# Create directory
+print(send_cmd('MKDIR|myproject'))
+
+# Create file inside directory
+print(send_cmd('CREATEFILE|myproject|notes.txt|Hello from client!'))
+
+# Move file to another directory
+print(send_cmd('MOVEFILE|myproject/notes.txt|archive'))
+
+client.close()</div>`},
+  {q:"Write a Python multi-client TCP server using threading.",u:"CN Lab",
+   a:`<span class="utag">CN Lab</span><p>Multi-client server handles each client in a separate thread, allowing simultaneous connections.</p><div class="code">import socket
+import threading
+
+clients = []
+clients_lock = threading.Lock()
+
+def broadcast(message, sender_conn):
+    """Send message to all connected clients except sender."""
+    with clients_lock:
+        for client in clients[:]:  # copy list to avoid modification during iteration
+            if client != sender_conn:
+                try:
+                    client.send(message.encode())
+                except:
+                    clients.remove(client)
+
+def handle_client(conn, addr):
+    print(f"[+] New connection: {addr}")
+    with clients_lock:
+        clients.append(conn)
+
+    try:
+        while True:
+            data = conn.recv(1024)
+            if not data:
+                break
+            msg = f"[{addr[0]}:{addr[1]}] {data.decode()}"
+            print(msg)
+            broadcast(msg, conn)
+    except ConnectionResetError:
+        pass
+    finally:
+        with clients_lock:
+            if conn in clients:
+                clients.remove(conn)
+        conn.close()
+        print(f"[-] Disconnected: {addr}")
+
+# Setup server
+server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+server.bind(('', 7777))
+server.listen(10)
+print("Multi-client server on port 7777. Waiting...")
+
+try:
+    while True:
+        conn, addr = server.accept()
+        t = threading.Thread(target=handle_client, args=(conn, addr), daemon=True)
+        t.start()
+        print(f"Active connections: {threading.active_count()-1}")
+except KeyboardInterrupt:
+    print("Server shutting down.")
+finally:
+    server.close()</div>`},
+  {q:"Explain Python socket programming. What are all the key socket methods and their purposes?",u:"CN Lab",
+   a:`<span class="utag">CN Lab</span><p>Python's socket module provides a low-level interface to BSD socket API for network communication.</p><p><strong>Creating a socket:</strong></p><div class="code">import socket
+
+# socket(family, type)
+# AF_INET = IPv4, AF_INET6 = IPv6, AF_UNIX = local
+# SOCK_STREAM = TCP, SOCK_DGRAM = UDP
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)</div><p><strong>Key server methods:</strong></p><div class="code">s.bind((host, port))   # bind to address and port
+s.listen(backlog)       # start listening, backlog = max queued connections
+conn, addr = s.accept() # block until client connects, returns (socket, address)</div><p><strong>Key client methods:</strong></p><div class="code">s.connect((host, port)) # connect to server</div><p><strong>Data transfer methods:</strong></p><div class="code">s.send(data)           # TCP: send bytes (may not send all)
+s.sendall(data)        # TCP: guaranteed to send all bytes
+s.recv(bufsize)        # receive up to bufsize bytes; returns b'' on close
+s.sendto(data, addr)   # UDP: send to specific address
+data, addr = s.recvfrom(bufsize) # UDP: receive with sender address</div><p><strong>Configuration:</strong></p><div class="code">s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1) # reuse port
+s.settimeout(seconds)  # set timeout (raises socket.timeout if exceeded)
+s.setblocking(False)   # non-blocking mode</div><p><strong>Cleanup:</strong></p><div class="code">s.shutdown(socket.SHUT_RDWR) # graceful shutdown
+s.close()              # close socket</div><p><strong>Utility functions:</strong></p><div class="code">socket.gethostname()   # get local machine name
+socket.gethostbyname('google.com') # DNS lookup → IP
+socket.getfqdn()       # fully qualified domain name</div>`},
+ ],
+ short:[
+  {q:"What is a socket? What are the two main socket types in Python?",u:"CN Lab",a:`A socket is an endpoint for network communication identified by IP + port. Two types: socket.SOCK_STREAM (TCP — reliable, ordered, connection-oriented) and socket.SOCK_DGRAM (UDP — unreliable, connectionless, fast). Created with: s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)`},
+  {q:"What is the difference between bind() and connect()?",u:"CN Lab",a:`bind((host,port)) is called by the SERVER to associate the socket with a local address/port. connect((host,port)) is called by the CLIENT to connect to the server's address/port. Both take a tuple. Servers bind() then listen(). Clients just connect().`},
+  {q:"Write the basic TCP server setup in Python (5 lines).",u:"CN Lab",a:`<div class="code">import socket
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+s.bind(('', 9999))
+s.listen(5)
+conn, addr = s.accept()  # blocks until client connects
+print(f"Connected: {addr}")</div>`},
+  {q:"What is SOCK_STREAM vs SOCK_DGRAM?",u:"CN Lab",a:"SOCK_STREAM = TCP socket: connection-oriented, reliable delivery, ordered, error-checked. Use for: chat, file transfer, HTTP. SOCK_DGRAM = UDP socket: connectionless, unreliable (packets may be lost/reordered), fast, low overhead. Use for: video streaming, DNS, online gaming, VoIP."},
+  {q:"How does UDP socket programming differ from TCP in Python?",u:"CN Lab",a:`<div class="code"># UDP Server
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+s.bind(('', 9999))
+data, addr = s.recvfrom(1024)  # no accept() needed
+s.sendto(b"reply", addr)
+
+# UDP Client
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+s.sendto(b"hello", ('localhost', 9999))  # no connect()
+data, addr = s.recvfrom(1024)</div>`},
+  {q:"What does socket.accept() return?",u:"CN Lab",a:"accept() blocks until a client connects. Returns a tuple: (conn, addr) where conn is a NEW socket object for communication with that specific client, and addr is a tuple (ip_string, port_number) of the client. The original server socket continues listening; conn is used to send/recv with this client."},
+  {q:"Write a Python line to send and receive data over a TCP socket.",u:"CN Lab",a:`<div class="code"># Send (always encode strings to bytes)
+conn.send("Hello World".encode())    # or .encode('utf-8')
+conn.sendall(b"guaranteed delivery") # sendall retries until all data sent
+
+# Receive
+data = conn.recv(1024)               # bufsize in bytes
+message = data.decode('utf-8')       # decode bytes back to string
+
+# Check for connection close
+if not data:
+    print("Client disconnected")
+    break</div>`},
+  {q:"What is socket.settimeout()? Why is it useful?",u:"CN Lab",a:`<div class="code">s.settimeout(5.0)  # 5 second timeout
+
+try:
+    data = s.recv(1024)
+except socket.timeout:
+    print("No data received within 5 seconds")
+    # handle timeout gracefully</div><p>Without timeout, recv() blocks forever. Setting a timeout prevents the program from hanging indefinitely when the other side doesn't respond — critical for UDP clients (no ACK to detect lost packets).</p>`},
+  {q:"What is socket.setsockopt(SO_REUSEADDR)? Why is it needed?",u:"CN Lab",a:`<div class="code">s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)</div><p>When a server crashes/restarts, the OS keeps the port in TIME_WAIT state for ~60 seconds (TCP). Without SO_REUSEADDR, the server can't rebind to the same port and crashes with "Address already in use". Setting it allows immediate port reuse — essential during development.</p>`},
+  {q:"How do you handle multiple clients in Python server socket?",u:"CN Lab",a:`<div class="code">import threading
+
+def handle_client(conn, addr):
+    while True:
+        data = conn.recv(1024)
+        if not data: break
+        conn.send(data)  # echo back
+    conn.close()
+
+server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+server.bind(('', 9999))
+server.listen(10)
+while True:
+    conn, addr = server.accept()
+    t = threading.Thread(target=handle_client, args=(conn,addr))
+    t.start()  # each client gets its own thread</div>`},
+ ]
+},
+};
+
+// ── Build UI ──────────────────────────────────────────────
+function toggle(btn){
+  const item=btn.closest('.qi'),ans=item.querySelector('.qa'),open=item.classList.contains('open');
+  item.classList.toggle('open',!open);
+  ans.style.maxHeight=!open?ans.scrollHeight+'px':'0';
+}
+
+function switchType(tab,btn,pid){
+  btn.closest('.type-tabs').querySelectorAll('.type-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll(`#${pid} .type-panel`).forEach(p=>p.classList.remove('active'));
+  document.getElementById(`${pid}-${tab}`).classList.add('active');
+}
+
+function switchSubj(sid,btn){
+  document.querySelectorAll('.subj-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.subj-panel').forEach(p=>p.classList.remove('active'));
+  document.getElementById('sp-'+sid).classList.add('active');
+}
+
+function buildQList(qs,prefix){
+  return qs.map((q,i)=>`
+  <div class="qi">
+    <button class="qq" onclick="toggle(this)">
+      <span class="qn">${prefix}${i+1}</span>
+      <span class="qt">${q.q}</span>
+      <span class="qtg">+</span>
+    </button>
+    <div class="qa"><div class="qai">${typeof q.a==='string'&&!q.a.includes('<')
+      ?`<span class="utag">${q.u||''}</span><p>${q.a}</p>`
+      :q.a}</div></div>
+  </div>`).join('');
+}
+
+function buildSubject(sid,data){
+  const pid='sp-'+sid;
+  const longCount=data.long?data.long.length:0;
+  const shortCount=data.short?data.short.length:0;
+  return `<div class="subj-panel" id="${pid}">
+    <div class="type-tabs">
+      <button class="type-btn active" onclick="switchType('long',this,'${pid}')">Long Answer (${longCount})</button>
+      <button class="type-btn" onclick="switchType('short',this,'${pid}')">Short Answer (${shortCount})</button>
+    </div>
+    <div class="type-panel active" id="${pid}-long">
+      <p class="intro">Detailed answers for 8–10 mark questions.</p>
+      <div>${data.long?buildQList(data.long,'L'):'<p style="color:var(--mu);font-family:system-ui,sans-serif;padding:20px">Content loading…</p>'}</div>
+    </div>
+    <div class="type-panel" id="${pid}-short">
+      <p class="intro">Concise answers for 2–4 mark questions.</p>
+      <div>${data.short?buildQList(data.short,'S'):'<p style="color:var(--mu);font-family:system-ui,sans-serif;padding:20px">Content loading…</p>'}</div>
+    </div>
+  </div>`;
+}
+
+// Build subject tabs
+const tabsEl=document.getElementById('sbjTabs');
+SUBJECTS.forEach((s,i)=>{
+  const btn=document.createElement('button');
+  btn.className='subj-btn'+(i===0?' active':'');
+  btn.textContent=s.label;
+  btn.onclick=()=>switchSubj(s.id,btn);
+  tabsEl.appendChild(btn);
+});
+
+// Build panels for available subjects
+const panelsEl=document.getElementById('panels');
+SUBJECTS.forEach(s=>{
+  const d=DATA[s.id]||{long:[],short:[]};
+  panelsEl.innerHTML+=buildSubject(s.id,d);
+});
+document.getElementById('sp-'+SUBJECTS[0].id).classList.add('active');
+</script>
