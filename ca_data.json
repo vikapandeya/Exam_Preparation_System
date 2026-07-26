@@ -1,16 +1,16 @@
 {
-  "updated": "2026-07-25",
-  "updated_time": "05:28 UTC",
-  "count": 11,
+  "updated": "2026-07-26",
+  "updated_time": "05:45 UTC",
+  "count": 16,
   "articles": [
     {
       "cat": "eco",
       "badge": "Economy",
       "tc": "tge",
-      "date": "Jul 25, 2026",
-      "title": "The unfinished business of the India-U.K. trade deal | Explained",
-      "sum": "While the India-U.K. CETA eases trade barriers, important questions on investment protection, patent rules and carbon border taxes have been left for future negotiations",
-      "link": "https://www.thehindu.com/business/Economy/the-unfinished-business-of-the-india-uk-trade-deal-explained/article71256650.ece",
+      "date": "Jul 26, 2026",
+      "title": "Students are more important than any post, says Amit Shah after Dharmendra Pradhan's exit",
+      "sum": "The decisions taken by Prime Minister Narendra Modi to ensure strict punishment for those guilty of paper leaks are commendable, Amit Shah said",
+      "link": "https://www.thehindu.com/news/national/students-are-more-important-than-any-post-says-amit-shah-after-dharmendra-pradhans-exit/article71268596.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1000
@@ -19,49 +19,121 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Jul 25, 2026",
-      "title": "Amid protests, NTA aims overhaul, goes on recruitment drive",
-      "sum": "NTA has advertised for vacancies in top-tier senior leadership roles and opened recruitment for young professionals via the UPSC Pratibha Setu portal",
-      "link": "https://www.thehindu.com/news/national/amid-protests-nta-aims-overhaul-goes-on-recruitment-drive/article71263636.ece",
+      "date": "Jul 26, 2026",
+      "title": "Will talk to her, but don’t troll her father: Assam CM on Minister’s daughter joining NEET protest",
+      "sum": "Himanta Biswa Sarma said, “I don't think we should attack or troll Keshab Mahanta for the protest by his daughter. She may not follow her father's political ideology.”",
+      "link": "https://www.thehindu.com/news/national/assam/will-talk-to-her-but-dont-troll-her-father-assam-cm-on-ministers-daughter-joining-neet-protest/article71268633.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1001
     },
     {
-      "cat": "def",
-      "badge": "Defence",
-      "tc": "tgd",
-      "date": "Jul 25, 2026",
-      "title": "Ban use of pellet guns, electric shock batons by all police forces: disability rights outfits",
-      "sum": "The Progressive Medicos and Scientific Forum (PMSF) and groups under the National Platform for the Rights of the Disabled (NPRD) umbrella have also sought an independent judicial inquiry into the alleged used of such weapons against protesters on July 20 during the march to Parli...",
-      "link": "https://www.thehindu.com/news/national/ban-use-of-pellet-guns-electric-shock-batons-by-all-police-forces-disability-rights-outfits/article71261965.ece",
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Jul 26, 2026",
+      "title": "‘Congress will now demand accountability from BJP govt on paper leaks in Parliament,’ says Hooda",
+      "sum": "“The government must now apologise to the youth, the country’s future, whom it subjected to lathi-charges and brutality. Also, the examination system must be made transparent enough to eliminate any possibility of future paper leaks,” Bhupinder Singh Hooda said.",
+      "link": "https://www.thehindu.com/news/national/chandigarh/congress-will-now-demand-accountability-from-bjp-govt-on-paper-leaks-in-parliament-says-hooda/article71266368.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1002
     },
     {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Jul 25, 2026",
-      "title": "Cracks deepen in AIADMK dissidents’ camp",
-      "sum": "Former Law Minister and leader of the rebel camp C.Ve. Shanmugam stays away from an official review meeting for Villupuram, while former Food Minister R. Kamaraj attends the event for Tiruvarur. Besides these districts, Edappadi K. Palaniswami takes stock of the party’s performan...",
-      "link": "https://www.thehindu.com/news/national/tamil-nadu/cracks-deepen-in-aiadmk-dissidents-camp/article71262780.ece",
+      "cat": "def",
+      "badge": "Defence",
+      "tc": "tgd",
+      "date": "Jul 26, 2026",
+      "title": "Kargil Vijay Diwas: President Murmu, PM Modi lead nation to pay tributes to war heroes on 27th anniversary of ‘Operation Vijay’",
+      "sum": "On July 26, 1999, the Indian Army announced the successful culmination of “Operation Vijay”, declaring victory after a nearly three-month-long battle on the icy heights of Kargil in Ladakh",
+      "link": "https://www.thehindu.com/news/national/kargil-vijay-diwas-political-leaders-pay-tributes-to-soldiers-operation-vijay-july-26-2026/article71268590.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1003
+    },
+    {
+      "cat": "def",
+      "badge": "Defence",
+      "tc": "tgd",
+      "date": "Jul 26, 2026",
+      "title": "Are pellet guns legal for crowd control in India? | Explained",
+      "sum": "Delhi Police have denied using pellet guns against protesters marching to Parliament, but allegations against the Rapid Action Force revive the debate on non-lethal weapons and the law on dispersing an unlawful assembly",
+      "link": "https://www.thehindu.com/news/national/are-pellet-guns-legal-for-crowd-control-in-india-explained/article71266304.ece",
+      "source": "The Hindu",
+      "exam": "Source: The Hindu · Auto-updated",
+      "id": 1004
+    },
+    {
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Jul 26, 2026",
+      "title": "Delhi Police likely to withdraw FIRs as agitation ends, says DCP",
+      "sum": "The officer, however, refused to comment on the alleged use of excessive force during the July 20 Parliament protest march, the identification of police officers who were in plainclothes and without badges, and allegations that women were harassed on that day.",
+      "link": "https://www.thehindu.com/news/cities/Delhi/delhi-police-likely-to-withdraw-firs-as-agitation-ends-says-dcp/article71267499.ece",
+      "source": "The Hindu",
+      "exam": "Source: The Hindu · Auto-updated",
+      "id": 1005
+    },
+    {
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Jul 26, 2026",
+      "title": "Pradhan offered to quit on first day of student protest? BJP leader's big claim",
+      "sum": "MP minister Vijayvargiya, speaking to news agency PTI in Indore on Saturday, said Pradhan had informed the BJP leadership that he was willing to resign if the party believed it was necessary. \"On the first day, as soon as the student agitation began, Pradhan had told the BJP pres...",
+      "link": "https://timesofindia.indiatimes.com/india/pradhan-offered-to-quit-on-first-day-of-student-protest-bjp-leaders-big-claim/articleshow/132636485.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
+      "id": 1006
+    },
+    {
+      "cat": "def",
+      "badge": "Defence",
+      "tc": "tgd",
+      "date": "Jul 26, 2026",
+      "title": "'Gratitude to brave soldiers': PM Modi pays tribute to Kargil heroes on 27th Vijay Diwas",
+      "sum": "India is observing the 27th anniversary of Kargil Vijay Diwas, commemorating its victory in the 1999 Kargil War. The day marks the successful culmination of Operation Vijay and honours the 527 soldiers who made the supreme sacrifice while driving Pakistani intruders out of strate...",
+      "link": "https://timesofindia.indiatimes.com/india/gratitude-to-brave-soldiers-pm-modi-pays-tribute-to-kargil-heroes-on-27th-vijay-diwas/articleshow/132636061.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
+      "id": 1007
     },
     {
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
       "date": "Jul 25, 2026",
-      "title": "Govt fact-checks viral AI deepfakes of PM, ministers; points to Pakistani handles",
-      "sum": "Govt fact-checks viral AI deepfakes of PM, ministers; points to Pakistani handles",
-      "link": "https://timesofindia.indiatimes.com/india/govt-fact-checks-viral-ai-deepfakes-of-pm-ministers-points-to-pakistani-handles/articleshow/132619174.cms",
-      "source": "Times of India",
-      "exam": "Source: Times of India · Auto-updated",
-      "id": 1004
+      "title": "India's 'cockroach' protest called off after education minister quits",
+      "sum": "The CJP protest has been the most visible expression of public anger against PM Narendra Modi's government in recent years.",
+      "link": "https://www.bbc.co.uk/news/articles/cdx828gj5xko?at_medium=RSS&at_campaign=rss",
+      "source": "BBC India",
+      "exam": "Source: BBC India · Auto-updated",
+      "id": 1008
+    },
+    {
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Jul 25, 2026",
+      "title": "Struggle to even get inside: BBC reports from celebration at 'cockroach' protest site in India",
+      "sum": "Crowds at Delhi's Jantar Mantar are elated after India's education minister stepped down. The BBC's Vikas Pandey reports.",
+      "link": "https://www.bbc.co.uk/news/videos/c1d14yly3pko?at_medium=RSS&at_campaign=rss",
+      "source": "BBC India",
+      "exam": "Source: BBC India · Auto-updated",
+      "id": 1009
+    },
+    {
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Jul 25, 2026",
+      "title": "Watch: Protesters celebrate resignation of India's education minister",
+      "sum": "The youth-led Cockroach Janta Party (CJP) has called off its protest, hours after the resignation of India's education minister",
+      "link": "https://www.bbc.co.uk/news/videos/cly949k3g1do?at_medium=RSS&at_campaign=rss",
+      "source": "BBC India",
+      "exam": "Source: BBC India · Auto-updated",
+      "id": 1010
     },
     {
       "cat": "nat",
@@ -73,7 +145,7 @@
       "link": "https://www.bbc.co.uk/news/articles/cedj9j911p8o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1005
+      "id": 1011
     },
     {
       "cat": "nat",
@@ -85,7 +157,7 @@
       "link": "https://www.bbc.co.uk/news/articles/cq562x2zlw4o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1006
+      "id": 1012
     },
     {
       "cat": "eco",
@@ -97,43 +169,31 @@
       "link": "https://www.bbc.co.uk/news/articles/clyekv7rld3o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1007
-    },
-    {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Jul 15, 2026",
-      "title": "Crackdown on 'objectionable' books in Indian-administered Kashmir sparks row",
-      "sum": "Authorities in Indian-administered Kashmir have asked educational institutions to review every book on their premises.",
-      "link": "https://www.bbc.co.uk/news/articles/c0jyj292xdgo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC India",
-      "exam": "Source: BBC India · Auto-updated",
-      "id": 1008
+      "id": 1013
     },
     {
       "cat": "spo",
       "badge": "Sports",
       "tc": "tgsp",
-      "date": "Jul 25, 2026",
-      "title": "India at Commonwealth Games: July 25 schedule, medal events, fixtures in Glasgow",
+      "date": "Jul 26, 2026",
+      "title": "India at Commonwealth Games: July 26 schedule, medal events, fixtures in Glasgow",
       "sum": "India at Commonwealth Games July schedule medal events fixtures in Glasgow",
-      "link": "https://www.indiatoday.in/sports/commonwealth-games/story/commonwealth-games-2026-india-schedule-july-24-fixtures-medal-events-timings-2955761-2026-07-25?utm_source=rss",
+      "link": "https://www.indiatoday.in/sports/commonwealth-games/story/commonwealth-games-2026-india-schedule-july-26-fixtures-medal-events-timings-mirabai-chanu-2956400-2026-07-26?utm_source=rss",
       "source": "India Today",
       "exam": "Source: India Today · Auto-updated",
-      "id": 1009
+      "id": 1014
     },
     {
       "cat": "spo",
       "badge": "Sports",
       "tc": "tgsp",
-      "date": "Jul 24, 2026",
-      "title": "Fourth-place curse strikes as Ashok Malik misses powerlifting medal",
-      "sum": "Fourthplace curse strikes as Ashok Malik misses powerlifting medal",
-      "link": "https://www.indiatoday.in/sports/commonwealth-games/story/cwg-2026-ashok-malik-misses-para-powerlifting-medal-after-fourth-place-finish-2955526-2026-07-24?utm_source=rss",
+      "date": "Jul 26, 2026",
+      "title": "Jhandu was once a taunt. Now it has a Commonwealth Games medal",
+      "sum": "Jhandu was once a taunt Now it has a Commonwealth Games medal",
+      "link": "https://www.indiatoday.in/sports/commonwealth-games/story/jhandu-kumar-commonwealth-games-bronze-2956457-2026-07-26?utm_source=rss",
       "source": "India Today",
       "exam": "Source: India Today · Auto-updated",
-      "id": 1010
+      "id": 1015
     }
   ]
 }
