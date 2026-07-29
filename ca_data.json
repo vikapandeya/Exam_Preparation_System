@@ -1,88 +1,88 @@
 {
-  "updated": "2026-07-28",
-  "updated_time": "05:30 UTC",
-  "count": 21,
+  "updated": "2026-07-29",
+  "updated_time": "05:36 UTC",
+  "count": 20,
   "articles": [
     {
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Jul 28, 2026",
-      "title": "Kerala’s Kochi Corporation to audit Smart City assets as CSML winds up",
-      "sum": "Mayor V.K. Minimol has directed the superintendent engineer to submit a comprehensive report on the efficiency and utility of assets and projects created under the project",
-      "link": "https://www.thehindu.com/news/national/kerala/keralas-kochi-corporation-to-audit-smart-city-assets-as-csml-winds-up/article71275438.ece",
+      "date": "Jul 29, 2026",
+      "title": "Parliament Monsoon Session Day 8 LIVE: Opposition MPs move notices in Parliament over Anti-Defection Law reform, Cauvery water dispute",
+      "sum": "MP Praveen Chakravarthy moved a motion under Rule 267, demanding the suspension of the day's business to address what he termed a \"misleading reply\" by the Ministry of Jal Shakti regarding the Cauvery water dispute",
+      "link": "https://www.thehindu.com/news/national/parliament-monsoon-lok-sabha-live-updates-2026-july-29-2026/article71279779.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1000
     },
     {
-      "cat": "awa",
-      "badge": "Awards",
-      "tc": "tgi",
-      "date": "Jul 28, 2026",
-      "title": "Parliament Monsoon Session Day 7 LIVE: Lok Sabha likely to debate Public Examinations Amendment Bill",
-      "sum": "The Rajya Sabha will take up the Prevention of Insults to National Honour (Amendment) Bill for consideration and passing",
-      "link": "https://www.thehindu.com/news/national/parliament-monsoon-lok-sabha-live-updates-2026-july-28-2026-exam-amendment-bill-news/article71275442.ece",
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Jul 29, 2026",
+      "title": "Is Yashwant Varma still a judge?",
+      "sum": "The power to resign at will protects judicial independence; when misused, it helps evade accountability; the report by the committee tasked with investigating charges of misbehaviour against former judge Varma is set to come up in Parliament; what will become of Varma now that he...",
+      "link": "https://www.thehindu.com/news/national/is-yashwant-varma-still-a-judge/article71249134.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1001
     },
     {
-      "cat": "spo",
-      "badge": "Sports",
-      "tc": "tgsp",
-      "date": "Jul 28, 2026",
-      "title": "Delhi protest crackdown: Supreme Court says right to peaceful protest constitutionally protected, mulls framing guidelines",
-      "sum": "The Supreme Court said it will hear on Tuesday (July 28, 2026) multiple petitions concerning the nationwide protests over examination paper leaks, including those alleging police excesses during the July 20 Parliament march led by the Cockroach Janta Party",
-      "link": "https://www.thehindu.com/news/national/neet-protest-right-to-peaceful-protest-guaranteed-says-supreme-court-fixes-hearing-on-police-excesses-on-july-28/article71271559.ece",
+      "cat": "def",
+      "badge": "Defence",
+      "tc": "tgd",
+      "date": "Jul 29, 2026",
+      "title": "Army reaches out to flood-hit Assam",
+      "sum": "Launches Operation JAL RAHAT III to assist civil authorities in flood relief and rescue operations in districts of Sivasagar, Jorhat and Charaideo",
+      "link": "https://www.thehindu.com/news/national/assam/army-reaches-out-to-flood-hit-assam/article71250339.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1002
     },
     {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Jul 28, 2026",
-      "title": "No active COVID clusters in A.P., cases only sporadic, says govt.",
-      "sum": "Epidemiological tracking shows low transmission rates, with cases occurring sporadically in isolated pockets rather than through localised or rapid community outbreaks, according to Health Department",
-      "link": "https://www.thehindu.com/news/national/andhra-pradesh/no-active-covid-clusters-in-ap-cases-only-sporadic-says-govt/article71273396.ece",
-      "source": "The Hindu",
-      "exam": "Source: The Hindu · Auto-updated",
+      "cat": "eco",
+      "badge": "Economy",
+      "tc": "tge",
+      "date": "Jul 29, 2026",
+      "title": "Our FTAs fair & equitable, protect farmers, MSMEs, labour sector: Govt to NDA MPs",
+      "sum": "Government ministers defended trade pacts, contrasting them with past agreements. These new deals involve larger economies and aim for balanced growth. Fisheries sector exports have doubled, showing significant economic expansion. New markets are emerging, offsetting reduced expo...",
+      "link": "https://timesofindia.indiatimes.com/india/our-ftas-fair-equitable-protect-farmers-msmes-labour-sector-govt-to-nda-mps/articleshow/132700510.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
       "id": 1003
     },
     {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Jul 28, 2026",
-      "title": "Rising malaria cases among migrant plantation workers spark concern in Kerala’s Idukki",
-      "sum": "According to officials, nearly 280 cases have been reported in the district this year; they flag a high risk of local transmission",
-      "link": "https://www.thehindu.com/news/national/kerala/rising-malaria-cases-among-migrant-plantation-workers-spark-concern-in-keralas-idukki/article71273483.ece",
-      "source": "The Hindu",
-      "exam": "Source: The Hindu · Auto-updated",
+      "cat": "spo",
+      "badge": "Sports",
+      "tc": "tgsp",
+      "date": "Jul 29, 2026",
+      "title": "'Deeply concerning': In UNSC, India strongly condemns attacks on commercial ships near Hormuz",
+      "sum": "Speaking at an open debate of the United Nations security council on the situation in the Middle East, India's Permanent Representative to the UN, Ambassador Parvathaneni Harish, said the recent escalation after a brief lull in fighting was deeply worrying. He urged all sides to ...",
+      "link": "https://timesofindia.indiatimes.com/india/deeply-concerning-in-unsc-india-strongly-condemns-attacks-on-commercial-ships-near-hormuz/articleshow/132698044.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
       "id": 1004
     },
     {
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Jul 28, 2026",
-      "title": "Facing flak for ‘selective’ activism over Jantar Mantar support, Kerala celebrities rally behind teacher rank-holders’ protest",
-      "sum": "Actors Tovino Thomas, Naslen, Chandu Salim Kumar, Vijeesh Vijayan, and anchor Ranjini Haridas are among those who have expressed solidarity with the teacher rank-holders staging an indefinite protest in front of Secretariat",
-      "link": "https://www.thehindu.com/news/national/kerala/facing-flak-for-selective-activism-over-jantar-mantar-support-kerala-celebrities-rally-behind-teacher-rank-holders-protest/article71275450.ece",
-      "source": "The Hindu",
-      "exam": "Source: The Hindu · Auto-updated",
+      "date": "Jul 29, 2026",
+      "title": "Union minister, BJP MP got NHB subsidies, mantri refunded it: Government",
+      "sum": "Union minister Bhagirath Choudhary and MP Lumba Ram received central scheme aid. Choudhary has since refunded the subsidy to the National Horticulture Board. The government informed Parliament about these financial assistance instances. Existing scheme guidelines lack specific co...",
+      "link": "https://timesofindia.indiatimes.com/india/union-minister-bjp-mp-got-nhb-subsidies-mantri-refunded-it-government/articleshow/132697520.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
       "id": 1005
     },
     {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Jul 28, 2026",
-      "title": "MBBS admissions: NMC puts focus on ability, not disability",
-      "sum": "MBBS admissions: NMC puts focus on ability, not disability",
-      "link": "https://timesofindia.indiatimes.com/india/mbbs-admissions-nmc-puts-focus-on-ability-not-disability/articleshow/132673607.cms",
+      "cat": "eco",
+      "badge": "Economy",
+      "tc": "tge",
+      "date": "Jul 29, 2026",
+      "title": "Dealers can't keep over 400 tonne stock of sugar: Government",
+      "sum": "The government has capped sugar stock at 400 tonnes per dealer. Dealers must liquidate excess stock by August 1 and sell within thirty days. This measure aims to prevent hoarding and stabilize sugar prices. The essential commodities act was invoked to impose these restrictions. S...",
+      "link": "https://timesofindia.indiatimes.com/india/dealers-cant-keep-over-400-tonne-stock-of-sugar-government/articleshow/132697235.cms",
       "source": "Times of India",
       "exam": "Source: Times of India · Auto-updated",
       "id": 1006
@@ -91,49 +91,37 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Jul 28, 2026",
-      "title": "Kasol raves: Supreme Court orders transfer of Kullu DC, SP",
-      "sum": "The Supreme Court upheld the Himachal High Court's order for transfers. Kullu Deputy Commissioner Anurag C Sharma and SP Madan Lal must be transferred. This action follows their alleged failure to prevent rave parties in Kasol. The court stayed further action on FIRs and the SIT ...",
-      "link": "https://timesofindia.indiatimes.com/india/kasol-raves-supreme-court-orders-transfer-of-kullu-dc-sp/articleshow/132672775.cms",
+      "date": "Jul 29, 2026",
+      "title": "Rajya Sabha adjourned as opposition seeks Shah statement on police action",
+      "sum": "Rajya Sabha adjourned for the day amid opposition protests demanding a statement. MPs demanded Union Home Minister Amit Shah explain police action against demonstrators. The House was first adjourned within minutes of assembling at 11 am. Later, legislative business was attempted...",
+      "link": "https://timesofindia.indiatimes.com/india/rajya-sabha-adjourned-as-opposition-seeks-shah-statement-on-police-action/articleshow/132697141.cms",
       "source": "Times of India",
       "exam": "Source: Times of India · Auto-updated",
       "id": 1007
     },
     {
-      "cat": "eco",
-      "badge": "Economy",
-      "tc": "tge",
-      "date": "Jul 28, 2026",
-      "title": "Delay in paying land compensation proves costly for Tamil Nadu",
-      "sum": "The Supreme Court has ordered Tamil Nadu to pay market rate compensation for acquired land. Alternatively, the state must return 970 acres of land to landowners within six weeks. This decision impacts Tamil Nadu's already strained fiscal situation significantly. The court emphasi...",
-      "link": "https://timesofindia.indiatimes.com/india/delay-in-paying-land-compensation-proves-costly-for-tamil-nadu/articleshow/132672753.cms",
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Jul 29, 2026",
+      "title": "PM Modi's message to key ministries: Be youthful, dynamic and adaptable",
+      "sum": "Prime Minister Narendra Modi urged government ministries to remain youthful and forward-looking. He stressed the need for young entrepreneurs' active participation in key sectors. Officials were asked to devise industry-aligned courses for emerging sector skills. Proactive commun...",
+      "link": "https://timesofindia.indiatimes.com/india/pm-modis-message-to-key-ministries-be-youthful-dynamic-and-adaptable/articleshow/132696980.cms",
       "source": "Times of India",
       "exam": "Source: Times of India · Auto-updated",
       "id": 1008
     },
     {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Jul 28, 2026",
-      "title": "Need out-of-box thinking to plug paper leaks, says Supreme Court",
-      "sum": "A high-powered committee for education reform has been formed. The Supreme Court seeks \"out-of-box thinking\" to address sector problems. The court will hear the NEET paper leak petition on August 3. Government needs to examine additional safeguards for online exams. The system's ...",
-      "link": "https://timesofindia.indiatimes.com/india/need-out-of-box-thinking-to-plug-paper-leaks-says-supreme-court/articleshow/132672742.cms",
+      "cat": "sci",
+      "badge": "Science & Tech",
+      "tc": "tgs",
+      "date": "Jul 29, 2026",
+      "title": "Centre may table bill to make deepfakes, digital arrest separate offences",
+      "sum": "The government plans to introduce a bill addressing digital arrests and AI deepfakes. Existing laws do not define these emerging digital crimes effectively. The Supreme Court urged the government to create specific offenses for these issues. This new legislation will categorize d...",
+      "link": "https://timesofindia.indiatimes.com/india/centre-may-table-bill-to-make-deepfakes-digital-arrest-separate-offences/articleshow/132694735.cms",
       "source": "Times of India",
       "exam": "Source: Times of India · Auto-updated",
       "id": 1009
-    },
-    {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Jul 28, 2026",
-      "title": "Anti-defection law: Supreme Court ready to hear plea for its interpretation",
-      "sum": "The Supreme Court will examine the anti-defection law's interpretation concerning political party mergers. Kapil Sibal argued that electoral verdicts can be altered through such merger provisions. The court acknowledged significant issues with the Tenth Schedule's current working...",
-      "link": "https://timesofindia.indiatimes.com/india/anti-defection-law-supreme-court-ready-to-hear-plea-for-its-interpretation/articleshow/132672684.cms",
-      "source": "Times of India",
-      "exam": "Source: Times of India · Auto-updated",
-      "id": 1010
     },
     {
       "cat": "nat",
@@ -145,7 +133,7 @@
       "link": "https://www.bbc.co.uk/news/articles/cqlx61p3wz0o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1011
+      "id": 1010
     },
     {
       "cat": "nat",
@@ -157,7 +145,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c8dng1v72lno?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1012
+      "id": 1011
     },
     {
       "cat": "def",
@@ -169,7 +157,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c5y0m8z6de3o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1013
+      "id": 1012
     },
     {
       "cat": "nat",
@@ -181,7 +169,7 @@
       "link": "https://www.bbc.co.uk/news/articles/cdx828gj5xko?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1014
+      "id": 1013
     },
     {
       "cat": "nat",
@@ -193,7 +181,7 @@
       "link": "https://www.bbc.co.uk/news/videos/c1d14yly3pko?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1015
+      "id": 1014
     },
     {
       "cat": "nat",
@@ -205,7 +193,7 @@
       "link": "https://www.bbc.co.uk/news/articles/cedj9j911p8o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1016
+      "id": 1015
     },
     {
       "cat": "nat",
@@ -217,43 +205,43 @@
       "link": "https://www.bbc.co.uk/news/articles/cq562x2zlw4o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1017
-    },
-    {
-      "cat": "eco",
-      "badge": "Economy",
-      "tc": "tge",
-      "date": "Jul 18, 2026",
-      "title": "Diamonds and 'cab to orbit': Rocket aiming to transform India's space ambitions takes off",
-      "sum": "India's first space-tech unicorn Skyroot Aerospace successfully launched Vikram-1 on Saturday.",
-      "link": "https://www.bbc.co.uk/news/articles/clyekv7rld3o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC India",
-      "exam": "Source: BBC India · Auto-updated",
-      "id": 1018
+      "id": 1016
     },
     {
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Jul 28, 2026",
-      "title": "PM Modi's selfie video removed briefly from Facebook; Meta apologises",
-      "sum": "PM Modis selfie video removed briefly from Facebook Meta apologises",
-      "link": "https://www.indiatoday.in/india/story/meta-apologises-for-brief-removal-of-pm-modis-selfie-video-govt-likely-to-summon-officials-2957818-2026-07-28?utm_source=rss",
+      "date": "Jul 29, 2026",
+      "title": "Student hacks IIT website after failing hackathon admission test, gets 2nd chance",
+      "sum": "Student hacks IIT website after failing hackathon admission test gets nd chance",
+      "link": "https://www.indiatoday.in/education-today/news/story/iit-kanpur-website-hack-student-cybersecurity-test-instead-of-fir-jeemain-2958647-2026-07-29?utm_source=rss",
       "source": "India Today",
       "exam": "Source: India Today · Auto-updated",
-      "id": 1019
+      "id": 1017
     },
     {
       "cat": "spo",
       "badge": "Sports",
       "tc": "tgsp",
-      "date": "Jul 28, 2026",
-      "title": "CWG 2026 Day 5 wrap: India's medal haul hits 10 after an entertaining all-nighter",
-      "sum": "CWG Day wrap Indias medal haul hits after an entertaining allnighter",
-      "link": "https://www.indiatoday.in/sports/commonwealth-games/story/commonwealth-games-july-27-wrap-day-5-india-medals-score-highlights-2957703-2026-07-28?utm_source=rss",
+      "date": "Jul 29, 2026",
+      "title": "How a father's faith forged Harjinder Kaur into a CWG silver medallist",
+      "sum": "How a fathers faith forged Harjinder Kaur into a CWG silver medallist",
+      "link": "https://www.indiatoday.in/sports/commonwealth-games/story/harjinder-kaur-commonwealth-games-2026-silver-weightlifting-fathers-sacrifice-2958622-2026-07-29?utm_source=rss",
       "source": "India Today",
       "exam": "Source: India Today · Auto-updated",
-      "id": 1020
+      "id": 1018
+    },
+    {
+      "cat": "sci",
+      "badge": "Science & Tech",
+      "tc": "tgs",
+      "date": "Jul 29, 2026",
+      "title": "Deep Depression weakens, no new vortex over Bay of Bengal, Arabian Sea: Isro images",
+      "sum": "Deep Depression weakens no new vortex over Bay of Bengal Arabian Sea Isro images",
+      "link": "https://www.indiatoday.in/science/story/monsoon-rain-india-imd-inland-deep-depression-no-new-bay-or-arabian-sea-storm-2958567-2026-07-29?utm_source=rss",
+      "source": "India Today",
+      "exam": "Source: India Today · Auto-updated",
+      "id": 1019
     }
   ]
 }
