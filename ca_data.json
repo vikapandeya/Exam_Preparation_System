@@ -1,16 +1,16 @@
 {
-  "updated": "2026-07-29",
-  "updated_time": "05:36 UTC",
-  "count": 20,
+  "updated": "2026-07-30",
+  "updated_time": "05:23 UTC",
+  "count": 23,
   "articles": [
     {
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Jul 29, 2026",
-      "title": "Parliament Monsoon Session Day 8 LIVE: Opposition MPs move notices in Parliament over Anti-Defection Law reform, Cauvery water dispute",
-      "sum": "MP Praveen Chakravarthy moved a motion under Rule 267, demanding the suspension of the day's business to address what he termed a \"misleading reply\" by the Ministry of Jal Shakti regarding the Cauvery water dispute",
-      "link": "https://www.thehindu.com/news/national/parliament-monsoon-lok-sabha-live-updates-2026-july-29-2026/article71279779.ece",
+      "date": "Jul 30, 2026",
+      "title": "Centre’s assurance cannot override statutory processes governing withdrawal of FIRs, experts say",
+      "sum": "‘Once an FIR has been registered, it cannot simply be cancelled; police can file a closure report if it finds no material to proceed or the public prosecutor may seek withdrawal from prosecution; however, court can reject them and still order a fresh probe'",
+      "link": "https://www.thehindu.com/news/national/centres-assurance-cannot-override-statutory-processes-governing-withdrawal-of-firs-experts-say/article71280825.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1000
@@ -19,70 +19,70 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Jul 29, 2026",
-      "title": "Is Yashwant Varma still a judge?",
-      "sum": "The power to resign at will protects judicial independence; when misused, it helps evade accountability; the report by the committee tasked with investigating charges of misbehaviour against former judge Varma is set to come up in Parliament; what will become of Varma now that he...",
-      "link": "https://www.thehindu.com/news/national/is-yashwant-varma-still-a-judge/article71249134.ece",
+      "date": "Jul 30, 2026",
+      "title": "Voting under way for Manjalpur byelection in Gujarat",
+      "sum": "The bypoll was necessitated by the death of senior BJP MLA and former Gujarat minister Yogesh Patel on June 2 after a prolonged illness.",
+      "link": "https://www.thehindu.com/news/national/gujarat/manjalpur-byelection-in-gujarat-july-30-2026/article71284374.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1001
     },
     {
-      "cat": "def",
-      "badge": "Defence",
-      "tc": "tgd",
-      "date": "Jul 29, 2026",
-      "title": "Army reaches out to flood-hit Assam",
-      "sum": "Launches Operation JAL RAHAT III to assist civil authorities in flood relief and rescue operations in districts of Sivasagar, Jorhat and Charaideo",
-      "link": "https://www.thehindu.com/news/national/assam/army-reaches-out-to-flood-hit-assam/article71250339.ece",
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Jul 30, 2026",
+      "title": "Indian Psychiatric Society urges mental health policy revamp in Kerala",
+      "sum": "A delegation of psychiatrists met Chief Minister V.D. Satheesan at Thiruvananthapuram and submitted a memorandum seeking reforms in mental healthcare delivery, infrastructure and governance",
+      "link": "https://www.thehindu.com/news/national/kerala/indian-psychiatric-society-urges-mental-health-policy-revamp/article71282179.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1002
     },
     {
-      "cat": "eco",
-      "badge": "Economy",
-      "tc": "tge",
-      "date": "Jul 29, 2026",
-      "title": "Our FTAs fair & equitable, protect farmers, MSMEs, labour sector: Govt to NDA MPs",
-      "sum": "Government ministers defended trade pacts, contrasting them with past agreements. These new deals involve larger economies and aim for balanced growth. Fisheries sector exports have doubled, showing significant economic expansion. New markets are emerging, offsetting reduced expo...",
-      "link": "https://timesofindia.indiatimes.com/india/our-ftas-fair-equitable-protect-farmers-msmes-labour-sector-govt-to-nda-mps/articleshow/132700510.cms",
-      "source": "Times of India",
-      "exam": "Source: Times of India · Auto-updated",
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Jul 30, 2026",
+      "title": "Govt. simplifies NEET-UG 2026 counselling process",
+      "sum": "Centre introduces one-time physical reporting framework and online seat resignation",
+      "link": "https://www.thehindu.com/news/national/nadda-reviews-neet-ug-counselling-2026-preparedness/article71282356.ece",
+      "source": "The Hindu",
+      "exam": "Source: The Hindu · Auto-updated",
       "id": 1003
     },
     {
-      "cat": "spo",
-      "badge": "Sports",
-      "tc": "tgsp",
-      "date": "Jul 29, 2026",
-      "title": "'Deeply concerning': In UNSC, India strongly condemns attacks on commercial ships near Hormuz",
-      "sum": "Speaking at an open debate of the United Nations security council on the situation in the Middle East, India's Permanent Representative to the UN, Ambassador Parvathaneni Harish, said the recent escalation after a brief lull in fighting was deeply worrying. He urged all sides to ...",
-      "link": "https://timesofindia.indiatimes.com/india/deeply-concerning-in-unsc-india-strongly-condemns-attacks-on-commercial-ships-near-hormuz/articleshow/132698044.cms",
-      "source": "Times of India",
-      "exam": "Source: Times of India · Auto-updated",
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Jul 30, 2026",
+      "title": "Parliament Monsoon Session Day 9 LIVE: Lok Sabha to take up SC Judges Bill as Rajya Sabha discusses anti-paper leak Bill",
+      "sum": "Opposition plans to seek a discussion on the embezzlement of donations at the Ayodhya Ram temple",
+      "link": "https://www.thehindu.com/news/national/parliament-monsoon-lok-sabha-rajya-sabha-live-updates-2026-july-30-2026/article71284292.ece",
+      "source": "The Hindu",
+      "exam": "Source: The Hindu · Auto-updated",
       "id": 1004
     },
     {
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Jul 29, 2026",
-      "title": "Union minister, BJP MP got NHB subsidies, mantri refunded it: Government",
-      "sum": "Union minister Bhagirath Choudhary and MP Lumba Ram received central scheme aid. Choudhary has since refunded the subsidy to the National Horticulture Board. The government informed Parliament about these financial assistance instances. Existing scheme guidelines lack specific co...",
-      "link": "https://timesofindia.indiatimes.com/india/union-minister-bjp-mp-got-nhb-subsidies-mantri-refunded-it-government/articleshow/132697520.cms",
-      "source": "Times of India",
-      "exam": "Source: Times of India · Auto-updated",
+      "date": "Jul 30, 2026",
+      "title": "Bombay HC asks Maharashtra govt. to give details of FDA inspections at State-run canteens, eating places",
+      "sum": "The Food and Drug Administration (FDA) led by Food Safety Commissioner Tukaram Mundhe, has been conducting a major crackdown against food joint operators flouting safety standards.",
+      "link": "https://www.thehindu.com/news/cities/mumbai/bombay-hc-asks-maharashtra-govt-to-give-details-of-fda-inspections-at-state-run-canteens-eating-places/article71284373.ece",
+      "source": "The Hindu",
+      "exam": "Source: The Hindu · Auto-updated",
       "id": 1005
     },
     {
-      "cat": "eco",
-      "badge": "Economy",
-      "tc": "tge",
-      "date": "Jul 29, 2026",
-      "title": "Dealers can't keep over 400 tonne stock of sugar: Government",
-      "sum": "The government has capped sugar stock at 400 tonnes per dealer. Dealers must liquidate excess stock by August 1 and sell within thirty days. This measure aims to prevent hoarding and stabilize sugar prices. The essential commodities act was invoked to impose these restrictions. S...",
-      "link": "https://timesofindia.indiatimes.com/india/dealers-cant-keep-over-400-tonne-stock-of-sugar-government/articleshow/132697235.cms",
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Jul 30, 2026",
+      "title": "2 years after death, Supreme Court clears former PM Manmohan Singh in Coalgate case",
+      "sum": "The Supreme Court has cleared former Prime Minister Manmohan Singh in a coal block scam case. This decision comes more than eleven years after a Delhi court summoned him as an accused. The court closed the case nearly two years after his demise in November 2024. The apex court qu...",
+      "link": "https://timesofindia.indiatimes.com/india/2-years-after-death-supreme-court-clears-former-pm-manmohan-singh-in-coalgate-case/articleshow/132724513.cms",
       "source": "Times of India",
       "exam": "Source: Times of India · Auto-updated",
       "id": 1006
@@ -91,10 +91,10 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Jul 29, 2026",
-      "title": "Rajya Sabha adjourned as opposition seeks Shah statement on police action",
-      "sum": "Rajya Sabha adjourned for the day amid opposition protests demanding a statement. MPs demanded Union Home Minister Amit Shah explain police action against demonstrators. The House was first adjourned within minutes of assembling at 11 am. Later, legislative business was attempted...",
-      "link": "https://timesofindia.indiatimes.com/india/rajya-sabha-adjourned-as-opposition-seeks-shah-statement-on-police-action/articleshow/132697141.cms",
+      "date": "Jul 30, 2026",
+      "title": "Supreme Court curbs powers of SC panel, says it can’t pass adjudicatory orders",
+      "sum": "The Supreme Court has ruled the National Commission for Scheduled Castes is advisory. It cannot pass binding adjudicatory orders in service-related matters. The commission can only send recommendations to the state or central government. It can inquire into complaints and record ...",
+      "link": "https://timesofindia.indiatimes.com/india/supreme-court-curbs-powers-of-sc-panel-says-it-cant-pass-adjudicatory-orders/articleshow/132724481.cms",
       "source": "Times of India",
       "exam": "Source: Times of India · Auto-updated",
       "id": 1007
@@ -103,25 +103,61 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Jul 29, 2026",
-      "title": "PM Modi's message to key ministries: Be youthful, dynamic and adaptable",
-      "sum": "Prime Minister Narendra Modi urged government ministries to remain youthful and forward-looking. He stressed the need for young entrepreneurs' active participation in key sectors. Officials were asked to devise industry-aligned courses for emerging sector skills. Proactive commun...",
-      "link": "https://timesofindia.indiatimes.com/india/pm-modis-message-to-key-ministries-be-youthful-dynamic-and-adaptable/articleshow/132696980.cms",
+      "date": "Jul 30, 2026",
+      "title": "ADGCA-ordered probe cleared Dreamliner fuel switch: Government",
+      "sum": "A Boeing probe found no abnormality in the B787 fuel control switch locking mechanism. This examination was ordered by the DGCA after a crew reported an issue post-landing. The switches control fuel supply and have faced scrutiny after a past crash incident. Further inspection of...",
+      "link": "https://timesofindia.indiatimes.com/india/dgca-ordered-probe-cleared-dreamliner-fuel-switch-government/articleshow/132724447.cms",
       "source": "Times of India",
       "exam": "Source: Times of India · Auto-updated",
       "id": 1008
     },
     {
-      "cat": "sci",
-      "badge": "Science & Tech",
-      "tc": "tgs",
-      "date": "Jul 29, 2026",
-      "title": "Centre may table bill to make deepfakes, digital arrest separate offences",
-      "sum": "The government plans to introduce a bill addressing digital arrests and AI deepfakes. Existing laws do not define these emerging digital crimes effectively. The Supreme Court urged the government to create specific offenses for these issues. This new legislation will categorize d...",
-      "link": "https://timesofindia.indiatimes.com/india/centre-may-table-bill-to-make-deepfakes-digital-arrest-separate-offences/articleshow/132694735.cms",
+      "cat": "int",
+      "badge": "International",
+      "tc": "tgi",
+      "date": "Jul 30, 2026",
+      "title": "IIT Bombay alumnus Jagdish Aphale named Ram temple trust’s first secretary, will oversee transactions",
+      "sum": "Jagdish Aphale, an IIT Bombay alumnus, has been appointed the Ayodhya Ram temple trust's first secretary. He will also serve as a joint signatory for financial transactions, enhancing accountability. This appointment follows recent resignations and alleged donation theft issues. ...",
+      "link": "https://timesofindia.indiatimes.com/india/iit-bombay-alumnus-jagdish-aphale-named-ram-temple-trusts-first-secretary-will-oversee-transactions/articleshow/132724424.cms",
       "source": "Times of India",
       "exam": "Source: Times of India · Auto-updated",
       "id": 1009
+    },
+    {
+      "cat": "sci",
+      "badge": "Science & Tech",
+      "tc": "tgs",
+      "date": "Jul 30, 2026",
+      "title": "Denied seat, student hacks IIT-Kanpur website to show his 'merit'",
+      "sum": "A BTech applicant hacked IIT Kanpur's website seeking admission consideration. He claimed he was denied a fair chance in the selection process. The IIT director invited the candidate to campus for an assessment. He stressed that hacking was not the correct approach to gain entry....",
+      "link": "https://timesofindia.indiatimes.com/india/denied-seat-student-hacks-iit-kanpur-website-to-show-his-merit/articleshow/132724055.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
+      "id": 1010
+    },
+    {
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Jul 30, 2026",
+      "title": "Now, just one visit for NEET-UG counselling",
+      "sum": "NEET-UG counselling now requires only one physical reporting for candidates seeking admission. Aspirants can complete subsequent document verification online while retaining their allotted seats. The Medical Counselling Committee also introduced online resignation for surrendered...",
+      "link": "https://timesofindia.indiatimes.com/india/now-just-one-visit-for-neet-ug-counselling/articleshow/132723980.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
+      "id": 1011
+    },
+    {
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Jul 29, 2026",
+      "title": "'Delulu', 'Clock it': 'Cockroach' protest brings Gen Z slang to India's parliament",
+      "sum": "From \"delulu\" to \"FOMO\", Gen Z slang has made an unlikely journey from Instagram to parliament.",
+      "link": "https://www.bbc.co.uk/news/articles/c9q90qvwe14o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC India",
+      "exam": "Source: BBC India · Auto-updated",
+      "id": 1012
     },
     {
       "cat": "nat",
@@ -133,7 +169,7 @@
       "link": "https://www.bbc.co.uk/news/articles/cqlx61p3wz0o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1010
+      "id": 1013
     },
     {
       "cat": "nat",
@@ -145,7 +181,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c8dng1v72lno?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1011
+      "id": 1014
     },
     {
       "cat": "def",
@@ -157,7 +193,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c5y0m8z6de3o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1012
+      "id": 1015
     },
     {
       "cat": "nat",
@@ -169,7 +205,7 @@
       "link": "https://www.bbc.co.uk/news/articles/cdx828gj5xko?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1013
+      "id": 1016
     },
     {
       "cat": "nat",
@@ -181,7 +217,7 @@
       "link": "https://www.bbc.co.uk/news/videos/c1d14yly3pko?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1014
+      "id": 1017
     },
     {
       "cat": "nat",
@@ -193,7 +229,7 @@
       "link": "https://www.bbc.co.uk/news/articles/cedj9j911p8o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1015
+      "id": 1018
     },
     {
       "cat": "nat",
@@ -205,19 +241,31 @@
       "link": "https://www.bbc.co.uk/news/articles/cq562x2zlw4o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1016
+      "id": 1019
     },
     {
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Jul 29, 2026",
-      "title": "Student hacks IIT website after failing hackathon admission test, gets 2nd chance",
-      "sum": "Student hacks IIT website after failing hackathon admission test gets nd chance",
-      "link": "https://www.indiatoday.in/education-today/news/story/iit-kanpur-website-hack-student-cybersecurity-test-instead-of-fir-jeemain-2958647-2026-07-29?utm_source=rss",
+      "date": "Jul 30, 2026",
+      "title": "Become an influencer, you're doing well: Abhijeet Dipke's swipe at PM Modi",
+      "sum": "Become an influencer youre doing well Abhijeet Dipkes swipe at PM Modi",
+      "link": "https://www.indiatoday.in/india/story/neet-paper-leak-protests-abhijeet-dipke-asks-pm-modi-to-become-an-influencer-2959424-2026-07-30?utm_source=rss",
       "source": "India Today",
       "exam": "Source: India Today · Auto-updated",
-      "id": 1017
+      "id": 1020
+    },
+    {
+      "cat": "spo",
+      "badge": "Sports",
+      "tc": "tgsp",
+      "date": "Jul 30, 2026",
+      "title": "India at Commonwealth Games: July 30 schedule, medal events, fixtures in Glasgow",
+      "sum": "India at Commonwealth Games July schedule medal events fixtures in Glasgow",
+      "link": "https://www.indiatoday.in/sports/commonwealth-games/story/commonwealth-games-india-schedule-july-30-fixtures-medal-events-timings-2959405-2026-07-30?utm_source=rss",
+      "source": "India Today",
+      "exam": "Source: India Today · Auto-updated",
+      "id": 1021
     },
     {
       "cat": "spo",
@@ -229,19 +277,7 @@
       "link": "https://www.indiatoday.in/sports/commonwealth-games/story/harjinder-kaur-commonwealth-games-2026-silver-weightlifting-fathers-sacrifice-2958622-2026-07-29?utm_source=rss",
       "source": "India Today",
       "exam": "Source: India Today · Auto-updated",
-      "id": 1018
-    },
-    {
-      "cat": "sci",
-      "badge": "Science & Tech",
-      "tc": "tgs",
-      "date": "Jul 29, 2026",
-      "title": "Deep Depression weakens, no new vortex over Bay of Bengal, Arabian Sea: Isro images",
-      "sum": "Deep Depression weakens no new vortex over Bay of Bengal Arabian Sea Isro images",
-      "link": "https://www.indiatoday.in/science/story/monsoon-rain-india-imd-inland-deep-depression-no-new-bay-or-arabian-sea-storm-2958567-2026-07-29?utm_source=rss",
-      "source": "India Today",
-      "exam": "Source: India Today · Auto-updated",
-      "id": 1019
+      "id": 1022
     }
   ]
 }
