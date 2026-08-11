@@ -1,28 +1,28 @@
 {
-  "updated": "2026-08-10",
-  "updated_time": "04:13 UTC",
-  "count": 17,
+  "updated": "2026-08-11",
+  "updated_time": "04:00 UTC",
+  "count": 12,
   "articles": [
     {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Aug 10, 2026",
-      "title": "Bidadi township: Chief Minister signals compensation beyond ₹3 crore an acre",
-      "sum": "However, sources in the Greater Bengaluru Development Authority (GBDA), the project’s implementing agency, confirmed that this was a “rare possibility”.",
-      "link": "https://www.thehindu.com/news/cities/bangalore/bidadi-township-chief-minister-signals-compensation-beyond-3-crore-an-acre/article71325541.ece",
+      "cat": "eco",
+      "badge": "Economy",
+      "tc": "tge",
+      "date": "Aug 11, 2026",
+      "title": "History will indeed remember Manmohan Singh kindly as most consequential PM: Sonia Gandhi",
+      "sum": "July 29, 2026, was an important but unacknowledged day in our political history as the Supreme Court upheld CBI's clean chit to Dr. Manmohan Singh in the alleged coal block allocation scam, said Sonia Gandhi",
+      "link": "https://www.thehindu.com/news/national/history-will-indeed-remember-manmohan-singh-kindly-as-most-consequential-pm-sonia-gandhi/article71330884.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1000
     },
     {
-      "cat": "def",
-      "badge": "Defence",
-      "tc": "tgd",
-      "date": "Aug 10, 2026",
-      "title": "Census 2027: Ladakh to lead Independent India’s first caste enumeration",
-      "sum": "Census form likely to have 40 questions, defence structures to be recorded on paper",
-      "link": "https://www.thehindu.com/news/national/ladakh/census-2027-ladakh-to-lead-caste-enumeration-in-independent-india/article71325361.ece",
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Aug 11, 2026",
+      "title": "U.P.: 5 killed, 41 injured in separate road accidents involving devotees, Kanwars",
+      "sum": "The highest number of casualties was reported from Kaushambi, where a pilgrim was killed and 30 others, including the driver, were injured",
+      "link": "https://www.thehindu.com/news/national/uttar-pradesh/up-5-killed-41-injured-in-separate-road-accidents-involving-devotees-kanwars/article71330861.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1001
@@ -31,10 +31,10 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 10, 2026",
-      "title": "Amit Shah responsible for action against students, lacks courage to answer in Parliament: Rahul Gandhi",
-      "sum": "The Leader of the Opposition hails students for speaking publicly despite facing harassment, says they had shown greater courage than the country’s top leadership by standing before the media",
-      "link": "https://www.thehindu.com/news/national/opposition-mps-take-out-protest-march-in-parliament-complex-seek-amit-shahs-statement-on-police-excesses/article71308299.ece",
+      "date": "Aug 11, 2026",
+      "title": "Protesters march to Jharkhand Assembly; 5 injured in clashes",
+      "sum": "Students, aspirants continue sit-in in Ranchi seeking cancellation of JSSC-CGL exam and CBI probe into irregularities; police deny use of force; former JPSC Chairman arrested; march comes day after State government agreed to cancel three exams",
+      "link": "https://www.thehindu.com/news/national/jharkhand/jharkhand-assembly-march-student-protest-jpsc-examination-jssc-cgl-exam-updates-on-august-10/article71327529.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1002
@@ -43,22 +43,22 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 10, 2026",
-      "title": "Sharad Pawar’s MPs to meet PM Modi; Congress asks them to delink women’s quota, delimitation",
-      "sum": "Sharad Pawar’s MPs to meet PM Modi; Congress asks them to delink women’s quota, delimitation",
-      "link": "https://timesofindia.indiatimes.com/india/sharad-pawars-mps-to-meet-pm-modi-congress-asks-them-to-delink-womens-quota-delimitation/articleshow/133078496.cms",
+      "date": "Aug 11, 2026",
+      "title": "Amid delimitation Bill buzz, NCP-SP MPs meet PM Modi",
+      "sum": "Amid delimitation Bill buzz, NCP-SP MPs meet PM Modi",
+      "link": "https://timesofindia.indiatimes.com/india/amid-delimitation-bill-buzz-ncp-sp-mps-meet-pm-modi/articleshow/133137334.cms",
       "source": "Times of India",
       "exam": "Source: Times of India · Auto-updated",
       "id": 1003
     },
     {
-      "cat": "sci",
-      "badge": "Science & Tech",
-      "tc": "tgs",
-      "date": "Aug 10, 2026",
-      "title": "India among top nations in quantum technology, says science minister Jitendra Singh",
-      "sum": "India is now at par with global leaders in advanced technology and manufacturing. Technology and artificial intelligence have significantly improved access to opportunities and education. Chandrayaan's discovery of water molecules on the Moon showcases India's specific capabiliti...",
-      "link": "https://timesofindia.indiatimes.com/india/india-among-top-nations-in-quantum-technology-says-science-minister-jitendra-singh/articleshow/133076727.cms",
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Aug 11, 2026",
+      "title": "Govt hints at JPC for FCRA Bill, opposition demands total rollback",
+      "sum": "Govt hints at JPC for FCRA Bill, opposition demands total rollback",
+      "link": "https://timesofindia.indiatimes.com/india/govt-hints-at-jpc-for-fcra-bill-opposition-demands-total-rollback/articleshow/133137328.cms",
       "source": "Times of India",
       "exam": "Source: Times of India · Auto-updated",
       "id": 1004
@@ -67,10 +67,10 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 10, 2026",
-      "title": "Rahul to Amit Shah: Won’t stop demanding accountability",
-      "sum": "Rahul Gandhi has raised concerns regarding Home Minister Amit Shah's muted response to police actions against students protesting at Jantar Mantar over paper leaks. Jairam Ramesh reminded the minister of his silence during a previous security incident in Parliament, emphasizing t...",
-      "link": "https://timesofindia.indiatimes.com/india/rahul-to-amit-shah-wont-stop-demanding-accountability/articleshow/133076636.cms",
+      "date": "Aug 11, 2026",
+      "title": "Ram Rahim’s acquittal in journalist murder case needs consideration: Supreme Court",
+      "sum": "Ram Rahim’s acquittal in journalist murder case needs consideration: Supreme Court",
+      "link": "https://timesofindia.indiatimes.com/india/ram-rahims-acquittal-in-journalist-murder-case-needs-consideration-supreme-court/articleshow/133135933.cms",
       "source": "Times of India",
       "exam": "Source: Times of India · Auto-updated",
       "id": 1005
@@ -80,72 +80,12 @@
       "badge": "National",
       "tc": "tgn",
       "date": "Aug 10, 2026",
-      "title": "Government may be going slow on FCRA to woo DMK, NCP(SP) for delimitation",
-      "sum": "As Parliament approaches its closing week, the FCRA amendment bill is notably absent from Monday's Lok Sabha agenda, signaling a possible political strategy from the government. The legislation's contentious nature is drawing connections to the pending delimitation exercise. Oppo...",
-      "link": "https://timesofindia.indiatimes.com/india/government-may-be-going-slow-on-fcra-to-woo-dmk-ncpsp-for-delimitation/articleshow/133075158.cms",
-      "source": "Times of India",
-      "exam": "Source: Times of India · Auto-updated",
-      "id": 1006
-    },
-    {
-      "cat": "eco",
-      "badge": "Economy",
-      "tc": "tge",
-      "date": "Aug 10, 2026",
-      "title": "ED charges against RCom, Reliance Infra in 40k crore bank fraud",
-      "sum": "The Enforcement Directorate has formally charged Reliance Communications and Reliance Infrastructure with serious financial offenses, including money laundering involving over forty thousand crore rupees in misappropriated bank funds. The allegations indicate substantial financia...",
-      "link": "https://timesofindia.indiatimes.com/india/ed-chargesheets-against-rcom-reliance-infra-in-40k-crore-bank-fraud/articleshow/133075153.cms",
-      "source": "Times of India",
-      "exam": "Source: Times of India · Auto-updated",
-      "id": 1007
-    },
-    {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Aug 10, 2026",
-      "title": "One crore homes completed and delivered under PM scheme: Government",
-      "sum": "Since the inception of the Pradhan Mantri Awas Yojna, over one crore urban houses have been built, representing a significant achievement in housing development. Since 2015, 1.25 crore houses have gained approval, with nearly one crore allocated to women. Furthermore, PMAY-Urban ...",
-      "link": "https://timesofindia.indiatimes.com/india/one-crore-homes-completed-and-delivered-under-pm-scheme-government/articleshow/133075146.cms",
-      "source": "Times of India",
-      "exam": "Source: Times of India · Auto-updated",
-      "id": 1008
-    },
-    {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Aug 10, 2026",
-      "title": "ED director Rahul Navin's tenure extended by a year",
-      "sum": "Rahul Navin received a one-year extension as ED director, which ends his fixed tenure. His service is now extended until August 2027, including post-superannuation service. Navin's tenure began in September 2023 and was appointed ED director in August 2024. He has established a r...",
-      "link": "https://timesofindia.indiatimes.com/india/ed-director-rahul-navins-tenure-extended-by-a-year/articleshow/133074961.cms",
-      "source": "Times of India",
-      "exam": "Source: Times of India · Auto-updated",
-      "id": 1009
-    },
-    {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Aug 10, 2026",
-      "title": "7 of 25 high courts without CJs, collegium recommends names for just four",
-      "sum": "The Supreme Court collegium recommended four judges for High Court Chief Justice positions. These appointments aim to fill vacancies in key High Courts across India. The collegium also approved transfers of two judges from Orissa High Court. Orissa High Court faces a significant ...",
-      "link": "https://timesofindia.indiatimes.com/india/7-of-25-high-courts-without-cjs-collegium-recommends-names-for-just-four/articleshow/133074945.cms",
-      "source": "Times of India",
-      "exam": "Source: Times of India · Auto-updated",
-      "id": 1010
-    },
-    {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Aug 10, 2026",
-      "title": "Why nine million were removed from a landmark Indian cash scheme for women",
+      "title": "An Indian cash scheme for women drops nine million beneficiaries - 29,000 were men",
       "sum": "India's largest cash-transfer scheme for women in Maharashtra state is facing scrutiny over alleged lapses.",
       "link": "https://www.bbc.co.uk/news/articles/c0ejxe0q3q4o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1011
+      "id": 1006
     },
     {
       "cat": "spo",
@@ -157,7 +97,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c2elpkg1l0jo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1012
+      "id": 1007
     },
     {
       "cat": "nat",
@@ -169,7 +109,7 @@
       "link": "https://www.bbc.co.uk/news/articles/cx2v551w9v8o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1013
+      "id": 1008
     },
     {
       "cat": "nat",
@@ -181,31 +121,31 @@
       "link": "https://www.bbc.co.uk/news/articles/cn7nkyr1j7ro?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1014
+      "id": 1009
     },
     {
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
+      "date": "Aug 11, 2026",
+      "title": "Is the Opposition shooting itself in the foot by disrupting Parliament?",
+      "sum": "Is the Opposition shooting itself in the foot by disrupting Parliament",
+      "link": "https://www.indiatoday.in/india/story/parliament-disruption-lok-sabha-bills-why-opposition-needs-question-hour-debate-scrutiny-shashi-tharoor-2967988-2026-08-11?utm_source=rss",
+      "source": "India Today",
+      "exam": "Source: India Today · Auto-updated",
+      "id": 1010
+    },
+    {
+      "cat": "def",
+      "badge": "Defence",
+      "tc": "tgd",
       "date": "Aug 10, 2026",
-      "title": "Indian envoy's FCRA bill fact-check after US lawmaker flags concerns",
-      "sum": "Indian envoys FCRA bill factcheck after US lawmaker flags concerns",
-      "link": "https://www.indiatoday.in/india/story/fcra-amendment-bill-2026-indian-envoy-to-us-vinay-kwatra-clarifies-myths-after-us-lawmaker-concerns-2967430-2026-08-10?utm_source=rss",
+      "title": "Mamata Banerjee's convoy attacked: TMC's charge, BJP's defence",
+      "sum": "Mamata Banerjees convoy attacked TMCs charge BJPs defence",
+      "link": "https://www.indiatoday.in/india-today-insight/story/mamata-banerjees-convoy-attacked-tmcs-charge-bjps-defence-2967809-2026-08-10?utm_source=rss",
       "source": "India Today",
       "exam": "Source: India Today · Auto-updated",
-      "id": 1015
-    },
-    {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Aug 08, 2026",
-      "title": "Public services commission exams, gig workers' plight next on CJP agenda: Abhijeet Dipke",
-      "sum": "Public services commission exams gig workers plight next on CJP agenda Abhijeet Dipke",
-      "link": "https://www.indiatoday.in/india-today-insight/story/public-services-commission-exams-gig-workers-plight-next-on-cjp-agenda-abhijeet-dipke-2966195-2026-08-08?utm_source=rss",
-      "source": "India Today",
-      "exam": "Source: India Today · Auto-updated",
-      "id": 1016
+      "id": 1011
     }
   ]
 }
