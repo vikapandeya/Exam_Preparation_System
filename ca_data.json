@@ -1,16 +1,16 @@
 {
-  "updated": "2026-08-15",
-  "updated_time": "03:12 UTC",
-  "count": 22,
+  "updated": "2026-08-16",
+  "updated_time": "03:27 UTC",
+  "count": 19,
   "articles": [
     {
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 15, 2026",
-      "title": "Independence Day LIVE updates: PM Modi urges self-reliance, calls upon citizens to realise 'Viksit Bharat' by 2047",
-      "sum": "In a first, Vande Mataram rendered during 80th Independence Day celebrations at Red Fort",
-      "link": "https://www.thehindu.com/news/national/india-80th-independence-day-2026-live-updates-on-august-15-pm-modi-speech-red-fort/article71348349.ece",
+      "date": "Aug 16, 2026",
+      "title": "Why Kerala Government mulls a multi-agency probe into the failed bid to bring Messi and company to Kochi? | Explained",
+      "sum": "Chief Minister V.D. Satheesan says Sports Department’s preliminary inquiry into the failed bid to bring Messi to Kerala during the previous LDF government’s tenure revealed ‘very serious allegations’",
+      "link": "https://www.thehindu.com/news/national/kerala/why-kerala-government-mulls-a-multi-agency-probe-into-the-failed-bid-to-bring-messi-and-company-to-kochi-explained/article71350617.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1000
@@ -19,58 +19,58 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 15, 2026",
-      "title": "PM Modi greets people on Independence Day",
-      "sum": "Modi also paid tributes to the countless freedom fighters whose courage, sacrifice and unwavering commitment ensured the end of colonial rule",
-      "link": "https://www.thehindu.com/news/national/pm-modi-greets-people-on-independence-day/article71348355.ece",
+      "date": "Aug 16, 2026",
+      "title": "Who is Tukaram Mundhe, the IAS officer leading Maharashtra’s FDA crackdown?",
+      "sum": "IAS officer Tukaram Mundhe, known for his frequent transfers and tough administrative style, is once again in the spotlight for his crackdown on food and drug adulteration as Maharashtra’s FDA Commissioner",
+      "link": "https://www.thehindu.com/news/national/maharashtra/who-is-tukaram-mundhe-the-ias-officer-leading-maharashtras-fda-crackdown/article71349308.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1001
     },
     {
-      "cat": "def",
-      "badge": "Defence",
-      "tc": "tgd",
-      "date": "Aug 15, 2026",
-      "title": "Union Ministers call Rahul Gandhi’s remarks on PM Modi ‘undignified, undemocratic’",
-      "sum": "Defence Minister Rajnath Singh says Rahul’s comments, made at a Congress event, had been 'extremely low-level and condemnable’; Agriculture Minister Shivraj Singh Chouhan and Health Minister J.P. Nadda to condemn remarks",
-      "link": "https://www.thehindu.com/news/national/union-ministers-call-rahul-gandhis-remarks-on-pm-modi-undignified-undemocratic/article71346596.ece",
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Aug 16, 2026",
+      "title": "Don’t make statements that BJP can exploit, Akhilesh Yadav tells Samajwadi Party leaders",
+      "sum": "The party chief was reacting to the SP leader Shivpal Singh Yadav’s statement that Azam Khan would be the State’s Home Minister when their party comes to power",
+      "link": "https://www.thehindu.com/news/national/uttar-pradesh/dont-make-statements-that-bjp-can-exploit-akhilesh-yadav-tells-samajwadi-party-leaders/article71349960.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1002
     },
     {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Aug 15, 2026",
-      "title": "CJI criticises BCI’s interference in ‘dialogue’ between him and students",
-      "sum": "Supreme Court bars BCI from taking coercive action against NALSAR students, faculty, or administration and seeks affidavit; plea by NALSAR alumni says BCI letters create a chilling effect on the freedom of speech",
-      "link": "https://www.thehindu.com/news/national/supreme-court-condemns-bar-council-nalsar-enrolment-freeze-circulars-withdrawal-cji-surya-kant/article71344255.ece",
+      "cat": "sci",
+      "badge": "Science & Tech",
+      "tc": "tgs",
+      "date": "Aug 16, 2026",
+      "title": "U.P. CM Yogi Adityanath announces new ‘Youth Policy’ on Independence Day",
+      "sum": "The upcoming policy is likely to focus on skill development, employment generation, Artificial Intelligence and entrepreneurship, under a dedicated mechanism",
+      "link": "https://www.thehindu.com/news/national/uttar-pradesh/up-cm-yogi-adityanath-announces-new-youth-policy-on-independence-day/article71349820.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1003
     },
     {
-      "cat": "spo",
-      "badge": "Sports",
-      "tc": "tgsp",
-      "date": "Aug 15, 2026",
-      "title": "Deflating the wind in the willows",
-      "sum": "Kashmir’s famed ₹700-crore bat-making industry supports at least 50,000 livelihoods. Since 2021, its bats have made their way to cricket grounds around the world, with 47 international players using Kashmir willow bats in major tournaments. But a shortage of willow, climate chang...",
-      "link": "https://www.thehindu.com/news/national/jammu-and-kashmir/kashmirs-bat-making-industry-deflating-the-wind-in-the-willows/article71346986.ece",
+      "cat": "env",
+      "badge": "Environment",
+      "tc": "tgev",
+      "date": "Aug 16, 2026",
+      "title": "Taken by one of the big four: Snakebite at Maharashtra tribal school",
+      "sum": "A common krait bit six girls sleeping at a tribal school in Gadchiroli’s Japtalai village, resulting in the deaths of three due to venom. This report mainly highlights governance issues in Maharashtra’s forested areas",
+      "link": "https://www.thehindu.com/news/national/maharashtra/snakebite-at-maharashtra-gadchiroli-tribal-school/article71349371.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1004
     },
     {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Aug 15, 2026",
-      "title": "Welfare schemes and achievements must reach the people, says Uttar Pradesh Information Director",
-      "sum": "Welfare schemes and achievements must reach the people, says Uttar Pradesh Information Director",
-      "link": "https://www.thehindu.com/news/national/uttar-pradesh/welfare-schemes-and-achievements-must-reach-the-people-says-uttar-pradesh-information-director/article71347107.ece",
+      "cat": "sci",
+      "badge": "Science & Tech",
+      "tc": "tgs",
+      "date": "Aug 16, 2026",
+      "title": "Moon Base | India’s lunar future",
+      "sum": "NASA has invited ISRO to participate in its latest lunar programme, which seeks to build a human outpost near the Moon’s south pole, where sunlight is available for longer periods and permanently shadowed craters contain significant deposits of water ice",
+      "link": "https://www.thehindu.com/sci-tech/science/moon-base-indias-lunar-future/article71350559.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1005
@@ -79,22 +79,22 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 15, 2026",
-      "title": "Four arrested in Mumbai in connection with ₹30 crore Ponzi, multi-level marketing scheme",
-      "sum": "Police said the company was accepting illegal investments, even in the form of cash, promising continuous, fixed returns of 5-7% monthly, without obtaining any license/registration from the Reserve Bank of India or the Securities and Exchange Board of India",
-      "link": "https://www.thehindu.com/news/cities/mumbai/four-arrested-in-mumbai-in-connection-with-30-crore-ponzi-multi-level-marketing-scheme/article71347096.ece",
-      "source": "The Hindu",
-      "exam": "Source: The Hindu · Auto-updated",
+      "date": "Aug 16, 2026",
+      "title": "World shunning globalisation, need strong manufacturing base: PM Modi",
+      "sum": "World shunning globalisation, need strong manufacturing base: PM Modi",
+      "link": "https://timesofindia.indiatimes.com/india/world-shunning-globalisation-need-strong-manufacturing-base-pm-modi/articleshow/133269121.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
       "id": 1006
     },
     {
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 15, 2026",
-      "title": "‘Freedom fighters' dreams continue to inspire us’: PM Modi, Amit Shah, Kharge, Rajnath Singh mark 80th Independence Day",
-      "sum": "Prime Minister Modi and other leaders extended Independence Day greetings to citizens. They remembered freedom fighters and highlighted their visions for India's future. Modi emphasized progress and a developed nation powered by 140 crore Indians. Kharge expressed concerns over c...",
-      "link": "https://timesofindia.indiatimes.com/india/freedom-fighters-dreams-continue-to-inspire-us-pm-modi-amit-shah-kharge-rajnath-singh-mark-80th-independence-day/articleshow/133254131.cms",
+      "date": "Aug 16, 2026",
+      "title": "Go chemical-free to tap global agri market, says PM Modi",
+      "sum": "Go chemical-free to tap global agri market, says PM Modi",
+      "link": "https://timesofindia.indiatimes.com/india/go-chemical-free-to-tap-global-agri-market-says-pm-modi/articleshow/133268855.cms",
       "source": "Times of India",
       "exam": "Source: Times of India · Auto-updated",
       "id": 1007
@@ -103,10 +103,10 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 15, 2026",
-      "title": "‘Every heart is beating with rhythm of Vande Mataram’: PM Modi addresses nation on 80th I-Day - top quotes",
-      "sum": "‘Every heart is beating with rhythm of Vande Mataram’: PM Modi addresses nation on 80th I-Day - top quotes",
-      "link": "https://timesofindia.indiatimes.com/india/every-heart-is-beating-with-rhythm-of-vande-mataram-pm-modi-addresses-nation-on-80th-i-day-top-quotes/articleshow/133254087.cms",
+      "date": "Aug 16, 2026",
+      "title": "Armed Naxals gone, now identify & isolate 'dimagi Naxals': PM Modi on Independence Day",
+      "sum": "'Must Steer Our Youth Towards Developing India'",
+      "link": "https://timesofindia.indiatimes.com/india/armed-naxals-gone-now-identify-isolate-dimagi-naxals-pm-modi-on-independence-day/articleshow/133268744.cms",
       "source": "Times of India",
       "exam": "Source: Times of India · Auto-updated",
       "id": 1008
@@ -115,10 +115,10 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 15, 2026",
-      "title": "80th Independence Day: 'Vande Mataram' played for first time as PM Modi addresses nation",
-      "sum": "80th Independence Day: 'Vande Mataram' played for first time as PM Modi addresses nation",
-      "link": "https://timesofindia.indiatimes.com/india/80th-independence-day-vande-mataram-played-for-first-time-as-pm-modi-addresses-nation/articleshow/133254077.cms",
+      "date": "Aug 16, 2026",
+      "title": "Iran President Pezeshkian greets PM Modi on Independence Day, calls historic ties with India ‘valuable asset’",
+      "sum": "Iran President Pezeshkian greets PM Modi on Independence Day, calls historic ties with India ‘valuable asset’",
+      "link": "https://timesofindia.indiatimes.com/india/iran-president-pezeshkian-greets-pm-modi-on-independence-day-calls-historic-ties-with-india-valuable-asset/articleshow/133268622.cms",
       "source": "Times of India",
       "exam": "Source: Times of India · Auto-updated",
       "id": 1009
@@ -127,25 +127,13 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 15, 2026",
-      "title": "80th Independence Day: A throwback at PM Modi's signature Red Fort turbans",
-      "sum": "80th Independence Day: A throwback at PM Modi's signature Red Fort turbans",
-      "link": "https://timesofindia.indiatimes.com/india/80th-independence-day-a-throwback-to-pm-modis-signature-red-fort-turbans/articleshow/133254014.cms",
+      "date": "Aug 16, 2026",
+      "title": "'Go after the terrorists wherever they are': Ajit Doval reveals PM Modi's brief on Op Sindoor",
+      "sum": "'Go after the terrorists wherever they are': Ajit Doval reveals PM Modi's brief on Op Sindoor",
+      "link": "https://timesofindia.indiatimes.com/india/go-after-the-terrorists-wherever-they-are-ajit-doval-reveals-pm-modis-brief-on-op-sindoor/articleshow/133268549.cms",
       "source": "Times of India",
       "exam": "Source: Times of India · Auto-updated",
       "id": 1010
-    },
-    {
-      "cat": "awa",
-      "badge": "Awards",
-      "tc": "tgi",
-      "date": "Aug 15, 2026",
-      "title": "Anti-Red fighters bag bulk of police gallantry awards",
-      "sum": "Anti-Red fighters bag bulk of police gallantry awards",
-      "link": "https://timesofindia.indiatimes.com/india/anti-red-fighters-bag-bulk-of-police-gallantry-awards/articleshow/133253419.cms",
-      "source": "Times of India",
-      "exam": "Source: Times of India · Auto-updated",
-      "id": 1011
     },
     {
       "cat": "nat",
@@ -157,7 +145,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c74gdgly3g3o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1012
+      "id": 1011
     },
     {
       "cat": "nat",
@@ -169,7 +157,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c934wqpd74xo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1013
+      "id": 1012
     },
     {
       "cat": "spo",
@@ -181,7 +169,7 @@
       "link": "https://www.bbc.co.uk/news/articles/cq561z4z6qxo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1014
+      "id": 1013
     },
     {
       "cat": "nat",
@@ -193,7 +181,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c1512909pgpo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1015
+      "id": 1014
     },
     {
       "cat": "nat",
@@ -205,7 +193,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c0ejxe0q3q4o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1016
+      "id": 1015
     },
     {
       "cat": "spo",
@@ -217,6 +205,18 @@
       "link": "https://www.bbc.co.uk/news/articles/c2elpkg1l0jo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
+      "id": 1016
+    },
+    {
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Aug 16, 2026",
+      "title": "Iran President Pezeshkian greets PM Modi on I-Day, seeks deeper India ties",
+      "sum": "Iran President Pezeshkian greets PM Modi on IDay seeks deeper India ties",
+      "link": "https://www.indiatoday.in/world/story/india-iran-ties-deepen-as-pezeshkian-congratulates-modi-on-80th-independence-day-2972237-2026-08-16?utm_source=rss",
+      "source": "India Today",
+      "exam": "Source: India Today · Auto-updated",
       "id": 1017
     },
     {
@@ -224,48 +224,12 @@
       "badge": "National",
       "tc": "tgn",
       "date": "Aug 15, 2026",
-      "title": "PM Modi invokes 'Fragile Five' in Independence Day speech. Who were they?",
-      "sum": "PM Modi invokes Fragile Five in Independence Day speech Who were they",
-      "link": "https://www.indiatoday.in/india/story/pm-modi-independence-day-speech-india-fragile-five-meaning-explained-2971704-2026-08-15?utm_source=rss",
+      "title": "Why Andhra Pradesh's HR bill forms 95% of state's own revenue",
+      "sum": "Why Andhra Pradeshs HR bill forms of states own revenue",
+      "link": "https://www.indiatoday.in/india-today-insight/story/why-andhra-pradeshs-hr-bill-forms-95-of-states-own-revenue-2972118-2026-08-15?utm_source=rss",
       "source": "India Today",
       "exam": "Source: India Today · Auto-updated",
       "id": 1018
-    },
-    {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Aug 15, 2026",
-      "title": "N-plants, rare earths, gas exploration: PM Modi's big pitch for energy security",
-      "sum": "Nplants rare earths gas exploration PM Modis big pitch for energy security",
-      "link": "https://www.indiatoday.in/india/story/pm-modi-independence-day-speech-nuclear-power-energy-security-modi-oil-supply-solar-2971708-2026-08-15?utm_source=rss",
-      "source": "India Today",
-      "exam": "Source: India Today · Auto-updated",
-      "id": 1019
-    },
-    {
-      "cat": "spo",
-      "badge": "Sports",
-      "tc": "tgsp",
-      "date": "Aug 15, 2026",
-      "title": "IPS Nupur Prasad, who led Sushant Singh Rajput CBI probe, to get President's Medal",
-      "sum": "IPS Nupur Prasad who led Sushant Singh Rajput CBI probe to get Presidents Medal",
-      "link": "https://www.indiatoday.in/india/story/nupur-prasad-presidents-medal-sushant-singh-rajput-cbi-probe-ips-independence-day-2971655-2026-08-15?utm_source=rss",
-      "source": "India Today",
-      "exam": "Source: India Today · Auto-updated",
-      "id": 1020
-    },
-    {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Aug 14, 2026",
-      "title": "Why Rajasthan High Court has put its own premises on safety trial",
-      "sum": "Why Rajasthan High Court has put its own premises on safety trial",
-      "link": "https://www.indiatoday.in/india-today-insight/story/why-rajasthan-high-court-has-put-its-own-premises-on-safety-trial-2971408-2026-08-14?utm_source=rss",
-      "source": "India Today",
-      "exam": "Source: India Today · Auto-updated",
-      "id": 1021
     }
   ]
 }
