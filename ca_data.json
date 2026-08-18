@@ -1,16 +1,16 @@
 {
-  "updated": "2026-08-17",
-  "updated_time": "03:27 UTC",
-  "count": 12,
+  "updated": "2026-08-18",
+  "updated_time": "03:23 UTC",
+  "count": 19,
   "articles": [
     {
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 17, 2026",
-      "title": "Congress discussion about Vande Mataram unnecessary, says Union Minister",
-      "sum": "I am clear about my stand; there should be no controversy about Vande Mataram; it inspired the freedom struggle, said Union Minister H.D. Kumaraswamy",
-      "link": "https://www.thehindu.com/news/national/karnataka/congress-discussion-about-vande-mataram-unnecessary-says-union-minister/article71353577.ece",
+      "date": "Aug 18, 2026",
+      "title": "Miffed with no response from Soren’s government, students firm on August 20 gherao of CM’s residence",
+      "sum": "On the other hand, Jharkhand CID, probing the case of alleged irregularities in the examination, conducted raids at the office of JSSC and also questioned JSSC Secretary Sudhir Gupta",
+      "link": "https://www.thehindu.com/news/national/jharkhand/miffed-with-no-response-from-sorens-government-students-firm-on-august-20-gherao-of-cms-residence/article71357527.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1000
@@ -19,10 +19,10 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 17, 2026",
-      "title": "Kerala High Court reprimands State over its failure to collect fines for unauthorised flex boards, banners",
-      "sum": "Kerala High Court observed that the State was “losing valuable revenue” through non-compliance with its order to impose a fine of ₹5000 on each board and installation",
-      "link": "https://www.thehindu.com/news/national/kerala/kerala-high-court-reprimands-state-over-its-failure-to-collect-fines-for-unauthorised-flex-boards-banners/article71353477.ece",
+      "date": "Aug 18, 2026",
+      "title": "10 arrested in Pune-based fake college admission racket targeting parents",
+      "sum": "This cheating case was being run from two call centres in Pune, where they would contact victims, keep conversations and engage them until they could extract the maximum amount of money from the victims, said Datta Nalawade, Deputy Commissioner of Police",
+      "link": "https://www.thehindu.com/news/cities/mumbai/10-arrested-in-pune-based-fake-college-admission-racket-targeting-parents/article71357764.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1001
@@ -31,10 +31,10 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 17, 2026",
-      "title": "Five-member panel to hold talks with Haryana CM Over Jeevan Kundu murder",
-      "sum": "The mahapanchayat warned that the highways linking Hisar with Chandigarh and Delhi would be blocked indefinitely if the discussions with the Chief Minister failed to yield a satisfactory outcome",
-      "link": "https://www.thehindu.com/news/national/haryana/five-member-panel-to-hold-talks-with-haryana-cm-over-jeevan-kundu-murder/article71353382.ece",
+      "date": "Aug 18, 2026",
+      "title": "Floods hit 7.85 lakh people in 6 Odisha districts",
+      "sum": "Odisha CM Mohan Charan Majhi accompanied by Revenue and Disaster Management Minister Suresh Pujari, visited Jajpur district to make a spot assessment about flood response",
+      "link": "https://www.thehindu.com/news/national/odisha/floods-hit-785-lakh-people-in-6-odisha-districts/article71356782.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1002
@@ -43,13 +43,85 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 17, 2026",
-      "title": "How PM Modi has changed focus of Independence Day speeches",
-      "sum": "From Access To Aspiration, Problem To Potential",
-      "link": "https://timesofindia.indiatimes.com/india/how-pm-modi-has-changed-focus-of-independence-day-speeches/articleshow/133282201.cms",
+      "date": "Aug 18, 2026",
+      "title": "Delhi Court orders property attachment of Advocate Mehmood Pracha over unpaid fine",
+      "sum": "Advocate Mehmood Pracha did not pay a ₹6 lakh fine for seeking to have the Supreme Court’s 2019 Ayodhya verdict declared null and void",
+      "link": "https://www.thehindu.com/news/national/delhi-court-orders-property-attachment-of-advocate-mehmood-pracha-over-unpaid-fine/article71357159.ece",
+      "source": "The Hindu",
+      "exam": "Source: The Hindu · Auto-updated",
+      "id": 1003
+    },
+    {
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Aug 18, 2026",
+      "title": "Allahabad High Court criticises U.P. government for taking over ‘Sugriv Kila’ temple land for Ram temple development without paying dues",
+      "sum": "The conduct of the respondents-Authorities cannot be termed to be fair, proper or reasonable because of the simple reason that apparently the authorities have fooled the petitioner, said the Allahabad High Court",
+      "link": "https://www.thehindu.com/news/national/uttar-pradesh/allahabad-high-court-criticises-up-government-for-taking-over-sugriv-kila-temple-land-for-ram-temple-development-without-paying-dues/article71356460.ece",
+      "source": "The Hindu",
+      "exam": "Source: The Hindu · Auto-updated",
+      "id": 1004
+    },
+    {
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Aug 18, 2026",
+      "title": "'I apologise on his behalf': Tamil Nadu CM Vijay after minister's Karunanidhi reference",
+      "sum": "'I apologise on his behalf': Tamil Nadu CM Vijay after minister's Karunanidhi reference",
+      "link": "https://timesofindia.indiatimes.com/india/i-apologise-on-his-behalf-tamil-nadu-cm-vijay-after-ministers-karunanidhi-reference/articleshow/133310237.cms",
       "source": "Times of India",
       "exam": "Source: Times of India · Auto-updated",
-      "id": 1003
+      "id": 1005
+    },
+    {
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Aug 18, 2026",
+      "title": "Supreme Court bars CBI, ED from filing report on Rahul Gandhi's assets",
+      "sum": "The Supreme Court has stopped agencies from filing probe reports on Rahul Gandhi's assets. Agencies were directed by the Allahabad High Court to investigate allegations of illegal wealth. Senior advocate Kapil Sibal argued the High Court order was unknown to law. The Supreme Cour...",
+      "link": "https://timesofindia.indiatimes.com/india/supreme-court-bars-cbi-ed-from-filing-report-on-rahul-gandhis-assets/articleshow/133309295.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
+      "id": 1006
+    },
+    {
+      "cat": "spo",
+      "badge": "Sports",
+      "tc": "tgsp",
+      "date": "Aug 18, 2026",
+      "title": "Ram Madhav, Biplab Deb, Smriti in BJP’s national team",
+      "sum": "BJP chief Nitin Nabin announced a new team of national office-bearers on Monday. The party brought in experienced individuals and retained some successful office-bearers. Union minister Piyush Goyal returned as treasurer in the reshuffled team. This overhaul includes many new fac...",
+      "link": "https://timesofindia.indiatimes.com/india/ram-madhav-biplab-deb-smriti-in-bjps-national-team/articleshow/133309177.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
+      "id": 1007
+    },
+    {
+      "cat": "int",
+      "badge": "International",
+      "tc": "tgi",
+      "date": "Aug 18, 2026",
+      "title": "Only talks can resolve issues, hope Bangladesh PM visits India soon: Trivedi",
+      "sum": "Indian High Commissioner Dinesh Trivedi stressed dialogue for resolving bilateral issues between India and Bangladesh. He expressed hope that Prime Minister Tarique Rahman's visit to India should occur much sooner. Bangladesh government attached tough conditions for New Delhi pri...",
+      "link": "https://timesofindia.indiatimes.com/india/only-talks-can-resolve-issues-hope-bangladesh-pm-visits-india-soon-trivedi/articleshow/133309194.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
+      "id": 1008
+    },
+    {
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Aug 18, 2026",
+      "title": "‘Does Shanti Act put curbs on compensation by courts?’",
+      "sum": "‘Does Shanti Act put curbs on compensation by courts?’",
+      "link": "https://timesofindia.indiatimes.com/india/does-shanti-act-put-curbs-on-compensation-by-courts/articleshow/133309226.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
+      "id": 1009
     },
     {
       "cat": "sci",
@@ -61,7 +133,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c8xnwqe00v1o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1004
+      "id": 1010
     },
     {
       "cat": "nat",
@@ -73,7 +145,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c74gdgly3g3o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1005
+      "id": 1011
     },
     {
       "cat": "nat",
@@ -85,7 +157,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c934wqpd74xo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1006
+      "id": 1012
     },
     {
       "cat": "spo",
@@ -97,7 +169,7 @@
       "link": "https://www.bbc.co.uk/news/articles/cq561z4z6qxo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1007
+      "id": 1013
     },
     {
       "cat": "nat",
@@ -109,7 +181,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c1512909pgpo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1008
+      "id": 1014
     },
     {
       "cat": "nat",
@@ -121,7 +193,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c0ejxe0q3q4o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1009
+      "id": 1015
     },
     {
       "cat": "spo",
@@ -133,19 +205,31 @@
       "link": "https://www.bbc.co.uk/news/articles/c2elpkg1l0jo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1010
+      "id": 1016
     },
     {
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 15, 2026",
-      "title": "Why Andhra Pradesh's HR bill forms 95% of state's own revenue",
-      "sum": "Why Andhra Pradeshs HR bill forms of states own revenue",
-      "link": "https://www.indiatoday.in/india-today-insight/story/why-andhra-pradeshs-hr-bill-forms-95-of-states-own-revenue-2972118-2026-08-15?utm_source=rss",
+      "date": "Aug 17, 2026",
+      "title": "I apologise on his behalf: CM Vijay after minister names Karunanidhi without title",
+      "sum": "I apologise on his behalf CM Vijay after minister names Karunanidhi without title",
+      "link": "https://www.indiatoday.in/india/tamil-nadu/story/karunanidhi-row-tamil-nadu-cm-vijay-apologises-in-assembly-after-dmk-protest-ptag-2973385-2026-08-17?utm_source=rss",
       "source": "India Today",
       "exam": "Source: India Today · Auto-updated",
-      "id": 1011
+      "id": 1017
+    },
+    {
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Aug 17, 2026",
+      "title": "Rajasthan risks a nutrition crisis as school milk scheme skips kids",
+      "sum": "Rajasthan risks a nutrition crisis as school milk scheme skips kids",
+      "link": "https://www.indiatoday.in/india-today-insight/story/rajasthan-risks-a-nutrition-crisis-as-school-milk-scheme-skips-kids-2973231-2026-08-17?utm_source=rss",
+      "source": "India Today",
+      "exam": "Source: India Today · Auto-updated",
+      "id": 1018
     }
   ]
 }
