@@ -1,103 +1,55 @@
 {
-  "updated": "2026-08-21",
-  "updated_time": "03:29 UTC",
-  "count": 15,
+  "updated": "2026-08-22",
+  "updated_time": "03:21 UTC",
+  "count": 11,
   "articles": [
     {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Aug 21, 2026",
-      "title": "Local body polls announced in Rajasthan; Congress launches panchayat task force campaign",
-      "sum": "The model code of conduct came into force in all 309 urban local bodies with the declaration of elections.",
-      "link": "https://www.thehindu.com/news/national/rajasthan/local-body-polls-announced-in-rajasthan-congress-launches-panchayat-task-force-campaign/article71365559.ece",
+      "cat": "eco",
+      "badge": "Economy",
+      "tc": "tge",
+      "date": "Aug 22, 2026",
+      "title": "Uttar Pradesh holds dairy conclaves to boost rural economy, women’s empowerment",
+      "sum": "Dhanalakshmi K., Dairy Commissioner of Uttar Pradesh, said that members of milk unions, milk-producing farmers, and self-help groups are encouraged to take help from welfare measures.",
+      "link": "https://www.thehindu.com/news/national/uttar-pradesh/uttar-pradesh-holds-dairy-conclaves-to-boost-rural-economy-womens-empowerment/article71374831.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1000
     },
     {
-      "cat": "env",
-      "badge": "Environment",
-      "tc": "tgev",
-      "date": "Aug 21, 2026",
-      "title": "Black dust chokes lives in Visakhapatnam",
-      "sum": "For residents of the One Town area, pollution is no longer an occasional problem but an everyday reality, with black dust settling on homes, vehicles and streets and concerns mounting over its impact on health. From the port-adjoining lanes of the Old City to parts of Gajuwaka, r...",
-      "link": "https://www.thehindu.com/news/cities/Visakhapatnam/black-dust-chokes-lives-in-visakhapatnam/article71370758.ece",
+      "cat": "def",
+      "badge": "Defence",
+      "tc": "tgd",
+      "date": "Aug 22, 2026",
+      "title": "Cong. stance on Vande Mataram a very serious issue, says Rajnath",
+      "sum": "Any law passed by Parliament is binding on every individual, says Defence Minister",
+      "link": "https://www.thehindu.com/news/national/cong-stance-on-vande-mataram-a-very-serious-issue-says-rajnath/article71374603.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1001
     },
     {
-      "cat": "spo",
-      "badge": "Sports",
-      "tc": "tgsp",
-      "date": "Aug 21, 2026",
-      "title": "In Pulwama, cricket heals wounds of the past",
-      "sum": "Nightlife has been a dream for the turmoil-hit district. However, cricket in the past two years has acted as a healing process for locals.",
-      "link": "https://www.thehindu.com/news/national/jammu-and-kashmir/in-pulwama-cricket-heals-wounds-of-the-past/article71370485.ece",
-      "source": "The Hindu",
-      "exam": "Source: The Hindu · Auto-updated",
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Aug 22, 2026",
+      "title": "Gen Alpha protests mirror government report: Big gaps in school education",
+      "sum": "Issues Neither Unique To Any Region, Nor Universal",
+      "link": "https://timesofindia.indiatimes.com/india/gen-alpha-protests-mirror-government-report-big-gaps-in-school-education/articleshow/133413500.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
       "id": 1002
     },
     {
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 21, 2026",
-      "title": "Congress MLAs boycott first day’s proceedings at Rajasthan Assembly monsoon session",
-      "sum": "The Congress MLAs staged a dharna outside the Assembly, protesting school entry restrictions and demanding Education Minister Madan Dilawar’s resignation",
-      "link": "https://www.thehindu.com/news/national/rajasthan/congress-mlas-boycott-first-days-proceedings-at-rajasthan-assembly-monsoon-session/article71369572.ece",
-      "source": "The Hindu",
-      "exam": "Source: The Hindu · Auto-updated",
+      "date": "Aug 22, 2026",
+      "title": "PLP to PLI, reform express at full speed, says PM Modi",
+      "sum": "'If India's Future Is Secure, World's Is Too'",
+      "link": "https://timesofindia.indiatimes.com/india/plp-to-pli-reform-express-at-full-speed-says-pm-modi/articleshow/133413321.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
       "id": 1003
-    },
-    {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Aug 21, 2026",
-      "title": "Tharoor calls new Parliament building 'soulless conference centre', lacking in intimacy",
-      "sum": "There is a sort of distancing, which almost seems to be a metaphor for the polarisation of our politics, says Congress MP Shashi Tharoor",
-      "link": "https://www.thehindu.com/news/national/tharoor-calls-new-parliament-building-soulless-conference-centre-lacking-in-intimacy/article71372004.ece",
-      "source": "The Hindu",
-      "exam": "Source: The Hindu · Auto-updated",
-      "id": 1004
-    },
-    {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Aug 21, 2026",
-      "title": "BJP MLA Jai Devi Kaushal alleges caste discrimination at Uttar Pradesh temple event",
-      "sum": "The MLA urged Prime Minister Narendra Modi and Uttar Pradesh Chief Minister Yogi Adityanath to take notice of the incident.",
-      "link": "https://www.thehindu.com/news/national/uttar-pradesh/bjp-mla-jai-devi-kaushal-alleges-caste-discrimination-at-uttar-pradesh-temple-event/article71370237.ece",
-      "source": "The Hindu",
-      "exam": "Source: The Hindu · Auto-updated",
-      "id": 1005
-    },
-    {
-      "cat": "eco",
-      "badge": "Economy",
-      "tc": "tge",
-      "date": "Aug 21, 2026",
-      "title": "SC faults UP Gangsters Act, says it is prone to misuse",
-      "sum": "Questions Gang Charts, Prolonged Detention Without Defined Offence",
-      "link": "https://timesofindia.indiatimes.com/india/sc-faults-up-gangsters-act-says-it-is-prone-to-misuse/articleshow/133390450.cms",
-      "source": "Times of India",
-      "exam": "Source: Times of India · Auto-updated",
-      "id": 1006
-    },
-    {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Aug 21, 2026",
-      "title": "Tit for tat: India removes Pak high commission queue liners",
-      "sum": "Tit for tat: India removes Pak high commission queue liners",
-      "link": "https://timesofindia.indiatimes.com/india/tit-for-tat-india-removes-pak-high-commission-queue-liners/articleshow/133389697.cms",
-      "source": "Times of India",
-      "exam": "Source: Times of India · Auto-updated",
-      "id": 1007
     },
     {
       "cat": "nat",
@@ -109,7 +61,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c07r3ylykn8o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1008
+      "id": 1004
     },
     {
       "cat": "env",
@@ -121,7 +73,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c0ej24qd3qpo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1009
+      "id": 1005
     },
     {
       "cat": "sci",
@@ -133,7 +85,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c8xnwqe00v1o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1010
+      "id": 1006
     },
     {
       "cat": "nat",
@@ -145,7 +97,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c74gdgly3g3o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1011
+      "id": 1007
     },
     {
       "cat": "nat",
@@ -157,31 +109,31 @@
       "link": "https://www.bbc.co.uk/news/articles/c934wqpd74xo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1012
+      "id": 1008
     },
     {
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 20, 2026",
-      "title": "TCS starts putting monitoring tool on laptops to track employees, report says",
-      "sum": "TCS starts putting monitoring tool on laptops to track employees report says",
-      "link": "https://www.indiatoday.in/technology/news/story/tcs-starts-putting-monitoring-tool-on-laptops-to-track-employees-report-says-2975981-2026-08-20?utm_source=rss",
+      "date": "Aug 22, 2026",
+      "title": "Quota only for poor, repeal of SC/ST Act: What Jantar Mantar protesters want",
+      "sum": "Quota only for poor repeal of SCST Act What Jantar Mantar protesters want",
+      "link": "https://www.indiatoday.in/india/story/reservation-protest-jantar-mantar-economic-quota-basis-repeal-sc-st-act-2977152-2026-08-22?utm_source=rss",
       "source": "India Today",
       "exam": "Source: India Today · Auto-updated",
-      "id": 1013
+      "id": 1009
     },
     {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Aug 20, 2026",
-      "title": "Dogs get better facilities than students: Dipke seeks Maharashtra minister's exit",
-      "sum": "Dogs get better facilities than students Dipke seeks Maharashtra ministers exit",
-      "link": "https://www.indiatoday.in/india/story/maharashtra-government-schools-crisis-dipke-seeks-dada-bhuse-resignation-ptag-2975609-2026-08-20?utm_source=rss",
+      "cat": "eco",
+      "badge": "Economy",
+      "tc": "tge",
+      "date": "Aug 21, 2026",
+      "title": "Why RBI ended its foreign currency swap scheme early",
+      "sum": "Why RBI ended its foreign currency swap scheme early",
+      "link": "https://www.indiatoday.in/india-today-insight/story/why-rbi-ended-its-foreign-currency-swap-scheme-early-2976831-2026-08-21?utm_source=rss",
       "source": "India Today",
       "exam": "Source: India Today · Auto-updated",
-      "id": 1014
+      "id": 1010
     }
   ]
 }
