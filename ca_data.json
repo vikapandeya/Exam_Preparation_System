@@ -1,28 +1,28 @@
 {
-  "updated": "2026-08-22",
-  "updated_time": "03:21 UTC",
-  "count": 11,
+  "updated": "2026-08-23",
+  "updated_time": "03:29 UTC",
+  "count": 12,
   "articles": [
     {
-      "cat": "eco",
-      "badge": "Economy",
-      "tc": "tge",
-      "date": "Aug 22, 2026",
-      "title": "Uttar Pradesh holds dairy conclaves to boost rural economy, women’s empowerment",
-      "sum": "Dhanalakshmi K., Dairy Commissioner of Uttar Pradesh, said that members of milk unions, milk-producing farmers, and self-help groups are encouraged to take help from welfare measures.",
-      "link": "https://www.thehindu.com/news/national/uttar-pradesh/uttar-pradesh-holds-dairy-conclaves-to-boost-rural-economy-womens-empowerment/article71374831.ece",
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Aug 23, 2026",
+      "title": "News in Frames | Toxic water runs deep",
+      "sum": "Unchecked industrial waste pileup has affected at least three villages in Uttar Pradesh, where yellow-coloured groundwater and patches of yellow-green topsoil — indicators of chromium contamination — have been reported in several areas",
+      "link": "https://www.thehindu.com/news/national/uttar-pradesh/news-in-frames-toxic-water-runs-deep/article71380059.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1000
     },
     {
-      "cat": "def",
-      "badge": "Defence",
-      "tc": "tgd",
-      "date": "Aug 22, 2026",
-      "title": "Cong. stance on Vande Mataram a very serious issue, says Rajnath",
-      "sum": "Any law passed by Parliament is binding on every individual, says Defence Minister",
-      "link": "https://www.thehindu.com/news/national/cong-stance-on-vande-mataram-a-very-serious-issue-says-rajnath/article71374603.ece",
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Aug 23, 2026",
+      "title": "FIR registered against Abhijeet Dipke for 'entering government school without permission, threatening teachers'",
+      "sum": "CJP founder Abhijeet Dipke has been visiting schools in central Maharashtra's Latur district and highlighting their problems as part of the CJP's ongoing 'School Thik Karo' campaign",
+      "link": "https://www.thehindu.com/news/national/fir-registered-against-abhijeet-dipke-for-entering-government-school-without-permission-threatening-teachers/article71378705.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1001
@@ -31,25 +31,61 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 22, 2026",
-      "title": "Gen Alpha protests mirror government report: Big gaps in school education",
-      "sum": "Issues Neither Unique To Any Region, Nor Universal",
-      "link": "https://timesofindia.indiatimes.com/india/gen-alpha-protests-mirror-government-report-big-gaps-in-school-education/articleshow/133413500.cms",
-      "source": "Times of India",
-      "exam": "Source: Times of India · Auto-updated",
+      "date": "Aug 23, 2026",
+      "title": "U.P. Deputy CM Brajesh Pathak meets reservation reform movement agitators, assures dialogue with Union Ministers",
+      "sum": "Other key members of the reservation reform movement distanced themselves from the meeting, adding that the movement is very much on, and it will continue until the government speak to representatives directly",
+      "link": "https://www.thehindu.com/news/national/uttar-pradesh/up-deputy-cm-brajesh-pathak-meets-reservation-reform-movement-agitators-assures-dialogue-with-union-ministers/article71378491.ece",
+      "source": "The Hindu",
+      "exam": "Source: The Hindu · Auto-updated",
       "id": 1002
     },
     {
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 22, 2026",
-      "title": "PLP to PLI, reform express at full speed, says PM Modi",
-      "sum": "'If India's Future Is Secure, World's Is Too'",
-      "link": "https://timesofindia.indiatimes.com/india/plp-to-pli-reform-express-at-full-speed-says-pm-modi/articleshow/133413321.cms",
+      "date": "Aug 23, 2026",
+      "title": "Visit families affected by Ken-Betwa project, hear their grievances: M.P. CM tells officials",
+      "sum": "Chief Minister Yadav directed the Panna and Chhatarpur district administrations to ensure that officials visit every household in the affected villages to understand the actual situation and problems of the families",
+      "link": "https://www.thehindu.com/news/national/madhya-pradesh/visit-families-affected-by-ken-betwa-project-hear-their-grievances-mp-cm-tells-officials/article71378282.ece",
+      "source": "The Hindu",
+      "exam": "Source: The Hindu · Auto-updated",
+      "id": 1003
+    },
+    {
+      "cat": "env",
+      "badge": "Environment",
+      "tc": "tgev",
+      "date": "Aug 23, 2026",
+      "title": "Sowing the seeds of a solar power intervention",
+      "sum": "India’s emerging agrivoltaics model enables farmers to grow crops beneath solar panels, offering a way to generate electricity while diversifying income. Vanita Bhatnagar speaks to farmers and agri-researchers to find out how high upfront costs, financing constraints, and uneven ...",
+      "link": "https://www.thehindu.com/news/national/rajasthan/sowing-the-seeds-of-a-solar-power-intervention/article71378860.ece",
+      "source": "The Hindu",
+      "exam": "Source: The Hindu · Auto-updated",
+      "id": 1004
+    },
+    {
+      "cat": "eco",
+      "badge": "Economy",
+      "tc": "tge",
+      "date": "Aug 23, 2026",
+      "title": "Medical device makers flag new sterilisation labelling rule",
+      "sum": "New government rules require medical device firms to print outsourced sterilisation licence numbers. This change, effective six months after August 14, 2026, faces industry opposition. Manufacturers fear increased compliance burdens and potential export delays. The Association of...",
+      "link": "https://timesofindia.indiatimes.com/india/medical-device-makers-flag-new-sterilisation-labelling-rule/articleshow/133433651.cms",
       "source": "Times of India",
       "exam": "Source: Times of India · Auto-updated",
-      "id": 1003
+      "id": 1005
+    },
+    {
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Aug 23, 2026",
+      "title": "Cold medicines for under-4s face curbs over safety concerns",
+      "sum": "The Centre has restricted combination cold medicines for young children. Fixed-dose combinations of chlorpheniramine maleate and phenylephrine hydrochloride are now banned. These combinations pose risks and safer alternatives are available for children. Manufacturers must now pro...",
+      "link": "https://timesofindia.indiatimes.com/india/cold-medicines-for-under-4s-face-curbs-over-safety-concerns/articleshow/133433621.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
+      "id": 1006
     },
     {
       "cat": "nat",
@@ -61,7 +97,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c07r3ylykn8o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1004
+      "id": 1007
     },
     {
       "cat": "env",
@@ -73,7 +109,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c0ej24qd3qpo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1005
+      "id": 1008
     },
     {
       "cat": "sci",
@@ -85,7 +121,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c8xnwqe00v1o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1006
+      "id": 1009
     },
     {
       "cat": "nat",
@@ -97,7 +133,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c74gdgly3g3o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1007
+      "id": 1010
     },
     {
       "cat": "nat",
@@ -109,31 +145,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c934wqpd74xo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1008
-    },
-    {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Aug 22, 2026",
-      "title": "Quota only for poor, repeal of SC/ST Act: What Jantar Mantar protesters want",
-      "sum": "Quota only for poor repeal of SCST Act What Jantar Mantar protesters want",
-      "link": "https://www.indiatoday.in/india/story/reservation-protest-jantar-mantar-economic-quota-basis-repeal-sc-st-act-2977152-2026-08-22?utm_source=rss",
-      "source": "India Today",
-      "exam": "Source: India Today · Auto-updated",
-      "id": 1009
-    },
-    {
-      "cat": "eco",
-      "badge": "Economy",
-      "tc": "tge",
-      "date": "Aug 21, 2026",
-      "title": "Why RBI ended its foreign currency swap scheme early",
-      "sum": "Why RBI ended its foreign currency swap scheme early",
-      "link": "https://www.indiatoday.in/india-today-insight/story/why-rbi-ended-its-foreign-currency-swap-scheme-early-2976831-2026-08-21?utm_source=rss",
-      "source": "India Today",
-      "exam": "Source: India Today · Auto-updated",
-      "id": 1010
+      "id": 1011
     }
   ]
 }
