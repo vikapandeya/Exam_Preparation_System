@@ -1,16 +1,16 @@
 {
-  "updated": "2026-08-23",
-  "updated_time": "03:29 UTC",
+  "updated": "2026-08-24",
+  "updated_time": "03:31 UTC",
   "count": 12,
   "articles": [
     {
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 23, 2026",
-      "title": "News in Frames | Toxic water runs deep",
-      "sum": "Unchecked industrial waste pileup has affected at least three villages in Uttar Pradesh, where yellow-coloured groundwater and patches of yellow-green topsoil — indicators of chromium contamination — have been reported in several areas",
-      "link": "https://www.thehindu.com/news/national/uttar-pradesh/news-in-frames-toxic-water-runs-deep/article71380059.ece",
+      "date": "Aug 24, 2026",
+      "title": "Telangana auto drivers call off strike after government assures welfare board, fare hike",
+      "sum": "The Joint Action Committee (JAC) of Auto, Cab and School Van Drivers’ Unions had announced an indefinite strike from Monday, August 24 over a 14-point charter of demands.",
+      "link": "https://www.thehindu.com/news/national/telangana/telangana-auto-drivers-call-off-strike-after-government-assures-welfare-board-fare-hike/article71381700.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1000
@@ -19,10 +19,10 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 23, 2026",
-      "title": "FIR registered against Abhijeet Dipke for 'entering government school without permission, threatening teachers'",
-      "sum": "CJP founder Abhijeet Dipke has been visiting schools in central Maharashtra's Latur district and highlighting their problems as part of the CJP's ongoing 'School Thik Karo' campaign",
-      "link": "https://www.thehindu.com/news/national/fir-registered-against-abhijeet-dipke-for-entering-government-school-without-permission-threatening-teachers/article71378705.ece",
+      "date": "Aug 24, 2026",
+      "title": "Neha Bora slams Congress government in Karnataka over FIRs against students seeking release of Umar Khalid, Sharjeel Imam",
+      "sum": "AISA chief Neha Bora’s criticism was directed at the Congress government, which, she argued, had extended solidarity to student protests at Jantar Mantar in Delhi against Union Education Minister Dharmendra Pradhan, but filed FIRs against students in Karnataka",
+      "link": "https://www.thehindu.com/news/national/karnataka/aisa-national-president-neha-slams-congress-govt-in-karnataka-over-firs-against-students-seeking-release-of-umar-khalid-sharjeel-imam/article71381886.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1001
@@ -31,10 +31,10 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 23, 2026",
-      "title": "U.P. Deputy CM Brajesh Pathak meets reservation reform movement agitators, assures dialogue with Union Ministers",
-      "sum": "Other key members of the reservation reform movement distanced themselves from the meeting, adding that the movement is very much on, and it will continue until the government speak to representatives directly",
-      "link": "https://www.thehindu.com/news/national/uttar-pradesh/up-deputy-cm-brajesh-pathak-meets-reservation-reform-movement-agitators-assures-dialogue-with-union-ministers/article71378491.ece",
+      "date": "Aug 24, 2026",
+      "title": "Adani calls on Karnataka CM, sparks political speculation",
+      "sum": "Government sources said that the meeting was unscheduled, and that Mr. Adani, who was attending a private function in Bengaluru South was on his way to the airport, when he dropped in at the Chief Minister’s residence",
+      "link": "https://www.thehindu.com/news/national/karnataka/adani-calls-on-karnataka-cm-sparks-political-speculation/article71381040.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1002
@@ -43,49 +43,37 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 23, 2026",
-      "title": "Visit families affected by Ken-Betwa project, hear their grievances: M.P. CM tells officials",
-      "sum": "Chief Minister Yadav directed the Panna and Chhatarpur district administrations to ensure that officials visit every household in the affected villages to understand the actual situation and problems of the families",
-      "link": "https://www.thehindu.com/news/national/madhya-pradesh/visit-families-affected-by-ken-betwa-project-hear-their-grievances-mp-cm-tells-officials/article71378282.ece",
-      "source": "The Hindu",
-      "exam": "Source: The Hindu · Auto-updated",
+      "date": "Aug 24, 2026",
+      "title": "Parliament monsoon session yet to be prorogued, BJP, Congress face off over women’s bill",
+      "sum": "Parliament monsoon session yet to be prorogued, BJP, Congress face off over women’s bill",
+      "link": "https://timesofindia.indiatimes.com/india/monsoon-session-yet-to-be-prorogued-bjp-congress-face-off-over-womens-bill/articleshow/133448409.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
       "id": 1003
     },
     {
-      "cat": "env",
-      "badge": "Environment",
-      "tc": "tgev",
-      "date": "Aug 23, 2026",
-      "title": "Sowing the seeds of a solar power intervention",
-      "sum": "India’s emerging agrivoltaics model enables farmers to grow crops beneath solar panels, offering a way to generate electricity while diversifying income. Vanita Bhatnagar speaks to farmers and agri-researchers to find out how high upfront costs, financing constraints, and uneven ...",
-      "link": "https://www.thehindu.com/news/national/rajasthan/sowing-the-seeds-of-a-solar-power-intervention/article71378860.ece",
-      "source": "The Hindu",
-      "exam": "Source: The Hindu · Auto-updated",
+      "cat": "sci",
+      "badge": "Science & Tech",
+      "tc": "tgs",
+      "date": "Aug 24, 2026",
+      "title": "On National Space Day, PM Modi hails Gen Z for building new tech; Isro chief says plan to launch 8 vehicle, 12 satellite missions",
+      "sum": "On National Space Day, PM Modi hails Gen Z for building new tech; Isro chief says plan to launch 8 vehicle, 12 satellite missions",
+      "link": "https://timesofindia.indiatimes.com/india/on-national-space-day-pm-modi-hails-gen-z-for-building-new-tech-isro-chief-says-plan-to-launch-8-vehicle-12-satellite-missions/articleshow/133446253.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
       "id": 1004
     },
     {
-      "cat": "eco",
-      "badge": "Economy",
-      "tc": "tge",
-      "date": "Aug 23, 2026",
-      "title": "Medical device makers flag new sterilisation labelling rule",
-      "sum": "New government rules require medical device firms to print outsourced sterilisation licence numbers. This change, effective six months after August 14, 2026, faces industry opposition. Manufacturers fear increased compliance burdens and potential export delays. The Association of...",
-      "link": "https://timesofindia.indiatimes.com/india/medical-device-makers-flag-new-sterilisation-labelling-rule/articleshow/133433651.cms",
+      "cat": "sci",
+      "badge": "Science & Tech",
+      "tc": "tgs",
+      "date": "Aug 24, 2026",
+      "title": "India’s satellite launch cost 4x US, says Cambridge study; space dept source contradicts report",
+      "sum": "India’s satellite launch cost 4x US, says Cambridge study; space dept source contradicts report",
+      "link": "https://timesofindia.indiatimes.com/india/indias-satellite-launch-cost-4x-us-says-cambridge-study-space-dept-source-contradicts-report/articleshow/133446083.cms",
       "source": "Times of India",
       "exam": "Source: Times of India · Auto-updated",
       "id": 1005
-    },
-    {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Aug 23, 2026",
-      "title": "Cold medicines for under-4s face curbs over safety concerns",
-      "sum": "The Centre has restricted combination cold medicines for young children. Fixed-dose combinations of chlorpheniramine maleate and phenylephrine hydrochloride are now banned. These combinations pose risks and safer alternatives are available for children. Manufacturers must now pro...",
-      "link": "https://timesofindia.indiatimes.com/india/cold-medicines-for-under-4s-face-curbs-over-safety-concerns/articleshow/133433621.cms",
-      "source": "Times of India",
-      "exam": "Source: Times of India · Auto-updated",
-      "id": 1006
     },
     {
       "cat": "nat",
@@ -97,7 +85,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c07r3ylykn8o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1007
+      "id": 1006
     },
     {
       "cat": "env",
@@ -109,7 +97,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c0ej24qd3qpo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1008
+      "id": 1007
     },
     {
       "cat": "sci",
@@ -121,7 +109,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c8xnwqe00v1o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1009
+      "id": 1008
     },
     {
       "cat": "nat",
@@ -133,18 +121,30 @@
       "link": "https://www.bbc.co.uk/news/articles/c74gdgly3g3o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1010
+      "id": 1009
     },
     {
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 14, 2026",
-      "title": "Indian solar mission's new findings throw light on enduring Sun mysteries",
-      "sum": "Why is the Sun's corona millions of degrees hotter than its surface? And how does it maintain its inexplicably high temperature?",
-      "link": "https://www.bbc.co.uk/news/articles/c934wqpd74xo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC India",
-      "exam": "Source: BBC India · Auto-updated",
+      "date": "Aug 24, 2026",
+      "title": "India wanted no questions at PM-Trump presser, US President forgot it: US envoy",
+      "sum": "India wanted no questions at PMTrump presser US President forgot it US envoy",
+      "link": "https://www.indiatoday.in/india/story/pm-modi-donals-trump-g7-meeting-sergio-gor-says-india-wanted-media-present-but-no-questions-press-conference-2978255-2026-08-24?utm_source=rss",
+      "source": "India Today",
+      "exam": "Source: India Today · Auto-updated",
+      "id": 1010
+    },
+    {
+      "cat": "spo",
+      "badge": "Sports",
+      "tc": "tgsp",
+      "date": "Aug 24, 2026",
+      "title": "India and Pakistan can high-five in hockey. Why can't cricket shake hands?",
+      "sum": "India and Pakistan can highfive in hockey Why cant cricket shake hands",
+      "link": "https://www.indiatoday.in/sports/hockey/story/india-pakistan-hockey-world-cup-high-fives-cricket-handshake-debate-2978291-2026-08-24?utm_source=rss",
+      "source": "India Today",
+      "exam": "Source: India Today · Auto-updated",
       "id": 1011
     }
   ]
