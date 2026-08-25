@@ -1,16 +1,16 @@
 {
-  "updated": "2026-08-24",
-  "updated_time": "03:31 UTC",
-  "count": 12,
+  "updated": "2026-08-25",
+  "updated_time": "03:26 UTC",
+  "count": 7,
   "articles": [
     {
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 24, 2026",
-      "title": "Telangana auto drivers call off strike after government assures welfare board, fare hike",
-      "sum": "The Joint Action Committee (JAC) of Auto, Cab and School Van Drivers’ Unions had announced an indefinite strike from Monday, August 24 over a 14-point charter of demands.",
-      "link": "https://www.thehindu.com/news/national/telangana/telangana-auto-drivers-call-off-strike-after-government-assures-welfare-board-fare-hike/article71381700.ece",
+      "date": "Aug 25, 2026",
+      "title": "Family issues, stress account for nearly one-third of child missing cases in first five months of this year in Keralam",
+      "sum": "932 children were reported missing between January and May 2026 in Keralam, according to the Women and Child Development department",
+      "link": "https://www.thehindu.com/news/national/kerala/family-issues-stress-account-for-nearly-one-third-of-child-missing-cases-in-first-five-months-of-this-year-in-keralam/article71385431.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1000
@@ -19,22 +19,22 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 24, 2026",
-      "title": "Neha Bora slams Congress government in Karnataka over FIRs against students seeking release of Umar Khalid, Sharjeel Imam",
-      "sum": "AISA chief Neha Bora’s criticism was directed at the Congress government, which, she argued, had extended solidarity to student protests at Jantar Mantar in Delhi against Union Education Minister Dharmendra Pradhan, but filed FIRs against students in Karnataka",
-      "link": "https://www.thehindu.com/news/national/karnataka/aisa-national-president-neha-slams-congress-govt-in-karnataka-over-firs-against-students-seeking-release-of-umar-khalid-sharjeel-imam/article71381886.ece",
+      "date": "Aug 25, 2026",
+      "title": "Manipur awaits Delhi decision on Census as Meitei, Naga groups demand NRC first",
+      "sum": "Govt. sources say a review of the situation is likely to be held in the coming days; Manipur High Court to hear PIL filed by Kangleipak Students Association on Tuesday",
+      "link": "https://www.thehindu.com/news/national/manipur/manipur-awaits-delhi-decision-on-census-as-meitei-naga-groups-demand-nrc-first/article71385744.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1001
     },
     {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Aug 24, 2026",
-      "title": "Adani calls on Karnataka CM, sparks political speculation",
-      "sum": "Government sources said that the meeting was unscheduled, and that Mr. Adani, who was attending a private function in Bengaluru South was on his way to the airport, when he dropped in at the Chief Minister’s residence",
-      "link": "https://www.thehindu.com/news/national/karnataka/adani-calls-on-karnataka-cm-sparks-political-speculation/article71381040.ece",
+      "cat": "env",
+      "badge": "Environment",
+      "tc": "tgev",
+      "date": "Aug 25, 2026",
+      "title": "Stone quarries put Assam semiconductor plant at risk",
+      "sum": "Green activists and local organisations have petitioned the government on flash floods and air pollution caused by the quarries and crushers within 5 km of the Tata chip plant, which needs to be insulated from microscopic dust, according to the Indian Semiconductor Mission",
+      "link": "https://www.thehindu.com/news/national/assam/stone-quarries-put-assam-semiconductor-plant-at-risk/article71384852.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1002
@@ -43,49 +43,25 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 24, 2026",
-      "title": "Parliament monsoon session yet to be prorogued, BJP, Congress face off over women’s bill",
-      "sum": "Parliament monsoon session yet to be prorogued, BJP, Congress face off over women’s bill",
-      "link": "https://timesofindia.indiatimes.com/india/monsoon-session-yet-to-be-prorogued-bjp-congress-face-off-over-womens-bill/articleshow/133448409.cms",
+      "date": "Aug 25, 2026",
+      "title": "Showcase India's strengths to woo tourists: PM Modi",
+      "sum": "Showcase India's strengths to woo tourists: PM Modi",
+      "link": "https://timesofindia.indiatimes.com/india/showcase-indias-strengths-to-woo-tourists-pm-modi/articleshow/133479499.cms",
       "source": "Times of India",
       "exam": "Source: Times of India · Auto-updated",
       "id": 1003
     },
     {
-      "cat": "sci",
-      "badge": "Science & Tech",
-      "tc": "tgs",
+      "cat": "def",
+      "badge": "Defence",
+      "tc": "tgd",
       "date": "Aug 24, 2026",
-      "title": "On National Space Day, PM Modi hails Gen Z for building new tech; Isro chief says plan to launch 8 vehicle, 12 satellite missions",
-      "sum": "On National Space Day, PM Modi hails Gen Z for building new tech; Isro chief says plan to launch 8 vehicle, 12 satellite missions",
-      "link": "https://timesofindia.indiatimes.com/india/on-national-space-day-pm-modi-hails-gen-z-for-building-new-tech-isro-chief-says-plan-to-launch-8-vehicle-12-satellite-missions/articleshow/133446253.cms",
-      "source": "Times of India",
-      "exam": "Source: Times of India · Auto-updated",
-      "id": 1004
-    },
-    {
-      "cat": "sci",
-      "badge": "Science & Tech",
-      "tc": "tgs",
-      "date": "Aug 24, 2026",
-      "title": "India’s satellite launch cost 4x US, says Cambridge study; space dept source contradicts report",
-      "sum": "India’s satellite launch cost 4x US, says Cambridge study; space dept source contradicts report",
-      "link": "https://timesofindia.indiatimes.com/india/indias-satellite-launch-cost-4x-us-says-cambridge-study-space-dept-source-contradicts-report/articleshow/133446083.cms",
-      "source": "Times of India",
-      "exam": "Source: Times of India · Auto-updated",
-      "id": 1005
-    },
-    {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Aug 20, 2026",
-      "title": "Protesters call off 26-day agitation over exam irregularities in Indian state",
-      "sum": "Protesters have warned the agitation had only been suspended and could resume if the government failed to act.",
-      "link": "https://www.bbc.co.uk/news/articles/c07r3ylykn8o?at_medium=RSS&at_campaign=rss",
+      "title": "Gavaskar among ex-cricket captains urging 'proper medical care' for Imran Khan",
+      "sum": "The former skippers say it is \"basic decency\" for Pakistan to comply with a court-ordered medical assessment.",
+      "link": "https://www.bbc.co.uk/news/articles/cx2z889l0dxo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1006
+      "id": 1004
     },
     {
       "cat": "env",
@@ -97,7 +73,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c0ej24qd3qpo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1007
+      "id": 1005
     },
     {
       "cat": "sci",
@@ -109,43 +85,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c8xnwqe00v1o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1008
-    },
-    {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Aug 15, 2026",
-      "title": "Air India pilot's reported cannabis test: What it can and can't tell investigators",
-      "sum": "A reported cannabis-positive test involving an Air India pilot raises questions about what such a result can actually tell investigators.",
-      "link": "https://www.bbc.co.uk/news/articles/c74gdgly3g3o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC India",
-      "exam": "Source: BBC India · Auto-updated",
-      "id": 1009
-    },
-    {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Aug 24, 2026",
-      "title": "India wanted no questions at PM-Trump presser, US President forgot it: US envoy",
-      "sum": "India wanted no questions at PMTrump presser US President forgot it US envoy",
-      "link": "https://www.indiatoday.in/india/story/pm-modi-donals-trump-g7-meeting-sergio-gor-says-india-wanted-media-present-but-no-questions-press-conference-2978255-2026-08-24?utm_source=rss",
-      "source": "India Today",
-      "exam": "Source: India Today · Auto-updated",
-      "id": 1010
-    },
-    {
-      "cat": "spo",
-      "badge": "Sports",
-      "tc": "tgsp",
-      "date": "Aug 24, 2026",
-      "title": "India and Pakistan can high-five in hockey. Why can't cricket shake hands?",
-      "sum": "India and Pakistan can highfive in hockey Why cant cricket shake hands",
-      "link": "https://www.indiatoday.in/sports/hockey/story/india-pakistan-hockey-world-cup-high-fives-cricket-handshake-debate-2978291-2026-08-24?utm_source=rss",
-      "source": "India Today",
-      "exam": "Source: India Today · Auto-updated",
-      "id": 1011
+      "id": 1006
     }
   ]
 }
