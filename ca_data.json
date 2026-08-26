@@ -1,16 +1,16 @@
 {
-  "updated": "2026-08-25",
-  "updated_time": "03:26 UTC",
-  "count": 7,
+  "updated": "2026-08-26",
+  "updated_time": "03:33 UTC",
+  "count": 14,
   "articles": [
     {
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 25, 2026",
-      "title": "Family issues, stress account for nearly one-third of child missing cases in first five months of this year in Keralam",
-      "sum": "932 children were reported missing between January and May 2026 in Keralam, according to the Women and Child Development department",
-      "link": "https://www.thehindu.com/news/national/kerala/family-issues-stress-account-for-nearly-one-third-of-child-missing-cases-in-first-five-months-of-this-year-in-keralam/article71385431.ece",
+      "date": "Aug 26, 2026",
+      "title": "UN committee calls for addressing ‘hate speech’ and ‘hate crimes’ in India",
+      "sum": "The committee calls on India to “urgently address discrimination, hate speech and hate crimes” and “ensure accountability” for these violations",
+      "link": "https://www.thehindu.com/news/national/un-committee-expresses-grave-concern-over-rights-violations-against-scs-sts-rohingya-refugees/article71388439.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1000
@@ -19,22 +19,22 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 25, 2026",
-      "title": "Manipur awaits Delhi decision on Census as Meitei, Naga groups demand NRC first",
-      "sum": "Govt. sources say a review of the situation is likely to be held in the coming days; Manipur High Court to hear PIL filed by Kangleipak Students Association on Tuesday",
-      "link": "https://www.thehindu.com/news/national/manipur/manipur-awaits-delhi-decision-on-census-as-meitei-naga-groups-demand-nrc-first/article71385744.ece",
+      "date": "Aug 26, 2026",
+      "title": "Pune tribal students’ protest enters 13th day as talks with Tribal Minister yield no breakthrough, say students",
+      "sum": "Vijay Waghmare, a Secretary in the Tribal Department, said that the Ministry has issued a stay order on the major demand of the students, that is, regarding the Government Resolution (GR) issued on August 14, 2026",
+      "link": "https://www.thehindu.com/news/national/maharashtra/pune-tribal-students-protest-enters-13th-day-as-talks-with-tribal-minister-yield-no-breakthrough-say-students/article71387944.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1001
     },
     {
-      "cat": "env",
-      "badge": "Environment",
-      "tc": "tgev",
-      "date": "Aug 25, 2026",
-      "title": "Stone quarries put Assam semiconductor plant at risk",
-      "sum": "Green activists and local organisations have petitioned the government on flash floods and air pollution caused by the quarries and crushers within 5 km of the Tata chip plant, which needs to be insulated from microscopic dust, according to the Indian Semiconductor Mission",
-      "link": "https://www.thehindu.com/news/national/assam/stone-quarries-put-assam-semiconductor-plant-at-risk/article71384852.ece",
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Aug 26, 2026",
+      "title": "U.P. Congress president urges PM Modi to review ethanol-blended fuel policy; questions rising sugar prices",
+      "sum": "Ajay Rai reminded the Prime Minister that he had previously written to the latter on July 7, addressing “scientific, economic, environmental, and consumer interest-related inquiries” regarding ethanol-blended fuels",
+      "link": "https://www.thehindu.com/news/national/uttar-pradesh/up-congress-president-urges-pm-modi-to-review-ethanol-blended-fuel-policy-questions-rising-sugar-prices/article71389468.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1002
@@ -43,13 +43,85 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Aug 25, 2026",
-      "title": "Showcase India's strengths to woo tourists: PM Modi",
-      "sum": "Showcase India's strengths to woo tourists: PM Modi",
-      "link": "https://timesofindia.indiatimes.com/india/showcase-indias-strengths-to-woo-tourists-pm-modi/articleshow/133479499.cms",
+      "date": "Aug 26, 2026",
+      "title": "NMC orders monthly reporting of student suicides by medical colleges",
+      "sum": "NMC orders monthly reporting of student suicides by medical colleges",
+      "link": "https://timesofindia.indiatimes.com/india/nmc-orders-monthly-reporting-of-student-suicides-by-medical-colleges/articleshow/133527828.cms",
       "source": "Times of India",
       "exam": "Source: Times of India · Auto-updated",
       "id": 1003
+    },
+    {
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Aug 26, 2026",
+      "title": "‘Separatist’ OCI card holder in SC, seeks nod to visit Kashmir",
+      "sum": "Appearing for Qazi, whose OCI card cancellation was annulled by a single judge bench of Delhi high court and appeals against which is pending before a division bench, senior advocate Parag Tripathi told the Supreme Court that the 82-year-old medical practitioner had visited India...",
+      "link": "https://timesofindia.indiatimes.com/india/separatist-oci-card-holder-in-sc-seeks-nod-to-visit-kashmir/articleshow/133524603.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
+      "id": 1004
+    },
+    {
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Aug 26, 2026",
+      "title": "Ram Temple donation ‘scam’ whistleblower gets protection from arrest",
+      "sum": "Appearing for the petitioner, senior advocate Pradeep Rai told a bench of CJI Surya Kant that Upadhyay was the whistleblower and the first to report the alleged misappropriation of monies donated by devotees at the Ayodhya temple. He said since UP Police is vindictive, investigat...",
+      "link": "https://timesofindia.indiatimes.com/india/ram-temple-donation-scam-whistleblower-gets-protection-from-arrest/articleshow/133524304.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
+      "id": 1005
+    },
+    {
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Aug 26, 2026",
+      "title": "All Banke Bihari donations must go to deity: Supreme Court",
+      "sum": "Senior advocate Maninder Singh said the sevayats cover the donation box put up by the temple management committee with flowers to prevent devotees from putting their donations into it. These donations are then taken away by the sevayats, he said. Senior advocate Maninder Singh sa...",
+      "link": "https://timesofindia.indiatimes.com/india/all-banke-bihari-donations-must-go-to-deity-supreme-court/articleshow/133524159.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
+      "id": 1006
+    },
+    {
+      "cat": "eco",
+      "badge": "Economy",
+      "tc": "tge",
+      "date": "Aug 26, 2026",
+      "title": "Revised bullet train cost Rs 2 lakh crore, 2x of original estimate",
+      "sum": "Sources said most of the additional funding would come from budgetary support. So far, the funding of Rs 1.1 lakh crore has been from Japan International Cooperation Agency (JICA) and budgetary allocation. They added that Railways has said high-speed trains will be manufactured i...",
+      "link": "https://timesofindia.indiatimes.com/india/revised-bullet-train-cost-rs-2-lakh-crore-2x-of-original-estimate/articleshow/133524308.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
+      "id": 1007
+    },
+    {
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Aug 26, 2026",
+      "title": "Surrender within 3 weeks, SC tells ex-Tehelka editor Tarun Tejpal",
+      "sum": "Goa govt opposed his plea for exemption from surrendering and said his appeal was not admissible since he had not filed a separate application seeking exemption from surrender or shown a certificate that he has already surrendered as per Order XXII Rule 5 of the Supreme Court Rul...",
+      "link": "https://timesofindia.indiatimes.com/india/surrender-within-3-weeks-sc-tells-ex-tehelka-editor-tarun-tejpal/articleshow/133524307.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
+      "id": 1008
+    },
+    {
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Aug 26, 2026",
+      "title": "Govt seeks 2 years to frame creamy layer criteria for PSU, private staff kids",
+      "sum": "In its application, Centre said, “On account of the serious challenges and implications with the implementation of the directions of SC, govt is committed to bring out a policy which will effectively address the observations made by SC, while also ensuring that the direct and ind...",
+      "link": "https://timesofindia.indiatimes.com/india/govt-seeks-2-years-to-frame-creamy-layer-criteria-for-psu-private-staff-kids/articleshow/133524157.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
+      "id": 1009
     },
     {
       "cat": "def",
@@ -61,7 +133,7 @@
       "link": "https://www.bbc.co.uk/news/articles/cx2z889l0dxo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1004
+      "id": 1010
     },
     {
       "cat": "env",
@@ -73,7 +145,7 @@
       "link": "https://www.bbc.co.uk/news/articles/c0ej24qd3qpo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1005
+      "id": 1011
     },
     {
       "cat": "sci",
@@ -85,7 +157,19 @@
       "link": "https://www.bbc.co.uk/news/articles/c8xnwqe00v1o?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1006
+      "id": 1012
+    },
+    {
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Aug 26, 2026",
+      "title": "Delhi man stays at Udaipur 5-star hotel, leaves without paying Rs 5.74 lakh bill",
+      "sum": "Delhi man stays at Udaipur star hotel leaves without paying Rs lakh bill",
+      "link": "https://www.indiatoday.in/cities/other-cities/story/udaipur-rajasthan-delhi-tourist-family-oberoi-udaivilas-leaves-unpaid-bill-payment-travel-agency-fraud-2980022-2026-08-26?utm_source=rss",
+      "source": "India Today",
+      "exam": "Source: India Today · Auto-updated",
+      "id": 1013
     }
   ]
 }
