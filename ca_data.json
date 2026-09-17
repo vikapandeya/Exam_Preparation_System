@@ -1,16 +1,16 @@
 {
-  "updated": "2026-09-16",
-  "updated_time": "07:50 UTC",
-  "count": 9,
+  "updated": "2026-09-17",
+  "updated_time": "07:55 UTC",
+  "count": 17,
   "articles": [
     {
-      "cat": "sci",
-      "badge": "Science & Tech",
-      "tc": "tgs",
-      "date": "Sep 16, 2026",
-      "title": "What does the Defence Ministry’s annual report for 2025-26 say on Operation Sindoor and the LAC situation?",
-      "sum": "Defence Ministry’s annual report for 2025-26 says the experience of the May 2025 conflict has also prompted a review of capability gaps, with greater emphasis on jointness, force restructuring and emerging technologies",
-      "link": "https://www.thehindu.com/news/national/what-does-the-defence-ministrys-annual-report-for-2025-26-say-on-operation-sindoor-and-the-lac-situation/article71471472.ece",
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Sep 17, 2026",
+      "title": "E.M. Sudarsana Natchiappan, former Union Minister and senior Congress leader, passes away at 78",
+      "sum": "Natchiappan shot to fame after defeating former Union Minister P. Chidambaram in the Sivaganga Lok Sabha constituency in the 1999 election",
+      "link": "https://www.thehindu.com/news/national/tamil-nadu/em-sudarsana-nachiappan-former-union-minister-and-senior-congress-leader-passes-away-at-79/article71475548.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1000
@@ -19,10 +19,10 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Sep 16, 2026",
-      "title": "Resigned MLAs seeking re-election in bypolls may amount to insulting voters: Madras High Court judge",
-      "sum": "Justice S.M. Subramaniam wonders why the Election Commission of India should not frame guidelines to address the issue",
-      "link": "https://www.thehindu.com/news/national/tamil-nadu/resigned-mlas-seeking-re-election-in-bypolls-may-amount-to-insulting-voters-madras-high-court-judge/article71471308.ece",
+      "date": "Sep 17, 2026",
+      "title": "Graham Staines murder case: Rejected convict Dara Singh’s remission plea, Odisha tells Supreme Court",
+      "sum": "The Orissa High Court commuted his death sentence to life imprisonment in 2005, and it was upheld by the Supreme Court in 2011.",
+      "link": "https://www.thehindu.com/news/national/odisha/graham-staines-murder-case-rejected-convict-dara-singhs-remission-plea-odisha-tells-supreme-court/article71475672.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1001
@@ -31,25 +31,109 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Sep 16, 2026",
-      "title": "Why Keralam is facing a power crisis | Explained",
-      "sum": "Keralam is facing a severe power crisis, leading Chief Minister V.D. Satheesan to announce emergency measures. Congress-led UDF govt is now collaborating with eight States and power agencies to secure immediate electricity and develop a revised power policy for long-term energy s...",
-      "link": "https://www.thehindu.com/news/national/kerala/why-keralam-is-facing-a-power-crisis-explained/article71471375.ece",
+      "date": "Sep 17, 2026",
+      "title": "Leaders greet PM Modi on 76th birthday, hail his 25-year public life",
+      "sum": "Congress president Mallikarjun Kharge and Leader of Opposition in the Lok Sabha Rahul Gandhi also wished PM Modi a long and healthy life",
+      "link": "https://www.thehindu.com/news/national/leaders-greet-pm-modi-on-76th-birthday/article71475668.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1002
     },
     {
+      "cat": "eco",
+      "badge": "Economy",
+      "tc": "tge",
+      "date": "Sep 17, 2026",
+      "title": "At just a gram and eight millimetres, Srikakulam researcher’s wind turbine enters International Book of Records",
+      "sum": "Maheswaram Bhanu Chandhar builds the silent turbine from copper sheets, a small DC motor and enamel paint, and sees a future for it in space and robotics",
+      "link": "https://www.thehindu.com/news/national/andhra-pradesh/at-just-a-gram-and-eight-millimetres-srikakulam-researchers-wind-turbine-enters-international-book-of-records/article71475214.ece",
+      "source": "The Hindu",
+      "exam": "Source: The Hindu · Auto-updated",
+      "id": 1003
+    },
+    {
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Sep 16, 2026",
-      "title": "Tamil Nadu CM Vijay’s London event called off after police raise safety concerns",
-      "sum": "An anticipated public appearance of Tamil Nadu chief minister C Joseph Vijay near London's iconic Shard was abruptly called off due to safety concerns raised by the Metropolitan Police. Fans were advised not to linger at his hotel or travel paths. During his time in the UK, Vijay...",
-      "link": "https://timesofindia.indiatimes.com/india/tamil-nadu-cm-vijays-london-event-called-off-after-police-raise-safety-concerns/articleshow/134275862.cms",
+      "date": "Sep 17, 2026",
+      "title": "India’s academic freedom ‘severely restricted’ under BJP government: report",
+      "sum": "Academic freedom has declined significantly in 50 of 179 countries over the past decade, says report",
+      "link": "https://www.thehindu.com/news/national/indias-academic-freedom-severely-restricted-under-bjp-government-report/article71472166.ece",
+      "source": "The Hindu",
+      "exam": "Source: The Hindu · Auto-updated",
+      "id": 1004
+    },
+    {
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Sep 17, 2026",
+      "title": "Andhra leaders greet Modi at 76; Naidu in Varanasi to mark PM’s 25 years in office",
+      "sum": "Naidu, Pawan Kalyan, Lokesh and Jagan Mohan Reddy wish the Prime Minister on X as the BJP opens its month-long Seva Sankalp Abhiyan",
+      "link": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-leaders-greet-modi-at-76-naidu-in-varanasi-to-mark-pms-25-years-in-office/article71475209.ece",
+      "source": "The Hindu",
+      "exam": "Source: The Hindu · Auto-updated",
+      "id": 1005
+    },
+    {
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Sep 17, 2026",
+      "title": "'Impossible to overstate your contribution': Putin’s birthday message to PM Modi",
+      "sum": "'Impossible to overstate your contribution': Putin’s birthday message to PM Modi",
+      "link": "https://timesofindia.indiatimes.com/india/impossible-to-overstate-your-contribution-putins-birthday-message-to-pm-modi/articleshow/134304665.cms",
       "source": "Times of India",
       "exam": "Source: Times of India · Auto-updated",
-      "id": 1003
+      "id": 1006
+    },
+    {
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Sep 17, 2026",
+      "title": "Graham Staines case: SC asks Dara Singh to tweak remission plea for relief hearing",
+      "sum": "Graham Staines case: SC asks Dara Singh to tweak remission plea for relief hearing",
+      "link": "https://timesofindia.indiatimes.com/india/graham-staines-case-sc-asks-dara-singh-to-tweak-remission-plea-for-relief-hearing/articleshow/134303917.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
+      "id": 1007
+    },
+    {
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Sep 17, 2026",
+      "title": "'India has entered 2nd phase of semiconductor journey': PM Modi at Semicon event",
+      "sum": "Prime Minister Narendra Modi proudly announced the commencement of the second phase in India's semiconductor saga, marking the shift from capability development to actual commercial chip production. This milestone underscores the increasing global confidence in India's semiconduc...",
+      "link": "https://timesofindia.indiatimes.com/india/india-has-entered-2nd-phase-of-semiconductor-journey-pm-modi-at-semicon-event/articleshow/134303811.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
+      "id": 1008
+    },
+    {
+      "cat": "int",
+      "badge": "International",
+      "tc": "tgi",
+      "date": "Sep 17, 2026",
+      "title": "‘Fake alert’: MEA rejects claims of leaders falling sick after Brics summit in Delhi",
+      "sum": "‘Fake alert’: MEA rejects claims of leaders falling sick after Brics summit in Delhi",
+      "link": "https://timesofindia.indiatimes.com/india/fake-alert-mea-rejects-claims-of-leaders-falling-sick-after-brics-summit-in-delhi/articleshow/134302761.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
+      "id": 1009
+    },
+    {
+      "cat": "eco",
+      "badge": "Economy",
+      "tc": "tge",
+      "date": "Sep 17, 2026",
+      "title": "PM Modi turns 76: President Murmu, BJP leaders including Yogi Adityanath extend birthday greetings",
+      "sum": "On Prime Minister Modi's birthday, President Murmu and CM Adityanath expressed heartfelt wishes, commending his governance milestones that have significantly advanced the nation. Additionally, Union Minister Sukanta Majumdar lauded Modi's impactful leadership, citing World Bank f...",
+      "link": "https://timesofindia.indiatimes.com/india/pm-modi-turns-76-president-murmu-bjp-leaders-including-yogi-adityanath-extend-birthday-greetings/articleshow/134300979.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
+      "id": 1010
     },
     {
       "cat": "eco",
@@ -61,7 +145,7 @@
       "link": "https://www.bbc.co.uk/news/articles/ckpd0y9gdp5lo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1004
+      "id": 1011
     },
     {
       "cat": "nat",
@@ -73,19 +157,7 @@
       "link": "https://www.bbc.co.uk/news/articles/cqx2zpn2y97eo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1005
-    },
-    {
-      "cat": "spo",
-      "badge": "Sports",
-      "tc": "tgsp",
-      "date": "Sep 15, 2026",
-      "title": "Why Asian gold is within reach for India's women hockey team",
-      "sum": "The team's fifth-place finish at the World Cup has raised hopes of a medal at the upcoming Asian Games",
-      "link": "https://www.bbc.co.uk/news/articles/c5yj9plz32yo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC India",
-      "exam": "Source: BBC India · Auto-updated",
-      "id": 1006
+      "id": 1012
     },
     {
       "cat": "eco",
@@ -97,7 +169,7 @@
       "link": "https://www.bbc.co.uk/news/articles/crm9ezvwjpno?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1007
+      "id": 1013
     },
     {
       "cat": "int",
@@ -109,7 +181,31 @@
       "link": "https://www.bbc.co.uk/news/articles/ce8767g4jdpo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1008
+      "id": 1014
+    },
+    {
+      "cat": "int",
+      "badge": "International",
+      "tc": "tgi",
+      "date": "Sep 17, 2026",
+      "title": "Adoption of BRICS New Delhi Declaration shows world's trust in India: PM Modi",
+      "sum": "Adoption of BRICS New Delhi Declaration shows worlds trust in India PM Modi",
+      "link": "https://www.indiatoday.in/india/story/unanimous-adoption-of-brics-new-delhi-declaration-sign-of-worlds-trust-in-india-pm-modi-2996573-2026-09-17?utm_source=rss",
+      "source": "India Today",
+      "exam": "Source: India Today · Auto-updated",
+      "id": 1015
+    },
+    {
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Sep 17, 2026",
+      "title": "China adapted, CPM didn't: India's only communist minister decodes Left's decline",
+      "sum": "China adapted CPM didnt Indias only communist minister decodes Lefts decline",
+      "link": "https://www.indiatoday.in/india/kerala/story/keralam-minister-cp-john-indias-only-communist-minister-on-why-left-disappeared-from-power-2996588-2026-09-17?utm_source=rss",
+      "source": "India Today",
+      "exam": "Source: India Today · Auto-updated",
+      "id": 1016
     }
   ]
 }
