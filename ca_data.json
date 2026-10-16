@@ -1,40 +1,40 @@
 {
-  "updated": "2026-10-15",
-  "updated_time": "07:39 UTC",
-  "count": 13,
+  "updated": "2026-10-16",
+  "updated_time": "07:26 UTC",
+  "count": 11,
   "articles": [
     {
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Oct 15, 2026",
-      "title": "Anti-CEC protest LIVE | Supreme Court issues notice to Rahul Gandhi, Digvijaya Singh, Asaduddin Owaisi on petitions against SIR",
-      "sum": "Cockroach Janta Party (CJP) founder Abhijeet Dipke has called for a ‘Lehra Do Tiranga’ gathering at Central Park, Connaught Place, in Delhi, on October 16",
-      "link": "https://www.thehindu.com/news/national/anti-cec-sir-protest-live-updates-oct-15-2026-rahul-gandhi-india-bloc/article71586459.ece",
+      "date": "Oct 16, 2026",
+      "title": "Nation, Parliament must debate political appeals to children during elections: Madras High Court",
+      "sum": "Justice D. Bharatha Chakravarthy says YouTube reels made by parents showing their children pestering them to vote for TVK during the 2026 elections were in bad taste and reflected poor parenting",
+      "link": "https://www.thehindu.com/news/national/tamil-nadu/nation-parliament-must-debate-political-appeals-to-children-during-elections-madras-high-court/article71591152.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1000
     },
     {
-      "cat": "env",
-      "badge": "Environment",
-      "tc": "tgev",
-      "date": "Oct 15, 2026",
-      "title": "Keralam Assembly: Opposition walks out over removal of fences in Chinnakkanal; Forest Minister says only illegal ones are dismantled",
-      "sum": "Forest Minister and Revenue Minister explain govt stand after LDF moves adjournment motion to discuss hardships faced by farmers and other residents on account of September 23 order by Idukki Collector",
-      "link": "https://www.thehindu.com/news/national/kerala/keralam-assembly-opposition-walks-out-over-removal-of-fences-in-chinnakkanal-forest-minister-says-only-illegal-ones-are-dismantled/article71586893.ece",
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Oct 16, 2026",
+      "title": "Sudha Yadav sworn in as the new Karnataka Governor",
+      "sum": "Sudha Yadav was sworn in as the new Governor of Karnataka at a ceremony held at Lok Bhavan in Bengaluru.",
+      "link": "https://www.thehindu.com/videos/sudha-yadav-sworn-as-the-new-karnataka-governor/article71591443.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1001
     },
     {
-      "cat": "eco",
-      "badge": "Economy",
-      "tc": "tge",
-      "date": "Oct 15, 2026",
-      "title": "IMF backs India's updated GDP methodology, calls revision 'welcome development'",
-      "sum": "\"These revisions to the methodology are entirely consistent with what the advice we've been giving them, including from our statistics department,\" said Krishna Srinivasan, Director of the IMF's Asia and Pacific Department",
-      "link": "https://www.thehindu.com/business/imf-hails-indias-updated-gdp-methodology/article71586923.ece",
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Oct 16, 2026",
+      "title": "Kandala cooperative bank scam: Audit figures were tampered with, alleges former president N. Bhasurangan",
+      "sum": "He calls it ‘politically motivated and intended to wreck the bank’, while a plea is pending before Co-operative Audit Director to review audited figures",
+      "link": "https://www.thehindu.com/news/national/kerala/kandala-cooperative-bank-scam-audit-figures-were-tampered-with-alleges-former-president-n-bhasurangan/article71546635.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1002
@@ -43,10 +43,10 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Oct 15, 2026",
-      "title": "'Open admission of regime change': BJP targets Rahul over Neha Bora's 'Bangladesh showed us the way' remark",
-      "sum": "'Open admission of regime change': BJP targets Rahul over Neha Bora's 'Bangladesh showed us the way' remark",
-      "link": "https://timesofindia.indiatimes.com/india/open-admission-of-regime-change-bjp-targets-rahul-over-neha-boras-bangladesh-showed-us-the-way-remark/articleshow/134958363.cms",
+      "date": "Oct 16, 2026",
+      "title": "‘The name is George Soros’: American singer Mary Millben alleges US funding behind Delhi protests against CEC",
+      "sum": "Mary Millben alleges that billionaire George Soros is financially backing protests in India with the intention of undermining Prime Minister Modi's government. She urges young Indians to stand with Modi to actively challenge what she deems as disruptive protests. Millben also cri...",
+      "link": "https://timesofindia.indiatimes.com/india/the-name-is-george-soros-american-singer-mary-millben-alleges-us-funding-behind-delhi-protests-against-cec/articleshow/134982560.cms",
       "source": "Times of India",
       "exam": "Source: Times of India · Auto-updated",
       "id": 1003
@@ -55,37 +55,13 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Oct 15, 2026",
-      "title": "Oct 10 Jantar Mantar protest permission denied due to violence during CJP protest on Jul 20: Delhi Police",
-      "sum": "Oct 10 Jantar Mantar protest permission denied due to violence during CJP protest on Jul 20: Delhi Police",
-      "link": "https://timesofindia.indiatimes.com/india/delhi-police-files-affidavit-in-sc-defends-curbs-on-metro-roads-internet-during-oct-10-protest/articleshow/134957369.cms",
+      "date": "Oct 16, 2026",
+      "title": "Stent safety concerns reach Centre after reports of complications with Indian-made devices in Sri Lanka",
+      "sum": "Stent safety concerns reach Centre after reports of complications with Indian-made devices in Sri Lanka",
+      "link": "https://timesofindia.indiatimes.com/india/stent-safety-concerns-reach-centre-after-reports-of-complications-with-indian-made-devices-in-sri-lanka/articleshow/134982424.cms",
       "source": "Times of India",
       "exam": "Source: Times of India · Auto-updated",
       "id": 1004
-    },
-    {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Oct 15, 2026",
-      "title": "‘Stop protecting the VIP’: Ankita Bhandari's parents detained after overnight protest over governor appointment",
-      "sum": "‘Stop protecting the VIP’: Ankita Bhandari's parents detained after overnight protest over governor appointment",
-      "link": "https://timesofindia.indiatimes.com/india/stop-protecting-the-vip-ankita-bhandaris-parents-detained-at-4-am-in-delhi/articleshow/134957180.cms",
-      "source": "Times of India",
-      "exam": "Source: Times of India · Auto-updated",
-      "id": 1005
-    },
-    {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Oct 15, 2026",
-      "title": "Jantar Mantar breach: Das, Ranka sent to 5-day custody",
-      "sum": "Jantar Mantar breach: Das, Ranka sent to 5-day custody",
-      "link": "https://timesofindia.indiatimes.com/india/jantar-mantar-breach-das-ranka-sent-to-5-day-custody/articleshow/134954962.cms",
-      "source": "Times of India",
-      "exam": "Source: Times of India · Auto-updated",
-      "id": 1006
     },
     {
       "cat": "nat",
@@ -97,7 +73,7 @@
       "link": "https://www.bbc.co.uk/news/articles/cvy0rd1j2kzlo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1007
+      "id": 1005
     },
     {
       "cat": "nat",
@@ -109,7 +85,7 @@
       "link": "https://www.bbc.co.uk/news/articles/cwr5y2lgr4gdo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1008
+      "id": 1006
     },
     {
       "cat": "nat",
@@ -121,7 +97,7 @@
       "link": "https://www.bbc.co.uk/news/articles/cvglw9ryjrylo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1009
+      "id": 1007
     },
     {
       "cat": "spo",
@@ -133,31 +109,31 @@
       "link": "https://www.bbc.co.uk/news/articles/cm4g1pjrd5ewo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1010
+      "id": 1008
     },
     {
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Oct 15, 2026",
-      "title": "Imran Khan asked to leave India over anti-CEC protest, cops invoke Foreigners Act",
-      "sum": "Imran Khan asked to leave India over antiCEC protest cops invoke Foreigners Act",
-      "link": "https://www.indiatoday.in/movies/story/mumbai-police-asks-actor-imran-khan-who-holds-us-citizenship-to-leave-india-over-anti-cec-protest-sources-3017691-2026-10-15?utm_source=rss",
+      "date": "Oct 16, 2026",
+      "title": "Amid protests, Election Commission's 2 moves long demanded by Opposition",
+      "sum": "Amid protests Election Commissions moves long demanded by Opposition",
+      "link": "https://www.indiatoday.in/india/story/election-commission-voter-list-revision-readable-pdf-cjp-rahul-gandhi-protests-3018682-2026-10-16?utm_source=rss",
       "source": "India Today",
       "exam": "Source: India Today · Auto-updated",
-      "id": 1011
+      "id": 1009
     },
     {
-      "cat": "spo",
-      "badge": "Sports",
-      "tc": "tgsp",
-      "date": "Oct 14, 2026",
-      "title": "How Kumkum Mohod manifests Olympic gold",
-      "sum": "How Kumkum Mohod manifests Olympic gold",
-      "link": "https://www.indiatoday.in/india-today-insight/story/how-kumkum-mohod-manifests-olympic-gold-3017322-2026-10-14?utm_source=rss",
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Oct 16, 2026",
+      "title": "Special Parliament session this month, govt has numbers to pass key bills: Sources",
+      "sum": "Special Parliament session this month govt has numbers to pass key bills Sources",
+      "link": "https://www.indiatoday.in/india/story/special-parliament-session-this-month-govt-has-numbers-to-pass-bills-on-delimitation-womens-quota-sources-3018544-2026-10-16?utm_source=rss",
       "source": "India Today",
       "exam": "Source: India Today · Auto-updated",
-      "id": 1012
+      "id": 1010
     }
   ]
 }
