@@ -1,28 +1,28 @@
 {
-  "updated": "2026-10-17",
-  "updated_time": "07:07 UTC",
-  "count": 9,
+  "updated": "2026-10-18",
+  "updated_time": "07:22 UTC",
+  "count": 12,
   "articles": [
     {
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Oct 17, 2026",
-      "title": "Keralam govt. sanctions ₹2.46 cr for houses for survivors of 2019 Vaniyampuzha floods",
-      "sum": "Minister for Welfare of Scheduled Castes, Scheduled Tribes and Backward Classes announces allocation in Assembly in response to submission by Nilambur MLA Aryadan Shoukath. Each family to receive ₹6 lakh for house construction",
-      "link": "https://www.thehindu.com/news/national/kerala/keralam-govt-sanctions-246-cr-for-houses-for-survivors-of-2019-vaniyampuzha-floods/article71595605.ece",
+      "date": "Oct 18, 2026",
+      "title": "Union Minister H.D. Kumaraswamy exudes confidence of coalition Govt in Karnataka in 2028 elections",
+      "sum": "He said the coalition’s return in 2028 was a certainty, and that the government would pay for its present administration",
+      "link": "https://www.thehindu.com/news/national/karnataka/union-minister-hd-kumaraswamy-exudes-confidence-of-coalition-govt-in-karnataka-in-2028-elections/article71599326.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1000
     },
     {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Oct 17, 2026",
-      "title": "All Indian crew members safe after oil tanker attacked at Sharjah Anchorage: Sarbananda Sonowal",
-      "sum": "Sonowal, in a post on X, further said that he was relieved to share that all 22 Indian seafarers onboard were reported to be completely safe",
-      "link": "https://www.thehindu.com/news/national/all-indian-crew-members-safe-after-oil-tanker-attacked-at-sharjah-anchorage-sarbananda-sonowal/article71567057.ece",
+      "cat": "eco",
+      "badge": "Economy",
+      "tc": "tge",
+      "date": "Oct 18, 2026",
+      "title": "Indian refiners’ fuel exports to West surge 43% amid Russian crude imports",
+      "sum": "Reliance Industries Ltd.'s Jamnagar refinery in Gujarat supplied six of the seven cargoes unloaded at EU ports that month, despite the bloc's ban on fuel made from Russian crude",
+      "link": "https://www.thehindu.com/business/indian-refiners-fuel-exports-to-west-surge-43-amid-russian-crude-imports/article71599323.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1001
@@ -31,37 +31,85 @@
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Oct 17, 2026",
-      "title": "Assault on child: child rights panel registers case",
-      "sum": "The commission has sought details from the Parassala Station House Officer and the district child protection officer following media reports that the child was beaten up after she deleted WhatsApp from her mother’s phone",
-      "link": "https://www.thehindu.com/news/national/kerala/assault-on-child-child-rights-panel-registers-case/article71565555.ece",
+      "date": "Oct 18, 2026",
+      "title": "PM Modi condoles deaths in Gwalior accident, announces ₹2L ex-gratia relief for each",
+      "sum": "An ex-gratia payment of ₹2 lakh would be given to the next of kin of each of those who lost their lives and ₹50,000 to each injured from the Prime Minister's National Relief Fund, said Narendra Modi",
+      "link": "https://www.thehindu.com/news/national/madhya-pradesh/pm-modi-condoles-deaths-in-gwalior-accident-announces-2l-ex-gratia-relief-for-each/article71599296.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1002
     },
     {
-      "cat": "nat",
-      "badge": "National",
-      "tc": "tgn",
-      "date": "Oct 17, 2026",
-      "title": "Kerala Postal Circle launches ‘Assured Next Day Delivery’ service",
-      "sum": "Speed Post articles to be delivered next day in six Municipal Corporations of Keralam",
-      "link": "https://www.thehindu.com/news/national/kerala/kerala-postal-circle-launches-assured-next-day-delivery-service/article71564978.ece",
+      "cat": "sci",
+      "badge": "Science & Tech",
+      "tc": "tgs",
+      "date": "Oct 18, 2026",
+      "title": "INS Samarthak commissioned at Karwar, Vice President C.P. Radhakrishan terms it a milestone in self-reliant defence manufacturing",
+      "sum": "Mr. Radhakrishnan says the vessel, with more than 75% indigenous content, reflected the growing industrial, technological and shipbuilding capabilities of the country",
+      "link": "https://www.thehindu.com/news/national/karnataka/ins-samarthak-commissioned-at-karwar-vice-president-cp-radhakrishan-terms-it-a-milestone-in-self-reliant-defence-manufacturing/article71593300.ece",
       "source": "The Hindu",
       "exam": "Source: The Hindu · Auto-updated",
       "id": 1003
     },
     {
+      "cat": "def",
+      "badge": "Defence",
+      "tc": "tgd",
+      "date": "Oct 18, 2026",
+      "title": "Heavy rains likely in many districts of Tamil Nadu including Chennai on Oct. 18",
+      "sum": "According to the department, there exists significant convective cloud development over the north coastal Tamil Nadu and adjoining sea areas associated with the cyclonic circulation over the region",
+      "link": "https://www.thehindu.com/news/cities/chennai/heavy-rains-likely-in-many-districts-of-tamil-nadu-including-chennai-on-oct-18/article71599270.ece",
+      "source": "The Hindu",
+      "exam": "Source: The Hindu · Auto-updated",
+      "id": 1004
+    },
+    {
       "cat": "nat",
       "badge": "National",
       "tc": "tgn",
-      "date": "Oct 17, 2026",
-      "title": "PM Modi to visit Canada on December 11-12, Mark Carney confirms after phone call",
-      "sum": "PM Modi to visit Canada on December 11-12, Mark Carney confirms after phone call",
-      "link": "https://timesofindia.indiatimes.com/india/pm-modi-to-visit-canada-on-december-11-12-mark-carney-confirms-after-phone-call/articleshow/135006386.cms",
+      "date": "Oct 18, 2026",
+      "title": "Kolkata pandal stampede LIVE | Shah, Governor Ravi visit injured in hospital; Seven, including Chorbagan Durga Puja organisers, arrested",
+      "sum": "Kolkata Medical College junior doctors allege mismanagement of patients from the stampede; West Bengal Health Minister denies claims",
+      "link": "https://www.thehindu.com/news/cities/kolkata/kolkata-bengal-pandal-collapse-stampede-injured-death-updates-on-october-17-2026/article71597549.ece",
+      "source": "The Hindu",
+      "exam": "Source: The Hindu · Auto-updated",
+      "id": 1005
+    },
+    {
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Oct 18, 2026",
+      "title": "Gwalior accident kills 14 devotees: PM Modi announces Rs 2 lakh relief for kin",
+      "sum": "Gwalior accident kills 14 devotees: PM Modi announces Rs 2 lakh relief for kin",
+      "link": "https://timesofindia.indiatimes.com/india/gwalior-accident-kills-13-devotees-pm-modi-announces-rs-2-lakh-relief-for-kin/articleshow/135024030.cms",
       "source": "Times of India",
       "exam": "Source: Times of India · Auto-updated",
-      "id": 1004
+      "id": 1006
+    },
+    {
+      "cat": "int",
+      "badge": "International",
+      "tc": "tgi",
+      "date": "Oct 18, 2026",
+      "title": "AI cuts job demand in exposed occupations by nearly 10% across Asia: IMF report",
+      "sum": "AI cuts job demand in exposed occupations by nearly 10% across Asia: IMF report",
+      "link": "https://timesofindia.indiatimes.com/india/ai-cuts-job-demand-in-exposed-occupations-by-nearly-10-across-asia-imf-report/articleshow/135023753.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
+      "id": 1007
+    },
+    {
+      "cat": "nat",
+      "badge": "National",
+      "tc": "tgn",
+      "date": "Oct 18, 2026",
+      "title": "Internet is fundamental right of all, even children: Supreme Court",
+      "sum": "Internet is fundamental right of all, even children: Supreme Court",
+      "link": "https://timesofindia.indiatimes.com/india/internet-is-fundamental-right-of-all-even-children-supreme-court/articleshow/135020333.cms",
+      "source": "Times of India",
+      "exam": "Source: Times of India · Auto-updated",
+      "id": 1008
     },
     {
       "cat": "nat",
@@ -73,7 +121,7 @@
       "link": "https://www.bbc.co.uk/news/articles/cvy0rd1j2kzlo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1005
+      "id": 1009
     },
     {
       "cat": "nat",
@@ -85,7 +133,7 @@
       "link": "https://www.bbc.co.uk/news/articles/cvglw9ryjrylo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1006
+      "id": 1010
     },
     {
       "cat": "spo",
@@ -97,19 +145,7 @@
       "link": "https://www.bbc.co.uk/news/articles/cm4g1pjrd5ewo?at_medium=RSS&at_campaign=rss",
       "source": "BBC India",
       "exam": "Source: BBC India · Auto-updated",
-      "id": 1007
-    },
-    {
-      "cat": "int",
-      "badge": "International",
-      "tc": "tgi",
-      "date": "Oct 17, 2026",
-      "title": "A load of hot air: How a 'phantom farter' has become a talking point in EU Summit",
-      "sum": "A load of hot air How a phantom farter has become a talking point in EU Summit",
-      "link": "https://www.indiatoday.in/world/story/a-load-of-hot-air-phantom-farter-leaves-reporters-fleeing-zelenskyy-briefing-wait-turns-pungent-eu-summit-brussels-x-posts-3019434-2026-10-17?utm_source=rss",
-      "source": "India Today",
-      "exam": "Source: India Today · Auto-updated",
-      "id": 1008
+      "id": 1011
     }
   ]
 }
