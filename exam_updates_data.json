@@ -1,31 +1,235 @@
 {
   "updated": "2026-11-06",
-  "updated_time": "01:46 IST",
-  "count": 198,
+  "updated_time": "12:55 IST",
+  "count": 196,
   "articles": [
     {
-      "cat": "notif",
-      "badge": "Notification",
-      "tc": "tgi",
-      "date": "Nov 05, 2026",
-      "title": "UPSC Mains Result 2026 Out: Download PDF, Selection Trends & Next Steps",
-      "sum": "UPSC Mains Result 2026 Out: Download PDF, Selection Trends & Next Steps",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UcXZxX3FvcU41dzdEZEQyOWZ3Z3JxRW5yY3lHUXQ3YTlFT1IxbUVxcFhRbkJVUDVObVI2ZENsRUt1RHBNTnQ4YmdVVVhCSnhFQ29fUGRmTjg0MzJ1ak1fUVI5TkRZMTBBeGM5MnRBUk83S1FtbDRwdHRvZ2ZPOEU?oc=5",
-      "source": "Vision IAS",
-      "exam": "Source: Vision IAS · Auto-updated",
+      "cat": "result",
+      "badge": "Result",
+      "tc": "tgs",
+      "date": "Nov 06, 2026",
+      "title": "UPSC Mains Result 2026 declared: Here’s how to check",
+      "sum": "The Civil Services exam is conducted annually in three stages - preliminary, main, and interview - to select candidates for the Indian Administrative Services (IAS), Indian Foreign Service (IFS), and Indian Police Service (IPS) and other services.",
+      "link": "https://www.thehindu.com/news/national/upsc-cse-mains-result-2026-how-to-check/article71673065.ece",
+      "source": "The Hindu",
+      "exam": "Source: The Hindu · Auto-updated",
       "id": 2000
     },
     {
       "cat": "notif",
       "badge": "Notification",
       "tc": "tgi",
-      "date": "Nov 05, 2026",
+      "date": "Nov 06, 2026",
       "title": "RRB Station Master Recruitment 2026 Out, Apply Online Starts For 1265 Posts",
       "sum": "RRB Station Master Recruitment 2026 Out, Apply Online Starts For 1265 Posts",
       "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOT2lXaFFWb1oxdHRwZGRZQUhhXzg2YTc1aUdwSGhHSENVd0w3VWd3eFJUSks2ejVDMkFXYmNFc0hkTTZfR0JlOUVmNUZjS1NiTFlxT0Zva3loR2kzckZBOEJ0M1pkRDREbTFuUUhhSm9xSEUxYnBqYmJHQTluc19SOFkxUQ?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
       "id": 2001
+    },
+    {
+      "cat": "job",
+      "badge": "Job Opening",
+      "tc": "tge",
+      "date": "Nov 06, 2026",
+      "title": "OPSC ASO Recruitment 2026 Notification OUT for 340 Posts; Check Eligibility and Other Details Here",
+      "sum": "OPSC ASO Recruitment 2026 Notification OUT for 340 Posts; Check Eligibility and Other Details Here",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxORUUwTm8za0ZJZElrSFB2STJEeXRUeHZDc3M2MklBYWctNkF1XzBxTEtWazN0Q1h6YS1lQm9qYy1mdHhxZTNiUVlnT3YwVVlCNnVvNzN3RkpqT0loSzRMdkxWTl9haVZ0cU4wcFRJemlxOEZZb3Mtby1yNGNzN1djZVJWdDVIT1BJNlp0QldZWmRtRDNUQzRZdmljN2VveE5TVlFVaDBoTEdLeHdtU1p1VnlqZmZETUtWWmhScWYzR21rWlpjSW9VVDlkTkpGZm1tUjBZNEttZnLSAd8BQVVfeXFMTjZhZUNXUHRTR2NaSDM0Skw2U1BZS0tKZEFIY0J2U0lPNUlBZXVzYTdkRFRBNE9jWHo3M0FMYzFwRzlDN05kMW1zUDBDVWxEZXRQLU43Y0J3eW1ua2cyM0tZUXQ0Yl8tSEtxSzBsUzl5NUVvdFJUUHdxRU1jbGpGOVYtMVZyUmZmMldDQTVwR0xDY0FVRDA3RnJnTmNCX2RTaTVPbVBieVlFQ2t3NVBaMy1uRm5JRGxqd3lTVVVfSUx4RmowSDhGcEhvYmJXUDBLN09IMmNkTmFXdTZHRF9URQ?oc=5",
+      "source": "Jagran Josh",
+      "exam": "Source: Jagran Josh · Auto-updated",
+      "id": 2002
+    },
+    {
+      "cat": "result",
+      "badge": "Result",
+      "tc": "tgs",
+      "date": "Nov 06, 2026",
+      "title": "UPSC CSE Mains result 2026 declared; 2,526 candidates shortlisted for Personality Test",
+      "sum": "UPSC CSE Mains result 2026 declared; 2,526 candidates shortlisted for Personality Test",
+      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOWnlXMXVQUVBpR0JFWGlzemRlNUU3UXlTSmVNbERlT0dqSi1NMk5rOVBpaXMwSlNVeDJqN3VKUzVfWmx1OTVxX3dRSUQwa2d3T0VtUU9NWEliTFVZbHlsMHVjT1c2S2pEaGE1WTNEbVhCVFNXenVZaEhtTFppWHY4NFJDdjZELUdKSTRBcUI3amdHU3Q2OWpCZHBrYV9PWV85UlQ2ZzI1X2dLVFI1ZTkwUzVCcXV0SWpmOUtnZTh3TklYaURLWlFnOVZVc0JTT2NXNGZ0V05vRC02TVFJc2xv?oc=5",
+      "source": "Education Times",
+      "exam": "Source: Education Times · Auto-updated",
+      "id": 2003
+    },
+    {
+      "cat": "notif",
+      "badge": "Notification",
+      "tc": "tgi",
+      "date": "Nov 06, 2026",
+      "title": "CAT Admit Card out today at iimcat.ac.in; check steps to download hall tickets, direct link, exam date, sh",
+      "sum": "CAT Admit Card out today at iimcat.ac.in; check steps to download hall tickets, direct link, exam date, sh",
+      "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxObjNVdWlJY0ZOVU5yWHFCeTFuci1hVkpGY2JZSkJaQkxScVdpcWtNUTY3VG0tUnZBaDAxdWgwWUlIN1R1YnlpbWhzV1VwY3dVSm5fR3k5Y3owZDktdzNLREhZRnhoVzNUUC1Pdmd0d1d1cDFvbGhQbVpxMU50TnI4R254U25wd1lITnZUOHdlRFpjWVBGMkp0WXdIWU1YYW1MNnhQbUdLTzhvVVdVaGY4X0wxM0JhalZodmRzdmw1V3gxMmRNeldMN0x1YTkzR3AyUWJhRkZNWXNvZG1lU1I2RXFZVGpTczNxdy1TUV9KNDU5YjU1X3NIR2tTVDQ3cms4QUx0Ny1oaVJHdllHbzRXakZJcWdiSzQ0YjQyRUNR0gGjAkFVX3lxTE1CVDR4MmhBX2JvcVNvdTRqNEJsc0RXWjYwVmNjcVpGdWZDbnpWVWw0eDFhR3lGZ2ZMaTJiRHB1RlRTMW9femJBeHNLUElrWDRfbzYzX0VpY1NlRDVoSURfU0JIblJucUd1UV9Ea0xpSUk1clJRNDdHNGZJMjBVSFlnVTRlcnJFcWxwSm5IRW8wWV9kazJXYmtZMXJRT0YyWnBqLXU4YTdWQXRJSXlvcDhmZ1R5bEJPSGJmdm9CNG1MWEQ3Uk1jRmpZTGpFWXJTODZ0bGl6Q1hMQjY3UU13VkNaX0lma2N3Z0ZKenFBTGNSSExMdTBrQUNYVVlxNlU0V3dzOFlNU1dNU2hWaFZ2ano5aG5IeWNKR1ZhbHRhVmJzQWhTcw?oc=5",
+      "source": "The Economic Times",
+      "exam": "Source: The Economic Times · Auto-updated",
+      "id": 2004
+    },
+    {
+      "cat": "result",
+      "badge": "Result",
+      "tc": "tgs",
+      "date": "Nov 06, 2026",
+      "title": "UPSC NDA I Final Result 2026 Declared; 617 Candidates Shortlisted",
+      "sum": "UPSC NDA I Final Result 2026 Declared; 617 Candidates Shortlisted",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZ2hKaHNfRnB1ejY4OUVybkY1T0pXR2xCcENWblZ4SGU4N3dQSkczUllPZy1CU1R3aGRpY1o3VDFjeUE4cEw0NXFoR0xSaW9rbWVDRkJoR2JCazRsUUFMaVY5SnVjdEFiNXpPLW12eGVlUXAxNTQyc2poNnFSajV1UDlvZFhndTNtQTZSVG9PbW45NHdaRE9EZFpjN3BGckdGTWI1czhtVm5yZE9LbUxoLUNWMXk0ak02WFJVNHZ3?oc=5",
+      "source": "Shiksha.com",
+      "exam": "Source: Shiksha.com · Auto-updated",
+      "id": 2005
+    },
+    {
+      "cat": "notif",
+      "badge": "Notification",
+      "tc": "tgi",
+      "date": "Nov 06, 2026",
+      "title": "RRB NTPC Apply Online 2026, Last Date Today For Graduate Posts",
+      "sum": "RRB NTPC Apply Online 2026, Last Date Today For Graduate Posts",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPTkF1ZjVUamZhYW94Wmp1R3Z1LUtJeEs0WUQycUJhd1lib0RVSHN6NzVGMC1OYlE2WmlDdEhFcDM3TWtWOGc5VkQ1dEs5NG93Vl9YTVlBVEVyMWV6REtpY3F2Y1JFRFczUGRCT2ZSMkdDZHZDcWZ2SzZmOHY5S3NmWm1vRU9NV1dHbXBBMnNLU3lGMlotbEUw?oc=5",
+      "source": "Adda247",
+      "exam": "Source: Adda247 · Auto-updated",
+      "id": 2006
+    },
+    {
+      "cat": "notif",
+      "badge": "Notification",
+      "tc": "tgi",
+      "date": "Nov 06, 2026",
+      "title": "CAT Admit Card 2026 OUT Soon; Check download link, release time, steps to download",
+      "sum": "CAT Admit Card 2026 OUT Soon; Check download link, release time, steps to download",
+      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxORkVZZnF4eG5QU2FaczFfZUJBNWJsSnpGNHJLZ01MYnc1T3ZJcDJFQm1QT3NoQkdmdWdpMWh3T3prU1kwWEN1am55Z1FqSmRiMTJzTWJHLV9MbDlvRDNkeVRNNmRKYVU3NWZhVENpNG5RMlVIT1BTaWZtZG90c2FWMC1pZ3d4b3Iwdno3bWxQc09qRHBSSmxNc0lVeVM2N1lOOGMyOW9qS0RuSjZGbFZ3Z3VFWWlVenVSajhGQXNkZkVkWEpkX2ZjSXJmbUlqelFQSFdfT0hMSUxyZw?oc=5",
+      "source": "Education Times",
+      "exam": "Source: Education Times · Auto-updated",
+      "id": 2007
+    },
+    {
+      "cat": "notif",
+      "badge": "Notification",
+      "tc": "tgi",
+      "date": "Nov 06, 2026",
+      "title": "UPSC Mains Result 2026 Out: Download PDF, Selection Trends & Next Steps",
+      "sum": "UPSC Mains Result 2026 Out: Download PDF, Selection Trends & Next Steps",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UcXZxX3FvcU41dzdEZEQyOWZ3Z3JxRW5yY3lHUXQ3YTlFT1IxbUVxcFhRbkJVUDVObVI2ZENsRUt1RHBNTnQ4YmdVVVhCSnhFQ29fUGRmTjg0MzJ1ak1fUVI5TkRZMTBBeGM5MnRBUk83S1FtbDRwdHRvZ2ZPOEU?oc=5",
+      "source": "Vision IAS",
+      "exam": "Source: Vision IAS · Auto-updated",
+      "id": 2008
+    },
+    {
+      "cat": "result",
+      "badge": "Result",
+      "tc": "tgs",
+      "date": "Nov 06, 2026",
+      "title": "2026 UPSC Mains result out but Centre yet to allocate services, start training for 2025 batch. Here’s why",
+      "sum": "2026 UPSC Mains result out but Centre yet to allocate services, start training for 2025 batch. Here’s why",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNVkw4SFBCb1NfU0xjaU9aVDlENks5LVBrNkNrdWcwRVB5R3F5RXNOM2IyT25vZDFsRTdINmV0VERjWG1JUUhRUkNNMWNuMDVoQVlKeVlrU1dPTzJBNDE5ek1jelpJdV9vQ2VPOC1IVzJFeE9VLUlrSEJybWFoWkxOT2FDZ1FyRktPamtNNVVKR1gxNjRvbE9NTURGR3Z6T2l5WnhocE9qT2RSd0dxWm5tbkxvYThMNUZVNGN6TXdRMzFtQV9hZl9xZ29DdzlTQWFDbnF6ZGltVFlxV3Z2YkMxVnBR0gHnAUFVX3lxTE1jS0hsVFFuSFZvNDh2ZERQSDVUaG9TWkFfRThPNWR1WGZ0R2FlNjB6MVZSRGlHVlVLbXFDV2hZTVlsSDFFQ1Fjb0NUMHZzVWxKcEdiLUxQT3piVU1YdlUwbXh2Z1VnOUFlRGVBVnFmZms1R05YdjBuUE5iZTEtYm9kWDctN1JRT3V0LXJYTHhxcTBiSUhELVV2Tzg1Mm5FTHRLQ2NiQVlRNUF0NHg5NWNySmFiV1dmVWx3eHZackhuZ0JkUElDempGeVRRVUZjVzN4RHVLcC1mT1RsWVJXQTNSbzhUTXNHNA?oc=5",
+      "source": "ThePrint",
+      "exam": "Source: ThePrint · Auto-updated",
+      "id": 2009
+    },
+    {
+      "cat": "result",
+      "badge": "Result",
+      "tc": "tgs",
+      "date": "Nov 06, 2026",
+      "title": "UPSC Mains Result 2026 Out: Download Roll Number & Name Wise PDF",
+      "sum": "UPSC Mains Result 2026 Out: Download Roll Number & Name Wise PDF",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQaG5HXzAzaGgtOGJTYmxTZEQ1Q2JHU0lPc2hDNEVsQ1k2c3JqeGd4VXFRQm83T0xhdUhFODVpOEt3ZXRGdWFoUUtRalZIVFlTNWtBMEg1N19WeEJEYk9PaGpTb3p5ak5XeEwySk13cjl5U1dHUUFXbVRXTGJvNEVZSVBhZnZ2bFdyYmhYZm1JMnhGN3ZNMkZ6VFJsclNIVEJU?oc=5",
+      "source": "SSBCrack",
+      "exam": "Source: SSBCrack · Auto-updated",
+      "id": 2010
+    },
+    {
+      "cat": "result",
+      "badge": "Result",
+      "tc": "tgs",
+      "date": "Nov 06, 2026",
+      "title": "UPSC Civil Services Mains result 2026 declared",
+      "sum": "UPSC Civil Services Mains result 2026 declared",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOMmtuQkE1X0E1UXRLMVphczBKbmcxcFJEMmxsb21CRndTT3pqLVNYeHptQ3lBMzVBMGJLX0swZjRSNklxaGRRR20yTnBEWjdOSlk4NFl5a3JqemtDWUtyaTJsc05pOEs1anIwYUQwRXZlcnk4Ml9LVnh4NWc2WERrSmUzYXVMRFR6Y1pNaWtRODNleHh4WGotenItMzEwUFI4M0VXMXZsSzQwN0otY3F4WmtnV05JS2Z2QTlFVmR2c2wxZVFTZExDd0w1RjXSAcwBQVVfeXFMTjJrbkJBNV9BNVF0SzFaYXMwSm5nMXBSRDJsbG9tQkZ3U096ai1TWHh6bUN5QTM1QTBiS19LMGY0UjZJcWhkUUdtMk5wRFo3TkpZODRZeWtyanprQ1lLcmkybHNOaThLNWpyMGFEMEV2ZXJ5ODJfS1Z4eDVnNlhEa0plM2F1TERUemNaTWlrUTgzZXh4eFhqLXpyLTMxMFBSODNFVzF2bEs0MDdKLWNxeFprZ1dOSUtmdkE5RVZkdnNsMWVRU2RMQ3dMNUY1?oc=5",
+      "source": "Rediff",
+      "exam": "Source: Rediff · Auto-updated",
+      "id": 2011
+    },
+    {
+      "cat": "job",
+      "badge": "Job Opening",
+      "tc": "tge",
+      "date": "Nov 06, 2026",
+      "title": "Indian Bank Apprentice recruitment 2026: Registration begins for 1,500 posts; check eligibility and direc",
+      "sum": "Indian Bank Apprentice recruitment 2026: Registration begins for 1,500 posts; check eligibility and direc",
+      "link": "https://news.google.com/rss/articles/CBMinwJBVV95cUxQVllEZnJxMHduNXVmTU9iZ1dnSks1bUROZER1LUg5S0I0eHpMWXlzT09yaDRTRGdScF9JTGVjOGhyUVZpUWRJVUdJTjNrOWJILTRwNFptWUQ1Yk9zc01pTkVzNWJlUFpHY3ZpUThkOFpOaFBNNlg0TlFYeHlYeXFKRmFPQkhFSXpoZGh2UG1qamVFRjJORmxQWGZNcGtxUS1xcXNnbTlpSTlJSy1HaTJMek5nSzJJS1c4cmc2UnQ5R3dMRVFrZC1yOVpkMHRZWjYzaWRqTk5ObFRJOUNwbEJPMUp5TUNvNTRrVU1HaUhHWGRTYmlSTGM3cmcxcWNSSGtWWjRwMFY2VzVyeHhZcTRBVUJRUXJXblBvQTZRN2R4d9IBpAJBVV95cUxNUGt2WXotYk92bWc4WGJGeFNUTjljNGlWRl9yTDh2MjhTaHF1RjRobE9nN1E0NVVzWWJCZ1c5dkRhc1o0TVVZRWVXa0xjU2RUN01qUE9Ycm9VczJrQmtTb0x1N2F6ZzNUd0FES2N4aUFIcVRIcm5MdmlVMzl1ZUhVOC03Qm90ZlV5N0FsYjJ0X003Q2oyU1VydXNYWTVJRFBTQnhWM1NrSmJfZ1dNMXZYalhWX05tY2N5eGFlSXMtN2drRlVlblZYeC1CRzJGd0xCOEpQVmt1RHhuVUJsOE93SEpPOGJ6NjNKWTJZWC1aWTg2NnhISTJRaEFuMmFHMDViY2tUdzluVFFYRURveFFseVNIRmxaeDVGenZNTlBOaWtzLXFD?oc=5",
+      "source": "The Times of India",
+      "exam": "Source: The Times of India · Auto-updated",
+      "id": 2012
+    },
+    {
+      "cat": "result",
+      "badge": "Result",
+      "tc": "tgs",
+      "date": "Nov 06, 2026",
+      "title": "UPSC CSE Mains Result 2026 out: 2,526 candidates qualify for interview, check result PDF",
+      "sum": "UPSC CSE Mains Result 2026 out: 2,526 candidates qualify for interview, check result PDF",
+      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNZGlIUHNSbEtsT1gtZzFCWkF1NVhZWElOSTlPX0xQaTA2V2dBdGFKSl9tRVRScGtJeFVBZ3RvT0dMaVItN0FvUWxCNVpHVFNLZGpWTE1RRTU3WHFUMGh0X3I2R0xwQWtMS0dFMlhiRUpoRl9IRTFpUXpRdnhWMUpsSTJwV25wYjA3ZmVkekRjdkJqdXltZFZ6SmVKYWY0UG85SGUwVWI0Rk9HZ1I1em51N0ZUZllwTDJYRjJhYW4xZ3dycFdxTUpzZHpxb04tX1h1bDZXVUQ0Q1JFYVRNdFVZVTVQdHNaUDBMU1dKNGR3M3RJeXB20gH6AUFVX3lxTE5mRnpZUVdjTUpWeFF1VW1oU3VsLTZSLWpCdTR1Q2FyYWtqM0JjbVFJZkJlY2xfSlZMdXVXWUxQWk9ZakpGc2VVX1d0RGw2dHlnUkJtTWRHVDVSSXEyeUprWGZLdFZyNTlMRWZ3UE1PMGtiQ18xcVpJMnNUZkRnT0VMWGRyUjM4ekozN0UtX1BQaHdnWWFFZ0wtQ2VkZ0Y4SEtXMWxrTTExZkxpRDE3UDRHRGx4Y3NBV3R6RndHaTZvSnExMXB5SXZGb2VQZ280c1RsTTZ3VXJWa3dpLU8tVUN6NFBkSnBteFNsQ2k3aDFrTVNDa3gtb0JlUHc?oc=5",
+      "source": "The Times of India",
+      "exam": "Source: The Times of India · Auto-updated",
+      "id": 2013
+    },
+    {
+      "cat": "job",
+      "badge": "Job Opening",
+      "tc": "tge",
+      "date": "Nov 06, 2026",
+      "title": "UCO Bank Apprentice Exam Date 2026 Out, Check Selection Process for 530 Vacancy",
+      "sum": "UCO Bank Apprentice Exam Date 2026 Out, Check Selection Process for 530 Vacancy",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBrZ01IVk5GVzhTTFMyQ2tsRUM1YzZxckNCS1UtVVo3LXd2RWduSW1zbElaQjlmTTVpT2paa2dialJXbm5uSFI5d2FlWV9ZelltRHJqaTVFeFljcmIxU0g3UTBrNXZrUkwzNlloelhKNHVHS3RJVVhRWXhEbXg?oc=5",
+      "source": "Adda247",
+      "exam": "Source: Adda247 · Auto-updated",
+      "id": 2014
+    },
+    {
+      "cat": "result",
+      "badge": "Result",
+      "tc": "tgs",
+      "date": "Nov 06, 2026",
+      "title": "UPSC Mains Result 2026 Declared, Direct Link Here: 2,526 Candidates Qualify for Personality Test",
+      "sum": "UPSC Mains Result 2026 Declared, Direct Link Here: 2,526 Candidates Qualify for Personality Test",
+      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQOWx1VnhNRjgzdDNXa1Jnd0dRSDc3c2dTX3NZUTNrTHVpNEw3Y1BfWHFSZi01Tl93R2NzUGV2ZVo1cHVoNlZ6SGpsenBVVUl5bXpFQ2c5RlFKRjVfWW1QVks1bTUwdEVLU0IzZXlwRGpGQThxSWEtdlY4cl9iVllXY3JQY0lnQkNTaWlaRXN3TWJVZFVLT1dCcGY3MmJnUTY3U1BHQUNvSGluUnN6SmRHTGlZNHRBMnNWeFgweDFacWdVclJyd1RzN1ZFMGhjNFpuZ2o0czBZVXhFRnlWTno3UzNxWm9JeUlEZExz0gHwAUFVX3lxTE5na19rYXg5VXR3MkJXYVFGYUNiRE5hRUVVREVwc1NQcWN6czRHOHVWVUk0eFJLSG15amVsS2paZWxnUzh4RWN1VU5NQlR4MFVvU1VUaklrdTNCU3FxaFRETmd1ZkdFclU0emg0MUtrZ2Zld3VxOW5zd29EOVZkZ2t3X2d6QkFQNUZETkttNk1Gbk1YWjJBazRXYmhzRC1Xam9pNjUxUmQ5V3Jxc0Vnc0w0amVQemdqRnVnZmJwRXpjRDNrR1dFTEs3eHZyclIybmNVODd0UDhFRTU2bHNmNEtldEVnbWFTNHpyMFViUnE1OA?oc=5",
+      "source": "Moneycontrol.com",
+      "exam": "Source: Moneycontrol.com · Auto-updated",
+      "id": 2015
+    },
+    {
+      "cat": "result",
+      "badge": "Result",
+      "tc": "tgs",
+      "date": "Nov 06, 2026",
+      "title": "UPSC CSE Mains Result 2026 declared — here's how to check your score",
+      "sum": "UPSC CSE Mains Result 2026 declared — here's how to check your score",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQb0taa0FUeDZPNGJtZFR3a2Z6LWJCWjRfS3YyUVpDS3RRTTdERHVadEJCcVRid2Zub3FYMm1YcDVCRGhXWG9EYjdXTU9lZmw2WWpkY2kwNnRrREVzbWdSbVIzVWppMmRGTDVDUzVDMkpIakRzejhRZDZIdjhTNjVJdHhqaFYwWEZBdy1KZ2FENzNLYThtS1BKcnYwd3lwYUVwaldHRDB5QlU1ajZMU0kyNGZZWdIBswFBVV95cUxQb0taa0FUeDZPNGJtZFR3a2Z6LWJCWjRfS3YyUVpDS3RRTTdERHVadEJCcVRid2Zub3FYMm1YcDVCRGhXWG9EYjdXTU9lZmw2WWpkY2kwNnRrREVzbWdSbVIzVWppMmRGTDVDUzVDMkpIakRzejhRZDZIdjhTNjVJdHhqaFYwWEZBdy1KZ2FENzNLYThtS1BKcnYwd3lwYUVwaldHRDB5QlU1ajZMU0kyNGZZWQ?oc=5",
+      "source": "CNBC TV18",
+      "exam": "Source: CNBC TV18 · Auto-updated",
+      "id": 2016
+    },
+    {
+      "cat": "notif",
+      "badge": "Notification",
+      "tc": "tgi",
+      "date": "Nov 06, 2026",
+      "title": "PGIMER Nursing Officer recruitment 2026: Admit card released at pgimer.edu.in, CBT scheduled for November",
+      "sum": "PGIMER Nursing Officer recruitment 2026: Admit card released at pgimer.edu.in, CBT scheduled for November",
+      "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOaFhRNGx3QTQ0RG5SYzZVWGh1RXFJaXFSbzNVZ3FFOTFYTHRxRjQ2SUNlOWstTHNlWk4yVG9ZQUszR1hHSVJ6WFNUOFM2RmZvMlpqSUdjc1ZlMk1JV0dBaWt5Z3R0bDRpcVR0Q2VJa21vYk1pRzU3WGVwX1VuX3ZqOVhSckJOYnhKenlPdy1Fazk3T1U1ajZSUVRVTUNOa05oZEZURHIteEd4MVNKZzlmRk5YM2VLNmpGUjFiUDhBZHRUWDgxaGp3SmhfT1RXT3ZmY2Z5dkFZQy1jaDBlUTdJbi10all0ZURxVEVRandUcmFpU2hNX3hXVjVfTVQya016Z2NSWl8wY1BTLXg2bTlvSNIBlgJBVV95cUxPRGdROWxfZkJ4S2VDanR5aGs4cVhjUDkxUXJlNjN5RUQ5UGZKSGhfU3NLY0ZPa1FsQTlXcENkNkc4MkROdnVFaUdDQ19MUVhsNFBsbEs2dDVrX0dnZm51R2lncDE3WmxCX0VnblFNeTI3NUVOM2hJSnM1Q2FUbDQ5YkVNMWRNUUJwTmlUMVAwZTlsOHQzU3hlVDk2bjZ3QjRCRjNaVjJTVHo1UU1wRTZvMVJHMWhuNUNGZlEycmFIbTJ5eDBEWFBKWkh0Szk3WTNVZzNYYVg1Yk1vei1SaGh1S19SMWFBWm51eHFHT25WMUd6Vm1VdFdLNVZGX3pEd1hBRzlaemoxR1AwcERTaTlMcnhKZ2RiUQ?oc=5",
+      "source": "The Times of India",
+      "exam": "Source: The Times of India · Auto-updated",
+      "id": 2017
+    },
+    {
+      "cat": "result",
+      "badge": "Result",
+      "tc": "tgs",
+      "date": "Nov 06, 2026",
+      "title": "UPSC Mains Result 2026 name list PDF out at upsc.gov.in: Download shortlisted candidates list, check names and roll numbers",
+      "sum": "UPSC Mains Result 2026 name list PDF out at upsc.gov.in: Download shortlisted candidates list, check names and roll numbers",
+      "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQajBTLVlGaENoeV9GdlRhSmtpYjFWeDJYdmJocjV0SkJlalZtNkdWSmZWelAzSEFMV1JuQjBiSXl4czFrdXpfa3l6UjRSV3hKNHRJZ01RRUpTeHkyNjBzWEFNZFZjUEJNUUFPQk84S0hYaUw0Mld3MXJFY0NNZFNJT1NVSGlQVU1hMXFZTTRlQkNUbUw3X3V4WUY0WXJiZWtoYTN0aTdwbUtrQk1xRFlSeG1sT1cwTEZQeHhFYkhSam1jRGI5SHJxR2dxVkNYVURtTFpvd3JtMFlLSGpJTTRUcjYxM2d4Nmg5ZTRObHptenl6ZEdBVE1LaEM0RXN6VUJiellXOHI1QnR3U1dGUGRpdg?oc=5",
+      "source": "Education Times",
+      "exam": "Source: Education Times · Auto-updated",
+      "id": 2018
     },
     {
       "cat": "result",
@@ -37,7 +241,7 @@
       "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPZ0VhSVhMdzlJazlzUmNtd2c3b0R6dFdUMExUZzFzUUlheUJoN3ZONTk3d3ktS0gyTExMY3p4bFJVWThCUjdsQ0o5ZlY3V0tqNEdldnlpQUhlTTNINDF6ZjlEOEZMSktnQWZBRllKNFVKaWJ6OENLRzl0Z194eGdBeENhaHJvLXVNMThYaWlXZGpoNXV3MTBUck15SHE0aTM5bkVETlNQWnBfQXNsajVBTzVoVjhnemt4R21COEpSSERkTGlxbGhybkt0cVRsNjNBVURyckFGWU50MW12MEdlZGQ2a3hLc2JhOGJn?oc=5",
       "source": "Mid-Day",
       "exam": "Source: Mid-Day · Auto-updated",
-      "id": 2002
+      "id": 2019
     },
     {
       "cat": "result",
@@ -49,19 +253,7 @@
       "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOcmJHQjJaVVdlRWF0M1UwVDFoNS1tcWFnYVA3LXhxQlZOZXN3Z0l3Vkw1Y3k5OGhUS205a211TE9tY0dRYThSOVFfUFZ0YmVxTGJnYm9VRVYtR1NyQV9ucF9razdoNDA3anF1c2s1ektIZ0VXT015bmtMUi0zUEdfSEhLMDdqMlBYRk9QclRoWHBqZTNfMjFtVUlMZGVwUE1uS1BXVG5TZmxUajZrY0N4a1NGZnBQR2xKbk8xR1NPbExhblU4T3paQjNLdGRLX2UwRk9UNzE2ZUFKT0xJVlpLT0ZR0gHnAUFVX3lxTFBOd2d0dThyRU5vNllGZlRmc05QNkZVcFh5MURyUmNpWUROdjNVanJRWE52Y1pOWDFVdVFrTGJFWXNkUWNBZVR1VTJKVzZyMjhJdHppbWRkZkFXeTVJbzc2ZDFNSVBWUDNwWFZOR0wzNzFHcE5mT0h2aUJ0RzB3X3ZxeFQ5cms4UHVyUWFtZDNUXzF2UFozYzlkOU02RHBod3FLRElyNFhyVDZLWFJXbWY3LVZ1S3MycXVRV3FsMDU4MFlnWHdPMlozN3ppazdNWEhaanJuLVZ6dGJGbzFpYlhpdHVybV9Iaw?oc=5",
       "source": "Business Today",
       "exam": "Source: Business Today · Auto-updated",
-      "id": 2003
-    },
-    {
-      "cat": "result",
-      "badge": "Result",
-      "tc": "tgs",
-      "date": "Nov 05, 2026",
-      "title": "UPSC CSE Mains Result 2026 Out: How To Check Score, Download Result PDF",
-      "sum": "UPSC CSE Mains Result 2026 Out: How To Check Score, Download Result PDF",
-      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWTV1NXlvNWo3cFdNMDJwdmJNYXB0RUpRY1RwQ1lBd3R5X3J6TU5oSkNPQUVsTmlHSW9fZ2p1VllqMjJqVkF0MFpCY1EzSnBCZ2JDaHFSdHltUkNmYmxhb1ZOUDkzRHh2TkxHZFZmcEs2RXJadDhEUnFYNnhaVGpvZW1iNEd5R0dTMDkwQ2I4Q0lQMEhSMHQ5b2t5UGRXZ25YSEh3d3JuVHlYY1FqRUVzQWFNZHB1T19lY1I4VmZ6WWrSAcYBQVVfeXFMTWFIOGJzY21EUFMtSElkdjhDOXJSREtxU2syYVFvYjJlZ3czakZKeFFvQng2SzlXbWo5SVh3b056QXp6clNDeG9mUmhjRlp0YVowUUxPYzhHSWJsMjlOcTJQbnMtTXVETk1kcFlUZ0R2TlNZdFU4RkJHZ0dlSXV6OUhiaVlISnFQTnI5Y3JheXNfeVFFMHVGZU1IQi1pQUxjd0F2Qk1acS1YNFdGenlvY2xVX0pRak9mZjBua0tCNS1neEw1a0tB?oc=5",
-      "source": "News18",
-      "exam": "Source: News18 · Auto-updated",
-      "id": 2004
+      "id": 2020
     },
     {
       "cat": "result",
@@ -73,7 +265,7 @@
       "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNNTR0cmxRbGpGd2g1eV8zSzl2Z3BSdWoxWERNVGg5U01hbkZVbkpycWE5Wl8tSUxSdW5WMzBkTUdqekpBOTRaUHRxYnVYdWotTVhfS2pRYURVQVROYUlfOUJIS1J5YmlucjJnR2NRU3JXMldEemd6amNhRjJTTFVoZ0hfbGF0aGQ1Z2xBZjVLa2w2c2V4UF85eXNFMVdNYjRLUW4tN3dNU0ZadjVDUnA0WndxZUZpa01maU1VNEFyMUMteWPSAcgBQVVfeXFMTXBzenBtdGNpV1dNb1Qtdm90ZnFMcnRkdGFRN0Rsbzhtbl9pQmQzQ2t2RktneF9TYmVTVnJ4T1NNaVE0OUQ1aEIxeEJ4QzJpNzY2NndZY0o5Z3ZKUkRkVXlEWkhWdkk2dXlBMFJyZlBjTFFmTDJhZmdaUlhPdUZpc0I2dlBRZ00wZXJkRXZ1UE5JYzRzNS1NS0RCbWpfZWpBTXFWek5HQXlsdDRmLTQtQ1c4bkxRdll3emZBUTh5b0lRc0FzNDJYOUU?oc=5",
       "source": "India Today",
       "exam": "Source: India Today · Auto-updated",
-      "id": 2005
+      "id": 2021
     },
     {
       "cat": "result",
@@ -85,7 +277,7 @@
       "link": "https://news.google.com/rss/articles/CBMivAJBVV95cUxNZWp6MUR0eGhLRXZOS2xDSzBPV284Ymo4c3pGME01WUw2ZFFwMXF2eWlzOXNUaVFaeHdmeklmMl92eXdVbF9EZFFtUEp0QUtPRzdhaldLdDg3bkpsdlBqaXNDR2k4Z3RwaFFwNTI3NmhWamo4SWJGVDlmMkJVTnNRNjZZODBKb2J3OXR3T1pTRl8tdk1fVXpVYlY4Tzk5ak5MZFhiQ09jbW5LYTJKek5xZjJrLUtxZXUtOXVVX2lsd0hMbHNuRVNuZk5oTmo2czNMd3hGSHA0Tzg3TUtOQ2xtZFpRd1BRWElPdEZUcWlGUC1kTFg5ZXNjdDRRYXlmV0dvaEx4QzdGbHZJblFCMGtqWVUzdFhyRkFmbzJIVVNWYkpUMWdRLXNBeUpYV2g3MVNRbWtVRUNhOW83OGFW0gHCAkFVX3lxTE1hOVprUHFXQzdvdnBlYmFLZXFhUXJQdkdrcjlaVVZGMFFWa0k1LWM1NHJ6Q3VwUzFvRHNQbGlaa0NEalllS2pzLWRxRzFxRVFmeGhZc3F5cEtGWk00eXFuR2pWVmxqTk13bXNkcFVrSlVaMkwybzg4RmxJRV8wUHg5WE9xWWwtNS12ak51eGJndkRQcE9zcnQ5QXE2UFVpU2dVbkNONjVscEdpMlgySE10ZEx3UF9OMWFvRk4zOXRsd2lhamVXR0F1UkVSSU1ZSDhYMzhBYW9EY3V1WWlLNVNnS0k0OWZra1hrTG5URVBaTlg4OVFiZG53Ulg3MHMwNHdOWmVrektkTFNhdDFURFliSjFPd1dfZHZzVTNKSFF1RkhfYWhmOGZ0cExGRkhXTFlrNzVYUG80bUJMeTJDVlJxRUE?oc=5",
       "source": "The Times of India",
       "exam": "Source: The Times of India · Auto-updated",
-      "id": 2006
+      "id": 2022
     },
     {
       "cat": "result",
@@ -97,7 +289,7 @@
       "link": "https://news.google.com/rss/articles/CBMixgJBVV95cUxOWm02eGVaV21kMXhvRTUzZzN2eWY1NWE4V2haU1BwQzZKdkxvUDV2OEpsWUlwbFFjYUxMTXZFR3BpM0t5eldCLWR6QXBGTmVicFd1MW0zZFM1b2lqMkdhVTgxNGF3WmpQUmw4YmhxVVp0T2loQWw1VzlISUJpcmNHOE1ocUhSMWxTYWFNdVE1NjZodlFaN2xJX3BqeUlCSWdSWjAwbi03RDJ0eXJlN1N4YVdNNEFlVUROUUViNDY1cDI0b2x3eDJMVXFfdUZubWVTZGFDN1V1b0hpclFhUlhLWGlBSTFnV0FJSlNMdzRnV0Y2NjJCbHRqbW5acHNiODVxYkhKTVhUcUt5Nl80M3ducXhWT0RuTGwxdmttM2hZeTE5cG40UkhvWTBTTE90WUxhRkY3RU9iNkdXRU9LenVfS1AtRWZLUdIBywJBVV95cUxQMVJVX3ZCS0UwN0ZqQ29qWlJwMzVGVUcxd3VaNGFJQWFqM1JtUTZ3NEtJU1pmWVBDR251a3p0aUdQdG52N0hvNlZNTDNHMkw4RTA0MnVHdlllVFlQSEs0eUlNdWZiS25ibjlMX1hicWd5cEctUDN4WGZXWkpkTGk4bFEzc3plMlNYWUZxaUhDTzl3ck82TDZsNkdFb2xRUmJQME82WjRSVFRVeVp4bHp3clVzbXR1LVc3aURhdVpKVEpKZ29OdFA5V1ZUUkhISEtOdllxNkItYlNoNUE2M09neEtSMFYzS2NVMFJyQVNpOUs4a1NrV2RZVWZ0WUNGYmJzSDNZSkgyclM3czdFVmZ6RjRQVE1VSU9fbEI2cFNCeHpXeVdzT0JlUjFYdTdmX3RjeEdzeVB4d3lJT1VoLUVVTW9WQlNDMHRNcHdR?oc=5",
       "source": "The Times of India",
       "exam": "Source: The Times of India · Auto-updated",
-      "id": 2007
+      "id": 2023
     },
     {
       "cat": "result",
@@ -109,43 +301,7 @@
       "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPZzU4MEl4ay1Tek50S2pfeDh2MkttVFdrUHZtV3ZHMXl0Z0lGaWphRko4M2hVU0luQXhIRkh5eUtvSWJaMEVJTEZYYjhNdFVwMEtCWFh1T3p2ODFOTG1qUl82cG5EN2RZZUR1Q1BPLVIzUzBGeHNkempMRVZqQlo2dW9HVGVKWUN6aEZwOXJacE9SV0ZHeFotYUVaZHpXbGo5MlZ1ZjJzODFpUTR2VjRfczlqLVpEaUkxVndsWnlDUWpEdldnWGZjcEJGdDdXSl9YUGRsbFdLMkJhZ09NU29YWkNicjPSAesBQVVfeXFMTXVYNElaOEFvWkhTT292Q3J6ck5SY3c5TVRsb1JzaEtKUnBJVWdweVJiVWtEWV94dnZMMk5zVUVUbXNTRVpaNTk1UFIxV24zRUQwUVZHMVZsN0ZMaDNmQ0VVdnFBN3ZhNE5wcjMySVFaVUMzcEQ4cHU4eXpza0JLSVJnZkdaZ25vXzE0Um1SLVkwZUtMdXpjbGJFVERHWnpFOWlLOE1zUDIwSmFMemhKUG44Nm1hdjJlVWNtTmVMQmUxdlEyV1QyZXlQb3BTZXRQWDlTS1RWcmVCQktydi05cGx6ZE1JZlgyejVpTQ?oc=5",
       "source": "Jagran Josh",
       "exam": "Source: Jagran Josh · Auto-updated",
-      "id": 2008
-    },
-    {
-      "cat": "result",
-      "badge": "Result",
-      "tc": "tgs",
-      "date": "Nov 05, 2026",
-      "title": "UPSC CSE Mains Result 2026 Out: 2,526 candidates qualify; how to check at upsc.gov.in",
-      "sum": "UPSC CSE Mains Result 2026 Out: 2,526 candidates qualify; how to check at upsc.gov.in",
-      "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQYmhCaWhTU2dWb29BbDV4ZWNsSXhfa2ZSb3RlbklXS1UzeGhOYkNwV2g4OFFZNzhqR1dEWUp4LXhhRFhBOGxDcXJnak14STdsZi10TmN0Ti0yWVBMS1VFZXJ3Zy1PaXNpZVJxTHR2WTBSeDhHRFhDalhwSF9Kcm5lSWhxWVVSWEZaajFGeHRzRUYzdHg4akdKWHhvUnVET1lqR3ZabTlLcmlZakhHWDB3UTJGMkNVNUt3aTVDbTZMSGpSZkRXYUJWWDZuZkt4clh2d1JWVzI3RVZrOVNkYUtncHM5VXdreEdMMWl2YzRULWZOdFR6RmfSAfwBQVVfeXFMT0Mzek5LdWk4bHVVbG1RZUdLeHFIVERGN09aSWhlLTJ2V2RrTlN4NFBBc1RLNUQ5cnVDYlUyaUtkNjJxZ19UMlJWWEFzYnpVVF9leGliUkN2LWlZWHJPaDA4dXA4NDhLU2tOcnlpWERlUTJ5blNrSzRUTTBEMnJuaTVSOHJOd3YydGRhZW9taDZrV3ZXU1lac3BKa2FKd3hXcTZ6U2xzVjBRVXpSa3J2cDFPTktHSGw5Yk9IYS0tbGNuN1ltSDJFVEZScWZxb3hjck85ekY2RlBWNDBhSXpmaWNCWjBPSkxITWd6NDd4bi1iMF8yWHdrdDM0SWts?oc=5",
-      "source": "The Indian Express",
-      "exam": "Source: The Indian Express · Auto-updated",
-      "id": 2009
-    },
-    {
-      "cat": "result",
-      "badge": "Result",
-      "tc": "tgs",
-      "date": "Nov 05, 2026",
-      "title": "SSC JHT Result 2025-26 Released at ssc.gov.in, Download First Round Tentative Allocation Merit List PDF Here",
-      "sum": "SSC JHT Result 2025-26 Released at ssc.gov.in, Download First Round Tentative Allocation Merit List PDF Here",
-      "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOakk0VkdhaW1jVW5sQU5qd2g0X3FhMk03Q2k3OWoyeE9zYzA4eEVFbWpySkd2N1JHbVhXdHZnQW5ydmllbHFiMjE4bmE0azFYMGk1NkVQUkFlZGQ2QXNnRV81WDVqUnpmb25UYmV3VEFSMW4zb184cW9fZWhPdHdHLUdvQmcyV0F3ZTRkd3ZWMVJsWndIX1J0TWFud1lZb3NMMnN1VmxEWU1rWEtQVEFCa0dPOGc0Z1pKWVk4VFpWZzZveVlyR2JmSk51ZDlySEpxeVc4eWhFa1k4Wlhpak9mdVo3VTFsdjgweWROUnlQV3bSAfcBQVVfeXFMTnRyaktDaFBIbUkxSVBGMGJlV0U3Vm9GaWlDQS1jenFSZlBibk5Za1p2Wld4X3lpVEkxZWVmOGVPVzhtVXVWMkxNR19pdl9LdzZVSUdLaHdOdzhYTTFsODgwbkw4NElFdTZDc2JyTW0wN2RWck0yam8zeHJpaEt5Y3FBRnEzV1p1RGlNVE9MVVFieF9OU2ZHOTNIY0tFblRMbnJMVEVrRXJFZkp0RkdWcXFldUtCdkVKVHYzWXFRM2ZtNklWMWVKWktnMjNDYXN3c2pUbHpRTEVYOVJrWmZ1a3Nvdy03WlhSQm9EU1JmLXJvYVJaRV9tSQ?oc=5",
-      "source": "Jagran Josh",
-      "exam": "Source: Jagran Josh · Auto-updated",
-      "id": 2010
-    },
-    {
-      "cat": "result",
-      "badge": "Result",
-      "tc": "tgs",
-      "date": "Nov 05, 2026",
-      "title": "UPSC Accounts Officer Result 2026 Out: Check Shortlisted Candidates List PDF for Interview",
-      "sum": "UPSC Accounts Officer Result 2026 Out: Check Shortlisted Candidates List PDF for Interview",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8xOXhoTlhkcUlJTnhRY3BncERJSFhzdl9GTXBEeE9kT0xXN3lwMXNVMFpLQ1l6S2l2bXlhWmpaanFuVW9UYzN1UGdoLWJyNVo2VDY4aTR5bDdaZnNvNkFoOGJLaHRCUzB5a2V2VXVlcHE1eVpNVVBB?oc=5",
-      "source": "PW",
-      "exam": "Source: PW · Auto-updated",
-      "id": 2011
+      "id": 2024
     },
     {
       "cat": "result",
@@ -157,7 +313,7 @@
       "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOZDhyUFBMaHJmNVFEMWJidFI2ZDh0RHY5S1g4bEd5NnZCNDhpamd2UjFKZXFhNGNKUmZ4NkhTOE9QZWlxVnFkZ0V1T1Q1eGszcGNVRWhRX3h5WW1pd0psSGJNd3Nab2JFeEg5NmFYYU5BUm80TkNKTE8wVmpXdF9EaWNEbW9TN3FQby1VNEp3LWg5VVMzcjE3NHQtb1JnNWYwVWcyZ05PNjJkMzlVT3pmdy1tSEFoM2RMVU5fMnBURE1MRXE1RXdoVzdXbC1pa1pwZUk0bVBMN2JWTUp5UTNBR2ZiQWloMmtYS0RFUVljNG92QUlIdzRfVjQ4cmthQUNfWTJtN9IBigJBVV95cUxQX01NSEw4V2Q0NDVnczBsT2owaWpkR1dCZjI5ZTFaejhXaURsbzNWdjJhRnMwLVRMSG0xWnNpd216V3M2UnhrWXc1N2RoUnRHSzdWSDJmTE9zdDRwaDIyYzUyekhGZnlNVXFLVnhHX1ZSazV4bFh0cDYxMlFodi12QjdQTnFMaWFJbnozSjhjM2s4cEJ1RC1pRlROOThFZFl2QjVtUDBPT19sUWhOUk1uQlVFTWthNEFPR3BZVHdlNHdqTWZPUGkwTVQyS0g5UUNVNW9KcDVRUzk0RW1LSVhwNGpCUkNqOG1XVHVaemZYSnBEbXRiREtfZEhDdFRoMGp6eGxHZVpBUE9XUQ?oc=5",
       "source": "The Economic Times",
       "exam": "Source: The Economic Times · Auto-updated",
-      "id": 2012
+      "id": 2025
     },
     {
       "cat": "result",
@@ -169,7 +325,7 @@
       "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQR3VBd3lGY1ktd0F1ekJ5Z3F2RTVVMWhRTDdUZXZaOGJOREpQYnBmZmkwU1lZTFZ3YTdvdGpsZWpnam5vRWEtOUdzU3hIblhISWYxTV82TVdlcUU1OTJuNkhxSjRvZXl2S1lqRjVuR2tqTmo2X1YwSkprN2t2ZUpIWEVMTk45Z2g4b2R1YjNwYXVQTUktYk5CaFFBa0JPV3pOLXNQTXZETDVBQldhODZ3OWIwLWFramNfWWdJQUNtTzE2Tkg0aFJEQngxcUcyMTBZZHRlSnN2TGg1Z3JYdjM2UTRwdE91TlVsdG9QWFV0blczcVpYcUJZ?oc=5",
       "source": "Education Times",
       "exam": "Source: Education Times · Auto-updated",
-      "id": 2013
+      "id": 2026
     },
     {
       "cat": "result",
@@ -181,7 +337,7 @@
       "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQd1A3NHk4RzBqaTZRSGhOLVZTcUcyTDVTcWVybnJHUnk3d1l0UWpubGdIN014SGlhY0VCeEgwSVRSS01WZlF0ampnRThrVnZSWHZ4bXN5UzBPQjhTMEFGb243cU9jcWlhZ244SVNPVUdwQUhuZnl1c0hfZWJFbkRETGc0a0dQS0c3MXAxeURscU5VT1NjTWM3MldWc1hIc1E4ck5VYWVCRzNiMjRINGlHYUkxVVNOWGVRdjRwYTJUYncwTkRybXdDZU5lNnFIS044cVVLQXp2UdIB3AFBVV95cUxPVDItQUJTS0dGaXhIcVpJcUx2dURFcDFBQjNURXN2VWQ1Sng0RXgxNEprNjB6akFVMFJ1cVpaeFZYWmRwUnJfbjhyYWxmZnFNbVhLd1BkQXZjNG1sOVl0aHQ0SDdDcElJdDduejI4ZllkV2F2TGo3WTNKTm1oeUd4ZHRPQXUtS18tOS1ONzRzcW1JMmVjRXJoNFg2OFlUSWpiWUlvRHVmOVYzSkhYVXZHRGtPSlJBYlE4NndFaFFCN2xNaU5jd3huQ2RmM3Z0Q3IxRVA1eHREUXFBZ0cy?oc=5",
       "source": "Moneycontrol.com",
       "exam": "Source: Moneycontrol.com · Auto-updated",
-      "id": 2014
+      "id": 2027
     },
     {
       "cat": "result",
@@ -193,19 +349,7 @@
       "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxOZ19FNHQ5UkxwZkJOb3podnlwZS1yaEtkWF92N3UtaHFIZjE1QmpyaFBPbUNWdFJtREJza0RTOXFYZzByLWkwVTJza2Zqb3NyOGZXcEQ5S2hMbi1wZTJEc0NiZWpJbUJYalpLWV9qcjNhZEFaV0tOcVVFNVFkS3JmR2Z0cHFZMmhOb2o0OGdhNVVuTjhGNkVKMEE5UEJLd2sxVl9UOVRGQzFLN0tPTkpUV0RSdk1JYW01YTdTZmt1QjBQN2dvWHpubVFTdHpFak0yWjktR3R2anNVQWQtU1BBcHFkdUJBcjFuLVg2NnI4OHp6SnZ1WHBnRWgzQlNxaDlQM21WYmg1bzlYaGp5WTNkaFpSZHVDbi1oaGxBeFNn0gGjAkFVX3lxTE1Qb0VRQ29kcmdwV3BqZDFzeTBwVXdudDJKZFg2UFJWMmJSVE5XWWdISDU0T0xJbEpuWUpqc3dNamc1S3dKVjUtM0dqTFJEQ1phaE5DeFB4Y3pRZHRjRl8zWEFlRzk5UHRfRUI1VkN1TkxnUV9KNVBNLWZNY3ZqaElHTFdGbmlXSm5abkJLWWhyZU5hR3R1cVNjMWE4c1JWRFY4djlRUWxlTmVjTWFGNDJBb3R2ME1kWTBqSThscTF0R1ZMQXdNZnNUSVFyM1pPRUJOcnk1X3VMd3ZnbWRvTl9sbTRXUG9WRlJDN1czamRmb2FQN3ZpMk1hODdXb21ja2hHdU9qcF96Vm1zNVRoNUlXeDlmOVFydmJDRVJNTVdmdWo3Zw?oc=5",
       "source": "The Times of India",
       "exam": "Source: The Times of India · Auto-updated",
-      "id": 2015
-    },
-    {
-      "cat": "job",
-      "badge": "Job Opening",
-      "tc": "tge",
-      "date": "Nov 05, 2026",
-      "title": "UCO Bank Apprentice Exam Date 2026 Out, Check Selection Process for 530 Vacancy",
-      "sum": "UCO Bank Apprentice Exam Date 2026 Out, Check Selection Process for 530 Vacancy",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBrZ01IVk5GVzhTTFMyQ2tsRUM1YzZxckNCS1UtVVo3LXd2RWduSW1zbElaQjlmTTVpT2paa2dialJXbm5uSFI5d2FlWV9ZelltRHJqaTVFeFljcmIxU0g3UTBrNXZrUkwzNlloelhKNHVHS3RJVVhRWXhEbXg?oc=5",
-      "source": "Adda247",
-      "exam": "Source: Adda247 · Auto-updated",
-      "id": 2016
+      "id": 2028
     },
     {
       "cat": "result",
@@ -217,19 +361,7 @@
       "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPd1JEM0Jna1pQM3dTaEp1NXZSUzlnWHBIakM5ZmJYZEQwM0VxYVZGbnl0YVNIVU1BVDAzVjl5UnNHY2ZJejEzdlB4NHFfVW1QbC01ZXQ2djhxUnNsOTBHSkRJNktpR2FmWDJUNzgzeUNCV1lqNDRPWTNhSFRmcWttZWFzWk9LZG5zRWtPMllNNDZ1NUJWb0lVRmdrTFRSNVdOMlZDaHpjOVdYd25Uck5oSFFRcEtOQmhhWUo3dWRmMnctS25XNlo0OEM5WEN0d0Z3aG5TbUM1Z3dLdjB2NXBjQ0ln?oc=5",
       "source": "India Today",
       "exam": "Source: India Today · Auto-updated",
-      "id": 2017
-    },
-    {
-      "cat": "notif",
-      "badge": "Notification",
-      "tc": "tgi",
-      "date": "Nov 05, 2026",
-      "title": "HPRCA Patwari Exam Date 2026 Out at hprca.hp.gov.in, Check Panchayat Secratory Exam Schedule",
-      "sum": "HPRCA Patwari Exam Date 2026 Out at hprca.hp.gov.in, Check Panchayat Secratory Exam Schedule",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPUnpsNnJFT2gtVDlOX0w2UjVUVWQ1S2x0Q1J2MjlBX2p5am9TcnNvektIUXRBU2F1ZUtqeldyRjFBVXd6MG43Q0FoaGJhUmdESmRsZE1KaUNtUE1DOUVBX2c2TldnQnY2NDlQUE9ubFN1djVIRjctUUx5eHlrRUlyTURn?oc=5",
-      "source": "Adda247",
-      "exam": "Source: Adda247 · Auto-updated",
-      "id": 2018
+      "id": 2029
     },
     {
       "cat": "job",
@@ -241,7 +373,7 @@
       "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9NWndRWENmN0Z3aHd1WlZhRnNHQmxQSDlCRERiTzZxM0JIbk1Qa2tRMWNQbTZZS213T1AzZ3YwYzFiLU56NjlkUkdUWmVGOTRhRDltcFRfZG1GU0pBTVZzdFc4WnJWSzJzQ0NEenE5RWtSVnV0QkE?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2019
+      "id": 2030
     },
     {
       "cat": "job",
@@ -253,7 +385,7 @@
       "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPRDlyeXBJM0hvVy1qZTFsYTRnVHZpdHROZGJYaGlUaGNlZHNVZ3VIQi1xajRvQVRCaERNMUw3NjBtRnYwMU1kOWx4ckM2YmlzeVllT0FWckpXNVRtdk1FMDdXSkZNOFJqZThoTFFhQzdwOTBkU2cwV0JxdkU0QnZuQ3hRTFowMnZHVi02ZnlrVjNyNU1oc1VLbTFSVHA3a3FIaG50Q2F5aEQ5NFMwR0NKaG5hUzVLb20yaVY3NWdpVmNuZkNJUFB5YzgxNmZuLWFqNXdNM1p1LUlfcUJucllURW1TUHZoR3BhazR30gHrAUFVX3lxTE9EOXJ5cEkzSG9XLWplMWxhNGdUdml0dE5kYlhoaVRoY2Vkc1VndUhCLXFqNG9BVEJoRE0xTDc2MG1GdjAxTWQ5bHhyQzZiaXN5WWVPQVZySlc1VG12TUUwN1dKRk04UmplOGhMUWFDN3A5MGRTZzBXQnF2RTRCdm5DeFFMWjAydkdWLTZmeWtWM3I1TWhzVUttMVJUcDdrcUhobnRDYXloRDk0UzBHQ0pobmFTNUtvbTJpVjc1Z2lWY25mQ0lQUHljODE2Zm4tYWo1d00zWnUtSV9xQm5yWVRFbVNQdmhHcGFrNHc?oc=5",
       "source": "Telegraph India",
       "exam": "Source: Telegraph India · Auto-updated",
-      "id": 2020
+      "id": 2031
     },
     {
       "cat": "job",
@@ -265,7 +397,7 @@
       "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOc3lPM0RsWDlZbFIxdXhGdW9wVS1Qc2oyOTRaaDZhcWpxdVlvcUdib2N6Z3pVNXpGa0RZLU8tYldib3YyMzFGTFJxRzJSczRVTF9qLTJZeGFiQWVJSkpWZDE5Nk1jNElRdFJUb1dkb3NsZmdGeENtenpndE5fVl9lSw?oc=5",
       "source": "College Mentor",
       "exam": "Source: College Mentor · Auto-updated",
-      "id": 2021
+      "id": 2032
     },
     {
       "cat": "job",
@@ -277,31 +409,7 @@
       "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNeUNrU0MxS2JTXzJOZ1lTTHJTSlhaV2NrYTBES1Atb2dUcDFOVlRoajE1UEt4WG9Fejk1UTloQUxtc094RnlKdV8wdUF5MGpxcHJtRVhNbm0yTEF1cnMxLTFoTVQ3c2NCNVA1ci1EZEVNbkFZWFZncmpRT1J1SThuUGpoUGhJWmNXUXlZQWZadVNRYXpFdjROeTI3NmExRWNtQzZYQWdJQ2pHMmM30gG0AUFVX3lxTE5pWlltNnZhUGdCd3kxNFJaUmxoZDMtaGpzQ1lEdGFSVV9Iem1vVVY0b0toWkE1VkJLNnEwN0UtTzRBZE90YkpVbTVfZnp3TUpvdjJSSGhYRmt5Snl4dzY4Z05oYXRrTEVWc3V2dFE1R0txMXFIT3dmME9iM2o0N1cyamoxTWJyX1pDcFBkWDFHUU5tRlpxZmwwN2xlMVlEb1VTdlNsY3h1SXhUZXFfc0Ffd1g2WQ?oc=5",
       "source": "NDTV",
       "exam": "Source: NDTV · Auto-updated",
-      "id": 2022
-    },
-    {
-      "cat": "job",
-      "badge": "Job Opening",
-      "tc": "tge",
-      "date": "Nov 05, 2026",
-      "title": "RRB JE Vacancy 2026 Increased, Check Revised Zone-Wise 4,487 Vacancy Details Here",
-      "sum": "RRB JE Vacancy 2026 Increased, Check Revised Zone-Wise 4,487 Vacancy Details Here",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1DMktGamZsVGM1TWlEZDhMYURvak1WSDloVUgxSVBjUnB5VXF1Vk1RdTBpbGRGeFU0dEdOTEF4SVZ1WGZyNzNfNUVOZElOZmZrZzZ1c0Nld0ZtajAzVEhvZ2hJUHFybGh3cXpNNDRtaVdicWp3YzMwNVJuMA?oc=5",
-      "source": "Adda247",
-      "exam": "Source: Adda247 · Auto-updated",
-      "id": 2023
-    },
-    {
-      "cat": "job",
-      "badge": "Job Opening",
-      "tc": "tge",
-      "date": "Nov 05, 2026",
-      "title": "AP DSC Notification 2026 Released for 2,721 Teacher Posts; Check Official Notice PDF, Vacancy Details and More",
-      "sum": "AP DSC Notification 2026 Released for 2,721 Teacher Posts; Check Official Notice PDF, Vacancy Details and More",
-      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOOGdwTnZNMDV0aGJZbjdnaTZjSU1PYXRrd2k3eVQ3cThRRHg1N2dpN0p0bjB6RlhScGVkbmhjMTlCNVZSQWczNTBTcXVWNkxLZGV0cDVaSW5HYnRUaS0xR1IyVjJIVklzbXYyVDMwMnR4ZUd4RFpNdFpzNkdhcDM4YmxhVXBSRUczWkVsQ3VZbUcxWWlIU3NHc2Fwb3BGbXZlU1hGTE5VOGRmZHNxaFJLaF85OEhqdXRObk1jSmlDbnFEclYzOEpHWlltMNIB0gFBVV95cUxQd2c2NFduWXFvQmtEb1VJRFJlc0xFckNDYlg4aFlkYTdyaldVTWVFVmxEU0ZYUG1ZaVJyWHpGNGR2Sm1lNnVUTU1DRm04dmVIZWhqRFhJUm9VUTFhTFBON2czZEZwZk01M1NIanBndU1DODI3WFlyd2hBMnMtdzgxcUpaMVpqQ2VKWE9EMFhNbUxuRWppZlA3TGxyc0NsTHRJSUthZVQyN0NORFJEcERDeldpb0lESGY4d3RsNDZBYTdGdGZqMW9GbWpScGcxM1M3MVE?oc=5",
-      "source": "Jagran Josh",
-      "exam": "Source: Jagran Josh · Auto-updated",
-      "id": 2024
+      "id": 2033
     },
     {
       "cat": "job",
@@ -313,19 +421,7 @@
       "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPaUxhaVc5elpCZTZmejdwc0FCZmdpVGRreWFGZkJkeVdxeXozdGo5ZER0TTFlN1E5bFBkZTdqSFlvckppYmlYcDdTWGlpdzFITWxURFNrV0lHdko1V0tQTDQ0ME9PaTkzYXAyRVFmWnpTUUt6d2lKbUJiYWJfNkFJd1JzTXpoaVpTVjNLanZ5clRGNDZxTUd5VkwzUGk3eW51WENqLXItRlJkVDJyV0R4bk4tb2l5TVlZbFBpaXBxZmdiZVJ1M2FLem5mYmxBN2ZsS01HbjlUczk3SjlDZzJoZUk2SEl0aVk?oc=5",
       "source": "India Today",
       "exam": "Source: India Today · Auto-updated",
-      "id": 2025
-    },
-    {
-      "cat": "job",
-      "badge": "Job Opening",
-      "tc": "tge",
-      "date": "Nov 05, 2026",
-      "title": "Bank of Baroda recruitment 2026: Applications open for 837 Wealth Management posts; check eligibility and",
-      "sum": "Bank of Baroda recruitment 2026: Applications open for 837 Wealth Management posts; check eligibility and",
-      "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxQS3JXajdoSDZjZktnWEkwSUcyM2NScGtpT2hCeFhwS3Viam9tbnpRdS1EdEdud1hfc3pwX1dlamkwNFQyMTdENHU2TkdjLVdMcGNxZHJUWmZodXBjWFJHd2M3ZEhINWFDS2FXX2N0VWFDS2k2cEYzOUhtTHVYWjhjcHZxSWo5NG5KNUxNakt2SldNVm5weGdFcUtMMU91NS1MTmotanJSZGhTa0swZW8zZXpwbnJEbHI2cnhWYjZ6QjJCZXpHV0JfMnRESUp1UDFCWlAtUzVkbDFhRGJ1S3E4TmVEQWRCUlNReUtTdG9zNHNIbTd4UnhUYXpmdGhLZThrMWVmWHpuTU5fdXB4WkFNVE8wb1NwSldnVzFidUV30gGjAkFVX3lxTFBXdElkemdTR0lWRy0zWmJmWFJYaks1RnVNaXRWV2VRWFRzZFRFUFVvWEpLM2lLMTZidmxKeUF3ekFFVUpOTlhlM0tRY1NFOTVJVzhIWXBqR044Wk44MkVPYjZpTHE2YVlqM3huaGJiRHM3VWpiUDlIZUE5MWRvMWpUVm5pQXlfWjhZZTlMSHNtV0xMU0hjZ2ZOZzhkbVhWUXl6aGdILUo4WmNPM092eHBsWVJyd1RJVzV1Uk1jQU8xTEVlMENHbXNyT3BlTjVGM2xYRzNnak9HRGQyUFF1bDBZYWczNFZiZjV1UmNUS2NuWWRXc3gxU1lCcThpV29URS00NWYtZDJCMGhtTEdQR0NybnNrcGtPcjA4T3puMjg3b0RJMA?oc=5",
-      "source": "The Times of India",
-      "exam": "Source: The Times of India · Auto-updated",
-      "id": 2026
+      "id": 2034
     },
     {
       "cat": "result",
@@ -337,7 +433,7 @@
       "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPVWVGTWNQWGZxdGZVbXdWQnJlZUJmNjd3Mk1leGJQb0JoejhmcE5FRm1mWlVZeGJkR2FqUGhXYmRwc00xMzlyUTNPUlhBUlE4dU5UcDF3Q1c5RUJGejRSa0xrUWNFZHE2ekRBZzlLaDBWVHpDTURJSGp4bm82SXAxellROEFGU0E0X2RUR1lMazZLRHlzMWNmWnlkNGw1M0pGTDJzS2JTeVRMbUJnSzZLSE43bzVrUUhSQTRGMmozaWljcFFJSnZDeVBHWk9OZmVSbG04dlY5UXRCYWxVd19UVTFwdU5TZ9IB7AFBVV95cUxOUnQwN2E3SmxIS2taeFJKTjItTzdCcjhfeHZUYWpwTmpxRXJDaTNFY0ktVnZGYWU3YWRYaHFuVEN6bVdQc2VPa2FMMmI2NzEtaUpMaFZnbWozYkEwbmhOa3FScW9aUFJLUlEzNDl2S1NjUHRYSjN2VHdaMTBRdUJsR1pfeWQ5alBQTDFxQmZGa1RvbDhVU0tLcFFhWUU5V3l5MFc1MklZbFZsY2hjbm1CN3hubGZ6aVQ1TXNnS25lejBHNmdRSmhGandoT2ZhVzUtRW1felFhSjlKdnVkUFVKWWpENGx6enBKWnFzeg?oc=5",
       "source": "Jagran Josh",
       "exam": "Source: Jagran Josh · Auto-updated",
-      "id": 2027
+      "id": 2035
     },
     {
       "cat": "notif",
@@ -349,31 +445,19 @@
       "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPWkZrWG5FQ3IyQi1ZOVVFVXRVVVd2YU9Xa3ptb2RhTUUzTWR1THYzV21wUld3dng4b0I4SXhvSFNjYmtRZ2RuTnJmNEIyckhKZkpKMElrc2VIX1VOTnYzMEwwV2JQbGc1OWpPMUE4Y1Rfd0FSc1hpODhKczNYQXhIMm5MeGw1T1I3OEVFc0ZPZnBRalBOOUdhY2R2OE45cHdBZFVTNC1vaVJmVGhXdTVscVZEODIxNzNKRHZPNzRQZFJZVm1yRE9QODYzMVN2Z3BWMWhSOG1vRUowa3c2UF85eW9wQzB6YV81RFEzQw?oc=5",
       "source": "Careers360",
       "exam": "Source: Careers360 · Auto-updated",
-      "id": 2028
-    },
-    {
-      "cat": "job",
-      "badge": "Job Opening",
-      "tc": "tge",
-      "date": "Nov 04, 2026",
-      "title": "RSSB Computer Instructor Result 2026 (OUT): Direct Link to Download Merit List PDF at rssb.rajasthan.gov.in",
-      "sum": "RSSB Computer Instructor Result 2026 (OUT): Direct Link to Download Merit List PDF at rssb.rajasthan.gov.in",
-      "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNYk9DUmhqM25JVmt2TjNBUUVsaW1jZEVNRHpfT1gxMGp0Wl9OcWk3dW9IdFZBNEF6RmZlTzMxTUVOZ2NkQTBIUk1UTVR1YkpuQVE2eG1KUmFyMURLTmVPSFM1RG1laWtFbXZlZi1Kd1JXNnhLUF9jRDRvMldmeHZERWg4ZWplaGRYcWF1a1FCSGU1TFIxRFRqNGV6ZHFNSE5kWEpzQktVQm5tbG5oQ3M4VVpNZ2V0R3E4ZTh4SFM4d1JVZENsWnM5VXN1TEtQaWZIREdvdkU4aXlFdXdoNVVudDE4M3hmRjhDMnhENE1wN3JWYWRKYnkzT3JBYTNUYmJiaFU2akVhbEdmb21TY3fSAZQCQVVfeXFMTWNBOWc2bFFXZ3hkRTh6cUZfX205WmwzcktWNEdkYzR1dUxaTHJtOVVhaVJibzFXemh1N0NsamVVdzEtTGhKYmxkMG9ZejJ5S1BJMUI5NG9HQXljaTF5cjg5b0pzSm0wUkxybk4tblZvOERrcjBzZG5RdXQyaXhlajRSRG5fb2syYml3NXk3eHJNbS1jaGxrY2dHTEFVSGtyOEg5UjZZRS1fT055RHZwS1RqOEVpdkhWTGw3dnljQmJMcEh0SG4xcXBuT0FuaEI2ejFobGFxdnBXLW5KeVFiZHYzcnlpYWJLSmRYaGk1Q0NFOWRxMUJic2xwT21zY0l2MFcweFBSajd2c2JoV0ZyWndHYXR1?oc=5",
-      "source": "Jagran Josh",
-      "exam": "Source: Jagran Josh · Auto-updated",
-      "id": 2029
+      "id": 2036
     },
     {
       "cat": "result",
       "badge": "Result",
       "tc": "tgs",
       "date": "Nov 04, 2026",
-      "title": "SSC CGL Tier 1 Answer Key 2026 Out, Check Response Sheet PDF, Download Link and Objection Details",
-      "sum": "SSC CGL Tier 1 Answer Key 2026 Out, Check Response Sheet PDF, Download Link and Objection Details",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1TVWlqanh3ajB5U1lvLU1RcXllT21VWUxiVDBQSHZUSXo5UXBZU3NpZXVyN2VRaE5LMzFDQ2c0VFVuOUJwSDR1UHczUHZodGRRLTBUZ2loNFkxQXpOUHRZa1B4Ti1fMjlMYWdfbzJWdklyZVk?oc=5",
-      "source": "Adda247",
-      "exam": "Source: Adda247 · Auto-updated",
-      "id": 2030
+      "title": "RSSB Computer Instructor Result 2026 (OUT): Direct Link to Download Merit List PDF at rssb.rajasthan.gov.in",
+      "sum": "RSSB Computer Instructor Result 2026 (OUT): Direct Link to Download Merit List PDF at rssb.rajasthan.gov.in",
+      "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNYk9DUmhqM25JVmt2TjNBUUVsaW1jZEVNRHpfT1gxMGp0Wl9OcWk3dW9IdFZBNEF6RmZlTzMxTUVOZ2NkQTBIUk1UTVR1YkpuQVE2eG1KUmFyMURLTmVPSFM1RG1laWtFbXZlZi1Kd1JXNnhLUF9jRDRvMldmeHZERWg4ZWplaGRYcWF1a1FCSGU1TFIxRFRqNGV6ZHFNSE5kWEpzQktVQm5tbG5oQ3M4VVpNZ2V0R3E4ZTh4SFM4d1JVZENsWnM5VXN1TEtQaWZIREdvdkU4aXlFdXdoNVVudDE4M3hmRjhDMnhENE1wN3JWYWRKYnkzT3JBYTNUYmJiaFU2akVhbEdmb21TY3fSAZQCQVVfeXFMTWNBOWc2bFFXZ3hkRTh6cUZfX205WmwzcktWNEdkYzR1dUxaTHJtOVVhaVJibzFXemh1N0NsamVVdzEtTGhKYmxkMG9ZejJ5S1BJMUI5NG9HQXljaTF5cjg5b0pzSm0wUkxybk4tblZvOERrcjBzZG5RdXQyaXhlajRSRG5fb2syYml3NXk3eHJNbS1jaGxrY2dHTEFVSGtyOEg5UjZZRS1fT055RHZwS1RqOEVpdkhWTGw3dnljQmJMcEh0SG4xcXBuT0FuaEI2ejFobGFxdnBXLW5KeVFiZHYzcnlpYWJLSmRYaGk1Q0NFOWRxMUJic2xwT21zY0l2MFcweFBSajd2c2JoV0ZyWndHYXR1?oc=5",
+      "source": "Jagran Josh",
+      "exam": "Source: Jagran Josh · Auto-updated",
+      "id": 2037
     },
     {
       "cat": "job",
@@ -385,7 +469,7 @@
       "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5IMEY0bjlVUlFTSmZRamVrWmticjF5UFlhQ2VUclFjdHRPYTBDU1l6V3k3ZFNFT1lrdExXdUNsaHQ1dW9mM3JhQ3VJbzBXSlBJYmUySmFOREpRS0paUjQxQ3RRUFp6R3RIcW96NVNjYzNVUGxOcjFlTWg1YllPdjA?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2031
+      "id": 2038
     },
     {
       "cat": "notif",
@@ -397,7 +481,7 @@
       "link": "https://news.google.com/rss/articles/CBMisgJBVV95cUxQOG1wd2d1MnUxUjlpWXQ2ZFQtanM5c25xa3R0QlQwQVdTcHZadjVwV0dWcDJJR1Yycy1BQ0ZMb1FqbW1RS2pJVDdEUWxmeU51SzBvRk5lOC1uazYxdkhhWV8wZ25zZHZCUng1bUtnRENhWW1Sa2t1SjI1bkdyRTk0VmxWUzNReE1MTGhKbkxQTG1RT3lTeHV2Vng0b3dHQU9IMUduZklpalJ1aHpZTGZaazBFTF9hbXRuSjZ4TTFXaHNDQ0FBNW9aNjZtZldkRGp6UGFtTjRwTVQ3V1dheTdFSTJWWHNhM1l2UGZONGVVRlpCVzhJWXQ4Qkd2VGQ4dTdKRVNmVEwyMzJ0WGxGUmRobHRnbGxkdjZnTmMwV1Zna3lQRzNEX2VhaWlaUGE4S0J1dnfSAbcCQVVfeXFMUGR5M1lOWU9GajlvaHJkVmZZMFVhOVhPZVZxSzJOOFdsaWJFTURBcU9lWnhOY2J3ZUdmRTJwdjdDTDhETkZNdlplY1hlVk1BZExRZTRGYzI4LTFYR0dseURCSjlWeVN6VlJvbFFLOVpySUlleEpRNENZZW4wUDAxSkFFM2QwM2xlNW1zc1FEUTFMMDd1bWRSOUYySGg0YVhhaXRtZTVwaTJIeDIxVU1nQjBicloyYjNBUFpsOWtjNTBhanNqMW1sWUt3SC1JWmpRYmx5dWQxMTVJbGhJV0drYVZEb0hyRXFMNjNGTVBCZjQxRFU5bURpWWFaTVJZbkRxM0YyYnpDWEVuOGtGQTlWZlVHSjVQQWExVUpSTWVhcnJsOFp0YTdoZ1JJN2lUS1A1ZTlIVnpjbUU?oc=5",
       "source": "The Times of India",
       "exam": "Source: The Times of India · Auto-updated",
-      "id": 2032
+      "id": 2039
     },
     {
       "cat": "job",
@@ -409,7 +493,7 @@
       "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1XWHExdFNERVE5RXJma1VmZHJfUW9FTkpGeWRsNEpYRm5wS0xIbjFTRGlMV0NvVVNyZVBncjYzVGFrSm13MjRtV0NQbjVlNkNDTkV0enprbUxrYjR2QU9sWkJibDhKb0U5WTlGWWVTSzNLczZCS0JWLXpB?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2033
+      "id": 2040
     },
     {
       "cat": "job",
@@ -421,19 +505,7 @@
       "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPNGNNNDQ3Y1loNjF2Yldmd1V5TTl5ODFkOFF5SllpdHFDdURmZmpIYzVvV2JrcTQ3dzFPeVg5Nk5iMVh6QmRXbVl3S3p5Q2p6OFpDTXhFUTljVkROdVNiWkVFcFFhQzVsWHpOOUtucmc2MTdfTzU0UHAwVkdDTEZ2OVJub1MwZHhzdDFNZk9Hb2cwYktKd2twcENjaEtWUHlfSFdtVGpRRlZDc3hvYTRFWmdheWg1bnlZVDB5U01mQ1M3UjFXX1E?oc=5",
       "source": "Sakshi Education",
       "exam": "Source: Sakshi Education · Auto-updated",
-      "id": 2034
-    },
-    {
-      "cat": "job",
-      "badge": "Job Opening",
-      "tc": "tge",
-      "date": "Nov 04, 2026",
-      "title": "GSSSB CCE Notification 2026 OUT for 1237 Group A & B Posts; Check Eligibility and Other Details Here",
-      "sum": "GSSSB CCE Notification 2026 OUT for 1237 Group A & B Posts; Check Eligibility and Other Details Here",
-      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQcTY2VVVJbGZDVF9XUXl2NXlMb0x2bnJHTUxzXzU3Zjl4b2dtR1ZNa0pkbkNfLUlObWgwZVFycDFUTkVlY3VzSHcxZE9nOWVPWjNDTHEwd2daazdUQm1zTWNKOW52REkzVkZsaHdyT2lGTG5xV05KajlOUXVxTFlTcnU1d1ZJN0M0NEJzekxRbXJ0alMwc0M0OUx5MEpPSFg1djRSN19QaHZtTEJyNzc2VndSeXdONDByN1dwYnRUOXJfT0FlcS1VLU1aMVdTOTA5c0dDQV9CQdIB3gFBVV95cUxPV29janJFVEtxWk5CaWloaUZZMWtrWUlnbkljcG1TMTRPcWs5TUpWZmVfNTJEajNhTVZoY3pTTU04d1VsQ2o0RWZ0RGpqQnozWVlFVzhXczZLaHJFa2t6NE1INnN0aDhZaWRibkMxOU5ZRHV1OVVUc3NBck16VGZObGwzSDFxSGpjYTdQUnNieGZ6bFZqRVZoZE5RN0VEaHRLXzUxZ2pzcGhvVDZrZHB5cGg5dFhqc242TE10cVFpM2dUVmdWTEw2VU9oMkk3NVRNMHFZQlpqTmxlT04zWnc?oc=5",
-      "source": "Jagran Josh",
-      "exam": "Source: Jagran Josh · Auto-updated",
-      "id": 2035
+      "id": 2041
     },
     {
       "cat": "notif",
@@ -445,7 +517,7 @@
       "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdkp5RUU4eHhBSlpCTndzekR3VzZ6Q3FBTnFCVFhnV1pVTFpkT3JiQUgxWERDMi1zaXlIVGhlWGpzU1NzVkc2bzFkY0xNcWNoUkFzeVhaV3dleUVuanc0Qmt3cnBTOS1aaE9nbVB6T1dYVWk5WE00blU1T1FXYmNlaW1BajEyTWV0ZGJiN1hfaE11OC10VGVpVDktd2stSnhyemFEUTljOGd5UnJfTWdHWFF2bm9oSll3OGc?oc=5",
       "source": "Education Times",
       "exam": "Source: Education Times · Auto-updated",
-      "id": 2036
+      "id": 2042
     },
     {
       "cat": "notif",
@@ -457,19 +529,7 @@
       "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOQlVEaDRTQmRxTjM0Nk5mNzhQMTRJTkp3Y2k3LUQ3RVFMLUk3T2tiN1o0TFFKcjFKM01tMC1RcDk1SVp4TmFYdGpvQVFLUUppYm55b2FqTEpodmlITHYxQVFDTml4QU9hLWw0aUt6SmgyWnlXajdvd3ljcl9jUGk3VDRIRF9hVVlJcGlVM0xjTEFuY3YxU003aHdDT285b2d3dDdJZWpkSHFmNGNiRExGSnF3SmhSZ0NPNmh4RmhVZHhkM2ZSaTZyMGVGLWU2bmNaNkFCaGowVXRWUVNWVzlqQw?oc=5",
       "source": "Education Times",
       "exam": "Source: Education Times · Auto-updated",
-      "id": 2037
-    },
-    {
-      "cat": "notif",
-      "badge": "Notification",
-      "tc": "tgi",
-      "date": "Nov 04, 2026",
-      "title": "CAT 2026 admit card: IIM Indore postpones hall ticket release to November 6",
-      "sum": "CAT 2026 admit card: IIM Indore postpones hall ticket release to November 6",
-      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNcEhhVklTTEY2dmotVnRpNjlzMVN1R1pPamJHOWlOcmMycm9KSHdaeU13QmRzWUJUUS1maUFJNHlaQktPSkJBSDBWTlNkSTJEZUtZUnIxckdjclNUanhPckJrcGFfTlU3VDZyMWY2SDUySjhmcHV0dUhlX0wyZE1qek84THNjaF9Cd093TkZTTWFEX2FkUWplLTdaNXVoRmdubUpQQ3JlVEFLd0ZPZzFaN095bXRPQWNQTmF4bzRNQnBpcDNSZThWUDRSM1dZTjVaS09kUXllTUFQcUJqc01ZUzFxSWN2NFVoZkHSAe8BQVVfeXFMUGZhdHN4blAxZF9yOW5tTlVhZnh3QTlSWGl4SkJ5RWZCY2Y4V2hEb0g4QnQ0WlF6WnkxaG5xY2QtZy1PakRZRTBfbDM5QnJDQXE2d2dQTU9ybWJCYjNjbU1hY3QteHdaUWI1eTdjRWxLb3JJN0ZWblJfSDJNN241Q2hEUVdqLW4zRWlRaVNmalRFWGdjakdDNFBDdXVBeHpfMnhBQ3FpZGp3QTVjV1VVa2pfVk9UMmlyMW9DWVhncy1KZU15RjNVREJGU2dVMlNfRFQ1VW9nNkJ0ckNjRkNjbEN0R0pVSDI5TWJwNXVxQnM?oc=5",
-      "source": "India Today",
-      "exam": "Source: India Today · Auto-updated",
-      "id": 2038
+      "id": 2043
     },
     {
       "cat": "notif",
@@ -481,19 +541,7 @@
       "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOVGhpby03V2x0cnFpU0NuLTg3ckJxem45bUd4Zng2Z3EzMVJGVUVIWFJKcEhYRUVBRGdHem1VZWc0RDktM0g3cXVTSWJrVkZOcXZoNEl0ZkdaeUlTUldwdHRCQ2hpbW5Jc1NvdEczZjE0NzhxZWRITmROd2NlLWJSYWJnNG1LVHBhUWJYQm5YbHF5d0RwdUEtR3N6UF83TDUzV0pOaU5BQkhEVXZmcjAxekRzQjBxRTRVdUR1RjE5MWVFeU0yMlFmZkk0cFN2dzJZYkU0LdIB2wFBVV95cUxONkliRnJZb1hHdFJ0bDVubTUzQ1l2LWt1aG90cHRiN2tZS0pWamtSelV5QmxvUEEyaDVFWEFGdEVoNTJ3ZGhINWhRcXVXdDJRTnl3U29WSmxNdG1oTWdiNXNMZlZOVXVnLTNPMlpyUVNsOHdIemVTVkVXXzZrNE5YM2FFTy1rYVBjc1J6SmdpWHlMUERlU2FFTzlMUUk1dVRseFRldjJFWEo3alNhSWZDVXdIWlFvdHpQd0RJbTg0QzVtS2xZU1FwQXFoRE9xY2NkQWE2VUJRRHR1ams?oc=5",
       "source": "The Indian Express",
       "exam": "Source: The Indian Express · Auto-updated",
-      "id": 2039
-    },
-    {
-      "cat": "notif",
-      "badge": "Notification",
-      "tc": "tgi",
-      "date": "Nov 04, 2026",
-      "title": "CAT 2026 Admit Card Date Postponed, Mock Tests From November 6",
-      "sum": "CAT 2026 Admit Card Date Postponed, Mock Tests From November 6",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNc2c0LXNzcGpWeTFyakJPQkhWbUFkbi15VHBtZ1ZVYWF4NHZBWUtUOXQwSW1WUWxJM2FKcDNfTjJrd0s1N1c2ZUZkc29jTkVIcTlOd0llczY1dW52cnJVN0lpSUdzRk5SeFNaS2RwRTV3U3NFcjNwNk9Obzh5M1VpNGVpMkJnWDdYMlE4d2V4WUluUkZTX3JBWUFrM2pXS2ZxRzNN0gGrAUFVX3lxTE1vNUJESlNuVkZCeWJQUnhNSF9zeWs3NG5DR3ZnMXYydkJwX1phQlFvTXNJS2w1dlhBQjl1b01HbUVMMG5iWXBNM0tmVmpQc3M2YURad1VUbUstT21QSE03aUVQZ2pPNWhfUVI5Rk56QlZFcVR0OG1IQndFa3FfSkNyRnlua0U2TGp3ZnNxZ1pLb0VkMHNrclVRRWZ3ZFdWT29UWHB2SWFUclk0aw?oc=5",
-      "source": "NDTV",
-      "exam": "Source: NDTV · Auto-updated",
-      "id": 2040
+      "id": 2044
     },
     {
       "cat": "job",
@@ -505,7 +553,19 @@
       "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNQlBNRkQyX09rc1BGLUxpOUJGQ3E5Q3A5R29IMElNcmowXzBDRko0RnVaQk5SVzBRSnVqYktqQ09DblozTVBWNWVFMGxLcGg3WXhSV093dzl1XzBqb3RGQWJUM1RKU0d1UHdubGFWNW1wdkdKTlpfc0pwNmkwQTlqZFM1Um1KckVPb0xZUUFsYnVvY2pTa3pCclBORTB0eHlQVEZJd0FfNlNOeGxzNkVjcW5iZHZGWk9nX0p4RVlTTTVTeE9yR3FSQzR5WDJCVWE3OGJKbzZlX0xDSVQyWjFaYXczUEo2SzhFR0JBMzFNOFg4d3ZvQzBTUE5vTDFzT0NTV1J0Ry1kZ9IBhwJBVV95cUxNQlBNRkQyX09rc1BGLUxpOUJGQ3E5Q3A5R29IMElNcmowXzBDRko0RnVaQk5SVzBRSnVqYktqQ09DblozTVBWNWVFMGxLcGg3WXhSV093dzl1XzBqb3RGQWJUM1RKU0d1UHdubGFWNW1wdkdKTlpfc0pwNmkwQTlqZFM1Um1KckVPb0xZUUFsYnVvY2pTa3pCclBORTB0eHlQVEZJd0FfNlNOeGxzNkVjcW5iZHZGWk9nX0p4RVlTTTVTeE9yR3FSQzR5WDJCVWE3OGJKbzZlX0xDSVQyWjFaYXczUEo2SzhFR0JBMzFNOFg4d3ZvQzBTUE5vTDFzT0NTV1J0Ry1kZw?oc=5",
       "source": "Jagran Josh",
       "exam": "Source: Jagran Josh · Auto-updated",
-      "id": 2041
+      "id": 2045
+    },
+    {
+      "cat": "notif",
+      "badge": "Notification",
+      "tc": "tgi",
+      "date": "Nov 04, 2026",
+      "title": "CAT 2026 Admit Card Releasing Shortly; Check Official Updates, Exam Pattern Inside",
+      "sum": "CAT 2026 Admit Card Releasing Shortly; Check Official Updates, Exam Pattern Inside",
+      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNaFp2QXk2eVhSdzlnTTNvYnRzelFBX0FsS241alRXWXVZcWowOEdDNmNrRVFaV3B1ZkktT2RzT1RtVEVaYVFRT2tjRmxmSkpueGtNMzVmd2FoMnhxUGdNMWRlbWFOUmdwQ1V2Xzdwa0dGb0ljZDV5SjM2dmNuMUlVdmdRQXRlbW40NXlvOVdiSUtES0o2djBrNkVRR0ZCV2pJZjhUOUhpckNyQlN4ZzhZcXdwSE9UMzlWUzk0NEZzazA5V1R3QzUzUXRsY0QzRWJNWHg0NlZVWkh2dG1FNl84alkzLXh2bXI4MnJXeVpMSdIB9AFBVV95cUxQTzZnU2FKQ0FaMHBRbE82YXpXNHFtM2hrOHdSVGJSMldGQkttYTB0YjdwS0JyZUVaNEJyNjNpbGFVYklzX1Vsb0x1M2dza0l5SFhQZlRGVjNieGIxWmhsREpNeGlyVlk3V2RxLW9HeEZyS2h5QXotR3dyNEV5SW9pWUVRTzZtUzFVOXBTVXVHQVJQUFVwTG1TQ3BNeldZeDJVMzA1WXFpeVlQYVA3NDhtckJLZC0zdkdRelNpVmV0ampOb1NSeUVDNzl4R2RPd3M1MXJLa0ZPNjdDYTZrY3JmZV9xYWp0VExTbWRMb1N5LTM1bWtH?oc=5",
+      "source": "Telegraph India",
+      "exam": "Source: Telegraph India · Auto-updated",
+      "id": 2046
     },
     {
       "cat": "notif",
@@ -517,7 +577,7 @@
       "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOOUVGZno2UGxsWmdFVy1IS3ZqWi1ZdV9pYnJGMWhnWXc0bjNfbHQ1bnozU1U1Y1VubFBqd0hYeGJBQ0p0S25INlB4QWpNX3NSWXhjNzRaeFNIOWl5aWFWS2dNX01UcUhJbEREanRlTjhhNVNoeHBjUThTeE5McUpQYUNZcHZPSnZ4RldBSVhjbGlCTjdxZUJJaElVNTJ5OVdUVWlRWURxM3hma3FJeUQ4RTNpak84VlpNMHdtd0VGSkY5OGsxRE85eHFMVjNmNThwMFkwekNycVFzZ9IB3wFBVV95cUxOWTFTaWZiV3ZUUHotLWo0WDI5MkpWTDdzUmhxYUdzWlJjWkdfenk0d2VvOTB3Q3I5SEsyc1pvY0VIcWt0SzlJU3B2VWhhNklDaW1ZY0hxbGIxRWg2dUpVU3JVRVFyd1pqMENCbnplTnU4cjZuU0NDMkNjVjJKa2U1azJBTWo1WjJqdm1hVUc5elg4RnY4YkxreDBYTG9PMHZXaUZucEtMN1BZeVE0RnpjenJWckg0UmM3TnItbVZ0VmdtclIzRlNsM0VjU0JwZXlIbGpnYzIwSXpkU01HdjRR?oc=5",
       "source": "Business Standard",
       "exam": "Source: Business Standard · Auto-updated",
-      "id": 2042
+      "id": 2047
     },
     {
       "cat": "job",
@@ -529,7 +589,7 @@
       "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQVml5QjNVNUE4b3JNTHdEZTRqT2xHQUw4dVpnOVR4WTJJWTRXQnYzNDUyU2N6UF9OQkpGcUNNdlA1c0gta2N5Y29WcjZIODFwNXNRWjM3WEJpWWdtSEVoQmVpMVh3VGhHQXFGc3lHUkVPaUpmYzRQYlhEVFF1ZEVvUWFRNkRSSGlUQ09RLUY4M0tLOHFpR01talVndFVuY3A3MVZCZDQ1Mmp2MEM5cEMxQzRNLV81Snd2OGh3X24yX1RaQmZSX3NOaG4wMWd4QzFUOTNQMkJlUGtXaWk4ZThJcW1RRnBRX2lNRHAxOA?oc=5",
       "source": "Jagran Josh",
       "exam": "Source: Jagran Josh · Auto-updated",
-      "id": 2043
+      "id": 2048
     },
     {
       "cat": "notif",
@@ -541,7 +601,7 @@
       "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQTkY4LXFreHVXVnlqMDlFTXVmRmpiNVhzdUVmakh4OHJpYXJDYm9Hd3B0T3dDbFI5RzdZY2RWd0lsMkVBT0lscTJmWDhneVpDZ1VLMEpWOUNkTUJzcXptM1JDS1dmekwwTVJ6YXQ3QVZLMUFrQXBLVEIzT0xBZHljTw?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2044
+      "id": 2049
     },
     {
       "cat": "job",
@@ -553,7 +613,7 @@
       "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdklMNXF2QzdERFlMZTJRQW5zN3llTzIzYVY0WDZXcW9OZ0ZGRlVkNG5RYVhOcXNoQlNYZndKd0ZSWGZrOHRCbDNEVkR0UUxJMFowWVhpX083bGJ5ZWhqRVpYVU5WWEFxeWVwdEJ2eXVRbTJLc0JNWTgzN0QwRjh0dU81VjgzbWFFbjZTLWdVSVViTTZlQlhYNFV4cHhUZENtTms4?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2045
+      "id": 2050
     },
     {
       "cat": "job",
@@ -565,7 +625,7 @@
       "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNUUJnNVdjTjh4VTllQkRPS1k5SlVkc3N4eWZZLWJ0dGJaNG1veU9GOWROQnNyRG9hLTVTRVNKOGoteVpoQnR1dGNldmd3NWNoR0Q5b28yTU9KWUtuOEVHZnJjVXZaZnFWZWZGV19hNnVhbFF5R19yNGNvTElUeGhPWkxJdmpxNTZhWUE?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2046
+      "id": 2051
     },
     {
       "cat": "notif",
@@ -577,19 +637,7 @@
       "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQbFU2Y0R2VE9Nd3lLU0xORm1fNGRzS0lReFRqZVBxQUdvV2FBd2VpRGgyeElYNEhoM201NFZ6cjN3aF9UTFEyamI3cDVKUDRUYWpibXQxMmZsZUYwQ3kxR3d4bzJvRnh0T0FELVM4ZWJGODZaX1lQQ1BISzNtYU1LOEJpU3hxdHRhZ1VXdGxHR05WTFJDSjVhLVd1SERMalhQdlJ1TmRYM1lFTDRvd3BPejBlZThOSkFWZ2dIVW1jNFhUMzdwekxwSE8teEdhUTZqcTNWMVRaMHJod0lNcW5ncktXRlRQb2E3ckx1SWc2NzPSAfYBQVVfeXFMTi1EVlV2Ti1aWUJhalplbWd2ZW1kQ1hQd2hxRXVjQThLV0NGTjUybnJYVTFzMGNuSVVRcE1SVlQ1T1RDYzJvOGVaNjlPUHE2ejlhbUEwek9MOHFyLWllRWs0cGc1ZXlsemV2Si1GdmxTY3BGQXZ6cHpzM0s4RHdUTnFWX2hLbFVnSXVqODA0LUh1NUtzejRoSno3NmVNZ05aYVZxUkpRVGxFT3FZa0tPU2VmZHo0ZndtaHhoa3RtVFRJRUtxbVVpOHRxX2Q5T0h3RjFiV09Rd3hac1JFVmFYMmZ4OGVmbHNoUndKc29YQnp1R044cHp3?oc=5",
       "source": "Hindustan Times",
       "exam": "Source: Hindustan Times · Auto-updated",
-      "id": 2047
-    },
-    {
-      "cat": "notif",
-      "badge": "Notification",
-      "tc": "tgi",
-      "date": "Nov 04, 2026",
-      "title": "Common Admission Test 2026 Admit Card Today: Download Steps, Key Dates",
-      "sum": "Common Admission Test 2026 Admit Card Today: Download Steps, Key Dates",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSmx0R2t2RGlydVNWcmxFa0wtX3RGa2NwWi1qdjMyWmNYZmVlWFZqbFZqbTktdHVPU25yM3BWRTRwZ2lrZmdoc2FhMWtnT3UxLTFQalc1ZXlQeldDRXo1UVEydTlPdXV6QkhpT29GSE9PdnppdlNVVmFKRnlIM2VDLUNhZHpBNHVHVjctMFVwVF9feGJ3aG5ERUQ4OGF3MklaU3FWZkRaTWcxcUhyam92blhFWHJaNGpB0gHAAUFVX3lxTE1Hcm5PNFRuN212REpYUGJwXzJfZW1pZEJkcUJtMF9OLVJkS0ZtaHh5MGVMejR0VzdTQnVNWHJwd05oMGFPMWxTNHU3VHpabU1FZGU5RmpWSkRXclBsVGVDZVpQSXltRjBmeEd0ci04aWlRbFd5WG1HZ3U4c1lQYnV4MEJaNlM4blRJdHduUG9LNldmcjliX0pIMFI1UWxpZnV3OTF2Um5hNW80bldVOTE3VXZwenR5NGVQVTRNZWZOVA?oc=5",
-      "source": "NDTV",
-      "exam": "Source: NDTV · Auto-updated",
-      "id": 2048
+      "id": 2052
     },
     {
       "cat": "notif",
@@ -601,7 +649,19 @@
       "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPSGdGLUVDQWE2VDhtR09iZk1XTHVwMWxxMUJTQW1CT2J0N0hVTTZaMTJaWnY5bVZwV0xHOHFweVdpdkVYX3lqd3BkSkdPdGZDdmFpOV9OSHBESUNpdnV2a0NqdldNdzAyM2hIbm8wNkdCTldQOExmVmJVVFdZMG5TdFI1cFFfNDlRbHlVQWhUTlcwdV9LblJrVzlMUXNUcmd4b0RVbHg1b1gxTmdlc0ZKemFjd0JXekt4NUo1V1U5Z2JzMWJKYXRkaFM4ZlF3bEp0YjNFRjRQMlVsNnJ0cGlmNHZkeUNPN3h2c3ZxdFdhSzBHZEJIMndCN0xqakEyMGwxY3YxQ0k0WQ?oc=5",
       "source": "Moneycontrol.com",
       "exam": "Source: Moneycontrol.com · Auto-updated",
-      "id": 2049
+      "id": 2053
+    },
+    {
+      "cat": "notif",
+      "badge": "Notification",
+      "tc": "tgi",
+      "date": "Nov 04, 2026",
+      "title": "CAT 2026 Admit Card to be OUT TODAY @iimcat.ac.in; Check release time, download link and steps",
+      "sum": "CAT 2026 Admit Card to be OUT TODAY @iimcat.ac.in; Check release time, download link and steps",
+      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNM0RYbVNoZTFxdkRLM2pZZ3hKZ2VHa2lhcGFkREFuTDdHQnhqRWR0cGdIX2Q4QjJzczJfbUhzWjlfdVNGbXVGVU1ib3lfMWMyNUVhU2Jjb01xM0lXOGhmcXVPR29SWTk3MGFGLThIZmVmUDhqRl9BWkw5azdvOG9wVXhhT0F3ZlZxc0x2ZFR3cmdFLW1DZzFIQnRJU1liUkJ4Y1YtYy16aXB0RVFvUk9XT1doNkdnLXRkWWxQMS13SFNSbm02bDhYczl1WlFxREkxLTZRT0pvNFRhZWFxNEJFUHVUbUQtRXRaWUE?oc=5",
+      "source": "Education Times",
+      "exam": "Source: Education Times · Auto-updated",
+      "id": 2054
     },
     {
       "cat": "notif",
@@ -613,7 +673,7 @@
       "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQZWE5WEhuWmJENWJ0WmE2NWVBSWJZZEF2YnhSOVcwMWpqZXlWdmFWRk5TU19Rb1l2R2tLQUpSTjJXZjdLaVJiVnpCSmVwdnZXM3pKRmtMQ3oxNTBLWjFJRTRObmQ1WjFKdVNZTlhMMmUzamdNOVB0N0d4eEFzbWJwMHNqVlZpN1NyUGVQemRkU1pvNlpvYnVRUkpnQnlCZncwQ2tfY1NUaWdRSERNdFpNRzdfM2tvYmRGSlpxNm1jRDhmQTA?oc=5",
       "source": "Education Times",
       "exam": "Source: Education Times · Auto-updated",
-      "id": 2050
+      "id": 2055
     },
     {
       "cat": "job",
@@ -625,7 +685,7 @@
       "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNRnB0a3Nid0JzNkFuUjVNMlRoRDE1YlRMSmlZaDIwamdvd0dsRlRtM3ZVajdjUVpKTGxmdVdQYW5SV3l6bHNHc1pOMEdBa29TQWNkQm5KV1hMc3lOWi0tekx6a1NpOHEzNndYdFRmOGxROUxCNGl3SlR6Wk9qOG1TM3laNmx0LVplWG9BVWFac296VlNZZzBnZUF6dktrV1d0NEdqNDItbWFKNS16ekZzSjR0Zm16ZjRxZHplaFNRQVViVDJza1VXVzZ4UktBZXo1T1lJZFZXclJpSjdPV3hOSmJkdjFWNVk4TmpoN1lGbVdIanU4eFdLbEFRdFJfVDU0SWNNNWxlal9oMlHSAZACQVVfeXFMTjFMYnJDdmFEdzVfVDhrMDFFLWFDU1NkZkFrekxpdVpIeUpESWM4TFIxbHRZeFdMYXRkcEQ3RWtYSmRfMDRYQTN4aTIyZEZmMVlHTmRvWnVvWGZpZ2IwVk56a1JNWmU1OFhrczlGQmlUN2VRcE1TYlZtR0dCQ3RsUzRsbDNyY2dxY3NjMDBpWFdlaUN5RlhXcGh1VVp1S1VDV3l1OGRQdnlnNkNNWTd1Q1JXWXdPbV9acnRYRkFKX09UOGQ4VV9CSTUzNmROMG5YRUd5bTE4MGwtOXh4QU01VnljWmxGdTdNVEMwS1BsZTExd3VMZzcwb0tZcXlJNzFsSGQ0Z2pwV2dkU1FxTXE2SWw?oc=5",
       "source": "The Times of India",
       "exam": "Source: The Times of India · Auto-updated",
-      "id": 2051
+      "id": 2056
     },
     {
       "cat": "notif",
@@ -637,19 +697,7 @@
       "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNamhLQWNQeTVSUF9zYkwxZVB5WG13ODhFWlpIUXdOQnFkU0s4TDlBbjBQZzhBNlo3anljVzBHa3hjSzkzbWRZcEpEcXBadThEcDZ2dW50Y0JMOVlpUGRXQldnNmJzd3ZPUUxaaHVvS0owOVF2bmg4bWdudXVLOHNwMC1OWGFIVl9aWUpXTkdYLXAtR0loWnB3NE96anA5QVluek1DYld6emJMdUZBYWxxUXptOVlOQUR2OUljQTJXdmw2VnZjbEVEb1RnN21McXNaMVExVEs1Q0xwcVI5bXNycmVrSUhkeWk2OGpCZEFnaTdxT1Atd0JpMC1jeXpvNC0yYThkR0FodURmRUtBc3l6T1EzSEd6Z9IBmwJBVV95cUxPakxXZUh3TE9MRVMtVkQ0cU9sNkw4M0NBbWFDaGhKcGpuUFVVbE5WNnJaNUxqRmZIN1Q4eC12SU02MjNuelNDM3BWbVNYMG12dEtzOG93MklMdTR4Tl9oNkIyV0RZWXBzZlE0dThaQWM5WXltdWdKUWo1OHk0S0ZmRWVuN3FFeWg3TjlJTGFsQU00UXRlZS1BTXVSdVFQN2Z6WC1SNkJMeEVXUkFiOTdyaTRjT0w2dk5lQlFWWnJMb1MwWElMVHZyMVk3RjF5SThMOS1pZnBwMVJHeXZXZjBIN0ZFd2ZqT3dsNWh6cXprWDBjUzJ4MTdPTjNVNERtWXVRV2h5bXN0SkRoNHB3SGFDejdwWU1xSmN6dmdN?oc=5",
       "source": "The Times of India",
       "exam": "Source: The Times of India · Auto-updated",
-      "id": 2052
-    },
-    {
-      "cat": "notif",
-      "badge": "Notification",
-      "tc": "tgi",
-      "date": "Nov 03, 2026",
-      "title": "CAT 2026 Admit Card Releasing Today: Link to Download",
-      "sum": "CAT 2026 Admit Card Releasing Today: Link to Download",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZlBvZ3hGdWEzbHY0STViWVl1aWVyd1BTeVRqZ0R6eXEtaUNENThiSVJaVWZaeHEya1lrUlBjczlDOUVma0xmYklvTG1kcWhtOHNpRVBfbW93c1dTemJNWjRhYUVOZGdkZlpVaUw5UmRNRWhnZFBVdzdPdDl5TTdCTHNkbXZETUExMjVGTnp1NTBWcDdK?oc=5",
-      "source": "ummid.com",
-      "exam": "Source: ummid.com · Auto-updated",
-      "id": 2053
+      "id": 2057
     },
     {
       "cat": "result",
@@ -661,7 +709,7 @@
       "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOMUdyYlVMWHN0d1JYRllwWmgxcU8zcVFRWW02UHVxSHN4SllTVUQzM1FPX3c5UkxEbHlyS3pDVlJtUkY2UjZyMl9yWnZ2YXBIM2lDWm0yZ1VnRjFNeXhTbDgyd1NvQkpJOURub01GbllNSnJWU2tPOEk1Tm95Q0M5TlphMFFxSmRjdzJDWnVkUERFNXNlaWRsQVgtSGRTZWlOT2ktVi1kdDI1UzhjOVRIaF9GZkQ2SnpVTzJ30gHAAUFVX3lxTE5MUlpSaUpITTFkLWtpcjdFeml2ajc1dUgwczYtMUFrRHZnRGUzM2hfZ0ZHVldGckZPUlhoZmxJUGRQejA3WDFvSmZUU25UbTNRZVRmYk43YVJESHVubFJ5ajd5UUdtNjdLTVNIODdsSVRIdm9RSHhKb2dsZFdHYkdxcmtQSDI4VjVEaFZKbWZ3eDRTOEFZajdsU2dSZmFZRkE1RXpEc3pLX3BSQmJzaWxCNDZneFFydXhVaGpjQkFvVQ?oc=5",
       "source": "Careers360",
       "exam": "Source: Careers360 · Auto-updated",
-      "id": 2054
+      "id": 2058
     },
     {
       "cat": "result",
@@ -673,7 +721,7 @@
       "link": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxQaVhpUGFxc29kanVkbW9mZzRaZXBQMWlyZF9lb1B0dkhreXg4UWU5TTNxdFNsc3ZKU3RFTDBmSGM5SEZSWDU1Y0F0VTV1UjBsNVRmYjUwemxMdU9JSUhkWDVvMm1CU0pqODd3eU96UjVFU0VtS1Y5TTBBaWpiSDVPbW1OMmZ1a1VGS2Q1T2M1aThNMmxyUC1wSWwtaGhobERWVkNjRTRGVjBESEUwQjNpV2FuSEhSR0tseVdYTV92a0xCZGdZcEFwREd6NXFSdkI1M1pmX0tiMEc5N1BtVU10T1FILVJvZ0NEeU01bjN1SUlBRlNBUS1ZajVUTjRsSzJRNVBiY0FDSVlQSXprVEpXOVR3S3NLNGJjSmJ4Z2F1bEFkWVFaRW9wb1hR0gGvAkFVX3lxTE5SQmd0NEVBcFY2WmJDandhWFUzR3cyaUFFNEtlNmt3NC1sWFVLZmN2TDMtelFsbVlGQ092dDFYYmVqMVNsOVZfWUxjUHN4UEpyQW45N0hjdEVCbWNiUFdqRzRmRTRSbG9hcnE1bl9lU3pseWpQTktLclQ3MFl5UWlhdmlpQ2NaNGZDRmFFZEZmNnlHUnpDNHpGZzc5X2tuSmcyNFduVzdqOTdUeklBZW92X2NhdVpzNEp3MTBCTXExSkdqWGhVazdvbFM2ZXRHMkdSalBsTTVCNHpudm5WUGRYbXAtWng5b0FNX0ZaT0dqWEZaaWpKSWVXMjYtSThlQ2RFaE9aaFBYaV9TUFlFRW5CdXZhR0tJcWhuSXF6OWRGWXFYdUNTVUd0M3QwNk9kOA?oc=5",
       "source": "The Times of India",
       "exam": "Source: The Times of India · Auto-updated",
-      "id": 2055
+      "id": 2059
     },
     {
       "cat": "notif",
@@ -685,19 +733,7 @@
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1teVVHLV9jQmhDZTdjdnJPdFlLSWQ5eW9VdGJoWC1uYzgwYU0yNVdFbWRTdDFMR0hHakxtZktDLVZvZlJFQ0JCVVpmWnB3RnVERHNKZUtvbUJSSU82YzIzWk5iY05jdnYy?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2056
-    },
-    {
-      "cat": "notif",
-      "badge": "Notification",
-      "tc": "tgi",
-      "date": "Nov 03, 2026",
-      "title": "SSC exam dates announced for CGEPT, Annual Departmental Typing Test, Stenographer Skill Test and Delhi Police SI; check details at ssc.gov.in",
-      "sum": "SSC exam dates announced for CGEPT, Annual Departmental Typing Test, Stenographer Skill Test and Delhi Police SI; check details at ssc.gov.in",
-      "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxPUUZJNFllR21ITVI1TDVFaUJEVlpCRTJrWEJnRk1aZkg5NmE4WTdOMEpjYzV3YTBybWVFeEVxSjdnbGQxZ2ZISTRKQTR2ZjE1OUtFU1ZoSENpUV84T0FfaE1zWVpVcGhWcUhfUkpfak9aS1hCUmpKMFdtM0VfY2VOTWw2VDNJNWRSaXBpZDJrZ0dWaXZTQXFqX1I1YTI0ajdrT2lpQU54akswYW9FR1BUa2szYWhjcU1HSkpkejJWLXVMOHMyVkZYLWVuaUItYW1EMzJzSDhiaEdtOXhWcnV1SjhnWnVRZC1xZml1cUdiQ3F2WW5FV1FySE9DdjUxanhENkZRVjlkMzlZT2NReVhFZWxYRzFwWEl0?oc=5",
-      "source": "India Today",
-      "exam": "Source: India Today · Auto-updated",
-      "id": 2057
+      "id": 2060
     },
     {
       "cat": "job",
@@ -709,7 +745,7 @@
       "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOekFCZ09ody03RkE2WU1qRHFlVmRnMFJTdUdMRzNLUVp4eDB2V3NYd0Q1X09lUnM5QWs5RzZoSm5xQjdaTWVlaEtUMnUzdDBGVF9XRVpLNlJ3TzRfejZkOHRBYVpwR1lvbDRsMmxzbTR2QkdCc19seDQxaVBleEx2cnBpNVprRGF6?oc=5",
       "source": "FreeJobAlert.Com",
       "exam": "Source: FreeJobAlert.Com · Auto-updated",
-      "id": 2058
+      "id": 2061
     },
     {
       "cat": "job",
@@ -721,7 +757,7 @@
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPMEt0cnp6MVhpcS1COHJYZHR2MWJISURaY09kaFZ5X3RDNVNyVmdtYWsyakpkckIwVHQwaE9kVFhDWHF0c3Q1dmpyUy1VVFBVQmMwMFZtLWw5MG9oSUhoZDFnNTYxYk9jMy11X3J2R2ZYWmd0QVFwaVVHMGRzQm1sUmxLZmg1UQ?oc=5",
       "source": "FreeJobAlert.Com",
       "exam": "Source: FreeJobAlert.Com · Auto-updated",
-      "id": 2059
+      "id": 2062
     },
     {
       "cat": "notif",
@@ -733,19 +769,7 @@
       "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPM2l3TkhPY0duY0tpSWlXd2ZIMTJWeGN1cjB5eE5XWGRKdUpGcjNWQTBJcmh1dFh2MXFuanhUbXJjWXRCWnBkYkFkdE9ycm8zQmxOTGZOMmNqTzI1LThHZGF1emhtOTFWZkVnb0FYdVMyWGkxdTNmaG1pdXhobHU3RFdBN05ZWllyUlNGaHV6cWVjaEdUR2VvTW0taG5TenhsVHRtVDZvaDNqVXhKRUxDWnFVa290NjBEQ0xXb1hzMjRMV0tGbk9SdTVxS01QQmI3OC1pTWd4YW1lUkxJZkFuOUJ1Sm8wd9IB6wFBVV95cUxNSk50WEI5LTJua1lxSnV4NldfY05JOXpHT0thQzdmZm02aUwxS3oxSVluMnFXM3d5WGpYSlVMcnpiZFVaSUx1T1YwdlplSC0zbm80MldEaTh0NTRnWGVBWlk1N0syRHVxdHVFMXBua0ZqY1pOQ2hWUXY5RGtjd3hDc3RTZTdxUU1WMlBGeEgtWVNtNFZzY2F4MFFXZHVpdE9wcy1WSkFLNHp5c2daYUx4b0l0ZlRmOEVkcmVnR1VjSzVxQUVLbzhxTm1uZkQ5SVJKNzhtZGwyU1hScm1KcGxYZFNRbm9WVU44YXRr?oc=5",
       "source": "Telegraph India",
       "exam": "Source: Telegraph India · Auto-updated",
-      "id": 2060
-    },
-    {
-      "cat": "result",
-      "badge": "Result",
-      "tc": "tgs",
-      "date": "Nov 03, 2026",
-      "title": "UPSC CDS-I 2026 final result out; here are the toppers",
-      "sum": "UPSC CDS-I 2026 final result out; here are the toppers",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPcjg3eHVkR0EyeUItM2VmaDgwNlJuQWhISk9fR05OaEg3QlZmcFlRcEFwWGxBY1FONl9WRG5NcUtteU1KemVkNFF3M0Jib0s3MnJkcEYyVUszYmh6T2tOZTlCOU9vUzY2ODZmWW1JczJUTlVxTUdSc1R0bC1xd3ZjOS1nei1GRl94NjhV0gGYAUFVX3lxTFAydTl6SXU5TnhQek1yazBqSFQ5Q1I2c3F1V3o5eWNyREVkZi1WQWpvc2RCNjhWSHphLXFYdmJYMU1wZUxCendKNEZ6U2pJVTRTejVkLWw2Tjh2a3BSWmhJYUY2d0ctQklHUGZYODZuV0k2RlgyQjRIVEpaY2ZaNDdub3NkTXlUX3BlN1pFNE02dDg5M2lzTjlu?oc=5",
-      "source": "EdexLive",
-      "exam": "Source: EdexLive · Auto-updated",
-      "id": 2061
+      "id": 2063
     },
     {
       "cat": "notif",
@@ -757,7 +781,7 @@
       "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPYm5Vd3A5bGV0eGQ1a1RCRS1ZODhmOHMweFdXRDU4NWhyU3ZfRExKQWp5TmlHcWR3WXd6aHJXVVJtQ0lNaFFiWGRpSTdta2djTGZWOThmVTRqemRWZVZLTkplS1pTQzBTaTNFeTF0Sy03dDFzMVl2WE83QkxMTzQ0elFpUzhtT09aSDVXX1J0N1RTeXlxZWE4bFlwYVVXMm1MemxiNlFjc1BPd9IBsgFBVV95cUxOVkU4dXBwNzR6SllhQjR3UHBVMzNZaEhfMDhJZ1JWWjMzNE56OVI2Q3lfMElubEpvREpkX2xvMl9JU2VUUmdXNGJ2MlFnUHJkRVBpU19JT3NUMnZqQS0wYV83LTJuRUV5aEFqUV9yYjZoRFFaUm1peVZmNm9CeXVSRUxDTHVOQm1VQTc3Q1FPVlNsQ2t3RVR1bUlaUGZpMVVIV2dvd25yOEtKTUdWc2wySGlB?oc=5",
       "source": "NDTV",
       "exam": "Source: NDTV · Auto-updated",
-      "id": 2062
+      "id": 2064
     },
     {
       "cat": "notif",
@@ -769,19 +793,31 @@
       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1malJGWGg2YU41R0EtQm5Zd0w3OV9RU3Fsa3hlOFFNNmkyWGJXaW9tQ0JFYlZ5REdIOFlMYmVkSXJ5STdIamVOcnM4ZEJSQlNUQ3FlcVdRQnVEcF9VV1Q3ZXB1U1pDNjhVRTkyMlVab3k?oc=5",
       "source": "Careers360",
       "exam": "Source: Careers360 · Auto-updated",
-      "id": 2063
+      "id": 2065
+    },
+    {
+      "cat": "notif",
+      "badge": "Notification",
+      "tc": "tgi",
+      "date": "Nov 03, 2026",
+      "title": "RBI Grade B Notification 2027 Calendar Out, Check Exam Schedule, Selection Process, Exam Pattern, and More",
+      "sum": "RBI Grade B Notification 2027 Calendar Out, Check Exam Schedule, Selection Process, Exam Pattern, and More",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE40a256eTc3eGw1a1FLeW1DMF80WHEtTkR4dHVwV0pNR21qR0ZaQWZjSGZ3ZFFELXp3cjFIamdMMEJvMUZjaGxEaURCQzgyRTduVUI4?oc=5",
+      "source": "Adda247",
+      "exam": "Source: Adda247 · Auto-updated",
+      "id": 2066
     },
     {
       "cat": "job",
       "badge": "Job Opening",
       "tc": "tge",
       "date": "Nov 03, 2026",
-      "title": "WBPSC ICDS Recruitment 2026 Notification Out Soon, ICDS Form Fill Up For 16,000 Various Posts",
-      "sum": "WBPSC ICDS Recruitment 2026 Notification Out Soon, ICDS Form Fill Up For 16,000 Various Posts",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE4tQ0E5dDQtS1dNTWY1TkpxS0RMb0l0QWlMNTJIRGRiRnVHcDZtb0lkRkpsWEhpYkFpMlhjQV9hM29ZTThmZ1pkS2hzM2tRVy1JWXk0SFJxd25jbUxjS3NkZnJzVUpkcTRQNVNZZHM5T2E5a3F2SEFlQTdESQ?oc=5",
-      "source": "Adda247",
-      "exam": "Source: Adda247 · Auto-updated",
-      "id": 2064
+      "title": "Andhra Pradesh Jobs 2027: Latest Government Recruitment Exams - APPSC, Police, Teaching",
+      "sum": "Andhra Pradesh Jobs 2027: Latest Government Recruitment Exams - APPSC, Police, Teaching",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBRdFJka3c4MFVLUXk3bzZyUUpETlBvZnNBb282eEZhcFJKZldVZ1dnb0tzc1dNX1V6TlFpN1g2Ynp6LWtmU2V0RUNLSjhBTUh4R0xLaTR3bXlzZTFFTUFWVlo2X0Exc19hUDc0bnIwMVg?oc=5",
+      "source": "Careers360",
+      "exam": "Source: Careers360 · Auto-updated",
+      "id": 2067
     },
     {
       "cat": "result",
@@ -793,19 +829,19 @@
       "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQRUVrN0E3ZTdCUmZEeFB2Q0tRWEhrQkJ0MHBWSWlhM2lNa1hWZkxtUjdtR2RhcGIyOXRFZEVZTGxMYkMwN3F5VjhTalFHRWM4VWd5LXlBM1dYLUxoVDROWFJJdks5aElOaVRCZnJiLVAxQXctUTkzMEp0a0xTci1wQjk0LXFNWTY3R1lUWjhHOE8yRTYyRldCclF6WUFaR2Z5TDFOX1pWZHVFUEZQbWQ5dW5ORVJvb0VucF9qQVB1aXhqY211dkU4MWVYU2N4Mnd1akhYSi1VWHFkYlhnNldnUWVLN25meUx5bXNLdnNVQjAxS1hlRVHSAfsBQVVfeXFMTzV2dHRvWlllQUZNUW5SeVNiY2pqbWc4U0NaMVhzalFiVlBxTG5lbjhua0JUMFI0TXFWWlNUaFVBbVJVbzlaWGlxY3hXbENvS2JUelNYdzkyZ2ppRkEyNWd5UV94dFNiRXdKZFlnX0RKTF9ZSDh4MGhKRGFFY2ZTNFlzYThsZVlESGM2NlhzRjlzN3NiekhJVHVXZnE2eERvZWlVcG5mQm1qbHJUN0ZyN1NESVY1bjJTOXVHMnpMMWVzaHlRcnRMWjVQY0hhMkFxaWV6ZVNQRFM5X240ZDhWM1l3NWdBRTdsZHI3V09zNkVXNlhvaDZqV0g5UFU?oc=5",
       "source": "India Today",
       "exam": "Source: India Today · Auto-updated",
-      "id": 2065
+      "id": 2068
     },
     {
-      "cat": "result",
-      "badge": "Result",
-      "tc": "tgs",
+      "cat": "notif",
+      "badge": "Notification",
+      "tc": "tgi",
       "date": "Nov 03, 2026",
-      "title": "UPSC CDS I 2026 Final Results announced: 243 Candidates Qualify; Direct Link Here",
-      "sum": "UPSC CDS I 2026 Final Results announced: 243 Candidates Qualify; Direct Link Here",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQS3RsWnk3emFCNVBVQnNCWkM2Si1WRUJMbkdLajJxQmNlVlRvMjdma2xKTmVIdnA0YzRqNFF2NFR4RXdjNkZNQlNNTTF3dzVpZHZjNE9vYzA4bWdDZnpvZ3htcnpLZGVZcDVTbkNUTnkzWF9nM01fRFhpUWJFRW50UTdTVkhzeGVaQmRUQ3FFZ2J1TkpjdzB0aS0zNFpPVm44ZWc0UWprV0NaYlAwdnBNcDZ0MFZmRmRoWFduN3Z0bFRUazDSAcsBQVVfeXFMTXNLMlRqWkRGbXpweVlCX3FieExqSFJUN3hCZVVaWDVOcnIwVVZlVE5oY2N2SEtOWlkwS2xULTJ6cTVCRXZhQUNSTU9DLWNRSWwyWFFxa1ExTnJZanpLWEltdmtCUml5V2Ztc1RRNVpRVGZMYW5FSEZlM2dOWll5TkF2dXdmZ0s1Y2lYQzlRb2dMR1BwMmZCTDZpcVNuRFFGRHNpRmpSRFhQU3BOdmN6VkIyTUowM1FlN0VvSnRYMGpkQ3pnSXkzUnN5b1k?oc=5",
-      "source": "NDTV Profit",
-      "exam": "Source: NDTV Profit · Auto-updated",
-      "id": 2066
+      "title": "RRB ALP Exam Analysis 2026 Out, Check Shift-Wise Review, Difficulty Level and Good Attempts",
+      "sum": "RRB ALP Exam Analysis 2026 Out, Check Shift-Wise Review, Difficulty Level and Good Attempts",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1lNjU3aU5uQVZCdXdHYXZrY0JBVk9adjRzdUFZc1hQRFJ5ZnlYWGxmMkc1bnd0V1hFeU92YTBqMTNMQnc1Z3l5bUwxcnpBLTFoUWRsZFoxelBSUjdyZkhUZjE1dWZOYWNvVXNqQkNOVHo4aTA?oc=5",
+      "source": "Adda247",
+      "exam": "Source: Adda247 · Auto-updated",
+      "id": 2069
     },
     {
       "cat": "notif",
@@ -817,7 +853,7 @@
       "link": "https://news.google.com/rss/articles/CBMiywJBVV95cUxPLTRpbElYVzdjQmxGcm84cTFvWHFsXzFfbVVhWTdvQXRlbnVzc2R0WG1NZEswN0J4Zmg5QW9Dbk9lTHZjNC00SnQwb3loYkF1Zi1ub0JrYnJOY2o0OWw1bVhWMkNvQm42X19vbWdWM0NONi1QbF82NXdNN1QzbWx3WUhVSE9oamJRdml5VDAwZTZRZUN6MkdyX0VNRV90V0NVYmdpTlA5bjB1UkVqNzNSc045OUV0TDROaEZBZ1hXdEhXZl83Y1BpTlB0cUZ3WVF6Z21UMndaYWVlMUd6ejRaVllnZWJRVUFBQ0JIUUdZNUpyV0NQTU5ZbmR5ZDQySHhGR3FiNXBBYkVSay1WYnlRVXF1YnA1QU5NMG9EU0JEOU5ORk91VzJIS1liWjliVGFDUnhhWlM3ZWwxWFNOSGRDVDc3alVxSTFxb3A00gHQAkFVX3lxTE1jNzdMZXlXY25qZkRMR1dpMkdWR2dUd2tfd0o3NlhSRy1HTXZ2OV8tNlJEcGFqSi1JdVB5dEsxa2pLM3lsMXpETTRmRDIzYjlLSnBSbkx3MGs0WDBOdzlTQlVGWmpQZnBYSURuYW45Y3FVUFFfck5mM3BSNkNzRlUxZlk0Q2s5emNzSGdiTG5WUHI4cDFvTGRMS1pSdDM4cnF3SjNidl9EYV9DaDZVUElZREMzTWllOThzYWpKUjFhYWZMSm9jVHppY0VTaXotdzJGS05kaFNtcWZtendIV1pNa3FnWkJjVXp5NS1UX19fbDRaUTdoSFRZS1p2ZzlBWkl6THhZd25KRTYyOGRuVkFEN1I3cm5ZSHNlYXNPRjdwWU9aak5GS2xWRzJmMjBncFZ6UTRBTFpvdzJKNG9GbE5GRUtTRm1sWjBZSWloWnFnXw?oc=5",
       "source": "The Times of India",
       "exam": "Source: The Times of India · Auto-updated",
-      "id": 2067
+      "id": 2070
     },
     {
       "cat": "result",
@@ -829,7 +865,7 @@
       "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOUFJjZnNEaHFHczV5SDVCSDZ0cjhiVTNfUWZqMjd2bEdWN3Ntc1FxTXdyNnB3MHJhcGZIbGdxUlU4T3lwYjdiNW55WXZtb1U2OXNzOVl0dmxySWd1RnZxQk9qSVhTT0JNUWhIeDBFRDd1dEcxM3QzaXlVbC14MlFMM3d1Y3ExTVpNYTNKOHB6RW5DUHAtZXdFRmJidmRVNTBmeXRjWTV2MkMwT0lmMXdENU40TE5nYW9BUl9GMmtWV3VkRzhGeUhwOWhacXJpMWZXV0FFRGdIUTh2d2RPTjY4dkFxVnlXeDJPbkJj?oc=5",
       "source": "Education Times",
       "exam": "Source: Education Times · Auto-updated",
-      "id": 2068
+      "id": 2071
     },
     {
       "cat": "job",
@@ -841,7 +877,7 @@
       "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNQ0x0a1FWdlE5UU5SSU5QWm5nVmN4Sml6RUo3OGRnWV8ya240YlRtVm5uejhsdmlWTzdUekpWUkM5Uk1rWVR3YjRMWlp0VC1KS2tDbjVqNDhUTDZsYVItbEs0TnVEMThHSXRLcXJPYjNTblVPQURSSG53ckp2ZGQtWlNrU2NVWUFaVDhlcEh6UW1lUW50V0ZXM1FNdlF6aHhNUk1LLWZpRHNYaWxFemdxRnVDcEZBN3BINzhEdkxWYW1uckZsLTJleVFaTDNuanh1eEJfVXJsSkVfVFg4WEpQUmVn?oc=5",
       "source": "FreeJobAlert.Com",
       "exam": "Source: FreeJobAlert.Com · Auto-updated",
-      "id": 2069
+      "id": 2072
     },
     {
       "cat": "result",
@@ -853,19 +889,7 @@
       "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNc3A3dmFhbFNfYVBHT2lrUnNTUGJoRTQ2aXoxNGJzU2VyTGU2dG1TcTRVVTlRaUlkY1VQNHRsWHZCOE1CRERHVXFjMTVXaWRxb3ZsWGt2MV8yLVU0OWx6cEdsajBoNHVVZ2ttTWl6TVFxcS01eFlmYXRoQ0syOGhqZGVMNHphLVBqQk5aWkxlUWxMY01KTW1qd2Ftd2h4Rndka09mUE5yTDhFR252b01Nckh1bHJiOEZGUl9MLVBJckhpUFNxZEtZY24ySTc1WUkxQTJ0NnpQLWpBWnNlV2VOQ2cwMU9iLXN5LWQxTE1xN3TSAfYBQVVfeXFMT3ZLWmk5cEV0VEhSeDRRWDQzZ29Tdlh5dlpienFsaDV6UTdCc3RsQlNIalNGbnpzU3pyWmpRSDI3TWlscE1ZTV9UY3p0YTNGUU5IOEIxLTJjVXFnNkhpMjF3emlDZHh6ekVNamlxQWlhOFk1SnFlYU4tOWhYN1lrT1lBZV9uaVozWDZuS3VZem8tTEktX0w5czBFYU5QNkF1cERlWXVoMy00bmdteUhub3Exbm00YlpVaUlJUzRqSmt4N1gyVVVyS2lnNVBYS2w1Z2llRXBxcmpjMkg2ak1LdlJtZ2dLbjVGY0hmQ0JBQnJGLWV3anBn?oc=5",
       "source": "Moneycontrol.com",
       "exam": "Source: Moneycontrol.com · Auto-updated",
-      "id": 2070
-    },
-    {
-      "cat": "notif",
-      "badge": "Notification",
-      "tc": "tgi",
-      "date": "Nov 03, 2026",
-      "title": "CAT 2026 admit card release date and time: Check download steps, exam timings and other details",
-      "sum": "CAT 2026 admit card release date and time: Check download steps, exam timings and other details",
-      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQemF1enpnV1gxRWR4Y2tqSXIzTDQtWmJVeUFNQ0dJeVd1MHpLTnF1NUhGa3Z5UHF0ZW9SZF9kSjNjVUNUdGFEX2Ytc09URzFiYVNueE9pcE5qTUNaSmZnSVVoSVhhOC1tLVJsTjA3S0JOVmJZQ0VRUXBQaEpET3U2cElhMVVkSU1Qc1J6akxYRGtvcFdoYl9BTlBzNWFKSHF0ekNleHloVFh0amJsTlBxdUtPU3dVTzZPa3U3a1kwN3doWGRvN1JscXFRTjgzV2xBeGZPenBMUHE5MFBYemsyVHVXLWdNeDJPV0HSAe8BQVVfeXFMUEU3SGdLemhKT2xrblhObFY1SDRsV3dUNWw4Z3hFRm12YmlIYmk0RjdfZjg0QU8tREFmSTRkUzRDcmdGRzJUdmE1X1dUT2h5cHloeDZqRnd1Tl81LTdsZGFxa1RXaUlKdUdvVDZjRS1qRGNyRy1yRzQ5c2dENGlDMDNWUHRhaXRRdlpvVmExSGdSSzExY1FBeWJibXZBNjdQUVlpU3h3THNjZ2hvZkY1NkF5NEctY2ZRa1BucHB1b1VHQTNadWJVRG5vTFQ0U0FhbjZsMEtIci1vSzR5VWxzOVhuWGpxeXFrZ2V1VGNBM1E?oc=5",
-      "source": "Moneycontrol.com",
-      "exam": "Source: Moneycontrol.com · Auto-updated",
-      "id": 2071
+      "id": 2073
     },
     {
       "cat": "notif",
@@ -877,7 +901,7 @@
       "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPZUZVTVNyTlNfSU1WbmI1TFBUdmxfa25iUlkzY0JKeHlFNkhwU2pwODR2b05vUGVHQzNjU2ZUeTdaaDgzYlJ3T0xqT3lZaEdfWkh6cEoxTmdWZ25pU0w0OVAySml4ay1DUm9oSXdrdXdzNDRnQ3FJNmhMUV91MklzZ3ZEVkFPU3BXUkh5djhBdWZfcVBReUVkeWVkTU5ReTlmdXlOdGxLTE5DLXZKbm9SdXJqeTc2amw5LXFSOFczZV9USFJDVUVhUnZINW9BbHVoX2JKZm8xaW9uMzQ1RWE4TVV5TdIB6AFBVV95cUxPZWxxUW9XVk1KSk1YMG92bGJNb0s4djRNNGZPanpHMFJENk1yUXFHVW5INWV6ZWg3U3Q3dHVwd2NVX0hOeXNjT1dVRDJGZjV2LWV0NG5kS3ZPMzBTY0FhNy13TGNsb09JQmh3RGZoRzVzeEYtWWVfb2thajZtazFMTEhic0tOVFQ4U0VySjItVmNfYTBFRkp4VW01bnM4X0VGZmJLTlRLblRnbE1oRS1CckZTODBaaWhWTHJGQUxPR1IyV1RGX1JRVUtHQVNCTGFHTnBxYnNnV180cWhyOXh2U1BCMEtIN0pL?oc=5",
       "source": "India Today",
       "exam": "Source: India Today · Auto-updated",
-      "id": 2072
+      "id": 2074
     },
     {
       "cat": "notif",
@@ -889,7 +913,19 @@
       "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPVU9LWXgzT1VzbndCUzRVTjhnRHZXMFJQU0VXck9sWGdWTG4yTWZ2SnpROVI4TG83QWNFbW9jbDBBd1R1WURKZ0lZeGZFanQyNHY5ZXdHLVI0bVEzYUp3YzRGay1QRWs4UnBtWFZVUDN0cnp0eE10U21aQ2JFOVRNaHB0THlUcXoxSU5aOVhOSWtvQzBmM05xbEU3MzVqeTlpUExOOTdHNHRQVWw3WUt1TmN3bi1tSDFpcklkejhiNm03M2hST1UteGtIQ0Y3RTR0azZ6V0xkSDZtc2JWU21rMUlydjBDZW0tenZBOXF6RC01a2V5VGpUdGFvQzFsNmRaRkNwSEN1WlFueU5WYTZ0a0lR0gGXAkFVX3lxTE5yZ3JGX2pjNWZ1WlZlYWRBZzJ1dVJHYi01QUpyMElScXA3bjRrcEY0TThPUjV0MGFlRE9PcnJCSURTVFNQTjRLRUYzWTVJMk1qazFYZDlBUHJiWEd1TEtuWWZ4YURtUW1HYmZValBueVRTb1JCTTA1RU5vUHFDUWFjQkc1OU1pS1JHOGtjc0xRal9NVkJHYjRzbXFnNDRLazJ2T29vR2JkSGNfemRKNHpCUFhjbmFoREpfdG1mVjFtMUIwLUliWDQyeVhJUTVUdnFhSVVraktaM0pqUURBX2xnelo0c1hjclRTWWp2dE5xUVZTRFFXamVXZGotMnIxUG1HYVlvcFBvMG1TSWZDeTRSakNQTEx2dw?oc=5",
       "source": "The Times of India",
       "exam": "Source: The Times of India · Auto-updated",
-      "id": 2073
+      "id": 2075
+    },
+    {
+      "cat": "result",
+      "badge": "Result",
+      "tc": "tgs",
+      "date": "Nov 02, 2026",
+      "title": "CDS 1 Final Result 2026 (OUT): Download Merit List PDF at upsc.gov.in- Direct Link Here",
+      "sum": "CDS 1 Final Result 2026 (OUT): Download Merit List PDF at upsc.gov.in- Direct Link Here",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPVmpTMkZRbTF4RGtyeG1FenFXM0lGWUpnYmZnRnNjOHptWGNmQV9IT3dmVFBrNWJhcno4SDAzYXRYN2VOZ01KRGFyamNDTTNUM0xvNzdqZjFVN3UxeERHcmtjNnJwS3ctdWtmcy1UZHFETno3R2xQWE9TaF9TTVFrbWFJMXZKbGV2WUNBdUltaVE4amZiaWpyZlpyY2wxbjM1ZUR3Ynd3ZUpyZHhqMlFpUl9tcldnZmQ0dVViaDk2Qk52MVdrT21ROFpEV0XSAdMBQVVfeXFMTzVLUXNpb3hrMWhlUmhkT1ZZcmNZUGlHWFdzcm1KQmlaSmhLTDV1cGtaa1NHMnJPeVJKWC1FelFDLXY1UGZmUjQ3dVd3NFYtNk5VbGlGWkZoTFVaLXBEa2ZKYk53VFFCSUNFd0RCQjhXTjVncjRjV3o2aUdldVZxaFZkMGsxR3NrX0NUS3BITm5hQmllcUFTV3VxRHdORTlSRkxiNUI5eU42WGNyY196clM3aXJaRHBWQzFmaUY5QjlVVzJBLTR6cWdkdjdRYU54cjFqdw?oc=5",
+      "source": "Jagran Josh",
+      "exam": "Source: Jagran Josh · Auto-updated",
+      "id": 2076
     },
     {
       "cat": "notif",
@@ -901,7 +937,7 @@
       "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1tcUpsVl9KUnEwVVMtUk9yb1lvT2Y0WVp1d05TWDQzZnZWS3FqNGxlRENKODN0eThzTjVrTmxlRnNqY19Gem9FalhzTF8xZS1sYzJWeVNCdFZQTW1CaEF6T0JmNFdORlVHS0NLajI0MjE2RGhh?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2074
+      "id": 2077
     },
     {
       "cat": "notif",
@@ -913,31 +949,7 @@
       "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOeW5RWVEwRW4tS01jUVBvSHZoZE9SSXhzdFBIZ2Z4bTN2di1GMnEyMXlEc2RQXzZMc1JMd2JaTjlxdzNqSVNGWVl4LXpocTFrNnU5TWJjanhwamVRQS1PdnJIb2g5MFBuX2NZRExMeGl1WWhUSWRQb05udGd0MXlEUWlCUzgwNzJybHdNb29OYXVMdERGRkk1UEltUFhINmxLaEM3OFc1dmtPWkR0RzU2ekpMS1FBeWZTTXdqWm9rUEhkRkxlVEpQWW15cmpyQXQ2dTVJc21R?oc=5",
       "source": "India Today",
       "exam": "Source: India Today · Auto-updated",
-      "id": 2075
-    },
-    {
-      "cat": "notif",
-      "badge": "Notification",
-      "tc": "tgi",
-      "date": "Nov 02, 2026",
-      "title": "CAT Admit Card 2026 releasing this week at iimcat.ac.in, check exam date and exam pattern here | Competitive Exams",
-      "sum": "CAT Admit Card 2026 releasing this week at iimcat.ac.in, check exam date and exam pattern here | Competitive Exams",
-      "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQdmF6Um4wWmotenVETHY5Zzd0SVU2QXVTVzhBcGw3LWpSUVRlR2ZGOWhiR19lM3dHMWltNlBaR0JwbHZPTjhKTWpZSXZ1WGl6MGtTWXZJNTdyckpFLV9lMDJOQXpuSHFEZE9NUnBWWml0UTI5ckdlMzA0R0toS3lEUTNVUXJBYUtvUFdReTZNR0pPLWN1d2tfaDM3ZW9YLVA4bnozMnVaV3VnRUVVSGxxWUdCbUx2TERzMW5uRHRyVUJfSVVmVEM2MFFrOXFVWUpRUG1zZ0hvaThqVGNBbnhNVU5KaGRmUXhpSEstOS04TUszdk9seFFmaW1nNFA1Z1hFWnpoY0l6OXXSAY4CQVVfeXFMTmlmeEoxSEVGaGVUblhqaGw5ZFQzSEt2MkRZQUNxM0Nyc0xPTXltZ28wck0wTFZRMWhfODN1YkxlQ1AxajJIMHVxT0k3OW1pck1BR1ViSzJwRDBjTHFheklWc2g1Nnk3VWtfWmpnUGh4a2RyckVkcnJnbjlWRHQ2MEFITEdOdXNNemtSR1JEWGlIdnlmOHpFWWJIaDFvTmduX0xXdXBBUjZHNlJIb2NOSXVQY2JqZTJPdzg5SGkzR19IdGd2U01FLXZyYnlCMy15c1ROQUNweXRtTnd0cjFVSFJzVGRIemRLc3hDX3VWMGdzeUcxZFhfemxKdlBvTWFqVTREajI5Q3AxZTZYM3V3?oc=5",
-      "source": "Hindustan Times",
-      "exam": "Source: Hindustan Times · Auto-updated",
-      "id": 2076
-    },
-    {
-      "cat": "notif",
-      "badge": "Notification",
-      "tc": "tgi",
-      "date": "Nov 02, 2026",
-      "title": "CAT 2026 Admit Card To Release On November 4; Check Exam Timings And Download Process",
-      "sum": "CAT 2026 Admit Card To Release On November 4; Check Exam Timings And Download Process",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOM21fR2phVUJBU09IOHo2eG9HcG51bzNLX0kyejhMMWpoTU5sTTdBbG9CeWstWkJWSlExbDJCbFIyXzUzeUJuZWt0WmF6MWRJTnlUR2VtbmQwUGIxQWFvVkpkcFVxM1JkTVFTQUhCSEN2cUgxV0dFTlk4dVFsWENnUlUwRU0taWZGUlU4TTRKSzlvRzVPeEVXVUI1elJRcHF5aWFPaTh4MlFISVVuLUVXMU56Z29YN2w4YXdhZ0YyLXJzZUNCSEZHUTJaVzN5bGfSAdcBQVVfeXFMT0JEYTc2TnJSNFVNemlwLWV0N0VYQ0k5VkZkOFRLMVNURXBhUTg1dDZrUHoyeEpJX1pxeWExY3dPTVRPSjgwUVNvd3l5aDNBdGFRTDdGTnFVdExNSGRHSmIxVEp1MGxyLWtuS1NITVVZVW9pMFRJVUdHRjdBSkFPSnhFenpndzVHemRvRXNJV1BNWnkzSnljUkNRRlNDSGZVWjFLTUR6eUtSczk2UHFxSXBiY0tGcHctTl9RV0FzdjljUDQ3X1R6Qk40NmtlUXhISzd2dmRtNzg?oc=5",
-      "source": "NDTV Profit",
-      "exam": "Source: NDTV Profit · Auto-updated",
-      "id": 2077
+      "id": 2078
     },
     {
       "cat": "notif",
@@ -949,7 +961,7 @@
       "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE55N1JRSlEzUENMRVA0RGp0UWlsdDUzVVdOcXZvMEk5RW4za2owa01DOE85YmpaMTdxdmx1SEVyb2NZSnhmV1ZpNDNhSFByd0FiRUp4NmFKb3VGN0RXb2g3b1I0TGV5QQ?oc=5",
       "source": "Vajiram & Ravi",
       "exam": "Source: Vajiram & Ravi · Auto-updated",
-      "id": 2078
+      "id": 2079
     },
     {
       "cat": "notif",
@@ -961,31 +973,7 @@
       "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1mNXZNY1puZVMyUUlBVm9hdmFHZ2lSbkNTRVZDWGMzc3BLYUVYYW0tbjRsaTJKekcxV3dlMGV4b1pIWWhZS3FBYTY3MUltQUdU?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2079
-    },
-    {
-      "cat": "notif",
-      "badge": "Notification",
-      "tc": "tgi",
-      "date": "Nov 02, 2026",
-      "title": "LIC Assistant Notification 2026 Soon, Eligibility Criteria, Selection Process",
-      "sum": "LIC Assistant Notification 2026 Soon, Eligibility Criteria, Selection Process",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE90WS15Z2I0LS03S282RFRLX3pZdUt1NGpuNzhnbnMzX3c2MUpNZ1Z2aXZjZzIweXpJNldMT1hCclB0bS1ka0ltNzBLRjhzZFhjYTVzTnBn?oc=5",
-      "source": "Adda247",
-      "exam": "Source: Adda247 · Auto-updated",
       "id": 2080
-    },
-    {
-      "cat": "result",
-      "badge": "Result",
-      "tc": "tgs",
-      "date": "Nov 02, 2026",
-      "title": "TNUSRB Constable Result 2026 Out at tnusrb.tn.gov.in: Download Merit List PDF Download Link Here",
-      "sum": "TNUSRB Constable Result 2026 Out at tnusrb.tn.gov.in: Download Merit List PDF Download Link Here",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQdlphT0NZbENZd2c3TWdZaVZRZHEwa0Y3dFBjOS0xZEhWTUM2REFZQ21nTHpsLXp6QlZtTFI5XzZlRGhGZzJ0dE51a1lhVW8tQkNWaUI4V2ItQUlPb25oaS1DVWU3dWxjT2RKNFljNjd3T3hOVEhtSmtTUk1qdUphdWZFdURLOHBJVkxMZXJXa25qNkJRR2RyNWNYdHRnbDM3ZXpjSFNUYmI2cGJkMmpyaktzMWN3T0FhR0s1UTRmanRHd0JpeXhNUmFVSmpzYUnSAdYBQVVfeXFMUGpPaF82dmsyYXBlWTJzNWI4Z21XN2dCMGhtLTAzcXJIeU1Yd1BXX0t3Xy1rYk92Y01LeFhrRjJPMmt6ZXVha3NwS2g2UHVFd3Z6M1Z4TnRXRTZIbzRTeU5rQnp4NHQ3ejJHRF9WSWdRdWZSOS14QU81dm9uTXJKSm1WWDVTajBTcHRUZm8yM0xQaHJieFpJUXdnbVg0WS05aDlGRDNaTExZaHAxUEhabEthWG5jYnhIQXRMYkhQR0tRakR0Mms0S0RQU05Zc25LSUlVdE5IZw?oc=5",
-      "source": "Jagran Josh",
-      "exam": "Source: Jagran Josh · Auto-updated",
-      "id": 2081
     },
     {
       "cat": "notif",
@@ -997,7 +985,7 @@
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8tcFVFM3pfZ1dvTDFOUFNPYjVKanRwZ25LdUhNNGNfMi1fQlQwR3VJVHF2bzk4Vnc1Y3pOWkJDNXQzeG94dVUydlkyWmtwRUNjVWJDa18tWWo4QzA?oc=5",
       "source": "Vajiram & Ravi",
       "exam": "Source: Vajiram & Ravi · Auto-updated",
-      "id": 2082
+      "id": 2081
     },
     {
       "cat": "result",
@@ -1009,7 +997,7 @@
       "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQVnNPVW4yMlJnb0xtVEdlN2p1d1U0WGtvSXcySTlHNmI4cjdoZ0FnSnZNWEx1QnlGdTZ2OXZscEhzVkgwQUhIekxKVWhaUklaX1h6RFl2cGR0dk5OTml2NldMWVItNGJrbXdQYkpoV2dyVVFxVm9ZeGQtY1FQRkFMaFJuYlJmVjZyTXl3Rml6RUZfMy1QUDdOMTl0SkFsVE9ELUFuY3d6bm8xZkphN1otcFJXYVpZU0k5cGg3TDI5MkpVZ19tcXJqQXFZZlpxYVRhYWpyOEVYMnpWYVFEUktmbDhDY0JRWGNuMkczTnk1bHg4Slc5dmfSAfwBQVVfeXFMT2owdzZfSlpvNVNpVi0wUHMwSXM2ZUpLYVN5VzZjMTVIbjgtbVdUMHpoYXJIMWlIdVpGN280N0hiY1llSS12amlwMG5HT2JhVEhXMC0yWVI3eEdKYms1MlY0Q3JkUUNjTTVWUFRMZWZ1LVpjTHJWaXZldDBtcG5RNVBnYVhhQVctT3Q0ZzJ1OW9KUDU5b3BVYy1KZlUyVFUxSHp1UWNOc2M3bHNWQXJ5c0RGdWxaT24xd1liYnFhXzBxdTAzTk1uR0dLRFQzTEdkVGVuQVljRm1RMHhzVVFfUEpkS09qbFBiTEhBZGYzV3pMODFxZ25NamNCUVhI?oc=5",
       "source": "Jagran Josh",
       "exam": "Source: Jagran Josh · Auto-updated",
-      "id": 2083
+      "id": 2082
     },
     {
       "cat": "notif",
@@ -1021,7 +1009,7 @@
       "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE4xYkxjYU1WTllwZkwyYXh3bjZOeHZzMUljM29LV0J2elZwRHlLWHBiOFhvYzlaVlk1Q1VQamZ3RFJER2FLR2NPaUt6bkt2ZF9fbm9YZlJuVld0LW9IOHplbDVB?oc=5",
       "source": "Vajiram & Ravi",
       "exam": "Source: Vajiram & Ravi · Auto-updated",
-      "id": 2084
+      "id": 2083
     },
     {
       "cat": "job",
@@ -1033,7 +1021,7 @@
       "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOVHVCZXloQUhsUF9iMWV6MGdVbFlQWV9pb0dqWkwzbHYxMThPVUdzTDNEa0NYbi1KNHFMd3I2ZHZDVTZObHE1VlROODE4cEI3MXhCQXR3b3ZYZVVVenJlcHdvYXV6MzhBdjdPb2RwY3g3cVJGQ29nRnh0VEdEOU1sTWtBMkdtOVdoUjlqWlhVRXlXeklRaVBzQ2h6OWN5ZkN6LUd3SEk3NVh3dkszTGlEWC1fZURGUGtPTExXbko0Q3NveThJ?oc=5",
       "source": "FreeJobAlert.Com",
       "exam": "Source: FreeJobAlert.Com · Auto-updated",
-      "id": 2085
+      "id": 2084
     },
     {
       "cat": "result",
@@ -1045,7 +1033,7 @@
       "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNRHV6a2JNbGdVbnJucEI4dUdjMzE2U0pCd3RxZXJwTjQ2NnV1MUNhU1N2ZEs4U0RTV21YbzF5QlZEa0lPMmxCQjZPNVJKYkxnbVhpOEQtRERZdkYwZXU3N2Z5SmY1elpvd042MWgzLTQwTzF3UmZESkJtM1d0Q0N3WmNJcUR3Sk1KVEcwbnZQU25MOTVIWUdRaWtxLTl6OHhuNzJjVENfTkZwMUdOM3FETjFibl9BS29jb1BoSkFjYUY0a2lzX3JTTTh2cjRpbmdUdVh6WEp4M3phQUVtSkw1VUNQc2c4R05HNFZJemtTLUdKeVFw0gH7AUFVX3lxTE50TUJkMkRvMzc3SWwwV3l4RUhqS0wwMEw1dXg4NGJudXFLbnNPUmlKSnZHZlVIaFoyVzNQbU5DbWtyWWFBTld6RjR5Rm5KVzVmY2dMNGRfcnN5dUQ2MHMxcmRTQzROdUFtS1Uzc0s2d3lFSmtiWHdzOGhBS2JvVE1CcVpjU0hMRG41QTQ2UXVDdWVzRHBmSDh1NXlxTWFBNjBTdjEteXkxN1gyYjdDTjVPeUJJVjRqVV9fVFlBb3o3MHpoc3dJYnp6X3QtaGdzektqeEQtOHdhQjVnN2RQNWVzeUZnME1CcE9fZTBqSHdsZjJKN3FObnU0ZFBB?oc=5",
       "source": "Jagran Josh",
       "exam": "Source: Jagran Josh · Auto-updated",
-      "id": 2086
+      "id": 2085
     },
     {
       "cat": "result",
@@ -1057,7 +1045,7 @@
       "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNeTA0YjJUY00zbExqZUFIWENoYTRndFhJeFU0QXR2S3BpdWxJa0xTQ3BWd1MxUTYwY3RHTWszZFhCbXd0djhaaFZlM05uRG93Y0dUa2tmRjNWMzhVSURkS0VEOTVXb1NfaWs3eXc5dHRzRXlRZnF6SGthVzVMMUxvbVpzbURiSk5BVEdDTzM3UlIwNFhQbEhMdG4wQ2xXTmVEUnQyS1BRNWdXOTd0YjNwbFZ3V25DVmp0OG5YTHlLZlMxaHlCdkJjbURIa1AxbUxPTi1VRHdLNNIB3gFBVV95cUxOZmNZbkJoY1g1cGVNVFg4eEthR29SajQwVGlzZGZQN05hZDZGTWtKb2IxMUg5QmNiU1pwVGpvS0gtUXdoazA4X01rcFp6X3FVdFdCY1Y1Zk1tTjNDazFudnZ6dFk0M3ljV2pOdGl5RjZKandNd0dROEd4YVVNMVdfMkZNenJWZ2UwcVpjS2JIMVYtbFp1eEZPbXpzUmo2QkJVREJnbjhZUnFrLUhQR2tuamV3WnNmV1ZxZ0picFhLcVBHdHpyT3VYU2NpMGRTLUlzMnVMaUVtdk82LUVUaFE?oc=5",
       "source": "Jagran Josh",
       "exam": "Source: Jagran Josh · Auto-updated",
-      "id": 2087
+      "id": 2086
     },
     {
       "cat": "notif",
@@ -1069,7 +1057,7 @@
       "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE92SjJOM25LN09JZ3g1dktLNDhBdl9jQVRwOGppaW1mdFNSa3VTcnNSaWN5anRfOUVuZkFqbVJpaDRiR1B6YXVxTjRRdE5tUWlid3hvYldvWHlQdEtDM0tj?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2088
+      "id": 2087
     },
     {
       "cat": "notif",
@@ -1081,7 +1069,7 @@
       "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE80Z0doUEhKcEhVd1BfYlU0T2tQZUJkOU8yUFRfeU0zdDgxb25peDhFNWVDNUtaa0FZZUJZWlp4NDhleVlMb1djSVFPc0ljQW1CcmZ4ZFhCZFJEOUktX2hHWkstMA?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2089
+      "id": 2088
     },
     {
       "cat": "notif",
@@ -1093,7 +1081,7 @@
       "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBjUVB5MTZxcmVQT2s1c1YwZHJid2NjbmVLTjVaMEdlNWlnOTlBOXQwZXhKOEN5enU0TV9xMDNxT1FOR3pRVE11ZEQyTW4tdVJDWEVKZXJtYjA0WnFBWndRWmk3aVNkVmltbWlR?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2090
+      "id": 2089
     },
     {
       "cat": "notif",
@@ -1105,7 +1093,7 @@
       "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1Ua2lIUUlQMDM1RFJabXh2RkFUdWx0dWhmOWlVODFRMllQWjBtSzNXOEF6WmZuMTVzZXN0TGU3M0t4SEduNlI2VEJWV0xnbDdMRzJfWVREb2FjR0VnSThJNjZ1NHZNdWpsTkdJYXdLVk53T2cy?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2091
+      "id": 2090
     },
     {
       "cat": "notif",
@@ -1117,7 +1105,7 @@
       "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBSdWd5SUFCN29ObVJrSmNlMUdoQlJfMGZzQW5QaWxycUpiMWhVaFlqY09ISmRTczM0MDZnZ0dCR1p1ek1veU1ZUVZUWEd6cnBfNGJvTlRkMzhhOU5kWlZNd2laMA?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2092
+      "id": 2091
     },
     {
       "cat": "notif",
@@ -1129,7 +1117,7 @@
       "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9YYVp3SXBRVWRqUmF5N1B6R1gwand1R3M1SmFXWGF5WE42MEZGZUE1emZJQ3Azbk52U21Bbk5CWTJJWVpTbFR0U0lXTDlLenFtaEN3VE9UODNvcEMzSjY0?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2093
+      "id": 2092
     },
     {
       "cat": "job",
@@ -1141,7 +1129,7 @@
       "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5yVk8xT3haTjkyNTNESXppMnZsb09KZTVDMkxuOWo0R2p0dVE1ZDhnMHVobFhBY2lRNDM4X0g0NS1ieHNWNWtUTFZBS19KTUNncUVZUG1BcGR0SWZ6Q3NDTkstTk9wUQ?oc=5",
       "source": "Careers360",
       "exam": "Source: Careers360 · Auto-updated",
-      "id": 2094
+      "id": 2093
     },
     {
       "cat": "notif",
@@ -1153,6 +1141,18 @@
       "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE11V043dHhRU2lPbHhNc2dYTThuTHlMNHQ5M0ZTSkdsTEhIOTVHV1BxWHhTSEI4bFpoYTZ1U2NtV1lKaG9XQVRwalJUTmMxeXlFOHM2N0NUNDJoYnlLRHpteW9VbENjZw?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
+      "id": 2094
+    },
+    {
+      "cat": "job",
+      "badge": "Job Opening",
+      "tc": "tge",
+      "date": "Oct 30, 2026",
+      "title": "Gujarat Jobs 2026: Latest Gujarat Government Recruitment Exams",
+      "sum": "Gujarat Jobs 2026: Latest Gujarat Government Recruitment Exams",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5zaDhoUHZ3aS1IRXhqU3BMYkJtbWVGN1dTMndkek4zV1M3VDFMa0hVd1IzVFNjM2J5ZFNaOUYyLWlFZDJfbTVTYUVxcjFUVDExdVJQOVBIYmR4ZUl3VVowSWlZLWJhcW8yR0VJbXdQenBLT2c?oc=5",
+      "source": "Careers360",
+      "exam": "Source: Careers360 · Auto-updated",
       "id": 2095
     },
     {
@@ -1196,24 +1196,12 @@
       "badge": "Result",
       "tc": "tgs",
       "date": "Oct 30, 2026",
-      "title": "SSC CPO PET/PST result 2026 declared at ssc.gov.in; 10,676 candidates qualify for Paper II, check direct",
-      "sum": "SSC CPO PET/PST result 2026 declared at ssc.gov.in; 10,676 candidates qualify for Paper II, check direct",
-      "link": "https://news.google.com/rss/articles/CBMitgJBVV95cUxNOTFvbURxTU1MdExRZG5SaUZrcnVyb3lHN1VxeUp3ZWhVOEpaUktpTGRFTzExcVdqLXR6Y0psRl9ibFhza3NXcEZEWGFiR2htTVlucEdvZ2drX2RjWWtncHl1R1VtNTdnMjRENHlKbFNYNzFiM3lsMWhla0JUM0FVcHJlLWhFS3JHREF4QzBGQmxkamItdC1VbzViYzBmcVFhTEhJdU1pUDE1Q0RLanRJTXpDX0dmYW5kV3hSclRlM0VTYzZtM1dHNHl3djI4WFNWQ3JBMGphOThfZnluUVJsdGl1Y1ppNjFCRmR1d0x1ZDJrX3JCZjUtMmZGNk9Pc0tzMFoyakZjeGE1bkZ3cDJEQVFuSHo0YzFnS3lVd2xzTVlIa1djUzdsdU5qM2doVnZXeGdWSHRR0gG7AkFVX3lxTE9kWk5TaUcxTW92aDB2b1V0WTUwWjNZdVIyeHNCREhxdHMtaUtJUU9UMUxUM3I5ZFRCamZZUjJLNk10SkVNWXlhT04yM3NzeDFQVUd3V0h6c0ZzNmNGeVdFZVZOUUMyLVRQLUs3SHh1MEFMWUc0akxmMERpdDVLaTdSeUl3c2VsMlROTVlQMlJBNllaZVNjUlJkN0JoeEd5bmlaUy1mTHNoSXZHRFFSMlNqOTlmQnpLaGNKX3ZkUDVsVV9NY3JRb0k0VFczODhTcS1hUG4zeUpWRjM0bk9NY0MzSE9HZFN5V2dOUDFXSU1CSHU0ZDFfRkN4X0RGODJGTjVJcldrRUs5bXh0ZjlBZVp1UkhaSm1vRHhWOU1HVGhXVjVnWHlpaVE1bTNBWXJ2OVp3UmhZT1h2aTFpUQ?oc=5",
-      "source": "The Times of India",
-      "exam": "Source: The Times of India · Auto-updated",
-      "id": 2099
-    },
-    {
-      "cat": "result",
-      "badge": "Result",
-      "tc": "tgs",
-      "date": "Oct 30, 2026",
       "title": "WBSSC Group C and D Result 2026 at westbengalssc.com, Download Merit List & Cut Off Marks Link shortly",
       "sum": "WBSSC Group C and D Result 2026 at westbengalssc.com, Download Merit List & Cut Off Marks Link shortly",
       "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxORGk4Y2g4VERXS1IyR041Qm8teG5BNXhlYVdCVnZPV1pPRG1wWDdZU3dCVlNkQzNjM1hhQ0NXVm9XeEVQSkx3Nmc5Y2VhSkY2ZkdUZ1hyTHBySGVxRWhid1FmdkhReUpwUzI2bmlPd01SWTRWTGJUWTJoQXluTzNSc1JwTUdmb25SOUc4c29MNXJCd1VsWndBNWFEZEFVWXNkYUFyVmdIMV9QQlEwdXJGenVwS3RGQjlJV3J6WG1NYTFhX1ozNzhfakpFQWZEYjlPT0JSQklrNHdqWUkz0gHjAUFVX3lxTE9mYjJTREVjTlFsc09lRXdLVGdSWEJWdXJFMG1yTEhBVGVTY19vU2VuMllnY1QzRzBMZmlKUTlSUDJMV2EteFl6T3U3UkU1dXdqcXUtSDRUMEVXcEVUdFdnMkVHeUpvc01GeDE4a3Ryb1BWbVhsZkNvcHR4UTlRdHh2dThqcndwSGI3T2s5enhVQVJKUFpkRGFmYjY4QUxmZ0tZRmNDTGltc1F0T1lodGRiUWZyVlZEVzNDMVJqSFFkY1A5blNnTHNVRHBtS0I5V0JucUYteThMZExPZ3NCZXZCVHpz?oc=5",
       "source": "Jagran Josh",
       "exam": "Source: Jagran Josh · Auto-updated",
-      "id": 2100
+      "id": 2099
     },
     {
       "cat": "result",
@@ -1225,7 +1213,7 @@
       "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOVndfOUJnZVBsZkU2ZnI1TENNVTBraGZoNU0xcnhGMFowY1dBanl0SkQ0ODcyYWxtQ0puZXhxVm5rWFBHRm5EVlVPay1UdWo1MjNWSGRFSW55NWI1QWgzbUhkNGdnbkZGaWFuQjRpMVdKLVQ2WWZGN01BSjgxZ094R040eHY4Rkc1czBJZF9wX19xSkFVd3dsVk1tM19BSVFoS2JlM2l0WFI0ZmQ4NlBpZlR4V1RET0M3eGp0STdaWHNTRFlQMUZuNFJPMDVrbThEWUVUcjdha3E2Y3JpOVhZVjZmaGUwdWFJSUN4VWl3SEVvT1h6SHBnbNIB_wFBVV95cUxPYTdlZnlWWWhMbmpoSEZzb2VUengwVWxuQktqNnZRQ25kSzdQTUNrYkNFdUxwVVpxWUtsSUpwMEVESDlsZC1sU0FPOHdjbVVLcDJSaV9LVHdVNDBXTTgtV0xGX2dyUkYyTmlsODNfZXk4M2w4ZjUwTG1tS3d0SGd4X0xhbEcxdEtFSVhLTHR0bW54SG1ycVlidjRrblhjQThhMWxrSlM2Z0JmTy16WGV1SzlvV3ZWaGVlcE1WTlQwb0ZlM1dkczhUZWJQTWVPakRneERYbk1tSlhRX2txWURreFVOMDBuVlpyYXQtRGMxZzNNb2c4YmtIekQ3Q1NJazA?oc=5",
       "source": "Jagran Josh",
       "exam": "Source: Jagran Josh · Auto-updated",
-      "id": 2101
+      "id": 2100
     },
     {
       "cat": "result",
@@ -1237,7 +1225,7 @@
       "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQRDc3V2xpSjc0YVRmVl8yWmJkS0JFWDZJVUVwYUQtT3dpRDE1UTVaNmVwOVZJQTFmUVlSQ1FJQWF2TERRN2NKU0ZwRzdGZGF4Vmk2ZzRtODJNeXVlQ0J3cG9aNjlfZ1EyMUtHRmJsQTFTMlB2Z0NFdkNLS1BCZkRIY3BRSTRvTEM3bUR4LTdYaWdQX28yXzJhUmpLNEt0emNOUUNGWEZNdnNoMjd1NzJxeGRtdUhVSWhHZGxkcmJGa1djT21WbHBaajZINlN2REtaVTQzbzc0b0hoQUp5RV9vaFVHWllyVnRRYUNmLWhpQdIB9AFBVV95cUxQcG5zcVlmSG5XS0tlV1FSOGs3QzNJQjNBSHc2ZTkwZndGT0NucVdyMUx6bG5CSkt1MUF3ck8xamNMLWtWU3VNdjd0ZXZmX0x2aEloTUNOMk9FeVF0c2hhai1wb3AwY0xIOXgtRmhGbHNHaVRiOU9LbHE4VGlGSi12Znk2WGJfUmhES1lXODhKOXdtZzV2YzQyR2htMEFfa1ZMdVJDNVhydEI4VlhPT3p2UlVfYWhHWktZbkVLWGpkb3lpSnFJZHl6cHpqS0FEWWtmbW9jbUE0ZUpDN3Fpd0lwZjhIUkdCUzlCSFh3b1g2OTlNeGdv?oc=5",
       "source": "The Times of India",
       "exam": "Source: The Times of India · Auto-updated",
-      "id": 2102
+      "id": 2101
     },
     {
       "cat": "job",
@@ -1249,7 +1237,7 @@
       "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOTHNBQ0oyTVRRMzdyMDZ1Y2JDbEpNZzZLZGFuaXVjYmlGcUV0TXZtVXVaY0VrVmRhbVI3Zk1yVGtuWGFQTTRmUHg5dlo5NHdfTUZ1T0FMQm83MVQwYjRranRtUFpDMThCYmlKci0tY1RzLTh5anJvVTgxLW1udTNoU3laWlFsYXNtZEFNWGREeDJKay1sbDFiRkVyeGtXRWw0Q3ZwWExBSm5uQWFmXzdpYmx0OGQzYlVTOGl1RlFIZ3JwN0JRU2plTEdzMy1SOTNGam53UXBYcGQwdlJFV2dGUklNdlVRUFo3NTFVVC1nRXk?oc=5",
       "source": "India Today",
       "exam": "Source: India Today · Auto-updated",
-      "id": 2103
+      "id": 2102
     },
     {
       "cat": "notif",
@@ -1261,7 +1249,7 @@
       "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1QTV9CdHIzMjNuQ1lFYVFNNFNMbFgxN1l6M25aTHN5RXE3Z3l5R3l2YmdYYm02b0FVUlpwaF9KWnQzU0wzWWZQeFFGVVVpbVhoeUJ3S1pCX2JPakhHVXl3a2hyYkZET1FScS15YzlISFNTdw?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2104
+      "id": 2103
     },
     {
       "cat": "notif",
@@ -1273,6 +1261,18 @@
       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9hMEdFOGpuRWpqVlVFcXFzTEtnWFY3WktaQkhDTjIxcDlqazlDbG1OVFpDNFlUWDdkS0ZQRWFHaXhySVJ2d1p4a0J0cTRJaExVUlpKYklZWXVSWXdTVzJhMkMxUTRSdlFjcC1meUlZSi0?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
+      "id": 2104
+    },
+    {
+      "cat": "notif",
+      "badge": "Notification",
+      "tc": "tgi",
+      "date": "Oct 29, 2026",
+      "title": "JNVST Class 6 Admit Card 2027 Released on navodaya.gov.in; Entrance Exam On November 28, Check Download Process",
+      "sum": "JNVST Class 6 Admit Card 2027 Released on navodaya.gov.in; Entrance Exam On November 28, Check Download Process",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQbWQtMjRMbENmSy1ydGJFT0pEVE9JODVvQnhkR3p3R1hvRWtKYmxOaGlHQmg3LUprWFpuenFEQWpSUnlfdWtnaXhNaDV1M2hocEFNUS16TU05SzJlS1pfeUExdW1WSm5Ubkl0M3lsMGQxOVFndW5ldWpRV0tDeVVONlU4b3QwdUxEYkFnZ1AtUm5IemNpSWZvY01mclpLZkRGaEJRaXVycUhfR2VFWmZib0wwZW9QbkYzRnVJeFhOXy1IcFFESi1YVTRoTVHSAdQBQVVfeXFMT041czJpa0RXT0dJdnVtRk1kNUMtV1lwWDFvQjNTVXV4dThxX0t1Sk82WGl3cGl0S0V4NDhxZHRkVDA3SFg3eUhrbGRNSF95S2xzUi11NGM0OEpnM2dMSjEwODJpZTlBek54aVR1dkhYMzZHaHJWQmZxTzd4bjBEc3NUYW9NNTRDSmZQWS1KWHNIaGxLa1Ayc0JJUk1WbDNNaG5uZC00TXhhYjkxOWZjb0o0WmJsNFFCYmpLXy1TSHVOd0RSU1U1LWw2MV9Zdk5UdTRuc0Y?oc=5",
+      "source": "NDTV Profit",
+      "exam": "Source: NDTV Profit · Auto-updated",
       "id": 2105
     },
     {
@@ -1280,24 +1280,12 @@
       "badge": "Job Opening",
       "tc": "tge",
       "date": "Oct 29, 2026",
-      "title": "Indian Railways announces 1,215 station master vacancies, apply online by November 25",
-      "sum": "Indian Railways announces 1,215 station master vacancies, apply online by November 25",
-      "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQQlRITm5YbFRkVF9URi1tVFZYWVd5UzhPYUJyalJPWjFDbjBMMHNYaDUzUGNRR1cwcmlwSXg0RGxDcVZUX1hSTWdTMlJxUnoxQXJkVWNzanhxQ0xWc1llTzV6NlVubWlzelR6RHVvMDB0ajk5dDU4SVZqeThtR2dMUmJwbVM3WWV3ZmRRTkF2NTRyeHpnckQ1TmlkMmo4ZEF4a0tCbFNwdUNjMVZGaEVzWTU5MjJSMUJ1OUNIdUc4MGc2R25Jc0ZfeGdXc1lLalp6NUdfNzlyOU02b3Jia0JUV25tS28tX3ByazNyVUt3TnVnTFc0c0HSAfsBQVVfeXFMUGc0RlE2VDJZdTFKNE9lVExocVB6VHR5RDE5RWMwZUt6Yzh0S0dzU1N2Q3VnWlc0R0pWUTkxSVJGa051R1o1VHJ6dFpKaGM1NjJUN1ZGRnliZVBTaldIbFNRZWp3b01fNnFhMnZweXJPWC0yb2NaZjcxOU5EV0tVUFZkWkVHcG12MkZHc0dNMlkzNUN4WHJKUV81UzhGdkN6ZE0zZW8zUnNxMjZsN0pXejlfS01ES2wycDFxZ3d5WlFRSU1DU1c2RF9NMFNEZl9ncmFrTVh3RmI2NFU3X0hEUnZTLWZabHV0T2hQUkN4MF9LYm9CamN0bVVIVUk?oc=5",
-      "source": "India Today",
-      "exam": "Source: India Today · Auto-updated",
+      "title": "IBPS Recruitment 2026: Apply for Server Administrator, Programming Assistant & Assistant (Last Date 12 Nov)",
+      "sum": "IBPS Recruitment 2026: Apply for Server Administrator, Programming Assistant & Assistant (Last Date 12 Nov)",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNU19SbnVxSEdjZlJKYjVIdy1US2VMV3U2NEw0d3RzMmo0MGM5MGpRNTJjdXJMQnQ0dFU3TzlqTGFrUWFRb1A5OXFIVC1XVkE3MEg1NXFKOE9icl9taVN1dVB5NGx1Ykc0dkpDelZOLVRuLUNRWmY1b0NEcXFnbmlLcTU0SW9HR0dPLTNsNHJ2eXFTZmpKR2Zjb01GSGpLYUgxVTZ1eE9GTEkzR2dRWmFneEVfaE1CSXcxNVRiWjBQb0JGZw?oc=5",
+      "source": "Bankersadda",
+      "exam": "Source: Bankersadda · Auto-updated",
       "id": 2106
-    },
-    {
-      "cat": "result",
-      "badge": "Result",
-      "tc": "tgs",
-      "date": "Oct 29, 2026",
-      "title": "RSSB Jail Prahari Final Result 2026 OUT: Download Merit List PDF at rssb.rajasthan.gov.in - Direct Link Here",
-      "sum": "RSSB Jail Prahari Final Result 2026 OUT: Download Merit List PDF at rssb.rajasthan.gov.in - Direct Link Here",
-      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQeGdjc0hRaVJIdDdGOXNPcXozZFFnUXVqVm9xREp1ZlpOVnhEemFmWEh4NnZxSWdyYXZHczZfV2NPZDRWVlgtTHZOS1luZGt6S1ZsNVFXbk8yTGczR0dFUy1lcXFqSUZnRGpyV05zRUZLb05tMjJBbTNFUUkzRmJvZ1d2NDdMVnJZMnY3UjlKUUt4dTJuUF9teGJaOENBalNIOVJEYTI5Njd0RVVocFpKM0Rsam9BS0ZhM2NtckhWRFUyV190MUw4ZkkwSkZzMmFOYnVjajhzNktGUC1XUjJFRkloZUlGNXfSAe4BQVVfeXFMT3FaT19SN19iV1o3WkNkbFdBZElaTVh6NE5IM0lfb2VxRHFlZmZDQnl1YkRGQkJuaXNnVlhrcDdqbDhrVG80eFMtUDdOUHh3Y3c1T1hBVE9ndFVHSFpJZWFFanp5SDRTaXUzUlJ5UWtHNlV1MGJkTzB6c3BBUFhURk56TzA1UDd0UEZaVGVoRWx0dlY4T3ZhallhZ2JEWGdSa0VoLTR3MDlDazFkTWlkRUdJZExsV1lRbFBOVWp4bVY5bVdpTDkyRUowdzlFclBEb1pObkR1MGt1eDg0cDZWQkk1VWVqX3pvSU96LXF0dw?oc=5",
-      "source": "Jagran Josh",
-      "exam": "Source: Jagran Josh · Auto-updated",
-      "id": 2107
     },
     {
       "cat": "notif",
@@ -1309,7 +1297,7 @@
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1rYXlQNFM0cWg2dS1IVmc0b25jbUtkZll1Q1J4alJRVkMyZmZqSHZGN2NiQzFvMUUzNkp6TERxbEYzbW9lRlNjN3NnUTVZMXVabFdGclNucm1sRTZUai1yMGR4V2ZlTVdYR3c?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2108
+      "id": 2107
     },
     {
       "cat": "notif",
@@ -1321,7 +1309,7 @@
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1lVkdPVjU5dDVCb1NWYnZmZmh1VnRiZDFUR01xTWwwdjFsLTRVQUJ2MWZjTndkV1hDcTROU2hUdTZJMGpRMlFvdlBqLTU0T2F3S1JfZTMtTEVJVk12SE55Y3ZiV1pVQXVu?oc=5",
       "source": "Careers360",
       "exam": "Source: Careers360 · Auto-updated",
-      "id": 2109
+      "id": 2108
     },
     {
       "cat": "job",
@@ -1333,7 +1321,7 @@
       "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBoYU9zS0Fac3dNRXNhU0tZRVJjcTlicWdKaTNnM2JBTXVheVI4dWk0UDdNVl9ONUlxcmh3SkpqdnJ5LWlnaDItWUpIMGMtRVNDTUhaamsyNDk3M1NxZldhY1JRNG5jSlgzdmlIQ0RqQUFZa25U?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2110
+      "id": 2109
     },
     {
       "cat": "result",
@@ -1345,7 +1333,7 @@
       "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPV0JXS05JVWsxbGpwTW5xeUJaMGNOWktpd3hWUlMwUDVGc2dZR2k4RVp3WklTckNGY0gwRFNpZHYwN1ZfMEtqS3R4Z1lLRVJ3T19lOHF0ZFVBeU1jMVBfbFBuX2hWaXBabWV4Y2xrWHh3Y3JJUUZBVDdndGlUUHp4NHpiSnEzV0ctemlFVHZYY1h6dEFMeVYxOU01bmJ4dk1zRHQyOGxqZV9idkxYLUNUd2RyRzR2RWt0WWVxNmd2TdIBxgFBVV95cUxQRXpOVTRHeTk3OXdHcm02bk5TemR5ZGVGUHR2SHFWX2xncjA1cTRvNE5zakJpYWNqNm9LSjkxZFRqS05EWV9XV3NEaV85UzJmTVp5YlJBa285Q0Y2QnpXejRaUWFNemQzVmRiU3FQNTlmdVVuU3VjSTBtZ2Myci1zeXFFWElUXzZCb0oxTEtQeEg5WXV1dV9EcF9OM1ZCd2o4eWtkc1EzM3h6bElTUE9mcjFtMEFqaHlLNGIyOTN3WnhJZWNuYkE?oc=5",
       "source": "Jagran Josh",
       "exam": "Source: Jagran Josh · Auto-updated",
-      "id": 2111
+      "id": 2110
     },
     {
       "cat": "notif",
@@ -1357,6 +1345,18 @@
       "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNLTE3dHhrU1BVY1NwZEFwbmpVQ3c3QWhGeF9oOTNSdGdKNGFxaVNLQjJKYTVGdzgtbEdqZl9zdFJ3Z1k0UzhUYzZ4dXN4bUhoYUVoWXkyb0d4YWd1XzZNcVFIWVdLYUJHRFJSdkVmZ3hqU01FV25QSkJkbUxtbXV1TEJ6VjFZZUkyUDRST3FXekpoRGVCVDgzQldpWW5YOEVSMXFMNUtqZFVleGhzclZuQ094NEk2cW1WdWluNUFMNGE1eE1sTVdaU0hmYXRSZDFjb0VYVWFVYkpITHfSAeABQVVfeXFMUFdNSzV6NWR5cmhIbkFQUXpSR05vYnhGUDhuREdEaWFYNU1lcTc2dm16SmRSVzBQSkVNN3RaVU44V3R6MWxNQW16d0NUQXc1UEpxbDNidC15MzVmN3A0S2xSLW5YSmJHd2ZMUzdwVkdYZGFOZFItNS1Kck5TMjVOQ3g0SDZQaXB4bXRyNEpLa01KbFBoNkFTd1pVcnFVVmIyM2ZyR0E0Sy1vYVRyNXg1WlBpZ3BwSzk0NFFFR0VSMUFBSWN0R1JlUFZCdlpNTUZycmFGUEdhYmZGMjBiWGcwR0I?oc=5",
       "source": "Business Standard",
       "exam": "Source: Business Standard · Auto-updated",
+      "id": 2111
+    },
+    {
+      "cat": "notif",
+      "badge": "Notification",
+      "tc": "tgi",
+      "date": "Oct 27, 2026",
+      "title": "CAT 2026 Admit Card: Hall ticket to be released on November 4 at iimcat.ac.in, check download steps",
+      "sum": "CAT 2026 Admit Card: Hall ticket to be released on November 4 at iimcat.ac.in, check download steps",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNRWw0NFp6VlBPWlZNaXRXLVN3aFBHV21nX2F6azc3T3BzSGZZWFdoNzJXdFhmd20xTm9QaUtUT0RVV2kxWUFUb0NqNjA0YWVLTU5JTjhLMDNGdlFYV2dieFNjYVZRa0JOaG40TDFib3NpLWdtUkNReDJuak9sb1JrS1FMYlVUSlZsUVVDckR6TG5PVkpLTFlrcmk5NldkNTh2NmdweExBZnpVeXFueFhWVmpud1pES0JscTJIYUtJbWVuVlVueF9FTFRGSnZJdTlXLVJRMnpsVHlmb0tBSWRVS1dB?oc=5",
+      "source": "India Today",
+      "exam": "Source: India Today · Auto-updated",
       "id": 2112
     },
     {
@@ -1556,23 +1556,23 @@
       "badge": "Notification",
       "tc": "tgi",
       "date": "Oct 23, 2026",
+      "title": "CUET UG Admit Card 2027: Hall Ticket Link, Steps to Download at cuet.nta.nic.in",
+      "sum": "CUET UG Admit Card 2027: Hall Ticket Link, Steps to Download at cuet.nta.nic.in",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5IR1NPM1ZoNjUyanRNR3B4Wm94aVAxVm9SQnppWVh6c2tHTXZkTllNdklpMmF3WjNRblB1aFpsY3FoOV9qRFdvSDNuMG1QNllIeTNwanlCbXQ3RzQ5ZWVrU3Bn?oc=5",
+      "source": "Shiksha.com",
+      "exam": "Source: Shiksha.com · Auto-updated",
+      "id": 2129
+    },
+    {
+      "cat": "notif",
+      "badge": "Notification",
+      "tc": "tgi",
+      "date": "Oct 23, 2026",
       "title": "IBPS SO Prelims Cut Off 2026 Out, Check Post and Category-wise Cut Off Marks",
       "sum": "IBPS SO Prelims Cut Off 2026 Out, Check Post and Category-wise Cut Off Marks",
       "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1pOHdtX2VZMFB6MjlNSUVIUmN2WTc2QjQ5N2c2WHpVZGdUeFRWSDVDMnBtVEVZVlNLY1M2SHZ2Yy1SNVRNRnEzLWpXR0dBTHBwdnpjOXROTFQ?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2129
-    },
-    {
-      "cat": "result",
-      "badge": "Result",
-      "tc": "tgs",
-      "date": "Oct 23, 2026",
-      "title": "SSC GD Constable revised result 2026 released, check category-wise merit list and PET/PST shortlist",
-      "sum": "SSC GD Constable revised result 2026 released, check category-wise merit list and PET/PST shortlist",
-      "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNaXFtdVFPdVdmOUlXV0gzeElPOU1yNXl4WVpNdl9fREZuZ3RJdXdKOVZJLTNIa3JzbUV2eThmdW9KbWFYdWNwS2hYdVZmVURpZjFEUEpyVlB4WW9OUFNWaWdVVjd2eEZTT3Q3N1JpekZXUGtHN0VzaVJPVVB5QVJGN3lNeDIyMnh0TldJOEgzQjFUMUVJVWxlcU0yeGNCb1JRNEFYd3lxN1lHV3JxekRPalFWVlp3bmhlZ3NqNEZNQlNoY0EyNVhCVEYtTXdMenFVMEZ0UENpVzRMZTNMZGlrT0J1bVpnVHd1b1M2all4TmNYZEtIWVdRN0NzMWpOYUNJcFpqOVFn0gGLAkFVX3lxTE8tYUFNZExmbWVJYS1sS1VhbzcyOGZ2Q2xOTmdhbEhiM28zcC1ZVDIxdkVHYWRpalJXSkdSOHVxWHlhZzU3V096eUIwR0tWMWFUWFoyTXpUNFI2TUEyWW4tNVZrS2dJWGZCQ1pUN04zOWhDNEhCaEFFUXpRX2lVWUo4RGRYZ0ljc3ptb29IdW1odE5wUHFna1FLdGUtZXdSZXFaRVJTb3I2bjhKSzVfWEVnaDBnUVFxcE90UkNUQ1R0bVhWODZzejNZT0pxaDRIeTZpZFhRQ3VQdTFWLXNBaVl1M29yR28tT0x1Vkt3WWlFb0R0bnR5M3pCcW9aYzJWSThqRTJjZU9fWElKZw?oc=5",
-      "source": "The Times of India",
-      "exam": "Source: The Times of India · Auto-updated",
       "id": 2130
     },
     {
@@ -1592,11 +1592,11 @@
       "badge": "Notification",
       "tc": "tgi",
       "date": "Oct 22, 2026",
-      "title": "IBPS SO Mains Admit Card 2026 Released at ibps.in; Exam on November 1",
-      "sum": "IBPS SO Mains Admit Card 2026 Released at ibps.in; Exam on November 1",
-      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxONW9SdUQ1OXBDSlVHZFl3SnQwY0pUTmlWUjJuSDNVS0I0VEdXeENvc21DXzk3Yk43cGRLMHhsV1pHenRMamxxelBhdkZPMGJ1dGxxUlpzNFRnekZRN0JKbnQxaDlxZWN6WnptYzlWYTRpUnNyLWQwcVJiT00wOW1wVDhXRDkwel9EZVVDc0ZhcDJJRlVmVU1MTUxlN3h1WUJ1ZElkOFFVOFVNaW5tM3ZTaUhmTFVFYjRSSjZCN0gzRG1Pc3fSAcgBQVVfeXFMTnFqYmVuRTRmUlVhd3ZTZUp4dHgyZUE5OFN6SlhQa0Q4ZE1TV05oU2RLS29iN2hqSThaZWs1UWpCalRmV251Y3M2ZmJFcmk2ZnZQTjVSLW9fcUt4dUlQcmNRdm95T2ZUalFzREotS2hoZWdMRV9tcWZzLUI4UGRiTnZId0dBeVNmQVZMckh2U3F4Rjg4cTVBMUNZSEN4Qlh3Z1JYZm0yUm1Qd0tQbzl0RjR5SFdURVZDWEpyclhDYjFNYkx5SU14a18?oc=5",
-      "source": "Telegraph India",
-      "exam": "Source: Telegraph India · Auto-updated",
+      "title": "MP Police SI Admit Card 2026: Will the hall ticket be released today? Check latest update",
+      "sum": "MP Police SI Admit Card 2026: Will the hall ticket be released today? Check latest update",
+      "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPS1AwN3UwMzdJdXQ5c2YxdUZ2THZta1BNSEZGMXV3LWhDSFNkNmg5QVlNSXJ2WTRMUWY0ZnlCb21aU2NEVXQ4OTVqOFI2VmxaaXhaanN2SkE1d2F6SUEzWXlsdEhqU252STJ3NS10Rm9LcmhmZ1RIdW83MHF4SVJZWXg1cHMySGd2aThXX0JmQTh1NGk1S1RHYWI5dGd2QmNrakZRR2VzckFMcEdJeE43WHRKRXJBOXlESkQ1RFFLY1cxdnVFZm9yeE5fS3lvcHA4ZXMxLVNRMzdXT2lONHZldDhrNElTaTRJdm9VWmVLZjM0SUdQejFr0gH8AUFVX3lxTE5hdE9LMTdBalRsUlhva1lFVkRJMlBKOGlQa2NURzBuWEdjTGU3cE9RdW5hcWVBc2poS1lDWlpaQzRWTFd3WGRDYXVnM0h2dTF2akFxZlptRlNLakZ0TDhuVUZIN01qbHl3VnRqUk9IcHpKbDlnX2tnSUFjQ2l6RUoxX19hVGhCdjBhOVFDR2czYWRJa1VWOHYzM051X21vTS1OeFJ6M29md1JNN3RMNHRZS0w2YmsyWlRYTGlEeGV1R0ktWi1sNmlQY1BfTENmV1l6Z2l5SGNSYkZyOVZibTRDb0VYcFUtaHBWM2JjdXRvNWpDOXNTeFVQM2JZRg?oc=5",
+      "source": "The Times of India",
+      "exam": "Source: The Times of India · Auto-updated",
       "id": 2132
     },
     {
@@ -1604,11 +1604,11 @@
       "badge": "Notification",
       "tc": "tgi",
       "date": "Oct 22, 2026",
-      "title": "MP Police SI Admit Card 2026: Will the hall ticket be released today? Check latest update",
-      "sum": "MP Police SI Admit Card 2026: Will the hall ticket be released today? Check latest update",
-      "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPS1AwN3UwMzdJdXQ5c2YxdUZ2THZta1BNSEZGMXV3LWhDSFNkNmg5QVlNSXJ2WTRMUWY0ZnlCb21aU2NEVXQ4OTVqOFI2VmxaaXhaanN2SkE1d2F6SUEzWXlsdEhqU252STJ3NS10Rm9LcmhmZ1RIdW83MHF4SVJZWXg1cHMySGd2aThXX0JmQTh1NGk1S1RHYWI5dGd2QmNrakZRR2VzckFMcEdJeE43WHRKRXJBOXlESkQ1RFFLY1cxdnVFZm9yeE5fS3lvcHA4ZXMxLVNRMzdXT2lONHZldDhrNElTaTRJdm9VWmVLZjM0SUdQejFr0gH8AUFVX3lxTE5hdE9LMTdBalRsUlhva1lFVkRJMlBKOGlQa2NURzBuWEdjTGU3cE9RdW5hcWVBc2poS1lDWlpaQzRWTFd3WGRDYXVnM0h2dTF2akFxZlptRlNLakZ0TDhuVUZIN01qbHl3VnRqUk9IcHpKbDlnX2tnSUFjQ2l6RUoxX19hVGhCdjBhOVFDR2czYWRJa1VWOHYzM051X21vTS1OeFJ6M29md1JNN3RMNHRZS0w2YmsyWlRYTGlEeGV1R0ktWi1sNmlQY1BfTENmV1l6Z2l5SGNSYkZyOVZibTRDb0VYcFUtaHBWM2JjdXRvNWpDOXNTeFVQM2JZRg?oc=5",
-      "source": "The Times of India",
-      "exam": "Source: The Times of India · Auto-updated",
+      "title": "IBPS SO Mains Admit Card 2026 Released at ibps.in; Exam on November 1",
+      "sum": "IBPS SO Mains Admit Card 2026 Released at ibps.in; Exam on November 1",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxONW9SdUQ1OXBDSlVHZFl3SnQwY0pUTmlWUjJuSDNVS0I0VEdXeENvc21DXzk3Yk43cGRLMHhsV1pHenRMamxxelBhdkZPMGJ1dGxxUlpzNFRnekZRN0JKbnQxaDlxZWN6WnptYzlWYTRpUnNyLWQwcVJiT00wOW1wVDhXRDkwel9EZVVDc0ZhcDJJRlVmVU1MTUxlN3h1WUJ1ZElkOFFVOFVNaW5tM3ZTaUhmTFVFYjRSSjZCN0gzRG1Pc3fSAcgBQVVfeXFMTnFqYmVuRTRmUlVhd3ZTZUp4dHgyZUE5OFN6SlhQa0Q4ZE1TV05oU2RLS29iN2hqSThaZWs1UWpCalRmV251Y3M2ZmJFcmk2ZnZQTjVSLW9fcUt4dUlQcmNRdm95T2ZUalFzREotS2hoZWdMRV9tcWZzLUI4UGRiTnZId0dBeVNmQVZMckh2U3F4Rjg4cTVBMUNZSEN4Qlh3Z1JYZm0yUm1Qd0tQbzl0RjR5SFdURVZDWEpyclhDYjFNYkx5SU14a18?oc=5",
+      "source": "Telegraph India",
+      "exam": "Source: Telegraph India · Auto-updated",
       "id": 2133
     },
     {
@@ -1636,18 +1636,6 @@
       "id": 2135
     },
     {
-      "cat": "result",
-      "badge": "Result",
-      "tc": "tgs",
-      "date": "Oct 22, 2026",
-      "title": "BSEAP AP SSC Results 2027; Check AP 10th Class Results 2026 Link @bse.ap.gov.in",
-      "sum": "BSEAP AP SSC Results 2027; Check AP 10th Class Results 2026 Link @bse.ap.gov.in",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9Xc2dfV3ZySEFrSVpUVlh1MW1GbWF6Q0drclJoNGRTRGdjZVBMbGVFdkZuNHJlMnJFNjd0MTNMNi1YanlzOTNyYXRLOUZIMzhRNW5JeHNGWEltUS1Gd0tv?oc=5",
-      "source": "Shiksha.com",
-      "exam": "Source: Shiksha.com · Auto-updated",
-      "id": 2136
-    },
-    {
       "cat": "job",
       "badge": "Job Opening",
       "tc": "tge",
@@ -1657,7 +1645,7 @@
       "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOZ1dmU0x2X2d2cW4zcVlRNzBmT3h5Q3l0SW41dXh0Rk1YMFNyN3dycFdzblcxX0lwYjZ1M1RHSGJaVXVyRDFqazVuNksxRHlwcDgxZjF0ZWRBb3BSaVBraFNaSnhNcjFyNUVIRTc1ZHpwYzRGWDJlekc4R19XaWNOMVBvS3QwZ2VXc1d4YThtTXdJcU1fSUdZNUpVVXJZT2p3WXRKSFBpTE42R1hGcHRBREZyUDJlQ043TVFaUWtEX2pYNF9i?oc=5",
       "source": "India Today",
       "exam": "Source: India Today · Auto-updated",
-      "id": 2137
+      "id": 2136
     },
     {
       "cat": "notif",
@@ -1669,7 +1657,7 @@
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1UTExLNF9IZzFtbEY3bDJXNG1UNFFIZXQ1VmxoSlJoNHdkdURGWUZWNWQ1Q2syYmVyYVc4eGYyWlREa0tmRkUxT0dZdU5ob0lJMDNDOWFWNXlMa3Y1U2lDYWRSOXljY2ZDeE5iUkJ3?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2138
+      "id": 2137
     },
     {
       "cat": "job",
@@ -1681,6 +1669,18 @@
       "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1Eemo5WHJuREkxNmFJdGNwSUFyUmg5QXhsczhKZWRKbm5JcjhNVTBEcUc1bFkzbDZRcEJLVzdkSmRoQzROdTNiQkdxREI0cEpYZ3hFczNidGRMNlVMUFUtb0Mzd2N0QQ?oc=5",
       "source": "Careers360",
       "exam": "Source: Careers360 · Auto-updated",
+      "id": 2138
+    },
+    {
+      "cat": "job",
+      "badge": "Job Opening",
+      "tc": "tge",
+      "date": "Oct 21, 2026",
+      "title": "DRRMLIMS Non Teaching Recruitment 2026 - Apply Online for 74 Group B, C & D Posts",
+      "sum": "DRRMLIMS Non Teaching Recruitment 2026 - Apply Online for 74 Group B, C & D Posts",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPTVQ1YlA0VzhDNVZ5X3Y5S2dGRmFSWjBXbW9Bak5yQXVFRXh4Y3d0bzNmYzdRLVhfbjZVeUdRV3pBMGxPWTNoMFk4ZndFclRKdS05Um93eVdJbWRSOWJ4QUozWWJER0hlb1V6RkZHTVJONUdaZkZpVTJ6TDV5am9KVVo2cUlBQTFOcDRKMHpBMEp4b0FZQjBJNTRsc2dHc3pZVVA4NXlaN0Z2SmppRk9pRGVDZ1lKMlQ5N3ctUzJ5OG9CdGxFQ25Mb25kTG45YXhyWnhpcmQ1VURRSFUtV29SSTRZNDg?oc=5",
+      "source": "FreeJobAlert.Com",
+      "exam": "Source: FreeJobAlert.Com · Auto-updated",
       "id": 2139
     },
     {
@@ -1804,6 +1804,18 @@
       "id": 2149
     },
     {
+      "cat": "result",
+      "badge": "Result",
+      "tc": "tgs",
+      "date": "Oct 19, 2026",
+      "title": "Rajju Bhaiya University Result 2026 OUT at prsuniv.ac.in; Download Even Semester UG and PG Marksheet PDF",
+      "sum": "Rajju Bhaiya University Result 2026 OUT at prsuniv.ac.in; Download Even Semester UG and PG Marksheet PDF",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNenBVdHV1Skd1VUtlV0MtOXN5UEdSajhSTkZUeHdpX01qR3ZaWlVhM1FUTmJpdUlYdnNnLVZkMnVhM2s1ZWs4aXNJRXN4N3ljRHI3cWVUdEwzS05kd1BINkZ2aHc3ejFUci1hOHUxOVFpSFZnZDUzMnVIMnpVQTEzSnFFNEpKRjlvMDJuRzZsblFFS0hsaDBmUmZkb1FMZzdYSDQ3UXN5VzlYUXl4dTc0Ylh6VDlESDBlRFVYQ0xFeEo1M1BRaVl2cGJEa0owUWI3VFVBVNIB2wFBVV95cUxPRHB1SHJ2dEcwVGI0V2NzSW5fRlY2VGtjQ01fRlZyTlVka1FEQmNYUlVtWEtBV3plMldlV1NlZFpFbmQ2RlYyTEVCckVwTVcxTHdVRmlTRzJIczhmQVVQQTMybGREZmp3ZFRNSG55dmNnbXF6cTRKVEVMYzJOZ0tOdTdfeTNMNmx0VEZIQVU4am9yM3pwT3VOOEMyRWR0U1ZmaE9qV2dCSlo1SUVHQUxEd3ItWmVMS09Yc194TDlGNFY4MTE1LWtwRWtwalUxQU14WHRlMEZiUTk4Z0k?oc=5",
+      "source": "Jagran Josh",
+      "exam": "Source: Jagran Josh · Auto-updated",
+      "id": 2150
+    },
+    {
       "cat": "notif",
       "badge": "Notification",
       "tc": "tgi",
@@ -1813,7 +1825,7 @@
       "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPbVZnUWdseHhvVGhSRWZsRVVHTld1M2VkRzN5cWhEQUpVMjU0aVZiUjJ0cW4xT1pyckhpaHhoMG9abXBZSUxZMkY1ZEhURGR6ZjhNdnBjSXZybW9WZU10ZTBuLXZjMmJzeDAycVphNWttMXJXdFB1ZXF6TkZuSG1FWDZVMUpTbGs2Smh2TldRN2VWSFYtMkFDMTVfWWpTdnFvM1I0R0tRY21FX2t3N3cxWlRaOTlCVWwxQzBIRl9oRGRUcGx0S3pGWTBzQUNLLTDSAdYBQVVfeXFMTklXR21BLXF6X2tZTjB2TXJfUlgtUlhCQ3Q2SE91TThwQjdsX25MaWtUaFJyWlJGcWhOZVdtMkpVNG5BdXJ2YXdBaXNCa2JUbVgyQ09BeUlGSTJpbzZPQm95Q29RQ25uRnlXdkROaVVVMEU2Z1ctSk5sc01OcVlJaHEwLU1ic2Q5VlQwUXJ4ZENvRzdYdGZ4VVpSR1pQbDRocE1VLVVUWWgwRmhXSlNtaWlRVkNudVRwMzFzWUR6RzZzdUtHekp1cldQQUhsS3ExMzExbm9jQQ?oc=5",
       "source": "The Indian Express",
       "exam": "Source: The Indian Express · Auto-updated",
-      "id": 2150
+      "id": 2151
     },
     {
       "cat": "notif",
@@ -1825,7 +1837,7 @@
       "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9qbnVSN25mVXBobnlmcmdoNUllNlVQaDFpVEpBSml3YUZHSW4zckdaRTlhcmJTY0JJa2JkTnZiWVE3MlJ2SHpOVk9sb1hKTHh5R2hYQ3BWR3hmRkdIUHRJaU5pb3dxeDZDbE9ldGNTLUZrQUxTNFRUUDh3?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2151
+      "id": 2152
     },
     {
       "cat": "job",
@@ -1837,7 +1849,7 @@
       "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNSkVSZlhYVWFHWG9kYW1jLVNXb0dxd3pRWXlCWjZELU5vMGlDejFFSVNYbnVqVGJCbWZCNG9BMHBWcktwa2Y0emVhM19jbFgzeU05dGJMOS1hb01weTNEVEZrNTB1OURSLThUYjgyR1VUMGd4MG9iMFRESWNhc3B5SldPdzdPWWFMWGN3UW9sNk1ZbkRaYzBzS3laMEFXbFRFWWRaMVJ2M1BBeVZTdGJadjhnakxWaXIwNFlodjk2ZmNabkZydFowcC1BOVdXLU9HOVVVdnR1UThUZjJ1LTg3V2dsY1k3YzBsUVHSAe8BQVVfeXFMUE1zNTctSVVqV0lHakg0amJKcDBSZGdkQzRaQVJzX0NmbGdMX01VVlhtdFdKX253YWFaVGxwQkJXRlpKbUl0NVhRMmFpTE91YVROZWhvdjRTYmNtX05TVVB3eUZxYnBmTXhPR1Y4N1VqZFFaN2Y2bHozUFdpWGRrZHFGYmpXeDZ5eWZnc2h3RkhzTExWOE1DWlB5S0NfSVhxSlVOeUloeGtRSWNkb3I5TExTS1ZkbUx3TFU4c2ZfMDJWRmx1ZG13R1R0aTN4QjB1aGxUY0EtT0xFNnhOS3RPdThIM0VtdTJ1Z0VkbWVFdGs?oc=5",
       "source": "The Times of India",
       "exam": "Source: The Times of India · Auto-updated",
-      "id": 2152
+      "id": 2153
     },
     {
       "cat": "notif",
@@ -1849,7 +1861,7 @@
       "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPTXZISEZpV2NFa1NLcExMSk51NEthVllQUXlKR0NYcmg0RkJycTlTdVBQSFNuSkQ5YXlNSU93WDRKT1R0NTF1LUpwNFZnLTJlaEY3Vmtxd2hmZ3pRVHFxSHJrNlM3VXNkR2JjOE9uZnN0clk3Y01lQVVVcVpUaUZLVEQ4MUtWNGNXMDRVa2pwbkxDWTNRUUNaVGdpRWZnZFN6QXo3b3k1b0VSTjA4QmdtdXFfTW5KN3VVM2JxckM2UDA5UVBCWDYyUlBWZExWREVTOUZhcFBjc0dfc3ItdXcxaTZaWXVzOEZmOXh4cC1yaUHSAfYBQVVfeXFMT1VrejY3T1FTUDRRLXMtVHFYaWpsXzZjdjF1LWxuRU9nVVQwTFNNZEhBVmg1aEtYZTBianotd0xlcTVTNHJsbE1pOWUzTHdSRGE2eTFTYXRqTlg4NzNubU40OTgyZDd2d3c2dF9oTzh4Tk9oWW93Vm9oX212UUlxVlRtVWNKUHZiRDhQS1F3Tnd3dHpNZXduTDRWQTlMOTkwUXJJLVFQaWJyeEZLczJGc0FMV2JTNmw1ZzNhUVVERFdaREZoWFc4aXF2ckY4LXNJMFJQaDUzWV9MVGpfSkE0RzU0Q3lPaUttQXJYMk5mMmlQQmhiVktB?oc=5",
       "source": "The Times of India",
       "exam": "Source: The Times of India · Auto-updated",
-      "id": 2153
+      "id": 2154
     },
     {
       "cat": "job",
@@ -1861,7 +1873,7 @@
       "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOWGktMi16TFFSeFA3bXdES2ZEX25YM0NGb2R5c3FHQWNDUWhFazVfS0pMQjk1Q2Fmclc4N2lOWUo1ZVM5RnZzQnFOcm50VXlYaWxSQzF1WnBubkpvcHpuNUFDbjMxZXMtRWIxWXVudmNseXRORjk5TzcyWUdFdTM4NFFPWko0Z016VW9EbVFtc3N1UjJSOXNWd09GQUdLZm1XeXJ6Tk5PUUpSZHRkclAzOEE2UFZqMm1ZR1kxZm9xcS1yZ2FXc3J6c2xfN0w0X0U?oc=5",
       "source": "FreeJobAlert.Com",
       "exam": "Source: FreeJobAlert.Com · Auto-updated",
-      "id": 2154
+      "id": 2155
     },
     {
       "cat": "result",
@@ -1873,7 +1885,7 @@
       "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPdUdTYkx0SHZxaW1Ybl9JMTVVWFJGMXk0eFBfcVNMNDBlUWRjMFI1djBJT0FUVG1kZW1iSDk2bm1CMVU0TnMwakxadU01czVfLUVkXzdtVzUwRGEyX2lGTGJOYUU0NG9jSG1YYUxQV1BkaV83eWk5OGUwNVJtdzcxdkI4V3lRM2dFdHVubDhraDJQdEphWTNpUWpTY0dWZjljaWo2MTM3ODJKNGhhNUJEM01OOFZYekU4Nnp1blpTUWhsZEZhVWxMZG9wZXRRNG1PaXRGdWl5dm9JLXhQa0ZnQXREbkEzd19PVndBRkxob29CM0NvbTRJ0gH-AUFVX3lxTE9Zb2lMVkhJV0xXR0lMbWRfajdxQUI5UEFRWHMxSWtSdWRUX2VveVhJTUZoNWJKczNtU3ZGS2pGQkd3QzJHWmtMZnBnTjFfaHV3aDFLTDRub1NvV1c5MzNFYVlacDBtWU9QV1ZYdFY5RXFLcWRzdHNZdFNGNTdHMWVrLUdIQWY1WVkzRWlNVkE4a0dreUZPM0FqVEpJZVlWNTdYUDhXdThpSWhBb1JGTzA3OE90SXN2aXdOWUhxR19IMDB3NnlJRDFzbW12eWhNV1FzekZCb19zMnhWcXR4TWFNU0MxcjZHY2RfamtVVFBGMHVRdjN1M1Exd2NqbXV3?oc=5",
       "source": "Jagran Josh",
       "exam": "Source: Jagran Josh · Auto-updated",
-      "id": 2155
+      "id": 2156
     },
     {
       "cat": "notif",
@@ -1885,7 +1897,7 @@
       "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1zTWpuQWZrNHdVeEo0VXBmUGZPRFZRc0NYWk42WmVMeURVT19ZZjd6Wmd0TGh0OTRUc2VEdW9uZ2R5R0k4Mzd1TXpVUkFrQ01FUXhWdA?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2156
+      "id": 2157
     },
     {
       "cat": "notif",
@@ -1897,7 +1909,7 @@
       "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNS1VLSmxzTHJJaEV6N3dWd1dtVWQwWGRIWEY5WGI5cjhUazhoNGxkTWdRN21KRVZaUFhYdDR4dVk0Y1IxR1l5TVQ0RVpxdlliclNZSnJ5T3UtR0FBeFB1S2tmcU1VM2F0eFVoSHVmNEZwMlhNNFktSGh1MGFMVjE5ag?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2157
+      "id": 2158
     },
     {
       "cat": "result",
@@ -1909,7 +1921,7 @@
       "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNS3NyS2ZyNDk0OS1TalRELXlhNkpaMXNqQkdrelo0ckhGMmhwb3h0UXdfcXlDZDJaNUlZYWZybWdiMXhSc0NhYkVIMVJzMEFyZld4T3luR3NGMUFSV1dpakVDclM5a2g4dTdhSk5weWVWcHRlUWQ2QlhubHdNX1dheDV1OGY1T1Q4ZmxaTnI2ZFhxQ3poRGdrbHRqYmMtLWFZQi02eHRJQ29TTDFSOUVrYzFHRXM5SWdJMkljZkdqRDV0RlE1S0Q3dXp6Qzh1WF9mckxsQVJEMlh3Tm1Z0gHiAUFVX3lxTE5GNzVzamVRbDhjbkh2cFU0OGRXazhRZk5ZaFNNSUlOZ1dMQmhJNHdCRmFtZktQa1Nrc2VJblE2elN5Xy05X3Z2SEw2M2ZwZFhvamRNellwNmg4d0duYjBsaHB5Rk02c1hoTDJSeWJ6VDB0RmJlU2ptNldoQlNvdVJUVENtS3pacEtjMjl2N0hPWWpxdzEtVzJ4N2hUMG8wYklzQ1FUeWNoYTk2al84aHcyNkt4NEk3WGNhcUZQODZTTXF2c2x2Si1hZEI4SDRoeEpFWHVLdGY5blBoYnJQM3dhMkE?oc=5",
       "source": "Telegraph India",
       "exam": "Source: Telegraph India · Auto-updated",
-      "id": 2158
+      "id": 2159
     },
     {
       "cat": "job",
@@ -1921,7 +1933,7 @@
       "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdlJnU0NrczNtc2NvTUpCRnZaREdGMF9ncEdjc0FxM3BKYVNnT195R1RZREhFQTdPVzVhdkpZLS13UkJBSjdkMUhkcFJnZWctVFhzVkVjTUw5aFRiRkxxODJwZGNhQU5wTjFwUGx3clpWNC1ZZ0poaE04QUhGUXpOTHp1NHQ5end3UHFtcmZXdG4zWG5kMmNRMzNhYml2dmhuR01hYmtGN2VwNXBpTzNYTHh1SERnSXg0?oc=5",
       "source": "FreeJobAlert.Com",
       "exam": "Source: FreeJobAlert.Com · Auto-updated",
-      "id": 2159
+      "id": 2160
     },
     {
       "cat": "job",
@@ -1933,7 +1945,7 @@
       "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPeUlBNUVVSElNQnBYbk9DaEpqTkNqY3kta1ZnLWlWNUVydlN0QzdHaHZKeUgyOURzTFUtdGRtMlFFSk9wMmFwTGVVMXgyY3VkQkN2RGV3VTYwaHk1XzRrT0IyS2I0Rmx6NVVPRS1uTTRIa2duTWtBLV95bXJSY0pCOUNBMDVwQURvV1B6S3luY0NpMUVYWFZObTIzSVo0bjZLZTZyZTNaOE50bkJhalBnWEZqVERYRFJlb0NTamhxWjFDd1NfelBJS0VHcTBJQVBILXZPcDNR0gHcAUFVX3lxTE1yZDJURDFJUzRmZTRVVkFyUmhlcmc1T21TVlNjdkVVQmJRc0ljaVZOOFJfOWVuMXF5aGpobmRfMURWb3hfQ09nYjNXOEhTVVB3dTdKYXJBNjNmMXNRb25RbGI2aVY5SkZyd2NlQ0c3ZVpEYlhwbU42eHdsek16enQ0S013QzRnSnNHRldVak9ZZ29UdGV5eTlGSWtMSWtNdmw2Nzlmb191TlVhQThQNGlRSU9hU1FPX2tCSWoyOUhKYTl3QVFQZWZTYzFGUEtnTXh5ZVBveWVwR3Fid2c?oc=5",
       "source": "The Indian Express",
       "exam": "Source: The Indian Express · Auto-updated",
-      "id": 2160
+      "id": 2161
     },
     {
       "cat": "job",
@@ -1945,7 +1957,7 @@
       "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPSlA2ZmxKTFFoMkptTWdYanBVa2xERUI2bUJmQUhGMzY3NnQ2Q2h4UEl2Y3N0RUxIM2VNdVhsYkpMck1VUzZhUjJheVFDTC0tQXZTRDFCaVlRV085UWlYcExyTUZuSEd5ZEo5WUVQZWxDa0FlaGtzOHI1R0RHY2RQU1Rn?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2161
+      "id": 2162
     },
     {
       "cat": "result",
@@ -1957,7 +1969,7 @@
       "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMzZRWTVsRVhfeEI0NmlwZjRrdHRnOFpVRzdpN3E4QkRsWnY5RW5MbHhiTFV0alRQVzVSWXZwX09FQngxazVJc2kwczluWDR0dVFNSFZxQi1PT2EwM20zYVdYTlFheDNiZjg2N1Zpc2kzc0p4QktnUUJadDlJV1lFNTcwV1NEaHdhMjQtd0pVbGZScEc5cWZDZjBQQW5UOWxC0gGuAUFVX3lxTE9iX1p5ZklEa3B3bjZYNzlnYUhldk5YRFhmcXE5UFNwX2ZtNUszWFVxU1E2SWZzMEd5b0lOWmpVVm9QWkc0NDlVQ2d0VmRObzFXQTVXc0xIUXBSQk1uUWF0Rk5DdjdtS2hTV0FfRktHODhiVndZQU4zdHVydFY1UlpfdEdOaXNOM3JpcC03enpxU0hyZzEtQWJaWVlwRThLTnUyMWpOVkZJb3NLNEtYQQ?oc=5",
       "source": "EdexLive",
       "exam": "Source: EdexLive · Auto-updated",
-      "id": 2162
+      "id": 2163
     },
     {
       "cat": "result",
@@ -1967,18 +1979,6 @@
       "title": "GDS Merit List 2026 (OUT): Download State-Wise Result PDF & Check Selection Status at indiapost.gov.in",
       "sum": "GDS Merit List 2026 (OUT): Download State-Wise Result PDF & Check Selection Status at indiapost.gov.in",
       "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOd3diNjE2VVU3NHQwelNhMWZXR2FUMUtxTzM2c2JDM3VwOVA2OUdaQ1VKRkpLdXpKYUJUWkw4a19MY3VGWENlcE9tZHJrZzhQaHFUTGVjd3pOaEJTMlpHU19KbWlIOHgwcmlfMGNPekZKSTNVS0M4bWdvZEFpU3ROUlJqbE1NX0hWWmZHSUFLZ1V4bHpkbUxGWURrckRsVXBtRXFrRjc2YmdTVElKX2lfSTJUSmF1cDl3ZkdCdXFRRm9EMERpQ1FRRXVUR3E5UERZNkRNeVRJcmZMWnZJLUppcU5mcldrcGlOLTc00gHyAUFVX3lxTE5RLXh1bkFjMG1XTXZTeXo2VmljZC1CVm1LZWxOYVVGYllmZHk1VHJBRngwakxfU0lleFRoYWZvOEZYcXlvWGJ4QnUzZTI2em5MT2FUM0NFUEQwcEJZR1dvdmRHRWhINm4zbmhqQWxvSXZSMWtUU2NUOGx6YWxrRkt3OEZNZVItbmgwTXYtdHdZVXltY2VLR3pLb2RxUG9kMjJnZzI1SmpaRjI4eGdrU3F2eEtzS3BLTV9hcHJVbjdwbEM4V0hxbDlneE9NLUU2Q0NIdk91Y3NXVXdxNlZjZ2hpU29wUHByc3FrWF9xaUE4UHZn?oc=5",
-      "source": "Jagran Josh",
-      "exam": "Source: Jagran Josh · Auto-updated",
-      "id": 2163
-    },
-    {
-      "cat": "result",
-      "badge": "Result",
-      "tc": "tgs",
-      "date": "Oct 15, 2026",
-      "title": "SBI PO Mains Result 2026 OUT: Download Stage 2 Merit List PDF at sbi.co.in",
-      "sum": "SBI PO Mains Result 2026 OUT: Download Stage 2 Merit List PDF at sbi.co.in",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOU0dPaW5EQld2enVzRXF3dGFQNVNTV2dUQ0pOOHo4Z3BnQ2hNd3o4dG52cVpiM1phZE01WU5PZy1ES1NQOUItVGM0S1AxNnRKeGQ1aDJoME9VSmEybXZOaDF2MlMzNXhlLXNyTnFLOS1ZeFNJekJYWUdGeVNvMkx4VHBQUWFyRi1LQk95eTZZTGllTDh2ZXpKcmdHU0FwX2VPR0FOYXRHUndYamxwczFiaFdaYzBkOTBJQXRTcGdXVdIBxgFBVV95cUxOOUpWNjBjd1lRekg1M2JiblU4UkhBTzZyX0QyWUlzN2NkT2JVaFBJUGp3UTZ5d2xGakZKWlYwOFZMZkVzRGo4Z21wOWlON011NEtsdzBudHBrM3kxamZXb0ZsOC1XTV9DTXpvSkNkZWRBQU5jaG5sT2JLTm95WkZTWXR1dkNoY0RGamxhamdBdXg5Rm9RRnNOSGQySnR6MHg2Tk1jOGVST0lQeWt1S2N0cFRnM09Qbk90T2J1ZGRqLXFyRDVhdEE?oc=5",
       "source": "Jagran Josh",
       "exam": "Source: Jagran Josh · Auto-updated",
       "id": 2164
@@ -2176,6 +2176,18 @@
       "id": 2180
     },
     {
+      "cat": "result",
+      "badge": "Result",
+      "tc": "tgs",
+      "date": "Oct 12, 2026",
+      "title": "BTEUP Result 2026 OUT: Download Re-evaluation, Even Semester and Special Back Paper Marksheet PDF at bteup.ac.in",
+      "sum": "BTEUP Result 2026 OUT: Download Re-evaluation, Even Semester and Special Back Paper Marksheet PDF at bteup.ac.in",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPYlA4Z1QxakoyMm5JblpvLWdZcmZVNktIQmtkZDA4US1DdzZqSHNoQ2FxWWRNRko0enlXZUJ1YVdZb2N5OV9UVzFIUmk3aDFOQmRfWUxmdy1HNHQ2V0otQ0NMcmtKUXFEc3kzV0ZWeEV3YVpQNVZ3ZWprZlJlRXd5Mkp1UzEySzJxbjVxNi1YTTZMN3pIbG5odm5JZFhxdU1hLXAwcjFKZzh1aTZEemVWNDNGZEFlQ3phR0HSAcABQVVfeXFMTktCVTJ0Q2pGYWpybVBOZTNXaXNBMFVyTXAxT0ZUcWVfN21jak9jZURCQVZMNTl0N0lyN3Y0bjlMQ2FzZUNqTFZVWk90UHdjaVlyMm5JY0lhNDNmdWE0RzZUVHFsRHFIX0w0eWtZdGtISWxLal9ZdUNMekktSHVpenJXZXRqYzVHa2MwbkJWWUl1dnZHOXZNclF0bWdCSGVTS3NKUzVfenhRVmdLZ0YyVDhxMS1WNUQwQ2tGdVkzUDc0?oc=5",
+      "source": "Jagran Josh",
+      "exam": "Source: Jagran Josh · Auto-updated",
+      "id": 2181
+    },
+    {
       "cat": "job",
       "badge": "Job Opening",
       "tc": "tge",
@@ -2185,7 +2197,7 @@
       "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOd0xuRnVvbXI0M2pmdjlpV2NTaDdkc29lcDJnc2ZER09SWEhYRGV1Tjl6NDYtUWROTlNGa2dPb0YyTUltMmdDcTQtNkZfNUk0Vi05ZV9ab1NzR3B4WnRmR3daNFVUWnlmVkNvcWItWGNUT0NDWEdyckM5d2Q1LWpUM1ZDRTdiQVNaaWxlYk5MS19tUkVSb1I1N2JzbmN2MG5UaFVtOHNPSTlnWjFteWFpQ3RLLXFPZTc0?oc=5",
       "source": "FreeJobAlert.Com",
       "exam": "Source: FreeJobAlert.Com · Auto-updated",
-      "id": 2181
+      "id": 2182
     },
     {
       "cat": "job",
@@ -2197,7 +2209,7 @@
       "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPejY2VmhWWHptalRielNLS1NIYnR6VGhHY2tzT2VrZFkwdFJRTVhLVkdxbjF6UDFVTVhaR0YwQlo3czJXb3lFSm9qSkNyaWppNkkyODdYZ1ZCenAyRmkwY1RzdDB5dC1kb3ZoQ1JxUHp2XzJTNXNUQmo4WTVxWHdpbHZmQkttcTBPZ3BOMGtLSkRtX1NFZ0J3UGlzejc0Z01zQjNwbE8wR3hQU1o2MkFxSDRqWjc4YURSN1h5VmRVbXlZRFdrZlA0czVOVHR4ZnYxa3BGWmt2d245STR1WDJsR295NE9GaWxOZ0Qw?oc=5",
       "source": "FreeJobAlert.Com",
       "exam": "Source: FreeJobAlert.Com · Auto-updated",
-      "id": 2182
+      "id": 2183
     },
     {
       "cat": "result",
@@ -2209,18 +2221,6 @@
       "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNSXNaN005MHBONkZLSjQ3d2tadVZQN01STFVFcE5LMFg2TmJQWTJBZ1pmcmx4SGc1V2ZEcHVlNTBPUFBramJ2YThhSk9VT21oTWk1RHdpdjdRWFI4eTVWek1ZbXNkVEwtNVFrZzUxMUM0emhtQ1NEQ3hyWlE2Ym9lWmZhOUY0ejJZR0F1NUFUS1BJdnRBZXA1WTBMYkRBSWpXREdtaEo2a2VYUEl4ODZUcUNEWEx0N0JfYlVTZ092LTBzbWI3Q0tsQ3FVTmxVOGpwTW9EWkduUmFxekNNTWJTRFZZTdIB6AFBVV95cUxPMXRtVEloUXNGSld5QXlVVjREenJwTVQ1ZFVHYm52MVFfaTRtcHdiaVN2UGNBVURkS1doa1NJT085eTctbk85X195MS1VNUxGMm5DY3pzTl9oeGYwMkpFOEd1NzNmUmZTNlU5eXZaZEdGbmtpR0pwbzBlNHJGWXU0MmsyVUxoZHk1MVdIbjU0Nm96SFZkYnNrdGgxQk1peDIwT2x5b2ZfMjBUbXVjS2JQU2tTXzNGNFIxSkZwWUVTZEtwLXZEZjVxNXBxdUljTjdoSWxIblNHaXJuTGFJeVh1Y21RMFdoMnRU?oc=5",
       "source": "Telegraph India",
       "exam": "Source: Telegraph India · Auto-updated",
-      "id": 2183
-    },
-    {
-      "cat": "result",
-      "badge": "Result",
-      "tc": "tgs",
-      "date": "Oct 10, 2026",
-      "title": "IBPS Clerk Cut Off 2026, Check Previous Year State Wise Cut off Marks",
-      "sum": "IBPS Clerk Cut Off 2026, Check Previous Year State Wise Cut off Marks",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAwWXY0VXFjbHhXVzdjMEwtNGtBdURKWDByU1NoS2Rmc05NcHN2SmNsN252cjNwYVRkNGp3N2o5UzVSWVlmeHkzNnhvVWJUMi1ISm1JX3RKVDFrcjg?oc=5",
-      "source": "Bankersadda",
-      "exam": "Source: Bankersadda · Auto-updated",
       "id": 2184
     },
     {
@@ -2240,24 +2240,12 @@
       "badge": "Notification",
       "tc": "tgi",
       "date": "Oct 09, 2026",
-      "title": "BSEB SAV class VI admit card 2026 to be released on October 9, check details",
-      "sum": "BSEB SAV class VI admit card 2026 to be released on October 9, check details",
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPZExQMXBsWFRIV21weWU2dFlDcGhfdU9lRERiVm1xSUJyTHBaLTV3RmtrY21tdURPN2dVN3FCN3NDZGQ0bEg0em50Tm5Ja3I1eW5JZUFzOUVVZ1JKYmR3S3dOMThRM204V0swSW1NVlFIUkNlRkxiUm5lWGEzc3lKZlVfUHpmTFlWVFRSWXV2NEZBbFVTYmJVREFId1I1N1ItdFFUTHRFMnBBdFE4cFdPa3Z4TEJjWkFnci13bEZDSWliazk3VW1WbVZUUFdmUnRyZWVz?oc=5",
-      "source": "Education Times",
-      "exam": "Source: Education Times · Auto-updated",
-      "id": 2186
-    },
-    {
-      "cat": "notif",
-      "badge": "Notification",
-      "tc": "tgi",
-      "date": "Oct 09, 2026",
       "title": "PFRDA Grade A Exam Date 2026 Out, Phase 1 on 15 October",
       "sum": "PFRDA Grade A Exam Date 2026 Out, Phase 1 on 15 October",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5jbUNCeG5vVkY1enBZVm02Um5YN281Z19WeXAwQmNhUWItV29XVjNSeGlQMFl1dFUtTF9yQXJLdk9FdTY0SDQzT3ZWYndfTEpGNm5lSEt3REpMQVV5MzlQclExYWRkN004WlBKQVJB?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2187
+      "id": 2186
     },
     {
       "cat": "job",
@@ -2269,19 +2257,7 @@
       "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPb3dYZ1VZcm9fcm9MTGotV2VFOXFJRlBGRzFOT3Fkc2RUYmJTYVFiYzgzUERiT25od3IxTEpuR0ZrNVUwNVMxTk9COFZLMnhxSXBWcWVPLWFOTDdHOGNWMjhNb3BuTFphRTEzVGNuM1hQZUxOUWZnSVBxMnJqX21jdTB4Q3Y?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2188
-    },
-    {
-      "cat": "result",
-      "badge": "Result",
-      "tc": "tgs",
-      "date": "Oct 09, 2026",
-      "title": "RPSC SO Result 2026 Released at rpsc.rajasthan.gov.in: Download Statistical Officer Merit List PDF & Check Cut Off Marks",
-      "sum": "RPSC SO Result 2026 Released at rpsc.rajasthan.gov.in: Download Statistical Officer Merit List PDF & Check Cut Off Marks",
-      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOa20yTm5PR21vNVlBYUdTTDZ5cnVGNWhOV2lTQ1hrT0NEWG9VMl9pNU9vc1RMU3M0aENhRkd5akhBSERudWRhREJOYkNJTUl2TXA0aUNLQk5OVU5jRGYzTnJKTXAwRmxjTUJJcUFqVlprRjVmVTZSalZXMnBRSExxRHJIUUFUbzlIWUpLWHNHcUlzUkVIZS13dU95UjNvTGRabWxJbkdlckpzek53T2lMYTl6aTdENE1GOVZhMzRYYUg0SXBMTllaaWdRYjFpclhkdnpQYVVmLXpZWmVXbmgwSjZ5TzlkblRQS0QwYjJaNXNFSDhvcDNvVk5rWdIBggJBVV95cUxNSGE0QU9QcWxwWEZvam1QMU9PU1BqVnczZWdUNmV0cWRwd21SMFFuZUNsajBNZk54RW5PVldXUTYteHZubXN2ZVBxc3otdVY0cTNIRlRoeDVWNkNRbUo5TmkwQUhDZUFuS1ZSSHg1RVZqb2U2b3BYTHBDeHVrWnNIU2F5ZUFBVjZfU1RyMlJ3a3g5M0ZMT05WMURPX3g3dkJoUUFyNGYxZ2d0WE1STU9CZ1RiaGo0MXE0ZG5GbmxJVWxibk9MSXR6UEpGV2RPWEI0bWxENmNaYjZrYmV6UXZGMW1XLVZlRTJQZ1VqcGZhc3BxTmgwMVc5UmdkUlJWMVpONmc?oc=5",
-      "source": "Jagran Josh",
-      "exam": "Source: Jagran Josh · Auto-updated",
-      "id": 2189
+      "id": 2187
     },
     {
       "cat": "notif",
@@ -2293,19 +2269,7 @@
       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0zMkFKVVNsY1hJOFJKR2Y0bnpyTUxjZHFwR0EyTVBHOVNKeWJOMGM5dlptd3RzSWItcUtzcE1TM0p0YTVVeFFwdVQybWNUVEJIa2tFVEVDcmk5VG5DUkVmNEdrZU1WTEc2VGREVQ?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2190
-    },
-    {
-      "cat": "job",
-      "badge": "Job Opening",
-      "tc": "tge",
-      "date": "Oct 08, 2026",
-      "title": "Punjab Court Clerk Vacancy 2026: Apply Online Begins for 1270 Posts; Check Eligibility and Other Details Here",
-      "sum": "Punjab Court Clerk Vacancy 2026: Apply Online Begins for 1270 Posts; Check Eligibility and Other Details Here",
-      "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPZldfQjdTMEJVb3RxTVdwRkk5YjJCZlpNVWR1QzNPSUp5cHY1bmlOamZ0Q01KaHNENTJtdDMxTjh2WWh6cHhIRUJCQmFzbks1Zmh2aW1ROUk0ekFvanNDcUcxRmhJSHpUZDRuYzdTMXBiQ1VFU0JYQlpCNTNqRFlyWU1qb0RlaXpOYy1uTTJwWHFJT0JkZFU3NXMzOTZrRVlBNW5vOUxXZnZBQXdjSjhmWURGZ0RNQkZtUHQ1UENsZGFleW52YlMtTGZkTGpmN1JHdS1TRXNmRjY4MGctdTBRR3JFYTRNYnFOYkRGQdIB8wFBVV95cUxOcFFSU09mWmNJU0tNTkU2ZmJXUXRVZmlQcDMxNkNSX3BoOEw4enctUC0waHVjUTJUV1RiWUNuNHRtbXhEZVdtN2RXTmNiOU1UTUF3dFRRclczWGRsM1NYZXd5S1RBVHhFcnpxSkpESExLenhzbFZpMUJscENrclBlT29vLWFOQzAyUHdpb2x2TXhVdFd2b2V0ZWRxbjktUmlMV2hYSnJnVmFzakVaU2xfN2RPRnAxWTVZcnRNRmY4NVJaR0diSEpLU3J1aGxETGZLMFQtTE94QVZmYk8teXpMODFhS3VHMGl6MF92SU9DeDl5dUE?oc=5",
-      "source": "Jagran Josh",
-      "exam": "Source: Jagran Josh · Auto-updated",
-      "id": 2191
+      "id": 2188
     },
     {
       "cat": "job",
@@ -2317,7 +2281,7 @@
       "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNVzlqc19GcFFzRVQxTkxXeU9vQXNzNENLQzVVcGdjMDN4REVyS0tPcWlLbTBzbmtwWVhOUWNLanZRQVR2ZG5kV1piQ1VLYlIwQmZHUkRIT19TYldkTTRhSW95SmdLT3oxaUFiYkdxSnNleHk2U0Q2VmZaaTFKMUc2MWFtMWRDbFNqb0g3OEszZDllWjhlVW5GY05RMUhaa2NjdUkyOFAxSnNWejFMam1lTWVYQmo5TGJvZ25iTEdTMVZ2WUcwSjRuSGpn?oc=5",
       "source": "FreeJobAlert.Com",
       "exam": "Source: FreeJobAlert.Com · Auto-updated",
-      "id": 2192
+      "id": 2189
     },
     {
       "cat": "result",
@@ -2329,7 +2293,19 @@
       "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQa0h2UGpmQmdKbkFLcEVJc1dQUTNhbWhBdDIzemh2Wi13M1lTRXlHV0pVYWlXaGx5UEpLSGtGMjMxLW94dkxqazJ0NVpGRWtZYW42TlVhLVFLdHEwUzh3MG9wMnlHaDFya3Etb3pTYW14OU9la3F4aUdrS3U2dVN5TFpjVmU5M2hTOHo1VDlKNGhtMTkyd2o2VDROOFhveElPNVdLU2VORGZFQ1l6cmtmYUNKMk44VFRtWlFRalVNMmtIQVpwcEYtTWJjR2pMbFlsc2NpSndDN2lpeld5S0RUUVZR0gHoAUFVX3lxTE51azN0N29DWHlmSUtOcm9aN3FFU1RTMk91aHJVRnVoUk5idVVmSEZsek9kSmxNZDhkanFpalB2NUtsaTN0LW5HMUx5ZzY3YjNZRkFmTUF5Qlp3dENycmtxZEtMRUEwOVRpNDNrSmwwQnZ2WjhtdXc1T3RoQnRTWFVmTDM0YTAzY2lCRnRDRmtNaVVQWTRLWWN1TUlNS2pYNGpzempHRzhFaFJiVXA4T2xCQ2ZCYmtEUnNRMkNCWDhxVFdVcEFmSTk5dmRVWkpXZXFYVWg1bThwTUIySktTTGNqYlZXYzdTR0E?oc=5",
       "source": "Jagran Josh",
       "exam": "Source: Jagran Josh · Auto-updated",
-      "id": 2193
+      "id": 2190
+    },
+    {
+      "cat": "result",
+      "badge": "Result",
+      "tc": "tgs",
+      "date": "Oct 08, 2026",
+      "title": "RPSC SO Result 2026 Released at rpsc.rajasthan.gov.in: Download Statistical Officer Merit List PDF & Check Cut Off Marks",
+      "sum": "RPSC SO Result 2026 Released at rpsc.rajasthan.gov.in: Download Statistical Officer Merit List PDF & Check Cut Off Marks",
+      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOa20yTm5PR21vNVlBYUdTTDZ5cnVGNWhOV2lTQ1hrT0NEWG9VMl9pNU9vc1RMU3M0aENhRkd5akhBSERudWRhREJOYkNJTUl2TXA0aUNLQk5OVU5jRGYzTnJKTXAwRmxjTUJJcUFqVlprRjVmVTZSalZXMnBRSExxRHJIUUFUbzlIWUpLWHNHcUlzUkVIZS13dU95UjNvTGRabWxJbkdlckpzek53T2lMYTl6aTdENE1GOVZhMzRYYUg0SXBMTllaaWdRYjFpclhkdnpQYVVmLXpZWmVXbmgwSjZ5TzlkblRQS0QwYjJaNXNFSDhvcDNvVk5rWdIBggJBVV95cUxNSGE0QU9QcWxwWEZvam1QMU9PU1BqVnczZWdUNmV0cWRwd21SMFFuZUNsajBNZk54RW5PVldXUTYteHZubXN2ZVBxc3otdVY0cTNIRlRoeDVWNkNRbUo5TmkwQUhDZUFuS1ZSSHg1RVZqb2U2b3BYTHBDeHVrWnNIU2F5ZUFBVjZfU1RyMlJ3a3g5M0ZMT05WMURPX3g3dkJoUUFyNGYxZ2d0WE1STU9CZ1RiaGo0MXE0ZG5GbmxJVWxibk9MSXR6UEpGV2RPWEI0bWxENmNaYjZrYmV6UXZGMW1XLVZlRTJQZ1VqcGZhc3BxTmgwMVc5UmdkUlJWMVpONmc?oc=5",
+      "source": "Jagran Josh",
+      "exam": "Source: Jagran Josh · Auto-updated",
+      "id": 2191
     },
     {
       "cat": "job",
@@ -2341,7 +2317,7 @@
       "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBIOFB2QUxuMTNvMGM0RFNDbjJwZEJFZ1JkTmhfc0Jsa2lCQjlrcEtyNlpWOWV1N0JhUnZoVFNscFpBcTFSN09MdG52Smg0OE8teHg0U2xEZ1RQdld1cjZ1a0RUZF9URWZLNjVsWGJpNElYUTBIM1g3aHlGZG5UQQ?oc=5",
       "source": "Adda247",
       "exam": "Source: Adda247 · Auto-updated",
-      "id": 2194
+      "id": 2192
     },
     {
       "cat": "job",
@@ -2353,7 +2329,7 @@
       "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNX3FYdEY4WXZhQ0hWNUMzak0wdERHTWgzd29JYjZhX1FKTEUwcTV5dmFNUTdoWTFNTUJ0aEVOaVRDaDRRcWRPZEU3bnFWY0ZzLVF3bVd4NEYxX1lrdEQ2UFJhWG13ZmZjU09PYTA3UDhZYmk3VGwzR0VOS1k4M05wcWd2VmZjUzBCTmFlb2tjRlQ0VTNvanBEMDRNbHNnWTEwSHJFbnFn?oc=5",
       "source": "FreeJobAlert.Com",
       "exam": "Source: FreeJobAlert.Com · Auto-updated",
-      "id": 2195
+      "id": 2193
     },
     {
       "cat": "result",
@@ -2365,7 +2341,7 @@
       "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPR1d3NGk2bzNfR3FfSnhuLTVPN1ZkdEdWYkU4a0hTSks3SVJjU1h3SWNwMy1pMUROVE5SMjZDMEtGUHJLa2huZk8xS3Y1aUlyMHJ2MGUwV0wwc2ZsNHJoZUhBY3Z5Qk44cmwxZFFTQ1ZTeDZ4eGU5SVI5S19hOFFMYm1QU2ZmVEZkNGsyMW52WVBGZGJiaXBEdlBZMkYxdWM1U2VISTFpdXVhY1pmT05Zbi1WaTdmZ0wzcVRBaVlPcmh6Z3E3YXc3Nnd2NG5kTEN3U1HSAdgBQVVfeXFMT1R1Nms4SVdFM2RGSHlJLVRCZFYyWjlPSUtvTUM1d2xodGluZTFxMkdwSDQ1VkRVOUtucEQ4RXBDOGw1UjgxRVA3OXNNUm96aG5GTVMtNFYyR1l6NmVqa3cwUTlMbTlTdjFubFM1YTBuWmFhdU1ManpaQ2FHbU0wckRPRVF3S09hZ2NEeFdEeUZMU3NJS213aHBkTDRJOVJXR09QWWluejBjbFo2WFVzbFc0MWRwTHhvdnhTN2p0VGRrYWg3YzNYWDNWdlA1aW5yOGJkX1c2X2Vj?oc=5",
       "source": "Jagran Josh",
       "exam": "Source: Jagran Josh · Auto-updated",
-      "id": 2196
+      "id": 2194
     },
     {
       "cat": "result",
@@ -2377,7 +2353,7 @@
       "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQb01DSmw1Rk9HUmhzNldkaDZnNk40SFJDd2pnY2NyeW5QZ1ZLOWVTMVI5X0ZLOHN2NmxNbUNoeFFMSGc5cUFZbGlKV2c0b2VPSm1RRXdPRjZLcFFrb3g4NlFIZjBLSkNhRFFFemtHTGVqWkplTUhEOWFuME9OQmhyamk3Vk85bGU2Z0l1UVRVYVdXaWx6aFBCTFpXcEd3TWJYUGRTTm9DTkNneS1aRFU0cWJCQld4RWJOaVlFeGNwZW1ZejVhbkHSAcwBQVVfeXFMTWRUOUsxenN1dkJYeDFDNjJ6Wkh6N2phWVdjTGpJUlFXczU1MEplRTZ5LUdIUm9qWnVsczVLV0xLa0VxTEhveEctWGE1bkRSZlhiTmx1c281OENoZ2hiX0FlSFNCSXc0MEVfSk9oMjFIN2hYQ010cVlmMVhSUHJKQVpTU1JkMm5rcDhITXFOWXE4bENoNlgtcV9uYm1uX0dOQXpwMlVEejBIQmY1bC1aOGtIc2pHdHhiV0VreGlybG84VmJCU3RWMzl2TlpC?oc=5",
       "source": "Jagran Josh",
       "exam": "Source: Jagran Josh · Auto-updated",
-      "id": 2197
+      "id": 2195
     }
   ]
 }
